@@ -1,0 +1,9 @@
+package com.steve.puckd
+import android.media.*; import android.util.Log; import java.io.*; import java.net.*; import java.util.concurrent.Executors; import org.json.JSONObject
+class WakeWordClient(private val host:String,private val port:Int,private val onWake:()->Unit,private val onState:(String)->Unit={}) {
+ private val exec=Executors.newSingleThreadExecutor(); @Volatile private var running=false; private var socket:Socket?=null; private var recorder:AudioRecord?=null
+ fun start(){if(running)return;running=true;exec.execute{loop()}}
+ fun stop(){running=false;try{socket?.close()}catch(_:Exception){};try{recorder?.stop()}catch(_:Exception){};recorder?.release();recorder=null}
+ private fun send(o:OutputStream,t:String,d:JSONObject=JSONObject(),p:ByteArray?=null){val h=d.let{JSONObject().put("type",t).put("version",1).put("data",it)};if(p!=null)h.put("payload_length",p.size);o.write((h.toString()+"\n").toByteArray());if(p!=null)o.write(p);o.flush()}
+ private fun loop(){try{Log.i("WakeWord","connect $host:$port");socket=Socket(host,port);val i=BufferedReader(InputStreamReader(socket!!.getInputStream()));val o=socket!!.getOutputStream();Thread{try{while(running){val line=i.readLine()?:break;if(line.contains("detection")){stop();onWake();break}}}catch(_:Exception){}}.start();send(o,"detect",JSONObject().put("names",org.json.JSONArray().put("hey_jarvis")));send(o,"audio-start",JSONObject().put("rate",16000).put("width",2).put("channels",1));onState("Wake word ready");recorder=AudioRecord(1,16000,16,2,AudioRecord.getMinBufferSize(16000,16,2).coerceAtLeast(2560)*2);recorder!!.startRecording();val b=ByteArray(2560);while(running){val n=recorder!!.read(b,0,b.size);if(n>0)send(o,"audio-chunk",JSONObject().put("rate",16000).put("width",2).put("channels",1),b.copyOf(n))}}catch(e:Exception){Log.e("WakeWord","failed",e);if(running)onState("Wake word offline")}finally{try{socket?.close()}catch(_:Exception){}}}
+}

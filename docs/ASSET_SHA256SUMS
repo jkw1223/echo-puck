@@ -1,0 +1,6 @@
+8367238a0b60a2e4e6206075f6647d102525dbc17f6e3ef234a6d5fe7609222e  puckd-android/app/libs/tensorflow-lite-2.14.0.aar
+455e95de7fa6a2c9f8eeca2beb3a7a55bbb5a43f0c0f5df3b6d7deed976f0cfe  puckd-android/app/libs/tensorflow-lite-api-2.14.0.aar
+21a7976add39ee24ec96c63d96b7aaa18e24d1d9824b963e451da8feb4b78b77  puckd-android/app/src/main/assets/microwakeword/hey_jarvis.tflite
+c0aea21eb84a4ce90a08c870da41b7a7173b45269e6a3207c71d67c40f3a59d8  puckd-android/app/src/main/assets/wakeword/embedding_model.tflite
+14bff778604985e1b5c19f0f7bbe477a69cf281d8db34b232b3b972411f710e2  puckd-android/app/src/main/assets/wakeword/hey_jarvis.tflite
+96fa0adccb6e8cf95cb14465409a1a2898ee4a96a85bb9ed3c7eb0e68bf163e8  puckd-android/app/src/main/assets/wakeword/melspectrogram.tflite
