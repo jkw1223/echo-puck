@@ -26,7 +26,7 @@ Original platform tools and amonet remain in the old workspace as third-party to
 
 `.local/workspace-inventory.json` records paths, sizes and hashes for collected source/evidence, excluding credentials, dependency caches and generated build trees. Original rollback/source artifacts remain local, as do recordings, device logs and secrets. APKs are excluded because development builds can embed provider keys.
 
-`STEVE_BRIEF.md` is the historical supervised web prompt, not the direct-audio provider prompt or an implemented memory service.
+`STEVE_BRIEF.md` now describes the direct Show-to-Realtime architecture and intended credential boundary. The original supervised web prompt is preserved in `docs/history/STEVE_BRIEF-supervised-web-2026-09-06.md`. Android does not yet load the current brief as session instructions; it is not an implemented memory service.
 
 ## Collection boundary
 

@@ -6,6 +6,8 @@ Workspace: `~/puck`. Repository: https://github.com/jkw1223/echo-puck.
 
 Start with [CURRENT_STATE.md](CURRENT_STATE.md) for the real stopping point and [the work index](docs/WORK_INDEX.md) for collected history. Direct Realtime audio has been demonstrated; the normal two-turn lifecycle regression remains incomplete.
 
+The Show handles microphone capture, on-device audio processing, UI, the direct Realtime WebSocket and response playback. OpenAI provides model inference and response audio. The Mac Whisper/browser/TTS bridge is historical. The intended off-device role is long-lived credential provisioning; the current development APK still embeds its locally supplied key, so a short-lived-token handoff remains to be implemented. See [the current Steve brief](STEVE_BRIEF.md).
+
 ## Workspace
 
 | Path | Purpose |
@@ -21,6 +23,19 @@ Start with [CURRENT_STATE.md](CURRENT_STATE.md) for the real stopping point and 
 
 ## Development
 
+Android requires SDK 37, the checked-in Gradle/JDK toolchain, and native CMake/NDK dependencies. Configure the SDK with local `local.properties` or the Android environment:
+
+```sh
+cd ~/puck/puckd-android
+./gradlew :app:assembleDebug :app:testDebugUnitTest
+```
+
+`-PrelayUrl=ws://HOST:8787/puck` overrides the historical relay address. Compilation permits an absent `secrets.properties`; direct provider calls require local configuration. The current experiment embeds `OPENAI_API_KEY` from that file in BuildConfig, so APKs are private development artifacts. Keep the existing local debug signing key for in-place updates.
+
+Optional wake diagnostics use a private `wake-sample.wav` retained locally and absent from GitHub. No device install/provider call is part of repository setup. Verify actual device/host state before using historical commands.
+
+### Optional historical relay/fallback
+
 Relay, with Node.js installed:
 
 ```sh
@@ -32,16 +47,5 @@ npm start
 ```
 
 Inspect the chosen mode and existing listener before starting the relay; it loads local provider configuration from `.env.local`. See [historical protocol documentation](docs/history/README-2026-09-06.md).
-
-Android requires SDK 37, the checked-in Gradle/JDK toolchain, and native CMake/NDK dependencies. Configure the SDK with local `local.properties` or the Android environment:
-
-```sh
-cd ~/puck/puckd-android
-./gradlew :app:assembleDebug :app:testDebugUnitTest
-```
-
-`-PrelayUrl=ws://HOST:8787/puck` overrides the historical relay address. Compilation permits an absent `secrets.properties`; direct provider calls require local configuration. The current experiment embeds `OPENAI_API_KEY` from that file in BuildConfig, so APKs are private development artifacts. Keep the existing local debug signing key for in-place updates.
-
-Optional wake diagnostics use a private `wake-sample.wav` retained locally and absent from GitHub. No device install/provider call is part of repository setup. Verify actual device/host state before using historical commands.
 
 See [third-party provenance](docs/THIRD_PARTY.md). Original checkpoints remain under `docs/history/`; the supervised web experiment and later direct API transports are distinct.

@@ -4,7 +4,7 @@ Consolidated September 8, 2026 from source and recorded task history. This is no
 
 ## Resume here
 
-The first-generation Echo Show 5 (`checkers`) IS Puck 0. LineageOS Android 11 supplies the thin hardware endpoint. Active Android sources are in `puckd-android`; the Mac relay/fallback is in `puck-relay`.
+The first-generation Echo Show 5 (`checkers`) IS Puck 0. LineageOS Android 11 hosts capture, local audio processing, UI, the direct OpenAI Realtime connection, and response playback. OpenAI supplies model inference and generated response audio. Active Android sources are in `puckd-android`; `puck-relay` is the older Mac path retained as a fallback. The current direct voice path does not use Whisper, a browser operator, Mac TTS, or the Mac media relay.
 
 The latest work includes direct Android OpenAI Realtime transport, shared microphone capture, ordered response playback, and local wake-word experiments. The previous task reported a successful direct audio probe and an integrated turn, but did **not** establish a clean two-consecutive-turn lifecycle regression. The latest readiness/append/commit correction was built and installed; subsequent input was blocked by Android `NotificationShade` holding focus. Resolve device focus and verify two normal turns before calling the transport accepted.
 
@@ -21,9 +21,13 @@ The latest work includes direct Android OpenAI Realtime transport, shared microp
 
 `MediaTurn` defaults to `transport=relay`; the previous task selected `realtime` in the device's private `puck_status` preferences. Repository consolidation did not re-query or change preferences, install an APK, restart services, flash the Show, or make provider requests.
 
-The development key is read from ignored `puckd-android/secrets.properties` into `BuildConfig.OPENAI_API_KEY`. This embeds it in the APK; secret files, generated sources and APKs stay local. A scoped credential architecture remains future work. The relay has its own ignored `.env.local`.
+The intended architecture keeps the long-lived provider credential off the Show and supplies a scoped, short-lived session credential to it. A token broker/session-credential handoff is not yet implemented in this checkout.
+
+The development key is read from ignored `puckd-android/secrets.properties` into `BuildConfig.OPENAI_API_KEY`. This embeds it in the APK; secret files, generated sources and APKs stay local. This development arrangement does not yet meet the intended off-device long-lived-credential boundary. The relay has its own ignored `.env.local`.
 
 Historical endpoints: Show `192.168.1.24:5555`; Mac relay `192.168.1.193:8787`; Tower wake service `192.168.1.4:8765`. Recheck these addresses. Relay transport is plaintext LAN HTTP/WebSocket with ephemeral tickets, not durable enrollment.
+
+The current `STEVE_BRIEF.md` describes the direct audio architecture. It is maintained context, but Android does not yet load/send this file as Realtime session instructions.
 
 ## Next work
 
