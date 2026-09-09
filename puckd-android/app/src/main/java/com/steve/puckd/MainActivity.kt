@@ -70,7 +70,8 @@ class MainActivity : AppCompatActivity() {
             if (talk.text.toString() != title) talk.text = title
             val now = java.text.SimpleDateFormat("h:mm", java.util.Locale.getDefault()).format(java.util.Date())
             findViewById<TextView>(1001)?.text = now
-            talk.isEnabled = !audio.busy && (turn.recording || (!turn.busy && token.isNotEmpty()))
+            val realtime = getSharedPreferences("puck_status", 0).getString("transport", "relay") == "realtime"
+            talk.isEnabled = !audio.busy && (turn.recording || (!turn.busy && (realtime || token.isNotEmpty())))
             speaker.isEnabled = !audio.busy && !turn.busy
             handler.postDelayed(this, 200)
         }

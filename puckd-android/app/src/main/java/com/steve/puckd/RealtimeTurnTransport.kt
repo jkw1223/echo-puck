@@ -44,12 +44,18 @@ class RealtimeTurnTransport(private val sink: TurnTransportSink) : TurnTransport
             override fun onOpen(ws: WebSocket, response: Response) {
                 Log.i(TAG, "seq=2 turn=$turnId connection_established thread=${Thread.currentThread().name}")
                 worker = Thread { playbackLoop() }.also { it.start() }
-                checkSend(ws, "session.update", "{\"type\":\"session.update\",\"session\":{\"type\":\"realtime\",\"output_modalities\":[\"audio\"],\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000}},\"output\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000}}}}}")
+                checkSend(ws, "session.update", "{\"type\":\"session.update\",\"session\":{\"type\":\"realtime\",\"output_modalities\":[\"audio\"],\"audio\":{\"input\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000},\"turn_detection\":null},\"output\":{\"format\":{\"type\":\"audio/pcm\",\"rate\":24000}}}}}")
             }
             override fun onMessage(ws: WebSocket, text: String) {
                 try {
                     val event = JSONObject(text); val type = event.optString("type")
                     Log.i(TAG, "seq=event turn=$turnId server_event=$type thread=${Thread.currentThread().name}")
+                    if (type == "session.created" || type == "session.updated" || type == "error") {
+                        Log.i(TAG, "full_payload turn=$turnId $text")
+                    }
+                    if (type == "input_audio_buffer.speech_started" || type == "input_audio_buffer.speech_stopped") {
+                        Log.i(TAG, "SPEECH_EVENT turn=$turnId type=$type")
+                    }
                     if (type == "session.updated" || type == "session.created") ready.countDown()
                     if (type == "response.audio.delta" || type == "response.output_audio.delta") {
                         val data = Base64.decode(event.getString("delta"), Base64.NO_WRAP)
