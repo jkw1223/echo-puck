@@ -1,0 +1,3 @@
+# Removal lifecycle
+
+`AudioALSAStreamIn::removeAudioEffect` is at `0x57e38`. It removes the matching interface from the stream arrays and, for the recognized AEC UUID, clears stream field `+0x114` and may invoke the stream vtable `+0x48` callback. `AudioPreProcess::removeAudioEffect` is at `0x8b360`; its full decompilation is retained in `import/decompile9.log`. The function removes the interface from the preprocess effect list and has a separate cleanup path. `remove_echo_reference` is at `0x8c464`. Static evidence does not yet prove that every AEC removal reaches that cleanup or forces capture reopen.

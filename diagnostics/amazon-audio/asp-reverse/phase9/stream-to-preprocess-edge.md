@@ -1,0 +1,3 @@
+# Stream to preprocess edge
+
+Phase 9 re-decompiled `AudioALSAStreamIn::addAudioEffect` at `0x57b44` and `AudioPreProcess::addAudioEffect` at `0x8b734`. The stream method stores the supplied `effect_interface_s**`, compares the descriptor returned by its vtable `+0x08`, and changes stream state. No direct call to `AudioPreProcess::addAudioEffect` appears in the complete decompilation. The stream object has a manager pointer at `this+4`, effect arrays at `+0x118` and `+0x150`, stream/input state at `+0x28`, and AEC-related byte at `+0x114`; no justified `AudioPreProcess*` field is loaded by this function. The edge is therefore UNKNOWN, not proven indirect.
