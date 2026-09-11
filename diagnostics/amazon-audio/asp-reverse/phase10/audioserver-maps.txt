@@ -1,0 +1,3 @@
+# Audioserver runtime collection
+
+`adb` is not installed on the analysis host (`zsh: command not found: adb`). No audioserver PID, dumpsys output, or `/proc/<pid>/maps` snapshot was collected. This is a tooling boundary, not evidence that the device lacks the libraries.
