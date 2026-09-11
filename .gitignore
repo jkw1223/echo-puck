@@ -22,6 +22,10 @@ __pycache__/
 *.apk
 *.aab
 /artifacts/
+/diagnostics/amazon-audio/*
+!/diagnostics/amazon-audio/README.md
+!/diagnostics/amazon-audio/collect.py
+!/diagnostics/amazon-audio/pull_inventory.py
 /ha-android-ref/
 /tower-reference/
 **/wake-sample.wav
