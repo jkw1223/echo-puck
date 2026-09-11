@@ -1,0 +1,1482 @@
+openjdk version "21.0.4" 2024-07-16 LTS
+OpenJDK Runtime Environment Temurin-21.0.4+7 (build 21.0.4+7-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.4+7 (build 21.0.4+7-LTS, mixed mode)
+INFO  Using log config file: jar:file:/Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /Users/jason/Library/ghidra/ghidra_12.1.2_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /Users/jason/Library/ghidra/ghidra_12.1.2_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /Users/jason/Library/ghidra/ghidra_12.1.3_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1774 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3861 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase8
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Users/jason/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase8/ghidra-project/EchoHAL8 (HeadlessAnalyzer)  
+INFO  Opening project: /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase8/ghidra-project/EchoHAL8 (HeadlessProject)  
+INFO  REPORT: Processing project file: /audio.primary_amazon.mt8163.so (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DecompileTargets.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase8/DecompileTargets.java (HeadlessAnalyzer)  
+INFO  DecompileTargets.java> ===== FUNCTION AudioALSAStreamIn 000566a4 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAStreamIn::AudioALSAStreamIn() */
+
+AudioALSAStreamIn * __thiscall
+android::AudioALSAStreamIn::AudioALSAStreamIn(AudioALSAStreamIn *this)
+
+{
+  undefined4 uVar1;
+  
+  *(int *)this = *(int *)(DAT_0005674c + 0x566b8) + 8;
+  uVar1 = AudioALSAStreamManager::getInstance();
+  *(undefined4 *)(this + 4) = uVar1;
+  *(undefined4 *)(this + 8) = 0;
+  pthread_mutex_init((pthread_mutex_t *)(this + 0xc),(pthread_mutexattr_t *)0x0);
+  *(undefined4 *)(this + 0x10) = 0;
+  *(undefined4 *)(this + 0x14) = 0xffffffff;
+  *(undefined4 *)(this + 0x18) = 0;
+  *(undefined4 *)(this + 0x20) = 0;
+  *(undefined4 *)(this + 0x24) = 0;
+  this[0x28] = (AudioALSAStreamIn)0x1;
+  this[0x148] = (AudioALSAStreamIn)0x0;
+  this[0x149] = (AudioALSAStreamIn)0x0;
+  uVar1 = AudioSpeechEnhanceInfo::getInstance();
+  *(undefined4 *)(this + 0x160) = uVar1;
+  android::String8::String8((String8 *)(this + 0x164));
+  __android_log_print(3,DAT_00056754 + 0x5671c,DAT_00056750 + 0x56720,DAT_00056754 + 0x5671c);
+  __aeabi_memclr8(this + 0x30,0x118);
+  *(undefined4 *)(this + 0x168) = 0;
+  *(undefined4 *)(this + 0x150) = 0;
+  *(undefined4 *)(this + 0x154) = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0x4);
+  *(undefined4 *)(this + 0x158) = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0x8);
+  *(undefined4 *)(this + 0x15c) = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0xc);
+  return this;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION set 00056aec ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAStreamIn::set(unsigned int, int*, unsigned int*, unsigned int*, int*,
+   android_audio_legacy::AudioSystem::audio_in_acoustics, unsigned int) */
+
+void __thiscall
+android::AudioALSAStreamIn::set
+          (AudioALSAStreamIn *this,uint param_1,int *param_2,uint *param_3,undefined4 *param_4,
+          int *param_5,undefined4 param_7,undefined4 param_8)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int *piVar4;
+  int iVar5;
+  uint uVar6;
+  uint uVar7;
+  int iVar8;
+  undefined4 uVar9;
+  bool bVar10;
+  undefined4 uVar11;
+  undefined4 uVar12;
+  timespec local_30;
+  int local_28;
+  
+  local_28 = **(int **)(DAT_00056e7c + 0x56b14);
+  uVar9 = *param_4;
+  iVar2 = *param_2;
+  uVar6 = *param_3;
+  uVar7 = param_1;
+  uVar11 = param_7;
+  uVar12 = param_8;
+  __android_log_print(3,DAT_00056e80 + 0x56b50,DAT_00056e84 + 0x56b54,DAT_00056e88 + 0x56b58,param_1
+                      ,iVar2,uVar6,uVar9,param_7,param_8);
+  clock_gettime(0,&local_30);
+  iVar3 = local_30.tv_sec + 3;
+  if (999999999 < local_30.tv_nsec) {
+    local_30.tv_nsec = local_30.tv_nsec + -1000000000;
+    iVar3 = local_30.tv_sec + 4;
+  }
+  local_30.tv_sec = iVar3;
+  iVar3 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0xc),&local_30);
+  if (iVar3 != 0) {
+    __android_log_print(6,0,DAT_00056e8c + 0x56bd4,0x46,uVar7,iVar2,uVar6,uVar9,uVar11,uVar12);
+  }
+  *param_5 = 0;
+  CheckBesRecordInfo(this);
+  iVar3 = (**(code **)(*(int *)this + 0x50))(this,param_2);
+  if (iVar3 == 0) {
+    *param_5 = -0x16;
+  }
+  iVar3 = (**(code **)(*(int *)this + 0x54))(this,param_3);
+  if (iVar3 == 0) {
+    *param_5 = -0x16;
+  }
+  iVar3 = (**(code **)(*(int *)this + 0x58))(this,param_1,param_4);
+  if (iVar3 == 0) {
+    *param_5 = -0x16;
+    goto LAB_00056e50;
+  }
+  if (*param_5 != 0) goto LAB_00056e50;
+  iVar3 = *param_2;
+  *(int *)(this + 0x30) = iVar3;
+  *(uint *)(this + 0x34) = *param_3;
+  uVar7 = *param_3 - (*param_3 >> 1 & 0x55555555);
+  uVar7 = (uVar7 & 0x33333333) + (uVar7 >> 2 & 0x33333333);
+  *(uint *)(this + 0x48) = (uVar7 + (uVar7 >> 4) & 0xf0f0f0f) * 0x1010101 >> 0x18;
+  *(undefined4 *)(this + 0x4c) = *param_4;
+  *(uint *)(this + 0x40) = param_1;
+  *(undefined4 *)(this + 0x5c) = param_7;
+  *(undefined4 *)(this + 0x38) = param_8;
+  if (iVar3 - 1U < 4) {
+    iVar2 = *(int *)(DAT_00056e9c + 0x56ce8 + (iVar3 - 1U) * 4);
+  }
+  else {
+    iVar2 = 2;
+    __android_log_print(5,DAT_00056e94 + 0x56d14,DAT_00056e98 + 0x56d1c,DAT_00056e90 + 0x56d10,iVar3
+                        ,2);
+  }
+  if ((int)param_1 < 0) {
+    if (((param_1 & 0x7ffffff7) == 0) &&
+       (uVar7 = (param_1 & 0x7fffffff) - ((param_1 & 0x7fffffff) >> 1 & 0x15555555),
+       uVar7 = (uVar7 & 0x33333333) + (uVar7 >> 2 & 0x33333333),
+       (uVar7 + (uVar7 >> 4) & 0xf0f0f0f) * 0x1010101 >> 0x18 == 1)) goto LAB_00056db4;
+LAB_00056dcc:
+    iVar5 = *(int *)(this + 0x48);
+    uVar7 = *(uint *)(this + 0x4c);
+    iVar2 = iVar2 * (uVar7 / 1000) * iVar5;
+    iVar3 = iVar2 * 5;
+    if (((byte)this[0x38] & 1) == 0) {
+      iVar3 = iVar2 * 0x14;
+    }
+  }
+  else {
+    uVar7 = param_1 - (param_1 >> 1 & 0x55555555);
+    uVar7 = (uVar7 & 0x33333333) + (uVar7 >> 2 & 0x33333333);
+    bVar10 = (uVar7 + (uVar7 >> 4) & 0xf0f0f0f) * 0x1010101 >> 0x18 == 1;
+    if (bVar10) {
+      param_1 = param_1 & 0xffffff8f;
+    }
+    if (!bVar10 || param_1 != 0) goto LAB_00056dcc;
+LAB_00056db4:
+    piVar4 = (int *)WCNChipController::GetInstance();
+    iVar3 = (**(code **)(*piVar4 + 0x20))();
+    if (iVar3 != 0) goto LAB_00056dcc;
+    iVar5 = *(int *)(this + 0x48);
+    uVar7 = *(uint *)(this + 0x4c);
+    iVar3 = iVar2 * (uVar7 / 1000) * iVar5 * 0x3c;
+  }
+  iVar1 = DAT_00056ea8;
+  iVar2 = DAT_00056ea4;
+  iVar8 = DAT_00056ea0 + 0x56e34;
+  *(int *)(this + 0x50) = iVar3;
+  __android_log_print(3,iVar2 + 0x56e40,iVar1 + 0x56e48,iVar8,uVar7,iVar5,iVar3);
+LAB_00056e50:
+  pthread_mutex_unlock((pthread_mutex_t *)(this + 0xc));
+  iVar3 = **(int **)(DAT_00056eac + 0x56e68) - local_28;
+  if (iVar3 == 0) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(iVar3);
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION addAudioEffect 00057b44 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAStreamIn::addAudioEffect(effect_interface_s**) */
+
+void __thiscall
+android::AudioALSAStreamIn::addAudioEffect(AudioALSAStreamIn *this,effect_interface_s **param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  int iVar3;
+  pthread_mutex_t *__mutex;
+  int iVar4;
+  undefined1 *puVar5;
+  timespec local_d8;
+  undefined1 auStack_d0 [44];
+  undefined1 auStack_a4 [128];
+  int local_24;
+  
+  iVar4 = DAT_00057de0 + 0x57b6c;
+  iVar3 = DAT_00057de8 + 0x57b74;
+  local_24 = **(int **)(DAT_00057ddc + 0x57b68);
+  __android_log_print(3,iVar4,DAT_00057de4 + 0x57b80,iVar3,param_1);
+  iVar1 = (**(code **)(*param_1 + 8))(param_1,auStack_d0);
+  uVar2 = *(undefined4 *)(this + 0x15c);
+  puVar5 = auStack_a4;
+  __android_log_print(3,iVar4,DAT_00057dec + 0x57bc0,iVar3,auStack_a4,uVar2);
+  if (*(int *)(this + 0x15c) < 3) {
+    if (iVar1 == 0) {
+      clock_gettime(0,&local_d8);
+      iVar1 = local_d8.tv_sec + 3;
+      if (999999999 < local_d8.tv_nsec) {
+        local_d8.tv_nsec = local_d8.tv_nsec + -1000000000;
+        iVar1 = local_d8.tv_sec + 4;
+      }
+      local_d8.tv_sec = iVar1;
+      __mutex = (pthread_mutex_t *)(this + 0xc);
+      iVar1 = pthread_mutex_timedlock(__mutex,&local_d8);
+      if (iVar1 != 0) {
+        __android_log_print(6,0,DAT_00057dfc + 0x57c90,0x46,puVar5,uVar2);
+      }
+      iVar1 = *(int *)(this + 0x15c);
+      if (0 < iVar1) {
+        iVar3 = 0;
+        do {
+          if (*(effect_interface_s ***)(this + iVar3 * 4 + 0x150) == param_1) {
+            __android_log_print(3,DAT_00057e20 + 0x57dc0,DAT_00057e24 + 0x57dc8,
+                                DAT_00057e1c + 0x57dbc,auStack_a4,iVar3);
+            pthread_mutex_unlock(__mutex);
+            goto LAB_00057d84;
+          }
+          iVar3 = iVar3 + 1;
+        } while (iVar3 < iVar1);
+      }
+      iVar3 = memcmp(auStack_d0,(void *)(DAT_00057e00 + 0x57cd0),0x10);
+      if (iVar3 == 0) {
+        __android_log_print(3,DAT_00057e04 + 0x57cf8,DAT_00057e08 + 0x57cf0,DAT_00057e0c + 0x57cf4);
+        if (this[0x28] == (AudioALSAStreamIn)0x0) {
+          (**(code **)(*(int *)this + 0x48))(this);
+        }
+        this[0x114] = (AudioALSAStreamIn)0x1;
+        iVar1 = *(int *)(this + 0x15c);
+      }
+      *(effect_interface_s ***)(this + iVar1 * 4 + 0x150) = param_1;
+      *(int *)(this + 0x15c) = *(int *)(this + 0x15c) + 1;
+      *(effect_interface_s ***)(this + *(int *)(this + 0x110) * 4 + 0x118) = param_1;
+      *(int *)(this + 0x110) = *(int *)(this + 0x110) + 1;
+      this[0x10c] = (AudioALSAStreamIn)0x1;
+      pthread_mutex_unlock(__mutex);
+      iVar3 = DAT_00057e14 + 0x57d78;
+      iVar4 = DAT_00057e18 + 0x57d7c;
+      iVar1 = DAT_00057e10 + 0x57d80;
+    }
+    else {
+      iVar3 = DAT_00057df4 + 0x57c18;
+      iVar4 = DAT_00057df8 + 0x57c1c;
+      iVar1 = DAT_00057df0 + 0x57c20;
+    }
+  }
+  else {
+    iVar3 = DAT_00057e2c + 0x57bf4;
+    iVar4 = DAT_00057e30 + 0x57bf8;
+    iVar1 = DAT_00057e28 + 0x57bfc;
+  }
+  __android_log_print(3,iVar1,iVar3,iVar4,puVar5,uVar2);
+LAB_00057d84:
+  iVar1 = **(int **)(DAT_00057e34 + 0x57d94) - local_24;
+  if (iVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION AudioPreProcess 0008ac14 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioPreProcess::AudioPreProcess(stream_attribute_t const*) */
+
+void __thiscall
+android::AudioPreProcess::AudioPreProcess(AudioPreProcess *this,stream_attribute_t *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  pthread_mutex_t *__mutex;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  undefined4 uVar5;
+  undefined4 uVar6;
+  timespec local_2c;
+  int local_24;
+  
+  __mutex = (pthread_mutex_t *)(this + 0x4c);
+  local_24 = **(int **)(DAT_0008ada8 + 0x8ac3c);
+  pthread_mutex_init(__mutex,(pthread_mutexattr_t *)0x0);
+  iVar1 = DAT_0008adac;
+  iVar2 = DAT_0008adb0 + 0x8ac58;
+  *(stream_attribute_t **)(this + 0x5c) = param_1;
+  __android_log_print(3,iVar1 + 0x8ac60,iVar2,iVar1 + 0x8ac60);
+  clock_gettime(0,&local_2c);
+  iVar1 = local_2c.tv_sec + 3;
+  if (999999999 < local_2c.tv_nsec) {
+    local_2c.tv_nsec = local_2c.tv_nsec + -1000000000;
+    iVar1 = local_2c.tv_sec + 4;
+  }
+  local_2c.tv_sec = iVar1;
+  iVar1 = pthread_mutex_timedlock(__mutex,&local_2c);
+  if (iVar1 != 0) {
+    __android_log_print(6,0,DAT_0008adb4 + 0x8acd4,0x46);
+  }
+  uVar3 = 0;
+  uVar4 = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0x4);
+  uVar5 = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0x8);
+  uVar6 = *(undefined4 *)((undefined1  [16])0x0 + (undefined1  [16])0xc);
+  *(undefined4 *)this = 0;
+  this[4] = (AudioPreProcess)0x0;
+  *(undefined4 *)(this + 0x50) = 0;
+  *(undefined4 *)(this + 0x38) = 0;
+  *(undefined4 *)(this + 0x3c) = uVar4;
+  *(undefined4 *)(this + 0x40) = uVar5;
+  *(undefined4 *)(this + 0x44) = uVar6;
+  *(undefined4 *)(this + 0x28) = 0;
+  *(undefined4 *)(this + 0x2c) = uVar4;
+  *(undefined4 *)(this + 0x30) = uVar5;
+  *(undefined4 *)(this + 0x34) = uVar6;
+  *(undefined4 *)(this + 0x18) = 0;
+  *(undefined4 *)(this + 0x1c) = uVar4;
+  *(undefined4 *)(this + 0x20) = uVar5;
+  *(undefined4 *)(this + 0x24) = uVar6;
+  *(undefined4 *)(this + 8) = 0;
+  *(undefined4 *)(this + 0xc) = uVar4;
+  *(undefined4 *)(this + 0x10) = uVar5;
+  *(undefined4 *)(this + 0x14) = uVar6;
+  *(undefined4 *)(this + 0x48) = 0;
+  *(undefined4 *)(this + 0x54) = 16000;
+  iVar1 = AudioSpeechEnhanceInfo::getInstance();
+  *(int *)(this + 0x58) = iVar1;
+  if (iVar1 == 0) {
+    __android_log_print(6,DAT_0008adbc + 0x8ad38,DAT_0008adb8 + 0x8ad3c,DAT_0008adbc + 0x8ad38);
+  }
+  iVar2 = DAT_0008adc4;
+  iVar1 = DAT_0008adc0;
+  *(undefined4 *)(this + 0x80) = uVar3;
+  *(undefined4 *)(this + 0x84) = uVar4;
+  *(undefined4 *)(this + 0x88) = uVar5;
+  *(undefined4 *)(this + 0x8c) = uVar6;
+  *(undefined4 *)(this + 0x70) = uVar3;
+  *(undefined4 *)(this + 0x74) = uVar4;
+  *(undefined4 *)(this + 0x78) = uVar5;
+  *(undefined4 *)(this + 0x7c) = uVar6;
+  *(undefined4 *)(this + 0x60) = uVar3;
+  *(undefined4 *)(this + 100) = uVar4;
+  *(undefined4 *)(this + 0x68) = uVar5;
+  *(undefined4 *)(this + 0x6c) = uVar6;
+  __android_log_print(3,iVar1 + 0x8ad70,iVar2 + 0x8ad6c,iVar1 + 0x8ad70);
+  pthread_mutex_unlock(__mutex);
+  iVar1 = **(int **)(DAT_0008adc8 + 0x8ad90) - local_24;
+  if (iVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION addAudioEffect 0008b734 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioPreProcess::addAudioEffect(effect_interface_s**) */
+
+void __thiscall
+android::AudioPreProcess::addAudioEffect(AudioPreProcess *this,effect_interface_s **param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  uint extraout_r1;
+  undefined4 extraout_r1_00;
+  uint uVar5;
+  int iVar6;
+  AudioPreProcess *pAVar7;
+  int iVar8;
+  undefined4 uVar9;
+  int iVar10;
+  undefined8 uVar11;
+  effect_interface_s **ppeVar12;
+  timespec local_c8 [5];
+  effect_interface_s *apeStack_9c [32];
+  int local_1c;
+  
+  local_1c = **(int **)(DAT_0008b9f0 + 0x8b758);
+  ppeVar12 = param_1;
+  __android_log_print(3,DAT_0008b9f4 + 0x8b764,DAT_0008b9f8 + 0x8b75c,DAT_0008b9fc + 0x8b76c,param_1
+                     );
+  clock_gettime(0,local_c8);
+  iVar1 = local_c8[0].tv_sec + 3;
+  if (999999999 < local_c8[0].tv_nsec) {
+    local_c8[0].tv_nsec = local_c8[0].tv_nsec + -1000000000;
+    iVar1 = local_c8[0].tv_sec + 4;
+  }
+  local_c8[0].tv_sec = iVar1;
+  iVar1 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0x4c),local_c8);
+  if (iVar1 != 0) {
+    __android_log_print(6,0,DAT_0008ba00 + 0x8b7e8,0x46,ppeVar12);
+  }
+  if (*(int *)this < 3) {
+    iVar10 = (**(code **)(*param_1 + 8))(param_1,local_c8);
+    iVar8 = DAT_0008ba0c;
+    iVar6 = DAT_0008ba08;
+    iVar1 = DAT_0008ba04;
+    if (iVar10 == 0) {
+      iVar10 = *(int *)this;
+      if (0 < iVar10) {
+        pAVar7 = this + 8;
+        iVar2 = 0;
+        do {
+          if (*(effect_interface_s ***)pAVar7 == param_1) {
+            ppeVar12 = apeStack_9c;
+            iVar8 = DAT_0008ba28 + 0x8b9e0;
+            iVar1 = DAT_0008ba2c + 0x8b9e8;
+            iVar6 = (int)&DAT_0008b9f0 + DAT_0008ba30;
+            goto LAB_0008b810;
+          }
+          iVar2 = iVar2 + 1;
+          pAVar7 = pAVar7 + 0xc;
+        } while (iVar2 < iVar10);
+      }
+      *(effect_interface_s ***)(this + iVar10 * 0xc + 8) = param_1;
+      *(int *)this = *(int *)this + 1;
+      __android_log_print(3,iVar1 + 0x8b898,iVar8 + 0x8b8a0,iVar6 + 0x8b8b8,local_c8[0].tv_sec,
+                          apeStack_9c);
+      iVar8 = *(int *)(this + 0x5c);
+      uVar4 = *(undefined4 *)(iVar8 + 4);
+      uVar9 = *(undefined4 *)(iVar8 + 0x1c);
+      uVar3 = *(undefined4 *)(iVar8 + 0x18);
+      __android_log_print(3,iVar1 + 0x8b898,DAT_0008ba10 + 0x8b8d4,iVar6 + 0x8b8b8,uVar3,uVar4,uVar9
+                         );
+      iVar6 = memcmp(local_c8,(void *)(DAT_0008ba14 + 0x8b8fc),0x10);
+      iVar1 = DAT_0008ba1c;
+      iVar10 = 0;
+      if (iVar6 == 0) {
+        this[4] = (AudioPreProcess)0x1;
+        __android_log_print(3,iVar1 + 0x8b924,DAT_0008ba18 + 0x8b92c,*(undefined4 *)(this + 0x48),
+                            uVar3,uVar4,uVar9);
+        uVar5 = extraout_r1;
+        if (*(int *)(this + 0x48) == 0) {
+          __android_log_print(3,DAT_0008ba20 + 0x8b950,DAT_0008ba24 + 0x8b94c);
+          uVar11 = start_echo_reference
+                             (this,extraout_r1_00,*(undefined4 *)(*(int *)(this + 0x5c) + 0x18),
+                              *(undefined4 *)(*(int *)(this + 0x5c) + 0x1c));
+          uVar5 = (uint)((ulonglong)uVar11 >> 0x20);
+          *(int *)(this + 0x48) = (int)uVar11;
+        }
+        in_configure_reverse(this,uVar5,*(uint *)(*(int *)(this + 0x5c) + 0x1c));
+      }
+    }
+  }
+  else {
+    iVar6 = DAT_0008ba38 + 0x8b80c;
+    iVar8 = DAT_0008ba3c + 0x8b810;
+    iVar1 = DAT_0008ba34 + 0x8b814;
+LAB_0008b810:
+    __android_log_print(3,iVar1,iVar6,iVar8,ppeVar12);
+    iVar10 = -0x26;
+  }
+  __android_log_print(3,DAT_0008ba44 + 0x8b98c,DAT_0008ba48 + 0x8b990,DAT_0008ba40 + 0x8b998,iVar10)
+  ;
+  pthread_mutex_unlock((pthread_mutex_t *)(this + 0x4c));
+  iVar1 = **(int **)(DAT_0008ba4c + 0x8b9b4) - local_1c;
+  if (iVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION start_echo_reference 0008ba50 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioPreProcess::start_echo_reference(audio_format_t, unsigned int, unsigned int) */
+
+undefined4 __thiscall
+android::AudioPreProcess::start_echo_reference
+          (AudioPreProcess *this,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int iVar4;
+  AudioPreProcess *pAVar5;
+  undefined4 uVar6;
+  
+  iVar3 = DAT_0008bbb0 + 0x8ba78;
+  pAVar5 = this + 0x48;
+  iVar4 = DAT_0008bbac + 0x8ba84;
+  __android_log_print(3,iVar3,DAT_0008bbb4 + 0x8ba9c,iVar4,param_3,param_4,*(undefined4 *)pAVar5);
+  clear_echo_reference(this,*(echo_reference_itfe **)pAVar5);
+  iVar1 = DAT_0008bbb8;
+  *(undefined4 *)(this + 0x50) = param_3;
+  *(undefined4 *)(this + 0x54) = param_4;
+  __android_log_print(3,iVar3,iVar1 + 0x8bac4,2,param_4);
+  __android_log_print(3,iVar3,DAT_0008bbbc + 0x8baec,iVar4,2,param_4);
+  uVar6 = 2;
+  iVar1 = create_echo_reference(1,param_3,param_4,1,2,param_4,pAVar5);
+  if (iVar1 == 0) {
+    iVar4 = DAT_0008bbcc + 0x8bb4c;
+    uVar6 = *(undefined4 *)pAVar5;
+    iVar1 = DAT_0008bbd0 + 0x8bb54;
+    __android_log_print(3,iVar1,DAT_0008bbd4 + 0x8bb5c,iVar4,uVar6);
+    iVar3 = DAT_0008bbd8 + 0x8bb7c;
+    uVar2 = 3;
+  }
+  else {
+    iVar3 = DAT_0008bbc4 + 0x8bb2c;
+    iVar4 = DAT_0008bbc8 + 0x8bb30;
+    iVar1 = DAT_0008bbc0 + 0x8bb34;
+    uVar2 = 5;
+  }
+  __android_log_print(uVar2,iVar1,iVar3,iVar4,uVar6);
+  __android_log_print(3,DAT_0008bbdc + 0x8bb9c,DAT_0008bbe0 + 0x8bb94,DAT_0008bbe4 + 0x8bb98);
+  return *(undefined4 *)pAVar5;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION SetAudioCommand 00090fa4 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAHardware::SetAudioCommand(int, int) */
+
+undefined4 __thiscall
+android::AudioALSAHardware::SetAudioCommand(AudioALSAHardware *this,int param_1,int param_2)
+
+{
+  AudioALSAHardware *this_00;
+  int iVar1;
+  undefined4 uVar2;
+  int *piVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  code *pcVar7;
+  
+  iVar1 = param_1;
+  iVar6 = param_2;
+  this_00 = (AudioALSAHardware *)
+            __android_log_print(3,DAT_0009158c + 0x90fcc,DAT_00091590 + 0x90fd0,
+                                DAT_00091588 + 0x90fd4,param_1,param_2);
+  iVar4 = DAT_00091594;
+  if (0x9f < param_1) {
+    if (param_1 < 0x211) {
+      if (param_1 < 0xa4) {
+        if (param_1 == 0xa0) {
+          __android_log_print(3,DAT_000915d0 + 0x91258,DAT_000915d4 + 0x91254,param_2,iVar1,iVar6);
+          if (param_2 != 0) {
+            property_set(DAT_000915d8 + 0x91274,DAT_000915dc + 0x91278);
+            return 0;
+          }
+          property_set(DAT_000915e0 + 0x914f0,DAT_000915e4 + 0x914f4);
+          return 0;
+        }
+        if (param_1 == 0xa2) {
+          __android_log_print(3,DAT_000915c8 + 0x91134,DAT_000915cc + 0x91130,param_2,iVar1,iVar6);
+          if (param_2 != 0) {
+            AudioSpeechEnhanceInfo::SetForceMagiASR(*(AudioSpeechEnhanceInfo **)(this + 8),true);
+            return 0;
+          }
+          AudioSpeechEnhanceInfo::SetForceMagiASR(*(AudioSpeechEnhanceInfo **)(this + 8),false);
+          return 0;
+        }
+      }
+      else {
+        if (param_1 == 0xa4) {
+          __android_log_print(3,DAT_000915c0 + 0x912cc,DAT_000915c4 + 0x912c8,param_2,iVar1,iVar6);
+          AudioSpeechEnhanceInfo::SetForceAECRec
+                    (*(AudioSpeechEnhanceInfo **)(this + 8),param_2 != 0);
+          return 0;
+        }
+        if (param_1 == 0x210) {
+          __android_log_print(3,DAT_000915b8 + 0x911a4,DAT_000915bc + 0x911a0);
+          piVar3 = (int *)AudioALSAHardwareResourceManager::getInstance();
+          pcVar7 = *(code **)(*piVar3 + 100);
+          goto LAB_000912a0;
+        }
+      }
+      goto switchD_00091008_caseD_5f;
+    }
+    if (param_1 < 0x221) {
+      if (param_1 == 0x211) {
+        __android_log_print(3,DAT_000915b0 + 0x91290,DAT_000915b4 + 0x9128c);
+        piVar3 = (int *)AudioALSAHardwareResourceManager::getInstance();
+        pcVar7 = *(code **)(*piVar3 + 0x68);
+LAB_000912a0:
+        (*pcVar7)(piVar3,param_2 != 0);
+        return 0;
+      }
+      if (param_1 != 0x220) goto switchD_00091008_caseD_5f;
+      iVar5 = DAT_000915ac + 0x9117c;
+      iVar4 = DAT_000915a8 + 0x91180;
+    }
+    else {
+      if (param_1 != 0x221) {
+        iVar1 = 0x222;
+        if (param_1 != 0x222) {
+          iVar1 = 0x502;
+        }
+        if (param_1 == 0x222 || param_1 == iVar1) {
+          iVar6 = DAT_00091598 + 0x910cc;
+          iVar1 = DAT_0009159c + 0x910d0;
+          *(int *)(this + 0x398) = param_2;
+          __android_log_print(3,iVar4 + 0x910d8,iVar1,iVar6,param_1,param_2);
+          return 0;
+        }
+        goto switchD_00091008_caseD_5f;
+      }
+      iVar5 = DAT_000915a4 + 0x9123c;
+      iVar4 = DAT_000915a0 + 0x91240;
+    }
+    goto LAB_000914b0;
+  }
+  if (param_1 < 0x22) {
+    if (param_1 == 1 || param_1 == 0x20) {
+      iVar4 = 0;
+    }
+    else {
+      if (param_1 != 0x21) goto switchD_00091008_caseD_5f;
+      iVar4 = 1;
+    }
+LAB_000914c0:
+    UpdateOutputFIR(this_00,iVar4,param_2);
+    return 0;
+  }
+  switch(param_1) {
+  case 0x5e:
+    __android_log_print(3,DAT_00091668 + 0x91064,DAT_0009166c + 0x91060,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091678 + 0x91508,DAT_0009167c + 0x9150c);
+    }
+    else {
+      property_set(DAT_00091670 + 0x91080,DAT_00091674 + 0x91084);
+    }
+    break;
+  case 0x5f:
+  case 100:
+  case 0x66:
+  case 0x68:
+  case 0x6a:
+  case 0x6c:
+    goto switchD_00091008_caseD_5f;
+  case 0x60:
+    iVar4 = DAT_00091690 + 0x912fc;
+    __android_log_print(3,iVar4,DAT_00091694 + 0x91304,param_2,iVar1,iVar6);
+    AudioALSAStreamManager::SetSpeechVmEnable(*(AudioALSAStreamManager **)(this + 4),param_2);
+    iVar5 = DAT_00091698 + 0x91324;
+    goto LAB_000914b0;
+  case 0x61:
+    iVar5 = DAT_0009168c + 0x91338;
+    iVar4 = DAT_00091688 + 0x9133c;
+    goto LAB_000914b0;
+  case 0x62:
+    __android_log_print(3,DAT_00091680 + 0x91354,DAT_00091684 + 0x91350,param_2,iVar1,iVar6);
+    piVar3 = (int *)AudioALSAHardwareResourceManager::getInstance();
+    (**(code **)(*piVar3 + 0x94))(piVar3,1);
+    break;
+  case 99:
+    __android_log_print(3,DAT_00091650 + 0x91388,DAT_00091654 + 0x91384,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091660 + 0x91520,DAT_00091664 + 0x91524);
+    }
+    else {
+      property_set(DAT_00091658 + 0x913a4,DAT_0009165c + 0x913a8);
+    }
+    break;
+  case 0x65:
+    __android_log_print(3,DAT_00091638 + 0x913c4,DAT_0009163c + 0x913c0,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091648 + 0x91538,DAT_0009164c + 0x9153c);
+    }
+    else {
+      property_set(DAT_00091640 + 0x913e0,DAT_00091644 + 0x913e4);
+    }
+    break;
+  case 0x67:
+    __android_log_print(3,DAT_00091620 + 0x91400,DAT_00091624 + 0x913fc,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091630 + 0x91550,DAT_00091634 + 0x91554);
+    }
+    else {
+      property_set(DAT_00091628 + 0x9141c,DAT_0009162c + 0x91420);
+    }
+    break;
+  case 0x69:
+    __android_log_print(3,DAT_00091608 + 0x9143c,DAT_0009160c + 0x91438,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091618 + 0x91568,DAT_0009161c + 0x9156c);
+    }
+    else {
+      property_set(DAT_00091610 + 0x91458,DAT_00091614 + 0x9145c);
+    }
+    break;
+  case 0x6b:
+    __android_log_print(3,DAT_000915f0 + 0x91478,DAT_000915f4 + 0x91474,param_2,iVar1,iVar6);
+    if (param_2 == 0) {
+      property_set(DAT_00091600 + 0x91580,DAT_00091604 + 0x91584);
+    }
+    else {
+      property_set(DAT_000915f8 + 0x91494,DAT_000915fc + 0x91498);
+    }
+    break;
+  case 0x6d:
+    iVar5 = DAT_000915ec + 0x914ac;
+    iVar4 = DAT_000915e8 + 0x914b0;
+LAB_000914b0:
+    __android_log_print(3,iVar4,iVar5,param_2,iVar1,iVar6);
+    break;
+  default:
+    if (param_1 == 0x22) {
+      iVar4 = 2;
+      this_00 = (AudioALSAHardware *)0xffffffc4;
+      goto LAB_000914c0;
+    }
+    if (param_1 == 0x50) {
+      (**(code **)(**(int **)(this + 0xc) + 0xc))();
+      pcVar7 = *(code **)(*(int *)this + 0x10);
+      uVar2 = (**(code **)(**(int **)(this + 0xc) + 0x14))();
+      (*pcVar7)(this,uVar2);
+      return 0;
+    }
+    goto switchD_00091008_caseD_5f;
+  }
+  return 0;
+switchD_00091008_caseD_5f:
+  __android_log_print(5,DAT_000916a0 + 0x91214,DAT_000916a4 + 0x91218,DAT_0009169c + 0x91220,param_1
+                      ,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION setMode 0008d6f8 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAHardware::setMode(int) */
+
+void __thiscall android::AudioALSAHardware::setMode(AudioALSAHardware *this,int param_1)
+
+{
+  __android_log_print(3,DAT_0008d744 + 0x8d71c,DAT_0008d748 + 0x8d720,DAT_0008d740 + 0x8d728,param_1
+                     );
+  (*(code *)PTR_setMode_000f4370)(*(undefined4 *)(this + 4),param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION setParameters 000575e0 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAStreamIn::setParameters(android::String8 const&) */
+
+void __thiscall android::AudioALSAStreamIn::setParameters(AudioALSAStreamIn *this,String8 *param_1)
+
+{
+  bool bVar1;
+  uint uVar2;
+  ushort uVar3;
+  int iVar4;
+  AudioALSAStreamIn *pAVar5;
+  undefined4 local_50;
+  uint local_4c;
+  String8 aSStack_48 [4];
+  String8 aSStack_44 [4];
+  AudioParameter aAStack_40 [16];
+  int local_30;
+  timespec local_24;
+  int local_1c;
+  
+  local_1c = **(int **)(DAT_00057910 + 0x575fc);
+  AudioParameter::AudioParameter(aAStack_40,param_1);
+  android::String8::String8(aSStack_44,(char *)**(undefined4 **)(DAT_00057914 + 0x57618));
+  android::String8::String8(aSStack_48,(char *)**(undefined4 **)(DAT_00057918 + 0x5762c));
+  local_4c = 0;
+  iVar4 = AudioParameter::getInt(aAStack_40,aSStack_44,(int *)&local_4c);
+  if (iVar4 == 0) {
+    AudioParameter::remove(aAStack_40,(char *)aSStack_44);
+    pAVar5 = this + 0x10;
+    DataMemoryBarrier(0xb);
+    do {
+      bVar1 = (bool)hasExclusiveAccess(pAVar5);
+    } while (!bVar1);
+    *(int *)pAVar5 = *(int *)pAVar5 + 1;
+    clock_gettime(0,&local_24);
+    iVar4 = local_24.tv_sec + 3;
+    if (999999999 < local_24.tv_nsec) {
+      local_24.tv_nsec = local_24.tv_nsec + -1000000000;
+      iVar4 = local_24.tv_sec + 4;
+    }
+    local_24.tv_sec = iVar4;
+    iVar4 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0xc),&local_24);
+    if (iVar4 != 0) {
+      __android_log_print(6,0,DAT_0005791c + 0x576ec,0x46);
+    }
+    *(uint *)(this + 0x44) = local_4c;
+    if ((*(ushort *)(this + 0xfe) & 0xff) == 0) {
+      uVar3 = *(ushort *)(this + 0xfe) >> 8;
+    }
+    else {
+      __android_log_print(3,DAT_00057920 + 0x57720,DAT_00057924 + 0x57718,DAT_00057928 + 0x5771c);
+      *(undefined4 *)(this + 0x44) = 0x51;
+      uVar3 = (ushort)(byte)this[0xff];
+    }
+    if (uVar3 != 0) {
+      __android_log_print(3,DAT_0005792c + 0x5775c,DAT_00057930 + 0x57754,DAT_00057934 + 0x57758);
+      *(undefined4 *)(this + 0x44) = 0x52;
+    }
+    DataMemoryBarrier(0xb);
+    do {
+      bVar1 = (bool)hasExclusiveAccess(pAVar5);
+    } while (!bVar1);
+    *(int *)pAVar5 = *(int *)pAVar5 + -1;
+    pthread_mutex_unlock((pthread_mutex_t *)(this + 0xc));
+  }
+  iVar4 = AudioParameter::getInt(aAStack_40,aSStack_48,(int *)&local_4c);
+  if (iVar4 == 0) {
+    AudioParameter::remove(aAStack_40,(char *)aSStack_48);
+    pAVar5 = this + 0x10;
+    DataMemoryBarrier(0xb);
+    do {
+      bVar1 = (bool)hasExclusiveAccess(pAVar5);
+    } while (!bVar1);
+    *(int *)pAVar5 = *(int *)pAVar5 + 1;
+    clock_gettime(0,&local_24);
+    iVar4 = local_24.tv_sec + 3;
+    if (999999999 < local_24.tv_nsec) {
+      local_24.tv_nsec = local_24.tv_nsec + -1000000000;
+      iVar4 = local_24.tv_sec + 4;
+    }
+    local_24.tv_sec = iVar4;
+    iVar4 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0xc),&local_24);
+    if (iVar4 != 0) {
+      __android_log_print(6,0,DAT_00057938 + 0x57838,0x46);
+    }
+    uVar2 = local_4c;
+    iVar4 = AudioALSAStreamManager::routingInputDevice
+                      (*(AudioALSAStreamManager **)(this + 4),this,*(uint *)(this + 0x40),local_4c);
+    if (iVar4 != 0) {
+      *(uint *)(this + 0x40) = uVar2;
+    }
+    DataMemoryBarrier(0xb);
+    do {
+      bVar1 = (bool)hasExclusiveAccess(pAVar5);
+    } while (!bVar1);
+    *(int *)pAVar5 = *(int *)pAVar5 + -1;
+    pthread_mutex_unlock((pthread_mutex_t *)(this + 0xc));
+  }
+  if (local_30 != 0) {
+    AudioParameter::toString();
+    __android_log_print(5,DAT_0005793c + 0x578c4,DAT_00057944 + 0x578b8,DAT_00057940 + 0x578b0,
+                        local_30,local_50);
+    android::String8::~String8((String8 *)&local_50);
+  }
+  android::String8::~String8(aSStack_48);
+  android::String8::~String8(aSStack_44);
+  AudioParameter::~AudioParameter(aAStack_40);
+  iVar4 = **(int **)(DAT_00057948 + 0x578fc) - local_1c;
+  if (iVar4 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar4);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION removeAudioEffect 00057e38 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSAStreamIn::removeAudioEffect(effect_interface_s**) */
+
+void __thiscall
+android::AudioALSAStreamIn::removeAudioEffect(AudioALSAStreamIn *this,effect_interface_s **param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  int iVar9;
+  int iVar10;
+  int iVar11;
+  int iVar12;
+  bool bVar13;
+  effect_interface_s **ppeVar14;
+  timespec local_dc;
+  undefined1 auStack_d4 [44];
+  effect_interface_s *apeStack_a8 [32];
+  int local_28;
+  
+  local_28 = **(int **)(DAT_00058150 + 0x57e5c);
+  ppeVar14 = param_1;
+  __android_log_print(3,DAT_00058154 + 0x57e68,DAT_00058158 + 0x57e60,DAT_0005815c + 0x57e70,param_1
+                     );
+  if (*(int *)(this + 0x15c) < 1) {
+    iVar3 = DAT_000581b4 + 0x57f0c;
+    iVar5 = DAT_000581b8 + 0x57f10;
+    iVar1 = DAT_000581b0 + 0x57f14;
+  }
+  else {
+    iVar1 = (**(code **)(*param_1 + 8))(param_1,auStack_d4);
+    ppeVar14 = apeStack_a8;
+    uVar2 = *(undefined4 *)(this + 0x15c);
+    __android_log_print(3,DAT_00058164 + 0x57ebc,DAT_00058168 + 0x57ecc,DAT_00058160 + 0x57ed0,
+                        ppeVar14,uVar2);
+    if (iVar1 == 0) {
+      clock_gettime(0,&local_dc);
+      iVar1 = local_dc.tv_sec + 3;
+      if (999999999 < local_dc.tv_nsec) {
+        local_dc.tv_nsec = local_dc.tv_nsec + -1000000000;
+        iVar1 = local_dc.tv_sec + 4;
+      }
+      local_dc.tv_sec = iVar1;
+      iVar1 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0xc),&local_dc);
+      if (iVar1 != 0) {
+        __android_log_print(6,0,DAT_00058178 + 0x57f8c,0x46,ppeVar14,uVar2);
+      }
+      if (*(int *)(this + 0x15c) < 1) {
+LAB_00058070:
+        iVar1 = DAT_00058198 + 0x58084;
+        iVar3 = DAT_0005819c + 0x58088;
+        iVar5 = DAT_00058194 + 0x5808c;
+      }
+      else {
+        bVar13 = false;
+        iVar1 = -0x16;
+        iVar8 = DAT_00058190 + 0x57fb8;
+        iVar10 = DAT_00058188 + 0x57fc0;
+        iVar9 = DAT_0005817c + 0x57fc8;
+        iVar7 = DAT_0005818c + 0x57fd0;
+        iVar11 = 0;
+        iVar3 = DAT_00058184 + 0x57fdc;
+        iVar5 = DAT_00058180 + 0x57fe4;
+        do {
+          if (bVar13) {
+            *(effect_interface_s ***)(this + iVar11 * 4 + 0x14c) =
+                 *(effect_interface_s ***)(this + iVar11 * 4 + 0x150);
+            *(undefined4 *)(this + iVar11 * 4 + 0x114) = *(undefined4 *)(this + iVar11 * 4 + 0x118);
+            iVar12 = iVar10;
+            iVar4 = iVar7;
+            iVar6 = iVar8;
+            ppeVar14 = (effect_interface_s **)(iVar11 + -1);
+LAB_00058040:
+            __android_log_print(3,iVar12,iVar4,iVar6,iVar11,ppeVar14);
+            iVar1 = 0;
+          }
+          else {
+            iVar12 = iVar5;
+            iVar4 = iVar3;
+            iVar6 = iVar9;
+            ppeVar14 = param_1;
+            if (*(effect_interface_s ***)(this + iVar11 * 4 + 0x150) == param_1) goto LAB_00058040;
+          }
+          iVar12 = *(int *)(this + 0x15c);
+          bVar13 = iVar1 == 0;
+          iVar11 = iVar11 + 1;
+        } while (iVar11 < iVar12);
+        if (iVar1 != 0) goto LAB_00058070;
+        iVar1 = memcmp(auStack_d4,(void *)(DAT_000581a0 + 0x5809c),0x10);
+        if (iVar1 == 0) {
+          if (this[0x28] == (AudioALSAStreamIn)0x0) {
+            (**(code **)(*(int *)this + 0x48))(this);
+            iVar12 = *(int *)(this + 0x15c);
+          }
+          this[0x114] = (AudioALSAStreamIn)0x0;
+        }
+        *(int *)(this + 0x15c) = iVar12 + -1;
+        iVar3 = DAT_000581a8;
+        iVar1 = DAT_000581a4;
+        *(undefined4 *)(this + (iVar12 + -1) * 4 + 0x150) = 0;
+        iVar5 = DAT_000581ac;
+        iVar1 = iVar1 + 0x580f8;
+        iVar7 = *(int *)(this + 0x110);
+        iVar3 = iVar3 + 0x58100;
+        *(int *)(this + 0x110) = iVar7 + -1;
+        *(undefined4 *)(this + (iVar7 + -1) * 4 + 0x118) = 0;
+        iVar5 = iVar5 + 0x58118;
+        this[0x10c] = (AudioALSAStreamIn)0x1;
+      }
+      __android_log_print(3,iVar5,iVar1,iVar3);
+      pthread_mutex_unlock((pthread_mutex_t *)(this + 0xc));
+      goto LAB_0005812c;
+    }
+    iVar3 = DAT_00058170 + 0x57ef0;
+    iVar5 = DAT_00058174 + 0x57ef4;
+    iVar1 = DAT_0005816c + 0x57ef8;
+  }
+  __android_log_print(3,iVar1,iVar3,iVar5,ppeVar14);
+LAB_0005812c:
+  iVar1 = **(int **)(DAT_000581bc + 0x5813c) - local_28;
+  if (iVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION removeAudioEffect 0008b360 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioPreProcess::removeAudioEffect(effect_interface_s**) */
+
+void __thiscall
+android::AudioPreProcess::removeAudioEffect(AudioPreProcess *this,effect_interface_s **param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
+  int iVar8;
+  echo_reference_itfe *peVar9;
+  int iVar10;
+  int iVar11;
+  AudioPreProcess *pAVar12;
+  int iVar13;
+  bool bVar14;
+  effect_interface_s **ppeVar15;
+  __time_t _Var16;
+  undefined1 *puVar17;
+  timespec local_d4 [5];
+  undefined1 auStack_a8 [128];
+  int local_28;
+  
+  local_28 = **(int **)(DAT_0008b6c0 + 0x8b384);
+  ppeVar15 = param_1;
+  __android_log_print(3,DAT_0008b6c4 + 0x8b390,DAT_0008b6c8 + 0x8b388,DAT_0008b6cc + 0x8b398,param_1
+                     );
+  clock_gettime(0,local_d4);
+  iVar1 = local_d4[0].tv_sec + 3;
+  if (999999999 < local_d4[0].tv_nsec) {
+    local_d4[0].tv_nsec = local_d4[0].tv_nsec + -1000000000;
+    iVar1 = local_d4[0].tv_sec + 4;
+  }
+  local_d4[0].tv_sec = iVar1;
+  iVar1 = pthread_mutex_timedlock((pthread_mutex_t *)(this + 0x4c),local_d4);
+  if (iVar1 != 0) {
+    __android_log_print(6,0,DAT_0008b6d0 + 0x8b414,0x46,ppeVar15);
+  }
+  if (*(int *)this < 1) {
+    __android_log_print(3,DAT_0008b718 + 0x8b668,DAT_0008b71c + 0x8b660,DAT_0008b720 + 0x8b664,
+                        ppeVar15);
+    iVar1 = -0x26;
+  }
+  else {
+    pAVar12 = this + 8;
+    bVar14 = false;
+    iVar11 = DAT_0008b6e4 + 0x8b440;
+    iVar8 = DAT_0008b6e0 + 0x8b448;
+    iVar1 = -0x16;
+    iVar10 = DAT_0008b6e8 + 0x8b458;
+    iVar4 = DAT_0008b6d8 + 0x8b460;
+    iVar13 = 0;
+    iVar5 = DAT_0008b6dc + 0x8b46c;
+    iVar2 = DAT_0008b6d4 + 0x8b470;
+    do {
+      if (bVar14) {
+        *(effect_interface_s ***)(pAVar12 + -0xc) = *(effect_interface_s ***)pAVar12;
+        *(undefined4 *)(pAVar12 + -4) = *(undefined4 *)(pAVar12 + 8);
+        *(undefined4 *)(pAVar12 + -8) = *(undefined4 *)(pAVar12 + 4);
+        iVar3 = iVar8;
+        iVar6 = iVar11;
+        iVar7 = iVar10;
+LAB_0008b4d0:
+        __android_log_print(3,iVar3,iVar6,iVar7,iVar13);
+        iVar1 = 0;
+      }
+      else {
+        iVar3 = iVar4;
+        iVar6 = iVar5;
+        iVar7 = iVar2;
+        if (*(effect_interface_s ***)pAVar12 == param_1) goto LAB_0008b4d0;
+      }
+      bVar14 = iVar1 == 0;
+      pAVar12 = pAVar12 + 0xc;
+      iVar13 = iVar13 + 1;
+    } while (iVar13 < *(int *)this);
+    if (iVar1 == 0) {
+      iVar1 = *(int *)this + -1;
+      *(int *)this = iVar1;
+      *(undefined4 *)(this + iVar1 * 0xc + 0xc) = 0;
+      *(undefined4 *)(this + *(int *)this * 0xc + 8) = 0;
+      *(undefined4 *)(this + *(int *)this * 0xc + 0x10) = 0;
+      iVar1 = (**(code **)(*param_1 + 8))(param_1,local_d4);
+      if (iVar1 == 0) {
+        puVar17 = auStack_a8;
+        _Var16 = local_d4[0].tv_sec;
+        __android_log_print(3,DAT_0008b6ec + 0x8b588,DAT_0008b6f0 + 0x8b578,DAT_0008b6f4 + 0x8b580,
+                            local_d4[0].tv_sec,puVar17);
+        iVar2 = memcmp(local_d4,(void *)(DAT_0008b6f8 + 0x8b59c),0x10);
+        iVar1 = 0;
+        if (iVar2 == 0) {
+          iVar1 = 0;
+          this[4] = (AudioPreProcess)0x0;
+          peVar9 = *(echo_reference_itfe **)(this + 0x48);
+          if (peVar9 != (echo_reference_itfe *)0x0) {
+            __android_log_print(3,DAT_0008b6fc + 0x8b5dc,DAT_0008b700 + 0x8b5d4,
+                                DAT_0008b704 + 0x8b5d8,_Var16,puVar17);
+            if ((*(echo_reference_itfe **)(this + 0x48) != (echo_reference_itfe *)0x0) &&
+               (*(echo_reference_itfe **)(this + 0x48) == peVar9)) {
+              (**(code **)peVar9)(peVar9,0);
+              clear_echo_reference(this,peVar9);
+            }
+            iVar2 = DAT_0008b708 + 0x8b624;
+            __android_log_print(3,iVar2,DAT_0008b70c + 0x8b630,DAT_0008b710 + 0x8b628,_Var16,puVar17
+                               );
+            __android_log_print(3,iVar2,DAT_0008b714 + 0x8b644);
+          }
+        }
+      }
+    }
+  }
+  __android_log_print(3,DAT_0008b728 + 0x8b684,DAT_0008b72c + 0x8b688,DAT_0008b724 + 0x8b690,iVar1);
+  pthread_mutex_unlock((pthread_mutex_t *)(this + 0x4c));
+  iVar1 = **(int **)(DAT_0008b730 + 0x8b6ac) - local_28;
+  if (iVar1 != 0) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(iVar1);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION remove_echo_reference 0008c464 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioPreProcess::remove_echo_reference(echo_reference_itfe*) */
+
+void __thiscall
+android::AudioPreProcess::remove_echo_reference(AudioPreProcess *this,echo_reference_itfe *param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  
+  iVar2 = DAT_0008c4b8 + 0x8c480;
+  iVar1 = DAT_0008c4bc + 0x8c484;
+  __android_log_print(3,iVar1,DAT_0008c4c0 + 0x8c48c,iVar2,param_1);
+  __android_log_print(3,iVar1,DAT_0008c4c4 + 0x8c4ac,iVar2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION copyEchoRefCaptureDataToClient 0009f830 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::AudioALSACaptureDataClient::copyEchoRefCaptureDataToClient(android::RingBuf) */
+
+void android::AudioALSACaptureDataClient::copyEchoRefCaptureDataToClient
+               (int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+               undefined4 param_5)
+
+{
+  uint uVar1;
+  uint uVar2;
+  short ****ppppsVar3;
+  short ****ppppsVar4;
+  char *pcVar5;
+  char *pcVar6;
+  int *piVar7;
+  AudioPreProcess *this;
+  short ****ppppsVar8;
+  int iVar9;
+  short ****ppppsVar10;
+  RingBuf *pRVar11;
+  uint uVar12;
+  RingBuf *pRVar13;
+  bool bVar14;
+  undefined4 local_70;
+  undefined4 local_6c;
+  short ***local_64;
+  undefined4 local_60;
+  undefined4 local_5c;
+  short ***local_54;
+  short ***local_50;
+  undefined4 local_4c;
+  undefined4 local_48;
+  undefined1 local_44;
+  int local_40;
+  int iStack_3c;
+  short ***local_38;
+  undefined4 local_34;
+  undefined4 uStack_30;
+  undefined4 uStack_2c;
+  undefined4 uStack_28;
+  int local_24;
+  
+  local_24 = **(int **)(DAT_0009fcd4 + 0x9f84c);
+  uStack_28 = param_5;
+  pRVar11 = (RingBuf *)((int)&__DT_SYMTAB[0x9c].st_value + param_1);
+  local_34 = param_2;
+  uStack_30 = param_3;
+  uStack_2c = param_4;
+  uVar1 = RingBuf_getFreeSpace(pRVar11);
+  uVar2 = RingBuf_getDataCount((RingBuf *)&local_34);
+  if (uVar1 < uVar2) {
+    __android_log_print(6,DAT_0009fcdc + 0x9f894,DAT_0009fce0 + 0x9f8a0,DAT_0009fcd8 + 0x9f8a4,uVar1
+                        ,uVar2);
+    uVar2 = uVar1;
+  }
+  RingBuf_copyFromRingBuf(pRVar11,(RingBuf *)&local_34,uVar2);
+  ppppsVar3 = (short ****)RingBuf_getDataCount(pRVar11);
+  pRVar13 = (RingBuf *)((int)&__DT_SYMTAB[0x9d].st_value + param_1);
+  ppppsVar4 = (short ****)RingBuf_getFreeSpace(pRVar13);
+  piVar7 = (int *)((int)&__DT_SYMTAB[0x9e].st_value + param_1);
+  if (*piVar7 == 0) {
+    if (ppppsVar4 < ppppsVar3) {
+      __android_log_print(5,DAT_0009fcf4 + 0x9f9b8,DAT_0009fcf8 + 0x9f9bc,DAT_0009fcf0 + 0x9f9c4,
+                          ppppsVar4,ppppsVar3);
+      RingBuf_copyFromRingBuf(pRVar13,pRVar11,(int)ppppsVar4);
+    }
+    else {
+      RingBuf_copyFromRingBuf(pRVar13,pRVar11,(int)ppppsVar3);
+    }
+  }
+  else {
+    pcVar5 = operator_new__((uint)ppppsVar3);
+    RingBuf_copyToLinear(pcVar5,pRVar11,(int)ppppsVar3);
+    pcVar6 = operator_new__((uint)ppppsVar4);
+    piVar7 = (int *)*piVar7;
+    local_54 = (short ***)ppppsVar3;
+    local_38 = (short ***)ppppsVar4;
+    (**(code **)(*piVar7 + 0x14))(piVar7,pcVar5,&local_54,pcVar6,&local_38);
+    if ((short ****)local_54 != (short ****)0x0) {
+      __android_log_print(5,DAT_0009fce8 + 0x9f96c,DAT_0009fcec + 0x9f974,DAT_0009fce4 + 0x9f968,
+                          local_54);
+    }
+    RingBuf_copyFromLinear(pRVar13,pcVar6,(int)local_38);
+    operator_delete__(pcVar5);
+    operator_delete__(pcVar6);
+  }
+  ppppsVar3 = (short ****)RingBuf_getDataCount(pRVar13);
+  ppppsVar4 = operator_new__((uint)ppppsVar3);
+  RingBuf_copyToLinear((char *)ppppsVar4,pRVar13,(int)ppppsVar3);
+  iVar9 = *(int *)(param_1 + 0x20);
+  uVar2 = (uint)*(byte *)(iVar9 + 0xc);
+  bVar14 = (*(byte *)(iVar9 + 0xc) & 2) != 0;
+  if (bVar14) {
+    uVar2 = 0;
+  }
+  if (bVar14 && uVar2 != (uint)ppppsVar3 >> 1) {
+    uVar2 = (uint)ppppsVar3 >> 1;
+    ppppsVar10 = ppppsVar4;
+    do {
+      uVar12 = (uint)*(short *)ppppsVar10;
+      uVar1 = uVar12;
+      if ((int)uVar12 < -0x2000) {
+        uVar1 = 0xe000;
+      }
+      if (0x1fff < (int)uVar12) {
+        uVar1 = 0x1fff;
+      }
+      uVar2 = uVar2 - 1;
+      *(char *)ppppsVar10 = (char)(uVar1 << 2);
+      *(char *)((int)ppppsVar10 + 1) = (char)(uVar1 >> 6);
+      ppppsVar10 = (short ****)((int)ppppsVar10 + 2);
+    } while (uVar2 != 0);
+  }
+  this = *(AudioPreProcess **)((int)&__DT_SYMTAB[0x9b].st_value + param_1);
+  if (0 < *(int *)this) {
+    AudioPreProcess::WriteEchoRefData
+              (this,ppppsVar4,(uint)ppppsVar3,
+               (time_info_struct_t *)(*(int *)(&__DT_SYMTAB[0x9b].st_info + param_1) + 0xf4));
+    iVar9 = *(int *)(param_1 + 0x20);
+  }
+  if ((*(char *)(iVar9 + 0x3c) != '\0') && ((&__DT_SYMTAB[0x90].st_other)[param_1] == 0)) {
+    piVar7 = *(int **)((int)&__DT_SYMTAB[0x9e].st_size + param_1);
+    if (piVar7 == (int *)0x0) {
+      local_54 = (short ***)ppppsVar4;
+      local_50 = (short ***)ppppsVar3;
+      GetSystemTime((android *)&local_60,false);
+      local_48 = local_5c;
+      local_4c = local_60;
+      local_44 = 1;
+      iVar9 = *(int *)(&__DT_SYMTAB[0x9b].st_info + param_1);
+      ppppsVar3 = &local_54;
+      bVar14 = *(int *)(iVar9 + 0xf4) == 0;
+      if (bVar14) {
+        ppppsVar3 = *(short *****)(iVar9 + 0xf8);
+      }
+      if (bVar14 && ppppsVar3 == (short ****)0x0) {
+        __android_log_print(6,DAT_0009fd14 + 0x9fc8c,DAT_0009fd18 + 0x9fc84,DAT_0009fd1c + 0x9fc88);
+        iStack_3c = 0;
+        local_40 = 0;
+      }
+      else {
+        local_40 = *(int *)(iVar9 + 0xf4);
+        iStack_3c = *(int *)(iVar9 + 0xf8) - *(int *)(iVar9 + 0x108);
+        if (iStack_3c < 0) {
+          local_40 = local_40 + -1;
+          iStack_3c = (1000000000 - *(int *)(iVar9 + 0x108)) + *(int *)(iVar9 + 0xf8);
+        }
+      }
+      SPELayer::WriteReferenceBuffer(*(SPELayer **)(param_1 + 0x5c),(InBufferInfo *)&local_54);
+    }
+    else {
+      ppppsVar8 = operator_new__((uint)ppppsVar3);
+      ppppsVar10 = &local_64;
+      local_64 = (short ***)ppppsVar3;
+      local_38 = (short ***)ppppsVar3;
+      (**(code **)(*piVar7 + 0x14))(piVar7,ppppsVar4,&local_38,ppppsVar8,ppppsVar10);
+      if ((short ****)local_38 != (short ****)0x0) {
+        ppppsVar10 = (short ****)local_38;
+        __android_log_print(5,DAT_0009fd00 + 0x9fb1c,DAT_0009fd04 + 0x9fb24,DAT_0009fcfc + 0x9fb18,
+                            local_38);
+      }
+      local_50 = local_64;
+      local_54 = (short ***)ppppsVar8;
+      GetSystemTime((android *)&local_70,false);
+      local_48 = local_6c;
+      local_4c = local_70;
+      local_44 = 1;
+      iVar9 = *(int *)(&__DT_SYMTAB[0x9b].st_info + param_1);
+      ppppsVar3 = &local_54;
+      bVar14 = *(int *)(iVar9 + 0xf4) == 0;
+      if (bVar14) {
+        ppppsVar3 = *(short *****)(iVar9 + 0xf8);
+      }
+      if (bVar14 && ppppsVar3 == (short ****)0x0) {
+        __android_log_print(6,DAT_0009fd08 + 0x9fc48,DAT_0009fd0c + 0x9fc40,DAT_0009fd10 + 0x9fc44,
+                            ppppsVar10);
+        iStack_3c = 0;
+        local_40 = 0;
+      }
+      else {
+        local_40 = *(int *)(iVar9 + 0xf4);
+        iStack_3c = *(int *)(iVar9 + 0xf8) - *(int *)(iVar9 + 0x108);
+        if (iStack_3c < 0) {
+          local_40 = local_40 + -1;
+          iStack_3c = (1000000000 - *(int *)(iVar9 + 0x108)) + *(int *)(iVar9 + 0xf8);
+        }
+      }
+      SPELayer::WriteReferenceBuffer(*(SPELayer **)(param_1 + 0x5c),(InBufferInfo *)&local_54);
+      operator_delete__(ppppsVar8);
+    }
+  }
+  operator_delete__(ppppsVar4);
+  iVar9 = **(int **)(DAT_0009fd20 + 0x9fcc0) - local_24;
+  if (iVar9 == 0) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(iVar9);
+}
+
+ (GhidraScript)  
+INFO  DecompileTargets.java> ===== FUNCTION WriteReferenceBuffer 00084a90 ===== (GhidraScript)  
+INFO  DecompileTargets.java> 
+/* android::SPELayer::WriteReferenceBuffer(android::InBufferInfo*) */
+
+void __thiscall android::SPELayer::WriteReferenceBuffer(SPELayer *this,InBufferInfo *param_1)
+
+{
+  longlong lVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  undefined4 uVar5;
+  bool bVar6;
+  int local_34;
+  uint local_30;
+  int local_2c;
+  uint local_28;
+  int local_24;
+  
+  local_24 = **(int **)(DAT_00084ccc + 0x84aac);
+  pthread_mutex_lock((pthread_mutex_t *)(this + 0x4198));
+  GetSystemTime((android *)&local_2c,false);
+  this[0x41c0] = (SPELayer)0x1;
+  pthread_mutex_lock((pthread_mutex_t *)(this + 0x41a0));
+  pthread_mutex_unlock((pthread_mutex_t *)(this + 0x4198));
+  iVar2 = *(int *)(this + 0xb4);
+  if (((iVar2 == 2) && ((*(uint *)(this + 0xac) & 0xfffffffe) == 2)) ||
+     (this[0x419d] != (SPELayer)0x0)) {
+    __android_log_print(3,DAT_00084cdc + 0x84b40,DAT_00084cd8 + 0x84b44,*(undefined4 *)(param_1 + 4)
+                       );
+    uVar5 = 0;
+LAB_00084b58:
+    AddtoInputBuffer(this,1,param_1,uVar5);
+  }
+  else {
+    bVar6 = iVar2 != 3;
+    if (bVar6) {
+      iVar2 = *(int *)(this + 0xac);
+    }
+    if (bVar6 && iVar2 != 1) {
+      __android_log_print(3,DAT_00084cd4 + 0x84cb0,DAT_00084cd0 + 0x84cb4,
+                          *(undefined4 *)(param_1 + 4));
+      uVar5 = 1;
+      goto LAB_00084b58;
+    }
+  }
+  pthread_mutex_unlock((pthread_mutex_t *)(this + 0x41a0));
+  this[0x41c0] = (SPELayer)0x0;
+  GetSystemTime((android *)&local_34,false);
+  iVar2 = (int)local_28 >> 0x1f;
+  iVar4 = (int)local_30 >> 0x1f;
+  if (local_2c < local_34) {
+    local_34 = local_34 - local_2c;
+    if ((int)local_30 < (int)local_28) {
+      iVar3 = (1000000000 - local_28) + local_30;
+      iVar4 = (iVar4 - (iVar2 + (uint)(1000000000 < local_28))) +
+              (uint)CARRY4(1000000000 - local_28,local_30);
+LAB_00084c18:
+      local_34 = local_34 + -1;
+    }
+    else {
+      iVar3 = local_30 - local_28;
+      iVar4 = iVar4 - (iVar2 + (uint)(local_30 < local_28));
+    }
+  }
+  else {
+    if (local_34 == local_2c) {
+      if ((int)local_30 < (int)local_28) {
+        iVar2 = local_28 - local_30;
+      }
+      else {
+        iVar2 = local_30 - local_28;
+      }
+      lVar1 = (longlong)iVar2;
+      goto LAB_00084c38;
+    }
+    local_34 = local_2c - local_34;
+    if ((int)local_28 < (int)local_30) {
+      iVar3 = (local_28 + 1000000000) - local_30;
+      iVar4 = (iVar2 + (uint)(0xc46535ff < local_28)) -
+              (iVar4 + (uint)(local_28 + 1000000000 < local_30));
+      goto LAB_00084c18;
+    }
+    iVar3 = local_28 - local_30;
+    iVar4 = iVar2 - (iVar4 + (uint)(local_28 < local_30));
+  }
+  lVar1 = (longlong)local_34 * 1000000000 + CONCAT44(iVar4,iVar3);
+LAB_00084c38:
+  if ((int)((ulonglong)lVar1 >> 0x20) != 0 || 20000000 < (uint)lVar1) {
+    __android_log_print(3,DAT_00084ce4 + 0x84c78,DAT_00084ce0 + 0x84c74,DAT_00084ce4,lVar1);
+  }
+  if (**(int **)(DAT_00084ce8 + 0x84c8c) != local_24) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /audio.primary_amazon.mt8163.so (HeadlessAnalyzer)  
