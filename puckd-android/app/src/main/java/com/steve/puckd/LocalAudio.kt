@@ -40,6 +40,13 @@ class LocalAudio(private val context: Context, private val report: (String) -> U
         play(tone)
         if (!cancelled) report("Tone sent to speaker · did you hear it?")
     }
+    fun diagnosticTone(seconds: Int = 10) = runTask {
+        val tone = ShortArray(sampleRate * seconds) { i ->
+            (sin(2.0 * PI * 440 * i / sampleRate) * 4000).toInt().toShort()
+        }
+        play(tone)
+        if (!cancelled) report("Diagnostic tone completed")
+    }
     fun record() = runTask {
         samples = null
         File(context.filesDir, "audio-test.wav").delete()
