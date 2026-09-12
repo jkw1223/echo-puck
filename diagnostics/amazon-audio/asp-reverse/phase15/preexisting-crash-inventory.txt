@@ -1,0 +1,80 @@
+=== tombstones ===
+total 4340
+-rw-r----- 1 tombstoned system 190270 2026-09-11 22:07 tombstone_23
+-rw-r----- 1 tombstoned system 160944 2026-09-11 22:07 tombstone_22
+-rw-r----- 1 tombstoned system 139559 2026-09-11 22:06 tombstone_21
+-rw-r----- 1 tombstoned system 195389 2026-09-11 22:05 tombstone_20
+-rw-r----- 1 tombstoned system 195725 2026-09-11 21:55 tombstone_19
+-rw-r----- 1 tombstoned system 195644 2026-09-11 21:55 tombstone_18
+-rw-r----- 1 tombstoned system 150760 2026-09-11 21:51 tombstone_17
+-rw-r----- 1 tombstoned system 137038 2026-09-11 21:50 tombstone_16
+-rw-r----- 1 tombstoned system 193851 2026-09-11 21:43 tombstone_15
+-rw-r----- 1 tombstoned system 220373 2026-09-11 21:43 tombstone_14
+-rw-r----- 1 tombstoned system 210092 2026-09-11 21:42 tombstone_13
+-rw-r----- 1 tombstoned system 213595 2026-09-11 21:42 tombstone_12
+-rw-r----- 1 tombstoned system 174775 2026-09-11 21:13 tombstone_11
+-rw-r----- 1 tombstoned system 147692 2026-09-11 21:13 tombstone_10
+-rw-r----- 1 tombstoned system 131167 2026-09-11 21:12 tombstone_09
+-rw-r----- 1 tombstoned system 158428 2026-09-11 14:18 tombstone_08
+-rw-r----- 1 tombstoned system 201758 2026-09-11 12:41 tombstone_07
+-rw-r----- 1 tombstoned system 210688 2026-09-11 12:41 tombstone_06
+-rw-r----- 1 tombstoned system 143794 2026-09-11 12:40 tombstone_05
+-rw-r----- 1 tombstoned system 149264 2026-09-11 11:42 tombstone_04
+-rw-r----- 1 tombstoned system 146243 2026-09-07 15:11 tombstone_03
+-rw-r----- 1 tombstoned system 124925 2026-09-07 13:42 tombstone_02
+-rw-r----- 1 tombstoned system 466751 2026-09-06 23:15 tombstone_01
+-rw-r----- 1 tombstoned system 133600 2026-09-05 17:24 tombstone_00
+=== anr ===
+total 0
+=== crash dirs ===
+---/data/tombstones
+drwxrwx--x 2 system system 4096 2026-09-11 22:07 /data/tombstones
+total 4340
+-rw-r----- 1 tombstoned system 190270 2026-09-11 22:07 tombstone_23
+-rw-r----- 1 tombstoned system 160944 2026-09-11 22:07 tombstone_22
+-rw-r----- 1 tombstoned system 139559 2026-09-11 22:06 tombstone_21
+-rw-r----- 1 tombstoned system 195389 2026-09-11 22:05 tombstone_20
+-rw-r----- 1 tombstoned system 195725 2026-09-11 21:55 tombstone_19
+-rw-r----- 1 tombstoned system 195644 2026-09-11 21:55 tombstone_18
+-rw-r----- 1 tombstoned system 150760 2026-09-11 21:51 tombstone_17
+-rw-r----- 1 tombstoned system 137038 2026-09-11 21:50 tombstone_16
+-rw-r----- 1 tombstoned system 193851 2026-09-11 21:43 tombstone_15
+-rw-r----- 1 tombstoned system 220373 2026-09-11 21:43 tombstone_14
+-rw-r----- 1 tombstoned system 210092 2026-09-11 21:42 tombstone_13
+-rw-r----- 1 tombstoned system 213595 2026-09-11 21:42 tombstone_12
+-rw-r----- 1 tombstoned system 174775 2026-09-11 21:13 tombstone_11
+-rw-r----- 1 tombstoned system 147692 2026-09-11 21:13 tombstone_10
+-rw-r----- 1 tombstoned system 131167 2026-09-11 21:12 tombstone_09
+-rw-r----- 1 tombstoned system 158428 2026-09-11 14:18 tombstone_08
+-rw-r----- 1 tombstoned system 201758 2026-09-11 12:41 tombstone_07
+-rw-r----- 1 tombstoned system 210688 2026-09-11 12:41 tombstone_06
+-rw-r----- 1 tombstoned system 143794 2026-09-11 12:40 tombstone_05
+---/data/anr
+drwxrwxr-x 2 system system 4096 2009-12-31 18:45 /data/anr
+total 0
+---/data/system/dropbox
+drwx------ 2 system system 16384 2026-09-11 22:07 /data/system/dropbox
+total 1012
+-rw------- 1 system system  1900 2026-09-11 22:07 system_server_wtf@1789182447996.txt
+-rw------- 1 system system 15080 2026-09-11 22:07 SYSTEM_TOMBSTONE@1789182447076.txt.gz
+-rw------- 1 system system 14889 2026-09-11 22:07 SYSTEM_TOMBSTONE@1789182421842.txt.gz
+-rw------- 1 system system 14871 2026-09-11 22:06 SYSTEM_TOMBSTONE@1789182406022.txt.gz
+-rw------- 1 system system 14937 2026-09-11 22:05 SYSTEM_TOMBSTONE@1789182307628.txt.gz
+-rw------- 1 system system 14948 2026-09-11 21:55 SYSTEM_TOMBSTONE@1789181752684.txt.gz
+-rw------- 1 system system 14901 2026-09-11 21:55 SYSTEM_TOMBSTONE@1789181721199.txt.gz
+-rw------- 1 system system 14941 2026-09-11 21:51 SYSTEM_TOMBSTONE@1789181460661.txt.gz
+-rw------- 1 system system 14896 2026-09-11 21:50 SYSTEM_TOMBSTONE@1789181440183.txt.gz
+-rw------- 1 system system  2247 2026-09-11 21:50 system_server_wtf@1789181415859.txt
+-rw------- 1 system system  2171 2026-09-11 21:50 system_server_wtf@1789181415742.txt
+-rw------- 1 system system  2171 2026-09-11 21:50 system_server_wtf@1789181415723.txt
+-rw------- 1 system system  2171 2026-09-11 21:50 system_server_wtf@1789181415303.txt
+-rw------- 1 system system  1894 2026-09-11 21:50 system_server_wtf@1789181414796.txt
+-rw------- 1 system system   388 2026-09-11 21:50 SYSTEM_AUDIT@1789181413375.txt
+-rw------- 1 system system 17065 2026-09-11 21:50 SYSTEM_LAST_KMSG@1789181413364.txt.gz
+-rw------- 1 system system   354 2026-09-11 21:50 SYSTEM_BOOT@1789181413327.txt
+-rw------- 1 system system  2526 2026-09-11 21:50 system_server_wtf@1789181401894.txt
+-rw------- 1 system system  2526 2026-09-11 21:50 system_server_wtf@1789181401877.txt
+---/data/vendor/tombstones
+drwxrwx--x 3 root root 4096 2009-12-31 18:45 /data/vendor/tombstones
+total 8
+drwxrwx--x 2 wifi wifi 4096 2009-12-31 18:45 wifi

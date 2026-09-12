@@ -1,0 +1,30 @@
+--------- beginning of crash
+09-11 22:07:26.740  3461  3465 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 3465 (HwBinder:3461_2), pid 3461 (audio.service)
+09-11 22:07:26.797  3503  3503 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-11 22:07:26.797  3503  3503 F DEBUG   : LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+09-11 22:07:26.797  3503  3503 F DEBUG   : Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+09-11 22:07:26.797  3503  3503 F DEBUG   : Revision: '0'
+09-11 22:07:26.797  3503  3503 F DEBUG   : ABI: 'arm'
+09-11 22:07:26.798  3503  3503 F DEBUG   : Timestamp: 2026-09-11 22:07:26-0500
+09-11 22:07:26.798  3503  3503 F DEBUG   : pid: 3461, tid: 3465, name: HwBinder:3461_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+09-11 22:07:26.798  3503  3503 F DEBUG   : uid: 1041
+09-11 22:07:26.798  3503  3503 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-11 22:07:26.798  3503  3503 F DEBUG   : Cause: null pointer dereference
+09-11 22:07:26.798  3503  3503 F DEBUG   :     r0  e9284400  r1  00000010  r2  e847fc28  r3  e89020e8
+09-11 22:07:26.798  3503  3503 F DEBUG   :     r4  e847fc10  r5  e847fc28  r6  e9284400  r7  00000000
+09-11 22:07:26.799  3503  3503 F DEBUG   :     r8  e847ffd0  r9  e847ffd0  r10 e94e0d20  r11 00000000
+09-11 22:07:26.799  3503  3503 F DEBUG   :     ip  e88f6b74  sp  e847fb98  lr  e88e84ad  pc  00000000
+09-11 22:07:26.845  3503  3503 F DEBUG   : backtrace:
+09-11 22:07:26.845  3503  3503 F DEBUG   :       #00 pc 00000000  <unknown>
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.846  3503  3503 F DEBUG   :       #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.847  3503  3503 F DEBUG   :       #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:07:26.847  3503  3503 F DEBUG   :       #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:07:26.847  3503  3503 F DEBUG   :       #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:07:26.847  3503  3503 F DEBUG   :       #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 22:07:26.847  3503  3503 F DEBUG   :       #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)

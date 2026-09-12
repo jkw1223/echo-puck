@@ -1,0 +1,2 @@
+
+diagnostics/amazon-audio/asp-reverse/phase15/binaries/android.hardware.audio@2.0-impl.so:	file format elf32-littlearm

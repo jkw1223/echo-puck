@@ -1,0 +1,2092 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+Revision: '0'
+ABI: 'arm'
+Timestamp: 2026-09-11 22:05:07-0500
+pid: 2824, tid: 2824, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+Cause: null pointer dereference
+    r0  ee1df400  r1  00000010  r2  ff824700  r3  ed9030e8
+    r4  ff8246e8  r5  ff824700  r6  ee1df400  r7  00000000
+    r8  ff824aa8  r9  ff824aa8  r10 ee482d20  r11 00000000
+    ip  ed8e8b74  sp  ff824670  lr  ed8da4ad  pc  00000000
+
+backtrace:
+      #00 pc 00000000  <unknown>
+      #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+      #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+      #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #08 pc 000025e7  /system/vendor/bin/hw/android.hardware.audio.service (main+2470) (BuildId: 9d0827d0ffb0923deab37bc69b6d4503)
+      #09 pc 0005d3d9  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+68) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+
+memory near r0 ([anon:libc_malloc]):
+    ee1df3e0 00000000 00000000 00000000 00000000  ................
+    ee1df3f0 00000000 00000000 00000000 00000000  ................
+    ee1df400 48574454 00000200 ea992018 00000000  TDWH..... ......
+    ee1df410 00000000 00000000 00000000 00000000  ................
+    ee1df420 00000000 00000000 00000000 00000000  ................
+    ee1df430 00000000 00000000 00000000 ea98c7bd  ................
+    ee1df440 00000000 ea98c7c7 ea98c7cb ea98c7d1  ................
+    ee1df450 00000000 ea98c7d7 ea98c7db ea98c7fb  ................
+    ee1df460 ea98c801 ea98c805 ea98c811 ea98c819  ................
+    ee1df470 ea98cb79 ea98cbcd ea98cf59 ea98cf75  y.......Y...u...
+    ee1df480 00000000 00000000 00000000 00000000  ................
+    ee1df490 00000000 00000000 00000000 ffffffff  ................
+    ee1df4a0 ffffffff 00000000 ffffffff 00000000  ................
+    ee1df4b0 00000000 00000000 00000000 00000000  ................
+    ee1df4c0 00000000 00000000 00000000 00000000  ................
+    ee1df4d0 00000000 00000000 00000000 00000000  ................
+
+memory near r2 ([stack]):
+    ff8246e0 00000010 ff824700 00000000 00000000  .....G..........
+    ff8246f0 00000000 00000000 00000000 00000000  ................
+    ff824700 ed9030d8 00000000 00000000 00000000  .0..............
+    ff824710 45f41f00 ee11a2b4 ff824af4 ee482d20  ...E.....J.. -H.
+    ff824720 ffffffb6 ff824aa8 ee11a2b4 ff824838  .....J......8H..
+    ff824730 ff824b38 ee30ab43 ee7178f0 ee400008  8K..C.0..xq...@.
+    ff824740 00000006 ee11a2b4 ee3258fc ff824b88  .........X2..K..
+    ff824750 00000000 00000000 ff824748 ee091159  ........HG..Y...
+    ff824760 00000000 00000000 00000000 00000000  ................
+    ff824770 00000000 00000000 45f41f00 00000006  ...........E....
+    ff824780 00000000 ee11a2b4 00000000 ff824aa8  .............J..
+    ff824790 00000000 00000000 ff824aa8 00000000  .........J......
+    ff8247a0 ee11a2b4 00000000 ee7178f0 ee317957  .........xq.Wy1.
+    ff8247b0 00000000 00000000 00000000 00000000  ................
+    ff8247c0 00000000 00000000 ee3258fc ff824b88  .........X2..K..
+    ff8247d0 ff824828 ff824af4 ff8247c8 ff824aa8  (H...J...G...J..
+
+memory near r3:
+    ed9030c8 -------- -------- -------- --------  ................
+    ed9030d8 -------- -------- -------- --------  ................
+    ed9030e8 -------- -------- -------- --------  ................
+    ed9030f8 -------- -------- -------- --------  ................
+    ed903108 -------- -------- -------- --------  ................
+    ed903118 -------- -------- -------- --------  ................
+    ed903128 -------- -------- -------- --------  ................
+    ed903138 -------- -------- -------- --------  ................
+    ed903148 -------- -------- -------- --------  ................
+    ed903158 -------- -------- -------- --------  ................
+    ed903168 -------- -------- -------- --------  ................
+    ed903178 -------- -------- -------- --------  ................
+    ed903188 -------- -------- -------- --------  ................
+    ed903198 -------- -------- -------- --------  ................
+    ed9031a8 -------- -------- -------- --------  ................
+    ed9031b8 -------- -------- -------- --------  ................
+
+memory near r4 ([stack]):
+    ff8246c8 ed9030d8 ed9030e8 0f444247 ff824aa8  .0...0..GBD..J..
+    ff8246d8 ee3258fc ff824b88 00000010 ff824700  .X2..K.......G..
+    ff8246e8 00000000 00000000 00000000 00000000  ................
+    ff8246f8 00000000 00000000 ed9030d8 00000000  .........0......
+    ff824708 00000000 00000000 45f41f00 ee11a2b4  ...........E....
+    ff824718 ff824af4 ee482d20 ffffffb6 ff824aa8  .J.. -H......J..
+    ff824728 ee11a2b4 ff824838 ff824b38 ee30ab43  ....8H..8K..C.0.
+    ff824738 ee7178f0 ee400008 00000006 ee11a2b4  .xq...@.........
+    ff824748 ee3258fc ff824b88 00000000 00000000  .X2..K..........
+    ff824758 ff824748 ee091159 00000000 00000000  HG..Y...........
+    ff824768 00000000 00000000 00000000 00000000  ................
+    ff824778 45f41f00 00000006 00000000 ee11a2b4  ...E............
+    ff824788 00000000 ff824aa8 00000000 00000000  .....J..........
+    ff824798 ff824aa8 00000000 ee11a2b4 00000000  .J..............
+    ff8247a8 ee7178f0 ee317957 00000000 00000000  .xq.Wy1.........
+    ff8247b8 00000000 00000000 00000000 00000000  ................
+
+memory near r5 ([stack]):
+    ff8246e0 00000010 ff824700 00000000 00000000  .....G..........
+    ff8246f0 00000000 00000000 00000000 00000000  ................
+    ff824700 ed9030d8 00000000 00000000 00000000  .0..............
+    ff824710 45f41f00 ee11a2b4 ff824af4 ee482d20  ...E.....J.. -H.
+    ff824720 ffffffb6 ff824aa8 ee11a2b4 ff824838  .....J......8H..
+    ff824730 ff824b38 ee30ab43 ee7178f0 ee400008  8K..C.0..xq...@.
+    ff824740 00000006 ee11a2b4 ee3258fc ff824b88  .........X2..K..
+    ff824750 00000000 00000000 ff824748 ee091159  ........HG..Y...
+    ff824760 00000000 00000000 00000000 00000000  ................
+    ff824770 00000000 00000000 45f41f00 00000006  ...........E....
+    ff824780 00000000 ee11a2b4 00000000 ff824aa8  .............J..
+    ff824790 00000000 00000000 ff824aa8 00000000  .........J......
+    ff8247a0 ee11a2b4 00000000 ee7178f0 ee317957  .........xq.Wy1.
+    ff8247b0 00000000 00000000 00000000 00000000  ................
+    ff8247c0 00000000 00000000 ee3258fc ff824b88  .........X2..K..
+    ff8247d0 ff824828 ff824af4 ff8247c8 ff824aa8  (H...J...G...J..
+
+memory near r6 ([anon:libc_malloc]):
+    ee1df3e0 00000000 00000000 00000000 00000000  ................
+    ee1df3f0 00000000 00000000 00000000 00000000  ................
+    ee1df400 48574454 00000200 ea992018 00000000  TDWH..... ......
+    ee1df410 00000000 00000000 00000000 00000000  ................
+    ee1df420 00000000 00000000 00000000 00000000  ................
+    ee1df430 00000000 00000000 00000000 ea98c7bd  ................
+    ee1df440 00000000 ea98c7c7 ea98c7cb ea98c7d1  ................
+    ee1df450 00000000 ea98c7d7 ea98c7db ea98c7fb  ................
+    ee1df460 ea98c801 ea98c805 ea98c811 ea98c819  ................
+    ee1df470 ea98cb79 ea98cbcd ea98cf59 ea98cf75  y.......Y...u...
+    ee1df480 00000000 00000000 00000000 00000000  ................
+    ee1df490 00000000 00000000 00000000 ffffffff  ................
+    ee1df4a0 ffffffff 00000000 ffffffff 00000000  ................
+    ee1df4b0 00000000 00000000 00000000 00000000  ................
+    ee1df4c0 00000000 00000000 00000000 00000000  ................
+    ee1df4d0 00000000 00000000 00000000 00000000  ................
+
+memory near r8 ([stack]):
+    ff824a88 ee47d0e4 ee310735 00000010 ff824b88  ..G.5.1......K..
+    ff824a98 ee47d000 ee47d098 ee11a2b4 00000000  ..G...G.........
+    ff824aa8 00000000 00000000 00000000 00000000  ................
+    ff824ab8 00000000 00000000 00000000 00000000  ................
+    ff824ac8 00000000 00000000 00000000 00000000  ................
+    ff824ad8 00000000 00000000 00010001 00000000  ................
+    ff824ae8 00000000 00000000 00000000 00000000  ................
+    ff824af8 00000000 00000000 00000000 00000000  ................
+    ff824b08 ed903000 000000c0 000000c0 000000c0  .0..............
+    ff824b18 ed9030c0 00000003 00000003 00000003  .0..............
+    ff824b28 00000000 00010001 ee313a91 ee47d000  .........:1...G.
+    ff824b38 ee4b45a0 00000000 ee482d20 00000000  .EK..... -H.....
+    ff824b48 0f444247 00000010 00000b07 00000411  GBD.............
+    ff824b58 000000c0 00000000 00000018 00000000  ................
+    ff824b68 ed903000 00000000 ed9030c0 00000000  .0.......0......
+    ff824b78 00000000 00000000 00000000 00000000  ................
+
+memory near r9 ([stack]):
+    ff824a88 ee47d0e4 ee310735 00000010 ff824b88  ..G.5.1......K..
+    ff824a98 ee47d000 ee47d098 ee11a2b4 00000000  ..G...G.........
+    ff824aa8 00000000 00000000 00000000 00000000  ................
+    ff824ab8 00000000 00000000 00000000 00000000  ................
+    ff824ac8 00000000 00000000 00000000 00000000  ................
+    ff824ad8 00000000 00000000 00010001 00000000  ................
+    ff824ae8 00000000 00000000 00000000 00000000  ................
+    ff824af8 00000000 00000000 00000000 00000000  ................
+    ff824b08 ed903000 000000c0 000000c0 000000c0  .0..............
+    ff824b18 ed9030c0 00000003 00000003 00000003  .0..............
+    ff824b28 00000000 00010001 ee313a91 ee47d000  .........:1...G.
+    ff824b38 ee4b45a0 00000000 ee482d20 00000000  .EK..... -H.....
+    ff824b48 0f444247 00000010 00000b07 00000411  GBD.............
+    ff824b58 000000c0 00000000 00000018 00000000  ................
+    ff824b68 ed903000 00000000 ed9030c0 00000000  .0.......0......
+    ff824b78 00000000 00000000 00000000 00000000  ................
+
+memory near r10 ([anon:libc_malloc]):
+    ee482d00 ee3c1f80 74534914 6d616572 0074754f  ..<..IStreamOut.
+    ee482d10 ee4afaa0 ee4afaa0 ed8b2c04 ee4b4540  ..J...J..,..@EK.
+    ee482d20 ed8aeb64 00000000 00000000 00000000  d...............
+    ee482d30 ec38fc24 ed8aeb9c 00000000 00000000  $.8.............
+    ee482d40 00000000 00000000 00000021 0000001a  ........!.......
+    ee482d50 ee359060 6544490e 65636976 00000000  `.5..IDevice....
+    ee482d60 ee359020 ee359020 ed8aebc0 ee4b45a0   .5. .5......EK.
+    ee482d70 ed8aeb64 00000000 00000000 00000000  d...............
+    ee482d80 00000000 ed8aeb9c 00000000 00000000  ................
+    ee482d90 00000000 00000000 00000021 0000001a  ........!.......
+    ee482da0 ee3590c0 6544490e 65636976 00000000  ..5..IDevice....
+    ee482db0 ee359080 ee359080 ed8aebc0 ee4b45c0  ..5...5......EK.
+    ee482dc0 ec38fb9c ec38fbac ec38fc04 ec38fc14  ..8...8...8...8.
+    ee482dd0 ec38fc24 ec38fc34 ec38fc8c ec38fc9c  $.8.4.8...8...8.
+    ee482de0 00000000 00000000 ec38fd40 ec38fde8  ........@.8...8.
+    ee482df0 ec38feb8 ec38fec8 ec38fed8 ec38fee8  ..8...8...8...8.
+
+memory near ip (/system/vendor/lib/hw/android.hardware.audio@2.0-impl.so):
+    ed8e8b54 ed7c3711 ee2de1d5 ed7c3481 ed8daead  .7|...-..4|.....
+    ed8e8b64 ed8db4d1 ed8db00d ed8db7e5 ee2de1b5  ..............-.
+    ed8e8b74 ee2de1ad ede7a245 ee0c19f9 ed8dab1d  ..-.E...........
+    ed8e8b84 ed8da9ad ed8dac1d ed8dbbf1 ed8d8cf1  ................
+    ed8e8b94 ede3e73d ee0bdf29 edf93315 edf97a41  =...)....3..Az..
+    ed8e8ba4 ed8dae11 ed589d6d edf9375f edf933a1  ....m.X._7...3..
+    ed8e8bb4 ed589f45 ed8daf89 ed58a139 ed58a201  E.X.....9.X...X.
+    ed8e8bc4 ed589dfd edf939ed ee08b3a5 edf93955  ..X..9......U9..
+    ed8e8bd4 ed589bcd ed589e85 ed58a317 ee2de479  ..X...X...X.y.-.
+    ed8e8be4 ee2de1b9 ee2de3f9 ed589f89 ed58a02d  ..-...-...X.-.X.
+    ed8e8bf4 edf978b1 edf96d61 edf93385 ed8d9119  .x..am...3......
+    ed8e8c04 ed8dad4d ed8db341 ee2deff9 ed8dcb0d  M...A.....-.....
+    ed8e8c14 ee2df291 edf96d35 ed58e371 ed8ddc65  ..-.5m..q.X.e...
+    ed8e8c24 ed8dcdc1 ed58e5b1 ed8db5f5 ed58e4d5  ......X.......X.
+    ed8e8c34 ee10b08d ee10b415 ed625f51 ed8db969  ........Q_b.i...
+    ed8e8c44 ee2de01d ee2de229 ee2ddfcd ed8dc715  ..-.).-...-.....
+
+memory near sp ([stack]):
+    ff824650 00000000 00000000 ff8246c8 200a6231  .........F..1b. 
+    ff824660 00000000 45f41f00 00000000 00000000  .......E........
+    ff824670 ee11a2b4 ff824af4 00000000 00000000  .....J..........
+    ff824680 ee11a2b4 ff824af4 ed8da47d ee309f09  .....J..}.....0.
+    ff824690 00000000 ff8246e8 3a736700 30303020  .....F...gs: 000
+    ff8246a0 ff824690 00000a38 ee359020 00000000  .F..8... .5.....
+    ff8246b0 00000000 00000000 00000000 00000000  ................
+    ff8246c0 00000000 00000002 ed9030d8 ed9030e8  .........0...0..
+    ff8246d0 0f444247 ff824aa8 ee3258fc ff824b88  GBD..J...X2..K..
+    ff8246e0 00000010 ff824700 00000000 00000000  .....G..........
+    ff8246f0 00000000 00000000 00000000 00000000  ................
+    ff824700 ed9030d8 00000000 00000000 00000000  .0..............
+    ff824710 45f41f00 ee11a2b4 ff824af4 ee482d20  ...E.....J.. -H.
+    ff824720 ffffffb6 ff824aa8 ee11a2b4 ff824838  .....J......8H..
+    ff824730 ff824b38 ee30ab43 ee7178f0 ee400008  8K..C.0..xq...@.
+    ff824740 00000006 ee11a2b4 ee3258fc ff824b88  .........X2..K..
+
+memory near lr (/system/vendor/lib/hw/android.hardware.audio@2.0-impl.so):
+    ed8da48c 4628b1f8 eb1ef00b 28016840 68f6d119  ..(F....@h.(...h
+    ed8da49c f8d64628 f00b7080 68c1eb16 47b84630  (F...p.....h0F.G
+    ed8da4ac 4240b178 ea26f00b 4479490b 1000e9cd  x.@B..&..IyD....
+    ed8da4bc 490a2005 4b0b4a0a 447a4479 f00b447b  . .I.J.KyDzD{D..
+    ed8da4cc 2000ea22 0050efc0 f8c42111 f944000d  ".. ..P..!....D.
+    ed8da4dc 60200a81 bdf0b003 ffffcfa8 ffffcc27  .. `........'...
+    ed8da4ec ffffd269 ffffc9ab 47702000 b510defe  i........ pG....
+    ed8da4fc 30044604 ea0ef00b bd104620 4604b510  .F.0.... F.....F
+    ed8da50c f00b3004 4620ea08 4010e8bd b96af00b  .0.... F...@..j.
+    ed8da51c f8516801 44081c0c f00b3004 b510b95d  .hQ....D.0..]...
+    ed8da52c f8516801 18441c0c f00b1d20 4620e9f4  .hQ...D. ..... F
+    ed8da53c 4010e8bd b956f00b e92d4770 460441f0  ...@..V.pG-..A.F
+    ed8da54c 428c2000 0000e9c4 0009f8c4 0005f8c4  . .B............
+    ed8da55c 000df8a4 d03b73e0 460d7b20 bf182800  .....s;. {.F.(..
+    ed8da56c bf186820 d0012800 ea54f00b 200168ae   h...(....T..h. 
+    ed8da57c 60a67320 f026b37e 1a304040 2001bf18   s.`~.&.@@0.... 
+
+memory map (706 entries):
+    af0fe000-af0fefff r--         0      1000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d45) (load bias 0x1000)
+    af0ff000-af100fff r-x         0      2000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d4503) (load bias 0x1000)
+    af101000-af101fff r--      1000      1000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d45) (load bias 0x1000)
+    ea680000-ea680fff ---         0      1000
+    ea681000-ea77ffff rw-         0     ff000  [anon:stack_and_tls:2857]
+    ea780000-ea780fff ---         0      1000
+    ea781000-ea7e7fff r-x         0     67000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    ea7e8000-ea7e8fff r--     66000      1000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    ea7e9000-ea7f5fff rw-     67000      d000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    ea7f6000-ea7f6fff rw-         0      1000  [anon:.bss]
+    ea828000-ea828fff ---         0      1000
+    ea829000-ea927fff rw-         0     ff000  [anon:stack_and_tls:2854]
+    ea928000-ea928fff ---         0      1000
+    ea929000-ea92afff r--         0      2000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    ea92b000-ea92efff r-x      1000      4000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    ea92f000-ea92ffff r--      4000      1000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    ea930000-ea930fff rw-      4000      1000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    ea96c000-ea96dfff r--         0      2000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    ea96e000-ea96efff r-x      1000      1000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    ea96f000-ea970fff r--      1000      2000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    ea98b000-ea990fff r-x         0      6000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    ea991000-ea991fff r--      5000      1000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    ea992000-ea992fff rw-      6000      1000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    ea9c1000-ea9c2fff r--         0      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    ea9c3000-ea9c4fff r-x      1000      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    ea9c5000-ea9c6fff r--      2000      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    eaa35000-eaa35fff r--         0      1000  /system/vendor/lib/soundfx/libaudiopreprocessing.so (BuildId: 424840bc5f748f34097f70efdca325) (load bias 0x1000)
+    eaa36000-eaa39fff r-x         0      4000  /system/vendor/lib/soundfx/libaudiopreprocessing.so (BuildId: 424840bc5f748f34097f70efdca325) (load bias 0x1000)
+    eaa3a000-eaa3afff r--      3000      1000  /system/vendor/lib/soundfx/libaudiopreprocessing.so (BuildId: 424840bc5f748f34097f70efdca325) (load bias 0x1000)
+    eaa3b000-eaa3bfff rw-      3000      1000  /system/vendor/lib/soundfx/libaudiopreprocessing.so (BuildId: 424840bc5f748f34097f70efdca325) (load bias 0x1000)
+    eaa40000-eaa78fff r--         0     39000  /system/vendor/lib/libwebrtc_audio_preprocessing.so (BuildId: b4683d6d92bd029783a2101966de21) (load bias 0x1000)
+    eaa79000-eaaf8fff r-x     38000     80000  /system/vendor/lib/libwebrtc_audio_preprocessing.so (BuildId: b4683d6d92bd029783a2101966de21) (load bias 0x1000)
+    eaaf9000-eaafbfff r--     b7000      3000  /system/vendor/lib/libwebrtc_audio_preprocessing.so (BuildId: b4683d6d92bd029783a2101966de21) (load bias 0x1000)
+    eaafc000-eaafcfff rw-     b9000      1000  /system/vendor/lib/libwebrtc_audio_preprocessing.so (BuildId: b4683d6d92bd029783a2101966de21) (load bias 0x1000)
+    eab13000-eab37fff r--         0     25000  /system/lib/libprotobuf-cpp-lite.so (BuildId: ac344e27b75099ddaf9139267b9447) (load bias 0x1000)
+    eab38000-eab65fff r-x     24000     2e000  /system/lib/libprotobuf-cpp-lite.so (BuildId: ac344e27b75099ddaf9139267b9447) (load bias 0x1000)
+    eab66000-eab67fff r--     51000      2000  /system/lib/libprotobuf-cpp-lite.so (BuildId: ac344e27b75099ddaf9139267b9447) (load bias 0x1000)
+    eab68000-eab68fff rw-     52000      1000  /system/lib/libprotobuf-cpp-lite.so (BuildId: ac344e27b75099ddaf9139267b9447) (load bias 0x1000)
+    eab8b000-eab8cfff r--         0      2000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    eab8d000-eab94fff r-x      1000      8000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    eab95000-eab95fff r--      8000      1000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    eab96000-eab96fff rw-      8000      1000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    eabf7000-eabf7fff r--         0      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    eabf8000-eabf9fff r-x         0      2000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    eabfa000-eabfafff r--      1000      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    eabfb000-eabfbfff rw-      1000      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    eac29000-eac29fff r--         0      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    eac2a000-eac2bfff r-x         0      2000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    eac2c000-eac2cfff r--      1000      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    eac2d000-eac2dfff rw-      1000      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    eac5f000-eac5ffff r--         0      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    eac60000-eac61fff r-x         0      2000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    eac62000-eac62fff r--      1000      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    eac63000-eac63fff rw-      1000      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    eac95000-eac96fff r--         0      2000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    eac97000-eac9cfff r-x      1000      6000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    eac9d000-eac9dfff r--      6000      1000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    eac9e000-eac9efff rw-      6000      1000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    eacc3000-eacc5fff r--         0      3000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    eacc6000-eacd2fff r-x      2000      d000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    eacd3000-eacd3fff r--      e000      1000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    eacd4000-eacd5fff rw-      e000      2000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    ead24000-ead24fff ---         0      1000
+    ead25000-eae23fff rw-         0     ff000  [anon:stack_and_tls:2839]
+    eae24000-eae25fff ---         0      2000
+    eae26000-eaf24fff rw-         0     ff000  [anon:stack_and_tls:2837]
+    eaf25000-eaf25fff ---         0      1000
+    eaf26000-eaf27fff r--         0      2000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    eaf28000-eaf29fff r-x      1000      2000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    eaf2a000-eaf2afff r--      2000      1000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    eaf2b000-eaf2bfff rw-      3000      1000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    eaf4b000-eaf63fff r--         0     19000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    eaf64000-eaf6dfff r-x     18000      a000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    eaf6e000-eaf6ffff r--     21000      2000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    eaf70000-eaf70fff rw-     22000      1000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    eaf96000-eafadfff r-x         0     18000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eafae000-eafaefff r--     17000      1000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eafaf000-eafaffff rw-     18000      1000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eaff7000-eaff7fff r--         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    eaff8000-eaff8fff r-x         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    eaff9000-eaff9fff r--         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    eb005000-eb087fff r--         0     83000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eb088000-eb130fff r-x     82000     a9000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eb131000-eb13cfff r--    12a000      c000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eb13d000-eb13dfff rw-    135000      1000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eb13e000-eb13ffff rw-         0      2000  [anon:.bss]
+    eb15c000-eb169fff r--         0      e000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb16a000-eb17dfff r-x      d000     14000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb17e000-eb17efff r--     20000      1000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb17f000-eb17ffff rw-     20000      1000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb19a000-eb19afff r--         0      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb19b000-eb19cfff r-x         0      2000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb19d000-eb19dfff r--      1000      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb19e000-eb19efff rw-      1000      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb1de000-eb1e4fff r--         0      7000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb1e5000-eb1edfff r-x      6000      9000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb1ee000-eb1eefff r--      e000      1000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb1ef000-eb1effff rw-      e000      1000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb205000-eb205fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eb206000-eb206fff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eb207000-eb207fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eb241000-eb244fff r--         0      4000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eb245000-eb249fff r-x      3000      5000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eb24a000-eb24afff r--      7000      1000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eb24b000-eb24cfff rw-      7000      2000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eb28b000-eb2b6fff r--         0     2c000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    eb2b7000-eb2eefff r-x     2b000     38000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    eb2ef000-eb2f7fff r--     62000      9000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    eb2f8000-eb2f8fff rw-     6a000      1000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    eb30c000-eb314fff r--         0      9000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb315000-eb31dfff r-x      8000      9000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb31e000-eb31ffff r--     10000      2000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb320000-eb320fff rw-     11000      1000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb35b000-eb35cfff r--         0      2000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    eb35d000-eb35efff r-x      1000      2000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    eb35f000-eb35ffff r--      2000      1000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    eb360000-eb360fff rw-      2000      1000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    eb387000-eb41dfff r--         0     97000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    eb41e000-eb529fff r-x     96000    10c000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    eb52a000-eb533fff r--    1a1000      a000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    eb534000-eb534fff rw-    1aa000      1000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    eb535000-eb535fff rw-         0      1000  [anon:.bss]
+    eb542000-eb545fff r--         0      4000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb546000-eb54bfff r-x      3000      6000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb54c000-eb54dfff r--      8000      2000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb54e000-eb54efff rw-      9000      1000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb58d000-eb58dfff r--         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    eb58e000-eb58efff r-x         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    eb58f000-eb58ffff r--         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    eb590000-eb590fff rw-         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    eb5fd000-eb61afff r--         0     1e000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eb61b000-eb63dfff r-x     1d000     23000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eb63e000-eb63efff r--     3f000      1000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eb63f000-eb63ffff rw-     3f000      1000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eb645000-eb65efff r--         0     1a000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb65f000-eb677fff r-x     19000     19000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb678000-eb679fff r--     31000      2000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb67a000-eb67afff rw-     32000      1000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb67b000-eb67bfff rw-         0      1000  [anon:.bss]
+    eb690000-eb69cfff r--         0      d000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb69d000-eb6adfff r-x      c000     11000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6ae000-eb6b0fff r--     1c000      3000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6b1000-eb6b1fff rw-     1e000      1000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6b2000-eb6b5fff rw-         0      4000  [anon:.bss]
+    eb6e1000-eb6e1fff r--         0      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    eb6e2000-eb6e3fff r-x         0      2000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    eb6e4000-eb6e4fff r--      1000      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    eb6e5000-eb6e5fff rw-      1000      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    eb71d000-eb732fff r-x         0     16000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb733000-eb733fff r--     15000      1000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb734000-eb734fff rw-     16000      1000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb746000-eb74dfff r--         0      8000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb74e000-eb754fff r-x      7000      7000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb755000-eb756fff r--      d000      2000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb757000-eb757fff rw-      e000      1000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb788000-eb788fff r--         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eb789000-eb789fff r-x         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eb78a000-eb78afff r--         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eb7e1000-eb7e4fff r--         0      4000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb7e5000-eb7f1fff r-x      3000      d000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb7f2000-eb7f2fff r--      f000      1000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb7f3000-eb7f3fff rw-      f000      1000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb7f4000-eb7f4fff rw-         0      1000  [anon:.bss]
+    eb815000-eb81ffff r--         0      b000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    eb820000-eb82bfff r-x      a000      c000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    eb82c000-eb82ffff r--     15000      4000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    eb830000-eb830fff rw-     18000      1000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    eb853000-eb853fff r--         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb854000-eb854fff r-x         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb855000-eb855fff r--         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb856000-eb856fff rw-         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb892000-eb898fff r-x         0      7000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb899000-eb899fff ---         0      1000
+    eb89a000-eb89afff r--      7000      1000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb89b000-eb89bfff rw-      8000      1000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb89c000-eb89dfff rw-      a000      2000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb8e9000-eb8f0fff r--         0      8000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    eb8f1000-eb8f9fff r-x      7000      9000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    eb8fa000-eb8fbfff r--      f000      2000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    eb8fc000-eb8fcfff rw-     10000      1000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    eb91a000-eb9d8fff r-x         0     bf000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    eb9d9000-eb9dbfff r--     be000      3000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    eb9dc000-eb9dcfff rw-     c1000      1000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    eb9dd000-ebaf9fff rw-         0    11d000  [anon:.bss]
+    ebb12000-ebb18fff r--         0      7000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ebb19000-ebb1ffff r-x      6000      7000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ebb20000-ebb21fff r--      c000      2000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ebb22000-ebb22fff rw-      d000      1000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ebb40000-ebb40fff r--         0      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    ebb41000-ebb42fff r-x         0      2000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    ebb43000-ebb43fff r--      1000      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    ebb44000-ebb44fff rw-      1000      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    ebb98000-ebbb3fff r--         0     1c000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    ebbb4000-ebbe4fff r-x     1b000     31000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    ebbe5000-ebbe9fff r--     4b000      5000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    ebbea000-ebbeafff rw-     4f000      1000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    ebc25000-ebc2efff r--         0      a000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    ebc2f000-ebc37fff r-x      9000      9000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    ebc38000-ebc39fff r--     11000      2000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    ebc3a000-ebc3afff rw-     12000      1000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    ebc72000-ebc72fff r--         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebc73000-ebc73fff r-x         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebc74000-ebc74fff r--         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebc82000-ebc82fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    ebc83000-ebc83fff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    ebc84000-ebc84fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    ebcf7000-ebcf8fff r--         0      2000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    ebcf9000-ebcfafff r-x      1000      2000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    ebcfb000-ebcfbfff r--      2000      1000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    ebd23000-ebd35fff r-x         0     13000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ebd36000-ebd36fff r--     12000      1000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ebd37000-ebd37fff rw-     13000      1000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ebd5c000-ebd7bfff r--         0     20000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ebd7c000-ebd99fff r-x     1f000     1e000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ebd9a000-ebda0fff r--     3c000      7000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ebda1000-ebda1fff rw-     42000      1000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ebdf6000-ebdf7fff r--         0      2000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ebdf8000-ebdfafff r-x      1000      3000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ebdfb000-ebdfbfff r--      3000      1000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ebdfc000-ebdfcfff rw-      3000      1000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ebe0f000-ebe17fff r--         0      9000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    ebe18000-ebe26fff r-x      8000      f000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    ebe27000-ebe28fff r--     16000      2000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    ebe51000-ebe53fff r--         0      3000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ebe54000-ebe54fff r-x      2000      1000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ebe55000-ebe56fff r--      2000      2000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ebe57000-ebe57fff rw-      3000      1000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ebe97000-ebe97fff r--         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebe98000-ebe98fff r-x         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebe99000-ebe99fff r--         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebec6000-ebed5fff r--         0     10000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    ebed6000-ebeeefff r-x      f000     19000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    ebeef000-ebef1fff r--     27000      3000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    ebef2000-ebef2fff rw-     29000      1000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    ebf21000-ebf2dfff r--         0      d000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    ebf2e000-ebf35fff r-x      c000      8000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    ebf36000-ebf36fff r--     13000      1000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    ebf37000-ebf37fff rw-     13000      1000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    ebf4f000-ebf54fff r--         0      6000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebf55000-ebf67fff r-x      5000     13000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebf68000-ebf69fff r--     17000      2000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebf6a000-ebf6afff rw-     18000      1000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebfb4000-ebfb5fff r--         0      2000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ebfb6000-ebfb7fff r-x      1000      2000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ebfb8000-ebfb8fff r--      2000      1000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ebfb9000-ebfb9fff rw-      2000      1000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ebfd8000-ebfe3fff r--         0      c000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    ebfe4000-ebfe8fff r-x      b000      5000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    ebfe9000-ebfe9fff r--      f000      1000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    ec025000-ec028fff r--         0      4000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    ec029000-ec02ffff r-x      3000      7000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    ec030000-ec030fff r--      9000      1000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    ec031000-ec031fff rw-      9000      1000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    ec070000-ec075fff r--         0      6000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ec076000-ec07cfff r-x      5000      7000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ec07d000-ec07dfff r--      b000      1000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ec07e000-ec07efff rw-      b000      1000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ec07f000-ec07ffff rw-         0      1000  [anon:.bss]
+    ec091000-ec096fff r-x         0      6000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    ec097000-ec097fff r--      5000      1000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    ec098000-ec098fff rw-      6000      1000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    ec0c5000-ec0cefff r--         0      a000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    ec0cf000-ec0d8fff r-x      9000      a000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    ec0d9000-ec0dafff r--     12000      2000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    ec0db000-ec0dbfff rw-     13000      1000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    ec136000-ec139fff r-x         0      4000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    ec13a000-ec13afff r--      3000      1000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    ec13b000-ec13bfff rw-      4000      1000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    ec148000-ec14cfff r--         0      5000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ec14d000-ec150fff r-x      4000      4000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ec151000-ec152fff r--      7000      2000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ec153000-ec153fff rw-      8000      1000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ec1b2000-ec1b3fff r--         0      2000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    ec1b4000-ec1b6fff r-x      1000      3000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    ec1b7000-ec1b8fff r--      3000      2000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    ec1b9000-ec1b9fff rw-      4000      1000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    ec1d0000-ec21afff r--         0     4b000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    ec21b000-ec26cfff r-x     4a000     52000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    ec26d000-ec27afff r--     9b000      e000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    ec27b000-ec27bfff rw-     a8000      1000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    ec2a2000-ec2a4fff r--         0      3000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    ec2a5000-ec2b7fff r-x      2000     13000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    ec2b8000-ec2bafff r--     14000      3000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    ec2db000-ec2defff r-x         0      4000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ec2df000-ec2dffff r--      3000      1000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ec2e0000-ec2e0fff rw-      4000      1000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ec321000-ec40ffff r-x         0     ef000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ec410000-ec410fff ---         0      1000
+    ec411000-ec414fff r--     ef000      4000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ec415000-ec418fff rw-     f3000      4000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ec419000-ec4cafff rw-         0     b2000  [anon:.bss]
+    ec4cb000-ec4eafff rw-    1ab000     20000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ec51b000-ec528fff r--         0      e000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ec529000-ec538fff r-x      d000     10000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ec539000-ec539fff r--     1c000      1000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ec53a000-ec53afff rw-     1c000      1000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ec53b000-ec53bfff rw-         0      1000  [anon:.bss]
+    ec572000-ec574fff r-x         0      3000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ec575000-ec575fff r--      2000      1000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ec576000-ec576fff rw-      3000      1000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ec5a9000-ec5a9fff r--         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    ec5aa000-ec5aafff r-x         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    ec5ab000-ec5abfff r--         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    ec5ac000-ec5acfff rw-         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    ec5d0000-ec5d0fff r--         0      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    ec5d1000-ec5d3fff r-x         0      3000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    ec5d4000-ec5d4fff r--      2000      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    ec5d5000-ec5d5fff rw-      2000      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    ec62b000-ec62bfff r--         0      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    ec62c000-ec62cfff r-x         0      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    ec62d000-ec62efff r--         0      2000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    ec62f000-ec62ffff rw-      1000      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    ec64e000-ec64ffff r--         0      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    ec650000-ec651fff r-x      1000      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    ec652000-ec653fff r--      2000      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    ec6a9000-ec6aefff r-x         0      6000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ec6af000-ec6affff r--      5000      1000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ec6b0000-ec6b0fff rw-      6000      1000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ec6f2000-ec6f7fff r-x         0      6000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    ec6f8000-ec6f8fff r--      5000      1000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    ec6f9000-ec6f9fff rw-      6000      1000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    ec728000-ec72dfff r--         0      6000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec72e000-ec732fff r-x      5000      5000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec733000-ec735fff r--      9000      3000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec736000-ec736fff rw-      b000      1000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec75c000-ec75cfff r--         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ec75d000-ec75dfff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ec75e000-ec75efff r--         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ec780000-ec78bfff r--         0      c000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    ec78c000-ec799fff r-x      b000      e000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    ec79a000-ec79bfff r--     18000      2000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    ec79c000-ec79cfff rw-     19000      1000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    ec7d9000-ec7dbfff r-x         0      3000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ec7dc000-ec7dcfff r--      2000      1000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ec7dd000-ec7ddfff rw-      3000      1000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ec835000-ec835fff r-x         0      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    ec836000-ec836fff r--         0      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    ec837000-ec837fff rw-      1000      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    ec84e000-ec85afff r-x         0      d000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    ec85b000-ec85bfff r--      c000      1000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    ec85c000-ec85cfff rw-      d000      1000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    ec895000-ec898fff r--         0      4000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    ec899000-ec8aefff r-x      3000     16000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    ec8af000-ec8affff r--     18000      1000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    ec8b0000-ec8b0fff rw-     18000      1000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    ec8b1000-ec8b7fff rw-         0      7000  [anon:.bss]
+    ec8f0000-ec8f5fff r--         0      6000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    ec8f6000-ec8fcfff r-x      5000      7000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    ec8fd000-ec8fefff r--      b000      2000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    ec8ff000-ec8fffff rw-      c000      1000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    ec93b000-ec93dfff r-x         0      3000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ec93e000-ec93efff r--      2000      1000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ec93f000-ec93ffff rw-      3000      1000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ec951000-ec955fff r--         0      5000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec956000-ec95bfff r-x      4000      6000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec95c000-ec95dfff r--      9000      2000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec95e000-ec95efff rw-      a000      1000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec98d000-ec991fff r--         0      5000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ec992000-ec998fff r-x      4000      7000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ec999000-ec99afff r--      a000      2000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ec99b000-ec99bfff rw-      b000      1000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ec9d8000-ec9e0fff r--         0      9000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    ec9e1000-ec9eafff r-x      8000      a000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    ec9eb000-ec9ecfff r--     11000      2000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    ec9ed000-ec9edfff rw-     12000      1000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    eca01000-eca28fff r--         0     28000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eca29000-eca4dfff r-x     27000     25000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eca4e000-eca57fff r--     4b000      a000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eca58000-eca58fff rw-     54000      1000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eca8b000-eca8ffff r-x         0      5000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    eca90000-eca90fff r--      4000      1000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    eca91000-eca91fff rw-      5000      1000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    ecac7000-ecacefff r--         0      8000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ecacf000-ecadafff r-x      7000      c000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ecadb000-ecadbfff r--     12000      1000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ecadc000-ecadcfff rw-     12000      1000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ecb19000-ecb29fff r-x         0     11000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ecb2a000-ecb2afff r--     10000      1000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ecb2b000-ecb2bfff rw-     11000      1000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ecb46000-ecb46fff r--         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    ecb47000-ecb47fff r-x         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    ecb48000-ecb48fff r--         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    ecb8f000-ecb8ffff r--         0      1000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    ecb90000-ecb92fff r-x         0      3000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    ecb93000-ecb93fff r--      2000      1000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    ecbd8000-ecbdbfff r--         0      4000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    ecbdc000-ecbdefff r-x      3000      3000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    ecbdf000-ecbe0fff r--      5000      2000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    ecbe1000-ecbe1fff rw-      6000      1000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    ecc11000-ecc15fff r-x         0      5000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    ecc16000-ecc16fff ---         0      1000
+    ecc17000-ecc18fff r--      5000      2000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    ecc19000-ecc22fff rw-      7000      a000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    ecc23000-ecc23fff rw-         0      1000  [anon:.bss]
+    ecc65000-ecc6ffff r--         0      b000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ecc70000-ecc7bfff r-x      a000      c000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ecc7c000-ecc7dfff r--     15000      2000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ecc7e000-ecc7efff rw-     16000      1000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ecc93000-ecc97fff r--         0      5000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ecc98000-ecc9afff r-x      4000      3000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ecc9b000-ecc9cfff r--      6000      2000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ecc9d000-ecc9dfff rw-      7000      1000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ecce1000-eccfafff r--         0     1a000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    eccfb000-ecd2efff r-x     19000     34000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    ecd2f000-ecd31fff r--     4c000      3000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    ecd32000-ecd32fff rw-     4e000      1000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    ecd5a000-ecd64fff r--         0      b000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ecd65000-ecd72fff r-x      a000      e000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ecd73000-ecd74fff r--     17000      2000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ecd75000-ecd75fff rw-     18000      1000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ecd98000-ecda2fff r--         0      b000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    ecda3000-ecdb8fff r-x      a000     16000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    ecdb9000-ecdbafff r--     1f000      2000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    ecdbb000-ecdbbfff rw-     20000      1000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    ecdca000-ecddbfff r--         0     12000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ecddc000-ecdeffff r-x     11000     14000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ecdf0000-ecdf2fff r--     24000      3000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ecdf3000-ecdf3fff rw-     26000      1000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ece19000-ece1bfff r--         0      3000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ece1c000-ece1dfff r-x      2000      2000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ece1e000-ece1efff r--      3000      1000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ece69000-ece70fff r--         0      8000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ece71000-ece77fff r-x      7000      7000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ece78000-ece79fff r--      d000      2000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ece7a000-ece7afff rw-      e000      1000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ece97000-ecea0fff r--         0      a000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    ecea1000-eceaefff r-x      9000      e000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eceaf000-eceb0fff r--     16000      2000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eceb1000-eceb1fff rw-     17000      1000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eced0000-ecedefff r--         0      f000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    ecedf000-ecef3fff r-x      e000     15000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    ecef4000-ecef5fff r--     22000      2000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    ecef6000-ecef6fff rw-     23000      1000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    ecf35000-ecf35fff r--         0      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ecf36000-ecf37fff r-x         0      2000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ecf38000-ecf38fff r--      1000      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ecf39000-ecf39fff rw-      1000      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ecf43000-ecf48fff r--         0      6000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ecf49000-ecf51fff r-x      5000      9000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ecf52000-ecf52fff r--      d000      1000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ecf53000-ecf53fff rw-      d000      1000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ecf92000-ecf92fff r--         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ecf93000-ecf93fff r-x         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ecf94000-ecf94fff r--         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ecfcf000-ecfe1fff r--         0     13000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ecfe2000-ecff5fff r-x     12000     14000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ecff6000-ecff8fff r--     25000      3000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ecff9000-ecff9fff rw-     27000      1000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ed02f000-ed030fff r--         0      2000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ed031000-ed032fff r-x      1000      2000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ed033000-ed033fff r--      2000      1000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ed04b000-ed051fff r--         0      7000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ed052000-ed058fff r-x      6000      7000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ed059000-ed05afff r--      c000      2000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ed05b000-ed05bfff rw-      d000      1000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ed085000-ed085fff ---         0      1000
+    ed086000-ed184fff rw-         0     ff000  [anon:stack_and_tls:2828]
+    ed185000-ed185fff ---         0      1000
+    ed186000-ed187fff r--         0      2000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ed188000-ed18afff r-x      1000      3000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ed18b000-ed18bfff r--      3000      1000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ed18c000-ed18cfff rw-      3000      1000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ed1c6000-ed1cffff r--         0      a000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ed1d0000-ed1dcfff r-x      9000      d000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ed1dd000-ed1defff r--     15000      2000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ed1df000-ed1dffff rw-     16000      1000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ed201000-ed221fff r--         0     21000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ed222000-ed22ffff r-x     20000      e000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ed230000-ed233fff r--     2d000      4000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ed234000-ed234fff rw-     30000      1000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ed261000-ed267fff r--         0      7000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ed268000-ed26efff r-x      6000      7000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ed26f000-ed26ffff r--      c000      1000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ed270000-ed270fff rw-      c000      1000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ed291000-ed293fff r--         0      3000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ed294000-ed294fff r-x      2000      1000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ed295000-ed296fff r--      2000      2000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ed297000-ed297fff rw-      3000      1000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ed2d4000-ed2d5fff r--         0      2000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ed2d6000-ed2d9fff r-x      1000      4000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ed2da000-ed2dafff r--      4000      1000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ed2db000-ed2dbfff rw-      4000      1000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ed328000-ed32cfff r--         0      5000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ed32d000-ed333fff r-x      4000      7000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ed334000-ed335fff r--      a000      2000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ed336000-ed336fff rw-      b000      1000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ed37e000-ed37efff ---         0      1000
+    ed37f000-ed47dfff rw-         0     ff000  [anon:stack_and_tls:2827]
+    ed47e000-ed47ffff ---         0      2000
+    ed480000-ed57efff rw-         0     ff000  [anon:stack_and_tls:2826]
+    ed57f000-ed57ffff ---         0      1000
+    ed580000-ed588fff r--         0      9000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ed589000-ed58ffff r-x      8000      7000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ed590000-ed591fff r--      e000      2000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ed5c4000-ed5c4fff r--         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ed5c5000-ed5c5fff r-x         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ed5c6000-ed5c6fff r--         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ed624000-ed624fff r--         0      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ed625000-ed626fff r-x         0      2000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ed627000-ed627fff r--      1000      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ed628000-ed628fff rw-      1000      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ed663000-ed6b5fff r--         0     53000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ed6b6000-ed75bfff r-x     52000     a6000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ed75c000-ed769fff r--     f7000      e000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ed76a000-ed76afff rw-    104000      1000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ed770000-ed770fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    ed7b2000-ed7b2fff r--         0      1000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ed7b3000-ed7b5fff r-x         0      3000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ed7b6000-ed7b6fff r--      2000      1000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ed7c1000-ed7c1fff r--         0      1000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ed7c2000-ed7c3fff r-x         0      2000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ed7c4000-ed7c4fff r--      1000      1000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ed831000-ed858fff r--         0     28000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068bb) (load bias 0x1000)
+    ed859000-ed8adfff r-x     27000     55000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068bb) (load bias 0x1000)
+    ed8ae000-ed8b4fff r--     7b000      7000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068) (load bias 0x1000)
+    ed8b5000-ed8b5fff rw-     81000      1000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068) (load bias 0x1000)
+    ed8c6000-ed8d7fff r--         0     12000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8becea) (load bias 0x1000)
+    ed8d8000-ed8e6fff r-x     11000      f000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8becea) (load bias 0x1000)
+    ed8e7000-ed8e8fff r--     1f000      2000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8bec) (load bias 0x1000)
+    ed8e9000-ed8e9fff rw-     20000      1000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8bec) (load bias 0x1000)
+    ed8ee000-ed902fff rw-         0     15000  [anon:libc_malloc]
+    eda01000-eda01fff ---         0      1000
+    eda02000-edb00fff rw-         0     ff000  [anon:stack_and_tls:2825]
+    edb01000-edb01fff ---         0      1000
+    edc00000-edcfffff rw-         0    100000  [anon:libc_malloc]
+    edd0e000-edd0efff ---         0      1000
+    edd0f000-edd12fff rw-         0      4000  [anon:thread signal stack]
+    edd13000-edd34fff rw-         0     22000  [anon:libc_malloc]
+    edd35000-edd35fff ---         0      1000
+    edd36000-edd39fff rw-         0      4000  [anon:thread signal stack]
+    edd3a000-edd3afff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd3b000-edd3bfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd3c000-edd3cfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd3d000-edd3dfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd3e000-edd3efff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd3f000-edd3ffff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd40000-edd40fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd41000-edd41fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd42000-edd42fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd43000-edd43fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    edd44000-eddb3fff rw-         0     70000  [anon:libc_malloc]
+    eddb4000-eddb5fff r--         0      2000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    eddb6000-eddb8fff r-x      1000      3000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    eddb9000-eddb9fff r--      3000      1000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    eddba000-eddbafff rw-      3000      1000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    eddbb000-eddd8fff rw-         0     1e000  [anon:libc_malloc]
+    eddd9000-ede3cfff rw-         0     64000  [anon:linker_alloc]
+    ede3d000-ede3dfff r--         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ede3e000-ede3efff r-x         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ede3f000-ede3ffff r--         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ede40000-ede43fff rw-         0      4000  [anon:libc_malloc]
+    ede44000-ede76fff r--         0     33000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    ede77000-edeb5fff r-x     32000     3f000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    edeb6000-edebafff r--     70000      5000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    edebb000-edebbfff rw-     74000      1000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    edebc000-edebcfff rw-         0      1000  [anon:.bss]
+    edebd000-edec3fff rw-         0      7000  [anon:libc_malloc]
+    edec4000-edef6fff r--         0     33000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    edef7000-edf25fff r-x     32000     2f000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    edf26000-edf30fff r--     60000      b000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    edf31000-edf31fff rw-     6a000      1000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    edf32000-edf5ffff rw-         0     2e000  [anon:libc_malloc]
+    edf60000-edf68fff r--         0      9000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    edf69000-edf7dfff r-x      8000     15000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    edf7e000-edf7efff r--     1c000      1000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    edf7f000-edf7ffff rw-     1c000      1000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    edf80000-edf86fff rw-         0      7000  [anon:libc_malloc]
+    edf87000-edf90fff r--         0      a000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    edf91000-edf9afff r-x      9000      a000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    edf9b000-edf9cfff r--     12000      2000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    edf9d000-edf9dfff rw-     13000      1000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    edf9e000-edfc3fff rw-         0     26000  [anon:libc_malloc]
+    edfc4000-edfcdfff r--         0      a000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    edfce000-edfecfff r-x      9000     1f000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    edfed000-edfeefff r--     27000      2000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    edfef000-edfeffff rw-     28000      1000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    edff0000-ee00dfff rw-         0     1e000  [anon:libc_malloc]
+    ee00e000-ee01dfff r--         0     10000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ee01e000-ee039fff r-x      f000     1c000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ee03a000-ee03afff r--     2a000      1000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ee03b000-ee03bfff rw-     2a000      1000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ee03c000-ee05efff rw-         0     23000  [anon:libc_malloc]
+    ee05f000-ee089fff r--         0     2b000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c6013269) (load bias 0x1000)
+    ee08a000-ee112fff r-x     2a000     89000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c6013269) (load bias 0x1000)
+    ee113000-ee116fff r--     b2000      4000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c60132) (load bias 0x1000)
+    ee117000-ee119fff rw-     b5000      3000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c60132) (load bias 0x1000)
+    ee11a000-ee11cfff rw-         0      3000  [anon:.bss]
+    ee11d000-ee11dfff r--         0      1000  [anon:.bss]
+    ee11e000-ee12afff rw-         0      d000  [anon:.bss]
+    ee12b000-ee164fff rw-         0     3a000  [anon:libc_malloc]
+    ee165000-ee165fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ee166000-ee166fff r-x         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ee167000-ee167fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ee168000-ee168fff ---         0      1000
+    ee169000-ee169fff rw-         0      1000  [anon:.bss]
+    ee16a000-ee187fff rw-         0     1e000  [anon:libc_malloc]
+    ee188000-ee1a7fff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    ee1a8000-ee1acfff r--         0      5000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ee1ad000-ee1b3fff r-x      4000      7000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ee1b4000-ee1b5fff r--      a000      2000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ee1b6000-ee1b6fff rw-      b000      1000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ee1b7000-ee1c7fff rw-         0     11000  [anon:libc_malloc]
+    ee1c8000-ee1c8fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ee1c9000-ee1c9fff r-x         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ee1ca000-ee1cafff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ee1cb000-ee1d4fff rw-         0      a000  [anon:libc_malloc]
+    ee1d5000-ee1e2fff rw-         0      e000  [anon:libc_malloc]
+    ee1e3000-ee202fff r--         0     20000  /dev/__properties__/u:object_r:bq_config_prop:s0
+    ee203000-ee205fff r--         0      3000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ee206000-ee20efff r-x      2000      9000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ee20f000-ee210fff r--      a000      2000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ee211000-ee211fff rw-      b000      1000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ee212000-ee216fff rw-         0      5000  [anon:libc_malloc]
+    ee217000-ee217fff ---         0      1000
+    ee218000-ee21bfff rw-         0      4000  [anon:thread signal stack]
+    ee21c000-ee22dfff rw-         0     12000  [anon:libc_malloc]
+    ee22e000-ee24dfff r--         0     20000  /dev/__properties__/u:object_r:use_memfd_prop:s0
+    ee24e000-ee24efff ---         0      1000
+    ee24f000-ee252fff rw-         0      4000  [anon:thread signal stack]
+    ee253000-ee272fff r--         0     20000  /dev/__properties__/u:object_r:logd_prop:s0
+    ee273000-ee273fff r--         0      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ee274000-ee275fff r-x         0      2000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ee276000-ee276fff r--      1000      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ee277000-ee277fff rw-      1000      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ee278000-ee278fff ---         0      1000
+    ee279000-ee27cfff rw-         0      4000  [anon:thread signal stack]
+    ee27d000-ee27dfff ---         0      1000
+    ee27e000-ee281fff rw-         0      4000  [anon:thread signal stack]
+    ee282000-ee283fff rw-         0      2000  [anon:libc_malloc]
+    ee284000-ee2a3fff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+    ee2a4000-ee2d4fff r--         0     31000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b2e) (load bias 0x1000)
+    ee2d5000-ee320fff r-x     30000     4c000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b2e) (load bias 0x1000)
+    ee321000-ee326fff r--     7b000      6000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b) (load bias 0x1000)
+    ee327000-ee327fff rw-     80000      1000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b) (load bias 0x1000)
+    ee328000-ee333fff rw-         0      c000  [anon:libc_malloc]
+    ee334000-ee353fff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+    ee354000-ee354fff r--         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ee355000-ee355fff r-x         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ee356000-ee356fff r--         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ee357000-ee357fff rw-         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ee358000-ee364fff rw-         0      d000  [anon:libc_malloc]
+    ee365000-ee36cfff r--         0      8000  [anon:atexit handlers]
+    ee36d000-ee36dfff ---         0      1000
+    ee36e000-ee371fff rw-         0      4000  [anon:thread signal stack]
+    ee372000-ee376fff rw-         0      5000  [anon:libc_malloc]
+    ee377000-ee396fff r--         0     20000  /dev/__properties__/u:object_r:exported_default_prop:s0
+    ee397000-ee3b6fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+    ee3b7000-ee3b7fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    ee3b8000-ee3c1fff rw-         0      a000  [anon:libc_malloc]
+    ee3c2000-ee3c8fff rw-         0      7000  [anon:libc_malloc]
+    ee3c9000-ee3c9fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee3ca000-ee3cafff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee3cb000-ee3cbfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee3cc000-ee3ccfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee3cd000-ee3cefff rw-         0      2000  /dev/ashmem/MessageQueue (deleted)
+    ee3cf000-ee3eefff r--         0     20000  /dev/__properties__/u:object_r:heapprofd_prop:s0
+    ee3ef000-ee3effff rw-         0      1000  [anon:libc_malloc]
+    ee3f0000-ee3f0fff rw-      1000      1000  /dev/ashmem/MessageQueue (deleted)
+    ee3f1000-ee3f7fff rw-         0      7000  [anon:libc_malloc]
+    ee3f8000-ee3f8fff ---         0      1000
+    ee3f9000-ee3fcfff rw-         0      4000  [anon:thread signal stack]
+    ee3fd000-ee409fff rw-         0      d000  [anon:libc_malloc]
+    ee40a000-ee429fff r--         0     20000  /dev/__properties__/u:object_r:exported2_default_prop:s0
+    ee42a000-ee449fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    ee44a000-ee469fff r--         0     20000  /dev/__properties__/properties_serial
+    ee46a000-ee474fff r--         0      b000  /dev/__properties__/property_info
+    ee475000-ee475fff ---         0      1000
+    ee476000-ee478fff rw-         0      3000  [anon:stack_and_tls:main]
+    ee479000-ee479fff ---         0      1000
+    ee47a000-ee47afff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee47b000-ee47bfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ee47c000-ee488fff rw-         0      d000  [anon:libc_malloc]
+    ee489000-ee4a8fff r--         0     20000  /dev/__properties__/u:object_r:vendor_default_prop:s0
+    ee4a9000-ee4bdfff rw-         0     15000  [anon:libc_malloc]
+    ee4be000-ee4ddfff r--         0     20000  /dev/__properties__/u:object_r:vendor_socket_hook_prop:s0
+    ee4de000-ee5a5fff r--         0     c8000  [anon:linker_alloc]
+    ee5a6000-ee5c5fff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+    ee5c6000-ee5cefff rw-         0      9000  [anon:bionic_alloc_small_objects]
+    ee5cf000-ee632fff r--         0     64000  [anon:linker_alloc]
+    ee633000-ee634fff rw-         0      2000  [anon:bionic_alloc_small_objects]
+    ee635000-ee654fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    ee655000-ee674fff r--         0     20000  /dev/__properties__/u:object_r:exported2_default_prop:s0
+    ee675000-ee675fff ---         0      1000
+    ee676000-ee67dfff rw-         0      8000
+    ee67e000-ee67efff ---         0      1000
+    ee67f000-ee69efff r--         0     20000  /dev/__properties__/properties_serial
+    ee69f000-ee69ffff rw-         0      1000  [anon:System property context nodes]
+    ee6a0000-ee6aafff r--         0      b000  /dev/__properties__/property_info
+    ee6ab000-ee70efff r--         0     64000  [anon:linker_alloc]
+    ee70f000-ee70ffff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    ee710000-ee710fff r--         0      1000  [anon:atexit handlers]
+    ee711000-ee711fff ---         0      1000
+    ee712000-ee715fff rw-         0      4000  [anon:thread signal stack]
+    ee716000-ee716fff rw-         0      1000  [anon:arc4random data]
+    ee717000-ee717fff rw-         0      1000  [anon:libc_malloc]
+    ee718000-ee718fff rw-         0      1000  [anon:System property context nodes]
+    ee719000-ee719fff rw-         0      1000  [anon:arc4random data]
+    ee71a000-ee732fff r--         0     19000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    ee733000-ee7b9fff r-x     18000     87000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    ee7ba000-ee7befff r--     9e000      5000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    ee7bf000-ee7bffff rw-     a2000      1000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    ee7c0000-ee7c2fff rw-         0      3000  [anon:.bss]
+    ee7c3000-ee7c3fff r--         0      1000  [anon:.bss]
+    ee7c4000-ee7c9fff rw-         0      6000  [anon:.bss]
+    ff805000-ff825fff rw-         0     21000  [stack]
+    ffff0000-ffff0fff r-x         0      1000  [vectors]
+--------- tail end of log main
+09-11 22:05:02.622  2824  2854 D AudioSPELayer: GetVoIPJitterTime JitterTime=0,ret=1
+09-11 22:05:02.623  2824  2854 D AudioSPELayer: SPELayer-
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: AudioALSACaptureDataClient(), besrecord_enable=0, besrecord_scene=-1
+09-11 22:05:02.623  2824  2854 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: CheckBesRecordStereoModeEnable(), mBesRecordStereoMode = 0
+09-11 22:05:02.623  2824  2854 D AudioPreProcess: AudioPreProcess()+
+09-11 22:05:02.623  2824  2854 D AudioPreProcess: AudioPreProcess()-
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderBase: attach(), 0xee1df900
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: setIdentity(), mIsIdentitySet=0, identity=0
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderBase: attach(), mCaptureDataClientIndex=0, mCaptureDataClientVector.size()=0, Identity=0
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderNormal: open()
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = TLV320AIC3101 
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: compare success = 22
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3101 
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser:  compare success Cardindex = 0
+09-11 22:05:02.624  2824  2854 D AudioALSACaptureDataProviderNormal: open cardindex = 0  pcmindex = 22
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: buffersizemax = 30840
+09-11 22:05:02.629  2824  2854 D AudioSpeechEnhanceInfo: GetHifiRecord, mHiFiRecordEnable=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: bHifiRecord = 0
+09-11 22:05:02.629  2824  2854 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: btempDebug = 0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderBase: +HasLowLatencyCapture()
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataClient: +IsLowLatencyCapture()
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataClient: -IsLowLatencyCapture(), bRet=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderBase: -HasLowLatencyCapture(), bRet=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), format = 4, channels=4, rate=16000, period_size=256, period_count=10,latency=20 kReadBufferSize=3072
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), mCaptureDropSize=0, CAPTURE_DROP_MS=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), period_count=10, period_size=256, samplerate = 16000
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureDataProviderBase: -attach()
+09-11 22:05:02.779  2824  2857 D AudioALSACaptureDataProviderNormal: +readThread(), pid: 2824, tid: 2857, kReadBufferSize=0xc00, open_index=1
+09-11 22:05:02.779  2824  2854 D AudioSPELayer: SetUPLinkDropTime, 0
+09-11 22:05:02.779  2824  2854 D AudioSPELayer: SetUPLinkIntrStartTime, sec=917, nsec=845493285
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureDataClient: CheckChannelRemixOp(), ch 4->1 (mBesRecordStereoMode = 0, BesRecord enable = 0), ChannelRemixOp = 0
+09-11 22:05:02.779  2824  2854 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 22:05:02.779  2824  2854 E ASP     : Invalid pipeline type: -1
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: +startInputDevice(), new_device = 0x80000004, mInputDevice = 0x0, mStartInputDeviceCount = 0, mInputBuiltInMicCount = 0, mInputHeadsetMicCount = 0
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: setMIC1Mode(), isphonemic 0, micmode 1
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic1TypeACCMode descriptor == NULL
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: setMIC2Mode(), isphonemic 0, micmode 1
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic2TypeACCMode descriptor == NULL
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = builtin_Mic_SingleMic descriptor == NULL
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-11 22:05:02.779  2824  2854 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureHandlerNormal: -open()
+09-11 22:05:02.816  2824  2854 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 917 nsec 832619131
+09-11 22:05:07.213  2824  2824 D AudioALSAStreamOut: dump()
+09-11 22:05:07.219  2824  2824 D AudioALSAHardware: dumpState()
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2825, name: Binder:2824_1  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000003  r1  c0306201  r2  edafe098  r3  edafe07c
+    r4  ee11a2b4  r5  ee47c200  r6  c0306201  r7  00000036
+    r8  ee47c290  r9  ee47c254  r10 00000000  r11 00000000
+    ip  00000000  sp  edafe068  lr  ee0c8273  pc  ee0fa9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 00039637  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+238) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #03 pc 00039791  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #04 pc 00039e6b  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #05 pc 000526cd  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #06 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #07 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #08 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #09 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2826, name: Binder:2824_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000003  r1  c0306201  r2  ed57c098  r3  ed57c07c
+    r4  ee11a2b4  r5  ee47c500  r6  c0306201  r7  00000036
+    r8  ee47c590  r9  ee47c554  r10 00000000  r11 00000000
+    ip  00000000  sp  ed57c068  lr  ee0c8273  pc  ee0fa9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 00039637  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+238) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #03 pc 00039791  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #04 pc 00039e6b  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #05 pc 000526cd  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #06 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #07 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #08 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #09 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2827, name: HwBinder:2824_1  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000004  r1  c0306201  r2  ed47b060  r3  ed47afb4
+    r4  ee11a2b4  r5  c0306201  r6  ed47b060  r7  00000036
+    r8  00000000  r9  ee47d194  r10 ed47b070  r11 ed47b060
+    ip  00000100  sp  ed47afa0  lr  ee0c8273  pc  ee0fa9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 0006c411  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+160) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #05 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #06 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #07 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #08 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2828, name: HwBinder:2824_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000004  r1  c0306201  r2  ed182060  r3  ed181fb4
+    r4  ee11a2b4  r5  c0306201  r6  ed182060  r7  00000036
+    r8  00000000  r9  ee47d2d4  r10 ed182070  r11 ed182060
+    ip  00000100  sp  ed181fa0  lr  ee0c8273  pc  ee0fa9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 0006c411  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+160) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #05 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #06 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #07 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #08 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2837, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  eb9dc200  r1  00000089  r2  00000000  r3  00000000
+    r4  00000000  r5  ffffffff  r6  ee098177  r7  000000f0
+    r8  00000000  r9  eb9dc200  r10 00000000  r11 00000000
+    ip  eaf220f8  sp  eaf220e8  lr  ee0c236d  pc  ee0bd2c8
+
+backtrace:
+      #00 pc 0005e2c8  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 00063369  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+92) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000aaeb3  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #03 pc 0003d155  /system/lib/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+8) (BuildId: 437013a44da12f07c13e1700c52fb4)
+      #04 pc 0000a355  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d)
+      #05 pc 0000b2b9  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d)
+      #06 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #07 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2839, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  eae20d20  r1  00000001  r2  00000000  r3  00000000
+    r4  00000000  r5  ee11a2b4  r6  00000000  r7  00000150
+    r8  00000001  r9  000003ff  r10 eae20d80  r11 00000000
+    ip  eae20ce8  sp  eae20cd8  lr  ee0c9c37  pc  ee0fbbb8
+
+backtrace:
+      #00 pc 0009cbb8  /apex/com.android.runtime/lib/bionic/libc.so (__ppoll+16) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006ac33  /apex/com.android.runtime/lib/bionic/libc.so (poll+54) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000038ff  /system/lib/libhardware_legacy.so (uevent_next_event+50) (BuildId: 41559eac1f7b9e9a50a5ae9c191075)
+      #03 pc 0005f51c  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSAStreamManager::ueventLoop(void*)+584) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #05 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2854, name: reader  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  edd45c14  r1  00000089  r2  00000458  r3  ea924fd0
+    r4  00000000  r5  ffffffff  r6  00000000  r7  000000f0
+    r8  00000458  r9  edd45c14  r10 00000000  r11 00000016
+    ip  ea924fc0  sp  ea924fb0  lr  ee0c236d  pc  ee0bd2c8
+
+backtrace:
+      #00 pc 0005e2c8  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 00063369  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+92) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000aaf19  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_timedwait+76) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #03 pc 0009e248  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureDataClient::read(void*, int)+780) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 00099af8  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureHandlerNormal::read(void*, int)+24) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #05 pc 00057300  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSAStreamIn::read(void*, int)+620) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #06 pc 00019959  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::(anonymous namespace)::ReadThread::threadLoop()+236) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+      #07 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #08 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f7)
+      #09 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #10 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 2824, tid: 2857, name: readThread0  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000000  r1  800c4151  r2  ea77c4c8  r3  ea77c4c4
+    r4  ee11a2b4  r5  800c4151  r6  ea77c4c8  r7  00000036
+    r8  ee11a2b4  r9  00000000  r10 ea77c550  r11 ea77d170
+    ip  00000003  sp  ea77c4b0  lr  ee0c8273  pc  ee0fa9d4
+
+backtrace:
+      #00 pc 0009b9d4  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000037eb  /system/lib/libtinyalsa.so (pcm_read+114) (BuildId: 3be3d376ce654870bb05bab652c6d7)
+      #03 pc 000a17c4  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureDataProviderNormal::readThread(void*)+716) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #05 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+
+open files:
+    fd 0: /dev/null (unowned)
+    fd 1: /dev/null (unowned)
+    fd 2: /dev/null (unowned)
+    fd 3: /dev/vndbinder (unowned)
+    fd 4: /dev/hwbinder (unowned)
+    fd 5: /sys/kernel/debug/tracing/trace_marker (unowned)
+    fd 6: socket:[33730] (unowned)
+    fd 7: /dev/pmsg0 (unowned)
+    fd 8: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 9: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 10: /dev/snd/controlC0 (unowned)
+    fd 11: socket:[33833] (unowned)
+    fd 12: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 13: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 14: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 15: /dev/snd/pcmC0D22c (unowned)
+    fd 16: pipe:[33878] (unowned)
+--------- log main
+09-11 22:05:01.077  2824  2824 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 76 lines
+09-11 22:05:01.338  2824  2824 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 1392 lines
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim inVol   = -5.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: ConfMBCL:
+09-11 22:05:01.571  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: bypassPreFilter = 1
+09-11 22:05:01.571  2824  2824 I AUDIOALG: inVol           = 13.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: numBands        = 4
+09-11 22:05:01.571  2824  2824 I AUDIOALG: m_samplingRate  = 48000
+09-11 22:05:01.571  2824  2824 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 22:05:01.571  2824  2824 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 22:05:01.571  2824  2824 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 22:05:01.571  2824  2824 I AUDIOALG: Band #1:
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp ratio   = 8.00
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: Band #2:
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp ratio   = 5.00
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.571  2824  2824 I AUDIOALG: Band #3:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim inVol   = -5.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: ConfMBCL:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: bypassPreFilter = 1
+09-11 22:05:01.572  2824  2824 I AUDIOALG: inVol           = 13.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: numBands        = 4
+09-11 22:05:01.572  2824  2824 I AUDIOALG: m_samplingRate  = 48000
+09-11 22:05:01.572  2824  2824 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 22:05:01.572  2824  2824 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 22:05:01.572  2824  2824 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 22:05:01.572  2824  2824 I AUDIOALG: Band #1:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp ratio   = 8.00
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: Band #2:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp ratio   = 5.00
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.572  2824  2824 I AUDIOALG: Band #3:
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 22:05:01.572  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim inVol   = -3.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: ConfMBCL:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: bypassPreFilter = 1
+09-11 22:05:01.573  2824  2824 I AUDIOALG: inVol           = 13.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: numBands        = 4
+09-11 22:05:01.573  2824  2824 I AUDIOALG: m_samplingRate  = 48000
+09-11 22:05:01.573  2824  2824 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 22:05:01.573  2824  2824 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 22:05:01.573  2824  2824 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 22:05:01.573  2824  2824 I AUDIOALG: Band #1:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp ratio   = 8.00
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: Band #2:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp ratio   = 5.00
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.573  2824  2824 I AUDIOALG: Band #3:
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.573  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim inVol   = -3.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: ConfMBCL:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: bypassPreFilter = 1
+09-11 22:05:01.574  2824  2824 I AUDIOALG: inVol           = 13.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: numBands        = 4
+09-11 22:05:01.574  2824  2824 I AUDIOALG: m_samplingRate  = 48000
+09-11 22:05:01.574  2824  2824 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 22:05:01.574  2824  2824 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 22:05:01.574  2824  2824 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 22:05:01.574  2824  2824 I AUDIOALG: Band #1:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp ratio   = 8.00
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: Band #2:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp ratio   = 5.00
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.574  2824  2824 I AUDIOALG: Band #3:
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 22:05:01.574  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: ConfMBCL:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: bypassPreFilter = 1
+09-11 22:05:01.575  2824  2824 I AUDIOALG: inVol           = 13.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: numBands        = 4
+09-11 22:05:01.575  2824  2824 I AUDIOALG: m_samplingRate  = 48000
+09-11 22:05:01.575  2824  2824 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 22:05:01.575  2824  2824 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 22:05:01.575  2824  2824 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 22:05:01.575  2824  2824 I AUDIOALG: Band #1:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp ratio   = 8.00
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: Band #2:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp ratio   = 5.00
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.575  2824  2824 I AUDIOALG: Band #3:
+09-11 22:05:01.575  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp ratio   = 2.00
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: Band #4:
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp bypass  = 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp ratio   = 1.00
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim release = 220.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: FullBandLimiter:
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim bypassed= 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim release = 180.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MultiBandCompLimiter()
+09-11 22:05:01.576  2824  2824 I AUDIOALG: PreFilter()
+09-11 22:05:01.576  2824  2824 I AUDIOALG: FilterBank()
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MchCompressor()
+09-11 22:05:01.576  2824  2824 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service identical 2 lines
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MchCompressor()
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MchLimiter()
+09-11 22:05:01.576  2824  2824 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service identical 3 lines
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MchLimiter()
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MBCL setting, MBCL Bypass: 0
+09-11 22:05:01.576  2824  2824 I AUDIOALG: MBCL setting, MBCL InpVol: 13.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting, PreFilter Bypass: 1
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand1, CompInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand2, CompInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand3, CompInpVol: -1.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand4, CompInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand1, compRatio: 8.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand2, compRatio: 5.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand3, compRatio: 2.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand4, compRatio: 1.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand1, compThresh: -30.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand2, compThresh: -8.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand3, compThresh: -3.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand4, compThresh: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand1, compGainMin: -40.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand2, compGainMin: -40.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand3, compGainMin: -40.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mbcBand4, compGainMin: -40.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand1, thresh: -20.000000 release: 220.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand1, LimInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand2, thresh: -10.000000 release: 220.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand2, LimInpVol: 6.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand3, thresh: -3.000000 release: 220.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand3, LimInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand4, thresh: -3.000000 release: 220.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblBand4, LimInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblFullBand, thresh: -1.000000 release: 180.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: MBCL setting m_mblFullBand, LimInpVol: 0.000000
+09-11 22:05:01.577  2824  2824 I AUDIOALG: Speaker Power Modes Supported on Device...........
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 0
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 1
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 2
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 3
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 4
+09-11 22:05:01.577  2824  2824 I AUDIOALG: 5
+09-11 22:05:01.577  2824  2824 I AUDIOALG: Parametric EQ Config File Name = VOIPTxParametricEQ.cfg
+09-11 22:05:01.577  2824  2824 I AUDIOALG: JSON::parse : /vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
+09-11 22:05:01.577  2824  2824 I AUDIOALG: Parametric EQ Bypass = 0
+09-11 22:05:01.577  2824  2824 I AUDIOALG: Conf Parametric EQ:
+09-11 22:05:01.577  2824  2824 I AUDIOALG: Frame Length    = 128
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Num Channels    = 1
+09-11 22:05:01.578  2824  2824 I AUDIOALG: sampling Rate   = 16000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: bypass          = 0
+09-11 22:05:01.578  2824  2824 I AUDIOALG: numBiquads      = 4
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Biquad #: 1
+09-11 22:05:01.578  2824  2824 I AUDIOALG: type#   : HIGH_SHELF
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Fc      : 180.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Q       : 0.700000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Gain    : -5.000000 dB
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Biquad #: 2
+09-11 22:05:01.578  2824  2824 I AUDIOALG: type#   : PEAK
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Fc      : 1100.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Q       : 0.500000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Gain    : 6.000000 dB
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Biquad #: 3
+09-11 22:05:01.578  2824  2824 I AUDIOALG: type#   : BYPASS
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Fc      : 7000.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Q       : 10.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Gain    : -6.000000 dB
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Biquad #: 4
+09-11 22:05:01.578  2824  2824 I AUDIOALG: type#   : BYPASS
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Fc      : 5000.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Q       : 20.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: Gain    : -20.000000 dB
+09-11 22:05:01.578  2824  2824 I AUDIOALG: MchLimiter()
+09-11 22:05:01.578  2824  2824 I AUDIOALG: limiter invol Set to 0.000000dB
+09-11 22:05:01.578  2824  2824 I AUDIOALG: VAD Ambient Gain = 1.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: VAD Voice Gain = 1.000000
+09-11 22:05:01.578  2824  2824 I AUDIOALG: setProcessingContext() Devices Flags = 0x00000001
+09-11 22:05:01.578  2824  2824 I AUDIOALG: setPlaybackDevices() called with 0x00000001, device type NOT changed, no action taken
+09-11 22:05:01.578  2824  2824 I AUDIOALG: **** AA_RefTarBeamSelector CONFIG ****
+09-11 22:05:01.578  2824  2824 I AUDIOALG: ConfReferenceBeamSelector:
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_numBeams                     = 7
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_numRefBeams                     = 2
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_numTarBeams                     = 4
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_numFramesForTransition       = 40
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_powerThresholdForRefBeamTransition       = 1173626624
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_powerThresholdForTarBeamTransition       = 1173626624
+09-11 22:05:01.578  2824  2824 I AUDIOALG: m_smoothingFactorAlpha       = 1173626624
+09-11 22:05:01.579  2824  2824 I AUDIOALG: **** AA_ARA CONFIG ****
+09-11 22:05:01.579  2824  2824 I AUDIOALG: nAdaptedInputs = 4
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 0 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 1 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: ---- Parse generic canceler
+09-11 22:05:01.579  2824  2824 I AUDIOALG: -------------------------------------------------------------- (null) -> 0 ---------------------------------------------
+09-11 22:05:01.579  2824  2824 I AUDIOALG: input ref info ArraySize = 4
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 0 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 1 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 0 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 1 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: 
+09-11 22:05:01.579  2824  2824 I AUDIOALG: ConfSBGenericCanceller:
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_nBands               = 64
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_nInputs              = 7
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_nInputsToAdapt       = 4
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_nRefs                = 0
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_samplingRate         = 16000
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_deciRate             = 64
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_refSigEnThresh       = 0.000003162299890
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_taiLen               = -1
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 22:05:01.579  2824  2824 I AUDIOALG: ConfSBCanceler #0:
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_nRefsPerInput        = 2
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_adaptBandLoHz        = 0
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_adaptBandHiHz        = 8000
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_taiLen               = 2560
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_bandBasedTailLen     = true
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_bandBasedStepSize    = true
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_maxStepSize          = 0.300000011920929
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_stepSizeRednScale    = 3.000000000000000
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_leakyFactor          = 0.400000005960464
+09-11 22:05:01.579  2824  2824 I AUDIOALG:     m_smFactRefPwr         = -1.000000000000000
+09-11 22:05:01.579  2824  2824 I AUDIOALG: ConfSB_AEC_ARA:
+09-11 22:05:01.579  2824  2824 I AUDIOALG: m_stepSizeErrorScale     = 3.000000000000000
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_enableVSS              = 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_ord2toOrd1RatioPercent = 50
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_enableRoundRobin     = 0
+09-11 22:05:01.580  2824  2824 I AUDIOALG: SBGenericCanceller: init()
+09-11 22:05:01.580  2824  2824 I AUDIOALG: **************************************************************************** 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nInputs (in buffer) = 7
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nRefs   (in buffer) = 0
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: ==========================================================
+09-11 22:05:01.580  2824  2824 I AUDIOALG: GC #0   nGcRefsPerInput = 2   nRefs = 4
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 6
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 5
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 0
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: nGcTotRefCh = 4    m_nTotRefCh = 4
+09-11 22:05:01.580  2824  2824 I AUDIOALG: Gen Cancelers:
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_refIdxStart =  0   m_nTotRefCh =  4
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  0 ->  6 (0)
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  1 ->  5 (0)
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  2 ->  0 (0)
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  3 ->  1 (0)
+09-11 22:05:01.580  2824  2824 I AUDIOALG: UseRefInfo # 0 : m_refSource =  0    m_refIndex =  6   m_enable = 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: UseRefInfo # 1 : m_refSource =  0    m_refIndex =  5   m_enable = 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: UseRefInfo # 2 : m_refSource =  0    m_refIndex =  0   m_enable = 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: UseRefInfo # 3 : m_refSource =  0    m_refIndex =  1   m_enable = 1
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: Fused Final Generic Canceler :
+09-11 22:05:01.580  2824  2824 I AUDIOALG: inIndex :  0   
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  0 ( 6-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  1 ( 5-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: inIndex :  1   
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  0 ( 6-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  1 ( 5-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: inIndex :  5   
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  2 ( 0-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  3 ( 1-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: inIndex :  6   
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  2 ( 0-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG:  3 ( 1-0)  
+09-11 22:05:01.580  2824  2824 I AUDIOALG: 
+09-11 22:05:01.580  2824  2824 I AUDIOALG: ==========================================================
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nRefsPerInput = 2
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nInputsToAdapt = 4
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nTotRefCh = 4
+09-11 22:05:01.580  2824  2824 I AUDIOALG: m_nGenCancelers = 1
+09-11 22:05:01.581  2824  2824 I AUDIOALG: CANCELER #0
+09-11 22:05:01.581  2824  2824 I AUDIOALG: adaptBandLo = 0
+09-11 22:05:01.581  2824  2824 I AUDIOALG: adaptBandHi = 63
+09-11 22:05:01.581  2824  2824 I AUDIOALG: adaptBandLo = 0
+09-11 22:05:01.581  2824  2824 I AUDIOALG: adaptBandHi = 15 (SIMD)
+09-11 22:05:01.581  2824  2824 I AUDIOALG: Leaky = 0.40000
+09-11 22:05:01.581  2824  2824 I AUDIOALG: refInfo : 0
+09-11 22:05:01.581  2824  2824 I AUDIOALG: refInfo : 0
+09-11 22:05:01.581  2824  2824 I AUDIOALG: VSB_AEC_ARA: init()
+09-11 22:05:01.581  2824  2824 I AUDIOALG: enableVSS : 1
+09-11 22:05:01.581  2824  2824 I AUDIOALG: sigEn 0.0000000486507687469384109     corrEner 0.0000015384614471258828416  bands=16  totBands=64   SIMD_LANES = 4
+09-11 22:05:01.582  2824  2824 I AUDIOALG: **** AA_ARA_BT CONFIG ****
+09-11 22:05:01.582  2824  2824 I AUDIOALG: nAdaptedInputs = 4
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 0 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 1 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 2 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 3 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: ---- Parse generic canceler
+09-11 22:05:01.582  2824  2824 I AUDIOALG: -------------------------------------------------------------- (null) -> 0 ---------------------------------------------
+09-11 22:05:01.582  2824  2824 I AUDIOALG: input ref info ArraySize = 4
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 5 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 6 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: 
+09-11 22:05:01.582  2824  2824 I AUDIOALG: ConfSBGenericCanceller:
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_nBands               = 64
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_nInputs              = 7
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_nInputsToAdapt       = 4
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_nRefs                = 0
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_samplingRate         = 16000
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_deciRate             = 64
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_refSigEnThresh       = 0.000003162299890
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_taiLen               = -1
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 22:05:01.582  2824  2824 I AUDIOALG: ConfSBCanceler #0:
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_nRefsPerInput        = 2
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_adaptBandLoHz        = 0
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_adaptBandHiHz        = 8000
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_taiLen               = 2560
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_bandBasedTailLen     = true
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_bandBasedStepSize    = true
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_maxStepSize          = 0.300000011920929
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_stepSizeRednScale    = 3.000000000000000
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_leakyFactor          = 0.400000005960464
+09-11 22:05:01.582  2824  2824 I AUDIOALG:     m_smFactRefPwr         = -1.000000000000000
+09-11 22:05:01.582  2824  2824 I AUDIOALG: ConfSB_AEC_ARA:
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_stepSizeErrorScale     = 3.000000000000000
+09-11 22:05:01.582  2824  2824 I AUDIOALG: m_enableVSS              = 1
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_ord2toOrd1RatioPercent = 50
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_enableRoundRobin     = 0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: SBGenericCanceller: init()
+09-11 22:05:01.583  2824  2824 I AUDIOALG: **************************************************************************** 1
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nInputs (in buffer) = 7
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nRefs   (in buffer) = 0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: ==========================================================
+09-11 22:05:01.583  2824  2824 I AUDIOALG: GC #0   nGcRefsPerInput = 2   nRefs = 4
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 5
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 6
+09-11 22:05:01.583  2824  2824 I AUDIOALG: nGcTotRefCh = 2    m_nTotRefCh = 2
+09-11 22:05:01.583  2824  2824 I AUDIOALG: Gen Cancelers:
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_refIdxStart =  0   m_nTotRefCh =  2
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  0 ->  5 (0)
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  1 ->  6 (0)
+09-11 22:05:01.583  2824  2824 I AUDIOALG: UseRefInfo # 0 : m_refSource =  0    m_refIndex =  5   m_enable = 1
+09-11 22:05:01.583  2824  2824 I AUDIOALG: UseRefInfo # 1 : m_refSource =  0    m_refIndex =  6   m_enable = 1
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: Fused Final Generic Canceler :
+09-11 22:05:01.583  2824  2824 I AUDIOALG: inIndex :  0   
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  0 ( 5-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  1 ( 6-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: inIndex :  1   
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  0 ( 5-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  1 ( 6-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: inIndex :  2   
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  0 ( 5-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  1 ( 6-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: inIndex :  3   
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  0 ( 5-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG:  1 ( 6-0)  
+09-11 22:05:01.583  2824  2824 I AUDIOALG: 
+09-11 22:05:01.583  2824  2824 I AUDIOALG: ==========================================================
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nRefsPerInput = 2
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nInputsToAdapt = 4
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nTotRefCh = 2
+09-11 22:05:01.583  2824  2824 I AUDIOALG: m_nGenCancelers = 1
+09-11 22:05:01.583  2824  2824 I AUDIOALG: CANCELER #0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: adaptBandLo = 0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: adaptBandHi = 63
+09-11 22:05:01.583  2824  2824 I AUDIOALG: adaptBandLo = 0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: adaptBandHi = 15 (SIMD)
+09-11 22:05:01.583  2824  2824 I AUDIOALG: Leaky = 0.40000
+09-11 22:05:01.583  2824  2824 I AUDIOALG: refInfo : 0
+09-11 22:05:01.583  2824  2824 I AUDIOALG: refInfo : 0
+09-11 22:05:01.584  2824  2824 I AUDIOALG: VSB_AEC_ARA: init()
+09-11 22:05:01.584  2824  2824 I AUDIOALG: enableVSS : 1
+09-11 22:05:01.584  2824  2824 I AUDIOALG: sigEn 0.0000000486507687469384109     corrEner 0.0000015384614471258828416  bands=16  totBands=64   SIMD_LANES = 4
+09-11 22:05:01.584  2824  2824 I AUDIOALG: **** AA MICARA (Misc) CONFIG ****
+09-11 22:05:01.584  2824  2824 I AUDIOALG: ConfSBGenericCanceller:
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_nBands               = 0
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_nInputs              = -341983128
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_nInputsToAdapt       = 0
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_nRefs                = -342682637
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_samplingRate         = 0
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_deciRate             = -297807860
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_refSigEnThresh       = -14065275782505300350990286848.000000000000000
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_taiLen               = -1
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 22:05:01.584  2824  2824 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 22:05:01.584  2824  2824 I AUDIOALG: ConfSBMICARA:1
+09-11 22:05:01.585  2824  2824 I AUDIOALG: ARAm_nMics  = 4
+09-11 22:05:01.585  2824  2824 I AUDIOALG: ARAm_nRefs  = 2
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_ARAdelay  = 64
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_gain_step  = 0.200000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_max_gain_ARA_W_Play  = 2.000000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_max_gain_ARA_No_Play  = 4.000000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_VSS_freeze_thresh  = 0.750000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: **** AA_BeamMerger CONFIG ****
+09-11 22:05:01.585  2824  2824 I AUDIOALG: ConfSNRBeamMerger:
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_numBeams                     = 4
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_samplingRate                 = 16000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_SNRThreshold                 = 0.000000999999997
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyStartFreqHz            = 500
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyEndFreqHz              = 3500
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_FDaplhaNoise                 = 0.998000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_FDaplhaSpeech                = 0.650000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_K_N_ALPHA                    = 0.999000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_K_ERG_ALPHA                  = 0.750000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_K_VSS_SCALE_FACTOR           = 0.500000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_InitialFastConvTimeSec       = 15
+09-11 22:05:01.585  2824  2824 I AUDIOALG: 
+09-11 22:05:01.585  2824  2824 I AUDIOALG: **** Beam Selector CONFIG ****
+09-11 22:05:01.585  2824  2824 I AUDIOALG: ConfSNRBeamSelector:
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_numBeams                     = 4
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyAdaptationFactorFast   = 0.949999988079071
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyAdaptationFactorSlow   = 0.986999988555908
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyRatio                  = 1.200000047683716
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_noiseAdaptationFactor        = 1.001000046730042
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_SNRThreshold                 = 6.500000000000000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_bufferSize                   = 10
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_hangoverPeriod               = 15
+09-11 22:05:01.585  2824  2824 I AUDIOALG: ConfSNRBeamSelector:
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_numBeams                     = 4
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyAdaptationFactorFast   = 0.949999988079071
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyAdaptationFactorSlow   = 0.986999988555908
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_energyRatio                  = 1.200000047683716
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_noiseAdaptationFactor        = 1.001000046730042
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_SNRThreshold                 = 6.500000000000000
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_bufferSize                   = 10
+09-11 22:05:01.585  2824  2824 I AUDIOALG: m_hangoverPeriod               = 15
+09-11 22:05:01.585  2824  2824 I AUDIOALG: *****************************************************
+09-11 22:05:01.585  2824  2824 I AUDIOALG: Finished GenericAFE:configure() Aug 20 2019 12:10:32
+09-11 22:05:01.585  2824  2824 I AUDIOALG: *****************************************************
+09-11 22:05:01.587  2824  2824 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+09-11 22:05:01.587  2824  2824 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+09-11 22:05:01.587  2824  2824 D ASP     : Read mic1 calibration value=1088994603
+09-11 22:05:01.587  2824  2824 D ASP     : Read mic2 calibration value=1059112505
+09-11 22:05:01.587  2824  2824 I AUDIOALG: getUserEqInfo : User EQ Info NumBands: 3 	 RangeMin: -6 	 RangeMax: 6 	 DefaultStepSize: 3
+09-11 22:05:01.587  2824  2824 E ASP     : UserEq file could not be read, constructing default json
+09-11 22:05:01.587  2824  2824 I AudioSignalProcessor: ASP capture is enabled
+09-11 22:05:01.587  2824  2824 D AudioALSAHardware: -mAudioALSAHardware
+09-11 22:05:01.588  2824  2824 D AudioALSAHardware: initCheck()
+09-11 22:05:01.588  2824  2824 W audio.amazon_wrapper: adev_get_master_mute(): not implemented yet!
+09-11 22:05:01.588  2824  2824 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: AudioALSAVolumeController setMasterVolume v = 1.000000 mode = 0 devices = 0x0
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: ApplyDualmodeGain gain = 256 mode = 0 devices = 6
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: ApplyAudioGain  Gain = 256 mode= 0 device = 6
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: ApplyAudioGain  DegradedBGain = 12 mVolumeRange[mode] = 12 
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetHeadPhoneLGain = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetRealHeadPhoneLGain = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetHeadPhoneRGain = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetRealHeadPhoneRGain = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: ApplyDualmodeGain gain = 256 mode = 0 devices = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: ApplyAmpGain  Gain = 256 mode= 0 device = 7
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:05:01.588  2824  2824 D AudioALSAVolumeController: SetRealLinoutRGain = 8
+09-11 22:05:01.589  2824  2824 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:05:01.589  2824  2824 D AudioALSAVolumeController: SetRealLinoutRGain = 8
+09-11 22:05:01.589  2824  2824 D AudioALSAVolumeController: SetLSpeakerGain,DegradedBGain=5 
+09-11 22:05:01.589  2824  2824 D AudioALSAVolumeController: SetRealLSpeakerGain = 5
+09-11 22:05:01.589  2824  2824 E AudioALSAVolumeController: Error: SetSpeakerGain invalid value
+09-11 22:05:01.589  2824  2824 W audio.amazon_wrapper: adev_set_master_mute(): not implemented yet!
+09-11 22:05:01.589  2824  2824 D AudioALSAHardware: setMode setMode = 0
+09-11 22:05:01.589  2824  2824 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+09-11 22:05:01.589  2824  2824 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+09-11 22:05:01.589  2824  2824 D AudioALSAStreamManager: +openOutputStream()
+09-11 22:05:01.589  2824  2824 D AudioALSAStreamManager: openOutputStream(), devices = 0x2, format = 0x1, channels = 0x3, sampleRate = 48000, status = 0xd
+09-11 22:05:01.589  2824  2824 D AudioALSAStreamOut: AudioALSAStreamOut()
+09-11 22:05:01.590  2824  2824 D AudioALSAStreamOut: set(), devices = 0x2, format = 0x1, channels = 0x3, sampleRate = 48000, flags = 0x2
+09-11 22:05:01.590  2824  2824 D AudioALSASampleRateController: AudioALSASampleRateController()
+09-11 22:05:01.590  2824  2824 D AudioALSASampleRateController: +setPrimaryStreamOutSampleRate(), mPrimaryStreamOutSampleRate: 44100 => 48000
+09-11 22:05:01.590  2824  2824 D AudioALSASampleRateController: -setPrimaryStreamOutSampleRate(), mPrimaryStreamOutSampleRate: 48000
+09-11 22:05:01.590  2824  2824 D NVRAM   : audioComFltCustParamInit Do nothing
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 0, param 0x1
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 1, param 0x6
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+09-11 22:05:01.590  2824  2824 D MtkAudioLoud: mIsZeroCoeff 1 mFilterType 1
+09-11 22:05:01.590  2824  2824 D AudioMTKFilterManager: +Init AudioMTKFilter_VibSpkAddTone
+09-11 22:05:01.590  2824  2824 D AudioMTKFilterManager: sampleRate [48000] channel [2] format [0x1] bufferSize [3072]
+09-11 22:05:01.590  2824  2824 D AudioMTKFilterManager: -Init AudioMTKFilter_VibSpkAddTone
+09-11 22:05:01.590  2824  2824 D AudioVIBSPKControl: getInstance()
+09-11 22:05:01.590  2824  2824 D AudioFtmBase: AudioFtmBase()
+09-11 22:05:01.590  2824  2824 D LoopbackManager: LoopbackManager(), mWorkingModemIndex = 0
+09-11 22:05:01.590  2824  2824 D AudioFtm: AudioFtm()
+09-11 22:05:01.590  2824  2824 D AudioFtm: mMixer = 0xee32d000
+09-11 22:05:01.590  2824  2824 D AudioFtm: GetVibSpkCalibrationStatus()
+09-11 22:05:01.591  2824  2824 D AudioMTKFilterManager: VibSpkReadFrequency:0
+09-11 22:05:01.591  2824  2824 D AudioMTKFilterManager: [VibSpk] SetDefaultFreq
+09-11 22:05:01.591  2824  2824 D AudioVIBSPKControl: setParameters:bb80 9c f 5
+09-11 22:05:01.591  2824  2824 D AudioVIBSPKControl: VsgGenInit
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 0, param 0x3
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 1, param 0x4
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+09-11 22:05:01.591  2824  2824 D MtkAudioLoud: mIsZeroCoeff 0 mFilterType 3
+09-11 22:05:01.591  2824  2824 D AudioMTKFilterManager: mFixedParam 0
+09-11 22:05:01.591  2824  2824 D AudioALSAStreamManager: -openOutputStream(), out = 0xee32d700, status = 0x0, mStreamOutVector.size() = 1
+09-11 22:05:01.601  2824  2824 D AudioALSAHardware: +setParameters(): restarting=true
+09-11 22:05:01.601  2824  2824 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "restarting=true"
+09-11 22:05:01.601  2824  2824 D AudioALSAHardware: -setParameters(): restarting=true 
+09-11 22:05:01.601  2824  2828 D AudioALSAStreamOut: standby()
+09-11 22:05:01.601  2824  2828 D AudioALSAStreamOut: -standby()
+09-11 22:05:01.602  2824  2824 D AudioALSAHardware: +getParameters(), key = routing=2;supEncapsulationMetadataTypes;supEncapsulationModes
+09-11 22:05:01.602  2824  2824 D AudioALSAHardware: -getParameters(), return ""
+09-11 22:05:01.606  2824  2828 D AudioALSAHardware: setVoiceVolume(), volume = -0.000000, mUseTuningVolume = 0
+09-11 22:05:01.606  2824  2828 D AudioALSAStreamManager: setVoiceVolume(), volume = 0.010000
+09-11 22:05:01.606  2824  2828 D AudioALSAVolumeController: +setVoiceVolume(), v=0.010000, mode=0x0, device=0x2
+09-11 22:05:01.606  2824  2828 D AudioALSAVolumeController: GetDRCVersion DrcSpeechModeBits = 4 device= 0x2 mSpeechDrcType = 0x0 Sph_Drc_Version = 0x0
+09-11 22:05:01.606  2824  2828 D AudioALSAVolumeController: DRC_VERSION_1
+09-11 22:05:01.717  2824  2828 D audio.amazon_wrapper: adev_create_audio_patch - change source hw_module with handle(13) 
+09-11 22:05:01.717  2824  2828 D AudioALSAHardware: +routing createAudioPatch Mixer->2
+09-11 22:05:01.717  2824  2828 D AudioALSAStreamManager: +setParameters(), IOport = 13, keyValuePairs = routing=2
+09-11 22:05:01.717  2824  2828 D AudioALSAStreamManager: Send to mStreamOutVector[0]
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamOut: +setParameters(): routing=2
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamManager: +routingOutputDevice()
+09-11 22:05:01.718  2824  2828 I AudioALSAStreamManager: routingOutputDevice(), output device is changing, set speaker power mode
+09-11 22:05:01.718  2824  2828 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, set speaker power mode -1 -> 5
+09-11 22:05:01.718  2824  2828 I ASP     : asp_command: 0x0; code=11
+09-11 22:05:01.718  2824  2828 I ASP     : SPEAKER POWER MODE 5
+09-11 22:05:01.718  2824  2828 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+09-11 22:05:01.718  2824  2828 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamManager: routingOutputDevice(), output_devices: 0x2 => 0x2, mPhoneCallSpeechOpen = 0
+09-11 22:05:01.718  2824  2828 D AudioALSAVoiceWakeUpController: +updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 22:05:01.718  2824  2828 D AudioHeadSetMessager: /sys/class/switch/h2w/state => 0
+09-11 22:05:01.718  2824  2828 D AudioALSAVoiceWakeUpController: -updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamManager: +CheckHeadsetChange(), current_output_devices = 2 output_device = 2 
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamManager: mHeadsetChange = 0
+09-11 22:05:01.718  2824  2828 W AudioALSAStreamManager: -routingOutputDevice(), output_devices == current_output_devices(0x2), return
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamOut: -setParameters(): routing=2 
+09-11 22:05:01.718  2824  2828 D AudioALSAStreamManager: -setParameters()
+09-11 22:05:01.718  2824  2828 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamManager: +openInputStream()
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, status = 14, acoustics = 0x0
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 22:05:01.722  2824  2828 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 22:05:01.722  2824  2828 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 22:05:01.722  2824  2828 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:01.722  2824  2828 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:01.722  2824  2828 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 22:05:01.722  2824  2828 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 2, buffer_size=1280
+09-11 22:05:01.722  2824  2828 D AudioALSAStreamManager: -openInputStream(), in = 0xedda3b00, status = 0x0, mStreamInVector.size() = 1
+09-11 22:05:01.724  2824  2828 D AudioALSAStreamIn: +standby()
+09-11 22:05:01.724  2824  2828 D AudioALSAStreamIn: -standby()
+09-11 22:05:01.725  2824  2828 D AudioALSAStreamIn: +standby()
+09-11 22:05:01.725  2824  2828 D AudioALSAStreamIn: -standby()
+09-11 22:05:01.725  2824  2828 D AudioALSAStreamManager: +closeInputStream(), in = 0xedda3b00
+09-11 22:05:01.725  2824  2828 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+09-11 22:05:01.726  2824  2828 D AudioALSAStreamManager: -closeInputStream(), mStreamInVector.size() = 0
+09-11 22:05:01.735  2824  2824 D modules.usbaudio.audio_hal: [USB_AUD] adev_open
+09-11 22:05:01.737  2824  2824 I r_submix: adev_open(name=audio_hw_if)
+09-11 22:05:01.737  2824  2824 I r_submix: adev_init_check()
+09-11 22:05:01.738  2824  2824 D r_submix: adev_open_input_stream(addr=0)
+09-11 22:05:01.738  2824  2824 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+09-11 22:05:01.738  2824  2824 D r_submix:   now using address 0 for route 9
+09-11 22:05:01.740  2824  2824 I r_submix: in_standby()
+09-11 22:05:01.740  2824  2824 I r_submix: in_standby()
+09-11 22:05:01.741  2824  2824 D r_submix: adev_close_input_stream()
+09-11 22:05:01.741  2824  2824 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+09-11 22:05:01.741  2824  2824 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+09-11 22:05:01.969  2824  2824 D AudioALSAHardware: +setParameters(): BT_SCO=off
+09-11 22:05:01.970  2824  2824 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "BT_SCO=off"
+09-11 22:05:01.970  2824  2824 D AudioALSAHardware: -setParameters(): BT_SCO=off 
+09-11 22:05:01.972  2824  2824 D AudioALSAHardware: setMode setMode = 0
+09-11 22:05:01.972  2824  2824 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+09-11 22:05:01.972  2824  2824 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+09-11 22:05:01.997  2824  2824 D AudioALSAHardware: +setParameters(): restarting=false
+09-11 22:05:01.997  2824  2824 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "restarting=false"
+09-11 22:05:01.997  2824  2824 D AudioALSAHardware: -setParameters(): restarting=false 
+09-11 22:05:01.999  2824  2824 D AudioALSAStreamManager: getMicMute(), mMicMute = 0
+09-11 22:05:02.000  2824  2824 D AudioALSAStreamManager: setMicMute(), mMicMute: 0 => 0
+09-11 22:05:02.000  2824  2824 D AudioALSAStreamManager: +SetInputMute(), 0
+09-11 22:05:02.000  2824  2824 D AudioALSAStreamManager: -SetInputMute()
+09-11 22:05:02.000  2824  2824 D AudioALSAStreamManager: getMicMute(), mMicMute = 0
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamManager: +openInputStream()
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, status = 30, acoustics = 0x0
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 22:05:02.597  2824  2824 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 22:05:02.597  2824  2824 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 22:05:02.597  2824  2824 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:02.597  2824  2824 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:02.597  2824  2824 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 22:05:02.597  2824  2824 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 1, buffer_size=640
+09-11 22:05:02.597  2824  2824 D AudioALSAStreamManager: -openInputStream(), in = 0xedda3b00, status = 0x0, mStreamInVector.size() = 1
+09-11 22:05:02.600  2824  2824 D AudioALSAStreamIn: +standby()
+09-11 22:05:02.600  2824  2824 D AudioALSAStreamIn: -standby()
+09-11 22:05:02.602  2824  2824 D AudioALSAStreamIn: +standby()
+09-11 22:05:02.603  2824  2824 D AudioALSAStreamIn: -standby()
+09-11 22:05:02.614  2824  2824 D audio.amazon_wrapper: adev_create_audio_patch - change sink hw_module with handle(30) 
+09-11 22:05:02.614  2824  2824 D AudioALSAHardware: +routing createAudioPatch 80000004->Mixer Src 1e
+09-11 22:05:02.614  2824  2824 D AudioALSAStreamManager: +setParameters(), IOport = 30, keyValuePairs = input_source=30;routing=-2147483644
+09-11 22:05:02.614  2824  2824 D AudioALSAStreamManager: Send to mStreamInVector [0]
+09-11 22:05:02.614  2824  2824 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x80000004
+09-11 22:05:02.614  2824  2824 W AudioALSAStreamManager: -routingInputDevice(), input_device == current_input_device(0x80000004), return
+09-11 22:05:02.614  2824  2824 D AudioALSAStreamManager: -setParameters()
+09-11 22:05:02.615  2824  2824 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 22:05:02.619  2824  2824 E FMQ     : grantorIdx must be less than 3
+09-11 22:05:02.619  2824  2824 E FMQ     : grantorIdx must be less than 3
+09-11 22:05:02.621  2824  2854 D AudioALSAStreamIn: open()
+09-11 22:05:02.621  2824  2854 D AudioALSAStreamManager: +createCaptureHandler(), mAudioMode = 0, input_source = 30, input_device = 0x80000004, mBypassDualMICProcessUL=0
+09-11 22:05:02.621  2824  2854 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:02.621  2824  2854 D AudioALSAStreamManager: -EnableBesRecord(), 0
+09-11 22:05:02.621  2824  2854 D AudioALSADataProcessor: AudioALSADataProcessor()
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureHandlerBase: AudioALSACaptureHandlerBase()
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureHandlerBase: init()
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureHandlerNormal: AudioALSACaptureHandlerNormal()
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureHandlerNormal: init()
+09-11 22:05:02.621  2824  2854 D AudioALSAStreamManager: -createCaptureHandler(), mCaptureHandlerVector.size() = 1
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureHandlerNormal: +open(), input_device = 0x80000004, input_source = 0x1e, sample_rate=16000, num_channels=1
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureDataProviderBase: AudioALSACaptureDataProviderBase(), 0xee1df900
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureDataProviderNormal: AudioALSACaptureDataProviderNormal()
+09-11 22:05:02.621  2824  2854 D AudioALSACaptureDataClient: AudioALSACaptureDataClient()
+09-11 22:05:02.622  2824  2854 D AudioSPELayer: SPELayer+
+09-11 22:05:02.622  2824  2854 D AudioSPELayer: GetVoIPJitterTime JitterTime=0,ret=1
+09-11 22:05:02.623  2824  2854 D AudioSPELayer: SPELayer-
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: AudioALSACaptureDataClient(), besrecord_enable=0, besrecord_scene=-1
+09-11 22:05:02.623  2824  2854 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: CheckBesRecordStereoModeEnable(), mBesRecordStereoMode = 0
+09-11 22:05:02.623  2824  2854 D AudioPreProcess: AudioPreProcess()+
+09-11 22:05:02.623  2824  2854 D AudioPreProcess: AudioPreProcess()-
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderBase: attach(), 0xee1df900
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataClient: setIdentity(), mIsIdentitySet=0, identity=0
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderBase: attach(), mCaptureDataClientIndex=0, mCaptureDataClientVector.size()=0, Identity=0
+09-11 22:05:02.623  2824  2854 D AudioALSACaptureDataProviderNormal: open()
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = TLV320AIC3101 
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: compare success = 22
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3101 
+09-11 22:05:02.624  2824  2854 D AudioALSADeviceParser:  compare success Cardindex = 0
+09-11 22:05:02.624  2824  2854 D AudioALSACaptureDataProviderNormal: open cardindex = 0  pcmindex = 22
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: buffersizemax = 30840
+09-11 22:05:02.629  2824  2854 D AudioSpeechEnhanceInfo: GetHifiRecord, mHiFiRecordEnable=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: bHifiRecord = 0
+09-11 22:05:02.629  2824  2854 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: btempDebug = 0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderBase: +HasLowLatencyCapture()
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataClient: +IsLowLatencyCapture()
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataClient: -IsLowLatencyCapture(), bRet=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderBase: -HasLowLatencyCapture(), bRet=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), format = 4, channels=4, rate=16000, period_size=256, period_count=10,latency=20 kReadBufferSize=3072
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), mCaptureDropSize=0, CAPTURE_DROP_MS=0
+09-11 22:05:02.629  2824  2854 D AudioALSACaptureDataProviderNormal: open(), period_count=10, period_size=256, samplerate = 16000
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureDataProviderBase: -attach()
+09-11 22:05:02.779  2824  2857 D AudioALSACaptureDataProviderNormal: +readThread(), pid: 2824, tid: 2857, kReadBufferSize=0xc00, open_index=1
+09-11 22:05:02.779  2824  2854 D AudioSPELayer: SetUPLinkDropTime, 0
+09-11 22:05:02.779  2824  2854 D AudioSPELayer: SetUPLinkIntrStartTime, sec=917, nsec=845493285
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureDataClient: CheckChannelRemixOp(), ch 4->1 (mBesRecordStereoMode = 0, BesRecord enable = 0), ChannelRemixOp = 0
+09-11 22:05:02.779  2824  2854 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 22:05:02.779  2824  2854 E ASP     : Invalid pipeline type: -1
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: +startInputDevice(), new_device = 0x80000004, mInputDevice = 0x0, mStartInputDeviceCount = 0, mInputBuiltInMicCount = 0, mInputHeadsetMicCount = 0
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: setMIC1Mode(), isphonemic 0, micmode 1
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic1TypeACCMode descriptor == NULL
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: setMIC2Mode(), isphonemic 0, micmode 1
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic2TypeACCMode descriptor == NULL
+09-11 22:05:02.779  2824  2854 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:05:02.779  2824  2854 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = builtin_Mic_SingleMic descriptor == NULL
+09-11 22:05:02.779  2824  2854 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-11 22:05:02.779  2824  2854 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 22:05:02.779  2824  2854 D AudioALSACaptureHandlerNormal: -open()
+09-11 22:05:02.816  2824  2854 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 917 nsec 832619131
+09-11 22:05:07.213  2824  2824 D AudioALSAStreamOut: dump()
+09-11 22:05:07.219  2824  2824 D AudioALSAHardware: dumpState()

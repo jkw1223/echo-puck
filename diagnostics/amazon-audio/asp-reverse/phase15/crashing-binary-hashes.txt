@@ -1,0 +1,6 @@
+3fda922263f5f433eeacfec62f7c39b2e87c4cc87ec62b46a69ed3d9af7ab5b2  diagnostics/amazon-audio/asp-reverse/phase15/binaries/android.hardware.audio@2.0-impl.so
+77dae444f50d9434ebb9cabe72adeff299fccdbef9b801f8adc151378904ccd1  diagnostics/amazon-audio/asp-reverse/phase15/binaries/audioserver
+562d6e76f05b4fdfa8c93241c6132d4553243c096570f9889b2cbfc8805b370d  diagnostics/amazon-audio/asp-reverse/phase15/binaries/libaudiopreprocessing.so
+diagnostics/amazon-audio/asp-reverse/phase15/binaries/android.hardware.audio@2.0-impl.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[md5/uuid]=99e3312e60223c5bc360708d9a8becea, stripped
+diagnostics/amazon-audio/asp-reverse/phase15/binaries/audioserver:                        ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /system/bin/linker, BuildID[md5/uuid]=8f8c41575fcd033f40ba5acb7eda670f, stripped
+diagnostics/amazon-audio/asp-reverse/phase15/binaries/libaudiopreprocessing.so:           ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, BuildID[md5/uuid]=424840bc5f748f34097f70efdca3257c, stripped

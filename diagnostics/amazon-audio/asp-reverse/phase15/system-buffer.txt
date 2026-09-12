@@ -1,0 +1,60 @@
+--------- beginning of system
+09-11 22:07:27.038   441   654 W NativeCrashListener: Couldn't find ProcessRecord for pid 3461
+09-11 22:07:27.053   441   479 I BootReceiver: Copying /data/tombstones/tombstone_23 to DropBox (SYSTEM_TOMBSTONE)
+09-11 22:07:27.055   441   479 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+09-11 22:07:27.192   441   472 I ActivityManager: Force stopping com.steve.aecdiag appid=10147 user=-1: deletePackageX
+09-11 22:07:27.194   441   472 I ActivityManager: Killing 2995:com.steve.aecdiag/u0a147 (adj 0): stop com.steve.aecdiag due to deletePackageX
+09-11 22:07:27.196   441   472 W ActivityTaskManager: Force removing ActivityRecord{f18d20e u0 com.steve.aecdiag/.MainActivity t218 f}}: app died, no saved state
+09-11 22:07:27.207   441   472 W ActivityTaskManager: Force removing ActivityRecord{f30813d u0 com.steve.aecdiag/.MainActivity t218 f}}: app died, no saved state
+09-11 22:07:27.392   441   947 W ActivityManager: Unable to start service Intent { act=com.android.launcher3.WINDOW_OVERLAY dat=app://com.android.launcher3:10139?v=9&cv=14 pkg=com.google.android.googlequicksearchbox } U=0: not found
+09-11 22:07:27.410   441   465 W ActivityManager: setHasOverlayUi called on unknown pid: 2995
+09-11 22:07:27.540   441   486 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+09-11 22:07:27.541   441   486 D PackageManager: Clear ephemeral installer activity
+09-11 22:07:27.577   441   471 W UsageStatsService: Failed to note usage stop
+09-11 22:07:27.577   441   471 W UsageStatsService: java.lang.IllegalArgumentException: Unable to stop usage for com.android.permissioncontroller, not in use
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at com.android.server.usage.AppTimeLimitController.noteUsageStop(AppTimeLimitController.java:955)
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at com.android.server.usage.UsageStatsService.reportEvent(UsageStatsService.java:919)
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at com.android.server.usage.UsageStatsService$H.handleMessage(UsageStatsService.java:1376)
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at android.os.Looper.loop(Looper.java:223)
+09-11 22:07:27.577   441   471 W UsageStatsService: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+09-11 22:07:27.586   441  1157 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-11 22:07:27.853   441   486 I ActivityManager: Force stopping com.steve.aecdiag appid=10147 user=0: pkg removed
+09-11 22:07:27.919   441  1157 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-11 22:07:27.920   441   516 V StorageManagerService: Package com.steve.aecdiag does not have legacy storage
+09-11 22:07:27.921   441   472 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.steve.aecdiag flg=0x4000010 (has extras) } to org.lineageos.audiofx/.Compatibility$Receiver
+09-11 22:07:27.927   441   503 I RollbackManager: broadcast=ACTION_PACKAGE_FULLY_REMOVED pkg=com.steve.aecdiag
+09-11 22:07:27.928   441   472 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10093; state: DISABLED
+09-11 22:07:27.929   441   473 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10093; state: ENABLED
+09-11 22:07:27.954   441   462 I RoleManagerService: Granting default roles...
+09-11 22:07:27.955   441   441 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 1000; state: DISABLED
+09-11 22:07:27.963   441   473 I ActivityManager: Start proc 3544:com.android.documentsui/u0a93 for broadcast {com.android.documentsui/com.android.documentsui.PackageReceiver}
+09-11 22:07:27.982   441   472 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+09-11 22:07:27.983   441   441 I ConditionProviders: Disallowing condition provider com.steve.aecdiag
+09-11 22:07:27.984   441   519 W NetworkManagementSocketTagger: problem clearing counters for uid 10147 : errno -2
+09-11 22:07:28.018   441   473 W ActivityManager: Slow operation: 63ms so far, now at startProcess: returned from zygote!
+09-11 22:07:28.019   441   473 W ActivityManager: Slow operation: 65ms so far, now at startProcess: done updating battery stats
+09-11 22:07:28.019   441   473 W ActivityManager: Slow operation: 65ms so far, now at startProcess: building log message
+09-11 22:07:28.019   441   473 I ActivityManager: Start proc 3565:com.android.keychain/1000 for service {com.android.keychain/com.android.keychain.KeyChainService}
+09-11 22:07:28.019   441   473 W ActivityManager: Slow operation: 65ms so far, now at startProcess: starting to update pids map
+09-11 22:07:28.019   441   473 W ActivityManager: Slow operation: 66ms so far, now at startProcess: done updating pids map
+09-11 22:07:28.325   441   946 I ActivityManager: Killing 838:com.android.settings/1000 (adj 985): empty #17
+09-11 22:07:28.356   441   465 W ActivityManager: setHasOverlayUi called on unknown pid: 838
+09-11 22:07:43.119   441  3528 I ActivityManager: Killing 1652:com.android.shell/2000 (adj 975): empty #17
+09-11 22:08:11.603   441   481 V DisplayPowerController: Brightness [0.05] reason changing to: 'manual [ dim ]', previous reason: 'manual'.
+09-11 22:08:18.599   441   481 I PowerManagerService: Going to sleep due to timeout (uid 1000)...
+09-11 22:08:18.601   441   481 I DisplayPowerController: Blocking screen off
+09-11 22:08:18.603   441   481 I DisplayPowerController: Unblocked screen off after 3 ms
+09-11 22:08:18.630   441   481 D ActivityTaskManager: Top Process State changed to PROCESS_STATE_TOP_SLEEPING
+09-11 22:08:18.669   441   481 V DisplayPowerController: Brightness [-1.0] reason changing to: 'screen_off', previous reason: 'manual [ dim ]'.
+09-11 22:08:18.696   441   465 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+09-11 22:08:18.974   441   481 I DreamManagerService: Entering dreamland.
+09-11 22:08:18.975   441   481 I PowerManagerService: Dozing...
+09-11 22:08:18.976   441   462 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+09-11 22:08:18.979   441   462 D AutofillManagerService: Close system dialogs
+09-11 22:08:19.061   441   481 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+09-11 22:08:19.063   441   481 V DisplayPowerController: Brightness [0.0] reason changing to: 'doze', previous reason: 'screen_off'.
+09-11 22:08:19.065   441   465 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+09-11 22:08:19.126   441   481 I DisplayPowerController: Unblocked screen on after 65 ms
+09-11 22:08:23.634   441   465 W ActivityTaskManager: Sleep timeout!  Sleeping now.
+09-11 22:09:58.883   441   471 I UsageStatsService: User[0] Flushing usage stats to disk

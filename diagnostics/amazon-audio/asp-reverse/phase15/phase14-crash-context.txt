@@ -1,0 +1,524 @@
+1---------- beginning of main
+2-09-11 22:06:38.260  3228  3228 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+3-09-11 22:06:38.265  3228  3228 I AndroidRuntime: Using default boot image
+4-09-11 22:06:38.265  3228  3228 I AndroidRuntime: Leaving lock profiling enabled
+5-09-11 22:06:38.267  2629  2656 I chatty  : uid=10158(com.steve.puckd) pool-4-thread-1 expire 768 lines
+6-09-11 22:06:38.274  3228  3228 I app_process: Core platform API reporting enabled, enforcing=false
+7-09-11 22:06:38.468  3228  3228 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+8-09-11 22:06:38.468  3228  3228 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+9-09-11 22:06:38.484  3228  3228 I app_process: The ClassLoaderContext is a special shared library.
+10-09-11 22:06:38.528  3228  3228 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-09-11 22:06:38.543  3228  3228 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+12-09-11 22:06:38.573  3228  3228 D AndroidRuntime: Shutting down VM
+13-09-11 22:06:38.574   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+14:09-11 22:06:38.575  2874  2928 I chatty  : uid=1041(audioserver) expire 72 lines
+15-09-11 22:06:38.578   441  2521 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+16-09-11 22:06:38.578   441  2521 I chatty  : uid=1000(system) Binder:441_10 identical 1 line
+17-09-11 22:06:38.579   441  2521 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+18-09-11 22:06:38.646  2995  2995 I AecDiag : event=001 t_ms=56478 STEP=query_effects aec_available=true ns_available=false agc_available=false
+19-09-11 22:06:38.666  2995  2995 I AecDiag : event=002 t_ms=56497 descriptor name=Acoustic Echo Canceler implementor=The Android Open Source Project type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+20-09-11 22:06:38.667  2995  2995 I AecDiag : event=003 t_ms=56499 descriptor name=Dynamics Processing implementor=The Android Open Source Project type=7261676f-6d75-7369-6364-28e2fd3ac39e implementation=e0e6539b-1781-7261-676f-6d7573696340
+21-09-11 22:06:38.668  2995  2995 I AecDiag : event=004 t_ms=56500 descriptor name=Loudness Enhancer implementor=The Android Open Source Project type=fe3199be-aed0-413f-87bb-11260eb63cf1 implementation=fa415329-2034-4bea-b5dc-5b381c8d1e2c
+22-09-11 22:06:38.669  2995  2995 I AecDiag : event=005 t_ms=56501 descriptor name=Multichannel Downmix To Stereo implementor=The Android Open Source Project type=381e49cc-a858-4aa2-87f6-e8388e7601b2 implementation=93f04452-e4fe-41cc-91f9-e475b6d1d69f
+23-09-11 22:06:38.671  2995  2995 I AecDiag : event=006 t_ms=56502 descriptor name=Visualizer implementor=The Android Open Source Project type=e46b26a0-dddd-11db-8afd-0002a5d5c51b implementation=d069d9e0-8329-11df-9168-0002a5d5c51b
+24-09-11 22:06:38.674  2995  2995 I AecDiag : event=007 t_ms=56505 descriptor name=Insert Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=172cdf00-a3bc-11df-a72f-0002a5d5c51b
+25-09-11 22:06:38.675  2995  2995 I AecDiag : event=008 t_ms=56506 descriptor name=Auxiliary Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=f29a1400-a3bb-11df-8ddc-0002a5d5c51b
+26-09-11 22:06:38.676  2995  2995 I AecDiag : event=009 t_ms=56507 descriptor name=Insert Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=c7a511a0-a3bb-11df-860e-0002a5d5c51b
+27-09-11 22:06:38.677  2995  2995 I AecDiag : event=010 t_ms=56508 descriptor name=Auxiliary Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=4a387fc0-8ab3-11df-8bad-0002a5d5c51b
+28-09-11 22:06:38.678  2995  2995 I AecDiag : event=011 t_ms=56510 descriptor name=Volume implementor=NXP Software Ltd. type=09e8ede0-ddde-11db-b4f6-0002a5d5c51b implementation=119341a0-8469-11df-81f9-0002a5d5c51b
+29-09-11 22:06:38.679  2995  2995 I AecDiag : event=012 t_ms=56511 descriptor name=Equalizer implementor=NXP Software Ltd. type=0bed4300-ddd6-11db-8f34-0002a5d5c51b implementation=ce772f20-847d-11df-bb17-0002a5d5c51b
+30-09-11 22:06:38.680  2995  2995 I AecDiag : event=013 t_ms=56512 descriptor name=Virtualizer implementor=NXP Software Ltd. type=37cc2c00-dddd-11db-8577-0002a5d5c51b implementation=1d4033c0-8557-11df-9f2d-0002a5d5c51b
+31-09-11 22:06:38.682  2995  2995 I AecDiag : event=014 t_ms=56513 descriptor name=Dynamic Bass Boost implementor=NXP Software Ltd. type=0634f220-ddd4-11db-a0fc-0002a5d5c51b implementation=8631f300-72e2-11df-b57e-0002a5d5c51b
+32:09-11 22:06:39.009  2873  2884 I chatty  : uid=1041(audioserver) expire 3 lines
+33-09-11 22:06:39.009   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+34-09-11 22:06:39.127   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+35-09-11 22:06:40.406  3243  3243 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+36-09-11 22:06:40.411  3243  3243 I AndroidRuntime: Using default boot image
+37-09-11 22:06:40.411  3243  3243 I AndroidRuntime: Leaving lock profiling enabled
+38-09-11 22:06:40.421  3243  3243 I app_process: Core platform API reporting enabled, enforcing=false
+39-09-11 22:06:40.625  3243  3243 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+40-09-11 22:06:40.628  3243  3243 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+41-09-11 22:06:40.646  3243  3243 I app_process: The ClassLoaderContext is a special shared library.
+42-09-11 22:06:40.694  3243  3243 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+43-09-11 22:06:40.710  3243  3243 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+44-09-11 22:06:40.729  3243  3243 D AndroidRuntime: Shutting down VM
+45:09-11 22:06:40.747  2873  2885 I chatty  : uid=1041(audioserver) expire 4 lines
+46-09-11 22:06:40.752   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+47-09-11 22:06:40.756   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+48-09-11 22:06:40.760  2995  2995 I AecDiag : event=015 t_ms=58591 STEP=create_record state=1 session=25 rate=16000 channels=1 format=2 buffer=6400
+49-09-11 22:06:41.081   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+50-09-11 22:06:41.339   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+51-09-11 22:06:42.549  3258  3258 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+52-09-11 22:06:42.554  3258  3258 I AndroidRuntime: Using default boot image
+53-09-11 22:06:42.554  3258  3258 I AndroidRuntime: Leaving lock profiling enabled
+54-09-11 22:06:42.564  3258  3258 W app_process: Could not reserve sentinel fault page
+55-09-11 22:06:42.564  3258  3258 I app_process: Core platform API reporting enabled, enforcing=false
+56-09-11 22:06:42.773  3258  3258 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+57-09-11 22:06:42.773  3258  3258 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+58-09-11 22:06:42.790  3258  3258 I app_process: The ClassLoaderContext is a special shared library.
+59-09-11 22:06:42.835  3258  3258 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+60-09-11 22:06:42.850  3258  3258 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+61-09-11 22:06:42.870  3258  3258 D AndroidRuntime: Shutting down VM
+62:09-11 22:06:42.889  2874  2874 I chatty  : uid=1041(audioserver) expire 1 line
+63:09-11 22:06:42.892  2874  2878 I chatty  : uid=1041(audioserver) expire 11 lines
+64-09-11 22:06:42.896   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+65-09-11 22:06:42.898  2995  2995 I AecDiag : event=016 t_ms=60730 STEP=create_aec null=false enabled=false control=true type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+66-09-11 22:06:42.907   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+67-09-11 22:06:43.240   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+68-09-11 22:06:43.349   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+69:09-11 22:06:45.656  2874  3271 I chatty  : uid=1041(audioserver) expire 3 lines
+70---------- beginning of crash
+71:09-11 22:06:45.689  2874  3271 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 3271 (HwBinder:2874_3), pid 2874 (audio.service)
+72:09-11 22:06:45.726  3280  3280 I chatty  : uid=1041(audioserver) expire 2 lines
+73-09-11 22:06:45.728   236   236 I tombstoned: received crash request for pid 3271
+74:09-11 22:06:45.737  3280  3280 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+75:09-11 22:06:45.737  3280  3280 F DEBUG   : LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+76:09-11 22:06:45.737  3280  3280 F DEBUG   : Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+77:09-11 22:06:45.738  3280  3280 F DEBUG   : Revision: '0'
+78:09-11 22:06:45.738  3280  3280 F DEBUG   : ABI: 'arm'
+79:09-11 22:06:45.738  3280  3280 F DEBUG   : Timestamp: 2026-09-11 22:06:45-0500
+80:09-11 22:06:45.738  3280  3280 F DEBUG   : pid: 2874, tid: 3271, name: HwBinder:2874_3  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+81:09-11 22:06:45.738  3280  3280 F DEBUG   : uid: 1041
+82:09-11 22:06:45.738  3280  3280 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+83:09-11 22:06:45.739  3280  3280 F DEBUG   : Cause: null pointer dereference
+84:09-11 22:06:45.739  3280  3280 F DEBUG   :     r0  ea71e400  r1  00000014  r2  e6b38c28  r3  e9fe50e8
+85:09-11 22:06:45.739  3280  3280 F DEBUG   :     r4  e6b38c10  r5  e6b38c28  r6  ea71e400  r7  00000000
+86:09-11 22:06:45.739  3280  3280 F DEBUG   :     r8  e6b38fd0  r9  e6b38fd0  r10 eab36d20  r11 00000000
+87:09-11 22:06:45.739  3280  3280 F DEBUG   :     ip  e9d75b74  sp  e6b38b98  lr  e9d674ad  pc  00000000
+88:09-11 22:06:45.792  3280  3280 F DEBUG   : backtrace:
+89:09-11 22:06:45.792  3280  3280 F DEBUG   :       #00 pc 00000000  <unknown>
+90:09-11 22:06:45.793  3280  3280 F DEBUG   :       #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+91:09-11 22:06:45.793  3280  3280 F DEBUG   :       #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+92:09-11 22:06:45.793  3280  3280 F DEBUG   :       #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+93:09-11 22:06:45.793  3280  3280 F DEBUG   :       #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+94:09-11 22:06:45.793  3280  3280 F DEBUG   :       #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+95:09-11 22:06:45.794  3280  3280 F DEBUG   :       #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+96:09-11 22:06:45.794  3280  3280 F DEBUG   :       #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+97:09-11 22:06:45.794  3280  3280 F DEBUG   :       #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+98:09-11 22:06:45.794  3280  3280 F DEBUG   :       #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+99:09-11 22:06:45.794  3280  3280 F DEBUG   :       #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+100:09-11 22:06:45.795  3280  3280 F DEBUG   :       #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+101:09-11 22:06:45.795  3280  3280 F DEBUG   :       #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+102---------- beginning of system
+103-09-11 22:06:45.987   441   654 W NativeCrashListener: Couldn't find ProcessRecord for pid 2874
+104-09-11 22:06:45.988   236   236 E tombstoned: Tombstone written to: /data/tombstones/tombstone_21
+105-09-11 22:06:45.997   441   479 I BootReceiver: Copying /data/tombstones/tombstone_21 to DropBox (SYSTEM_TOMBSTONE)
+106-09-11 22:06:45.999   441   479 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+107:09-11 22:06:46.057  2873  2894 I chatty  : uid=1041(audioserver) expire 1 line
+108-09-11 22:06:46.058   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+109-09-11 22:06:46.103  2995  3015 W AudioEffect: IEffect died
+110-09-11 22:06:46.103  2995  3015 W AudioEffects-JNI: EVENT_ERROR
+111-09-11 22:06:46.104  2995  3015 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+112:09-11 22:06:46.104  2995  3015 W AudioSystem: AudioFlinger server died!
+113-09-11 22:06:46.104  2629  2648 I chatty  : uid=10158(com.steve.puckd) Binder:2629_1 expire 2 lines
+114-09-11 22:06:46.104   601  2077 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+115:09-11 22:06:46.105   601  2077 W AudioSystem: AudioFlinger server died!
+116-09-11 22:06:46.105   441  2600 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+117-09-11 22:06:46.105   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+118-09-11 22:06:46.105   441   536 E AS.AudioService: Audioserver died.
+119:09-11 22:06:46.106   441  2600 W AudioSystem: AudioFlinger server died!
+120-09-11 22:06:46.106   601  2077 W AudioSystem: AudioPolicyService server died!
+121-09-11 22:06:46.106   577   987 W AudioSystem: AudioPolicyService server died!
+122-09-11 22:06:46.106  1164  2524 W AudioSystem: AudioPolicyService server died!
+123-09-11 22:06:46.107  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+124-09-11 22:06:46.107   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+125-09-11 22:06:46.108   441   959 E AudioSystem-JNI: AudioSystem::listAudioPorts error -32
+126-09-11 22:06:46.108   441   959 W AudioManager: updateAudioPortCache: listAudioPorts failed
+127-09-11 22:06:46.108   441  2600 W AudioSystem: AudioPolicyService server died!
+128-09-11 22:06:46.108   441  2600 W CaptureStateTracker: Audio policy service died
+129-09-11 22:06:46.109   441   540 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+130-09-11 22:06:46.132   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+131:09-11 22:06:46.133  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 2019 lines
+132-09-11 22:06:46.133   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+133-09-11 22:06:46.134   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+134-09-11 22:06:46.149   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+135-09-11 22:06:46.150   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+136-09-11 22:06:46.151   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+137-09-11 22:06:46.158   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device manifest.
+138-09-11 22:06:46.159   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device manifest.
+139-09-11 22:06:46.164   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+140-09-11 22:06:46.165   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+141-09-11 22:06:46.171   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+142:09-11 22:06:46.206  3287  3287 I chatty  : uid=1041(audioserver) /system/bin/audioserver expire 15 lines
+143-09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+144-09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+145-09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+146-09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+147-09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+148-09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+149-09-11 22:06:46.229   341   952 W AudioAnalytics: (key=audio.flinger) Audioflinger constructor event detected
+150-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_adaptBandLoHz        = -1
+151-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_adaptBandHiHz        = -1
+152-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_taiLen               = -1
+153-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_bandBasedTailLen     = false
+154-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_bandBasedStepSize    = false
+155-09-11 22:06:46.587  3288  3288 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+156-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+157-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+158-09-11 22:06:46.588  3288  3288 I AUDIOALG: ConfSBCanceler #0:
+159-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_nRefsPerInput        = 2
+160-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_adaptBandLoHz        = 0
+161-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_adaptBandHiHz        = 8000
+162-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_taiLen               = 2560
+163-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_bandBasedTailLen     = true
+164-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_bandBasedStepSize    = true
+165-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_maxStepSize          = 0.300000011920929
+166-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_stepSizeRednScale    = 3.000000000000000
+167-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_leakyFactor          = 0.400000005960464
+168-09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_smFactRefPwr         = -1.000000000000000
+169-09-11 22:06:46.588  3288  3288 I AUDIOALG: ConfSB_AEC_ARA:
+170-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_stepSizeErrorScale     = 3.000000000000000
+171-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_enableVSS              = 1
+172-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_ord2toOrd1RatioPercent = 50
+173-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_enableRoundRobin     = 0
+174-09-11 22:06:46.588  3288  3288 I AUDIOALG: SBGenericCanceller: init()
+175-09-11 22:06:46.588  3288  3288 I AUDIOALG: **************************************************************************** 1
+176-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nInputs (in buffer) = 7
+177-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nRefs   (in buffer) = 0
+178-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+179-09-11 22:06:46.588  3288  3288 I AUDIOALG: ==========================================================
+180-09-11 22:06:46.588  3288  3288 I AUDIOALG: GC #0   nGcRefsPerInput = 2   nRefs = 4
+181-09-11 22:06:46.588  3288  3288 I AUDIOALG: 5
+182-09-11 22:06:46.588  3288  3288 I AUDIOALG: 6
+183-09-11 22:06:46.588  3288  3288 I AUDIOALG: nGcTotRefCh = 2    m_nTotRefCh = 2
+184-09-11 22:06:46.588  3288  3288 I AUDIOALG: Gen Cancelers:
+185-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_refIdxStart =  0   m_nTotRefCh =  2
+186-09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ->  5 (0)
+187-09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ->  6 (0)
+188-09-11 22:06:46.588  3288  3288 I AUDIOALG: UseRefInfo # 0 : m_refSource =  0    m_refIndex =  5   m_enable = 1
+189-09-11 22:06:46.588  3288  3288 I AUDIOALG: UseRefInfo # 1 : m_refSource =  0    m_refIndex =  6   m_enable = 1
+190-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+191-09-11 22:06:46.588  3288  3288 I AUDIOALG: Fused Final Generic Canceler :
+192-09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  0   
+193-09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+194-09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+195-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+196-09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  1   
+197-09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+198-09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+199-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+200-09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  2   
+201-09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+202-09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+203-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+204-09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  3   
+205-09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+206-09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+207-09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+208-09-11 22:06:46.588  3288  3288 I AUDIOALG: ==========================================================
+209-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nRefsPerInput = 2
+210-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nInputsToAdapt = 4
+211-09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nTotRefCh = 2
+212-09-11 22:06:46.589  3288  3288 I AUDIOALG: m_nGenCancelers = 1
+213-09-11 22:06:46.589  3288  3288 I AUDIOALG: CANCELER #0
+214-09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandLo = 0
+215-09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandHi = 63
+216-09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandLo = 0
+217-09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandHi = 15 (SIMD)
+218-09-11 22:06:46.589  3288  3288 I AUDIOALG: Leaky = 0.40000
+219-09-11 22:06:46.589  3288  3288 I AUDIOALG: refInfo : 0
+220-09-11 22:06:46.589  3288  3288 I AUDIOALG: refInfo : 0
+221-09-11 22:06:46.589  3288  3288 I AUDIOALG: VSB_AEC_ARA: init()
+222-09-11 22:06:46.589  3288  3288 I AUDIOALG: enableVSS : 1
+223-09-11 22:06:46.589  3288  3288 I AUDIOALG: sigEn 0.0000000486507687469384109     corrEner 0.0000015384614471258828416  bands=16  totBands=64   SIMD_LANES = 4
+224-09-11 22:06:46.590  3288  3288 I AUDIOALG: **** AA MICARA (Misc) CONFIG ****
+225-09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSBGenericCanceller:
+226-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nBands               = 0
+227-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nInputs              = -205922200
+228-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nInputsToAdapt       = 0
+229-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nRefs                = -206621709
+230-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_samplingRate         = 0
+231-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_deciRate             = -162295796
+232-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_refSigEnThresh       = -945550362436546665080562623971328.000000000000000
+233-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_adaptBandLoHz        = -1
+234-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_adaptBandHiHz        = -1
+235-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_taiLen               = -1
+236-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_bandBasedTailLen     = false
+237-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_bandBasedStepSize    = false
+238-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+239-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+240-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+241-09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSBMICARA:1
+242-09-11 22:06:46.590  3288  3288 I AUDIOALG: ARAm_nMics  = 4
+243-09-11 22:06:46.590  3288  3288 I AUDIOALG: ARAm_nRefs  = 2
+244-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_ARAdelay  = 64
+245-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_gain_step  = 0.200000
+246-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_max_gain_ARA_W_Play  = 2.000000
+247-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_max_gain_ARA_No_Play  = 4.000000
+248-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_VSS_freeze_thresh  = 0.750000
+249-09-11 22:06:46.590  3288  3288 I AUDIOALG: **** AA_BeamMerger CONFIG ****
+250-09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSNRBeamMerger:
+251-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_numBeams                     = 4
+252-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_samplingRate                 = 16000
+253-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_SNRThreshold                 = 0.000000999999997
+254-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyStartFreqHz            = 500
+255-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyEndFreqHz              = 3500
+256-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_FDaplhaNoise                 = 0.998000
+257-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_FDaplhaSpeech                = 0.650000
+258-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_N_ALPHA                    = 0.999000
+259-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_ERG_ALPHA                  = 0.750000
+260-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_VSS_SCALE_FACTOR           = 0.500000
+261-09-11 22:06:46.590  3288  3288 I AUDIOALG: m_InitialFastConvTimeSec       = 15
+262-09-11 22:06:46.590  3288  3288 I AUDIOALG: 
+--
+346-09-11 22:06:46.596  3288  3288 D AudioVIBSPKControl: setParameters:bb80 9c f 5
+347-09-11 22:06:46.596  3288  3288 D AudioVIBSPKControl: VsgGenInit
+348-09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 0, param 0x3
+349-09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+350-09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+351-09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+352-09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 1, param 0x4
+353-09-11 22:06:46.597  3288  3288 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+354-09-11 22:06:46.597  3288  3288 D MtkAudioLoud: mIsZeroCoeff 0 mFilterType 3
+355-09-11 22:06:46.597  3288  3288 D AudioMTKFilterManager: mFixedParam 0
+356-09-11 22:06:46.597  3288  3288 D AudioALSAStreamManager: -openOutputStream(), out = 0xf637f700, status = 0x0, mStreamOutVector.size() = 1
+357-09-11 22:06:46.598  3287  3287 I AudioFlinger: HAL output buffer size 768 frames, normal sink buffer size 1152 frames
+358-09-11 22:06:46.598   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+359-09-11 22:06:46.598   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+360-09-11 22:06:46.599   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+361-09-11 22:06:46.605  3287  3287 I BufferProvider: found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+362-09-11 22:06:46.606  3287  3287 E AudioFlinger: Failed to add event callback
+363-09-11 22:06:46.606  3287  3306 I AudioFlinger: AudioFlinger's thread 0xf69e35c0 tid=3306 ready to run
+364-09-11 22:06:46.606  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+365-09-11 22:06:46.606  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+366-09-11 22:06:46.607  3288  3292 D AudioALSAStreamOut: standby()
+367-09-11 22:06:46.607   441   536 I AS.AudioService: Audioserver started.
+368-09-11 22:06:46.607  3288  3292 D AudioALSAStreamOut: -standby()
+369-09-11 22:06:46.607  3288  3292 D AudioALSAHardware: +getParameters(), key = routing=2;supEncapsulationMetadataTypes;supEncapsulationModes
+370-09-11 22:06:46.607  3288  3292 D AudioALSAHardware: -getParameters(), return ""
+371-09-11 22:06:46.608   441   536 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hidl.manager@1.0::IServiceManager/default
+372-09-11 22:06:46.615  3287  3299 D PermissionCache: checking android.permission.MODIFY_AUDIO_SETTINGS for uid=1000 => granted (402 us)
+373-09-11 22:06:46.616  3288  3292 D AudioALSAHardware: +setParameters(): restarting=true
+374-09-11 22:06:46.616  3288  3292 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "restarting=true"
+375-09-11 22:06:46.616  3288  3292 D AudioALSAHardware: -setParameters(): restarting=true 
+376-09-11 22:06:46.616  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+377-09-11 22:06:46.616  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+378-09-11 22:06:46.616   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_setParameters: -22
+379-09-11 22:06:46.617  3287  3299 D AudioFlinger: isLowRamDevice:true totalMemory:1020911616 mClientSharedHeapSize:1048576
+380-09-11 22:06:46.619  3288  3292 D AudioALSAHardware: setVoiceVolume(), volume = -0.000000, mUseTuningVolume = 0
+381-09-11 22:06:46.619  3288  3292 D AudioALSAStreamManager: setVoiceVolume(), volume = 0.010000
+382-09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: +setVoiceVolume(), v=0.010000, mode=0x0, device=0x2
+383-09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: GetDRCVersion DrcSpeechModeBits = 4 device= 0x2 mSpeechDrcType = 0x0 Sph_Drc_Version = 0x0
+384-09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: DRC_VERSION_1
+385-09-11 22:06:46.620  3287  3287 W AudioFlinger: moveEffects() bad srcOutput 0
+386-09-11 22:06:46.620  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+387-09-11 22:06:46.730  3288  3292 D audio.amazon_wrapper: adev_create_audio_patch - change source hw_module with handle(13) 
+388-09-11 22:06:46.730  3288  3292 D AudioALSAHardware: +routing createAudioPatch Mixer->2
+389-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +setParameters(), IOport = 13, keyValuePairs = routing=2
+390-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: Send to mStreamOutVector[0]
+391-09-11 22:06:46.730  3288  3292 D AudioALSAStreamOut: +setParameters(): routing=2
+392-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +routingOutputDevice()
+393-09-11 22:06:46.730  3288  3292 I AudioALSAStreamManager: routingOutputDevice(), output device is changing, set speaker power mode
+394-09-11 22:06:46.730  3288  3292 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, set speaker power mode -1 -> 5
+395-09-11 22:06:46.730  3288  3292 I ASP     : asp_command: 0x0; code=11
+396-09-11 22:06:46.730  3288  3292 I ASP     : SPEAKER POWER MODE 5
+397-09-11 22:06:46.730  3288  3292 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+398-09-11 22:06:46.730  3288  3292 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+399-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: routingOutputDevice(), output_devices: 0x2 => 0x2, mPhoneCallSpeechOpen = 0
+400-09-11 22:06:46.730  3288  3292 D AudioALSAVoiceWakeUpController: +updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+401-09-11 22:06:46.730  3288  3292 D AudioHeadSetMessager: /sys/class/switch/h2w/state => 0
+402-09-11 22:06:46.730  3288  3292 D AudioALSAVoiceWakeUpController: -updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+403-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +CheckHeadsetChange(), current_output_devices = 2 output_device = 2 
+404-09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: mHeadsetChange = 0
+405-09-11 22:06:46.730  3288  3292 W AudioALSAStreamManager: -routingOutputDevice(), output_devices == current_output_devices(0x2), return
+406-09-11 22:06:46.730  3288  3292 D AudioALSAStreamOut: -setParameters(): routing=2 
+407-09-11 22:06:46.731  3288  3292 D AudioALSAStreamManager: -setParameters()
+408-09-11 22:06:46.731  3288  3292 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+409-09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: +openInputStream()
+410-09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, status = 14, acoustics = 0x0
+411-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: AudioALSAStreamIn()
+412-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, acoustics = 0x0, flags = 0
+413-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: +CheckBesRecordInfo()
+414-09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+415-09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+416-09-11 22:06:46.735  3288  3292 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+417-09-11 22:06:46.735  3288  3292 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+418-09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+419-09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+420-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: -CheckBesRecordInfo()
+421-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+422-09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 2, buffer_size=1280
+423-09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: -openInputStream(), in = 0xf5de6b00, status = 0x0, mStreamInVector.size() = 1
+424-09-11 22:06:46.739  3287  3308 I AudioFlinger: AudioFlinger's thread 0xf651f7c0 tid=3308 ready to run
+425-09-11 22:06:46.739  3288  3292 D AudioALSAStreamManager: +closeInputStream(), in = 0xf5de6b00
+426-09-11 22:06:46.739  3288  3292 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+427-09-11 22:06:46.739  3288  3292 D AudioALSAStreamManager: -closeInputStream(), mStreamInVector.size() = 0
+428-09-11 22:06:46.750  3287  3287 I bt_a2dp_hw: adev_open:  adev_open in A2dp_hw module
+429-09-11 22:06:46.751  3287  3287 I AudioFlinger: loadHwModule() Loaded a2dp audio interface, handle 18
+430-09-11 22:06:46.751  3287  3287 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+431-09-11 22:06:46.751  3287  3287 E DevicesFactoryHalHidl: Invalid device name bluetooth
+432-09-11 22:06:46.751  3287  3287 E AudioFlinger: loadHwModule() error -22 loading module bluetooth
+433-09-11 22:06:46.751  3287  3287 W APM_AudioPolicyManager: could not open HW module bluetooth
+434-09-11 22:06:46.752  3288  3288 D modules.usbaudio.audio_hal: [USB_AUD] adev_open
+435-09-11 22:06:46.752  3287  3287 I AudioFlinger: loadHwModule() Loaded usb audio interface, handle 26
+436-09-11 22:06:46.752  3287  3287 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+437-09-11 22:06:46.754  3288  3288 I r_submix: adev_open(name=audio_hw_if)
+438-09-11 22:06:46.754  3288  3288 I r_submix: adev_init_check()
+439-09-11 22:06:46.754  3287  3287 I AudioFlinger: loadHwModule() Loaded r_submix audio interface, handle 34
+440-09-11 22:06:46.754  3288  3288 D r_submix: adev_open_input_stream(addr=0)
+441-09-11 22:06:46.754  3288  3288 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+442-09-11 22:06:46.754  3288  3288 D r_submix:   now using address 0 for route 9
+443-09-11 22:06:46.756  3287  3310 I AudioFlinger: AudioFlinger's thread 0xf651f080 tid=3310 ready to run
+444-09-11 22:06:46.756  3288  3288 I r_submix: in_standby()
+445-09-11 22:06:46.756  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+446-09-11 22:06:46.756  3288  3288 I r_submix: in_standby()
+447-09-11 22:06:46.757  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+448-09-11 22:06:46.758  3288  3288 D r_submix: adev_close_input_stream()
+449-09-11 22:06:46.758  3288  3288 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+450-09-11 22:06:46.758  3288  3288 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+451-09-11 22:06:46.759  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+452-09-11 22:06:46.759  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+453-09-11 22:06:47.110   441  2600 W AudioSystem: AudioPolicyService server died!
+454-09-11 22:06:47.113  3288  3288 D AudioALSAHardware: +setParameters(): BT_SCO=off
+455-09-11 22:06:47.113  3288  3288 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "BT_SCO=off"
+456-09-11 22:06:47.113  3288  3288 D AudioALSAHardware: -setParameters(): BT_SCO=off 
+457-09-11 22:06:47.115  3287  3307 D PermissionCache: checking android.permission.MODIFY_AUDIO_ROUTING for uid=1000 => granted (338 us)
+458-09-11 22:06:47.117  3287  3307 I CaptureStateNotifier: Registering a listener
+459-09-11 22:06:47.117  3288  3288 D AudioALSAHardware: setMode setMode = 0
+460-09-11 22:06:47.117  3288  3288 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+461-09-11 22:06:47.117  3288  3288 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+462-09-11 22:06:47.118   441   540 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1000/441](false)
+463-09-11 22:06:47.118  3287  3314 W APM::AudioPolicyEngine/Base: setPhoneState() setting same state 0
+464-09-11 22:06:47.118  3287  3314 W APM_AudioPolicyManager: setPhoneState() invalid or same state 0
+465-09-11 22:06:47.120  3287  3299 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+466:09-11 22:06:47.122  3287  3299 I chatty  : uid=1041(audioserver) Binder:3287_1 identical 3 lines
+467:09-11 22:06:47.146  3287  3314 I chatty  : uid=1041(audioserver) Binder:3287_5 expire 2 lines
+468:09-11 22:06:47.159   441   536 I AS.AudioService: after audioserver restart: initStreamVolume succeeded
+469:09-11 22:06:47.174  3287  3313 I chatty  : uid=1041(audioserver) Binder:3287_4 expire 4 lines
+470:09-11 22:06:47.177  3287  3299 I chatty  : uid=1041(audioserver) Binder:3287_1 expire 1 line
+471:09-11 22:06:47.177  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 8 lines
+472-09-11 22:06:47.178   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+473:09-11 22:06:47.599  3287  3300 I chatty  : uid=1041(audioserver) Binder:3287_2 expire 4 lines
+474:09-11 22:06:47.602  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 16 lines
+475:09-11 22:06:47.605  3287  3315 I chatty  : uid=1041(audioserver) AudioIn_1E expire 1 line
+476:09-11 22:06:47.606  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 13 lines
+477-09-11 22:06:47.615   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+478-09-11 22:06:47.616   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+479-09-11 22:06:47.618   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+480-09-11 22:06:47.627   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+481-09-11 22:06:47.628   441  2429 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+482-09-11 22:06:47.630   441   493 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/3287](true)
+483:09-11 22:06:47.638  3287  3315 I chatty  : uid=1041(audioserver) AudioIn_1E expire 2 lines
+484:09-11 22:06:47.639  3288  3316 I chatty  : uid=1041(audioserver) reader expire 45 lines
+485:09-11 22:06:47.799  3288  3319 I chatty  : uid=1041(audioserver) readThread0 expire 1 line
+486:09-11 22:06:47.799  3288  3316 I chatty  : uid=1041(audioserver) reader expire 13 lines
+487-09-11 22:06:47.800  3288  3316 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+488-09-11 22:06:47.800  3288  3316 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+489-09-11 22:06:47.800  3288  3316 D AudioALSACaptureHandlerNormal: -open()
+490-09-11 22:06:47.835  3288  3316 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 1022 nsec 851430907
+491-09-11 22:06:49.219  2629  2656 I chatty  : uid=10158(com.steve.puckd) pool-4-thread-1 expire 173 lines
+492-09-11 22:06:50.340  3320  3320 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+493-09-11 22:06:50.345  3320  3320 I AndroidRuntime: Using default boot image
+494-09-11 22:06:50.345  3320  3320 I AndroidRuntime: Leaving lock profiling enabled
+495-09-11 22:06:50.355  3320  3320 W app_process: Could not reserve sentinel fault page
+496-09-11 22:06:50.355  3320  3320 I app_process: Core platform API reporting enabled, enforcing=false
+497-09-11 22:06:50.552  3320  3320 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+498-09-11 22:06:50.552  3320  3320 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+499-09-11 22:06:50.569  3320  3320 I app_process: The ClassLoaderContext is a special shared library.
+500-09-11 22:06:50.572  3320  3320 I app_process: The ClassLoaderContext is a special shared library.
+501-09-11 22:06:50.616  3320  3320 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+502-09-11 22:06:50.630  3320  3320 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+503-09-11 22:06:50.671  3320  3334 V UiAutomation: Init UiAutomation@60c80f1[id=5, flags=0]
+504-09-11 22:06:51.292  2629  2656 I MicroWakeWord: probability=0
+505-09-11 22:06:51.325  2629  2656 I SharedAudio: pcm peak=146 state=0
+506-09-11 22:06:51.327  2629  2656 I MicroWakeWord: probability=0
+507-09-11 22:06:51.328  2629  2656 I SharedAudio: pcm peak=110 state=0
+508-09-11 22:06:51.375  2629  2656 I SharedAudio: pcm peak=107 state=0
+509-09-11 22:06:51.376  2629  2656 I MicroWakeWord: probability=0
+510-09-11 22:06:51.378  2629  2656 I SharedAudio: pcm peak=144 state=0
+511-09-11 22:06:51.379  2629  2656 I MicroWakeWord: probability=0
+512-09-11 22:06:51.393  2629  2656 I SharedAudio: pcm peak=134 state=0
+513-09-11 22:06:51.422  2629  2656 I SharedAudio: pcm peak=115 state=0
+514-09-11 22:06:51.424  2629  2656 I MicroWakeWord: probability=0
+515-09-11 22:06:51.436  2629  2656 I SharedAudio: pcm peak=165 state=0
+516-09-11 22:06:51.437  2629  2656 I MicroWakeWord: probability=0
+517-09-11 22:06:51.450  2629  2656 I SharedAudio: pcm peak=142 state=0
+518-09-11 22:06:51.471  2629  2656 I SharedAudio: pcm peak=153 state=0
+519-09-11 22:06:51.473  2629  2656 I MicroWakeWord: probability=0
+520-09-11 22:06:51.486  2629  2656 I SharedAudio: pcm peak=130 state=0
+521-09-11 22:06:51.487  2629  2656 I MicroWakeWord: probability=0
+522-09-11 22:06:51.534  2629  2656 I SharedAudio: pcm peak=140 state=0
+523-09-11 22:06:51.536  2629  2656 I SharedAudio: pcm peak=140 state=0
+524-09-11 22:06:51.538  2629  2656 I MicroWakeWord: probability=0
+525-09-11 22:06:51.548  2629  2656 I SharedAudio: pcm peak=135 state=0
+526-09-11 22:06:51.550  2629  2656 I MicroWakeWord: probability=0
+527-09-11 22:06:51.562  2629  2656 I SharedAudio: pcm peak=140 state=0
+528-09-11 22:06:51.595  2629  2656 I SharedAudio: pcm peak=98 state=0
+529-09-11 22:06:51.595  2629  2656 I MicroWakeWord: probability=0
+530-09-11 22:06:51.630  2629  2656 I SharedAudio: pcm peak=129 state=0
+531-09-11 22:06:51.630  2629  2656 I MicroWakeWord: probability=0
+532-09-11 22:06:51.631  2629  2656 I SharedAudio: pcm peak=134 state=0
+533-09-11 22:06:51.644  2629  2656 I SharedAudio: pcm peak=115 state=0
+534-09-11 22:06:51.644  2629  2656 I MicroWakeWord: probability=0
+535-09-11 22:06:51.679  2629  2656 I SharedAudio: pcm peak=153 state=0
+536-09-11 22:06:51.681  2629  2656 I MicroWakeWord: probability=0
+537-09-11 22:06:51.693  2629  2656 I SharedAudio: pcm peak=174 state=0
+538-09-11 22:06:51.707  2629  2656 I SharedAudio: pcm peak=148 state=0
+539-09-11 22:06:51.707  2629  2656 I MicroWakeWord: probability=0
+540-09-11 22:06:51.720  3320  3320 W AccessibilityNodeInfoDumper: Fetch time: 12ms
+541-09-11 22:06:51.722   441   945 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@72c7a8c
+542-09-11 22:06:51.723  3320  3334 V UiAutomation: Init UiAutomation@60c80f1[id=-1, flags=0]
+543-09-11 22:06:51.737  3320  3320 D AndroidRuntime: Shutting down VM
+544-09-11 22:06:51.744  2629  2656 I SharedAudio: pcm peak=126 state=0
+545-09-11 22:06:51.744  2629  2656 I MicroWakeWord: probability=0
+546-09-11 22:06:51.760  2629  2656 I SharedAudio: pcm peak=138 state=0
+547-09-11 22:06:51.789  2629  2656 I SharedAudio: pcm peak=141 state=0
+548-09-11 22:06:51.791  2629  2656 I MicroWakeWord: probability=0
+549-09-11 22:06:51.792  2629  2656 I SharedAudio: pcm peak=120 state=0
+550-09-11 22:06:51.793  2629  2656 I MicroWakeWord: probability=0
+551-09-11 22:06:51.803  2629  2656 I SharedAudio: pcm peak=118 state=0
+552-09-11 22:06:51.837  2629  2656 I SharedAudio: pcm peak=105 state=0
+553-09-11 22:06:51.838  2629  2656 I MicroWakeWord: probability=0
+554-09-11 22:06:51.851  2629  2656 I SharedAudio: pcm peak=115 state=0
+555-09-11 22:06:51.852  2629  2656 I MicroWakeWord: probability=0
+556-09-11 22:06:51.865  2629  2656 I SharedAudio: pcm peak=120 state=0
+557-09-11 22:06:51.886  2629  2656 I SharedAudio: pcm peak=111 state=0
+558-09-11 22:06:51.887  2629  2656 I MicroWakeWord: probability=0
+559-09-11 22:06:51.914  2629  2656 I SharedAudio: pcm peak=107 state=0
+560-09-11 22:06:51.915  2629  2656 I MicroWakeWord: probability=0
+561-09-11 22:06:51.936  2629  2656 I SharedAudio: pcm peak=147 state=0
+562-09-11 22:06:51.950  2629  2656 I SharedAudio: pcm peak=152 state=0
+563-09-11 22:06:51.952  2629  2656 I MicroWakeWord: probability=0
+564-09-11 22:06:51.966  2629  2656 I SharedAudio: pcm peak=109 state=0
+565-09-11 22:06:51.969  2629  2656 I MicroWakeWord: probability=0
+566-09-11 22:06:51.999  2629  2656 I SharedAudio: pcm peak=140 state=0
+567-09-11 22:06:52.013  2629  2656 I SharedAudio: pcm peak=140 state=0
+568-09-11 22:06:52.014  2629  2656 I MicroWakeWord: probability=0
+569-09-11 22:06:52.026  2629  2656 I SharedAudio: pcm peak=143 state=0
+570-09-11 22:06:52.027  2629  2656 I MicroWakeWord: probability=0
+571-09-11 22:06:52.047  2629  2656 I SharedAudio: pcm peak=112 state=0
+572-09-11 22:06:52.076  2629  2656 I SharedAudio: pcm peak=107 state=0
+573-09-11 22:06:52.077  2629  2656 I MicroWakeWord: probability=0
+574-09-11 22:06:52.099  2629  2656 I SharedAudio: pcm peak=98 state=0
+575-09-11 22:06:52.100  2629  2656 I MicroWakeWord: probability=0
+576-09-11 22:06:52.110  2629  2656 I SharedAudio: pcm peak=113 state=0
+577-09-11 22:06:52.124  2629  2656 I SharedAudio: pcm peak=128 state=0
+578-09-11 22:06:52.125  2629  2656 I MicroWakeWord: probability=0
+579-09-11 22:06:52.159  2629  2656 I SharedAudio: pcm peak=111 state=0
+580-09-11 22:06:52.161  2629  2656 I MicroWakeWord: probability=0
+581-09-11 22:06:52.177  2629  2656 I SharedAudio: pcm peak=137 state=0
+582-09-11 22:06:52.187  2629  2656 I SharedAudio: pcm peak=122 state=0
+583-09-11 22:06:52.193  2629  2656 I MicroWakeWord: probability=0
+584-09-11 22:06:52.207  2629  2656 I SharedAudio: pcm peak=122 state=0
+585-09-11 22:06:52.208  2629  2656 I MicroWakeWord: probability=0
+586-09-11 22:06:52.235  2629  2656 I SharedAudio: pcm peak=115 state=0
+587-09-11 22:06:52.256  2629  2656 I SharedAudio: pcm peak=125 state=0
+588-09-11 22:06:52.257  2629  2656 I MicroWakeWord: probability=0
+589-09-11 22:06:52.270  2629  2656 I SharedAudio: pcm peak=116 state=0
+590-09-11 22:06:52.271  2629  2656 I MicroWakeWord: probability=0
+591-09-11 22:06:52.284  2629  2656 I SharedAudio: pcm peak=110 state=0
+592-09-11 22:06:52.322  2629  2656 I SharedAudio: pcm peak=94 state=0
+593-09-11 22:06:52.323  2629  2656 I MicroWakeWord: probability=0
+594-09-11 22:06:52.334  2629  2656 I SharedAudio: pcm peak=125 state=0
+595-09-11 22:06:52.335  2629  2656 I MicroWakeWord: probability=0
+596-09-11 22:06:52.347  2629  2656 I SharedAudio: pcm peak=136 state=0
+597-09-11 22:06:52.369  2629  2656 I SharedAudio: pcm peak=151 state=0
+598-09-11 22:06:52.371  2629  2656 I MicroWakeWord: probability=0
+599-09-11 22:06:52.397  2629  2656 I SharedAudio: pcm peak=131 state=0
+600-09-11 22:06:52.398  2629  2656 I MicroWakeWord: probability=0
+601-09-11 22:06:52.418  2629  2656 I SharedAudio: pcm peak=136 state=0
+602-09-11 22:06:52.431  2629  2656 I SharedAudio: pcm peak=132 state=0
+603-09-11 22:06:52.432  2629  2656 I MicroWakeWord: probability=0
+604-09-11 22:06:52.445  2629  2656 I SharedAudio: pcm peak=115 state=0
+605-09-11 22:06:52.446  2629  2656 I MicroWakeWord: probability=0
+606-09-11 22:06:52.480  2629  2656 I SharedAudio: pcm peak=115 state=0
