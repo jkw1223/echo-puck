@@ -1,0 +1,50 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.steve.aecdiag"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="30"
+8-->INJECTED
+9        android:targetSdkVersion="30" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:70-135
+11-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:87-133
+12
+13    <application
+13-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:135-511
+14        android:allowBackup="false"
+14-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:216-243
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+16-->INJECTED
+17        android:label="Echo AEC Diagnostic"
+17-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:180-215
+18        android:theme="@style/AppTheme" >
+18-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:148-179
+19        <activity
+19-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:244-497
+20            android:name="com.steve.aecdiag.MainActivity"
+20-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:254-282
+21            android:exported="true"
+21-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:321-344
+22            android:screenOrientation="landscape" >
+22-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:283-320
+23            <intent-filter>
+23-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:345-486
+24                <action android:name="android.intent.action.MAIN" />
+24-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:360-411
+24-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:368-409
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:411-470
+26-->/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:421-468
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>

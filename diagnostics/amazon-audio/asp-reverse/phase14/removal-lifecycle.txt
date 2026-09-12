@@ -1,0 +1,1 @@
+Not completed. Gate 2B stopped the test after AudioFlinger server death; no valid removal-lifecycle observation was made.

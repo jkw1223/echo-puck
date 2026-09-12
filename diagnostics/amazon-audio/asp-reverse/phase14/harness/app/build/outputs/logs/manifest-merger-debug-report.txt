@@ -1,0 +1,55 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:1-522
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:1-522
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:1-522
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:1-522
+	package
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:70-135
+	android:name
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:87-133
+application
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:135-511
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:135-511
+	android:extractNativeLibs
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	android:label
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:180-215
+	android:allowBackup
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:216-243
+	android:theme
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:148-179
+activity#com.steve.aecdiag.MainActivity
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:244-497
+	android:screenOrientation
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:283-320
+	android:exported
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:321-344
+	android:name
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:254-282
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:345-486
+action#android.intent.action.MAIN
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:360-411
+	android:name
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:368-409
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:411-470
+	android:name
+		ADDED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml:1:421-468
+uses-sdk
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/AndroidManifest.xml

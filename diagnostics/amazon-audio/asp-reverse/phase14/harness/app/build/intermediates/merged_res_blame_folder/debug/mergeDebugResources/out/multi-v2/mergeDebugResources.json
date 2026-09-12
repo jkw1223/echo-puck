@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.steve.aecdiag.app-debug-3:/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/jason/puck/diagnostics/amazon-audio/asp-reverse/phase14/harness/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "0",
+                        "startColumns": "11",
+                        "startOffsets": "11",
+                        "endColumns": "91",
+                        "endOffsets": "91"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "84",
+                        "endOffsets": "135"
+                    }
+                }
+            ]
+        }
+    ]
+}

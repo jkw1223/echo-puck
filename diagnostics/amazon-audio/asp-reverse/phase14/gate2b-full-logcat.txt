@@ -1,0 +1,1456 @@
+--------- beginning of main
+09-11 22:06:38.260  3228  3228 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 22:06:38.265  3228  3228 I AndroidRuntime: Using default boot image
+09-11 22:06:38.265  3228  3228 I AndroidRuntime: Leaving lock profiling enabled
+09-11 22:06:38.267  2629  2656 I chatty  : uid=10158(com.steve.puckd) pool-4-thread-1 expire 768 lines
+09-11 22:06:38.274  3228  3228 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 22:06:38.468  3228  3228 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 22:06:38.468  3228  3228 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 22:06:38.484  3228  3228 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:38.528  3228  3228 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 22:06:38.543  3228  3228 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-11 22:06:38.573  3228  3228 D AndroidRuntime: Shutting down VM
+09-11 22:06:38.574   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:38.575  2874  2928 I chatty  : uid=1041(audioserver) expire 72 lines
+09-11 22:06:38.578   441  2521 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:38.578   441  2521 I chatty  : uid=1000(system) Binder:441_10 identical 1 line
+09-11 22:06:38.579   441  2521 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:38.646  2995  2995 I AecDiag : event=001 t_ms=56478 STEP=query_effects aec_available=true ns_available=false agc_available=false
+09-11 22:06:38.666  2995  2995 I AecDiag : event=002 t_ms=56497 descriptor name=Acoustic Echo Canceler implementor=The Android Open Source Project type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+09-11 22:06:38.667  2995  2995 I AecDiag : event=003 t_ms=56499 descriptor name=Dynamics Processing implementor=The Android Open Source Project type=7261676f-6d75-7369-6364-28e2fd3ac39e implementation=e0e6539b-1781-7261-676f-6d7573696340
+09-11 22:06:38.668  2995  2995 I AecDiag : event=004 t_ms=56500 descriptor name=Loudness Enhancer implementor=The Android Open Source Project type=fe3199be-aed0-413f-87bb-11260eb63cf1 implementation=fa415329-2034-4bea-b5dc-5b381c8d1e2c
+09-11 22:06:38.669  2995  2995 I AecDiag : event=005 t_ms=56501 descriptor name=Multichannel Downmix To Stereo implementor=The Android Open Source Project type=381e49cc-a858-4aa2-87f6-e8388e7601b2 implementation=93f04452-e4fe-41cc-91f9-e475b6d1d69f
+09-11 22:06:38.671  2995  2995 I AecDiag : event=006 t_ms=56502 descriptor name=Visualizer implementor=The Android Open Source Project type=e46b26a0-dddd-11db-8afd-0002a5d5c51b implementation=d069d9e0-8329-11df-9168-0002a5d5c51b
+09-11 22:06:38.674  2995  2995 I AecDiag : event=007 t_ms=56505 descriptor name=Insert Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=172cdf00-a3bc-11df-a72f-0002a5d5c51b
+09-11 22:06:38.675  2995  2995 I AecDiag : event=008 t_ms=56506 descriptor name=Auxiliary Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=f29a1400-a3bb-11df-8ddc-0002a5d5c51b
+09-11 22:06:38.676  2995  2995 I AecDiag : event=009 t_ms=56507 descriptor name=Insert Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=c7a511a0-a3bb-11df-860e-0002a5d5c51b
+09-11 22:06:38.677  2995  2995 I AecDiag : event=010 t_ms=56508 descriptor name=Auxiliary Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=4a387fc0-8ab3-11df-8bad-0002a5d5c51b
+09-11 22:06:38.678  2995  2995 I AecDiag : event=011 t_ms=56510 descriptor name=Volume implementor=NXP Software Ltd. type=09e8ede0-ddde-11db-b4f6-0002a5d5c51b implementation=119341a0-8469-11df-81f9-0002a5d5c51b
+09-11 22:06:38.679  2995  2995 I AecDiag : event=012 t_ms=56511 descriptor name=Equalizer implementor=NXP Software Ltd. type=0bed4300-ddd6-11db-8f34-0002a5d5c51b implementation=ce772f20-847d-11df-bb17-0002a5d5c51b
+09-11 22:06:38.680  2995  2995 I AecDiag : event=013 t_ms=56512 descriptor name=Virtualizer implementor=NXP Software Ltd. type=37cc2c00-dddd-11db-8577-0002a5d5c51b implementation=1d4033c0-8557-11df-9f2d-0002a5d5c51b
+09-11 22:06:38.682  2995  2995 I AecDiag : event=014 t_ms=56513 descriptor name=Dynamic Bass Boost implementor=NXP Software Ltd. type=0634f220-ddd4-11db-a0fc-0002a5d5c51b implementation=8631f300-72e2-11df-b57e-0002a5d5c51b
+09-11 22:06:39.009  2873  2884 I chatty  : uid=1041(audioserver) expire 3 lines
+09-11 22:06:39.009   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:39.127   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:40.406  3243  3243 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 22:06:40.411  3243  3243 I AndroidRuntime: Using default boot image
+09-11 22:06:40.411  3243  3243 I AndroidRuntime: Leaving lock profiling enabled
+09-11 22:06:40.421  3243  3243 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 22:06:40.625  3243  3243 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 22:06:40.628  3243  3243 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 22:06:40.646  3243  3243 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:40.694  3243  3243 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 22:06:40.710  3243  3243 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-11 22:06:40.729  3243  3243 D AndroidRuntime: Shutting down VM
+09-11 22:06:40.747  2873  2885 I chatty  : uid=1041(audioserver) expire 4 lines
+09-11 22:06:40.752   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:40.756   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:40.760  2995  2995 I AecDiag : event=015 t_ms=58591 STEP=create_record state=1 session=25 rate=16000 channels=1 format=2 buffer=6400
+09-11 22:06:41.081   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:41.339   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:42.549  3258  3258 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 22:06:42.554  3258  3258 I AndroidRuntime: Using default boot image
+09-11 22:06:42.554  3258  3258 I AndroidRuntime: Leaving lock profiling enabled
+09-11 22:06:42.564  3258  3258 W app_process: Could not reserve sentinel fault page
+09-11 22:06:42.564  3258  3258 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 22:06:42.773  3258  3258 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 22:06:42.773  3258  3258 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 22:06:42.790  3258  3258 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:42.835  3258  3258 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 22:06:42.850  3258  3258 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-11 22:06:42.870  3258  3258 D AndroidRuntime: Shutting down VM
+09-11 22:06:42.889  2874  2874 I chatty  : uid=1041(audioserver) expire 1 line
+09-11 22:06:42.892  2874  2878 I chatty  : uid=1041(audioserver) expire 11 lines
+09-11 22:06:42.896   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:42.898  2995  2995 I AecDiag : event=016 t_ms=60730 STEP=create_aec null=false enabled=false control=true type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+09-11 22:06:42.907   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:43.240   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:43.349   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:45.656  2874  3271 I chatty  : uid=1041(audioserver) expire 3 lines
+--------- beginning of crash
+09-11 22:06:45.689  2874  3271 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 3271 (HwBinder:2874_3), pid 2874 (audio.service)
+09-11 22:06:45.726  3280  3280 I chatty  : uid=1041(audioserver) expire 2 lines
+09-11 22:06:45.728   236   236 I tombstoned: received crash request for pid 3271
+09-11 22:06:45.737  3280  3280 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-11 22:06:45.737  3280  3280 F DEBUG   : LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+09-11 22:06:45.737  3280  3280 F DEBUG   : Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+09-11 22:06:45.738  3280  3280 F DEBUG   : Revision: '0'
+09-11 22:06:45.738  3280  3280 F DEBUG   : ABI: 'arm'
+09-11 22:06:45.738  3280  3280 F DEBUG   : Timestamp: 2026-09-11 22:06:45-0500
+09-11 22:06:45.738  3280  3280 F DEBUG   : pid: 2874, tid: 3271, name: HwBinder:2874_3  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+09-11 22:06:45.738  3280  3280 F DEBUG   : uid: 1041
+09-11 22:06:45.738  3280  3280 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-11 22:06:45.739  3280  3280 F DEBUG   : Cause: null pointer dereference
+09-11 22:06:45.739  3280  3280 F DEBUG   :     r0  ea71e400  r1  00000014  r2  e6b38c28  r3  e9fe50e8
+09-11 22:06:45.739  3280  3280 F DEBUG   :     r4  e6b38c10  r5  e6b38c28  r6  ea71e400  r7  00000000
+09-11 22:06:45.739  3280  3280 F DEBUG   :     r8  e6b38fd0  r9  e6b38fd0  r10 eab36d20  r11 00000000
+09-11 22:06:45.739  3280  3280 F DEBUG   :     ip  e9d75b74  sp  e6b38b98  lr  e9d674ad  pc  00000000
+09-11 22:06:45.792  3280  3280 F DEBUG   : backtrace:
+09-11 22:06:45.792  3280  3280 F DEBUG   :       #00 pc 00000000  <unknown>
+09-11 22:06:45.793  3280  3280 F DEBUG   :       #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+09-11 22:06:45.793  3280  3280 F DEBUG   :       #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.793  3280  3280 F DEBUG   :       #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.793  3280  3280 F DEBUG   :       #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+09-11 22:06:45.793  3280  3280 F DEBUG   :       #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.794  3280  3280 F DEBUG   :       #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.794  3280  3280 F DEBUG   :       #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.794  3280  3280 F DEBUG   :       #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:06:45.794  3280  3280 F DEBUG   :       #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:06:45.794  3280  3280 F DEBUG   :       #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:06:45.795  3280  3280 F DEBUG   :       #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 22:06:45.795  3280  3280 F DEBUG   :       #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--------- beginning of system
+09-11 22:06:45.987   441   654 W NativeCrashListener: Couldn't find ProcessRecord for pid 2874
+09-11 22:06:45.988   236   236 E tombstoned: Tombstone written to: /data/tombstones/tombstone_21
+09-11 22:06:45.997   441   479 I BootReceiver: Copying /data/tombstones/tombstone_21 to DropBox (SYSTEM_TOMBSTONE)
+09-11 22:06:45.999   441   479 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+09-11 22:06:46.057  2873  2894 I chatty  : uid=1041(audioserver) expire 1 line
+09-11 22:06:46.058   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:46.103  2995  3015 W AudioEffect: IEffect died
+09-11 22:06:46.103  2995  3015 W AudioEffects-JNI: EVENT_ERROR
+09-11 22:06:46.104  2995  3015 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 22:06:46.104  2995  3015 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.104  2629  2648 I chatty  : uid=10158(com.steve.puckd) Binder:2629_1 expire 2 lines
+09-11 22:06:46.104   601  2077 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 22:06:46.105   601  2077 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.105   441  2600 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 22:06:46.105   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 22:06:46.105   441   536 E AS.AudioService: Audioserver died.
+09-11 22:06:46.106   441  2600 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.106   601  2077 W AudioSystem: AudioPolicyService server died!
+09-11 22:06:46.106   577   987 W AudioSystem: AudioPolicyService server died!
+09-11 22:06:46.106  1164  2524 W AudioSystem: AudioPolicyService server died!
+09-11 22:06:46.107  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:06:46.107   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:06:46.108   441   959 E AudioSystem-JNI: AudioSystem::listAudioPorts error -32
+09-11 22:06:46.108   441   959 W AudioManager: updateAudioPortCache: listAudioPorts failed
+09-11 22:06:46.108   441  2600 W AudioSystem: AudioPolicyService server died!
+09-11 22:06:46.108   441  2600 W CaptureStateTracker: Audio policy service died
+09-11 22:06:46.109   441   540 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:06:46.132   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.133  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 2019 lines
+09-11 22:06:46.133   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.134   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.149   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.150   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.151   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.158   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:06:46.159   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:06:46.164   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:06:46.165   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:06:46.171   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+09-11 22:06:46.206  3287  3287 I chatty  : uid=1041(audioserver) /system/bin/audioserver expire 15 lines
+09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.214   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.227   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.229   341   952 W AudioAnalytics: (key=audio.flinger) Audioflinger constructor event detected
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_taiLen               = -1
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 22:06:46.587  3288  3288 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 22:06:46.588  3288  3288 I AUDIOALG: ConfSBCanceler #0:
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_nRefsPerInput        = 2
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_adaptBandLoHz        = 0
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_adaptBandHiHz        = 8000
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_taiLen               = 2560
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_bandBasedTailLen     = true
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_bandBasedStepSize    = true
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_maxStepSize          = 0.300000011920929
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_stepSizeRednScale    = 3.000000000000000
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_leakyFactor          = 0.400000005960464
+09-11 22:06:46.588  3288  3288 I AUDIOALG:     m_smFactRefPwr         = -1.000000000000000
+09-11 22:06:46.588  3288  3288 I AUDIOALG: ConfSB_AEC_ARA:
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_stepSizeErrorScale     = 3.000000000000000
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_enableVSS              = 1
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_ord2toOrd1RatioPercent = 50
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_enableRoundRobin     = 0
+09-11 22:06:46.588  3288  3288 I AUDIOALG: SBGenericCanceller: init()
+09-11 22:06:46.588  3288  3288 I AUDIOALG: **************************************************************************** 1
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nInputs (in buffer) = 7
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nRefs   (in buffer) = 0
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: ==========================================================
+09-11 22:06:46.588  3288  3288 I AUDIOALG: GC #0   nGcRefsPerInput = 2   nRefs = 4
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 5
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 6
+09-11 22:06:46.588  3288  3288 I AUDIOALG: nGcTotRefCh = 2    m_nTotRefCh = 2
+09-11 22:06:46.588  3288  3288 I AUDIOALG: Gen Cancelers:
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_refIdxStart =  0   m_nTotRefCh =  2
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ->  5 (0)
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ->  6 (0)
+09-11 22:06:46.588  3288  3288 I AUDIOALG: UseRefInfo # 0 : m_refSource =  0    m_refIndex =  5   m_enable = 1
+09-11 22:06:46.588  3288  3288 I AUDIOALG: UseRefInfo # 1 : m_refSource =  0    m_refIndex =  6   m_enable = 1
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: Fused Final Generic Canceler :
+09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  0   
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  1   
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  2   
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: inIndex :  3   
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  0 ( 5-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG:  1 ( 6-0)  
+09-11 22:06:46.588  3288  3288 I AUDIOALG: 
+09-11 22:06:46.588  3288  3288 I AUDIOALG: ==========================================================
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nRefsPerInput = 2
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nInputsToAdapt = 4
+09-11 22:06:46.588  3288  3288 I AUDIOALG: m_nTotRefCh = 2
+09-11 22:06:46.589  3288  3288 I AUDIOALG: m_nGenCancelers = 1
+09-11 22:06:46.589  3288  3288 I AUDIOALG: CANCELER #0
+09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandLo = 0
+09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandHi = 63
+09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandLo = 0
+09-11 22:06:46.589  3288  3288 I AUDIOALG: adaptBandHi = 15 (SIMD)
+09-11 22:06:46.589  3288  3288 I AUDIOALG: Leaky = 0.40000
+09-11 22:06:46.589  3288  3288 I AUDIOALG: refInfo : 0
+09-11 22:06:46.589  3288  3288 I AUDIOALG: refInfo : 0
+09-11 22:06:46.589  3288  3288 I AUDIOALG: VSB_AEC_ARA: init()
+09-11 22:06:46.589  3288  3288 I AUDIOALG: enableVSS : 1
+09-11 22:06:46.589  3288  3288 I AUDIOALG: sigEn 0.0000000486507687469384109     corrEner 0.0000015384614471258828416  bands=16  totBands=64   SIMD_LANES = 4
+09-11 22:06:46.590  3288  3288 I AUDIOALG: **** AA MICARA (Misc) CONFIG ****
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSBGenericCanceller:
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nBands               = 0
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nInputs              = -205922200
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nInputsToAdapt       = 0
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_nRefs                = -206621709
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_samplingRate         = 0
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_deciRate             = -162295796
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_refSigEnThresh       = -945550362436546665080562623971328.000000000000000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_taiLen               = -1
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSBMICARA:1
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ARAm_nMics  = 4
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ARAm_nRefs  = 2
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_ARAdelay  = 64
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_gain_step  = 0.200000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_max_gain_ARA_W_Play  = 2.000000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_max_gain_ARA_No_Play  = 4.000000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_VSS_freeze_thresh  = 0.750000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: **** AA_BeamMerger CONFIG ****
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSNRBeamMerger:
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_numBeams                     = 4
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_samplingRate                 = 16000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_SNRThreshold                 = 0.000000999999997
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyStartFreqHz            = 500
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyEndFreqHz              = 3500
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_FDaplhaNoise                 = 0.998000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_FDaplhaSpeech                = 0.650000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_N_ALPHA                    = 0.999000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_ERG_ALPHA                  = 0.750000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_K_VSS_SCALE_FACTOR           = 0.500000
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_InitialFastConvTimeSec       = 15
+09-11 22:06:46.590  3288  3288 I AUDIOALG: 
+09-11 22:06:46.590  3288  3288 I AUDIOALG: **** Beam Selector CONFIG ****
+09-11 22:06:46.590  3288  3288 I AUDIOALG: ConfSNRBeamSelector:
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_numBeams                     = 4
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyAdaptationFactorFast   = 0.949999988079071
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyAdaptationFactorSlow   = 0.986999988555908
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_energyRatio                  = 1.200000047683716
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_noiseAdaptationFactor        = 1.001000046730042
+09-11 22:06:46.590  3288  3288 I AUDIOALG: m_SNRThreshold                 = 6.500000000000000
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_bufferSize                   = 10
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_hangoverPeriod               = 15
+09-11 22:06:46.591  3288  3288 I AUDIOALG: ConfSNRBeamSelector:
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_numBeams                     = 4
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_energyAdaptationFactorFast   = 0.949999988079071
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_energyAdaptationFactorSlow   = 0.986999988555908
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_energyRatio                  = 1.200000047683716
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_noiseAdaptationFactor        = 1.001000046730042
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_SNRThreshold                 = 6.500000000000000
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_bufferSize                   = 10
+09-11 22:06:46.591  3288  3288 I AUDIOALG: m_hangoverPeriod               = 15
+09-11 22:06:46.591  3288  3288 I AUDIOALG: *****************************************************
+09-11 22:06:46.591  3288  3288 I AUDIOALG: Finished GenericAFE:configure() Aug 20 2019 12:10:32
+09-11 22:06:46.591  3288  3288 I AUDIOALG: *****************************************************
+09-11 22:06:46.592  3288  3288 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+09-11 22:06:46.592  3288  3288 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+09-11 22:06:46.592  3288  3288 D ASP     : Read mic1 calibration value=1088994603
+09-11 22:06:46.592  3288  3288 D ASP     : Read mic2 calibration value=1059112505
+09-11 22:06:46.592  3288  3288 I AUDIOALG: getUserEqInfo : User EQ Info NumBands: 3 	 RangeMin: -6 	 RangeMax: 6 	 DefaultStepSize: 3
+09-11 22:06:46.592  3288  3288 E ASP     : UserEq file could not be read, constructing default json
+09-11 22:06:46.592  3288  3288 I AudioSignalProcessor: ASP capture is enabled
+09-11 22:06:46.593  3288  3288 D AudioALSAHardware: -mAudioALSAHardware
+09-11 22:06:46.594  3288  3288 D AudioALSAHardware: initCheck()
+09-11 22:06:46.594  3288  3288 W audio.amazon_wrapper: adev_get_master_mute(): not implemented yet!
+09-11 22:06:46.594  3288  3288 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: AudioALSAVolumeController setMasterVolume v = 1.000000 mode = 0 devices = 0x0
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: ApplyDualmodeGain gain = 256 mode = 0 devices = 6
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: ApplyAudioGain  Gain = 256 mode= 0 device = 6
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: ApplyAudioGain  DegradedBGain = 12 mVolumeRange[mode] = 12 
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetHeadPhoneLGain = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetRealHeadPhoneLGain = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetHeadPhoneRGain = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetRealHeadPhoneRGain = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: ApplyDualmodeGain gain = 256 mode = 0 devices = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: ApplyAmpGain  Gain = 256 mode= 0 device = 7
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetRealLinoutRGain = 8
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetRealLinoutRGain = 8
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetLSpeakerGain,DegradedBGain=5 
+09-11 22:06:46.594  3288  3288 D AudioALSAVolumeController: SetRealLSpeakerGain = 5
+09-11 22:06:46.594  3288  3288 E AudioALSAVolumeController: Error: SetSpeakerGain invalid value
+09-11 22:06:46.594  3288  3288 W audio.amazon_wrapper: adev_set_master_mute(): not implemented yet!
+09-11 22:06:46.595  3288  3288 D AudioALSAHardware: setMode setMode = 0
+09-11 22:06:46.595  3288  3288 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+09-11 22:06:46.595  3288  3288 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+09-11 22:06:46.595  3287  3287 I AudioFlinger: loadHwModule() Loaded primary audio interface, handle 10
+09-11 22:06:46.595  3287  3287 I AudioFlinger: openOutput() this 0xf70d8000, module 10 Device type:0x2,@:, SamplingRate 48000, Format 0x000001, Channels 0x3, flags 0x2
+09-11 22:06:46.595  3288  3288 D AudioALSAStreamManager: +openOutputStream()
+09-11 22:06:46.595  3288  3288 D AudioALSAStreamManager: openOutputStream(), devices = 0x2, format = 0x1, channels = 0x3, sampleRate = 48000, status = 0xd
+09-11 22:06:46.595  3288  3288 D AudioALSAStreamOut: AudioALSAStreamOut()
+09-11 22:06:46.595  3288  3288 D AudioALSAStreamOut: set(), devices = 0x2, format = 0x1, channels = 0x3, sampleRate = 48000, flags = 0x2
+09-11 22:06:46.595  3288  3288 D AudioALSASampleRateController: AudioALSASampleRateController()
+09-11 22:06:46.595  3288  3288 D AudioALSASampleRateController: +setPrimaryStreamOutSampleRate(), mPrimaryStreamOutSampleRate: 44100 => 48000
+09-11 22:06:46.595  3288  3288 D AudioALSASampleRateController: -setPrimaryStreamOutSampleRate(), mPrimaryStreamOutSampleRate: 48000
+09-11 22:06:46.596  3288  3288 D NVRAM   : audioComFltCustParamInit Do nothing
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 0, param 0x1
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 1, param 0x6
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: mIsZeroCoeff 1 mFilterType 1
+09-11 22:06:46.596  3288  3288 D AudioMTKFilterManager: +Init AudioMTKFilter_VibSpkAddTone
+09-11 22:06:46.596  3288  3288 D AudioMTKFilterManager: sampleRate [48000] channel [2] format [0x1] bufferSize [3072]
+09-11 22:06:46.596  3288  3288 D AudioMTKFilterManager: -Init AudioMTKFilter_VibSpkAddTone
+09-11 22:06:46.596  3288  3288 D AudioVIBSPKControl: getInstance()
+09-11 22:06:46.596  3288  3288 D AudioFtmBase: AudioFtmBase()
+09-11 22:06:46.596  3288  3288 D LoopbackManager: LoopbackManager(), mWorkingModemIndex = 0
+09-11 22:06:46.596  3288  3288 D AudioFtm: AudioFtm()
+09-11 22:06:46.596  3288  3288 D AudioFtm: mMixer = 0xf637f000
+09-11 22:06:46.596  3288  3288 D AudioFtm: GetVibSpkCalibrationStatus()
+09-11 22:06:46.596  3287  3300 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:06:46.596  3288  3288 D AudioMTKFilterManager: VibSpkReadFrequency:0
+09-11 22:06:46.596  3288  3288 D AudioMTKFilterManager: [VibSpk] SetDefaultFreq
+09-11 22:06:46.596  3288  3288 D AudioVIBSPKControl: setParameters:bb80 9c f 5
+09-11 22:06:46.596  3288  3288 D AudioVIBSPKControl: VsgGenInit
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 0, param 0x3
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+09-11 22:06:46.596  3288  3288 D MtkAudioLoud: +setParameter(), paramID 1, param 0x4
+09-11 22:06:46.597  3288  3288 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+09-11 22:06:46.597  3288  3288 D MtkAudioLoud: mIsZeroCoeff 0 mFilterType 3
+09-11 22:06:46.597  3288  3288 D AudioMTKFilterManager: mFixedParam 0
+09-11 22:06:46.597  3288  3288 D AudioALSAStreamManager: -openOutputStream(), out = 0xf637f700, status = 0x0, mStreamOutVector.size() = 1
+09-11 22:06:46.598  3287  3287 I AudioFlinger: HAL output buffer size 768 frames, normal sink buffer size 1152 frames
+09-11 22:06:46.598   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.598   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.599   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:06:46.605  3287  3287 I BufferProvider: found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+09-11 22:06:46.606  3287  3287 E AudioFlinger: Failed to add event callback
+09-11 22:06:46.606  3287  3306 I AudioFlinger: AudioFlinger's thread 0xf69e35c0 tid=3306 ready to run
+09-11 22:06:46.606  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.606  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 22:06:46.607  3288  3292 D AudioALSAStreamOut: standby()
+09-11 22:06:46.607   441   536 I AS.AudioService: Audioserver started.
+09-11 22:06:46.607  3288  3292 D AudioALSAStreamOut: -standby()
+09-11 22:06:46.607  3288  3292 D AudioALSAHardware: +getParameters(), key = routing=2;supEncapsulationMetadataTypes;supEncapsulationModes
+09-11 22:06:46.607  3288  3292 D AudioALSAHardware: -getParameters(), return ""
+09-11 22:06:46.608   441   536 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hidl.manager@1.0::IServiceManager/default
+09-11 22:06:46.615  3287  3299 D PermissionCache: checking android.permission.MODIFY_AUDIO_SETTINGS for uid=1000 => granted (402 us)
+09-11 22:06:46.616  3288  3292 D AudioALSAHardware: +setParameters(): restarting=true
+09-11 22:06:46.616  3288  3292 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "restarting=true"
+09-11 22:06:46.616  3288  3292 D AudioALSAHardware: -setParameters(): restarting=true 
+09-11 22:06:46.616  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.616  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 22:06:46.616   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_setParameters: -22
+09-11 22:06:46.617  3287  3299 D AudioFlinger: isLowRamDevice:true totalMemory:1020911616 mClientSharedHeapSize:1048576
+09-11 22:06:46.619  3288  3292 D AudioALSAHardware: setVoiceVolume(), volume = -0.000000, mUseTuningVolume = 0
+09-11 22:06:46.619  3288  3292 D AudioALSAStreamManager: setVoiceVolume(), volume = 0.010000
+09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: +setVoiceVolume(), v=0.010000, mode=0x0, device=0x2
+09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: GetDRCVersion DrcSpeechModeBits = 4 device= 0x2 mSpeechDrcType = 0x0 Sph_Drc_Version = 0x0
+09-11 22:06:46.619  3288  3292 D AudioALSAVolumeController: DRC_VERSION_1
+09-11 22:06:46.620  3287  3287 W AudioFlinger: moveEffects() bad srcOutput 0
+09-11 22:06:46.620  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 22:06:46.730  3288  3292 D audio.amazon_wrapper: adev_create_audio_patch - change source hw_module with handle(13) 
+09-11 22:06:46.730  3288  3292 D AudioALSAHardware: +routing createAudioPatch Mixer->2
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +setParameters(), IOport = 13, keyValuePairs = routing=2
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: Send to mStreamOutVector[0]
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamOut: +setParameters(): routing=2
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +routingOutputDevice()
+09-11 22:06:46.730  3288  3292 I AudioALSAStreamManager: routingOutputDevice(), output device is changing, set speaker power mode
+09-11 22:06:46.730  3288  3292 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, set speaker power mode -1 -> 5
+09-11 22:06:46.730  3288  3292 I ASP     : asp_command: 0x0; code=11
+09-11 22:06:46.730  3288  3292 I ASP     : SPEAKER POWER MODE 5
+09-11 22:06:46.730  3288  3292 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+09-11 22:06:46.730  3288  3292 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: routingOutputDevice(), output_devices: 0x2 => 0x2, mPhoneCallSpeechOpen = 0
+09-11 22:06:46.730  3288  3292 D AudioALSAVoiceWakeUpController: +updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 22:06:46.730  3288  3292 D AudioHeadSetMessager: /sys/class/switch/h2w/state => 0
+09-11 22:06:46.730  3288  3292 D AudioALSAVoiceWakeUpController: -updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: +CheckHeadsetChange(), current_output_devices = 2 output_device = 2 
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamManager: mHeadsetChange = 0
+09-11 22:06:46.730  3288  3292 W AudioALSAStreamManager: -routingOutputDevice(), output_devices == current_output_devices(0x2), return
+09-11 22:06:46.730  3288  3292 D AudioALSAStreamOut: -setParameters(): routing=2 
+09-11 22:06:46.731  3288  3292 D AudioALSAStreamManager: -setParameters()
+09-11 22:06:46.731  3288  3292 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: +openInputStream()
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, status = 14, acoustics = 0x0
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 22:06:46.735  3288  3292 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:06:46.735  3288  3292 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 2, buffer_size=1280
+09-11 22:06:46.735  3288  3292 D AudioALSAStreamManager: -openInputStream(), in = 0xf5de6b00, status = 0x0, mStreamInVector.size() = 1
+09-11 22:06:46.739  3287  3308 I AudioFlinger: AudioFlinger's thread 0xf651f7c0 tid=3308 ready to run
+09-11 22:06:46.739  3288  3292 D AudioALSAStreamManager: +closeInputStream(), in = 0xf5de6b00
+09-11 22:06:46.739  3288  3292 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+09-11 22:06:46.739  3288  3292 D AudioALSAStreamManager: -closeInputStream(), mStreamInVector.size() = 0
+09-11 22:06:46.750  3287  3287 I bt_a2dp_hw: adev_open:  adev_open in A2dp_hw module
+09-11 22:06:46.751  3287  3287 I AudioFlinger: loadHwModule() Loaded a2dp audio interface, handle 18
+09-11 22:06:46.751  3287  3287 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+09-11 22:06:46.751  3287  3287 E DevicesFactoryHalHidl: Invalid device name bluetooth
+09-11 22:06:46.751  3287  3287 E AudioFlinger: loadHwModule() error -22 loading module bluetooth
+09-11 22:06:46.751  3287  3287 W APM_AudioPolicyManager: could not open HW module bluetooth
+09-11 22:06:46.752  3288  3288 D modules.usbaudio.audio_hal: [USB_AUD] adev_open
+09-11 22:06:46.752  3287  3287 I AudioFlinger: loadHwModule() Loaded usb audio interface, handle 26
+09-11 22:06:46.752  3287  3287 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+09-11 22:06:46.754  3288  3288 I r_submix: adev_open(name=audio_hw_if)
+09-11 22:06:46.754  3288  3288 I r_submix: adev_init_check()
+09-11 22:06:46.754  3287  3287 I AudioFlinger: loadHwModule() Loaded r_submix audio interface, handle 34
+09-11 22:06:46.754  3288  3288 D r_submix: adev_open_input_stream(addr=0)
+09-11 22:06:46.754  3288  3288 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+09-11 22:06:46.754  3288  3288 D r_submix:   now using address 0 for route 9
+09-11 22:06:46.756  3287  3310 I AudioFlinger: AudioFlinger's thread 0xf651f080 tid=3310 ready to run
+09-11 22:06:46.756  3288  3288 I r_submix: in_standby()
+09-11 22:06:46.756  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.756  3288  3288 I r_submix: in_standby()
+09-11 22:06:46.757  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.758  3288  3288 D r_submix: adev_close_input_stream()
+09-11 22:06:46.758  3288  3288 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+09-11 22:06:46.758  3288  3288 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+09-11 22:06:46.759  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 22:06:46.759  3287  3287 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 22:06:47.110   441  2600 W AudioSystem: AudioPolicyService server died!
+09-11 22:06:47.113  3288  3288 D AudioALSAHardware: +setParameters(): BT_SCO=off
+09-11 22:06:47.113  3288  3288 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "BT_SCO=off"
+09-11 22:06:47.113  3288  3288 D AudioALSAHardware: -setParameters(): BT_SCO=off 
+09-11 22:06:47.115  3287  3307 D PermissionCache: checking android.permission.MODIFY_AUDIO_ROUTING for uid=1000 => granted (338 us)
+09-11 22:06:47.117  3287  3307 I CaptureStateNotifier: Registering a listener
+09-11 22:06:47.117  3288  3288 D AudioALSAHardware: setMode setMode = 0
+09-11 22:06:47.117  3288  3288 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+09-11 22:06:47.117  3288  3288 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+09-11 22:06:47.118   441   540 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1000/441](false)
+09-11 22:06:47.118  3287  3314 W APM::AudioPolicyEngine/Base: setPhoneState() setting same state 0
+09-11 22:06:47.118  3287  3314 W APM_AudioPolicyManager: setPhoneState() invalid or same state 0
+09-11 22:06:47.120  3287  3299 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 22:06:47.122  3287  3299 I chatty  : uid=1041(audioserver) Binder:3287_1 identical 3 lines
+09-11 22:06:47.146  3287  3314 I chatty  : uid=1041(audioserver) Binder:3287_5 expire 2 lines
+09-11 22:06:47.159   441   536 I AS.AudioService: after audioserver restart: initStreamVolume succeeded
+09-11 22:06:47.174  3287  3313 I chatty  : uid=1041(audioserver) Binder:3287_4 expire 4 lines
+09-11 22:06:47.177  3287  3299 I chatty  : uid=1041(audioserver) Binder:3287_1 expire 1 line
+09-11 22:06:47.177  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 8 lines
+09-11 22:06:47.178   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+09-11 22:06:47.599  3287  3300 I chatty  : uid=1041(audioserver) Binder:3287_2 expire 4 lines
+09-11 22:06:47.602  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 16 lines
+09-11 22:06:47.605  3287  3315 I chatty  : uid=1041(audioserver) AudioIn_1E expire 1 line
+09-11 22:06:47.606  3288  3288 I chatty  : uid=1041(audioserver) /vendor/bin/hw/android.hardware.audio.service expire 13 lines
+09-11 22:06:47.615   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:47.616   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:47.618   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:47.627   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:47.628   441  2429 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:47.630   441   493 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/3287](true)
+09-11 22:06:47.638  3287  3315 I chatty  : uid=1041(audioserver) AudioIn_1E expire 2 lines
+09-11 22:06:47.639  3288  3316 I chatty  : uid=1041(audioserver) reader expire 45 lines
+09-11 22:06:47.799  3288  3319 I chatty  : uid=1041(audioserver) readThread0 expire 1 line
+09-11 22:06:47.799  3288  3316 I chatty  : uid=1041(audioserver) reader expire 13 lines
+09-11 22:06:47.800  3288  3316 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-11 22:06:47.800  3288  3316 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 22:06:47.800  3288  3316 D AudioALSACaptureHandlerNormal: -open()
+09-11 22:06:47.835  3288  3316 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 1022 nsec 851430907
+09-11 22:06:49.219  2629  2656 I chatty  : uid=10158(com.steve.puckd) pool-4-thread-1 expire 173 lines
+09-11 22:06:50.340  3320  3320 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 22:06:50.345  3320  3320 I AndroidRuntime: Using default boot image
+09-11 22:06:50.345  3320  3320 I AndroidRuntime: Leaving lock profiling enabled
+09-11 22:06:50.355  3320  3320 W app_process: Could not reserve sentinel fault page
+09-11 22:06:50.355  3320  3320 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 22:06:50.552  3320  3320 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 22:06:50.552  3320  3320 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 22:06:50.569  3320  3320 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:50.572  3320  3320 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:50.616  3320  3320 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 22:06:50.630  3320  3320 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+09-11 22:06:50.671  3320  3334 V UiAutomation: Init UiAutomation@60c80f1[id=5, flags=0]
+09-11 22:06:51.292  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.325  2629  2656 I SharedAudio: pcm peak=146 state=0
+09-11 22:06:51.327  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.328  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:51.375  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:51.376  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.378  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:06:51.379  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.393  2629  2656 I SharedAudio: pcm peak=134 state=0
+09-11 22:06:51.422  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:51.424  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.436  2629  2656 I SharedAudio: pcm peak=165 state=0
+09-11 22:06:51.437  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.450  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:06:51.471  2629  2656 I SharedAudio: pcm peak=153 state=0
+09-11 22:06:51.473  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.486  2629  2656 I SharedAudio: pcm peak=130 state=0
+09-11 22:06:51.487  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.534  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:51.536  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:51.538  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.548  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:06:51.550  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.562  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:51.595  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:51.595  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.630  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:06:51.630  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.631  2629  2656 I SharedAudio: pcm peak=134 state=0
+09-11 22:06:51.644  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:51.644  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.679  2629  2656 I SharedAudio: pcm peak=153 state=0
+09-11 22:06:51.681  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.693  2629  2656 I SharedAudio: pcm peak=174 state=0
+09-11 22:06:51.707  2629  2656 I SharedAudio: pcm peak=148 state=0
+09-11 22:06:51.707  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.720  3320  3320 W AccessibilityNodeInfoDumper: Fetch time: 12ms
+09-11 22:06:51.722   441   945 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@72c7a8c
+09-11 22:06:51.723  3320  3334 V UiAutomation: Init UiAutomation@60c80f1[id=-1, flags=0]
+09-11 22:06:51.737  3320  3320 D AndroidRuntime: Shutting down VM
+09-11 22:06:51.744  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:51.744  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.760  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:51.789  2629  2656 I SharedAudio: pcm peak=141 state=0
+09-11 22:06:51.791  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.792  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:51.793  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.803  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:51.837  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:51.838  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.851  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:51.852  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.865  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:51.886  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:51.887  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.914  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:51.915  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.936  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:51.950  2629  2656 I SharedAudio: pcm peak=152 state=0
+09-11 22:06:51.952  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.966  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:51.969  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:51.999  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:52.013  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:52.014  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.026  2629  2656 I SharedAudio: pcm peak=143 state=0
+09-11 22:06:52.027  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.047  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:52.076  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:52.077  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.099  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:52.100  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.110  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:52.124  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:52.125  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.159  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:52.161  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.177  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:06:52.187  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:52.193  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.207  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:52.208  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.235  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:52.256  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:52.257  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.270  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:52.271  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.284  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:52.322  2629  2656 I SharedAudio: pcm peak=94 state=0
+09-11 22:06:52.323  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.334  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:52.335  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.347  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:52.369  2629  2656 I SharedAudio: pcm peak=151 state=0
+09-11 22:06:52.371  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.397  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:52.398  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.418  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:52.431  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:52.432  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.445  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:52.446  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.480  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:52.495  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:52.496  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.515  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:06:52.517  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.529  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:52.557  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:52.559  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.582  2629  2656 I SharedAudio: pcm peak=157 state=0
+09-11 22:06:52.584  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.602  2629  2656 I SharedAudio: pcm peak=217 state=0
+09-11 22:06:52.607  2629  2656 I SharedAudio: pcm peak=159 state=0
+09-11 22:06:52.608  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.642  2629  2656 I SharedAudio: pcm peak=206 state=0
+09-11 22:06:52.643  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.655  2629  2656 I SharedAudio: pcm peak=171 state=0
+09-11 22:06:52.669  2629  2656 I SharedAudio: pcm peak=150 state=0
+09-11 22:06:52.671  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.691  2629  2656 I SharedAudio: pcm peak=186 state=0
+09-11 22:06:52.693  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.718  2629  2656 I SharedAudio: pcm peak=184 state=0
+09-11 22:06:52.739  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:52.741  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.753  2629  2656 I SharedAudio: pcm peak=141 state=0
+09-11 22:06:52.755  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.767  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:52.803  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:06:52.805  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.818  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:06:52.821  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.835  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:52.851  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:52.851  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.884  2629  2656 I SharedAudio: pcm peak=168 state=0
+09-11 22:06:52.884  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.897  2629  2656 I SharedAudio: pcm peak=133 state=0
+09-11 22:06:52.910  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:52.911  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.933  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:52.935  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:52.960  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:52.974  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:52.982  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.004  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:53.006  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.010  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:53.043  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:53.044  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.056  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:53.058  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.070  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:53.091  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:06:53.093  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.125  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:53.127  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.139  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:06:53.153  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:53.155  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.168  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:53.169  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.205  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:06:53.221  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:06:53.223  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.237  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:53.239  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.251  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:53.286  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:53.286  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.299  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:53.300  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.313  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:53.327  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:53.328  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.363  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:53.365  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.385  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:53.408  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:53.411  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.413  2629  2656 I SharedAudio: pcm peak=146 state=0
+09-11 22:06:53.414  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.447  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:53.460  2629  2656 I SharedAudio: pcm peak=180 state=0
+09-11 22:06:53.462  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.474  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:53.476  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.488  2629  2656 I SharedAudio: pcm peak=140 state=0
+09-11 22:06:53.523  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:53.525  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.537  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:53.539  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.558  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:06:53.573  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:06:53.574  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.608  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:53.609  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.621  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:53.635  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:53.636  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.656  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:53.657  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.689  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:06:53.698  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:53.699  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.718  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:06:53.719  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.731  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:53.768  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:53.769  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.779  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:53.784  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.793  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:53.815  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:53.816  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.843  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:53.844  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.864  2629  2656 I SharedAudio: pcm peak=155 state=0
+09-11 22:06:53.878  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:53.880  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.892  2629  2656 I SharedAudio: pcm peak=148 state=0
+09-11 22:06:53.894  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.927  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:53.941  2629  2656 I SharedAudio: pcm peak=127 state=0
+09-11 22:06:53.943  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.956  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:53.957  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:53.976  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:54.009  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:54.012  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.018  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:54.019  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.039  2629  2656 I SharedAudio: pcm peak=162 state=0
+09-11 22:06:54.053  2629  2656 I SharedAudio: pcm peak=149 state=0
+09-11 22:06:54.054  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.093  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:54.095  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.102  2629  2656 I SharedAudio: pcm peak=164 state=0
+09-11 22:06:54.116  2629  2656 I SharedAudio: pcm peak=148 state=0
+09-11 22:06:54.117  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.137  2629  2656 I SharedAudio: pcm peak=157 state=0
+09-11 22:06:54.138  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.163  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:54.186  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:54.187  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.198  2629  2656 I SharedAudio: pcm peak=159 state=0
+09-11 22:06:54.203  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.211  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:06:54.247  2629  2656 I SharedAudio: pcm peak=141 state=0
+09-11 22:06:54.249  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.261  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:54.263  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.275  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:54.296  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:54.299  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.324  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:54.326  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.345  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:06:54.359  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:54.361  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.374  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:54.376  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.394  2629  2656 I SharedAudio: pcm peak=141 state=0
+09-11 22:06:54.422  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:54.424  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.436  2629  2656 I SharedAudio: pcm peak=151 state=0
+09-11 22:06:54.438  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.458  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:54.485  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:54.487  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.506  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:54.508  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.510  2629  2656 I SharedAudio: pcm peak=133 state=0
+09-11 22:06:54.535  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:54.536  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.561  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:54.563  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.583  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:54.608  2629  2656 I SharedAudio: pcm peak=169 state=0
+09-11 22:06:54.608  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.609  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:54.610  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.651  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:54.652  2629  2656 I SharedAudio: pcm peak=127 state=0
+09-11 22:06:54.652  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.679  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:54.681  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.693  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:54.714  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:54.716  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.742  2629  2656 I SharedAudio: pcm peak=103 state=0
+09-11 22:06:54.744  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.763  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:54.765  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:54.767  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.813  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:54.815  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.816  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:06:54.838  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:54.841  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.859  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:54.860  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.886  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:54.907  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:54.909  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.911  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:54.912  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.935  2629  2656 I SharedAudio: pcm peak=209 state=0
+09-11 22:06:54.961  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:54.963  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:54.970  2629  2656 I SharedAudio: pcm peak=180 state=0
+09-11 22:06:54.972  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.010  2629  2656 I SharedAudio: pcm peak=130 state=0
+09-11 22:06:55.011  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:55.011  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.051  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:06:55.053  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.054  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:55.079  2629  2656 I SharedAudio: pcm peak=92 state=0
+09-11 22:06:55.080  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.105  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:55.108  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.117  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:55.149  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:06:55.150  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.151  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:06:55.152  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.163  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:55.196  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:06:55.197  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.215  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:55.217  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.245  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:06:55.247  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:55.248  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.287  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:55.289  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.293  2629  2629 I PuckService: transport=relay connecting to relay
+09-11 22:06:55.318  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:55.319  2629  2656 I SharedAudio: pcm peak=163 state=0
+09-11 22:06:55.330  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.331  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:55.332  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.334  2629  2629 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-11 22:06:55.344  2629  2629 I PuckService: disconnected reason=Relay unavailable retry_ms=30000
+09-11 22:06:55.357  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:55.370  2629  2656 I SharedAudio: pcm peak=90 state=0
+09-11 22:06:55.371  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.411  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:55.412  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.413  2629  2656 I SharedAudio: pcm peak=80 state=0
+09-11 22:06:55.433  2629  2656 I SharedAudio: pcm peak=96 state=0
+09-11 22:06:55.434  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.468  2629  2656 I SharedAudio: pcm peak=91 state=0
+09-11 22:06:55.469  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.470  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:55.482  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:55.483  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.517  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:55.518  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.531  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:06:55.569  2629  2656 I SharedAudio: pcm peak=176 state=0
+09-11 22:06:55.570  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.571  2629  2656 I SharedAudio: pcm peak=183 state=0
+09-11 22:06:55.572  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.594  2629  2656 I SharedAudio: pcm peak=313 state=0
+09-11 22:06:55.614  2629  2656 I SharedAudio: pcm peak=191 state=0
+09-11 22:06:55.615  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.627  2629  2656 I SharedAudio: pcm peak=149 state=0
+09-11 22:06:55.628  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.641  2629  2656 I SharedAudio: pcm peak=175 state=0
+09-11 22:06:55.678  2629  2656 I SharedAudio: pcm peak=162 state=0
+09-11 22:06:55.679  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.691  2629  2656 I SharedAudio: pcm peak=164 state=0
+09-11 22:06:55.693  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.711  2629  2656 I SharedAudio: pcm peak=133 state=0
+09-11 22:06:55.725  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:55.727  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.774  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:55.775  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.778  2629  2656 I SharedAudio: pcm peak=95 state=0
+09-11 22:06:55.787  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:55.789  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.826  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:55.828  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.835  2629  2656 I SharedAudio: pcm peak=92 state=0
+09-11 22:06:55.870  2629  2656 I SharedAudio: pcm peak=95 state=0
+09-11 22:06:55.871  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.871  2629  2656 I SharedAudio: pcm peak=104 state=0
+09-11 22:06:55.872  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.883  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:55.918  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:55.919  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.931  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:55.932  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.945  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:55.967  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:55.969  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:55.999  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:06:56.000  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.019  2629  2656 I SharedAudio: pcm peak=90 state=0
+09-11 22:06:56.030  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:56.032  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.044  2629  2656 I SharedAudio: pcm peak=96 state=0
+09-11 22:06:56.047  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.079  2629  2656 I SharedAudio: pcm peak=92 state=0
+09-11 22:06:56.093  2629  2656 I SharedAudio: pcm peak=81 state=0
+09-11 22:06:56.095  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.108  2629  2656 I SharedAudio: pcm peak=90 state=0
+09-11 22:06:56.110  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.128  2629  2656 I SharedAudio: pcm peak=104 state=0
+09-11 22:06:56.156  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:56.158  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.178  2629  2656 I SharedAudio: pcm peak=95 state=0
+09-11 22:06:56.179  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.191  2629  2656 I SharedAudio: pcm peak=96 state=0
+09-11 22:06:56.204  2629  2656 I SharedAudio: pcm peak=77 state=0
+09-11 22:06:56.206  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.239  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:56.240  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.252  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:06:56.273  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:56.275  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.290  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:56.297  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.318  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:56.336  2629  2656 I SharedAudio: pcm peak=96 state=0
+09-11 22:06:56.337  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.350  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:56.351  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.363  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:56.398  2629  2656 I SharedAudio: pcm peak=87 state=0
+09-11 22:06:56.399  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.421  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:06:56.423  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.434  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:56.447  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:56.449  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.482  2629  2656 I SharedAudio: pcm peak=87 state=0
+09-11 22:06:56.483  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.495  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:56.510  2629  2656 I SharedAudio: pcm peak=94 state=0
+09-11 22:06:56.512  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.530  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:56.532  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.559  2629  2656 I SharedAudio: pcm peak=88 state=0
+09-11 22:06:56.572  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:06:56.574  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.593  2629  2656 I SharedAudio: pcm peak=89 state=0
+09-11 22:06:56.601  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.607  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:56.640  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:06:56.642  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.654  2629  2656 I SharedAudio: pcm peak=90 state=0
+09-11 22:06:56.656  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.675  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:56.688  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:56.690  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.727  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:56.729  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.737  2629  2656 I SharedAudio: pcm peak=88 state=0
+09-11 22:06:56.751  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:56.752  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.765  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:56.766  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.800  2629  2656 I SharedAudio: pcm peak=87 state=0
+09-11 22:06:56.818  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:56.819  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.834  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:56.835  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.847  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:56.883  2629  2656 I SharedAudio: pcm peak=89 state=0
+09-11 22:06:56.885  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.897  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:06:56.899  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.912  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:56.932  2629  2656 I SharedAudio: pcm peak=90 state=0
+09-11 22:06:56.934  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.960  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:56.962  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:56.974  2629  2656 I SharedAudio: pcm peak=88 state=0
+09-11 22:06:56.994  2629  2656 I SharedAudio: pcm peak=93 state=0
+09-11 22:06:57.003  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.008  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:57.010  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.043  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:57.057  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:57.059  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.070  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:57.072  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.091  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:57.118  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:57.120  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.139  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:57.141  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.153  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:57.167  2629  2656 I SharedAudio: pcm peak=104 state=0
+09-11 22:06:57.169  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.208  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:06:57.213  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.223  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:57.237  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:57.237  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.248  2629  2656 I SharedAudio: pcm peak=332 state=0
+09-11 22:06:57.249  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.283  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:57.298  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:06:57.299  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.310  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:57.311  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.332  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:57.361  2629  2656 I SharedAudio: pcm peak=182 state=0
+09-11 22:06:57.362  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.381  2629  2656 I SharedAudio: pcm peak=173 state=0
+09-11 22:06:57.383  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.395  2629  2656 I SharedAudio: pcm peak=203 state=0
+09-11 22:06:57.408  2629  2656 I SharedAudio: pcm peak=196 state=0
+09-11 22:06:57.410  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.443  2629  2656 I SharedAudio: pcm peak=169 state=0
+09-11 22:06:57.445  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.457  2629  2656 I SharedAudio: pcm peak=191 state=0
+09-11 22:06:57.478  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:57.480  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.492  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:57.494  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.520  2629  2656 I SharedAudio: pcm peak=134 state=0
+09-11 22:06:57.541  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:57.543  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.555  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:06:57.557  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.568  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:57.610  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:57.611  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.625  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:06:57.627  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.636  2629  2656 I SharedAudio: pcm peak=103 state=0
+09-11 22:06:57.650  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:06:57.650  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.684  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:57.685  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.698  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:57.718  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:06:57.719  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.732  2629  2656 I SharedAudio: pcm peak=104 state=0
+09-11 22:06:57.733  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.761  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:57.781  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:57.783  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.795  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:57.797  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.809  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:57.844  2629  2656 I SharedAudio: pcm peak=153 state=0
+09-11 22:06:57.846  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.858  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:06:57.860  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.880  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:06:57.893  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:06:57.895  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.928  2629  2656 I SharedAudio: pcm peak=184 state=0
+09-11 22:06:57.930  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.942  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:57.956  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:57.958  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:57.976  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:06:57.978  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.009  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:58.026  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:58.029  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.038  2629  2656 I SharedAudio: pcm peak=178 state=0
+09-11 22:06:58.039  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.051  2629  2656 I SharedAudio: pcm peak=218 state=0
+09-11 22:06:58.091  2629  2656 I SharedAudio: pcm peak=182 state=0
+09-11 22:06:58.092  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.100  2629  2656 I SharedAudio: pcm peak=161 state=0
+09-11 22:06:58.102  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.114  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:58.140  2629  2656 I SharedAudio: pcm peak=143 state=0
+09-11 22:06:58.141  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.162  2629  2656 I SharedAudio: pcm peak=156 state=0
+09-11 22:06:58.163  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.182  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:58.197  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:58.198  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.210  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:06:58.211  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.246  2629  2656 I SharedAudio: pcm peak=160 state=0
+09-11 22:06:58.259  2629  2656 I SharedAudio: pcm peak=182 state=0
+09-11 22:06:58.261  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.281  2629  2656 I SharedAudio: pcm peak=199 state=0
+09-11 22:06:58.282  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.295  2629  2656 I SharedAudio: pcm peak=156 state=0
+09-11 22:06:58.323  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:58.323  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.344  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:58.344  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.358  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:06:58.371  2629  2656 I SharedAudio: pcm peak=107 state=0
+09-11 22:06:58.372  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.380  3338  3338 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 22:06:58.385  3338  3338 I AndroidRuntime: Using default boot image
+09-11 22:06:58.385  3338  3338 I AndroidRuntime: Leaving lock profiling enabled
+09-11 22:06:58.394  3338  3338 W app_process: Could not reserve sentinel fault page
+09-11 22:06:58.394  3338  3338 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 22:06:58.408  2629  2656 I SharedAudio: pcm peak=162 state=0
+09-11 22:06:58.409  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.425  2629  2656 I SharedAudio: pcm peak=169 state=0
+09-11 22:06:58.442  2629  2656 I SharedAudio: pcm peak=148 state=0
+09-11 22:06:58.443  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.444  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:06:58.444  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.488  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:58.504  2629  2656 I SharedAudio: pcm peak=155 state=0
+09-11 22:06:58.504  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.518  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:06:58.519  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.531  2629  2656 I SharedAudio: pcm peak=127 state=0
+09-11 22:06:58.566  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:06:58.567  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.581  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:06:58.582  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.591  3338  3338 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 22:06:58.591  3338  3338 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 22:06:58.602  2629  2656 I SharedAudio: pcm peak=181 state=0
+09-11 22:06:58.603  2629  2656 I SharedAudio: pcm peak=169 state=0
+09-11 22:06:58.604  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.609  3338  3338 I app_process: The ClassLoaderContext is a special shared library.
+09-11 22:06:58.643  2629  2656 I SharedAudio: pcm peak=161 state=0
+09-11 22:06:58.644  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.654  3338  3338 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 22:06:58.665  2629  2656 I SharedAudio: pcm peak=166 state=0
+09-11 22:06:58.668  3338  3338 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-11 22:06:58.679  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:06:58.679  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.686  3338  3338 D AndroidRuntime: Shutting down VM
+09-11 22:06:58.693  2629  2656 I SharedAudio: pcm peak=175 state=0
+09-11 22:06:58.693  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.698  2995  2995 I AecDiag : event=017 t_ms=76530 STEP=enable_aec status=-7 before=false after=false control=false
+09-11 22:06:58.708   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:58.710   441   534 W AudioTrack: restoreTrack_l(11): dead IAudioTrack, PCM, creating a new one from getTimestampExtended()
+09-11 22:06:58.710   441   534 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-11 22:06:58.712   441  1197 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:58.713   441  1197 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:58.719  3287  3300 D AF::TrackHandle: OpPlayAudio: track:56 usage:13 not muted
+09-11 22:06:58.721   441   534 D AudioTrack: createTrack_l(11): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 4146 -> 4146
+09-11 22:06:58.727  2629  2656 I SharedAudio: pcm peak=161 state=0
+09-11 22:06:58.732   441  2821 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:58.733  3288  3288 E FMQ     : grantorIdx must be less than 3
+09-11 22:06:58.733  3288  3288 E FMQ     : grantorIdx must be less than 3
+09-11 22:06:58.734  3287  3305 E FMQ     : grantorIdx must be less than 3
+09-11 22:06:58.734  3287  3305 E FMQ     : grantorIdx must be less than 3
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: AudioALSAVolumeController getMasterVolume
+09-11 22:06:58.734  3288  3351 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: AudioALSAVolumeController setMasterVolume v = 1.000000 mode = 0 devices = 0x2
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: ApplyExtAmpHeadPhoneGain  Gain = 256 mode= 0 device = 3
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: DegradedBGain   = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetLinoutRGain 
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetHeadPhoneLGain = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetRealHeadPhoneLGain = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetHeadPhoneRGain = 7
+09-11 22:06:58.734  3288  3351 D AudioALSAVolumeController: SetRealHeadPhoneRGain = 7
+09-11 22:06:58.735  3288  3351 D AudioALSAStreamOut: open(), flags 2
+09-11 22:06:58.735  3288  3351 D AudioALSAStreamManager: +createPlaybackHandler(), mAudioMode = 0, output_devices = 0x2
+09-11 22:06:58.735  3288  3351 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerBase: AudioALSAPlaybackHandlerBase()
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal()
+09-11 22:06:58.735  3288  3351 D AudioALSAStreamManager: createPlaybackHandler() ApplyFilter [0]/[1] Device [0x2]
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: +setFilterMng() mAudioFilterManagerHandler [0xf65f7dd0]
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: -setFilterMng()
+09-11 22:06:58.735  3288  3351 D AudioALSAStreamManager: -createPlaybackHandler(), mPlaybackHandlerVector.size() = 1
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: +open(), mDevice = 0x2
+09-11 22:06:58.735  3288  3351 D AudioALSAHardwareResourceManager: EnableAudBufClk(), bEanble = 1
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: +HpImpeDanceDetect outputdevice = 2
+09-11 22:06:58.735  3288  3351 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = RT5616_Playback 
+09-11 22:06:58.735  3288  3351 D AudioALSADeviceParser: compare success = 23
+09-11 22:06:58.735  3288  3351 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3204 
+09-11 22:06:58.735  3288  3351 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal::open() pcmindex = 23
+09-11 22:06:58.735   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase:         Rate:	min=8000Hz	max=192000Hz
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase:     Channels:	min=1		max=2
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase:  Sample bits:	min=16		max=32
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase:  Period size:	min=0		max=18432
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase: Period count:	min=1		max=4
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_SIZE :	 max=18432	
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: Device does not exist.
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: ChooseTargetSampleRate SampleRate = 48000 outputdevice = 2
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase: transferAudioFormatToPcmFormat(), audio_format(0x1) => pcm_format(0x0)
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: open(), mConfig: channels = 2, rate = 48000, period_size = 1536, period_count = 2, format = 0
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: asp_open(), mDevice = 0x2
+09-11 22:06:58.736  3288  3351 I ASP/ER  : RegisterWriter writer = 0xf64b2c14 (speaker)
+09-11 22:06:58.736  3288  3351 I ASP/SP  : PipelineSpeaker 0xf64b2b80 in 1 2 48000 out 1 2 48000
+09-11 22:06:58.736  3288  3351 I ASP/Metrics: Audio metrics initialized.
+09-11 22:06:58.736  3288  3351 D ASP/Metrics: Same audio output Local
+09-11 22:06:58.736  3288  3351 I AUDIOALG: setPlaybackDevices() called with 0x00000001, device type NOT changed, no action taken
+09-11 22:06:58.736  3288  3351 I ASP/SP  : SetDevice set AFE out devices = 2
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode() bEanble = 1 SampleRate = 48000
+09-11 22:06:58.736  3288  3351 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode = 1
+09-11 22:06:58.736  3288  3351 D AudioALSAHardwareResourceManager: setUsingExtSpeaker() bSpeaker = 1, retval = -22
+09-11 22:06:58.736  3288  3351 D AudioALSAPlaybackHandlerBase: +openPcmDriver(), pcm device = 23
+09-11 22:06:58.744  2629  2656 I SharedAudio: pcm peak=165 state=0
+09-11 22:06:58.746  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.761  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:58.764  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.775  2629  2656 I SharedAudio: pcm peak=155 state=0
+09-11 22:06:58.782  3288  3351 E AudioALSAPlaybackHandlerBase: openPcmDriver(), pcm_start(0xf621e3a0) fail due to cannot start channel: Broken pipe
+09-11 22:06:58.782  3288  3351 D AudioALSAPlaybackHandlerBase: -openPcmDriver(), mPcm = 0xf621e3a0
+09-11 22:06:58.782  3288  3351 D AudioALSAHardwareResourceManager: +startOutputDevice(), new_devices = 0x2, mOutputDevices = 0x0, mStartOutputDevicesCount = 0 SampleRate = 48000
+09-11 22:06:58.782  3288  3351 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:06:58.782  3288  3351 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = headphone_output descriptor == NULL
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: CheckDeviceExist exist devicename = ext_speaker_output
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName() DeviceName = ext_speaker_output descriptor->DeviceStatusCounte = 0
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXL DAC R1 Switch cltvalue = 1
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXR DAC L1 Switch cltvalue = 1
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: cltname = OUT Playback Switch cltvalue = 1
+09-11 22:06:58.782  3288  3351 I AudioALSADeviceConfigManager: cltname = Ext_Speaker_Amp_Switch cltvalue = Off
+09-11 22:06:58.783  3288  3351 D AudioALSAHardwareResourceManager: -startOutputDevice(), mOutputDevices = 0x2, mStartOutputDevicesCount = 1
+09-11 22:06:58.783  3288  3351 D AudioVoiceUIDL: [GetSRCInputParameter] mOutputSampleRate 16000,  mInputSampleRate 48000, mInChannel 2, mOutChannel, 0 format 1
+09-11 22:06:58.783  3288  3351 D AudioVoiceUIDL: [GetSRCInputParameter] create SRC handle fail
+09-11 22:06:58.783  3288  3351 D AudioALSAPlaybackHandlerNormal: -open()
+09-11 22:06:58.783  3288  3351 I AudioALSAStreamOut: open(), audio playback starts, set speaker power mode
+09-11 22:06:58.783  3288  3351 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, no change on speaker power mode (5), return
+09-11 22:06:58.783  3288  3351 D AudioALSAPlaybackHandlerNormal: setScreenState, rate 768 0.016000, mode = 1 , buffer_size = 3072, channel 2, format1
+09-11 22:06:58.783  3288  3351 W AudioALSAPlaybackHandlerNormal: doProcessAsp mAspBuffer=0x0 Old AspBufferSize=0 New AspBufferSize=3072
+09-11 22:06:58.795  2629  2656 I SharedAudio: pcm peak=221 state=0
+09-11 22:06:58.795  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.824  2629  2656 I SharedAudio: pcm peak=154 state=0
+09-11 22:06:58.826  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.844  2629  2656 I SharedAudio: pcm peak=168 state=0
+09-11 22:06:58.845  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:58.846  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.885  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:58.886  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.905  2629  2656 I SharedAudio: pcm peak=170 state=0
+09-11 22:06:58.919  2629  2656 I SharedAudio: pcm peak=154 state=0
+09-11 22:06:58.920  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.946  2629  2656 I SharedAudio: pcm peak=284 state=0
+09-11 22:06:58.948  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:58.954  2629  2656 I SharedAudio: pcm peak=698 state=0
+09-11 22:06:58.982  2629  2656 I SharedAudio: pcm peak=309 state=0
+09-11 22:06:58.983  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.003  2629  2656 I SharedAudio: pcm peak=165 state=0
+09-11 22:06:59.003  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.004  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:06:59.051  2629  2656 I SharedAudio: pcm peak=139 state=0
+09-11 22:06:59.052  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.053  2629  2656 I SharedAudio: pcm peak=206 state=0
+09-11 22:06:59.053  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.081  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:06:59.099  2629  2656 I SharedAudio: pcm peak=180 state=0
+09-11 22:06:59.100  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.114  2629  2656 I SharedAudio: pcm peak=176 state=0
+09-11 22:06:59.115  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.124   441  2600 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 22:06:59.125  3287  3298 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 22:06:59.148  2629  2656 I SharedAudio: pcm peak=146 state=0
+09-11 22:06:59.162  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:59.163  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.164  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:59.165  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.211  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:59.212  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:59.213  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.228   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 22:06:59.243  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:59.245  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.259  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:59.287  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:06:59.289  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.308  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:59.309  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.311  2629  2656 I SharedAudio: pcm peak=93 state=0
+09-11 22:06:59.339  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:06:59.341  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.355  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:06:59.357  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.383  2629  2656 I SharedAudio: pcm peak=136 state=0
+09-11 22:06:59.404  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:06:59.404  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.405  2629  2656 I SharedAudio: pcm peak=147 state=0
+09-11 22:06:59.406  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.452  2629  2656 I SharedAudio: pcm peak=122 state=0
+09-11 22:06:59.453  2629  2656 I SharedAudio: pcm peak=127 state=0
+09-11 22:06:59.454  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.466  2629  2656 I SharedAudio: pcm peak=119 state=0
+09-11 22:06:59.467  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.502  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:59.516  2629  2656 I SharedAudio: pcm peak=95 state=0
+09-11 22:06:59.517  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.530  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:06:59.531  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.564  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:06:59.566  2629  2656 I SharedAudio: pcm peak=127 state=0
+09-11 22:06:59.567  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.616  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:06:59.617  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.619  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:59.646  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:59.648  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.649  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:59.652  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.694  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:59.696  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:06:59.698  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.707  2629  2656 I SharedAudio: pcm peak=99 state=0
+09-11 22:06:59.709  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.742  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:06:59.755  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:06:59.757  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.775  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:06:59.777  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.789  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:06:59.803  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:59.805  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.838  2629  2656 I SharedAudio: pcm peak=239 state=0
+09-11 22:06:59.840  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.851  2629  2656 I SharedAudio: pcm peak=148 state=0
+09-11 22:06:59.871  2629  2656 I SharedAudio: pcm peak=103 state=0
+09-11 22:06:59.873  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.885  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:06:59.886  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.918  2629  2656 I SharedAudio: pcm peak=115 state=0
+09-11 22:06:59.933  2629  2656 I SharedAudio: pcm peak=121 state=0
+09-11 22:06:59.933  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.947  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:06:59.947  2629  2656 I MicroWakeWord: probability=0
+09-11 22:06:59.968  2629  2656 I SharedAudio: pcm peak=88 state=0
+09-11 22:06:59.996  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:06:59.998  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.011  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:07:00.013  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.023   601   601 D KeyguardClockSwitch: Updating clock: 10:07
+09-11 22:07:00.032  2629  2656 I SharedAudio: pcm peak=106 state=0
+09-11 22:07:00.043  2629  2656 I SharedAudio: pcm peak=104 state=0
+09-11 22:07:00.044  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.078  2629  2656 I SharedAudio: pcm peak=130 state=0
+09-11 22:07:00.079  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.091  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:07:00.106  2629  2656 I SharedAudio: pcm peak=98 state=0
+09-11 22:07:00.108  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.127  2629  2656 I SharedAudio: pcm peak=108 state=0
+09-11 22:07:00.129  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.154  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:07:00.175  2629  2656 I SharedAudio: pcm peak=82 state=0
+09-11 22:07:00.177  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.188  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:07:00.190  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.209  2629  2656 I SharedAudio: pcm peak=100 state=0
+09-11 22:07:00.237  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:07:00.239  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.257  2629  2656 I SharedAudio: pcm peak=92 state=0
+09-11 22:07:00.259  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.271  2629  2656 I SharedAudio: pcm peak=109 state=0
+09-11 22:07:00.288  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:07:00.289  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.319  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:07:00.319  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.334  2629  2656 I SharedAudio: pcm peak=134 state=0
+09-11 22:07:00.346  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:07:00.347  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.367  2629  2656 I SharedAudio: pcm peak=125 state=0
+09-11 22:07:00.368  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.395  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:07:00.417  2629  2656 I SharedAudio: pcm peak=151 state=0
+09-11 22:07:00.420  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.442  2629  2656 I SharedAudio: pcm peak=169 state=0
+09-11 22:07:00.444  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.445  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:07:00.480  2629  2656 I SharedAudio: pcm peak=124 state=0
+09-11 22:07:00.482  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.493  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:07:00.495  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.514  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:07:00.528  2629  2656 I SharedAudio: pcm peak=152 state=0
+09-11 22:07:00.530  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.562  2629  2656 I SharedAudio: pcm peak=161 state=0
+09-11 22:07:00.564  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.576  2629  2656 I SharedAudio: pcm peak=217 state=0
+09-11 22:07:00.590  2629  2656 I SharedAudio: pcm peak=95 state=0
+09-11 22:07:00.592  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.604  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:07:00.606  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.640  2629  2656 I SharedAudio: pcm peak=102 state=0
+09-11 22:07:00.652  2629  2656 I SharedAudio: pcm peak=129 state=0
+09-11 22:07:00.654  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.672  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:07:00.674  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.686  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:07:00.720  2629  2656 I SharedAudio: pcm peak=201 state=0
+09-11 22:07:00.722  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.734  2629  2656 I SharedAudio: pcm peak=159 state=0
+09-11 22:07:00.735  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.762  2629  2656 I SharedAudio: pcm peak=137 state=0
+09-11 22:07:00.768  2629  2656 I SharedAudio: pcm peak=133 state=0
+09-11 22:07:00.770  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.802  2629  2656 I SharedAudio: pcm peak=153 state=0
+09-11 22:07:00.803  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.816  2629  2656 I SharedAudio: pcm peak=166 state=0
+09-11 22:07:00.830  2629  2656 I SharedAudio: pcm peak=170 state=0
+09-11 22:07:00.831  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.851  2629  2656 I SharedAudio: pcm peak=165 state=0
+09-11 22:07:00.852  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.879  2629  2656 I SharedAudio: pcm peak=207 state=0
+09-11 22:07:00.893  2629  2656 I SharedAudio: pcm peak=130 state=0
+09-11 22:07:00.895  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.914  2629  2656 I SharedAudio: pcm peak=181 state=0
+09-11 22:07:00.916  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.928  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:07:00.963  2629  2656 I SharedAudio: pcm peak=87 state=0
+09-11 22:07:00.967  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.977  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:07:00.979  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:00.991  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:07:01.015  2629  2656 I SharedAudio: pcm peak=152 state=0
+09-11 22:07:01.016  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.039  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:07:01.040  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.058  2629  2656 I SharedAudio: pcm peak=123 state=0
+09-11 22:07:01.072  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:07:01.073  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.087  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:07:01.088  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.121  2629  2656 I SharedAudio: pcm peak=205 state=0
+09-11 22:07:01.136  2629  2656 I SharedAudio: pcm peak=141 state=0
+09-11 22:07:01.138  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.155  2629  2656 I SharedAudio: pcm peak=164 state=0
+09-11 22:07:01.156  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.176  2629  2656 I SharedAudio: pcm peak=150 state=0
+09-11 22:07:01.203  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:07:01.203  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.215  2629  2656 I SharedAudio: pcm peak=135 state=0
+09-11 22:07:01.216  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.245  2629  2656 I SharedAudio: pcm peak=158 state=0
+09-11 22:07:01.250  2629  2656 I SharedAudio: pcm peak=144 state=0
+09-11 22:07:01.251  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.288  2629  2656 I SharedAudio: pcm peak=116 state=0
+09-11 22:07:01.289  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.298  2629  2656 I SharedAudio: pcm peak=126 state=0
+09-11 22:07:01.314  2629  2656 I SharedAudio: pcm peak=138 state=0
+09-11 22:07:01.315  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.326  2629  2656 I SharedAudio: pcm peak=151 state=0
+09-11 22:07:01.327  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.361  2629  2656 I SharedAudio: pcm peak=215 state=0
+09-11 22:07:01.374  2629  2656 I SharedAudio: pcm peak=200 state=0
+09-11 22:07:01.375  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.395  2629  2656 I SharedAudio: pcm peak=165 state=0
+09-11 22:07:01.396  2629  2656 I MicroWakeWord: probability=0
+09-11 22:07:01.410  2629  2656 I SharedAudio: pcm peak=153 state=0

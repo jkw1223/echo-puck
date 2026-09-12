@@ -1,0 +1,43 @@
+09-11 22:06:38.646  2995  2995 I AecDiag : event=001 t_ms=56478 STEP=query_effects aec_available=true ns_available=false agc_available=false
+09-11 22:06:38.666  2995  2995 I AecDiag : event=002 t_ms=56497 descriptor name=Acoustic Echo Canceler implementor=The Android Open Source Project type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+09-11 22:06:38.667  2995  2995 I AecDiag : event=003 t_ms=56499 descriptor name=Dynamics Processing implementor=The Android Open Source Project type=7261676f-6d75-7369-6364-28e2fd3ac39e implementation=e0e6539b-1781-7261-676f-6d7573696340
+09-11 22:06:38.668  2995  2995 I AecDiag : event=004 t_ms=56500 descriptor name=Loudness Enhancer implementor=The Android Open Source Project type=fe3199be-aed0-413f-87bb-11260eb63cf1 implementation=fa415329-2034-4bea-b5dc-5b381c8d1e2c
+09-11 22:06:38.669  2995  2995 I AecDiag : event=005 t_ms=56501 descriptor name=Multichannel Downmix To Stereo implementor=The Android Open Source Project type=381e49cc-a858-4aa2-87f6-e8388e7601b2 implementation=93f04452-e4fe-41cc-91f9-e475b6d1d69f
+09-11 22:06:38.671  2995  2995 I AecDiag : event=006 t_ms=56502 descriptor name=Visualizer implementor=The Android Open Source Project type=e46b26a0-dddd-11db-8afd-0002a5d5c51b implementation=d069d9e0-8329-11df-9168-0002a5d5c51b
+09-11 22:06:38.674  2995  2995 I AecDiag : event=007 t_ms=56505 descriptor name=Insert Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=172cdf00-a3bc-11df-a72f-0002a5d5c51b
+09-11 22:06:38.675  2995  2995 I AecDiag : event=008 t_ms=56506 descriptor name=Auxiliary Preset Reverb implementor=NXP Software Ltd. type=47382d60-ddd8-11db-bf3a-0002a5d5c51b implementation=f29a1400-a3bb-11df-8ddc-0002a5d5c51b
+09-11 22:06:38.676  2995  2995 I AecDiag : event=009 t_ms=56507 descriptor name=Insert Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=c7a511a0-a3bb-11df-860e-0002a5d5c51b
+09-11 22:06:38.677  2995  2995 I AecDiag : event=010 t_ms=56508 descriptor name=Auxiliary Environmental Reverb implementor=NXP Software Ltd. type=c2e5d5f0-94bd-4763-9cac-4e234d06839e implementation=4a387fc0-8ab3-11df-8bad-0002a5d5c51b
+09-11 22:06:38.678  2995  2995 I AecDiag : event=011 t_ms=56510 descriptor name=Volume implementor=NXP Software Ltd. type=09e8ede0-ddde-11db-b4f6-0002a5d5c51b implementation=119341a0-8469-11df-81f9-0002a5d5c51b
+09-11 22:06:38.679  2995  2995 I AecDiag : event=012 t_ms=56511 descriptor name=Equalizer implementor=NXP Software Ltd. type=0bed4300-ddd6-11db-8f34-0002a5d5c51b implementation=ce772f20-847d-11df-bb17-0002a5d5c51b
+09-11 22:06:38.680  2995  2995 I AecDiag : event=013 t_ms=56512 descriptor name=Virtualizer implementor=NXP Software Ltd. type=37cc2c00-dddd-11db-8577-0002a5d5c51b implementation=1d4033c0-8557-11df-9f2d-0002a5d5c51b
+09-11 22:06:38.682  2995  2995 I AecDiag : event=014 t_ms=56513 descriptor name=Dynamic Bass Boost implementor=NXP Software Ltd. type=0634f220-ddd4-11db-a0fc-0002a5d5c51b implementation=8631f300-72e2-11df-b57e-0002a5d5c51b
+09-11 22:06:40.760  2995  2995 I AecDiag : event=015 t_ms=58591 STEP=create_record state=1 session=25 rate=16000 channels=1 format=2 buffer=6400
+09-11 22:06:42.898  2995  2995 I AecDiag : event=016 t_ms=60730 STEP=create_aec null=false enabled=false control=true type=7b491460-8d4d-11e0-bd61-0002a5d5c51b implementation=bb392ec0-8d4d-11e0-a896-0002a5d5c51b
+09-11 22:06:46.104  2995  3015 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.105   601  2077 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.105   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 22:06:46.106   441  2600 W AudioSystem: AudioFlinger server died!
+09-11 22:06:46.588  3288  3288 I AUDIOALG: ConfSB_AEC_ARA:
+09-11 22:06:46.589  3288  3288 I AUDIOALG: VSB_AEC_ARA: init()
+09-11 22:06:46.595  3287  3287 I AudioFlinger: loadHwModule() Loaded primary audio interface, handle 10
+09-11 22:06:46.595  3287  3287 I AudioFlinger: openOutput() this 0xf70d8000, module 10 Device type:0x2,@:, SamplingRate 48000, Format 0x000001, Channels 0x3, flags 0x2
+09-11 22:06:46.598  3287  3287 I AudioFlinger: HAL output buffer size 768 frames, normal sink buffer size 1152 frames
+09-11 22:06:46.606  3287  3287 E AudioFlinger: Failed to add event callback
+09-11 22:06:46.606  3287  3306 I AudioFlinger: AudioFlinger's thread 0xf69e35c0 tid=3306 ready to run
+09-11 22:06:46.606  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.606  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 22:06:46.616  3287  3306 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.616  3287  3306 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 22:06:46.617  3287  3299 D AudioFlinger: isLowRamDevice:true totalMemory:1020911616 mClientSharedHeapSize:1048576
+09-11 22:06:46.620  3287  3287 W AudioFlinger: moveEffects() bad srcOutput 0
+09-11 22:06:46.735  3288  3292 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 22:06:46.739  3287  3308 I AudioFlinger: AudioFlinger's thread 0xf651f7c0 tid=3308 ready to run
+09-11 22:06:46.751  3287  3287 I AudioFlinger: loadHwModule() Loaded a2dp audio interface, handle 18
+09-11 22:06:46.751  3287  3287 E AudioFlinger: loadHwModule() error -22 loading module bluetooth
+09-11 22:06:46.752  3287  3287 I AudioFlinger: loadHwModule() Loaded usb audio interface, handle 26
+09-11 22:06:46.754  3287  3287 I AudioFlinger: loadHwModule() Loaded r_submix audio interface, handle 34
+09-11 22:06:46.756  3287  3310 I AudioFlinger: AudioFlinger's thread 0xf651f080 tid=3310 ready to run
+09-11 22:06:46.756  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:46.757  3287  3310 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 22:06:58.698  2995  2995 I AecDiag : event=017 t_ms=76530 STEP=enable_aec status=-7 before=false after=false control=false
