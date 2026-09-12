@@ -1,0 +1,645 @@
+--------- beginning of main
+09-11 21:54:28.356  2135  2139 D AudioALSACaptureDataClient: +StopBesRecord()
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: Stop
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: not start before
+09-11 21:54:28.356  2135  2139 D AudioALSACaptureDataClient: -StopBesRecord()
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: ~SPELayer+
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: Clear
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: ~Clear
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: FlushBufferQ+
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: FlushBufferQ mULOutBufferQ size=0,mULInBufferQ.size=0,mDLOutBufferQ.size()=0,mDLInBufferQ.size()=0,mDLDelayBufferQ.size()=0
+09-11 21:54:28.356  2135  2139 D AudioSPELayer: FlushBufferQ-
+09-11 21:54:28.357  2135  2139 D AudioSPELayer: ~SPELayer-
+09-11 21:54:28.357  2135  2139 D AudioPreProcess: ~AudioPreProcess()+
+09-11 21:54:28.357  2135  2139 D AudioPreProcess: ~AudioPreProcess()-
+09-11 21:54:28.357  2135  2139 D AudioALSACaptureDataClient: -~AudioALSACaptureDataClient()
+09-11 21:54:28.357  2135  2139 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 21:54:28.357  2135  2139 D AudioALSACaptureHandlerNormal: -close()
+09-11 21:54:28.357  2135  2139 D AudioALSAStreamManager: +destroyCaptureHandler(), mode = 0, pCaptureHandler = 0xf1482d60
+09-11 21:54:28.357  2135  2139 D AudioALSACaptureHandlerNormal: +~AudioALSACaptureHandlerNormal()
+09-11 21:54:28.357  2135  2139 D AudioALSACaptureHandlerNormal: ~AudioALSACaptureHandlerNormal()
+09-11 21:54:28.357  2135  2139 D AudioALSACaptureHandlerBase: ~AudioALSACaptureHandlerBase()
+09-11 21:54:28.357  2135  2139 D AudioALSAStreamManager: -destroyCaptureHandler(), mCaptureHandlerVector.size() = 0
+09-11 21:54:28.357  2135  2139 D AudioALSAStreamIn: -standby()
+09-11 21:54:28.359  2135  2135 D AudioALSAHardware: -releaseAudioPatch handle [0x2]
+09-11 21:54:28.359  2135  2135 D AudioALSAHardware: +routing releaseAudioPatch 80000004->Mixer
+09-11 21:54:28.359  2135  2135 D AudioALSAStreamManager: +setParameters(), IOport = 30, keyValuePairs = routing=0
+09-11 21:54:28.359  2135  2135 D AudioALSAStreamManager: Send to mStreamInVector [0]
+09-11 21:54:28.359  2135  2135 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x0
+09-11 21:54:28.359  2135  2135 W AudioALSAStreamManager: -routingInputDevice(), input_device == AUDIO_DEVICE_NONE(0x0), return
+09-11 21:54:28.359  2135  2135 D AudioALSAStreamManager: -setParameters()
+09-11 21:54:28.359  2135  2135 D AudioALSAHardware: handlecheck releaseAudioPatch remove handle [2] OK
+09-11 21:54:28.359  2135  2135 D AudioALSAHardware: -releaseAudioPatch handle [0x2] status [0]
+09-11 21:54:28.360   441   947 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/2134](false)
+09-11 21:54:28.368   441   455 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/2134](false)
+09-11 21:54:28.368   441   947 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:28.371   441   947 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:28.372  2135  2135 D AudioALSAStreamManager: +closeInputStream(), in = 0xf0bceb00
+09-11 21:54:28.372  2135  2135 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+09-11 21:54:28.372  2135  2135 D AudioALSAStreamManager: -closeInputStream(), mStreamInVector.size() = 0
+09-11 21:54:28.375   441   947 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:28.626  2292  2292 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 21:54:28.631  2292  2292 I AndroidRuntime: Using default boot image
+09-11 21:54:28.631  2292  2292 I AndroidRuntime: Leaving lock profiling enabled
+09-11 21:54:28.640  2292  2292 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 21:54:28.825  2292  2292 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 21:54:28.825  2292  2292 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 21:54:28.843  2292  2292 I app_process: The ClassLoaderContext is a special shared library.
+09-11 21:54:28.885  2292  2292 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 21:54:28.898  2292  2292 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+09-11 21:54:28.901  2292  2292 W Monkey  : args: [-p, com.steve.puckd, 1]
+09-11 21:54:28.902  2292  2292 W Monkey  :  arg: "-p"
+09-11 21:54:28.902  2292  2292 W Monkey  :  arg: "com.steve.puckd"
+09-11 21:54:28.902  2292  2292 W Monkey  :  arg: "1"
+09-11 21:54:28.903  2292  2292 W Monkey  : data="com.steve.puckd"
+--------- beginning of system
+09-11 21:54:28.968   441   472 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{5bfeb2 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{e71de03 2292 (unknown name)/0/u-1 remote:821814}: process gone or crashing
+09-11 21:54:28.985   441   947 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.steve.puckd/.MainActivity} from uid 0
+09-11 21:54:28.996  2292  2292 I Monkey  : Events injected: 1
+09-11 21:54:29.003   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:29.012   441   465 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10158; state: DISABLED
+09-11 21:54:29.013   441   473 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10158; state: ENABLED
+09-11 21:54:29.014  2292  2292 I Monkey  : ## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)
+09-11 21:54:29.028   243   243 D Zygote  : Forked child process 2307
+09-11 21:54:29.029  2292  2292 I app_process: System.exit called, status: 0
+09-11 21:54:29.029  2292  2292 I AndroidRuntime: VM exiting with result code 0.
+09-11 21:54:29.031   441   473 I ActivityManager: Start proc 2307:com.steve.puckd/u0a158 for top-activity {com.steve.puckd/com.steve.puckd.MainActivity}
+09-11 21:54:29.036  2307  2307 I Zygote  : seccomp disabled by setenforce 0
+09-11 21:54:29.042  2307  2307 I com.steve.puck: Late-enabling -Xcheck:jni
+09-11 21:54:29.073  2307  2307 I com.steve.puck: Unquickening 12 vdex files!
+09-11 21:54:29.081  2182  2189 I adbd    : jdwp connection from 2307
+09-11 21:54:29.095   441   455 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+09-11 21:54:29.163  2307  2307 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-11 21:54:29.165  2307  2307 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-11 21:54:29.216  2307  2307 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+09-11 21:54:29.293  2307  2307 W com.steve.puck: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+09-11 21:54:29.295  2307  2307 W com.steve.puck: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+09-11 21:54:29.477   441   455 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:29.478   441   455 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:29.480  2134  2134 E ServiceUtilities: Request denied by app op: 27
+09-11 21:54:29.480  2134  2134 E AudioPolicyIntefaceImpl: getInputForAttr permission denied: recording not allowed for uid 10158 pid 2307
+09-11 21:54:29.480  2134  2134 E AudioFlinger: createRecord() getInputForAttr return error -1
+09-11 21:54:29.480  2307  2333 E IAudioFlinger: createRecord returned error -1
+09-11 21:54:29.480  2307  2333 E AudioRecord: createRecord_l(6580591): AudioFlinger could not create record track, status: -1
+09-11 21:54:29.480  2307  2333 E AudioRecord-JNI: Error creating AudioRecord instance: initialization check failed with status -1.
+09-11 21:54:29.481  2307  2333 E android.media.AudioRecord: Error code -20 when initializing native AudioRecord object.
+09-11 21:54:29.483  2307  2333 E SharedAudio: capture failed
+09-11 21:54:29.483  2307  2333 E SharedAudio: java.lang.IllegalStateException: Check failed.
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at com.steve.puckd.SharedAudioCapture.loop(SharedAudioCapture.kt:27)
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at com.steve.puckd.SharedAudioCapture.start$lambda$0(SharedAudioCapture.kt:19)
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at com.steve.puckd.SharedAudioCapture$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+09-11 21:54:29.483  2307  2333 E SharedAudio: 	at java.lang.Thread.run(Thread.java:923)
+09-11 21:54:29.621   441   455 D CompatibilityChangeReporter: Compat change id reported: 136219221; UID 10158; state: ENABLED
+09-11 21:54:29.631  2307  2307 I PuckService: transport=relay connecting to relay
+09-11 21:54:29.631  2307  2307 I PuckService: transport=relay connecting to relay
+09-11 21:54:29.637  2307  2337 I InterpreterApi: Loaded native library: tensorflowlite_jni
+09-11 21:54:29.641  2307  2337 I InterpreterApi: Didn't load native library: tensorflowlite_jni_gms_client
+09-11 21:54:29.643  2307  2336 I tflite  : Initialized TensorFlow Lite runtime.
+09-11 21:54:29.650  2307  2337 E WakeModel: melspectrogram.tflite: Internal error: Unexpected failure when preparing tensor allocations: tensorflow/lite/util.cc BytesRequired number of elements overflowed.
+09-11 21:54:29.650  2307  2337 E WakeModel: 
+09-11 21:54:29.650  2307  2337 E WakeModel: Node number 3 (CONV_2D) failed to prepare.
+09-11 21:54:29.650  2307  2336 E WakeModel: melspectrogram.tflite: Internal error: Unexpected failure when preparing tensor allocations: tensorflow/lite/util.cc BytesRequired number of elements overflowed.
+09-11 21:54:29.650  2307  2336 E WakeModel: 
+09-11 21:54:29.650  2307  2336 E WakeModel: Node number 3 (CONV_2D) failed to prepare.
+09-11 21:54:29.650  2307  2339 D MicroWakeWord: Loaded microwakeword native library
+09-11 21:54:29.651  2307  2339 D MicroFrontendWrapper: MicroFrontend initialized: 16000 Hz sample rate, 40 mel bins, 125-7500 Hz, 30m window, 10m step
+09-11 21:54:29.652  2307  2339 D MicroWakeWordEngine: Engine initialized: stride=3, inputScale=0.101961, inputZeroPoint=-128, arena=65536 bytes
+09-11 21:54:29.653  2307  2339 D MicroWakeWord: MicroWakeWord engine created with handle: 3516224768
+09-11 21:54:29.653  2307  2339 I PuckService: wake_frame_ms=10 wake_cutoff=0.97 wake_window_frames=5
+09-11 21:54:29.653  2307  2339 I PuckService: microWakeWord armed on shared microphone stream
+09-11 21:54:29.660  2307  2335 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+09-11 21:54:29.660  2307  2335 I tflite  : Replacing 64 out of 64 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+09-11 21:54:29.683  2307  2336 I WakeModel: embedding_model.tflite inputs=1 outputs=1 in=[1, 76, 32, 1] out=[1, 1, 1, 96]
+09-11 21:54:29.686  2307  2337 I WakeModel: embedding_model.tflite inputs=1 outputs=1 in=[1, 76, 32, 1] out=[1, 1, 1, 96]
+09-11 21:54:29.699  2307  2307 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-11 21:54:29.707  2307  2337 I WakeModel: hey_jarvis.tflite inputs=1 outputs=1 in=[1, 16, 96] out=[1, 1]
+09-11 21:54:29.710  2307  2336 I WakeModel: hey_jarvis.tflite inputs=1 outputs=1 in=[1, 16, 96] out=[1, 1]
+09-11 21:54:29.715  2307  2335 I tflite  : Replacing 17 out of 26 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 14 partitions for the whole graph.
+09-11 21:54:29.716  2307  2307 I PuckService: disconnected reason=Relay unavailable retry_ms=2000
+09-11 21:54:29.720  2307  2335 I tflite  : Replacing 17 out of 26 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 19 partitions for the whole graph.
+09-11 21:54:29.723  2307  2335 E PuckService: native wake probe failed
+09-11 21:54:29.723  2307  2335 E PuckService: java.io.FileNotFoundException: wakeword/wake-sample.wav
+09-11 21:54:29.723  2307  2335 E PuckService: 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+09-11 21:54:29.723  2307  2335 E PuckService: 	at android.content.res.AssetManager.open(AssetManager.java:876)
+09-11 21:54:29.723  2307  2335 E PuckService: 	at android.content.res.AssetManager.open(AssetManager.java:853)
+09-11 21:54:29.723  2307  2335 E PuckService: 	at com.steve.puckd.PuckService.onCreate$lambda$8(PuckService.kt:47)
+09-11 21:54:29.723  2307  2335 E PuckService: 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+09-11 21:54:29.723  2307  2335 E PuckService: 	at java.lang.Thread.run(Thread.java:923)
+09-11 21:54:29.826   441   441 D NotificationService: 0|com.steve.puckd|1001|null|10158: granting content://settings/system/notification_sound
+09-11 21:54:29.826   441   441 I chatty  : uid=1000 system_server identical 1 line
+09-11 21:54:29.826   441   441 D NotificationService: 0|com.steve.puckd|1001|null|10158: granting content://settings/system/notification_sound
+09-11 21:54:29.827   441   441 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+09-11 21:54:29.904   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:31.719  2307  2307 I PuckService: transport=relay connecting to relay
+09-11 21:54:31.740  2307  2307 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-11 21:54:31.746  2307  2307 I PuckService: disconnected reason=Relay unavailable retry_ms=4000
+09-11 21:54:32.486   441   455 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:33.093   441  1157 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+--------- beginning of main
+09-11 21:54:51.400   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:51.442  2432  2432 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-11 21:54:51.449  2432  2432 I AndroidRuntime: Using default boot image
+09-11 21:54:51.449  2432  2432 I AndroidRuntime: Leaving lock profiling enabled
+09-11 21:54:51.458  2432  2432 I app_process: Core platform API reporting enabled, enforcing=false
+09-11 21:54:51.644  2432  2432 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-11 21:54:51.644  2432  2432 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-11 21:54:51.662  2432  2432 I app_process: The ClassLoaderContext is a special shared library.
+09-11 21:54:51.702  2432  2432 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-11 21:54:51.716  2432  2432 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+09-11 21:54:51.717  2432  2432 W Monkey  : args: [-p, com.steve.puckd, 1]
+09-11 21:54:51.718  2432  2432 W Monkey  :  arg: "-p"
+09-11 21:54:51.718  2432  2432 W Monkey  :  arg: "com.steve.puckd"
+09-11 21:54:51.719  2432  2432 W Monkey  :  arg: "1"
+09-11 21:54:51.719  2432  2432 W Monkey  : data="com.steve.puckd"
+--------- beginning of system
+09-11 21:54:51.784   441   472 W BroadcastQueue: Skipping deliver [background] BroadcastRecord{87c0948 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{d5413e1 2432 (unknown name)/0/u-1 remote:91c5f3a}: process gone or crashing
+09-11 21:54:51.801   441  2429 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.steve.puckd/.MainActivity} from uid 0
+09-11 21:54:51.811  2432  2432 I Monkey  : Events injected: 1
+09-11 21:54:51.829   441   465 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10158; state: DISABLED
+09-11 21:54:51.831   441   473 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10158; state: ENABLED
+09-11 21:54:51.835  2432  2432 I Monkey  : ## Network stats: elapsed time=28ms (0ms mobile, 0ms wifi, 28ms not connected)
+09-11 21:54:51.836  2432  2432 I app_process: System.exit called, status: 0
+09-11 21:54:51.836  2432  2432 I AndroidRuntime: VM exiting with result code 0.
+09-11 21:54:51.850   243   243 D Zygote  : Forked child process 2448
+09-11 21:54:51.853   441   473 I ActivityManager: Start proc 2448:com.steve.puckd/u0a158 for pre-top-activity {com.steve.puckd/com.steve.puckd.MainActivity}
+09-11 21:54:51.857  2448  2448 I Zygote  : seccomp disabled by setenforce 0
+09-11 21:54:51.863  2448  2448 I com.steve.puck: Late-enabling -Xcheck:jni
+09-11 21:54:51.896  2448  2448 I com.steve.puck: Unquickening 12 vdex files!
+09-11 21:54:51.904  2182  2189 I adbd    : jdwp connection from 2448
+09-11 21:54:51.919   441   916 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+09-11 21:54:51.995  2448  2448 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-11 21:54:51.997  2448  2448 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-11 21:54:52.061  2448  2448 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+09-11 21:54:52.149  2448  2448 W com.steve.puck: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+09-11 21:54:52.151  2448  2448 W com.steve.puck: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+09-11 21:54:52.237   271   509 E BufferQueueProducer: [com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher#0](id:10f00000010,api:0,p:-1,c:271) disconnect: not connected (req=1)
+09-11 21:54:52.238  1003  1280 W libEGL  : EGLNativeWindowType 0xcf4ff808 disconnect failed
+09-11 21:54:52.303   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:52.359   441   916 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.359   441   946 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamManager: +openInputStream()
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, status = 38, acoustics = 0x0
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 21:54:52.363  2135  2135 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 21:54:52.363  2135  2135 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 21:54:52.363  2135  2135 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:54:52.363  2135  2135 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:54:52.363  2135  2135 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 21:54:52.363  2135  2135 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 21:54:52.363  2135  2135 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 21:54:52.364  2135  2135 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 1, buffer_size=640
+09-11 21:54:52.364  2135  2135 D AudioALSAStreamManager: -openInputStream(), in = 0xf0bceb00, status = 0x0, mStreamInVector.size() = 1
+09-11 21:54:52.367  2134  2476 I AudioFlinger: AudioFlinger's thread 0xf0722cc0 tid=2476 ready to run
+09-11 21:54:52.367  2135  2135 D AudioALSAStreamIn: +standby()
+09-11 21:54:52.367  2135  2135 D AudioALSAStreamIn: -standby()
+09-11 21:54:52.371  2135  2135 D AudioALSAStreamIn: +standby()
+09-11 21:54:52.371  2135  2135 D AudioALSAStreamIn: -standby()
+09-11 21:54:52.372   441   946 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.372   441   916 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.373   441   916 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.377  2135  2135 D audio.amazon_wrapper: adev_create_audio_patch - change sink hw_module with handle(38) 
+09-11 21:54:52.377  2135  2135 D AudioALSAHardware: +routing createAudioPatch 80000004->Mixer Src 26
+09-11 21:54:52.377  2135  2135 D AudioALSAStreamManager: +setParameters(), IOport = 38, keyValuePairs = input_source=38;routing=-2147483644
+09-11 21:54:52.377  2135  2135 D AudioALSAStreamManager: Send to mStreamInVector [0]
+09-11 21:54:52.377  2135  2135 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x80000004
+09-11 21:54:52.377  2135  2135 W AudioALSAStreamManager: -routingInputDevice(), input_device == current_input_device(0x80000004), return
+09-11 21:54:52.377  2135  2135 D AudioALSAStreamManager: -setParameters()
+09-11 21:54:52.377   441   916 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.377  2135  2135 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 21:54:52.378   441   494 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:52.382   441   946 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/2134](true)
+09-11 21:54:52.384  2448  2474 I SharedAudio: single microphone owner started
+09-11 21:54:52.386  2135  2135 E FMQ     : grantorIdx must be less than 3
+09-11 21:54:52.386  2135  2135 E FMQ     : grantorIdx must be less than 3
+09-11 21:54:52.388  2134  2476 E FMQ     : grantorIdx must be less than 3
+09-11 21:54:52.389  2134  2476 E FMQ     : grantorIdx must be less than 3
+09-11 21:54:52.389  2135  2477 D AudioALSAStreamIn: open()
+09-11 21:54:52.389  2135  2477 D AudioALSAStreamManager: +createCaptureHandler(), mAudioMode = 0, input_source = 38, input_device = 0x80000004, mBypassDualMICProcessUL=0
+09-11 21:54:52.389  2135  2477 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:54:52.389  2135  2477 D AudioALSAStreamManager: -EnableBesRecord(), 0
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureHandlerBase: AudioALSACaptureHandlerBase()
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureHandlerBase: init()
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureHandlerNormal: AudioALSACaptureHandlerNormal()
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureHandlerNormal: init()
+09-11 21:54:52.389  2135  2477 D AudioALSAStreamManager: -createCaptureHandler(), mCaptureHandlerVector.size() = 1
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureHandlerNormal: +open(), input_device = 0x80000004, input_source = 0x26, sample_rate=16000, num_channels=1
+09-11 21:54:52.389  2135  2477 D AudioALSACaptureDataClient: AudioALSACaptureDataClient()
+09-11 21:54:52.389  2135  2477 D AudioSPELayer: SPELayer+
+09-11 21:54:52.389  2135  2477 D AudioSPELayer: GetVoIPJitterTime JitterTime=0,ret=1
+09-11 21:54:52.394  2135  2477 D AudioSPELayer: SPELayer-
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataClient: AudioALSACaptureDataClient(), besrecord_enable=0, besrecord_scene=-1
+09-11 21:54:52.394  2135  2477 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataClient: CheckBesRecordStereoModeEnable(), mBesRecordStereoMode = 0
+09-11 21:54:52.394  2135  2477 D AudioPreProcess: AudioPreProcess()+
+09-11 21:54:52.394  2135  2477 D AudioPreProcess: AudioPreProcess()-
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataProviderBase: attach(), 0xf12f8900
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataClient: setIdentity(), mIsIdentitySet=0, identity=1
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataProviderBase: attach(), mCaptureDataClientIndex=1, mCaptureDataClientVector.size()=0, Identity=1
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataProviderNormal: open()
+09-11 21:54:52.394  2135  2477 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = TLV320AIC3101 
+09-11 21:54:52.394  2135  2477 D AudioALSADeviceParser: compare success = 22
+09-11 21:54:52.394  2135  2477 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3101 
+09-11 21:54:52.394  2135  2477 D AudioALSADeviceParser:  compare success Cardindex = 0
+09-11 21:54:52.394  2135  2477 D AudioALSACaptureDataProviderNormal: open cardindex = 0  pcmindex = 22
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: buffersizemax = 30840
+09-11 21:54:52.396  2135  2477 D AudioSpeechEnhanceInfo: GetHifiRecord, mHiFiRecordEnable=0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: bHifiRecord = 0
+09-11 21:54:52.396  2135  2477 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: btempDebug = 0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderBase: +HasLowLatencyCapture()
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataClient: +IsLowLatencyCapture()
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataClient: -IsLowLatencyCapture(), bRet=0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderBase: -HasLowLatencyCapture(), bRet=0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: open(), format = 4, channels=4, rate=16000, period_size=256, period_count=10,latency=20 kReadBufferSize=3072
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: open(), mCaptureDropSize=0, CAPTURE_DROP_MS=0
+09-11 21:54:52.396  2135  2477 D AudioALSACaptureDataProviderNormal: open(), period_count=10, period_size=256, samplerate = 16000
+09-11 21:54:52.495   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+09-11 21:54:52.515  2448  2470 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+09-11 21:54:52.521   256   372 W hwcomposer: [OVL] (0) No overlay input queue(0)  
+09-11 21:54:52.521   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Buffer queue is created with size(3)  
+09-11 21:54:52.521   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) setConsumerListener  
+09-11 21:54:52.521   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Reallocate Slot(0), pool(0 -> 0) size(0 -> 1843200)  
+09-11 21:54:52.536   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Reallocate Slot(1), pool(0 -> 0) size(0 -> 1843200)  
+09-11 21:54:52.544   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+09-11 21:54:52.544  2448  2470 I Gralloc4: mapper 4.x is not supported
+09-11 21:54:52.544   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+09-11 21:54:52.544  2448  2470 W Gralloc3: mapper 3.x is not supported
+09-11 21:54:52.548  2448  2470 E ion     : ioctl c0044901 failed with code -1: Invalid argument
+09-11 21:54:52.550   256   366 E [GrallocExtra-ERROR]: gralloc_extra_perform:175 gralloc_extra_perform with NULL handle: 0x0
+09-11 21:54:52.552  2135  2477 D AudioALSACaptureDataProviderBase: -attach()
+09-11 21:54:52.552  2135  2477 D AudioSPELayer: SetUPLinkDropTime, 0
+09-11 21:54:52.552  2135  2477 D AudioSPELayer: SetUPLinkIntrStartTime, sec=307, nsec=618637172
+09-11 21:54:52.552  2135  2477 D AudioALSACaptureDataClient: CheckChannelRemixOp(), ch 4->1 (mBesRecordStereoMode = 0, BesRecord enable = 0), ChannelRemixOp = 0
+09-11 21:54:52.552  2135  2477 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 21:54:52.552  2135  2477 E ASP     : Invalid pipeline type: -1
+09-11 21:54:52.552  2135  2477 D AudioALSAHardwareResourceManager: +startInputDevice(), new_device = 0x80000004, mInputDevice = 0x0, mStartInputDeviceCount = 0, mInputBuiltInMicCount = 0, mInputHeadsetMicCount = 0
+09-11 21:54:52.552  2135  2477 D AudioALSAHardwareResourceManager: setMIC1Mode(), isphonemic 0, micmode 1
+09-11 21:54:52.552  2135  2477 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:54:52.552  2135  2477 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic1TypeACCMode descriptor == NULL
+09-11 21:54:52.552  2135  2477 D AudioALSAHardwareResourceManager: setMIC2Mode(), isphonemic 0, micmode 1
+09-11 21:54:52.552  2135  2477 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:54:52.552  2135  2477 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic2TypeACCMode descriptor == NULL
+09-11 21:54:52.552  2135  2477 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:54:52.552  2135  2477 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = builtin_Mic_SingleMic descriptor == NULL
+09-11 21:54:52.552  2135  2477 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-11 21:54:52.552  2135  2477 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 21:54:52.552  2135  2477 D AudioALSACaptureHandlerNormal: -open()
+09-11 21:54:52.553  2135  2488 D AudioALSACaptureDataProviderNormal: +readThread(), pid: 2135, tid: 2488, kReadBufferSize=0xc00, open_index=2
+09-11 21:54:52.568   256   366 E [GrallocExtra-ERROR]: gralloc_extra_perform:175 gralloc_extra_perform with NULL handle: 0x0
+09-11 21:54:52.585   256   366 E [GrallocExtra-ERROR]: gralloc_extra_perform:175 gralloc_extra_perform with NULL handle: 0x0
+09-11 21:54:52.589  2135  2477 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 307 nsec 605367172
+09-11 21:54:52.593  2448  2474 I SharedAudio: pcm peak=80 state=0
+09-11 21:54:52.596   441   471 I ActivityTaskManager: Displayed com.steve.puckd/.MainActivity: +775ms
+09-11 21:54:52.603   256   366 E [GrallocExtra-ERROR]: gralloc_extra_perform:175 gralloc_extra_perform with NULL handle: 0x0
+09-11 21:54:52.618  2448  2448 I PuckService: transport=relay connecting to relay
+09-11 21:54:52.618  2448  2448 I PuckService: transport=relay connecting to relay
+09-11 21:54:52.622   256   372 I hwcomposer: [OVL] (0) Overlay input(0) was used with queue previously  
+09-11 21:54:52.622   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Buffer queue is destroyed  
+09-11 21:54:52.622   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Free Slot(0), handle=0xee23d540, 1843200 -> 0  
+09-11 21:54:52.623   256   372 I hwcomposer: [DBQ] (q2:0xee13b500) Free Slot(1), handle=0xee23dc40, 1843200 -> 0  
+09-11 21:54:52.624  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:54:52.633  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:52.636  2448  2491 I InterpreterApi: Loaded native library: tensorflowlite_jni
+09-11 21:54:52.642  2448  2491 I InterpreterApi: Didn't load native library: tensorflowlite_jni_gms_client
+09-11 21:54:52.644  2448  2490 I tflite  : Initialized TensorFlow Lite runtime.
+09-11 21:54:52.646  2448  2490 E WakeModel: melspectrogram.tflite: Internal error: Unexpected failure when preparing tensor allocations: tensorflow/lite/util.cc BytesRequired number of elements overflowed.
+09-11 21:54:52.646  2448  2490 E WakeModel: 
+09-11 21:54:52.646  2448  2490 E WakeModel: Node number 3 (CONV_2D) failed to prepare.
+09-11 21:54:52.647  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:52.656  2448  2491 E WakeModel: melspectrogram.tflite: Internal error: Unexpected failure when preparing tensor allocations: tensorflow/lite/util.cc BytesRequired number of elements overflowed.
+09-11 21:54:52.656  2448  2491 E WakeModel: 
+09-11 21:54:52.656  2448  2491 E WakeModel: Node number 3 (CONV_2D) failed to prepare.
+09-11 21:54:52.663  2448  2493 D MicroWakeWord: Loaded microwakeword native library
+09-11 21:54:52.663  2448  2493 D MicroFrontendWrapper: MicroFrontend initialized: 16000 Hz sample rate, 40 mel bins, 125-7500 Hz, 30m window, 10m step
+09-11 21:54:52.664  2448  2493 D MicroWakeWordEngine: Engine initialized: stride=3, inputScale=0.101961, inputZeroPoint=-128, arena=65536 bytes
+09-11 21:54:52.665  2448  2493 D MicroWakeWord: MicroWakeWord engine created with handle: 3185478336
+09-11 21:54:52.665  2448  2493 I PuckService: wake_frame_ms=10 wake_cutoff=0.97 wake_window_frames=5
+09-11 21:54:52.666  2448  2493 I PuckService: microWakeWord armed on shared microphone stream
+09-11 21:54:52.671  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:54:52.691  2448  2474 I SharedAudio: pcm peak=135 state=0
+09-11 21:54:52.693  2448  2489 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+09-11 21:54:52.693  2448  2489 I tflite  : Replacing 64 out of 64 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+09-11 21:54:52.712  2448  2490 I WakeModel: embedding_model.tflite inputs=1 outputs=1 in=[1, 76, 32, 1] out=[1, 1, 1, 96]
+09-11 21:54:52.719  2448  2474 I SharedAudio: pcm peak=126 state=0
+09-11 21:54:52.724  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.726  2448  2491 I WakeModel: embedding_model.tflite inputs=1 outputs=1 in=[1, 76, 32, 1] out=[1, 1, 1, 96]
+09-11 21:54:52.728  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:52.732  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.765  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:52.778  2448  2490 I WakeModel: hey_jarvis.tflite inputs=1 outputs=1 in=[1, 16, 96] out=[1, 1]
+09-11 21:54:52.780  2448  2491 I WakeModel: hey_jarvis.tflite inputs=1 outputs=1 in=[1, 16, 96] out=[1, 1]
+09-11 21:54:52.789  2448  2489 I tflite  : Replacing 17 out of 26 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 14 partitions for the whole graph.
+09-11 21:54:52.790   271   509 E BufferQueueProducer: [com.steve.puckd/com.steve.puckd.MainActivity#0](id:10f00000012,api:0,p:-1,c:271) disconnect: not connected (req=1)
+09-11 21:54:52.790  2448  2470 W libEGL  : EGLNativeWindowType 0xed635808 disconnect failed
+09-11 21:54:52.790  2448  2474 I SharedAudio: pcm peak=129 state=0
+09-11 21:54:52.792  2448  2470 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+09-11 21:54:52.793  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.795  2448  2489 I tflite  : Replacing 17 out of 26 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 19 partitions for the whole graph.
+09-11 21:54:52.797  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:54:52.798  2448  2489 E PuckService: native wake probe failed
+09-11 21:54:52.798  2448  2489 E PuckService: java.io.FileNotFoundException: wakeword/wake-sample.wav
+09-11 21:54:52.798  2448  2489 E PuckService: 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+09-11 21:54:52.798  2448  2489 E PuckService: 	at android.content.res.AssetManager.open(AssetManager.java:876)
+09-11 21:54:52.798  2448  2489 E PuckService: 	at android.content.res.AssetManager.open(AssetManager.java:853)
+09-11 21:54:52.798  2448  2489 E PuckService: 	at com.steve.puckd.PuckService.onCreate$lambda$8(PuckService.kt:47)
+09-11 21:54:52.798  2448  2489 E PuckService: 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+09-11 21:54:52.798  2448  2489 E PuckService: 	at java.lang.Thread.run(Thread.java:923)
+09-11 21:54:52.801  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.803  2448  2474 I SharedAudio: pcm peak=124 state=0
+09-11 21:54:52.807   441   441 D NotificationService: 0|com.steve.puckd|1001|null|10158: granting content://settings/system/notification_sound
+09-11 21:54:52.808   441   441 I chatty  : uid=1000 system_server identical 1 line
+09-11 21:54:52.808   441   441 D NotificationService: 0|com.steve.puckd|1001|null|10158: granting content://settings/system/notification_sound
+09-11 21:54:52.809   441   441 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+09-11 21:54:52.826  2448  2448 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-11 21:54:52.840  2448  2448 I PuckService: disconnected reason=Relay unavailable retry_ms=2000
+09-11 21:54:52.842  2448  2474 I SharedAudio: pcm peak=126 state=0
+09-11 21:54:52.843   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:52.846  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.851  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:54:52.855  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.863  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:54:52.873   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:52.877  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:52.879  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.912  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:54:52.915  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.925  2448  2474 I SharedAudio: pcm peak=146 state=0
+09-11 21:54:52.946  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:52.949  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.961  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:54:52.964  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:52.995  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:54:53.009  2448  2474 I SharedAudio: pcm peak=128 state=0
+09-11 21:54:53.012  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.023  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:54:53.026  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.043  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:53.070  2448  2474 I SharedAudio: pcm peak=127 state=0
+09-11 21:54:53.072  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.090  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:54:53.092  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.107  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:54:53.118  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:54:53.120  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.153  2448  2474 I SharedAudio: pcm peak=136 state=0
+09-11 21:54:53.155  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.166  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:54:53.185  2448  2474 I SharedAudio: pcm peak=122 state=0
+09-11 21:54:53.187  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.199  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:54:53.201  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.233  2448  2474 I SharedAudio: pcm peak=147 state=0
+09-11 21:54:53.247  2448  2474 I SharedAudio: pcm peak=146 state=0
+09-11 21:54:53.248  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.268  2448  2474 I SharedAudio: pcm peak=131 state=0
+09-11 21:54:53.269  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.282  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:54:53.311  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:54:53.312  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.331  2448  2474 I SharedAudio: pcm peak=120 state=0
+09-11 21:54:53.334  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.345  2448  2474 I SharedAudio: pcm peak=153 state=0
+09-11 21:54:53.359  2448  2474 I SharedAudio: pcm peak=154 state=0
+09-11 21:54:53.363  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.394  2448  2474 I SharedAudio: pcm peak=126 state=0
+09-11 21:54:53.398  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.408  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:54:53.424  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:53.428  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.443  2448  2474 I SharedAudio: pcm peak=188 state=0
+09-11 21:54:53.447  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.471  2448  2474 I SharedAudio: pcm peak=146 state=0
+09-11 21:54:53.492  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:54:53.496  2448  2474 I MicroWakeWord: probability=1
+09-11 21:54:53.507  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:54:53.512  2448  2474 I MicroWakeWord: probability=1
+09-11 21:54:53.520  2448  2474 I SharedAudio: pcm peak=124 state=0
+09-11 21:54:53.554  2448  2474 I SharedAudio: pcm peak=122 state=0
+09-11 21:54:53.560  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.568  2448  2474 I SharedAudio: pcm peak=171 state=0
+09-11 21:54:53.572  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.590  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:53.603  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:54:53.606  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.631  2448  2474 I SharedAudio: pcm peak=154 state=0
+09-11 21:54:53.633  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.652  2448  2474 I SharedAudio: pcm peak=133 state=0
+09-11 21:54:53.666  2448  2474 I SharedAudio: pcm peak=133 state=0
+09-11 21:54:53.668  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.680  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:54:53.681  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.715  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:54:53.729  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:54:53.730  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.750  2448  2474 I SharedAudio: pcm peak=109 state=0
+09-11 21:54:53.751  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.764  2448  2474 I SharedAudio: pcm peak=131 state=0
+09-11 21:54:53.792  2448  2474 I SharedAudio: pcm peak=139 state=0
+09-11 21:54:53.793  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.813  2448  2474 I SharedAudio: pcm peak=146 state=0
+09-11 21:54:53.814  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.827  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:54:53.840  2448  2474 I SharedAudio: pcm peak=130 state=0
+09-11 21:54:53.841  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.875  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:54:53.876  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.889  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:54:53.911  2448  2474 I SharedAudio: pcm peak=130 state=0
+09-11 21:54:53.912  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.924  2448  2474 I SharedAudio: pcm peak=145 state=0
+09-11 21:54:53.926  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.927   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:53.943   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:53.952  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:53.973  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:54:53.974  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:53.987  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:53.988  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.001  2448  2474 I SharedAudio: pcm peak=126 state=0
+09-11 21:54:54.036  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:54:54.037  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.050  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:54:54.051  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.071  2448  2474 I SharedAudio: pcm peak=124 state=0
+09-11 21:54:54.085  2448  2474 I SharedAudio: pcm peak=120 state=0
+09-11 21:54:54.086  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.114  2448  2474 I SharedAudio: pcm peak=123 state=0
+09-11 21:54:54.115  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.134  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.148  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.149  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.162  2448  2474 I SharedAudio: pcm peak=133 state=0
+09-11 21:54:54.163  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.197  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.212  2448  2474 I SharedAudio: pcm peak=132 state=0
+09-11 21:54:54.213  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.232  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:54:54.233  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.246  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:54:54.280  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:54:54.281  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.294  2448  2474 I SharedAudio: pcm peak=131 state=0
+09-11 21:54:54.295  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.308  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:54:54.322  2448  2474 I SharedAudio: pcm peak=125 state=0
+09-11 21:54:54.323  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.329   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.343   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.357  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:54:54.358  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.371  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.391  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:54:54.392  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.405  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:54:54.407  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.440  2448  2474 I SharedAudio: pcm peak=131 state=0
+09-11 21:54:54.454  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:54.455  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.468  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:54.469  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.488  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:54:54.516  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:54:54.517  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.530   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.536  2448  2474 I SharedAudio: pcm peak=125 state=0
+09-11 21:54:54.537  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.545   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.550  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:54:54.564  2448  2474 I SharedAudio: pcm peak=127 state=0
+09-11 21:54:54.565  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.598  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:54:54.599  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.612  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:54:54.634  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:54:54.635  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.647  2448  2474 I SharedAudio: pcm peak=125 state=0
+09-11 21:54:54.648  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.682  2448  2474 I SharedAudio: pcm peak=140 state=0
+09-11 21:54:54.696  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:54:54.697  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.710  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:54:54.711  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.724  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.731   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.747   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.759  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:54:54.760  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.772  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:54.773  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.794  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:54:54.807  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:54:54.808  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.840  2448  2448 I PuckService: transport=relay connecting to relay
+09-11 21:54:54.842  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:54:54.843  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.856  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:54:54.866  2448  2448 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-11 21:54:54.870  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:54:54.871  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.872  2448  2448 I PuckService: disconnected reason=Relay unavailable retry_ms=4000
+09-11 21:54:54.884  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:54.885  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.919  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:54:54.932   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.934  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:54:54.936  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.948   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:54.954  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:54:54.955  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:54.968  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:54:54.996  2448  2474 I SharedAudio: pcm peak=84 state=0
+09-11 21:54:54.998  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.017  2448  2474 I SharedAudio: pcm peak=136 state=0
+09-11 21:54:55.018  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.031  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:54:55.045  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:54:55.046  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.082  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:54:55.083   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.084  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.094  2448  2474 I SharedAudio: pcm peak=129 state=0
+09-11 21:54:55.112   441  1157 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-11 21:54:55.117  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:54:55.118  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.120  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:54:55.121  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.149   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.162  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:54:55.175  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:54:55.177  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.190  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:54:55.191  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.211  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:54:55.238  2448  2474 I SharedAudio: pcm peak=120 state=0
+09-11 21:54:55.239  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.259  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:54:55.260  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.262  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:54:55.287  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:54:55.288  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.308  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:54:55.309  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.334   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.336  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:54:55.351  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:54:55.352  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.367   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.367   441   946 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-11 21:54:55.371  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:54:55.372  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.399  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:54:55.420  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:54:55.421  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.423  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:54:55.424  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.448  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:54:55.483  2448  2474 I SharedAudio: pcm peak=94 state=0
+09-11 21:54:55.484  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.486  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:54:55.487  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.511  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:54:55.535  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:54:55.535   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.536  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.560  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:54:55.561  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.568   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.574  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:54:55.595  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:54:55.596  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.598  2448  2474 I SharedAudio: pcm peak=85 state=0
+09-11 21:54:55.599  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.644  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:54:55.646  2448  2474 I SharedAudio: pcm peak=84 state=0
+09-11 21:54:55.647  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.672  2448  2474 I SharedAudio: pcm peak=87 state=0
+09-11 21:54:55.673  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.693  2448  2474 I SharedAudio: pcm peak=87 state=0
+09-11 21:54:55.707  2448  2474 I SharedAudio: pcm peak=93 state=0
+09-11 21:54:55.708  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.736   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.742  2448  2474 I SharedAudio: pcm peak=87 state=0
+09-11 21:54:55.743  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.745  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:54:55.755  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:54:55.756  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.769   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:54:55.790  2448  2474 I SharedAudio: pcm peak=75 state=0
+09-11 21:54:55.791  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.804  2448  2474 I SharedAudio: pcm peak=82 state=0
+09-11 21:54:55.832  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:54:55.833  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.853  2448  2474 I SharedAudio: pcm peak=70 state=0
+09-11 21:54:55.854  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.867  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:54:55.901  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:54:55.903  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.905  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:54:55.906  2448  2474 I MicroWakeWord: probability=0
+09-11 21:54:55.917  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:54:55.937   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  

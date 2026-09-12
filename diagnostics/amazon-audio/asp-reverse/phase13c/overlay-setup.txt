@@ -1,0 +1,3 @@
+diagnostics/amazon-audio/asp-reverse/phase13/audio_effects-test.xml: 1 file pushed, 0 skipped. 19.9 MB/s (6003 bytes in 0.000s)
+1e25578f8df14bd5f46169e5696f28d29b76286c9c1700fd4a6e5e03df2b4b16  /system/vendor/etc/audio_effects.xml
+-rw-r--r-- 1 root root u:object_r:vendor_configs_file:s0  6003 2026-09-11 21:42 /system/vendor/etc/audio_effects.xml

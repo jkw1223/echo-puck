@@ -1,0 +1,1 @@
+NOT RUN: the installed diagnostic APK has no create-only AEC control; no AEC object was created.

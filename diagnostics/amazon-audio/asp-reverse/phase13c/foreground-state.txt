@@ -1,0 +1,2 @@
+  mCurrentFocus=Window{3dec9d3 u0 NotificationShade}
+    mShowingDream=false mDreamingLockscreen=true    mStatusBar=Window{6cba04b u0 StatusBar}    mExpandedPanel=Window{3dec9d3 u0 NotificationShade} isKeyguardShowing=true

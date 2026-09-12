@@ -1,0 +1,1149 @@
+--------- beginning of main
+09-11 21:55:14.438  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:14.451  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:14.452  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:14.465  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:14.466  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:14.486  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:14.514  2448  2474 I SharedAudio: pcm peak=128 state=0
+09-11 21:55:14.515  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:14.534  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:55:14.535  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:14.556   441  2429 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 21:55:14.556   441  2429 W AudioSystem: AudioFlinger server died!
+09-11 21:55:14.556   441  2429 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:14.556   441  2429 W CaptureStateTracker: Audio policy service died
+09-11 21:55:14.556  2448  2496 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 21:55:14.556  2448  2496 W AudioSystem: AudioFlinger server died!
+09-11 21:55:14.557   601   993 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 21:55:14.557   601   993 W AudioSystem: AudioFlinger server died!
+09-11 21:55:14.557   601   993 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:14.557   577   596 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:14.558  1164  2133 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:14.559  2448  2474 W AudioRecord: restoreRecord_l(15): dead IAudioRecord, creating a new one from obtainBuffer()
+09-11 21:55:14.561   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 21:55:14.561   441   536 E AS.AudioService: Audioserver died.
+09-11 21:55:14.561   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:14.561  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:14.561   441   959 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:14.562  2448  2474 I ServiceManager: Waiting for service 'media.audio_flinger' on '/dev/binder'...
+09-11 21:55:14.566  2135  2135 I chatty  : uid=1041(audioserver) expire 13 lines
+09-11 21:55:14.581   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:14.598   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:14.661   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:14.662  2525  2525 I chatty  : uid=1041(audioserver) expire 76 lines
+09-11 21:55:14.662   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:14.663   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:14.674   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:14.675   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:14.675   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:14.681   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:14.682   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:14.683   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:14.683   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:14.690   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+09-11 21:55:14.782   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:14.985   256   371 I chatty  : uid=1000(system) OverlayEngine_0 identical 5 lines
+09-11 21:55:15.036   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.062   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 21:55:15.062   441   536 E AS.AudioService: Audioserver died.
+09-11 21:55:15.203   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.437   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.563   441   959 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:15.563  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:15.563  2448  2474 I ServiceManager: Waiting for service 'media.audio_flinger' on '/dev/binder'...
+09-11 21:55:15.563   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:15.564   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 21:55:15.564   441   536 E AS.AudioService: Audioserver died.
+09-11 21:55:15.604   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.803   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.809  2532  2532 I chatty  : uid=1041(audioserver) expire 15 lines
+09-11 21:55:15.818   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:15.818   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:15.820   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:15.832   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:15.833   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:15.836   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:15.837   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:15.839   341   385 W AudioAnalytics: (key=audio.flinger) Audioflinger constructor event detected
+09-11 21:55:15.964  2525  2525 I chatty  : uid=1041(audioserver) expire 1537 lines
+09-11 21:55:16.004   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.037   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.065   441   536 I AS.AudioService: Audioserver started.
+09-11 21:55:16.066   441   536 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hidl.manager@1.0::IServiceManager/default
+09-11 21:55:16.197  2525  2525 I AUDIOALG: bypassPreFilter = 1
+09-11 21:55:16.197  2525  2525 I AUDIOALG: inVol           = 13.00 dB
+09-11 21:55:16.197  2525  2525 I AUDIOALG: numBands        = 4
+09-11 21:55:16.197  2525  2525 I AUDIOALG: m_samplingRate  = 48000
+09-11 21:55:16.197  2525  2525 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 21:55:16.197  2525  2525 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 21:55:16.197  2525  2525 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 21:55:16.197  2525  2525 I AUDIOALG: Band #1:
+09-11 21:55:16.197  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.197  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.197  2525  2525 I AUDIOALG: comp ratio   = 8.00
+09-11 21:55:16.197  2525  2525 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 21:55:16.197  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.197  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.197  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.197  2525  2525 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: Band #2:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp ratio   = 5.00
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: Band #3:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp ratio   = 2.00
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: Band #4:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp ratio   = 1.00
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: FullBandLimiter:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim inVol   = -3.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim release = 180.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.198  2525  2525 I AUDIOALG: ConfMBCL:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: bypass          = 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: bypassPreFilter = 1
+09-11 21:55:16.198  2525  2525 I AUDIOALG: inVol           = 13.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: numBands        = 4
+09-11 21:55:16.198  2525  2525 I AUDIOALG: m_samplingRate  = 48000
+09-11 21:55:16.198  2525  2525 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 21:55:16.198  2525  2525 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 21:55:16.198  2525  2525 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 21:55:16.198  2525  2525 I AUDIOALG: Band #1:
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp ratio   = 8.00
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 21:55:16.198  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: Band #2:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp ratio   = 5.00
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: Band #3:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp ratio   = 2.00
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: Band #4:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp ratio   = 1.00
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: FullBandLimiter:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim release = 180.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.199  2525  2525 I AUDIOALG: ConfMBCL:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: bypass          = 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: bypassPreFilter = 1
+09-11 21:55:16.199  2525  2525 I AUDIOALG: inVol           = 13.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: numBands        = 4
+09-11 21:55:16.199  2525  2525 I AUDIOALG: m_samplingRate  = 48000
+09-11 21:55:16.199  2525  2525 I AUDIOALG: filterBankFC1     = 70.00 Hz
+09-11 21:55:16.199  2525  2525 I AUDIOALG: filterBankFC2     = 250.00 Hz
+09-11 21:55:16.199  2525  2525 I AUDIOALG: filterBankFC3     = 5000.00 Hz
+09-11 21:55:16.199  2525  2525 I AUDIOALG: Band #1:
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.199  2525  2525 I AUDIOALG: comp ratio   = 8.00
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp thresh  = -30.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim thresh  = -20.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: Band #2:
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp ratio   = 5.00
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp thresh  = -8.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim inVol   = 6.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim thresh  = -10.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: Band #3:
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp inVol   = -1.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp ratio   = 2.00
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp thresh  = -3.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: Band #4:
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp bypass  = 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp ratio   = 1.00
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp thresh  = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: comp gainMin = -40.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim thresh  = -3.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim release = 220.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: FullBandLimiter:
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim bypassed= 0
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim inVol   = 0.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim thresh  = -1.00 dB
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim release = 180.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: lim lookahead time = 2.00 ms
+09-11 21:55:16.200  2525  2525 I AUDIOALG: MultiBandCompLimiter()
+09-11 21:55:16.200  2525  2525 I AUDIOALG: PreFilter()
+09-11 21:55:16.200  2525  2525 I AUDIOALG: FilterBank()
+09-11 21:55:16.200  2525  2525 I AUDIOALG: MchCompressor()
+09-11 21:55:16.201  2525  2525 I chatty  : uid=1041(audioserver) identical 2 lines
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MchCompressor()
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MchLimiter()
+09-11 21:55:16.201  2525  2525 I chatty  : uid=1041(audioserver) identical 3 lines
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MchLimiter()
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting, MBCL Bypass: 0
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting, MBCL InpVol: 13.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting, PreFilter Bypass: 1
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand1, CompInpVol: 0.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand2, CompInpVol: 0.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand3, CompInpVol: -1.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand4, CompInpVol: 0.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand1, compRatio: 8.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand2, compRatio: 5.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand3, compRatio: 2.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand4, compRatio: 1.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand1, compThresh: -30.000000
+09-11 21:55:16.201  2525  2525 I AUDIOALG: MBCL setting m_mbcBand2, compThresh: -8.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand3, compThresh: -3.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand4, compThresh: 0.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand1, compGainMin: -40.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand2, compGainMin: -40.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand3, compGainMin: -40.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mbcBand4, compGainMin: -40.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand1, thresh: -20.000000 release: 220.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand1, LimInpVol: 0.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand2, thresh: -10.000000 release: 220.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand2, LimInpVol: 6.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand3, thresh: -3.000000 release: 220.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand3, LimInpVol: 0.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand4, thresh: -3.000000 release: 220.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblBand4, LimInpVol: 0.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblFullBand, thresh: -1.000000 release: 180.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: MBCL setting m_mblFullBand, LimInpVol: 0.000000
+09-11 21:55:16.202  2525  2525 I AUDIOALG: Speaker Power Modes Supported on Device...........
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 0
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 1
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 2
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 3
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 4
+09-11 21:55:16.202  2525  2525 I AUDIOALG: 5
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Parametric EQ Config File Name = VOIPTxParametricEQ.cfg
+09-11 21:55:16.203  2525  2525 I AUDIOALG: JSON::parse : /vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Parametric EQ Bypass = 0
+09-11 21:55:16.203  2525  2525 I AUDIOALG: 
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Conf Parametric EQ:
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Frame Length    = 128
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Num Channels    = 1
+09-11 21:55:16.203  2525  2525 I AUDIOALG: sampling Rate   = 16000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: bypass          = 0
+09-11 21:55:16.203  2525  2525 I AUDIOALG: numBiquads      = 4
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Biquad #: 1
+09-11 21:55:16.203  2525  2525 I AUDIOALG: type#   : HIGH_SHELF
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Fc      : 180.000000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Q       : 0.700000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Gain    : -5.000000 dB
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Biquad #: 2
+09-11 21:55:16.203  2525  2525 I AUDIOALG: type#   : PEAK
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Fc      : 1100.000000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Q       : 0.500000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Gain    : 6.000000 dB
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Biquad #: 3
+09-11 21:55:16.203  2525  2525 I AUDIOALG: type#   : BYPASS
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Fc      : 7000.000000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Q       : 10.000000
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Gain    : -6.000000 dB
+09-11 21:55:16.203  2525  2525 I AUDIOALG: Biquad #: 4
+09-11 21:55:16.203  2525  2525 I AUDIOALG: type#   : BYPASS
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 5 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 6 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 5 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 6 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: 
+09-11 21:55:16.208  2525  2525 I AUDIOALG: ConfSBGenericCanceller:
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_nBands               = 64
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_nInputs              = 7
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_nInputsToAdapt       = 4
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_nRefs                = 0
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_samplingRate         = 16000
+09-11 21:55:16.208  2525  2525 I AUDIOALG: m_deciRate             = 64
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_refSigEnThresh       = 0.000003162299890
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_adaptBandLoHz        = -1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_adaptBandHiHz        = -1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_taiLen               = -1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_bandBasedTailLen     = false
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_bandBasedStepSize    = false
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_maxStepSize          = -8.800000190734863
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_stepSizeRednScale    = -8.800000190734863
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_leakyFactor          = -8.800000190734863
+09-11 21:55:16.209  2525  2525 I AUDIOALG: ConfSBCanceler #0:
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_nRefsPerInput        = 2
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_adaptBandLoHz        = 0
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_adaptBandHiHz        = 8000
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_taiLen               = 2560
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_bandBasedTailLen     = true
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_bandBasedStepSize    = true
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_maxStepSize          = 0.300000011920929
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_stepSizeRednScale    = 3.000000000000000
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_leakyFactor          = 0.400000005960464
+09-11 21:55:16.209  2525  2525 I AUDIOALG:     m_smFactRefPwr         = -1.000000000000000
+09-11 21:55:16.209  2525  2525 I AUDIOALG: ConfSB_AEC_ARA:
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_stepSizeErrorScale     = 3.000000000000000
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_enableVSS              = 1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_ord2toOrd1RatioPercent = 50
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_enableRoundRobin     = 0
+09-11 21:55:16.209  2525  2525 I AUDIOALG: SBGenericCanceller: init()
+09-11 21:55:16.209  2525  2525 I AUDIOALG: **************************************************************************** 1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_nInputs (in buffer) = 7
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_nRefs   (in buffer) = 0
+09-11 21:55:16.209  2525  2525 I AUDIOALG: 
+09-11 21:55:16.209  2525  2525 I AUDIOALG: ==========================================================
+09-11 21:55:16.209  2525  2525 I AUDIOALG: GC #0   nGcRefsPerInput = 2   nRefs = 4
+09-11 21:55:16.209  2525  2525 I AUDIOALG: 5
+09-11 21:55:16.209  2525  2525 I AUDIOALG: 6
+09-11 21:55:16.209  2525  2525 I AUDIOALG: nGcTotRefCh = 2    m_nTotRefCh = 2
+09-11 21:55:16.209  2525  2525 I AUDIOALG: Gen Cancelers:
+09-11 21:55:16.209  2525  2525 I AUDIOALG: m_refIdxStart =  0   m_nTotRefCh =  2
+09-11 21:55:16.209  2525  2525 I AUDIOALG:  0 ->  5 (0)
+09-11 21:55:16.209  2525  2525 I AUDIOALG:  1 ->  6 (0)
+09-11 21:55:16.209  2525  2525 I AUDIOALG: UseRefInfo # 0 : m_refSource =  0    m_refIndex =  5   m_enable = 1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: UseRefInfo # 1 : m_refSource =  0    m_refIndex =  6   m_enable = 1
+09-11 21:55:16.209  2525  2525 I AUDIOALG: 
+09-11 21:55:16.209  2525  2525 I AUDIOALG: Fused Final Generic Canceler :
+09-11 21:55:16.222  2525  2529 D AudioVIBSPKControl: getInstance()
+09-11 21:55:16.222  2525  2529 D AudioFtmBase: AudioFtmBase()
+09-11 21:55:16.222  2525  2529 D LoopbackManager: LoopbackManager(), mWorkingModemIndex = 0
+09-11 21:55:16.222  2525  2529 D AudioFtm: AudioFtm()
+09-11 21:55:16.222  2525  2529 D AudioFtm: mMixer = 0xf137d000
+09-11 21:55:16.222  2525  2529 D AudioFtm: GetVibSpkCalibrationStatus()
+09-11 21:55:16.222  2525  2529 D AudioMTKFilterManager: VibSpkReadFrequency:0
+09-11 21:55:16.222  2525  2529 D AudioMTKFilterManager: [VibSpk] SetDefaultFreq
+09-11 21:55:16.222  2525  2529 D AudioVIBSPKControl: setParameters:bb80 9c f 5
+09-11 21:55:16.222  2525  2529 D AudioVIBSPKControl: VsgGenInit
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 0, param 0x3
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 4, param 0x0
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 2, param 0x2
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 3, param 0xbb80
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 1, param 0x4
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: +setParameter(), paramID 5, param 0x0
+09-11 21:55:16.222  2525  2529 D MtkAudioLoud: mIsZeroCoeff 0 mFilterType 3
+09-11 21:55:16.222  2525  2529 D AudioMTKFilterManager: mFixedParam 0
+09-11 21:55:16.222  2525  2529 D AudioALSAStreamManager: -openOutputStream(), out = 0xf137d700, status = 0x0, mStreamOutVector.size() = 1
+09-11 21:55:16.223  2532  2532 I AudioFlinger: HAL output buffer size 768 frames, normal sink buffer size 1152 frames
+09-11 21:55:16.224   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:16.224   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:16.224   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:16.239   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.240  2532  2532 I BufferProvider: found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+09-11 21:55:16.240  2532  2532 E AudioFlinger: Failed to add event callback
+09-11 21:55:16.240  2532  2546 I AudioFlinger: AudioFlinger's thread 0xe6b06940 tid=2546 ready to run
+09-11 21:55:16.240  2532  2546 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.240  2532  2546 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 21:55:16.241  2525  2528 D AudioALSAStreamOut: standby()
+09-11 21:55:16.241  2525  2528 D AudioALSAStreamOut: -standby()
+09-11 21:55:16.241  2525  2528 D AudioALSAHardware: +getParameters(), key = routing=2;supEncapsulationMetadataTypes;supEncapsulationModes
+09-11 21:55:16.241  2525  2528 D AudioALSAHardware: -getParameters(), return ""
+09-11 21:55:16.241  2532  2540 D AudioFlinger: isLowRamDevice:true totalMemory:1020911616 mClientSharedHeapSize:1048576
+09-11 21:55:16.242  2532  2546 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.242  2532  2546 D AudioFlinger: ro.audio.silent is ignored since no output device is set
+09-11 21:55:16.245  2525  2528 D AudioALSAHardware: setVoiceVolume(), volume = -0.000000, mUseTuningVolume = 0
+09-11 21:55:16.245  2525  2528 D AudioALSAStreamManager: setVoiceVolume(), volume = 0.010000
+09-11 21:55:16.245  2525  2528 D AudioALSAVolumeController: +setVoiceVolume(), v=0.010000, mode=0x0, device=0x2
+09-11 21:55:16.245  2525  2528 D AudioALSAVolumeController: GetDRCVersion DrcSpeechModeBits = 4 device= 0x2 mSpeechDrcType = 0x0 Sph_Drc_Version = 0x0
+09-11 21:55:16.245  2525  2528 D AudioALSAVolumeController: DRC_VERSION_1
+09-11 21:55:16.247  2532  2532 W AudioFlinger: moveEffects() bad srcOutput 0
+09-11 21:55:16.247  2532  2532 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.357  2525  2528 D audio.amazon_wrapper: adev_create_audio_patch - change source hw_module with handle(13) 
+09-11 21:55:16.357  2525  2528 D AudioALSAHardware: +routing createAudioPatch Mixer->2
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: +setParameters(), IOport = 13, keyValuePairs = routing=2
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: Send to mStreamOutVector[0]
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamOut: +setParameters(): routing=2
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: +routingOutputDevice()
+09-11 21:55:16.357  2525  2528 I AudioALSAStreamManager: routingOutputDevice(), output device is changing, set speaker power mode
+09-11 21:55:16.357  2525  2528 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, set speaker power mode -1 -> 5
+09-11 21:55:16.357  2525  2528 I ASP     : asp_command: 0x0; code=11
+09-11 21:55:16.357  2525  2528 I ASP     : SPEAKER POWER MODE 5
+09-11 21:55:16.357  2525  2528 I AUDIOALG: New Speaker Power Mode : 5 Old Mode: 5
+09-11 21:55:16.357  2525  2528 I AUDIOALG: Same Speaker Mode: No change in MBCL configuration
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: routingOutputDevice(), output_devices: 0x2 => 0x2, mPhoneCallSpeechOpen = 0
+09-11 21:55:16.357  2525  2528 D AudioALSAVoiceWakeUpController: +updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 21:55:16.357  2525  2528 D AudioHeadSetMessager: /sys/class/switch/h2w/state => 0
+09-11 21:55:16.357  2525  2528 D AudioALSAVoiceWakeUpController: -updateDeviceInfoForVoiceWakeUp(), mIsUseHeadsetMic = 0
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: +CheckHeadsetChange(), current_output_devices = 2 output_device = 2 
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: mHeadsetChange = 0
+09-11 21:55:16.357  2525  2528 W AudioALSAStreamManager: -routingOutputDevice(), output_devices == current_output_devices(0x2), return
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamOut: -setParameters(): routing=2 
+09-11 21:55:16.357  2525  2528 D AudioALSAStreamManager: -setParameters()
+09-11 21:55:16.357  2525  2528 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 21:55:16.362  2525  2528 D AudioALSAStreamManager: +openInputStream()
+09-11 21:55:16.362  2525  2528 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, status = 14, acoustics = 0x0
+09-11 21:55:16.362  2525  2528 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 21:55:16.362  2525  2528 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0xc, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 21:55:16.362  2525  2528 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 21:55:16.362  2525  2528 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 21:55:16.362  2525  2528 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 21:55:16.363  2525  2528 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.363  2525  2528 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.363  2525  2528 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 21:55:16.363  2525  2528 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 21:55:16.363  2525  2528 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 21:55:16.363  2525  2528 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 21:55:16.363  2525  2528 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 2, buffer_size=1280
+09-11 21:55:16.363  2525  2528 D AudioALSAStreamManager: -openInputStream(), in = 0xf0e17b00, status = 0x0, mStreamInVector.size() = 1
+09-11 21:55:16.365  2532  2547 I AudioFlinger: AudioFlinger's thread 0xe60d43c0 tid=2547 ready to run
+09-11 21:55:16.365  2525  2528 D AudioALSAStreamIn: +standby()
+09-11 21:55:16.365  2525  2528 D AudioALSAStreamIn: -standby()
+09-11 21:55:16.366  2532  2547 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.366  2525  2528 D AudioALSAStreamIn: +standby()
+09-11 21:55:16.366  2525  2528 D AudioALSAStreamIn: -standby()
+09-11 21:55:16.367  2532  2547 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.368  2525  2528 D AudioALSAStreamManager: +closeInputStream(), in = 0xf0e17b00
+09-11 21:55:16.368  2525  2528 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+09-11 21:55:16.368  2525  2528 D AudioALSAStreamManager: -closeInputStream(), mStreamInVector.size() = 0
+09-11 21:55:16.373  2532  2532 I bt_a2dp_hw: adev_open:  adev_open in A2dp_hw module
+09-11 21:55:16.373  2532  2532 I AudioFlinger: loadHwModule() Loaded a2dp audio interface, handle 18
+09-11 21:55:16.373  2532  2532 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+09-11 21:55:16.373  2532  2532 E DevicesFactoryHalHidl: Invalid device name bluetooth
+09-11 21:55:16.373  2532  2532 E AudioFlinger: loadHwModule() error -22 loading module bluetooth
+09-11 21:55:16.373  2532  2532 W APM_AudioPolicyManager: could not open HW module bluetooth
+09-11 21:55:16.374  2525  2528 D modules.usbaudio.audio_hal: [USB_AUD] adev_open
+09-11 21:55:16.375  2532  2532 I AudioFlinger: loadHwModule() Loaded usb audio interface, handle 26
+09-11 21:55:16.375  2532  2532 E APM_AudioPolicyManager: onNewAudioModulesAvailableInt: Input device list is empty!
+09-11 21:55:16.376  2525  2528 I r_submix: adev_open(name=audio_hw_if)
+09-11 21:55:16.377  2525  2528 I r_submix: adev_init_check()
+09-11 21:55:16.377  2532  2532 I AudioFlinger: loadHwModule() Loaded r_submix audio interface, handle 34
+09-11 21:55:16.377  2525  2528 D r_submix: adev_open_input_stream(addr=0)
+09-11 21:55:16.377  2525  2528 D r_submix: submix_audio_device_create_pipe_l(addr=0, idx=9)
+09-11 21:55:16.377  2525  2528 D r_submix:   now using address 0 for route 9
+09-11 21:55:16.378  2532  2549 I AudioFlinger: AudioFlinger's thread 0xe60d4f00 tid=2549 ready to run
+09-11 21:55:16.379  2525  2528 I r_submix: in_standby()
+09-11 21:55:16.379  2532  2549 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.379  2525  2528 I r_submix: in_standby()
+09-11 21:55:16.380  2532  2549 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.381  2532  2532 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.381  2532  2532 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.385  2525  2528 D r_submix: adev_close_input_stream()
+09-11 21:55:16.385  2525  2528 D r_submix: submix_audio_device_release_pipe_l(idx=9) addr=0
+09-11 21:55:16.385  2525  2528 D r_submix: submix_audio_device_destroy_pipe_l(): pipe destroyed
+09-11 21:55:16.405   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.439   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.564  2532  2540 I CaptureStateNotifier: Registering a listener
+09-11 21:55:16.564   441   540 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1000/441](false)
+09-11 21:55:16.564  2525  2528 D AudioALSAHardware: +setParameters(): BT_SCO=off
+09-11 21:55:16.565  2525  2528 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "BT_SCO=off"
+09-11 21:55:16.565  2525  2528 D AudioALSAHardware: -setParameters(): BT_SCO=off 
+09-11 21:55:16.567  2532  2554 D PermissionCache: checking android.permission.MODIFY_AUDIO_ROUTING for uid=1000 => granted (915 us)
+09-11 21:55:16.570  2532  2539 W ServiceManager: Permission failure: android.permission.CAPTURE_AUDIO_OUTPUT from uid=10158 pid=2448
+09-11 21:55:16.570  2532  2539 D PermissionCache: checking android.permission.CAPTURE_AUDIO_OUTPUT for uid=10158 => denied (327 us)
+09-11 21:55:16.571  2532  2554 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.571  2532  2539 W ServiceManager: Permission failure: android.permission.CAPTURE_AUDIO_HOTWORD from uid=10158 pid=2448
+09-11 21:55:16.571  2532  2539 D PermissionCache: checking android.permission.CAPTURE_AUDIO_HOTWORD for uid=10158 => denied (206 us)
+09-11 21:55:16.571  2532  2554 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.571  2532  2554 I chatty  : uid=1041(audioserver) identical 1 line
+09-11 21:55:16.572  2532  2554 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamManager: +openInputStream()
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, status = 30, acoustics = 0x0
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-11 21:55:16.573  2525  2528 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-11 21:55:16.573  2525  2528 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-11 21:55:16.573  2525  2528 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.573  2525  2528 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.573  2525  2528 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-11 21:55:16.573  2525  2528 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 1, buffer_size=640
+09-11 21:55:16.573  2525  2528 D AudioALSAStreamManager: -openInputStream(), in = 0xf0e17b00, status = 0x0, mStreamInVector.size() = 1
+09-11 21:55:16.575  2532  2555 I AudioFlinger: AudioFlinger's thread 0xe60d4440 tid=2555 ready to run
+09-11 21:55:16.575  2525  2528 D AudioALSAStreamIn: +standby()
+09-11 21:55:16.575  2525  2528 D AudioALSAStreamIn: -standby()
+09-11 21:55:16.575  2532  2555 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.575  2525  2528 D AudioALSAStreamIn: +standby()
+09-11 21:55:16.575  2525  2528 D AudioALSAStreamIn: -standby()
+09-11 21:55:16.576  2525  2528 D AudioALSAHardware: setMode setMode = 0
+09-11 21:55:16.576  2525  2528 D AudioALSAStreamManager: +setMode(), mAudioMode: 0 => 0
+09-11 21:55:16.576  2525  2528 W AudioALSAStreamManager: -setMode(), mAudioMode: 0 == 0, return
+09-11 21:55:16.577  2532  2532 W APM::AudioPolicyEngine/Base: setPhoneState() setting same state 0
+09-11 21:55:16.577  2532  2532 W APM_AudioPolicyManager: setPhoneState() invalid or same state 0
+09-11 21:55:16.591  2532  2555 W AudioFlinger: no wake lock to update, system not ready yet
+09-11 21:55:16.592  2525  2528 D audio.amazon_wrapper: adev_create_audio_patch - change sink hw_module with handle(30) 
+09-11 21:55:16.592  2525  2528 D AudioALSAHardware: +routing createAudioPatch 80000004->Mixer Src 1e
+09-11 21:55:16.592  2525  2528 D AudioALSAStreamManager: +setParameters(), IOport = 30, keyValuePairs = input_source=30;routing=-2147483644
+09-11 21:55:16.592  2525  2528 D AudioALSAStreamManager: Send to mStreamInVector [0]
+09-11 21:55:16.592  2525  2528 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x80000004
+09-11 21:55:16.592  2525  2528 W AudioALSAStreamManager: -routingInputDevice(), input_device == current_input_device(0x80000004), return
+09-11 21:55:16.592  2525  2528 D AudioALSAStreamManager: -setParameters()
+09-11 21:55:16.592  2525  2528 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-11 21:55:16.594   441   493 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@89273b4, caller=1041/2532](true)
+09-11 21:55:16.604  2525  2528 E FMQ     : grantorIdx must be less than 3
+09-11 21:55:16.604  2525  2528 E FMQ     : grantorIdx must be less than 3
+09-11 21:55:16.605  2532  2555 E FMQ     : grantorIdx must be less than 3
+09-11 21:55:16.605  2532  2555 E FMQ     : grantorIdx must be less than 3
+09-11 21:55:16.605  2525  2557 D AudioALSAStreamIn: open()
+09-11 21:55:16.605  2525  2557 D AudioALSAStreamManager: +createCaptureHandler(), mAudioMode = 0, input_source = 30, input_device = 0x80000004, mBypassDualMICProcessUL=0
+09-11 21:55:16.605  2525  2557 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.605  2525  2557 D AudioALSAStreamManager: -EnableBesRecord(), 0
+09-11 21:55:16.605  2525  2557 D AudioALSADataProcessor: AudioALSADataProcessor()
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureHandlerBase: AudioALSACaptureHandlerBase()
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureHandlerBase: init()
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureHandlerNormal: AudioALSACaptureHandlerNormal()
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureHandlerNormal: init()
+09-11 21:55:16.606  2525  2557 D AudioALSAStreamManager: -createCaptureHandler(), mCaptureHandlerVector.size() = 1
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureHandlerNormal: +open(), input_device = 0x80000004, input_source = 0x1e, sample_rate=16000, num_channels=1
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureDataProviderBase: AudioALSACaptureDataProviderBase(), 0xf1179900
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureDataProviderNormal: AudioALSACaptureDataProviderNormal()
+09-11 21:55:16.606  2525  2557 D AudioALSACaptureDataClient: AudioALSACaptureDataClient()
+09-11 21:55:16.606  2525  2557 D AudioSPELayer: SPELayer+
+09-11 21:55:16.606  2525  2557 D AudioSPELayer: GetVoIPJitterTime JitterTime=0,ret=1
+09-11 21:55:16.607  2525  2557 D AudioSPELayer: SPELayer-
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataClient: AudioALSACaptureDataClient(), besrecord_enable=0, besrecord_scene=-1
+09-11 21:55:16.607  2525  2557 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataClient: CheckBesRecordStereoModeEnable(), mBesRecordStereoMode = 0
+09-11 21:55:16.607  2525  2557 D AudioPreProcess: AudioPreProcess()+
+09-11 21:55:16.607  2525  2557 D AudioPreProcess: AudioPreProcess()-
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataProviderBase: attach(), 0xf1179900
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataClient: setIdentity(), mIsIdentitySet=0, identity=0
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataProviderBase: attach(), mCaptureDataClientIndex=0, mCaptureDataClientVector.size()=0, Identity=0
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataProviderNormal: open()
+09-11 21:55:16.607  2525  2557 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = TLV320AIC3101 
+09-11 21:55:16.607  2525  2557 D AudioALSADeviceParser: compare success = 22
+09-11 21:55:16.607  2525  2557 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3101 
+09-11 21:55:16.607  2525  2557 D AudioALSADeviceParser:  compare success Cardindex = 0
+09-11 21:55:16.607  2525  2557 D AudioALSACaptureDataProviderNormal: open cardindex = 0  pcmindex = 22
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: buffersizemax = 30840
+09-11 21:55:16.616  2525  2557 D AudioSpeechEnhanceInfo: GetHifiRecord, mHiFiRecordEnable=0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: bHifiRecord = 0
+09-11 21:55:16.616  2525  2557 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: btempDebug = 0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderBase: +HasLowLatencyCapture()
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataClient: +IsLowLatencyCapture()
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataClient: -IsLowLatencyCapture(), bRet=0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderBase: -HasLowLatencyCapture(), bRet=0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: open(), format = 4, channels=4, rate=16000, period_size=256, period_count=10,latency=20 kReadBufferSize=3072
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: open(), mCaptureDropSize=0, CAPTURE_DROP_MS=0
+09-11 21:55:16.616  2525  2557 D AudioALSACaptureDataProviderNormal: open(), period_count=10, period_size=256, samplerate = 16000
+09-11 21:55:16.623   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.634   441   536 I AS.AudioService: after audioserver restart: initStreamVolume succeeded
+09-11 21:55:16.638  2532  2539 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.645  2532  2539 I chatty  : uid=1041(audioserver) identical 3 lines
+09-11 21:55:16.646  2532  2539 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-11 21:55:16.648  2525  2528 D AudioALSAHardware: +setParameters(): restarting=false
+09-11 21:55:16.648  2525  2528 W AudioALSAHardware: setParameters(), still have param.size() = 1, remain param = "restarting=false"
+09-11 21:55:16.648  2525  2528 D AudioALSAHardware: -setParameters(): restarting=false 
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamManager: getMicMute(), mMicMute = 0
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamManager: setMicMute(), mMicMute: 0 => 0
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamManager: +SetInputMute(), 0
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamIn: SetInputMute(), 0
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamIn: -SetInputMute()
+09-11 21:55:16.649  2525  2528 D AudioALSAStreamManager: -SetInputMute()
+09-11 21:55:16.650  2525  2528 D AudioALSAStreamManager: getMicMute(), mMicMute = 0
+09-11 21:55:16.651  2532  2554 I AudioFlinger: systemReady
+09-11 21:55:16.652   441   493 I system_server: oneway function results will be dropped but finished with status OK and parcel size 8
+09-11 21:55:16.724   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.773  2525  2557 D AudioALSACaptureDataProviderBase: -attach()
+09-11 21:55:16.773  2525  2557 D AudioSPELayer: SetUPLinkDropTime, 0
+09-11 21:55:16.773  2525  2557 D AudioSPELayer: SetUPLinkIntrStartTime, sec=331, nsec=840157481
+09-11 21:55:16.773  2525  2557 D AudioALSACaptureDataClient: CheckChannelRemixOp(), ch 4->1 (mBesRecordStereoMode = 0, BesRecord enable = 0), ChannelRemixOp = 0
+09-11 21:55:16.773  2525  2557 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-11 21:55:16.773  2525  2557 E ASP     : Invalid pipeline type: -1
+09-11 21:55:16.774  2525  2560 D AudioALSACaptureDataProviderNormal: +readThread(), pid: 2525, tid: 2560, kReadBufferSize=0xc00, open_index=1
+09-11 21:55:16.774  2525  2557 D AudioALSAHardwareResourceManager: +startInputDevice(), new_device = 0x80000004, mInputDevice = 0x0, mStartInputDeviceCount = 0, mInputBuiltInMicCount = 0, mInputHeadsetMicCount = 0
+09-11 21:55:16.774  2525  2557 D AudioALSAHardwareResourceManager: setMIC1Mode(), isphonemic 0, micmode 1
+09-11 21:55:16.774  2525  2557 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:55:16.774  2525  2557 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic1TypeACCMode descriptor == NULL
+09-11 21:55:16.774  2525  2557 D AudioALSAHardwareResourceManager: setMIC2Mode(), isphonemic 0, micmode 1
+09-11 21:55:16.774  2525  2557 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:55:16.774  2525  2557 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic2TypeACCMode descriptor == NULL
+09-11 21:55:16.774  2525  2557 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-11 21:55:16.774  2525  2557 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = builtin_Mic_SingleMic descriptor == NULL
+09-11 21:55:16.774  2525  2557 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-11 21:55:16.774  2525  2557 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-11 21:55:16.774  2525  2557 D AudioALSACaptureHandlerNormal: -open()
+09-11 21:55:16.811  2525  2557 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 331 nsec 827424404
+09-11 21:55:16.811  2448  2474 D AudioRecord: releaseBuffer is no-op due to IAudioRecord sequence mismatch 1 != 2
+09-11 21:55:16.812  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:55:16.813  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:55:16.814  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.824   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.827  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:16.828  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.842   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:16.846  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:55:16.860  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:16.862  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.895  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:55:16.897  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.910  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:55:16.923  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:55:16.924  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.937  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:16.938  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:16.971  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:16.995  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:55:16.997  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.007  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:17.009  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.019  2448  2474 I SharedAudio: pcm peak=94 state=0
+09-11 21:55:17.027   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:17.054  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:55:17.055  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.067  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:55:17.068  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.082  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:55:17.102  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:17.103  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.130  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:17.131  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.152  2448  2474 I SharedAudio: pcm peak=87 state=0
+09-11 21:55:17.166  2448  2474 I SharedAudio: pcm peak=94 state=0
+09-11 21:55:17.168  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.180  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:17.182  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.215  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:17.232  2448  2474 I SharedAudio: pcm peak=123 state=0
+09-11 21:55:17.234  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.243  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:55:17.245  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.263  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:17.296  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:17.299  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.311  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:17.312  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.324  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:55:17.338  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:17.341  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.373  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:17.375  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.387  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:55:17.410  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:17.412  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.421  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:17.423  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.456  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:17.470  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:17.471  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.484  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:17.485  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.504  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:55:17.531  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:17.532  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.552  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:55:17.553  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.566  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:17.580  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:55:17.581  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.617  2448  2474 I SharedAudio: pcm peak=120 state=0
+09-11 21:55:17.619  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.631  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:17.650  2448  2474 I SharedAudio: pcm peak=86 state=0
+09-11 21:55:17.652  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.664  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:17.666  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.692  2448  2474 I SharedAudio: pcm peak=109 state=0
+09-11 21:55:17.712  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:17.714  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.727  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:17.729  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.740  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:55:17.775  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:17.777  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.788  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:17.790  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.809  2448  2474 I SharedAudio: pcm peak=86 state=0
+09-11 21:55:17.823  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:17.825  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.832   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:17.845   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:17.857  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:17.859  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.871  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:17.885  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:17.887  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.906  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:17.908  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.934  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:17.958  2448  2474 I SharedAudio: pcm peak=109 state=0
+09-11 21:55:17.960  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.970  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:17.971  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:17.983  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:18.023  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:18.024  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.033   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.038  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:18.039  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.048   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.050  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:18.066  2448  2474 I SharedAudio: pcm peak=135 state=0
+09-11 21:55:18.067  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.095  2448  2474 I SharedAudio: pcm peak=145 state=0
+09-11 21:55:18.096  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.114  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:18.128  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:18.128  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.142  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:55:18.144  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.176  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:55:18.190  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:18.193  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.222  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:18.224  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.226  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:18.238   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.250   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.259  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:18.261  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.273  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:18.275  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.287  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:18.307  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:55:18.308  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.335  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:18.336  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.356  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:18.370  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:18.372  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.383  2448  2474 I SharedAudio: pcm peak=142 state=0
+09-11 21:55:18.386  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.420  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:18.438   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.449  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:18.451  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.456  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:18.458  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.468   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.470  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:18.499  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:18.500  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.513  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:18.514  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.527  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:18.547  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:55:18.548  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.575  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:18.577  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.597  2448  2474 I SharedAudio: pcm peak=137 state=0
+09-11 21:55:18.610  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:18.613  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.624  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:18.637   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.645  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.652   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.659  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:18.672  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:18.673  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.693  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:18.694  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.707  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:18.742  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:18.744  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.755  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:18.758  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.769  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:18.790  2448  2474 I SharedAudio: pcm peak=133 state=0
+09-11 21:55:18.793  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.822  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:18.824  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.839   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.845  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:55:18.856  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:18.857  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.869   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:18.872  2448  2474 I SharedAudio: pcm peak=123 state=0
+09-11 21:55:18.873  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.904  2448  2474 I SharedAudio: pcm peak=136 state=0
+09-11 21:55:18.916  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:18.917  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.935  2448  2474 I SharedAudio: pcm peak=99 state=0
+09-11 21:55:18.936  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.949  2448  2474 I SharedAudio: pcm peak=128 state=0
+09-11 21:55:18.976  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:55:18.977  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:18.997  2448  2474 I SharedAudio: pcm peak=152 state=0
+09-11 21:55:18.998  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.011  2448  2474 I SharedAudio: pcm peak=131 state=0
+09-11 21:55:19.031  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:19.032  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.037   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.058  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:55:19.060  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.071   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.079  2448  2474 I SharedAudio: pcm peak=122 state=0
+09-11 21:55:19.093  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:19.095  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.106  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:19.108  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.141  2448  2474 I SharedAudio: pcm peak=118 state=0
+09-11 21:55:19.155  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:19.158  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.176  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:19.179  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.181  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:19.224  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:19.226  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.241   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.245  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:19.252  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.254  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:19.266  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:19.275  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.289   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.300  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:19.302  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.321  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:55:19.323  2448  2474 I SharedAudio: pcm peak=142 state=0
+09-11 21:55:19.324  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.348  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:19.350  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.384  2448  2474 I SharedAudio: pcm peak=115 state=0
+09-11 21:55:19.398  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:19.400  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.416  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:19.424  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.432  2448  2474 I SharedAudio: pcm peak=140 state=0
+09-11 21:55:19.441   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.458  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:19.459  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.479  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:19.479  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.488   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.493  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:19.513  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:19.514  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.542  2448  2474 I SharedAudio: pcm peak=133 state=0
+09-11 21:55:19.544  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.562  2448  2474 I SharedAudio: pcm peak=122 state=0
+09-11 21:55:19.565  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:19.567  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.590  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:19.591  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.627  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:55:19.629  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:55:19.631  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.643   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.660  2448  2474 I SharedAudio: pcm peak=111 state=0
+09-11 21:55:19.662  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.663  2448  2474 I SharedAudio: pcm peak=94 state=0
+09-11 21:55:19.691   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.705  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:19.706  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.708  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:19.710  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.732  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:19.754  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:19.756  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.782  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:19.783  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.803  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:19.806  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:19.808  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.816  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:19.819  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.844   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.850  2448  2474 I SharedAudio: pcm peak=105 state=0
+09-11 21:55:19.879  2448  2474 I SharedAudio: pcm peak=110 state=0
+09-11 21:55:19.882  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.893   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:19.903  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:19.905  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.906  2448  2474 I SharedAudio: pcm peak=86 state=0
+09-11 21:55:19.946  2448  2474 I SharedAudio: pcm peak=140 state=0
+09-11 21:55:19.947  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.948  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:19.949  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:19.973  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:19.994  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:19.995  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.007  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:20.008  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.044   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.048  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:55:20.050  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:55:20.052  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.056  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:20.058  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.093   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.096  2448  2474 I SharedAudio: pcm peak=93 state=0
+09-11 21:55:20.104  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:55:20.106  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.139  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:20.140  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.142  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:55:20.182  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:55:20.183  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.203  2448  2474 I SharedAudio: pcm peak=132 state=0
+09-11 21:55:20.205  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.207  2448  2474 I SharedAudio: pcm peak=122 state=0
+09-11 21:55:20.216  2448  2474 I SharedAudio: pcm peak=109 state=0
+09-11 21:55:20.218  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.246   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.254  2448  2474 I SharedAudio: pcm peak=95 state=0
+09-11 21:55:20.256  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.270  2448  2474 I SharedAudio: pcm peak=135 state=0
+09-11 21:55:20.295   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.300  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:20.302  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.304  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:20.307  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.348  2448  2474 I SharedAudio: pcm peak=113 state=0
+09-11 21:55:20.349  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:20.351  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.361  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:20.363  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.397  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:20.415  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:55:20.418  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.431  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:20.433  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.444   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.459  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:20.460  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:20.461  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.493   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.507  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:20.508  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.509  2448  2474 I SharedAudio: pcm peak=106 state=0
+09-11 21:55:20.521  2448  2474 I SharedAudio: pcm peak=100 state=0
+09-11 21:55:20.523  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.556  2448  2474 I SharedAudio: pcm peak=117 state=0
+09-11 21:55:20.558  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.570  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:20.605  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:20.607  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.609  2448  2474 I SharedAudio: pcm peak=92 state=0
+09-11 21:55:20.611  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.619  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:20.648   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.653  2448  2474 I SharedAudio: pcm peak=107 state=0
+09-11 21:55:20.655  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.667  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:20.669  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.681  2448  2474 I SharedAudio: pcm peak=90 state=0
+09-11 21:55:20.702  2448  2474 I SharedAudio: pcm peak=104 state=0
+09-11 21:55:20.704  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.714   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.729  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:55:20.731  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.750  2448  2474 I SharedAudio: pcm peak=97 state=0
+09-11 21:55:20.763  2448  2474 I SharedAudio: pcm peak=89 state=0
+09-11 21:55:20.765  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.778  2448  2474 I SharedAudio: pcm peak=101 state=0
+09-11 21:55:20.783  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.811  2448  2474 I SharedAudio: pcm peak=108 state=0
+09-11 21:55:20.831  2448  2474 I SharedAudio: pcm peak=116 state=0
+09-11 21:55:20.833  2525  2528 D AudioALSAStreamOut: dump()
+09-11 21:55:20.835  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.847   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.849  2448  2474 I SharedAudio: pcm peak=103 state=0
+09-11 21:55:20.851  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.852  2525  2528 D AudioALSAHardware: dumpState()
+--------- beginning of crash
+09-11 21:55:20.853  2525  2528 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 2528 (HwBinder:2525_1), pid 2525 (audio.service)
+09-11 21:55:20.860  2448  2474 I SharedAudio: pcm peak=114 state=0
+09-11 21:55:20.885  2566  2566 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+09-11 21:55:20.888  2448  2474 I SharedAudio: pcm peak=77 state=0
+09-11 21:55:20.889  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.897   236   236 I tombstoned: received crash request for pid 2528
+09-11 21:55:20.897  2566  2566 I crash_dump32: performing dump of process 2525 (target tid = 2528)
+09-11 21:55:20.903  2448  2474 I SharedAudio: pcm peak=77 state=0
+09-11 21:55:20.907  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.912   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:20.914  2448  2474 I SharedAudio: pcm peak=88 state=0
+09-11 21:55:20.921  2566  2566 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-11 21:55:20.921  2566  2566 F DEBUG   : LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+09-11 21:55:20.921  2566  2566 F DEBUG   : Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+09-11 21:55:20.921  2566  2566 F DEBUG   : Revision: '0'
+09-11 21:55:20.921  2566  2566 F DEBUG   : ABI: 'arm'
+09-11 21:55:20.922  2566  2566 F DEBUG   : Timestamp: 2026-09-11 21:55:20-0500
+09-11 21:55:20.922  2566  2566 F DEBUG   : pid: 2525, tid: 2528, name: HwBinder:2525_1  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+09-11 21:55:20.922  2566  2566 F DEBUG   : uid: 1041
+09-11 21:55:20.922  2566  2566 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-11 21:55:20.922  2566  2566 F DEBUG   : Cause: null pointer dereference
+09-11 21:55:20.922  2566  2566 F DEBUG   :     r0  f1179400  r1  00000010  r2  f04c7c28  r3  f09cd0e8
+09-11 21:55:20.922  2566  2566 F DEBUG   :     r4  f04c7c10  r5  f04c7c28  r6  f1179400  r7  00000000
+09-11 21:55:20.922  2566  2566 F DEBUG   :     r8  f04c7fd0  r9  f04c7fd0  r10 f14efd20  r11 00000000
+09-11 21:55:20.922  2566  2566 F DEBUG   :     ip  f093db74  sp  f04c7b98  lr  f092f4ad  pc  00000000
+09-11 21:55:20.946  2448  2474 I SharedAudio: pcm peak=74 state=0
+09-11 21:55:20.947  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.956  2448  2474 I SharedAudio: pcm peak=85 state=0
+09-11 21:55:20.957  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:20.971  2448  2474 I SharedAudio: pcm peak=94 state=0
+09-11 21:55:20.980  2566  2566 F DEBUG   : backtrace:
+09-11 21:55:20.980  2566  2566 F DEBUG   :       #00 pc 00000000  <unknown>
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.981  2566  2566 F DEBUG   :       #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.982  2566  2566 F DEBUG   :       #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 21:55:20.982  2566  2566 F DEBUG   :       #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 21:55:20.982  2566  2566 F DEBUG   :       #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 21:55:20.982  2566  2566 F DEBUG   :       #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 21:55:20.982  2566  2566 F DEBUG   :       #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 21:55:20.991  2448  2474 I SharedAudio: pcm peak=98 state=0
+09-11 21:55:20.992  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.005  2448  2474 I SharedAudio: pcm peak=121 state=0
+09-11 21:55:21.006  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.046   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:21.054  2448  2474 I SharedAudio: pcm peak=119 state=0
+09-11 21:55:21.055  2448  2474 I SharedAudio: pcm peak=91 state=0
+09-11 21:55:21.056  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.067  2448  2474 I SharedAudio: pcm peak=112 state=0
+09-11 21:55:21.068  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.103  2448  2474 I SharedAudio: pcm peak=88 state=0
+09-11 21:55:21.112   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:21.117  2448  2474 I SharedAudio: pcm peak=102 state=0
+09-11 21:55:21.118  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.130  2448  2474 I SharedAudio: pcm peak=93 state=0
+09-11 21:55:21.131  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.150  2448  2474 I SharedAudio: pcm peak=89 state=0
+--------- beginning of system
+09-11 21:55:21.161   441   654 W NativeCrashListener: Couldn't find ProcessRecord for pid 2525
+09-11 21:55:21.162   236   236 E tombstoned: Tombstone written to: /data/tombstones/tombstone_18
+09-11 21:55:21.165  2448  2474 I SharedAudio: pcm peak=96 state=0
+09-11 21:55:21.166  2448  2474 I MicroWakeWord: probability=0
+09-11 21:55:21.170   441   479 I BootReceiver: Copying /data/tombstones/tombstone_18 to DropBox (SYSTEM_TOMBSTONE)
+09-11 21:55:21.171   441   479 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+09-11 21:55:21.190  2532  2556 E HalHidl : Device 0xe7814570 dump: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: ' (from rpc)
+09-11 21:55:21.190  2532  2535 E HalDeathHandler: HAL server crashed, audio server is restarting
+09-11 21:55:21.201  2448  2522 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 21:55:21.201  2448  2522 W AudioSystem: AudioFlinger server died!
+09-11 21:55:21.202   577   597 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:21.202   441   493 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:21.202   441   493 W CaptureStateTracker: Audio policy service died
+09-11 21:55:21.202  1164  2524 W AudioSystem: AudioPolicyService server died!
+09-11 21:55:21.202   441   927 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 21:55:21.202  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:21.202   441   540 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:21.203   441   927 W AudioSystem: AudioFlinger server died!
+09-11 21:55:21.204   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 21:55:21.204   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 21:55:21.204   441   536 E AS.AudioService: Audioserver died.
+09-11 21:55:21.205  2448  2474 W AudioRecord: restoreRecord_l(9): dead IAudioRecord, creating a new one from obtainBuffer()
+09-11 21:55:21.205  2448  2474 I ServiceManager: Waiting for service 'media.audio_flinger' on '/dev/binder'...
+09-11 21:55:21.231   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:21.251   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.252  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@6.0::IDevicesFactory/default.
+09-11 21:55:21.252   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.253  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@5.0::IDevicesFactory/default.
+09-11 21:55:21.253   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.254  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@4.0::IDevicesFactory/default.
+09-11 21:55:21.262  2577  2577 I HidlServiceManagement: Registered android.hardware.audio@2.0::IDevicesFactory/default
+09-11 21:55:21.263  2577  2577 I HidlServiceManagement: Removing namespace from process name android.hardware.audio.service to audio.service.
+09-11 21:55:21.263  2577  2577 I LegacySupport: Registration complete for android.hardware.audio@2.0::IDevicesFactory/default.
+09-11 21:55:21.264   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.264  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@6.0::IEffectsFactory/default.
+09-11 21:55:21.265   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.265  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@5.0::IEffectsFactory/default.
+09-11 21:55:21.265   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.266  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@4.0::IEffectsFactory/default.
+09-11 21:55:21.271  2577  2577 I HidlServiceManagement: Registered android.hardware.audio.effect@2.0::IEffectsFactory/default
+09-11 21:55:21.271  2577  2577 I LegacySupport: Registration complete for android.hardware.audio.effect@2.0::IEffectsFactory/default.
+09-11 21:55:21.272   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:21.272  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.3::ISoundTriggerHw/default.
+09-11 21:55:21.272   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:21.273  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.2::ISoundTriggerHw/default.
+09-11 21:55:21.273   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:21.274  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+09-11 21:55:21.274   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+09-11 21:55:21.274  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+09-11 21:55:21.275  2577  2577 W audiohalservice: Could not register Soundtrigger API
+09-11 21:55:21.277  2577  2577 I BTAudioProviderA2dpSoftware: A2dpSoftwareAudioProvider - size of audio buffer 7168 byte(s)
+09-11 21:55:21.278  2577  2577 I BTAudioProviderHearingAid: HearingAidAudioProvider - size of audio buffer 3584 byte(s)
+09-11 21:55:21.279  2577  2577 I HidlServiceManagement: Registered android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default
+09-11 21:55:21.279  2577  2577 I LegacySupport: Registration complete for android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default.
+09-11 21:55:21.280   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+09-11 21:55:21.280  2577  2577 E LegacySupport: Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+09-11 21:55:21.280  2577  2577 W audiohalservice: Could not register Bluetooth Audio Offload API
+09-11 21:55:21.312   256   371 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-11 21:55:21.320  2576  2576 I FastMixerState: sMaxFastTracks = 8
+09-11 21:55:21.326  2576  2576 V MediaUtils: physMem: 1020911616
+09-11 21:55:21.326  2576  2576 V MediaUtils: requested limit: 204182320
+09-11 21:55:21.326  2576  2576 I libc    : malloc_limit: Allocation limit enabled, max size 204182320 bytes
+09-11 21:55:21.326  2576  2576 I audioserver: ServiceManager: 0xf649c260
+09-11 21:55:21.330   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.330   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.331   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 21:55:21.343   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.343   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.343   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 21:55:21.345  2576  2576 I AudioFlinger: Using default 3000 mSec as standby time.
+09-11 21:55:21.345   341   457 W AudioAnalytics: (key=audio.flinger) Audioflinger constructor event detected
+09-11 21:55:21.348  2576  2576 E APM::Serializer: deserialize: Could not parse /odm/etc/audio_policy_configuration.xml document.
+09-11 21:55:21.364  2576  2576 D APM_EngineLoader: Loaded engine from libaudiopolicyenginedefault.so
+09-11 21:55:21.364  2576  2576 E APM::AudioPolicyEngine/Config: parse: Could not parse document /vendor/etc/audio_policy_engine_configuration.xml
+09-11 21:55:21.365  2576  2576 E libxml2 : I/O warning : failed to load external entity "/vendor/etc/audio_policy_engine_configuration.xml"
+09-11 21:55:21.365  2576  2576 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration found, using default matching phone experience.
+09-11 21:55:21.365  2576  2576 E APM::AudioPolicyEngine/Config: parseLegacyVolumeFile: Could not parse document /odm/etc/audio_policy_configuration.xml
+09-11 21:55:21.365  2576  2576 E libxml2 : I/O warning : failed to load external entity "/odm/etc/audio_policy_configuration.xml"
+09-11 21:55:21.381  2576  2576 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration of AUDIO_STREAM_ASSISTANT found, using default volume configuration
+09-11 21:55:21.381  2576  2576 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration of AUDIO_STREAM_CALL_ASSISTANT found, using default volume configuration
+09-11 21:55:21.383  2577  2577 I audio.amazon_wrapper: adev_open: audio_hw_if

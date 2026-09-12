@@ -1,0 +1,1 @@
+Gate 1 startup and ordinary-capture logs are in registration-logcat.txt and ordinary-capture-with-registration.log. Gate 2 was not run.
