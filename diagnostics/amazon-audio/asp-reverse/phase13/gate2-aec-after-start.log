@@ -1,0 +1,1 @@
+GATE 2 NOT RUN. The after-start lifecycle was not attempted because the before-start diagnostic AudioRecord could not initialize.

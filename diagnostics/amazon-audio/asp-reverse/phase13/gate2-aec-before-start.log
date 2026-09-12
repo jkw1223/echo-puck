@@ -1,0 +1,1 @@
+GATE 2 NOT RUN. Stop condition reached before AudioRecord/AEC creation: the diagnostic app failed to initialize AudioRecord after audioserver restart (AudioFlinger status -1 / Error code -20). No AcousticEchoCanceler object was created.

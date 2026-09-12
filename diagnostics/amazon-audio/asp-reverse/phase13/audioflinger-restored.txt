@@ -1,0 +1,147 @@
+Libraries NOT loaded:
+Libraries loaded:
+ Library dynamics_processing
+  path: /vendor/lib/soundfx/libdynproc.so
+  Dynamics Processing / The Android Open Source Project
+    UUID: e0e6539b-1781-7261-676f-6d7573696340
+    TYPE: 7261676f-6d75-7369-6364-28e2fd3ac39e
+    apiVersion: 00020000
+    flags: 00000050
+ Library loudness_enhancer
+  path: /vendor/lib/soundfx/libldnhncr.so
+  Loudness Enhancer / The Android Open Source Project
+    UUID: fa415329-2034-4bea-b5dc-5b381c8d1e2c
+    TYPE: fe3199be-aed0-413f-87bb-11260eb63cf1
+    apiVersion: 00020000
+    flags: 00000008
+ Library downmix
+  path: /vendor/lib/soundfx/libdownmix.so
+  Multichannel Downmix To Stereo / The Android Open Source Project
+    UUID: 93f04452-e4fe-41cc-91f9-e475b6d1d69f
+    TYPE: 381e49cc-a858-4aa2-87f6-e8388e7601b2
+    apiVersion: 00020000
+    flags: 00000008
+ Library visualizer
+  path: /vendor/lib/soundfx/libvisualizer.so
+  Visualizer / The Android Open Source Project
+    UUID: d069d9e0-8329-11df-9168-0002a5d5c51b
+    TYPE: e46b26a0-dddd-11db-8afd-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000008
+ Library reverb
+  path: /vendor/lib/soundfx/libreverbwrapper.so
+  Insert Preset Reverb / NXP Software Ltd.
+    UUID: 172cdf00-a3bc-11df-a72f-0002a5d5c51b
+    TYPE: 47382d60-ddd8-11db-bf3a-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000048
+  Auxiliary Preset Reverb / NXP Software Ltd.
+    UUID: f29a1400-a3bb-11df-8ddc-0002a5d5c51b
+    TYPE: 47382d60-ddd8-11db-bf3a-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000001
+  Insert Environmental Reverb / NXP Software Ltd.
+    UUID: c7a511a0-a3bb-11df-860e-0002a5d5c51b
+    TYPE: c2e5d5f0-94bd-4763-9cac-4e234d06839e
+    apiVersion: 00020000
+    flags: 00000048
+  Auxiliary Environmental Reverb / NXP Software Ltd.
+    UUID: 4a387fc0-8ab3-11df-8bad-0002a5d5c51b
+    TYPE: c2e5d5f0-94bd-4763-9cac-4e234d06839e
+    apiVersion: 00020000
+    flags: 00000001
+ Library bundle
+  path: /vendor/lib/soundfx/libbundlewrapper.so
+  Volume / NXP Software Ltd.
+    UUID: 119341a0-8469-11df-81f9-0002a5d5c51b
+    TYPE: 09e8ede0-ddde-11db-b4f6-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000050
+  Equalizer / NXP Software Ltd.
+    UUID: ce772f20-847d-11df-bb17-0002a5d5c51b
+    TYPE: 0bed4300-ddd6-11db-8f34-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000048
+  Virtualizer / NXP Software Ltd.
+    UUID: 1d4033c0-8557-11df-9f2d-0002a5d5c51b
+    TYPE: 37cc2c00-dddd-11db-8577-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000250
+  Dynamic Bass Boost / NXP Software Ltd.
+    UUID: 8631f300-72e2-11df-b57e-0002a5d5c51b
+    TYPE: 0634f220-ddd4-11db-a0fc-0002a5d5c51b
+    apiVersion: 00020000
+    flags: 00000248
+XML effect configuration loaded successfully.
+Clients:
+Notification Clients:
+   pid    uid  name
+   441   1000  android.uid.system
+  4960   1041  audioserver
+Global session refs:
+  session  cnt     pid    uid  name
+Hardware status: 0
+Standby Time mSec: 3000
+
+Output thread 0xe942acc0, name AudioOut_D, tid 4974, type 0 (MIXER):
+  I/O handle: 13
+  Standby: yes
+  Sample rate: 48000 Hz
+  HAL frame count: 768
+  HAL format: 0x1 (AUDIO_FORMAT_PCM_16_BIT)
+  HAL buffer size: 3072 bytes
+  Channel count: 2
+  Channel mask: 0x00000003 (front-left, front-right)
+  Processing format: 0x5 (AUDIO_FORMAT_PCM_FLOAT)
+  Processing frame size: 8 bytes
+  Pending config events: none
+  Output devices: 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+  Input device: 0 (AUDIO_DEVICE_NONE)
+  Audio source: 0 (AUDIO_SOURCE_DEFAULT)
+  Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=1 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
+  Timestamp corrected: no
+  Master volume: 1.000000
+  Master mute: off
+  Normal frame count: 1152
+  Total writes: 0
+  Delayed writes: 0
+  Blocked in write: no
+  Suspend count: 0
+  Sink buffer : 0xea48f000
+  Mixer buffer: 0xea48a000
+  Effect buffer: 0xea48c800
+  Fast track availMask=0xfe
+  Standby delay ns=3000000000
+  AudioStreamOut: 0xeaaf9918 flags 0x2 (AUDIO_OUTPUT_FLAG_PRIMARY)
+  Frames written: 0
+  Suspended frames: 0
+  PipeSink frames written: 0
+  Hal stream dump:
+      Signal power history: (none)
+  Thread throttle time (msecs): 0
+  AudioMixer tracks: 
+  Master mono: off
+  Master balance: 0.000000 (0.000000)
+  FastMixer thread 0xe909cf80 tid=4973  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
+            numTracks=0 writeErrors=0 underruns=0 overruns=0
+            sampleRate=0 frameCount=0 measuredWarmup=0 ms, warmupCycles=0
+            mixPeriod=nan ms latency=0.00 ms
+  FastMixer Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
+  No FastMixer statistics available currently
+  Fast tracks: sMaxFastTracks=8 activeMask=0
+  Index Active Full Partial Empty  Recent Ready    Written
+      0     no    0       0     0    full     0          0
+      1     no    0       0     0    full     0          0
+      2     no    0       0     0    full     0          0
+      3     no    0       0     0    full     0          0
+      4     no    0       0     0    full     0          0
+      5     no    0       0     0    full     0          0
+      6     no    0       0     0    full     0          0
+      7     no    0       0     0    full     0          0
+  Stream volumes in dB: 0:nan, 1:nan, 2:nan, 3:nan, 4:nan, 5:nan, 6:-inf, 7:nan, 8:nan, 9:nan, 10:nan, 11:nan, 12:0, 13:0, 14:0
+  Normal mixer raw underrun counters: partial=0 empty=0
+  0 Tracks
+  0 Effect Chains
+  Local log:
+   09-11 21:43:09.731 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+Error dumping service info status_t: DEAD_OBJECT media.audio_flinger

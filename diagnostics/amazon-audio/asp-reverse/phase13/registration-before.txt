@@ -1,0 +1,2 @@
+61c6fe7cdd977c32b0014bdf1b07277b1cb7bebe1369b8907660fdee72d639a3  /system/vendor/etc/audio_effects.xml
+562d6e76f05b4fdfa8c93241c6132d4553243c096570f9889b2cbfc8805b370d  /system/vendor/lib/soundfx/libaudiopreprocessing.so
