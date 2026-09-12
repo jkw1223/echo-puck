@@ -1,0 +1,1157 @@
+--------- beginning of main
+--------- beginning of system
+I/PuckService( 4367): microWakeWord armed on shared microphone stream
+I/SharedAudio( 4367): single microphone owner started
+E/PuckService( 4367): native wake probe failed
+E/PuckService( 4367): java.io.FileNotFoundException: wakeword/wake-sample.wav
+E/PuckService( 4367): 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+E/PuckService( 4367): 	at android.content.res.AssetManager.open(AssetManager.java:876)
+E/PuckService( 4367): 	at android.content.res.AssetManager.open(AssetManager.java:853)
+E/PuckService( 4367): 	at com.steve.puckd.PuckService.onCreate$lambda$6(PuckService.kt:43)
+E/PuckService( 4367): 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+E/PuckService( 4367): 	at java.lang.Thread.run(Thread.java:923)
+W/PuckService( 4367): Connection failed: Failed to connect to /192.168.1.193:8787
+I/PuckService( 4367): disconnected reason=Relay unavailable retry_ms=2000
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=182 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=168 state=0
+I/SharedAudio( 4367): pcm peak=105 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=165 state=0
+I/SharedAudio( 4367): pcm peak=190 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=172 state=0
+I/SharedAudio( 4367): pcm peak=187 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=167 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=107 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=107 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=116 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=103 state=0
+I/SharedAudio( 4367): pcm peak=110 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=162 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=101 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=162 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=187 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/RealtimeAudioProbe( 4367): BUTTON CLICK RECEIVED
+I/SharedAudio( 4367): pcm peak=169 state=0
+I/SharedAudio( 4367): pcm peak=207 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=217 state=0
+I/SharedAudio( 4367): pcm peak=322 state=0
+I/SharedAudio( 4367): pcm peak=255 state=0
+I/SharedAudio( 4367): pcm peak=170 state=0
+W/PuckService( 4367): Connection failed: Failed to connect to /192.168.1.193:8787
+I/SharedAudio( 4367): pcm peak=186 state=0
+I/PuckService( 4367): disconnected reason=Relay unavailable retry_ms=4000
+I/SharedAudio( 4367): pcm peak=396 state=0
+I/SharedAudio( 4367): pcm peak=262 state=0
+I/SharedAudio( 4367): pcm peak=180 state=0
+I/SharedAudio( 4367): pcm peak=218 state=0
+I/SharedAudio( 4367): pcm peak=204 state=0
+I/SharedAudio( 4367): pcm peak=188 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=167 state=0
+I/SharedAudio( 4367): pcm peak=177 state=0
+I/SharedAudio( 4367): pcm peak=235 state=0
+I/SharedAudio( 4367): pcm peak=203 state=0
+I/SharedAudio( 4367): pcm peak=221 state=0
+I/SharedAudio( 4367): pcm peak=201 state=0
+I/SharedAudio( 4367): pcm peak=233 state=0
+I/SharedAudio( 4367): pcm peak=223 state=0
+I/SharedAudio( 4367): pcm peak=185 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=202 state=0
+I/SharedAudio( 4367): pcm peak=170 state=0
+I/SharedAudio( 4367): pcm peak=176 state=0
+I/SharedAudio( 4367): pcm peak=197 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/RealtimeAudioProbe( 4367): requested_voice=cedar
+I/RealtimeAudioProbe( 4367): outbound_session_update={"type":"session.update","session":{"type":"realtime","output_modalities":["audio"],"instructions":"Speak in a clear, natural conversational male voice. Keep the pitch in a normal mid-range, not unusually deep or boomy. Use crisp articulation and a slightly brisk conversational pace. Avoid a slow announcer cadence or exaggerated bass-heavy delivery. Sound relaxed, intelligent, and informal.","audio":{"input":{"format":{"type":"audio/pcm","rate":24000}},"output":{"format":{"type":"audio/pcm","rate":24000},"voice":"cedar"}}}}
+I/RealtimeAudioProbe( 4367): connection_established_direct_show
+I/RealtimeAudioProbe( 4367): server_event=session.created
+I/RealtimeAudioProbe( 4367): server_session_config type=session.created voice=null audio={"input":{"format":{"type":"audio\/pcm","rate":24000},"transcription":null,"noise_reduction":null,"turn_detection":{"type":"server_vad","threshold":0.5,"prefix_padding_ms":300,"silence_duration_ms":500,"idle_timeout_ms":null,"create_response":true,"interrupt_response":true}},"output":{"format":{"type":"audio\/pcm","rate":24000},"voice":"marin","speed":1}} output_modalities=["audio"]
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/RealtimeAudioProbe( 4367): server_event=session.updated
+I/RealtimeAudioProbe( 4367): server_session_config type=session.updated voice=null audio={"input":{"format":{"type":"audio\/pcm","rate":24000},"transcription":null,"noise_reduction":null,"turn_detection":{"type":"server_vad","threshold":0.5,"prefix_padding_ms":300,"silence_duration_ms":500,"idle_timeout_ms":null,"create_response":true,"interrupt_response":true}},"output":{"format":{"type":"audio\/pcm","rate":24000},"voice":"cedar","speed":1}} output_modalities=["audio"]
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=176 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=106 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=105 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=175 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=186 state=0
+I/SharedAudio( 4367): pcm peak=190 state=0
+I/SharedAudio( 4367): pcm peak=211 state=0
+I/SharedAudio( 4367): pcm peak=227 state=0
+I/SharedAudio( 4367): pcm peak=214 state=0
+I/SharedAudio( 4367): pcm peak=168 state=0
+I/SharedAudio( 4367): pcm peak=169 state=0
+I/SharedAudio( 4367): pcm peak=200 state=0
+I/SharedAudio( 4367): pcm peak=156 state=0
+I/SharedAudio( 4367): pcm peak=168 state=0
+I/SharedAudio( 4367): pcm peak=196 state=0
+I/SharedAudio( 4367): pcm peak=259 state=0
+I/SharedAudio( 4367): pcm peak=222 state=0
+I/SharedAudio( 4367): pcm peak=197 state=0
+I/SharedAudio( 4367): pcm peak=172 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=256 state=0
+I/SharedAudio( 4367): pcm peak=287 state=0
+I/SharedAudio( 4367): pcm peak=263 state=0
+I/SharedAudio( 4367): pcm peak=398 state=0
+I/SharedAudio( 4367): pcm peak=290 state=0
+I/SharedAudio( 4367): pcm peak=243 state=0
+I/SharedAudio( 4367): pcm peak=393 state=0
+I/SharedAudio( 4367): pcm peak=209 state=0
+I/SharedAudio( 4367): pcm peak=206 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=274 state=0
+I/SharedAudio( 4367): pcm peak=284 state=0
+I/SharedAudio( 4367): pcm peak=282 state=0
+I/SharedAudio( 4367): pcm peak=391 state=0
+I/SharedAudio( 4367): pcm peak=412 state=0
+I/SharedAudio( 4367): pcm peak=247 state=0
+I/SharedAudio( 4367): pcm peak=203 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=269 state=0
+I/SharedAudio( 4367): pcm peak=511 state=0
+I/SharedAudio( 4367): pcm peak=643 state=0
+I/SharedAudio( 4367): pcm peak=913 state=0
+I/SharedAudio( 4367): pcm peak=994 state=0
+I/SharedAudio( 4367): pcm peak=614 state=0
+I/SharedAudio( 4367): pcm peak=398 state=0
+I/SharedAudio( 4367): pcm peak=350 state=0
+I/SharedAudio( 4367): pcm peak=249 state=0
+I/SharedAudio( 4367): pcm peak=250 state=0
+I/SharedAudio( 4367): pcm peak=212 state=0
+I/SharedAudio( 4367): pcm peak=380 state=0
+I/SharedAudio( 4367): pcm peak=529 state=0
+I/SharedAudio( 4367): pcm peak=737 state=0
+I/SharedAudio( 4367): pcm peak=612 state=0
+I/SharedAudio( 4367): pcm peak=401 state=0
+I/SharedAudio( 4367): pcm peak=500 state=0
+I/SharedAudio( 4367): pcm peak=425 state=0
+I/SharedAudio( 4367): pcm peak=412 state=0
+W/PuckService( 4367): Connection failed: Failed to connect to /192.168.1.193:8787
+I/SharedAudio( 4367): pcm peak=307 state=0
+I/PuckService( 4367): disconnected reason=Relay unavailable retry_ms=8000
+I/SharedAudio( 4367): pcm peak=595 state=0
+I/SharedAudio( 4367): pcm peak=592 state=0
+I/SharedAudio( 4367): pcm peak=471 state=0
+I/SharedAudio( 4367): pcm peak=492 state=0
+I/SharedAudio( 4367): pcm peak=258 state=0
+I/SharedAudio( 4367): pcm peak=199 state=0
+I/SharedAudio( 4367): pcm peak=174 state=0
+I/SharedAudio( 4367): pcm peak=199 state=0
+I/SharedAudio( 4367): pcm peak=211 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=201 state=0
+I/SharedAudio( 4367): pcm peak=205 state=0
+I/SharedAudio( 4367): pcm peak=247 state=0
+I/SharedAudio( 4367): pcm peak=226 state=0
+I/SharedAudio( 4367): pcm peak=230 state=0
+I/SharedAudio( 4367): pcm peak=241 state=0
+I/SharedAudio( 4367): pcm peak=239 state=0
+I/SharedAudio( 4367): pcm peak=219 state=0
+I/SharedAudio( 4367): pcm peak=181 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=165 state=0
+I/SharedAudio( 4367): pcm peak=230 state=0
+I/SharedAudio( 4367): pcm peak=302 state=0
+I/SharedAudio( 4367): pcm peak=224 state=0
+I/SharedAudio( 4367): pcm peak=177 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=238 state=0
+I/SharedAudio( 4367): pcm peak=236 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=183 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=236 state=0
+I/SharedAudio( 4367): pcm peak=258 state=0
+I/SharedAudio( 4367): pcm peak=207 state=0
+I/SharedAudio( 4367): pcm peak=227 state=0
+I/SharedAudio( 4367): pcm peak=241 state=0
+I/SharedAudio( 4367): pcm peak=198 state=0
+I/SharedAudio( 4367): pcm peak=224 state=0
+I/SharedAudio( 4367): pcm peak=192 state=0
+I/SharedAudio( 4367): pcm peak=196 state=0
+I/SharedAudio( 4367): pcm peak=189 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=183 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=212 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=102 state=0
+I/SharedAudio( 4367): pcm peak=110 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=110 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=360 state=0
+I/SharedAudio( 4367): pcm peak=426 state=0
+I/SharedAudio( 4367): pcm peak=270 state=0
+I/SharedAudio( 4367): pcm peak=372 state=0
+I/SharedAudio( 4367): pcm peak=345 state=0
+I/SharedAudio( 4367): pcm peak=298 state=0
+I/SharedAudio( 4367): pcm peak=398 state=0
+I/RealtimeAudioProbe( 4367): input_pcm_bytes=159360
+I/SharedAudio( 4367): pcm peak=279 state=0
+I/SharedAudio( 4367): pcm peak=286 state=0
+I/SharedAudio( 4367): pcm peak=272 state=0
+I/SharedAudio( 4367): pcm peak=207 state=0
+I/SharedAudio( 4367): pcm peak=240 state=0
+I/SharedAudio( 4367): pcm peak=254 state=0
+I/RealtimeAudioProbe( 4367): input_audio_append_bytes=159360
+I/RealtimeAudioProbe( 4367): input_audio_committed
+I/RealtimeAudioProbe( 4367): response_requested
+I/SharedAudio( 4367): pcm peak=252 state=0
+I/SharedAudio( 4367): pcm peak=221 state=0
+I/SharedAudio( 4367): pcm peak=255 state=0
+I/SharedAudio( 4367): pcm peak=200 state=0
+I/SharedAudio( 4367): pcm peak=218 state=0
+I/SharedAudio( 4367): pcm peak=199 state=0
+I/SharedAudio( 4367): pcm peak=213 state=0
+I/SharedAudio( 4367): pcm peak=167 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=171 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=162 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/RealtimeAudioProbe( 4367): server_event=error
+E/RealtimeAudioProbe( 4367): api_error code=input_audio_buffer_commit_empty message=Error committing input audio buffer: buffer too small. Expected at least 100ms of audio, but buffer only has 0.00ms of audio.
+I/RealtimeAudioProbe( 4367): server_event=response.created
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_item.added
+I/RealtimeAudioProbe( 4367): server_event=conversation.item.added
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.content_part.added
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=175 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=178 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=405 state=0
+I/SharedAudio( 4367): pcm peak=1000 state=0
+I/SharedAudio( 4367): pcm peak=1058 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=726 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=527 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=345 state=0
+I/SharedAudio( 4367): pcm peak=425 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=1092 state=0
+I/SharedAudio( 4367): pcm peak=1271 state=0
+I/SharedAudio( 4367): pcm peak=756 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=493 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=344 state=0
+I/SharedAudio( 4367): pcm peak=236 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=269 state=0
+I/SharedAudio( 4367): pcm peak=218 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=96 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.delta
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=116 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=19200
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=19200
+I/SharedAudio( 4367): pcm peak=114 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.delta
+I/RealtimeAudioProbe( 4367): audio_delta_bytes=16800
+I/RealtimeAudioProbe( 4367): audio_chunk_queued_bytes=16800
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio.done
+I/RealtimeAudioProbe( 4367): server_event=response.output_audio_transcript.done
+I/RealtimeAudioProbe( 4367): server_event=response.content_part.done
+I/RealtimeAudioProbe( 4367): server_event=conversation.item.done
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/RealtimeAudioProbe( 4367): server_event=response.output_item.done
+I/RealtimeAudioProbe( 4367): server_event=response.done
+I/RealtimeAudioProbe( 4367): response_done_received
+I/SharedAudio( 4367): pcm peak=153 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/RealtimeAudioProbe( 4367): server_event=rate_limits.updated
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=441 state=0
+I/SharedAudio( 4367): pcm peak=1005 state=0
+I/SharedAudio( 4367): pcm peak=1065 state=0
+I/SharedAudio( 4367): pcm peak=1087 state=0
+I/SharedAudio( 4367): pcm peak=847 state=0
+I/SharedAudio( 4367): pcm peak=739 state=0
+I/SharedAudio( 4367): pcm peak=756 state=0
+I/SharedAudio( 4367): pcm peak=875 state=0
+I/SharedAudio( 4367): pcm peak=810 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=1328 state=0
+I/SharedAudio( 4367): pcm peak=1472 state=0
+I/SharedAudio( 4367): pcm peak=1042 state=0
+I/SharedAudio( 4367): pcm peak=1104 state=0
+I/SharedAudio( 4367): pcm peak=1156 state=0
+I/SharedAudio( 4367): pcm peak=1052 state=0
+I/SharedAudio( 4367): pcm peak=752 state=0
+I/SharedAudio( 4367): pcm peak=765 state=0
+I/SharedAudio( 4367): pcm peak=946 state=0
+I/SharedAudio( 4367): pcm peak=860 state=0
+I/SharedAudio( 4367): pcm peak=845 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=1059 state=0
+I/SharedAudio( 4367): pcm peak=1094 state=0
+I/SharedAudio( 4367): pcm peak=1115 state=0
+I/SharedAudio( 4367): pcm peak=1058 state=0
+I/SharedAudio( 4367): pcm peak=1047 state=0
+I/SharedAudio( 4367): pcm peak=965 state=0
+I/SharedAudio( 4367): pcm peak=806 state=0
+I/SharedAudio( 4367): pcm peak=770 state=0
+I/SharedAudio( 4367): pcm peak=636 state=0
+I/SharedAudio( 4367): pcm peak=285 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=586 state=0
+I/SharedAudio( 4367): pcm peak=893 state=0
+I/SharedAudio( 4367): pcm peak=967 state=0
+I/SharedAudio( 4367): pcm peak=1391 state=0
+I/SharedAudio( 4367): pcm peak=1235 state=0
+I/SharedAudio( 4367): pcm peak=1099 state=0
+I/SharedAudio( 4367): pcm peak=603 state=0
+I/SharedAudio( 4367): pcm peak=652 state=0
+I/SharedAudio( 4367): pcm peak=386 state=0
+I/SharedAudio( 4367): pcm peak=340 state=0
+I/SharedAudio( 4367): pcm peak=214 state=0
+I/SharedAudio( 4367): pcm peak=179 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=264 state=0
+I/SharedAudio( 4367): pcm peak=654 state=0
+I/SharedAudio( 4367): pcm peak=852 state=0
+I/SharedAudio( 4367): pcm peak=953 state=0
+I/SharedAudio( 4367): pcm peak=907 state=0
+I/SharedAudio( 4367): pcm peak=859 state=0
+I/SharedAudio( 4367): pcm peak=794 state=0
+I/SharedAudio( 4367): pcm peak=199 state=0
+I/SharedAudio( 4367): pcm peak=487 state=0
+I/SharedAudio( 4367): pcm peak=170 state=0
+I/SharedAudio( 4367): pcm peak=169 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=656 state=0
+I/SharedAudio( 4367): pcm peak=1068 state=0
+I/SharedAudio( 4367): pcm peak=557 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=165 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=1237 state=0
+I/SharedAudio( 4367): pcm peak=1343 state=0
+I/SharedAudio( 4367): pcm peak=796 state=0
+I/SharedAudio( 4367): pcm peak=974 state=0
+I/SharedAudio( 4367): pcm peak=805 state=0
+I/SharedAudio( 4367): pcm peak=855 state=0
+I/SharedAudio( 4367): pcm peak=571 state=0
+I/SharedAudio( 4367): pcm peak=186 state=0
+I/SharedAudio( 4367): pcm peak=167 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=188 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=922 state=0
+I/SharedAudio( 4367): pcm peak=962 state=0
+I/SharedAudio( 4367): pcm peak=945 state=0
+I/SharedAudio( 4367): pcm peak=920 state=0
+I/SharedAudio( 4367): pcm peak=989 state=0
+I/SharedAudio( 4367): pcm peak=980 state=0
+I/SharedAudio( 4367): pcm peak=994 state=0
+I/SharedAudio( 4367): pcm peak=941 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=800 state=0
+I/SharedAudio( 4367): pcm peak=642 state=0
+I/SharedAudio( 4367): pcm peak=453 state=0
+I/SharedAudio( 4367): pcm peak=644 state=0
+I/SharedAudio( 4367): pcm peak=570 state=0
+I/SharedAudio( 4367): pcm peak=397 state=0
+I/SharedAudio( 4367): pcm peak=257 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=184 state=0
+I/SharedAudio( 4367): pcm peak=1132 state=0
+I/SharedAudio( 4367): pcm peak=1123 state=0
+I/SharedAudio( 4367): pcm peak=875 state=0
+I/SharedAudio( 4367): pcm peak=905 state=0
+I/SharedAudio( 4367): pcm peak=789 state=0
+I/SharedAudio( 4367): pcm peak=905 state=0
+I/SharedAudio( 4367): pcm peak=560 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=638 state=0
+I/SharedAudio( 4367): pcm peak=794 state=0
+I/SharedAudio( 4367): pcm peak=843 state=0
+I/SharedAudio( 4367): pcm peak=241 state=0
+I/SharedAudio( 4367): pcm peak=185 state=0
+I/SharedAudio( 4367): pcm peak=216 state=0
+I/SharedAudio( 4367): pcm peak=177 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=676 state=0
+I/SharedAudio( 4367): pcm peak=469 state=0
+I/SharedAudio( 4367): pcm peak=634 state=0
+I/SharedAudio( 4367): pcm peak=518 state=0
+I/SharedAudio( 4367): pcm peak=612 state=0
+I/SharedAudio( 4367): pcm peak=825 state=0
+I/SharedAudio( 4367): pcm peak=922 state=0
+I/SharedAudio( 4367): pcm peak=906 state=0
+I/SharedAudio( 4367): pcm peak=783 state=0
+I/SharedAudio( 4367): pcm peak=923 state=0
+I/SharedAudio( 4367): pcm peak=888 state=0
+I/SharedAudio( 4367): pcm peak=847 state=0
+I/SharedAudio( 4367): pcm peak=719 state=0
+I/SharedAudio( 4367): pcm peak=605 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=365 state=0
+I/SharedAudio( 4367): pcm peak=191 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=116 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=116 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=344 state=0
+I/SharedAudio( 4367): pcm peak=682 state=0
+I/SharedAudio( 4367): pcm peak=789 state=0
+I/SharedAudio( 4367): pcm peak=738 state=0
+I/SharedAudio( 4367): pcm peak=649 state=0
+I/SharedAudio( 4367): pcm peak=618 state=0
+I/SharedAudio( 4367): pcm peak=595 state=0
+I/SharedAudio( 4367): pcm peak=465 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=395 state=0
+I/SharedAudio( 4367): pcm peak=289 state=0
+I/SharedAudio( 4367): pcm peak=225 state=0
+I/SharedAudio( 4367): pcm peak=180 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=261 state=0
+I/SharedAudio( 4367): pcm peak=894 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=824 state=0
+I/SharedAudio( 4367): pcm peak=635 state=0
+I/SharedAudio( 4367): pcm peak=555 state=0
+I/SharedAudio( 4367): pcm peak=312 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=180 state=0
+W/PuckService( 4367): Connection failed: Failed to connect to /192.168.1.193:8787
+I/PuckService( 4367): disconnected reason=Relay unavailable retry_ms=16000
+I/SharedAudio( 4367): pcm peak=177 state=0
+I/SharedAudio( 4367): pcm peak=594 state=0
+I/SharedAudio( 4367): pcm peak=720 state=0
+I/SharedAudio( 4367): pcm peak=188 state=0
+I/SharedAudio( 4367): pcm peak=696 state=0
+I/SharedAudio( 4367): pcm peak=648 state=0
+I/SharedAudio( 4367): pcm peak=541 state=0
+I/SharedAudio( 4367): pcm peak=616 state=0
+I/SharedAudio( 4367): pcm peak=600 state=0
+I/SharedAudio( 4367): pcm peak=617 state=0
+I/SharedAudio( 4367): pcm peak=399 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=114 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=543 state=0
+I/SharedAudio( 4367): pcm peak=547 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=19200
+I/SharedAudio( 4367): pcm peak=615 state=0
+I/SharedAudio( 4367): pcm peak=672 state=0
+I/SharedAudio( 4367): pcm peak=890 state=0
+I/SharedAudio( 4367): pcm peak=914 state=0
+I/SharedAudio( 4367): pcm peak=854 state=0
+I/SharedAudio( 4367): pcm peak=856 state=0
+I/SharedAudio( 4367): pcm peak=837 state=0
+I/SharedAudio( 4367): pcm peak=812 state=0
+I/SharedAudio( 4367): pcm peak=655 state=0
+I/SharedAudio( 4367): pcm peak=408 state=0
+I/SharedAudio( 4367): pcm peak=904 state=0
+I/SharedAudio( 4367): pcm peak=816 state=0
+I/SharedAudio( 4367): pcm peak=856 state=0
+I/SharedAudio( 4367): pcm peak=829 state=0
+I/SharedAudio( 4367): pcm peak=870 state=0
+I/SharedAudio( 4367): pcm peak=561 state=0
+I/SharedAudio( 4367): pcm peak=581 state=0
+I/SharedAudio( 4367): pcm peak=485 state=0
+I/SharedAudio( 4367): pcm peak=426 state=0
+I/SharedAudio( 4367): pcm peak=318 state=0
+I/SharedAudio( 4367): pcm peak=312 state=0
+I/SharedAudio( 4367): pcm peak=184 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=19200
+I/RealtimeAudioProbe( 4367): playback_worker_started_bytes=16800
+I/SharedAudio( 4367): pcm peak=175 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/RealtimeAudioProbe( 4367): playback_worker_finished_bytes=16800
+I/RealtimeAudioProbe( 4367): playback_queue_drained
+I/RealtimeAudioProbe( 4367): final_turn_complete
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/RealtimeAudioProbe( 4367): closed code=1000 reason=audio probe complete
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=202 state=0
+I/SharedAudio( 4367): pcm peak=190 state=0
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=181 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=157 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=164 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=175 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=190 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=160 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=108 state=0
+I/SharedAudio( 4367): pcm peak=107 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=168 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=117 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=210 state=0
+I/SharedAudio( 4367): pcm peak=236 state=0
+I/SharedAudio( 4367): pcm peak=283 state=0
+I/SharedAudio( 4367): pcm peak=254 state=0
+I/SharedAudio( 4367): pcm peak=624 state=0
+I/SharedAudio( 4367): pcm peak=410 state=0
+I/SharedAudio( 4367): pcm peak=331 state=0
+I/SharedAudio( 4367): pcm peak=306 state=0
+I/SharedAudio( 4367): pcm peak=309 state=0
+I/SharedAudio( 4367): pcm peak=379 state=0
+I/SharedAudio( 4367): pcm peak=322 state=0
+I/SharedAudio( 4367): pcm peak=213 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=156 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=146 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=113 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=134 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=144 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=187 state=0
+I/SharedAudio( 4367): pcm peak=191 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=110 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=112 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=114 state=0
+I/SharedAudio( 4367): pcm peak=104 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=121 state=0
+I/SharedAudio( 4367): pcm peak=129 state=0
+I/SharedAudio( 4367): pcm peak=124 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=145 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=110 state=0
+I/SharedAudio( 4367): pcm peak=95 state=0
+I/SharedAudio( 4367): pcm peak=133 state=0
+I/SharedAudio( 4367): pcm peak=109 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=135 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=166 state=0
+I/SharedAudio( 4367): pcm peak=172 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=126 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=170 state=0
+I/SharedAudio( 4367): pcm peak=178 state=0
+I/SharedAudio( 4367): pcm peak=173 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=139 state=0
+I/SharedAudio( 4367): pcm peak=151 state=0
+I/SharedAudio( 4367): pcm peak=171 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=150 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=156 state=0
+I/SharedAudio( 4367): pcm peak=207 state=0
+I/SharedAudio( 4367): pcm peak=197 state=0
+I/SharedAudio( 4367): pcm peak=156 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=152 state=0
+I/SharedAudio( 4367): pcm peak=161 state=0
+I/SharedAudio( 4367): pcm peak=137 state=0
+I/SharedAudio( 4367): pcm peak=148 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=154 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=172 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=140 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=130 state=0
+I/SharedAudio( 4367): pcm peak=138 state=0
+I/SharedAudio( 4367): pcm peak=122 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=128 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=158 state=0
+I/SharedAudio( 4367): pcm peak=179 state=0
+I/SharedAudio( 4367): pcm peak=159 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=132 state=0
+I/SharedAudio( 4367): pcm peak=141 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=125 state=0
+I/SharedAudio( 4367): pcm peak=155 state=0
+I/SharedAudio( 4367): pcm peak=149 state=0
+I/SharedAudio( 4367): pcm peak=163 state=0
+I/SharedAudio( 4367): pcm peak=142 state=0
+I/SharedAudio( 4367): pcm peak=147 state=0
+I/SharedAudio( 4367): pcm peak=123 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=118 state=0
+I/SharedAudio( 4367): pcm peak=111 state=0
+I/SharedAudio( 4367): pcm peak=120 state=0
+I/SharedAudio( 4367): pcm peak=136 state=0
+I/SharedAudio( 4367): pcm peak=115 state=0
+I/SharedAudio( 4367): pcm peak=119 state=0
+I/SharedAudio( 4367): pcm peak=143 state=0
+I/SharedAudio( 4367): pcm peak=127 state=0
+I/SharedAudio( 4367): pcm peak=107 state=0
+I/SharedAudio( 4367): pcm peak=131 state=0
+I/SharedAudio( 4367): pcm peak=180 state=0

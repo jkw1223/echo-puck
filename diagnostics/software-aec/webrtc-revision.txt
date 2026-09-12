@@ -1,0 +1,6 @@
+repository=https://webrtc.googlesource.com/src
+commit=d9ec82c89d94c319e2a1f547c1bdd58591828455
+resolved=2026-09-12 America/Chicago via git ls-remote
+external_checkout=C:\Users\Home\webrtc-apm-build\src
+sync_status=interrupted during gclient dependency sync; main src checkout is pinned, third_party sync is incomplete
+sync_blocker=standard Chromium third_party dependency clone is approximately 7.82 GiB and required repeated full clone work on this Windows host; no APM build attempted

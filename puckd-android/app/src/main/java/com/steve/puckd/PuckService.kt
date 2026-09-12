@@ -34,6 +34,10 @@ class PuckService : Service() {
     private var wake: WakeWordClient? = null
     private val wakeExec = Executors.newSingleThreadExecutor()
     @Volatile private var wakeRunning = false
+    private val statusPrefs by lazy { getSharedPreferences("puck_status", MODE_PRIVATE) }
+    private val statusListener = android.content.SharedPreferences.OnSharedPreferenceChangeListener { _, key ->
+        if (key == "transport") syncRelayMode()
+    }
 
     override fun onCreate() {
         super.onCreate()
@@ -48,20 +52,68 @@ class PuckService : Service() {
         getSystemService(NotificationManager::class.java).createNotificationChannel(
             NotificationChannel("puckd", "Puck connection", NotificationManager.IMPORTANCE_LOW))
         startForeground(1001, notification("Connecting"))
+        statusPrefs.registerOnSharedPreferenceChangeListener(statusListener)
         startLocalWakeListener()
-        connect()
+        syncRelayMode()
     }
 
     private fun startLocalWakeListener() {
         if (wakeRunning) return
         wakeRunning = true
-        getSharedPreferences("puck_status", MODE_PRIVATE).edit().putString("wakeState", "Wake word ready · local").apply()
+        getSharedPreferences("puck_status", MODE_PRIVATE).edit().putString("wakeState", "Wake word ready · local").putBoolean("wakeArmed", true).apply()
         wakeExec.execute {
             try {
                 val bytes=assets.open("microwakeword/hey_jarvis.tflite").use{it.readBytes()}; val model=ByteBuffer.allocateDirect(bytes.size).order(ByteOrder.nativeOrder()); model.put(bytes); model.rewind()
-                val detector=MicroWakeWord(model,10,0.97f,5)
+                var detector=MicroWakeWord(model,10,0.97f,5)
+                var detectorCutoff=0.97f
+                var detectorWindow=5
+                var probationUntil=0L
+                Log.i(TAG,"wake_frame_ms=10 wake_cutoff=0.97 wake_window_frames=5")
                 var cooldownUntil = 0L
-                val listener: (ShortArray)->Unit = { frame -> if (wakeRunning && SystemClock.elapsedRealtime() >= cooldownUntil && !getSharedPreferences("puck_status", MODE_PRIVATE).getBoolean("wakePending", false) && detector.processAudio(frame)) { Log.i(TAG,"microWakeWord DETECTED; handing off to turn"); getSharedPreferences("puck_status",MODE_PRIVATE).edit().putBoolean("wakePending",true).putString("wakeState","Hey Jarvis heard you").apply(); sendBroadcast(Intent("com.steve.puckd.WAKE")); detector.reset(); cooldownUntil = SystemClock.elapsedRealtime() + 2500 } }
+                var wasArmed = true
+                var playbackWakeFrames = 0L
+                var playbackWakeEvaluations = 0L
+                var playbackWakeLastLog = SystemClock.elapsedRealtime()
+                val listener: (ShortArray)->Unit = { frame ->
+                    val prefs=getSharedPreferences("puck_status", MODE_PRIVATE); val now=SystemClock.elapsedRealtime(); val armed=prefs.getBoolean("wakeArmed", true)
+                    val playbackMode = prefs.getString("wakeMode", "idle") == "playback"
+                    if (playbackMode) {
+                        var sum = 0.0
+                        frame.forEach { sample -> sum += sample.toDouble() * sample.toDouble() }
+                        val rms = kotlin.math.sqrt(sum / frame.size).toInt()
+                        playbackWakeFrames++
+                        if (now - playbackWakeLastLog >= 1000L) {
+                            Log.i(TAG, "playback_mic_rms=$rms playback_wake_mode=true")
+                            Log.i(TAG, "playback_wake_frames_received=$playbackWakeFrames playback_wake_evaluations=$playbackWakeEvaluations")
+                            playbackWakeFrames = 0L; playbackWakeEvaluations = 0L; playbackWakeLastLog = now
+                        }
+                    }
+                    if (playbackMode && detectorCutoff != 0.99f) {
+                        detector.close()
+                        detector = MicroWakeWord(model, 10, 0.99f, 8)
+                        detectorCutoff = 0.99f; detectorWindow = 8; probationUntil = 0L
+                        Log.i(TAG, "wake_mode=playback wake_frame_ms=10 wake_cutoff=0.99 wake_required_hits=8")
+                    } else if (!playbackMode && armed && !wasArmed) {
+                        detector.close(); detector=MicroWakeWord(model,10,0.99f,8); detectorCutoff=0.99f; detectorWindow=8; probationUntil=now+3000L
+                        Log.i(TAG,"wake_detector_reset"); Log.i(TAG,"wake_probation_begin cutoff=0.99 required_hits=8 duration_ms=3000")
+                    }
+                    if (!playbackMode && armed && probationUntil>0L && now>=probationUntil && detectorCutoff!=0.97f) {
+                        detector.close(); detector=MicroWakeWord(model,10,0.97f,5); detectorCutoff=0.97f; detectorWindow=5; probationUntil=0L
+                        Log.i(TAG,"wake_mode=idle wake_frame_ms=10 wake_cutoff=0.97 wake_required_hits=5")
+                    }
+                    wasArmed=armed
+                    if (playbackMode && armed) playbackWakeEvaluations++
+                    if (wakeRunning && armed && now >= cooldownUntil && !prefs.getBoolean("wakePending", false) && detector.processAudio(frame)) {
+                        Log.i(TAG,"wake_detected=true wake_score=unavailable wake_cutoff=$detectorCutoff wake_window_hits=$detectorWindow")
+                        if (probationUntil>now) {
+                            Log.i(TAG,"wake_candidate_rejected reason=post_rearm_probation")
+                            detector.reset()
+                        } else {
+                            Log.i(TAG,"microWakeWord DETECTED; handing off to turn")
+                            prefs.edit().putBoolean("wakePending",true).putBoolean("wakeArmed",false).putString("wakeState","Hey Jarvis heard you").apply(); sendBroadcast(Intent("com.steve.puckd.WAKE")); detector.reset(); cooldownUntil = now + 2500L
+                        }
+                    }
+                }
                 SharedAudioCapture.subscribe(listener)
                 Log.i(TAG,"microWakeWord armed on shared microphone stream")
                 while (wakeRunning && !stopped) Thread.sleep(250)
@@ -72,6 +124,12 @@ class PuckService : Service() {
 
     private fun connect() {
         if (stopped || socket != null) return
+        if (statusPrefs.getString("transport", "relay") == "realtime") {
+            Log.i(TAG, "transport=realtime relay disabled")
+            update("Offline", "Direct Realtime transport selected")
+            return
+        }
+        Log.i(TAG, "transport=relay connecting to relay")
         update("Connecting", "Waiting for the relay")
         socket = client.newWebSocket(Request.Builder().url(BuildConfig.RELAY_URL).build(),
             object : WebSocketListener() {
@@ -158,10 +216,29 @@ class PuckService : Service() {
         mediaToken = ""
         old?.cancel()
         if (stopped) return
+        if (statusPrefs.getString("transport", "relay") == "realtime") {
+            Log.i(TAG, "transport=realtime relay disabled")
+            update("Offline", "Direct Realtime transport selected")
+            return
+        }
         val delay = minOf(30_000L, 2_000L * (1L shl minOf(attempt++, 4)))
         update("Offline", "$reason · retry in ${delay / 1000}s")
         Log.i(TAG, "disconnected reason=$reason retry_ms=$delay")
         handler.postDelayed(reconnect, delay)
+    }
+
+    private fun syncRelayMode() {
+        if (statusPrefs.getString("transport", "relay") == "realtime") {
+            handler.removeCallbacks(reconnect)
+            if (socket != null) disconnect("Transport switched to realtime")
+            else {
+                Log.i(TAG, "transport=realtime relay disabled")
+                update("Offline", "Direct Realtime transport selected")
+            }
+        } else if (!stopped && socket == null) {
+            Log.i(TAG, "transport=relay connecting to relay")
+            connect()
+        }
     }
 
     private fun notification(status: String): Notification = NotificationCompat.Builder(this, "puckd")
@@ -184,6 +261,7 @@ class PuckService : Service() {
     override fun onBind(intent: Intent?): IBinder? = null
     override fun onDestroy() {
         stopped = true
+        statusPrefs.unregisterOnSharedPreferenceChangeListener(statusListener)
         handler.removeCallbacksAndMessages(null)
         socket?.cancel()
         socket = null

@@ -5,6 +5,7 @@ interface TurnTransport {
     val busy: Boolean
     val recording: Boolean
     fun start()
+    fun start(initialPcm: ShortArray?) { start() }
     fun finish()
     fun cancel()
     fun connectionChanged(token: String)

@@ -1,0 +1,170 @@
+--------- beginning of main
+09-11 11:31:58.141 I/HandsFree( 8596): eos_noise_floor=72 eos_speech_threshold=400
+09-11 11:31:58.146 I/RealtimeTransport( 8596): seq=event turn=rt-3-1789144317734 server_event=session.updated thread=OkHttp https://api.openai.com/...
+09-11 11:31:58.147 I/RealtimeTransport( 8596): full_payload turn=rt-3-1789144317734 {"type":"session.updated","event_id":"event_EMySMvZdyYDQakw5Wc767","session":{"type":"realtime","object":"realtime.session","id":"sess_EMySMO4rWoMDjHWI5S8Fo","model":"gpt-realtime-2.1","output_modalities":["audio"],"instructions":"Speak in a clear, natural conversational male voice. Keep the pitch in a normal mid-range, not unusually deep or boomy. Use crisp articulation and a slightly brisk conversational pace. Avoid a slow announcer cadence or exaggerated bass-heavy delivery. Sound relaxed, intelligent, and informal.\n\nRecent conversation context. Use it only to resolve references and maintain continuity:\nUser: Tell me about Apollo 11.\nSteve: Apollo11 was the first mission that landed humans on the Moon. It was launched by NASA in July1969 with three astronauts: Neil Armstrong, Buzz Aldrin, and Michael Collins.\n\nArmstrong and Aldrin descended to the surface in the lunar module, Eagle, while Collins stayed in orbit. Armstrong became the first person to step onto the Moon, followed by Aldrin, and they spent about two and a half hours outside, collecting samples and setting up experiments.They returned safely to Earth, fulfilling President Kennedy’s goal and marking a huge milestone in human exploration.","tools":[],"tool_choice":"auto","max_output_tokens":"inf","tracing":null,"truncation":"auto","prompt":null,"expires_at":1789147918,"audio":{"input":{"format":{"type":"audio/pcm","rate":24000},"transcription":{"model":"gpt-4o-mini-transcribe","language":null,"prompt":null},"noise_reduction":null,"turn_detection":null},"output":{"format":{"type":"audio/pcm","rate":24000},"voice":"ash","speed":1.0}},"include":null}}
+09-11 11:31:58.150 I/RealtimeTransport( 8596): server_session_config turn=rt-3-1789144317734 type=session.updated voice=null audio={"input":{"format":{"type":"audio\/pcm","rate":24000},"transcription":{"model":"gpt-4o-mini-transcribe","language":null,"prompt":null},"noise_reduction":null,"turn_detection":null},"output":{"format":{"type":"audio\/pcm","rate":24000},"voice":"ash","speed":1}} output_modalities=["audio"]
+09-11 11:31:58.150 I/RealtimeTransport( 8596): session.session.updated.audio.output.voice=ash turn=rt-3-1789144317734
+09-11 11:31:58.250 I/HandsFree( 8596): speech_rms=64 speech_started=false silence_ms=0
+09-11 11:31:58.425 I/HandsFree( 8596): speech_rms=56 speech_started=false silence_ms=0
+09-11 11:31:58.595 I/HandsFree( 8596): speech_rms=63 speech_started=false silence_ms=0
+09-11 11:31:58.765 I/HandsFree( 8596): speech_rms=63 speech_started=false silence_ms=0
+09-11 11:31:58.924 I/HandsFree( 8596): speech_rms=81 speech_started=false silence_ms=0
+09-11 11:31:59.083 I/HandsFree( 8596): speech_rms=44 speech_started=false silence_ms=0
+09-11 11:31:59.249 I/HandsFree( 8596): speech_rms=75 speech_started=false silence_ms=0
+09-11 11:31:59.430 I/HandsFree( 8596): speech_rms=56 speech_started=false silence_ms=0
+09-11 11:31:59.633 I/HandsFree( 8596): speech_rms=47 speech_started=false silence_ms=0
+09-11 11:31:59.780 I/HandsFree( 8596): speech_rms=44 speech_started=false silence_ms=0
+09-11 11:31:59.939 I/HandsFree( 8596): speech_rms=56 speech_started=false silence_ms=0
+09-11 11:32:00.096 I/HandsFree( 8596): speech_rms=44 speech_started=false silence_ms=0
+09-11 11:32:00.257 I/HandsFree( 8596): speech_rms=38 speech_started=false silence_ms=0
+09-11 11:32:00.427 I/HandsFree( 8596): speech_rms=40 speech_started=false silence_ms=0
+09-11 11:32:00.583 I/HandsFree( 8596): speech_rms=38 speech_started=false silence_ms=0
+09-11 11:32:00.744 I/HandsFree( 8596): speech_rms=36 speech_started=false silence_ms=0
+09-11 11:32:00.902 I/HandsFree( 8596): speech_rms=59 speech_started=false silence_ms=0
+09-11 11:32:01.062 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:01.229 I/HandsFree( 8596): speech_rms=51 speech_started=false silence_ms=0
+09-11 11:32:01.382 I/HandsFree( 8596): speech_rms=56 speech_started=false silence_ms=0
+09-11 11:32:01.543 I/HandsFree( 8596): speech_rms=51 speech_started=false silence_ms=0
+09-11 11:32:01.703 I/HandsFree( 8596): speech_rms=51 speech_started=false silence_ms=0
+09-11 11:32:01.863 I/HandsFree( 8596): speech_rms=47 speech_started=false silence_ms=0
+09-11 11:32:02.033 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:02.184 I/HandsFree( 8596): speech_rms=53 speech_started=false silence_ms=0
+09-11 11:32:02.346 I/HandsFree( 8596): speech_rms=79 speech_started=false silence_ms=0
+09-11 11:32:02.508 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:02.661 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:02.814 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:02.972 I/HandsFree( 8596): speech_rms=55 speech_started=false silence_ms=0
+09-11 11:32:03.138 I/HandsFree( 8596): speech_rms=50 speech_started=false silence_ms=0
+09-11 11:32:03.299 I/HandsFree( 8596): speech_rms=55 speech_started=false silence_ms=0
+09-11 11:32:03.465 I/HandsFree( 8596): speech_rms=53 speech_started=false silence_ms=0
+09-11 11:32:03.620 I/HandsFree( 8596): speech_rms=58 speech_started=false silence_ms=0
+09-11 11:32:03.779 I/HandsFree( 8596): speech_rms=81 speech_started=false silence_ms=0
+09-11 11:32:03.938 I/HandsFree( 8596): speech_rms=55 speech_started=false silence_ms=0
+09-11 11:32:04.096 I/HandsFree( 8596): speech_rms=91 speech_started=false silence_ms=0
+09-11 11:32:04.261 I/HandsFree( 8596): speech_rms=59 speech_started=false silence_ms=0
+09-11 11:32:04.420 I/HandsFree( 8596): speech_rms=40 speech_started=false silence_ms=0
+09-11 11:32:04.579 I/HandsFree( 8596): speech_rms=122 speech_started=false silence_ms=0
+09-11 11:32:04.741 I/HandsFree( 8596): speech_rms=58 speech_started=false silence_ms=0
+09-11 11:32:04.904 I/HandsFree( 8596): speech_rms=36 speech_started=false silence_ms=0
+09-11 11:32:05.078 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:05.242 I/HandsFree( 8596): speech_rms=36 speech_started=false silence_ms=0
+09-11 11:32:05.398 I/HandsFree( 8596): speech_rms=37 speech_started=false silence_ms=0
+09-11 11:32:05.558 I/HandsFree( 8596): speech_rms=39 speech_started=false silence_ms=0
+09-11 11:32:05.718 I/HandsFree( 8596): speech_rms=44 speech_started=false silence_ms=0
+09-11 11:32:05.885 I/HandsFree( 8596): speech_rms=83 speech_started=false silence_ms=0
+09-11 11:32:06.047 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:06.202 I/HandsFree( 8596): speech_rms=75 speech_started=false silence_ms=0
+09-11 11:32:06.362 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:06.522 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:06.682 I/HandsFree( 8596): speech_rms=47 speech_started=false silence_ms=0
+09-11 11:32:06.851 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:07.020 I/HandsFree( 8596): speech_rms=86 speech_started=false silence_ms=0
+09-11 11:32:07.185 I/HandsFree( 8596): speech_rms=63 speech_started=false silence_ms=0
+09-11 11:32:07.345 I/HandsFree( 8596): speech_rms=77 speech_started=false silence_ms=0
+09-11 11:32:07.538 I/HandsFree( 8596): speech_rms=65 speech_started=false silence_ms=0
+09-11 11:32:07.697 I/HandsFree( 8596): speech_rms=53 speech_started=false silence_ms=0
+09-11 11:32:07.858 I/HandsFree( 8596): speech_rms=93 speech_started=false silence_ms=0
+09-11 11:32:08.018 I/HandsFree( 8596): speech_rms=74 speech_started=false silence_ms=0
+09-11 11:32:08.179 I/HandsFree( 8596): speech_rms=62 speech_started=false silence_ms=0
+09-11 11:32:08.341 I/HandsFree( 8596): speech_rms=65 speech_started=false silence_ms=0
+09-11 11:32:08.497 I/HandsFree( 8596): speech_rms=51 speech_started=false silence_ms=0
+09-11 11:32:08.658 I/HandsFree( 8596): speech_rms=50 speech_started=false silence_ms=0
+09-11 11:32:08.818 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:08.979 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:09.146 I/HandsFree( 8596): speech_rms=63 speech_started=false silence_ms=0
+09-11 11:32:09.304 I/HandsFree( 8596): speech_rms=75 speech_started=false silence_ms=0
+09-11 11:32:09.465 I/HandsFree( 8596): speech_rms=43 speech_started=false silence_ms=0
+09-11 11:32:09.624 I/HandsFree( 8596): speech_rms=34 speech_started=false silence_ms=0
+09-11 11:32:09.783 I/HandsFree( 8596): speech_rms=45 speech_started=false silence_ms=0
+09-11 11:32:09.949 I/HandsFree( 8596): speech_rms=45 speech_started=false silence_ms=0
+09-11 11:32:10.103 I/HandsFree( 8596): speech_rms=42 speech_started=false silence_ms=0
+09-11 11:32:10.269 I/HandsFree( 8596): speech_rms=50 speech_started=false silence_ms=0
+09-11 11:32:10.429 I/HandsFree( 8596): speech_rms=40 speech_started=false silence_ms=0
+09-11 11:32:10.587 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:10.761 I/HandsFree( 8596): speech_rms=103 speech_started=false silence_ms=0
+09-11 11:32:10.927 I/HandsFree( 8596): speech_rms=60 speech_started=false silence_ms=0
+09-11 11:32:11.101 I/HandsFree( 8596): speech_rms=58 speech_started=false silence_ms=0
+09-11 11:32:11.258 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:11.425 I/HandsFree( 8596): speech_rms=59 speech_started=false silence_ms=0
+09-11 11:32:11.586 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:11.777 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:11.939 I/HandsFree( 8596): speech_rms=60 speech_started=false silence_ms=0
+09-11 11:32:12.098 I/HandsFree( 8596): speech_rms=67 speech_started=false silence_ms=0
+09-11 11:32:12.258 I/HandsFree( 8596): speech_rms=67 speech_started=false silence_ms=0
+09-11 11:32:12.418 I/HandsFree( 8596): speech_rms=93 speech_started=false silence_ms=0
+09-11 11:32:12.580 I/HandsFree( 8596): speech_rms=61 speech_started=false silence_ms=0
+09-11 11:32:12.742 I/HandsFree( 8596): speech_rms=90 speech_started=false silence_ms=0
+09-11 11:32:12.902 I/HandsFree( 8596): speech_rms=76 speech_started=false silence_ms=0
+09-11 11:32:13.058 I/HandsFree( 8596): speech_rms=83 speech_started=false silence_ms=0
+09-11 11:32:13.224 I/HandsFree( 8596): speech_rms=47 speech_started=false silence_ms=0
+09-11 11:32:13.385 I/HandsFree( 8596): speech_rms=81 speech_started=false silence_ms=0
+09-11 11:32:13.544 I/HandsFree( 8596): speech_rms=48 speech_started=false silence_ms=0
+09-11 11:32:13.706 I/HandsFree( 8596): speech_rms=50 speech_started=false silence_ms=0
+09-11 11:32:13.863 I/HandsFree( 8596): speech_rms=35 speech_started=false silence_ms=0
+09-11 11:32:14.028 I/HandsFree( 8596): speech_rms=64 speech_started=false silence_ms=0
+09-11 11:32:14.188 I/HandsFree( 8596): speech_rms=43 speech_started=false silence_ms=0
+09-11 11:32:14.348 I/HandsFree( 8596): speech_rms=45 speech_started=false silence_ms=0
+09-11 11:32:14.515 I/HandsFree( 8596): speech_rms=71 speech_started=false silence_ms=0
+09-11 11:32:14.665 I/HandsFree( 8596): speech_rms=45 speech_started=false silence_ms=0
+09-11 11:32:14.825 I/HandsFree( 8596): speech_rms=48 speech_started=false silence_ms=0
+09-11 11:32:14.993 I/HandsFree( 8596): speech_rms=43 speech_started=false silence_ms=0
+09-11 11:32:15.151 I/HandsFree( 8596): speech_rms=42 speech_started=false silence_ms=0
+09-11 11:32:15.324 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:15.494 I/HandsFree( 8596): speech_rms=56 speech_started=false silence_ms=0
+09-11 11:32:15.649 I/HandsFree( 8596): speech_rms=48 speech_started=false silence_ms=0
+09-11 11:32:15.817 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:15.970 I/HandsFree( 8596): speech_rms=50 speech_started=false silence_ms=0
+09-11 11:32:16.130 I/HandsFree( 8596): speech_rms=61 speech_started=false silence_ms=0
+09-11 11:32:16.288 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:16.454 I/HandsFree( 8596): speech_rms=59 speech_started=false silence_ms=0
+09-11 11:32:16.618 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:16.771 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:16.921 I/HandsFree( 8596): speech_rms=55 speech_started=false silence_ms=0
+09-11 11:32:17.076 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:17.228 I/HandsFree( 8596): speech_rms=48 speech_started=false silence_ms=0
+09-11 11:32:17.381 I/HandsFree( 8596): speech_rms=53 speech_started=false silence_ms=0
+09-11 11:32:17.540 I/HandsFree( 8596): speech_rms=46 speech_started=false silence_ms=0
+09-11 11:32:17.706 I/HandsFree( 8596): speech_rms=41 speech_started=false silence_ms=0
+09-11 11:32:17.864 I/HandsFree( 8596): speech_rms=46 speech_started=false silence_ms=0
+09-11 11:32:18.025 I/HandsFree( 8596): speech_rms=39 speech_started=false silence_ms=0
+09-11 11:32:18.184 I/HandsFree( 8596): speech_rms=38 speech_started=false silence_ms=0
+09-11 11:32:18.344 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:18.510 I/HandsFree( 8596): speech_rms=49 speech_started=false silence_ms=0
+09-11 11:32:18.668 I/HandsFree( 8596): speech_rms=40 speech_started=false silence_ms=0
+09-11 11:32:18.829 I/HandsFree( 8596): speech_rms=38 speech_started=false silence_ms=0
+09-11 11:32:18.987 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:19.146 I/HandsFree( 8596): speech_rms=67 speech_started=false silence_ms=0
+09-11 11:32:19.312 I/HandsFree( 8596): speech_rms=47 speech_started=false silence_ms=0
+09-11 11:32:19.473 I/HandsFree( 8596): speech_rms=36 speech_started=false silence_ms=0
+09-11 11:32:19.633 I/HandsFree( 8596): speech_rms=93 speech_started=false silence_ms=0
+09-11 11:32:19.811 I/HandsFree( 8596): speech_rms=59 speech_started=false silence_ms=0
+09-11 11:32:19.970 I/HandsFree( 8596): speech_rms=48 speech_started=false silence_ms=0
+09-11 11:32:20.137 I/HandsFree( 8596): speech_rms=79 speech_started=false silence_ms=0
+09-11 11:32:20.291 I/HandsFree( 8596): speech_rms=78 speech_started=false silence_ms=0
+09-11 11:32:20.454 I/HandsFree( 8596): speech_rms=111 speech_started=false silence_ms=0
+09-11 11:32:20.608 I/HandsFree( 8596): speech_rms=68 speech_started=false silence_ms=0
+09-11 11:32:20.768 I/HandsFree( 8596): speech_rms=81 speech_started=false silence_ms=0
+09-11 11:32:20.941 I/HandsFree( 8596): speech_rms=69 speech_started=false silence_ms=0
+09-11 11:32:21.093 I/HandsFree( 8596): speech_rms=57 speech_started=false silence_ms=0
+09-11 11:32:21.257 I/HandsFree( 8596): speech_rms=60 speech_started=false silence_ms=0
+09-11 11:32:21.412 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:21.577 I/HandsFree( 8596): speech_rms=58 speech_started=false silence_ms=0
+09-11 11:32:21.743 I/HandsFree( 8596): speech_rms=54 speech_started=false silence_ms=0
+09-11 11:32:21.895 I/HandsFree( 8596): speech_rms=52 speech_started=false silence_ms=0
+09-11 11:32:22.056 I/HandsFree( 8596): speech_rms=55 speech_started=false silence_ms=0
+09-11 11:32:22.215 I/HandsFree( 8596): speech_rms=74 speech_started=false silence_ms=0
+09-11 11:32:22.375 I/HandsFree( 8596): speech_rms=60 speech_started=false silence_ms=0
+09-11 11:32:22.535 I/HandsFree( 8596): speech_rms=74 speech_started=false silence_ms=0
+09-11 11:32:22.697 I/HandsFree( 8596): speech_rms=42 speech_started=false silence_ms=0
+09-11 11:32:22.750 I/HandsFree( 8596): end_of_speech reason=no_speech_timeout
+09-11 11:32:22.750 I/HandsFree( 8596): turn_state LISTENING -> REARMING reason=no_speech_timeout
+09-11 11:32:22.811 I/RealtimeTransport( 8596): stale_playback_worker_stopped generation=5
+09-11 11:32:22.811 I/RealtimeTransport( 8596): transport_cancelled generation=6
+09-11 11:32:22.811 I/HandsFree( 8596): wake_rearm_begin
+09-11 11:32:22.812 I/RealtimeTransport( 8596): stale_failure_ignored generation=5
+09-11 11:32:22.812 I/HandsFree( 8596): wake_guard_ms=1200
+09-11 11:32:24.014 I/HandsFree( 8596): wake_subscription_active
+09-11 11:32:24.014 I/HandsFree( 8596): turn_state REARMING -> WAKE_ARMED reason=wake_subscription_active
+09-11 11:32:24.031 I/PuckService( 8596): wake_detector_reset
+09-11 11:32:24.031 I/PuckService( 8596): wake_probation_begin cutoff=0.99 required_hits=8 duration_ms=3000
+09-11 11:32:27.052 I/PuckService( 8596): wake_mode=idle wake_frame_ms=10 wake_cutoff=0.97 wake_required_hits=5

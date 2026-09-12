@@ -1,0 +1,36 @@
+--------- beginning of main
+--------- beginning of system
+I/PuckService( 5781): transport=realtime relay disabled
+I/PuckService( 5781): microWakeWord armed on shared microphone stream
+E/PuckService( 5781): native wake probe failed
+E/PuckService( 5781): java.io.FileNotFoundException: wakeword/wake-sample.wav
+E/PuckService( 5781): 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+E/PuckService( 5781): 	at android.content.res.AssetManager.open(AssetManager.java:876)
+E/PuckService( 5781): 	at android.content.res.AssetManager.open(AssetManager.java:853)
+E/PuckService( 5781): 	at com.steve.puckd.PuckService.onCreate$lambda$8(PuckService.kt:47)
+E/PuckService( 5781): 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+E/PuckService( 5781): 	at java.lang.Thread.run(Thread.java:923)
+--------- beginning of main
+--------- beginning of system
+I/PuckService( 5866): transport=realtime relay disabled
+I/PuckService( 5866): microWakeWord armed on shared microphone stream
+E/PuckService( 5866): native wake probe failed
+E/PuckService( 5866): java.io.FileNotFoundException: wakeword/wake-sample.wav
+E/PuckService( 5866): 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+E/PuckService( 5866): 	at android.content.res.AssetManager.open(AssetManager.java:876)
+E/PuckService( 5866): 	at android.content.res.AssetManager.open(AssetManager.java:853)
+E/PuckService( 5866): 	at com.steve.puckd.PuckService.onCreate$lambda$8(PuckService.kt:47)
+E/PuckService( 5866): 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+E/PuckService( 5866): 	at java.lang.Thread.run(Thread.java:923)
+--------- beginning of main
+--------- beginning of system
+I/PuckService( 5945): transport=realtime relay disabled
+I/PuckService( 5945): microWakeWord armed on shared microphone stream
+E/PuckService( 5945): native wake probe failed
+E/PuckService( 5945): java.io.FileNotFoundException: wakeword/wake-sample.wav
+E/PuckService( 5945): 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+E/PuckService( 5945): 	at android.content.res.AssetManager.open(AssetManager.java:876)
+E/PuckService( 5945): 	at android.content.res.AssetManager.open(AssetManager.java:853)
+E/PuckService( 5945): 	at com.steve.puckd.PuckService.onCreate$lambda$8(PuckService.kt:47)
+E/PuckService( 5945): 	at com.steve.puckd.PuckService$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+E/PuckService( 5945): 	at java.lang.Thread.run(Thread.java:923)

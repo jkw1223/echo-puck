@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="wakeState">Wake word ready · local</string>
+    <string name="realtime_voice">ash</string>
+    <string name="session">a8e21903-a13b-491d-aba4-87a0e48f963b</string>
+    <string name="mediaToken"></string>
+    <string name="transport">realtime</string>
+    <string name="state">Offline</string>
+    <string name="detail">Direct Realtime transport selected</string>
+    <long name="updatedElapsed" value="97890290" />
+    <string name="replyMode">fixture</string>
+    <boolean name="wakePending" value="false" />
+</map>

@@ -1,0 +1,14 @@
+
+I/HandsFree( 6298): end_of_speech reason=max_utterance_timeout
+I/HandsFree( 6298): turn_state LISTENING -> PROCESSING reason=end_of_speech
+I/RealtimeTransport( 6298): input_pcm_bytes=800000
+I/HandsFree( 6298): turn_state PROCESSING -> SPEAKING reason=response_audio_started
+I/RealtimeTransport( 6298): playback_queue_drained
+I/HandsFree( 6298): turn_state SPEAKING -> REARMING reason=playback_complete
+I/HandsFree( 6298): turn_state REARMING -> WAKE_ARMED reason=wake_subscription_active
+I/RealtimeTransport( 6298): final_turn_complete
+I/PuckService( 6298): microWakeWord DETECTED; handing off to turn
+I/HandsFree( 6298): turn_state WAKE_ARMED -> LISTENING reason=wake_detected
+I/RealtimeTransport( 6298): configured_voice=ash turn=rt-2-1789096453516
+I/RealtimeTransport( 6298): session.session.updated.audio.output.voice=ash turn=rt-2-1789096453516
+

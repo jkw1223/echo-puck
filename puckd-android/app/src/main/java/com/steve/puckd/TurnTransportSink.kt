@@ -7,4 +7,5 @@ interface TurnTransportSink {
     fun onResponseText(textDelta: String) {}
     fun onResponseCompleted() {}
     fun onTransportError(error: Throwable) {}
+    fun onResponseAudioStarted() {}
 }

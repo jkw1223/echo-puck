@@ -1,0 +1,1357 @@
+--------- beginning of main
+09-09 22:34:07.739   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.740   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.740  3168  3205 I chatty  : uid=10149(com.steve.puckd) expire 2 lines
+09-09 22:34:07.751   250   419 D AudioALSAStreamManager: +openInputStream()
+09-09 22:34:07.751   250   419 D AudioALSAStreamManager: openInputStream(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, status = 78, acoustics = 0x0
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: AudioALSAStreamIn()
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: set(), devices = 0x80000004, format = 0x1, channels = 0x10, sampleRate = 16000, acoustics = 0x0, flags = 0
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: +CheckBesRecordInfo()
+09-09 22:34:07.751   250   419 D AudioSpeechEnhanceInfo: GetBesRecScene() -1
+09-09 22:34:07.751   250   419 D AudioSpeechEnhanceInfo: IsBesRecTuningEnable()- 0
+09-09 22:34:07.751   250   419 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:07.751   250   419 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:07.751   250   419 D AudioSpeechEnhanceInfo: GetForceMagiASRState(), feature_support=12098280, 0, mForceMagiASR=0
+09-09 22:34:07.751   250   419 D AudioSpeechEnhanceInfo: GetForceAECRecState(), mForceAECRec=0
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: -CheckBesRecordInfo()
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: checkOpenStreamSampleRate(), origin sampleRate 16000, kDefaultInputSourceSampleRate 48000.
+09-09 22:34:07.751   250   419 D AudioALSAStreamIn: set() done, sampleRate = 16000, num_channels = 1, buffer_size=640
+09-09 22:34:07.751   250   419 D AudioALSAStreamManager: -openInputStream(), in = 0xe87afb00, status = 0x0, mStreamInVector.size() = 1
+09-09 22:34:07.755   266  3214 I AudioFlinger: AudioFlinger's thread 0xeb79cb40 tid=3214 ready to run
+09-09 22:34:07.756   250   419 D AudioALSAStreamIn: +standby()
+09-09 22:34:07.756   250   419 D AudioALSAStreamIn: -standby()
+09-09 22:34:07.761   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.762   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.762   250   419 D AudioALSAStreamIn: +standby()
+09-09 22:34:07.762   250   419 D AudioALSAStreamIn: -standby()
+09-09 22:34:07.764   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.783  3168  3206 I chatty  : uid=10149(com.steve.puckd) expire 1 line
+09-09 22:34:07.793   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.794   250   419 D audio.amazon_wrapper: adev_create_audio_patch - change sink hw_module with handle(78) 
+09-09 22:34:07.794   250   419 D AudioALSAHardware: +routing createAudioPatch 80000004->Mixer Src 4e
+09-09 22:34:07.794   250   419 D AudioALSAStreamManager: +setParameters(), IOport = 78, keyValuePairs = input_source=78;routing=-2147483644
+09-09 22:34:07.794   250   419 D AudioALSAStreamManager: Send to mStreamInVector [0]
+09-09 22:34:07.794   250   419 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x80000004
+09-09 22:34:07.794   250   419 W AudioALSAStreamManager: -routingInputDevice(), input_device == current_input_device(0x80000004), return
+09-09 22:34:07.794   250   419 D AudioALSAStreamManager: -setParameters()
+09-09 22:34:07.794   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:07.794   250   419 D audio.amazon_wrapper: adev_create_audio_patch - call create_audio_patch sucess
+09-09 22:34:07.798  3168  3207 I chatty  : uid=10149(com.steve.puckd) expire 1 line
+09-09 22:34:07.798   440   661 I SoundTriggerMiddlewareLogging: setCaptureState[this=com.android.server.soundtrigger_middleware.SoundTriggerMiddlewareImpl@432b4e8, caller=1041/266](true)
+09-09 22:34:07.799  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 130 lines
+09-09 22:34:07.803   250   419 E FMQ     : grantorIdx must be less than 3
+09-09 22:34:07.804   250   419 E FMQ     : grantorIdx must be less than 3
+09-09 22:34:07.805   266  3214 E FMQ     : grantorIdx must be less than 3
+09-09 22:34:07.805   266  3214 E FMQ     : grantorIdx must be less than 3
+09-09 22:34:07.805   250  3216 D AudioALSAStreamIn: open()
+09-09 22:34:07.805   250  3216 D AudioALSAStreamManager: +createCaptureHandler(), mAudioMode = 0, input_source = 78, input_device = 0x80000004, mBypassDualMICProcessUL=0
+09-09 22:34:07.806   250  3216 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:07.806   250  3216 D AudioALSAStreamManager: -EnableBesRecord(), 0
+09-09 22:34:07.806   250  3216 D AudioALSACaptureHandlerBase: AudioALSACaptureHandlerBase()
+09-09 22:34:07.806   250  3216 D AudioALSACaptureHandlerBase: init()
+09-09 22:34:07.806   250  3216 D AudioALSACaptureHandlerNormal: AudioALSACaptureHandlerNormal()
+09-09 22:34:07.806   250  3216 D AudioALSACaptureHandlerNormal: init()
+09-09 22:34:07.806   250  3216 D AudioALSAStreamManager: -createCaptureHandler(), mCaptureHandlerVector.size() = 1
+09-09 22:34:07.806   250  3216 D AudioALSACaptureHandlerNormal: +open(), input_device = 0x80000004, input_source = 0x4e, sample_rate=16000, num_channels=1
+09-09 22:34:07.806   250  3216 D AudioALSACaptureDataClient: AudioALSACaptureDataClient()
+09-09 22:34:07.806   250  3216 D AudioSPELayer: SPELayer+
+09-09 22:34:07.806   250  3216 D AudioSPELayer: GetVoIPJitterTime JitterTime=0,ret=1
+09-09 22:34:07.807   250  3216 D AudioSPELayer: SPELayer-
+09-09 22:34:07.807   250  3216 D AudioALSACaptureDataClient: AudioALSACaptureDataClient(), besrecord_enable=0, besrecord_scene=-1
+09-09 22:34:07.807   250  3216 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:07.807   250  3216 D AudioALSACaptureDataClient: CheckBesRecordStereoModeEnable(), mBesRecordStereoMode = 0
+09-09 22:34:07.807   250  3216 D AudioPreProcess: AudioPreProcess()+
+09-09 22:34:07.807   250  3216 D AudioPreProcess: AudioPreProcess()-
+09-09 22:34:07.807   250  3216 D AudioALSACaptureDataProviderBase: attach(), 0xe8f88b80
+09-09 22:34:07.808   250  3216 D AudioALSACaptureDataClient: setIdentity(), mIsIdentitySet=0, identity=6
+09-09 22:34:07.808   250  3216 D AudioALSACaptureDataProviderBase: attach(), mCaptureDataClientIndex=6, mCaptureDataClientVector.size()=0, Identity=6
+09-09 22:34:07.808   250  3216 D AudioALSACaptureDataProviderNormal: open()
+09-09 22:34:07.808   250  3216 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = TLV320AIC3101 
+09-09 22:34:07.808   250  3216 D AudioALSADeviceParser: compare success = 22
+09-09 22:34:07.808   250  3216 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3101 
+09-09 22:34:07.808   250  3216 D AudioALSADeviceParser:  compare success Cardindex = 0
+09-09 22:34:07.808   250  3216 D AudioALSACaptureDataProviderNormal: open cardindex = 0  pcmindex = 22
+09-09 22:34:07.809  3168  3182 I chatty  : uid=10149(com.steve.puckd) HeapTaskDaemon expire 1 line
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: buffersizemax = 30840
+09-09 22:34:07.810   250  3216 D AudioSpeechEnhanceInfo: GetHifiRecord, mHiFiRecordEnable=0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: bHifiRecord = 0
+09-09 22:34:07.810   250  3216 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: btempDebug = 0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderBase: +HasLowLatencyCapture()
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataClient: +IsLowLatencyCapture()
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataClient: -IsLowLatencyCapture(), bRet=0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderBase: -HasLowLatencyCapture(), bRet=0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: open(), format = 4, channels=4, rate=16000, period_size=256, period_count=10,latency=20 kReadBufferSize=3072
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: open(), mCaptureDropSize=0, CAPTURE_DROP_MS=0
+09-09 22:34:07.810   250  3216 D AudioALSACaptureDataProviderNormal: open(), period_count=10, period_size=256, samplerate = 16000
+--------- beginning of system
+09-09 22:34:07.859   440   440 D NotificationService: 0|com.steve.puckd|1001|null|10149: granting content://settings/system/notification_sound
+09-09 22:34:07.860   440   440 I chatty  : uid=1000 system_server identical 1 line
+09-09 22:34:07.860   440   440 D NotificationService: 0|com.steve.puckd|1001|null|10149: granting content://settings/system/notification_sound
+09-09 22:34:07.862   440   440 W NotificationHistory: Attempted to add notif for locked/gone/disabled user 0
+09-09 22:34:07.958  3168  3168 I chatty  : uid=10149(com.steve.puckd) expire 4 lines
+09-09 22:34:07.967   250  3216 D AudioALSACaptureDataProviderBase: -attach()
+09-09 22:34:07.967   250  3221 D AudioALSACaptureDataProviderNormal: +readThread(), pid: 250, tid: 3221, kReadBufferSize=0xc00, open_index=7
+09-09 22:34:07.967   250  3216 D AudioSPELayer: SetUPLinkDropTime, 0
+09-09 22:34:07.967   250  3216 D AudioSPELayer: SetUPLinkIntrStartTime, sec=14978, nsec=823285429
+09-09 22:34:07.967   250  3216 D AudioALSACaptureDataClient: CheckChannelRemixOp(), ch 4->1 (mBesRecordStereoMode = 0, BesRecord enable = 0), ChannelRemixOp = 0
+09-09 22:34:07.967   250  3216 D AudioSpeechEnhanceInfo: GetDebugStatus, mDebugflag=0
+09-09 22:34:07.967   250  3216 E ASP     : Invalid pipeline type: -1
+09-09 22:34:07.967   250  3216 D AudioALSAHardwareResourceManager: +startInputDevice(), new_device = 0x80000004, mInputDevice = 0x0, mStartInputDeviceCount = 0, mInputBuiltInMicCount = 0, mInputHeadsetMicCount = 0
+09-09 22:34:07.968   250  3216 D AudioALSAHardwareResourceManager: setMIC1Mode(), isphonemic 0, micmode 1
+09-09 22:34:07.968   250  3216 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:07.968   250  3216 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic1TypeACCMode descriptor == NULL
+09-09 22:34:07.968   250  3216 D AudioALSAHardwareResourceManager: setMIC2Mode(), isphonemic 0, micmode 1
+09-09 22:34:07.968   250  3216 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:07.968   250  3216 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = Mic2TypeACCMode descriptor == NULL
+09-09 22:34:07.968   250  3216 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:07.968   250  3216 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = builtin_Mic_SingleMic descriptor == NULL
+09-09 22:34:07.968   250  3216 D AudioALSAHardwareResourceManager: -startInputDevice(), mInputDevice = 0x80000004, mStartInputDeviceCount = 1
+09-09 22:34:07.968   250  3216 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 0 nsec 0
+09-09 22:34:07.968   250  3216 D AudioALSACaptureHandlerNormal: -open()
+09-09 22:34:07.987   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.004   250  3216 D AudioVoiceUIDL: [SetUplinkStartTime] mULtime sec 14978 nsec 810358045
+09-09 22:34:08.006   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.038   271   312 E BufferQueueProducer: [com.steve.puckd/com.steve.puckd.MainActivity#0](id:10f00000021,api:0,p:-1,c:271) disconnect: not connected (req=1)
+09-09 22:34:08.039  3168  3191 I chatty  : uid=10149(com.steve.puckd) RenderThread expire 2 lines
+09-09 22:34:08.055   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.073   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.141  3219  3219 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-09 22:34:08.147  3219  3219 I AndroidRuntime: Using default boot image
+09-09 22:34:08.147  3219  3219 I AndroidRuntime: Leaving lock profiling enabled
+09-09 22:34:08.158  3219  3219 I app_process: Core platform API reporting enabled, enforcing=false
+09-09 22:34:08.190   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.206   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.377  3219  3219 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-09 22:34:08.377  3219  3219 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+09-09 22:34:08.388   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.396  3219  3219 I app_process: The ClassLoaderContext is a special shared library.
+09-09 22:34:08.423   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.438  3219  3219 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-09 22:34:08.452  3219  3219 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+09-09 22:34:08.472  3219  3219 D AndroidRuntime: Shutting down VM
+09-09 22:34:08.492   250  1186 D AudioALSAVolumeController: AudioALSAVolumeController getMasterVolume
+09-09 22:34:08.493   250  1186 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: AudioALSAVolumeController setMasterVolume v = 1.000000 mode = 0 devices = 0x2
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: ApplyExtAmpHeadPhoneGain  Gain = 256 mode= 0 device = 3
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: DegradedBGain   = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetLinoutRGain 
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetLinoutRGain 
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetHeadPhoneLGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetRealHeadPhoneLGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetHeadPhoneRGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAVolumeController: SetRealHeadPhoneRGain = 7
+09-09 22:34:08.493   250  1186 D AudioALSAStreamOut: open(), flags 2
+09-09 22:34:08.493   250  1186 D AudioALSAStreamManager: +createPlaybackHandler(), mAudioMode = 0, output_devices = 0x2
+09-09 22:34:08.493   250  1186 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerBase: AudioALSAPlaybackHandlerBase()
+09-09 22:34:08.493   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal()
+09-09 22:34:08.493   250  1186 D AudioALSAStreamManager: createPlaybackHandler() ApplyFilter [0]/[1] Device [0x2]
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: +setFilterMng() mAudioFilterManagerHandler [0xe92c4dd0]
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: -setFilterMng()
+09-09 22:34:08.493   250  1186 D AudioALSAStreamManager: -createPlaybackHandler(), mPlaybackHandlerVector.size() = 1
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: +open(), mDevice = 0x2
+09-09 22:34:08.493   250  1186 D AudioALSAHardwareResourceManager: EnableAudBufClk(), bEanble = 1
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: +HpImpeDanceDetect outputdevice = 2
+09-09 22:34:08.493   250  1186 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = RT5616_Playback 
+09-09 22:34:08.493   250  1186 D AudioALSADeviceParser: compare success = 23
+09-09 22:34:08.493   250  1186 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3204 
+09-09 22:34:08.493   250  1186 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal::open() pcmindex = 23
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase:         Rate:	min=8000Hz	max=192000Hz
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase:     Channels:	min=1		max=2
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase:  Sample bits:	min=16		max=32
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase:  Period size:	min=0		max=18432
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase: Period count:	min=1		max=4
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_SIZE :	 max=18432	
+09-09 22:34:08.494   250  1186 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: Device does not exist.
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: ChooseTargetSampleRate SampleRate = 48000 outputdevice = 2
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerBase: transferAudioFormatToPcmFormat(), audio_format(0x1) => pcm_format(0x0)
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: open(), mConfig: channels = 2, rate = 48000, period_size = 1536, period_count = 2, format = 0
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: asp_open(), mDevice = 0x2
+09-09 22:34:08.495   250  1186 I ASP/ER  : RegisterWriter writer = 0xe91ccc14 (speaker)
+09-09 22:34:08.495   250  1186 I ASP/SP  : PipelineSpeaker 0xe91ccb80 in 1 2 48000 out 1 2 48000
+09-09 22:34:08.495   250  1186 D ASP/Metrics: Same audio output Local
+09-09 22:34:08.495   250  1186 I AUDIOALG: setPlaybackDevices() called with 0x00000001, device type NOT changed, no action taken
+09-09 22:34:08.495   250  1186 I ASP/SP  : SetDevice set AFE out devices = 2
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode() bEanble = 1 SampleRate = 48000
+09-09 22:34:08.495   250  1186 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode = 1
+09-09 22:34:08.495   250  1186 D AudioALSAHardwareResourceManager: setUsingExtSpeaker() bSpeaker = 1, retval = -22
+09-09 22:34:08.495   250  1186 D AudioALSAPlaybackHandlerBase: +openPcmDriver(), pcm device = 23
+09-09 22:34:08.503   243  3239 W resolv  : Failed to tag socket: No such file or directory
+09-09 22:34:08.522   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:08.524   243  3239 W resolv  : Failed to tag socket: No such file or directory
+09-09 22:34:08.536   250  1186 E AudioALSAPlaybackHandlerBase: openPcmDriver(), pcm_start(0xe8e783a0) fail due to cannot start channel: Broken pipe
+09-09 22:34:08.537   250  1186 D AudioALSAPlaybackHandlerBase: -openPcmDriver(), mPcm = 0xe8e783a0
+09-09 22:34:08.537   250  1186 D AudioALSAHardwareResourceManager: +startOutputDevice(), new_devices = 0x2, mOutputDevices = 0x0, mStartOutputDevicesCount = 0 SampleRate = 48000
+09-09 22:34:08.537   250  1186 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:08.537   250  1186 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = headphone_output descriptor == NULL
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: CheckDeviceExist exist devicename = ext_speaker_output
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName() DeviceName = ext_speaker_output descriptor->DeviceStatusCounte = 0
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXL DAC R1 Switch cltvalue = 1
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXR DAC L1 Switch cltvalue = 1
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: cltname = OUT Playback Switch cltvalue = 1
+09-09 22:34:08.537   250  1186 I AudioALSADeviceConfigManager: cltname = Ext_Speaker_Amp_Switch cltvalue = Off
+09-09 22:34:08.537   250  1186 D AudioALSAHardwareResourceManager: -startOutputDevice(), mOutputDevices = 0x2, mStartOutputDevicesCount = 1
+09-09 22:34:08.537   250  1186 D AudioVoiceUIDL: [GetSRCInputParameter] mOutputSampleRate 16000,  mInputSampleRate 48000, mInChannel 2, mOutChannel, 0 format 1
+09-09 22:34:08.538   250  1186 D AudioVoiceUIDL: [GetSRCInputParameter] create SRC handle fail
+09-09 22:34:08.538   250  1186 D AudioALSAPlaybackHandlerNormal: -open()
+09-09 22:34:08.538   250  1186 I AudioALSAStreamOut: open(), audio playback starts, set speaker power mode
+09-09 22:34:08.538   250  1186 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, no change on speaker power mode (5), return
+09-09 22:34:08.538   250  1186 D AudioALSAPlaybackHandlerNormal: setScreenState, rate 768 0.016000, mode = 1 , buffer_size = 3072, channel 2, format1
+09-09 22:34:08.538   250  1186 W AudioALSAPlaybackHandlerNormal: doProcessAsp mAspBuffer=0x0 Old AspBufferSize=0 New AspBufferSize=3072
+09-09 22:34:08.901   266   367 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-09 22:34:08.901   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:09.275   440  1144 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+09-09 22:34:09.562  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 135 lines
+09-09 22:34:10.064  3168  3238 I chatty  : uid=10149(com.steve.puckd) .openai.com/... expire 4 lines
+09-09 22:34:10.159  3168  3168 I chatty  : uid=10149(com.steve.puckd) expire 2 lines
+09-09 22:34:10.233   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.246   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.399   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.447   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.634   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.649   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.835   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:10.850   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.038   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.051   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.175  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 138 lines
+09-09 22:34:11.238   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.270   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.438   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.470   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.641   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.648   250   419 D AudioALSAStreamOut: standby()
+09-09 22:34:11.649   250   419 D AudioALSAStreamOut: +close(), flags 2
+09-09 22:34:11.649   250   419 D AudioALSAPlaybackHandlerNormal: +close()
+09-09 22:34:11.649   250   419 D AudioVoiceUIDL: [SetInputStandBy] ReadRefFromRing to exit? (0) 
+09-09 22:34:11.649   250   419 D AudioALSAHardwareResourceManager: +stopOutputDevice(), mOutputDevices = 0x2, mStartOutputDevicesCount = 1
+09-09 22:34:11.649   250   419 D AudioALSAHardwareResourceManager: CloseSpeakerPath(), AUDIO_DEVICE_OUT_SPEAKER
+09-09 22:34:11.649   250   419 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:11.649   250   419 I AudioALSADeviceConfigManager: CheckDeviceExist exist devicename = ext_speaker_output
+09-09 22:34:11.649   250   419 I AudioALSADeviceConfigManager: ApplyDeviceTurnoffSequenceByName() DeviceName = ext_speaker_output descriptor->DeviceStatusCounte = 1
+09-09 22:34:11.649   250   419 I AudioALSADeviceConfigManager: cltname = Ext_Speaker_Amp_Switch cltvalue = On
+09-09 22:34:11.684   250   419 I AudioALSADeviceConfigManager: cltname = OUT Playback Switch cltvalue = 0
+09-09 22:34:11.684   250   419 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:11.684   250   419 E AudioALSADeviceConfigManager: ApplyDeviceTurnoffSequenceByName  DeviceName = headphone_output descriptor == NULL
+09-09 22:34:11.684   250   419 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:11.684   250   419 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:11.684   250   419 E AudioALSADeviceConfigManager: ApplyDeviceSettingByName  DeviceName = DL1_LR_NORMAL descriptor == NULL
+09-09 22:34:11.685   250   419 D AudioALSAHardwareResourceManager: -stopOutputDevice(), mOutputDevices = 0x0, mStartOutputDevicesCount = 0
+09-09 22:34:11.685   250   419 D AudioALSAPlaybackHandlerBase: +closePcmDriver(), mPcm = 0xe8e783a0
+09-09 22:34:11.692   250   419 D AudioALSAPlaybackHandlerBase: -closePcmDriver(), mPcm = 0x0
+09-09 22:34:11.692   250   419 D AudioALSAHardwareResourceManager: setUsingExtSpeaker() bSpeaker = 0, retval = -22
+09-09 22:34:11.692   250   419 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode() bEanble = 0 SampleRate = 48000
+09-09 22:34:11.693   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.695   250   419 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:11.695   250   419 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode = 0
+09-09 22:34:11.695   250   419 D AudioALSAPlaybackHandlerBase: DeinitDataPending
+09-09 22:34:11.695   250   419 D AudioALSAPlaybackHandlerBase: delete mdataPendingTempBuffer
+09-09 22:34:11.695   250   419 D AudioALSAHardwareResourceManager: EnableAudBufClk(), bEanble = 0
+09-09 22:34:11.695   250   419 D AudioALSAPlaybackHandlerNormal: asp_close(), mAspPipeline = 0xe91ccb80 mAspBuffer = 0xe86cb000 mDevice = 0x2
+09-09 22:34:11.695   250   419 I ASP/SP  : ~PipelineSpeaker 0xe91ccb80
+09-09 22:34:11.695   250   419 I ASP/ER  : UnregisterWriter: writer = 0xe91ccc14 (speaker)
+09-09 22:34:11.695   250   419 I ASP/ER  : UnregisterWriter Set writer_ to 0x0 (null)
+09-09 22:34:11.696   250   419 D AudioALSAPlaybackHandlerNormal: -close()
+09-09 22:34:11.696   250   419 D AudioALSAStreamManager: +destroyPlaybackHandler(), mode = 0, pPlaybackHandler = 0xe8f88900
+09-09 22:34:11.696   250   419 D AudioALSAPlaybackHandlerNormal: ~AudioALSAPlaybackHandlerNormal()
+09-09 22:34:11.696   250   419 D AudioALSAPlaybackHandlerBase: ~AudioALSAPlaybackHandlerBase()
+09-09 22:34:11.696   250   419 D AudioALSAStreamManager: -destroyPlaybackHandler(), mPlaybackHandlerVector.size() = 0
+09-09 22:34:11.696   250   419 D AudioALSAStreamOut: -close(), flags 2
+09-09 22:34:11.696   250   419 D AudioALSAStreamOut: -standby()
+09-09 22:34:11.697   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:11.840   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:11.891   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.043   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.093   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.243   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.293   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.444   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.494   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.646   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.711   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.790  3168  3246 I chatty  : uid=10149(com.steve.puckd) expire 1 line
+09-09 22:34:12.844  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 135 lines
+09-09 22:34:12.845   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:12.913   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.050   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.114   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.251   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.314   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.453   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.532   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.653   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.733   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.855   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:13.935   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.054   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.152   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.195  3168  3168 I chatty  : uid=10149(com.steve.puckd) expire 2 lines
+09-09 22:34:14.253   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.353   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.404   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.460  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 126 lines
+09-09 22:34:14.555   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.659   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.760   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.858   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:14.956   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.059   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.174   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.177  3168  3245 I chatty  : uid=10149(com.steve.puckd) expire 4 lines
+09-09 22:34:15.259   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.374   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.458   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.576   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.660   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.684  3168  3238 I chatty  : uid=10149(com.steve.puckd) .openai.com/... expire 44 lines
+09-09 22:34:15.777   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.862   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:15.959  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 90 lines
+09-09 22:34:15.978   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.062   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.196   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.264   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.397   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.464   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.549  3168  3243 I chatty  : uid=10149(com.steve.puckd) Thread-6 expire 10 lines
+09-09 22:34:16.554   266  2720 D AF::TrackHandle: OpPlayAudio: track:214 usage:1 not muted
+09-09 22:34:16.561   266  2720 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-09 22:34:16.561   266  2720 W APM::AudioPolicyEngine: getDevicesForStrategy() unknown strategy: -1
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: AudioALSAVolumeController getMasterVolume
+09-09 22:34:16.563   250  1186 D AudioALSAStreamManager: setMasterVolume(), volume = 1.000000
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: AudioALSAVolumeController setMasterVolume v = 1.000000 mode = 0 devices = 0x2
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: ApplyExtAmpHeadPhoneGain  Gain = 256 mode= 0 device = 3
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: DegradedBGain   = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetLinoutRGain 
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetLinoutRGain 
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetRealLinoutRGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetHeadPhoneLGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetRealHeadPhoneLGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetHeadPhoneRGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAVolumeController: SetRealHeadPhoneRGain = 7
+09-09 22:34:16.563   250  1186 D AudioALSAStreamOut: open(), flags 2
+09-09 22:34:16.563   250  1186 D AudioALSAStreamManager: +createPlaybackHandler(), mAudioMode = 0, output_devices = 0x2
+09-09 22:34:16.563   250  1186 D AudioYusuParam: QueryFeatureSupportInfo(),feature support 12098280 
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerBase: AudioALSAPlaybackHandlerBase()
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal()
+09-09 22:34:16.563   250  1186 D AudioALSAStreamManager: createPlaybackHandler() ApplyFilter [0]/[1] Device [0x2]
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerNormal: +setFilterMng() mAudioFilterManagerHandler [0xe92c4dd0]
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerNormal: -setFilterMng()
+09-09 22:34:16.563   250  1186 D AudioALSAStreamManager: -createPlaybackHandler(), mPlaybackHandlerVector.size() = 1
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerNormal: +open(), mDevice = 0x2
+09-09 22:34:16.563   250  1186 D AudioALSAHardwareResourceManager: EnableAudBufClk(), bEanble = 1
+09-09 22:34:16.563   250  1186 D AudioALSAPlaybackHandlerNormal: +HpImpeDanceDetect outputdevice = 2
+09-09 22:34:16.563   250  1186 D AudioALSADeviceParser: GetPcmIndexByString() stringpair = RT5616_Playback 
+09-09 22:34:16.563   250  1186 D AudioALSADeviceParser: compare success = 23
+09-09 22:34:16.563   250  1186 D AudioALSADeviceParser: GetCardIndexByString() stringpair = TLV320AIC3204 
+09-09 22:34:16.564   250  1186 D AudioALSAPlaybackHandlerNormal: AudioALSAPlaybackHandlerNormal::open() pcmindex = 23
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase:         Rate:	min=8000Hz	max=192000Hz
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase:     Channels:	min=1		max=2
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase:  Sample bits:	min=16		max=32
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase:  Period size:	min=0		max=18432
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase: Period count:	min=1		max=4
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_SIZE :	 max=18432	
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerNormal: Device does not exist.
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerNormal: ChooseTargetSampleRate SampleRate = 48000 outputdevice = 2
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerBase: transferAudioFormatToPcmFormat(), audio_format(0x1) => pcm_format(0x0)
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerNormal: open(), mConfig: channels = 2, rate = 48000, period_size = 1536, period_count = 2, format = 0
+09-09 22:34:16.565   250  1186 D AudioALSAPlaybackHandlerNormal: asp_open(), mDevice = 0x2
+09-09 22:34:16.565   250  1186 I ASP/ER  : RegisterWriter writer = 0xe91ccc14 (speaker)
+09-09 22:34:16.565   250  1186 I ASP/SP  : PipelineSpeaker 0xe91ccb80 in 1 2 48000 out 1 2 48000
+09-09 22:34:16.565   250  1186 D ASP/Metrics: Same audio output Local
+09-09 22:34:16.565   250  1186 I AUDIOALG: setPlaybackDevices() called with 0x00000001, device type NOT changed, no action taken
+09-09 22:34:16.566   250  1186 I ASP/SP  : SetDevice set AFE out devices = 2
+09-09 22:34:16.566   250  1186 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode() bEanble = 1 SampleRate = 48000
+09-09 22:34:16.566   250  1186 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:16.566   250  1186 D AudioALSAPlaybackHandlerNormal: SetLowJitterMode(), bypass low jitter mode = 1
+09-09 22:34:16.566   250  1186 D AudioALSAHardwareResourceManager: setUsingExtSpeaker() bSpeaker = 1, retval = -22
+09-09 22:34:16.566   250  1186 D AudioALSAPlaybackHandlerBase: +openPcmDriver(), pcm device = 23
+09-09 22:34:16.569   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:16.569   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:16.572  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:16.597   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.605   250  1186 E AudioALSAPlaybackHandlerBase: openPcmDriver(), pcm_start(0xe8e783a0) fail due to cannot start channel: Broken pipe
+09-09 22:34:16.605   250  1186 D AudioALSAPlaybackHandlerBase: -openPcmDriver(), mPcm = 0xe8e783a0
+09-09 22:34:16.605   250  1186 D AudioALSAHardwareResourceManager: +startOutputDevice(), new_devices = 0x2, mOutputDevices = 0x0, mStartOutputDevicesCount = 0 SampleRate = 48000
+09-09 22:34:16.605   250  1186 D AudioALSADriverUtility: GetPropertyValue key = af.resouce.extdac_support value = 0
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:16.605   250  1186 E AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName  DeviceName = headphone_output descriptor == NULL
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: GetDeviceDescriptorbyname
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: CheckDeviceExist exist devicename = ext_speaker_output
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: ApplyDeviceTurnonSequenceByName() DeviceName = ext_speaker_output descriptor->DeviceStatusCounte = 0
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXL DAC R1 Switch cltvalue = 1
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: cltname = Stereo DAC MIXR DAC L1 Switch cltvalue = 1
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: cltname = OUT Playback Switch cltvalue = 1
+09-09 22:34:16.605   250  1186 I AudioALSADeviceConfigManager: cltname = Ext_Speaker_Amp_Switch cltvalue = Off
+09-09 22:34:16.605   250  1186 D AudioALSAHardwareResourceManager: -startOutputDevice(), mOutputDevices = 0x2, mStartOutputDevicesCount = 1
+09-09 22:34:16.605   250  1186 D AudioVoiceUIDL: [GetSRCInputParameter] mOutputSampleRate 16000,  mInputSampleRate 48000, mInChannel 2, mOutChannel, 0 format 1
+09-09 22:34:16.605   250  1186 D AudioVoiceUIDL: [GetSRCInputParameter] create SRC handle fail
+09-09 22:34:16.606   250  1186 D AudioALSAPlaybackHandlerNormal: -open()
+09-09 22:34:16.606   250  1186 I AudioALSAStreamOut: open(), audio playback starts, set speaker power mode
+09-09 22:34:16.606   250  1186 I AudioALSAStreamManager: setSpeakerPowerModeLocked(), mOutputDevice = 0x2, mVideoMode = 0, no change on speaker power mode (5), return
+09-09 22:34:16.606   250  1186 D AudioALSAPlaybackHandlerNormal: setScreenState, rate 768 0.016000, mode = 1 , buffer_size = 3072, channel 2, format1
+09-09 22:34:16.607   250  1186 W AudioALSAPlaybackHandlerNormal: doProcessAsp mAspBuffer=0x0 Old AspBufferSize=0 New AspBufferSize=3072
+09-09 22:34:16.664   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.797   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:16.865   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.000   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.035   266  2720 D AF::TrackHandle: OpPlayAudio: track:215 usage:1 not muted
+09-09 22:34:17.048  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:17.053  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 76 lines
+09-09 22:34:17.053   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:17.067   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.076  3168  3238 I chatty  : uid=10149(com.steve.puckd) .openai.com/... expire 101 lines
+09-09 22:34:17.217   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.268   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.289   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:17.418   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.459   266  2720 D AF::TrackHandle: OpPlayAudio: track:216 usage:1 not muted
+09-09 22:34:17.468   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.475  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:17.479   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:17.619   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.669   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.696   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:17.838   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.870   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:17.874   266  2720 D AF::TrackHandle: OpPlayAudio: track:217 usage:1 not muted
+09-09 22:34:17.894   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:17.895  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:17.964  3168  3212 I chatty  : uid=10149(com.steve.puckd) pool-4-thread-1 expire 81 lines
+09-09 22:34:18.039   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.072   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.128   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:18.240   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.273   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.278  3168  3243 I chatty  : uid=10149(com.steve.puckd) Thread-6 expire 6 lines
+09-09 22:34:18.284   266  1221 D AF::TrackHandle: OpPlayAudio: track:218 usage:1 not muted
+09-09 22:34:18.296   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:18.297  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:18.458   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.473   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.536   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:18.656   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.674   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.689   266  1221 D AF::TrackHandle: OpPlayAudio: track:219 usage:1 not muted
+09-09 22:34:18.697  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:18.704   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:18.860   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.876   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:18.919  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:18.942  3168  3212 I SharedAudio: pcm peak=2079 state=0
+09-09 22:34:18.944   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:18.963  3168  3212 I SharedAudio: pcm peak=2064 state=0
+09-09 22:34:18.964  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:18.990  3168  3212 I SharedAudio: pcm peak=1868 state=0
+09-09 22:34:18.991  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.011  3168  3212 I SharedAudio: pcm peak=2121 state=0
+09-09 22:34:19.013  3168  3212 I SharedAudio: pcm peak=2405 state=0
+09-09 22:34:19.015  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.062   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.073  3168  3212 I SharedAudio: pcm peak=2250 state=0
+09-09 22:34:19.078   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.083  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.085  3168  3212 I SharedAudio: pcm peak=1656 state=0
+09-09 22:34:19.087  3168  3212 I SharedAudio: pcm peak=1065 state=0
+09-09 22:34:19.089  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.106  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:19.107  3168  3212 I SharedAudio: pcm peak=2024 state=0
+09-09 22:34:19.108  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.111  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:19.112  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:19.116   266  2720 D AF::TrackHandle: OpPlayAudio: track:220 usage:1 not muted
+09-09 22:34:19.128  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:19.133  3168  3212 I SharedAudio: pcm peak=2075 state=0
+09-09 22:34:19.136   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:19.154  3168  3212 I SharedAudio: pcm peak=2535 state=0
+09-09 22:34:19.155  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.157  3168  3212 I SharedAudio: pcm peak=1950 state=0
+09-09 22:34:19.159  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.182  3168  3212 I SharedAudio: pcm peak=324 state=0
+09-09 22:34:19.202  3168  3212 I SharedAudio: pcm peak=236 state=0
+09-09 22:34:19.203  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.230  3168  3212 I SharedAudio: pcm peak=208 state=0
+09-09 22:34:19.231  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.251  3168  3212 I SharedAudio: pcm peak=195 state=0
+09-09 22:34:19.252  3168  3212 I SharedAudio: pcm peak=178 state=0
+09-09 22:34:19.253  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.259   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.277   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.298  3168  3212 I SharedAudio: pcm peak=168 state=0
+09-09 22:34:19.299  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.301  3168  3212 I SharedAudio: pcm peak=154 state=0
+09-09 22:34:19.332  3168  3212 I SharedAudio: pcm peak=116 state=0
+09-09 22:34:19.335  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.337  3168  3212 I SharedAudio: pcm peak=117 state=0
+09-09 22:34:19.338  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.352   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:19.378  3168  3212 I SharedAudio: pcm peak=125 state=0
+09-09 22:34:19.381  3168  3212 I SharedAudio: pcm peak=137 state=0
+09-09 22:34:19.382  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.406  3168  3212 I SharedAudio: pcm peak=128 state=0
+09-09 22:34:19.407  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.426  3168  3212 I SharedAudio: pcm peak=161 state=0
+09-09 22:34:19.465   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.469  3168  3212 I SharedAudio: pcm peak=144 state=0
+09-09 22:34:19.471  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.474  3168  3212 I SharedAudio: pcm peak=123 state=0
+09-09 22:34:19.481  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.481   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.484  3168  3212 I SharedAudio: pcm peak=130 state=0
+09-09 22:34:19.510  3168  3212 I SharedAudio: pcm peak=147 state=0
+09-09 22:34:19.511  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.528  3168  3212 I SharedAudio: pcm peak=116 state=0
+09-09 22:34:19.530  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.532  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:19.537  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:19.537  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:19.545   266  2720 D AF::TrackHandle: OpPlayAudio: track:221 usage:1 not muted
+09-09 22:34:19.551  3168  3212 I SharedAudio: pcm peak=171 state=0
+09-09 22:34:19.561  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:19.568   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:19.572  3168  3212 I SharedAudio: pcm peak=1284 state=0
+09-09 22:34:19.576  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.578  3168  3212 I SharedAudio: pcm peak=3411 state=0
+09-09 22:34:19.579  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.621  3168  3212 I SharedAudio: pcm peak=3051 state=0
+09-09 22:34:19.624  3168  3212 I SharedAudio: pcm peak=2932 state=0
+09-09 22:34:19.625  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.634  3168  3212 I SharedAudio: pcm peak=2214 state=0
+09-09 22:34:19.636  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.680   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:19.682  3168  3212 I SharedAudio: pcm peak=1121 state=0
+09-09 22:34:19.684  3168  3212 I SharedAudio: pcm peak=2016 state=0
+09-09 22:34:19.685  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.698  3168  3212 I SharedAudio: pcm peak=1277 state=0
+09-09 22:34:19.699  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.736  3168  3212 I SharedAudio: pcm peak=2961 state=0
+09-09 22:34:19.739  3168  3212 I SharedAudio: pcm peak=4211 state=0
+09-09 22:34:19.740  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.786   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:19.787  3168  3212 I SharedAudio: pcm peak=3300 state=0
+09-09 22:34:19.789  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.791  3168  3212 I SharedAudio: pcm peak=1567 state=0
+09-09 22:34:19.795  3168  3212 I SharedAudio: pcm peak=635 state=0
+09-09 22:34:19.799  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.831  3168  3212 I SharedAudio: pcm peak=3071 state=0
+09-09 22:34:19.834  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.844  3168  3212 I SharedAudio: pcm peak=3892 state=0
+09-09 22:34:19.858  3168  3212 I SharedAudio: pcm peak=4302 state=0
+09-09 22:34:19.866  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.883  3168  3212 I SharedAudio: pcm peak=4195 state=0
+09-09 22:34:19.885  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.896  3168  3212 I SharedAudio: pcm peak=3756 state=0
+09-09 22:34:19.927  3168  3212 I SharedAudio: pcm peak=3328 state=0
+09-09 22:34:19.929  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.944  3168  3212 I SharedAudio: pcm peak=2947 state=0
+09-09 22:34:19.946  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:19.951  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:19.954  3168  3212 I SharedAudio: pcm peak=2800 state=0
+09-09 22:34:19.957  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:19.957  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:19.963   266  1184 D AF::TrackHandle: OpPlayAudio: track:222 usage:1 not muted
+09-09 22:34:19.975  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:19.977   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:19.978  3168  3212 I SharedAudio: pcm peak=2072 state=0
+09-09 22:34:19.979  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.002  3168  3212 I SharedAudio: pcm peak=243 state=0
+09-09 22:34:20.003  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.038  3168  3212 I SharedAudio: pcm peak=588 state=0
+09-09 22:34:20.040  3168  3212 I SharedAudio: pcm peak=279 state=0
+09-09 22:34:20.040  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.051  3168  3212 I SharedAudio: pcm peak=2672 state=0
+09-09 22:34:20.054  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.088  3168  3212 I SharedAudio: pcm peak=2451 state=0
+09-09 22:34:20.099  3168  3212 I SharedAudio: pcm peak=2288 state=0
+09-09 22:34:20.103  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.113  3168  3212 I SharedAudio: pcm peak=1273 state=0
+09-09 22:34:20.114  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.136  3168  3212 I SharedAudio: pcm peak=3243 state=0
+09-09 22:34:20.163  3168  3212 I SharedAudio: pcm peak=3471 state=0
+09-09 22:34:20.166  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.183  3168  3212 I SharedAudio: pcm peak=3542 state=0
+09-09 22:34:20.185  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.198  3168  3212 I SharedAudio: pcm peak=3704 state=0
+09-09 22:34:20.211  3168  3212 I SharedAudio: pcm peak=3521 state=0
+09-09 22:34:20.218   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:20.218  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.246  3168  3212 I SharedAudio: pcm peak=2437 state=0
+09-09 22:34:20.248  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.268  3168  3212 I SharedAudio: pcm peak=1265 state=0
+09-09 22:34:20.274  3168  3212 I SharedAudio: pcm peak=3722 state=0
+09-09 22:34:20.276  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.284   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.294  3168  3212 I SharedAudio: pcm peak=3978 state=0
+09-09 22:34:20.297   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.299  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.329  3168  3212 I SharedAudio: pcm peak=3392 state=0
+09-09 22:34:20.341  3168  3212 I SharedAudio: pcm peak=1988 state=0
+09-09 22:34:20.342  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.355  3168  3212 I SharedAudio: pcm peak=2562 state=0
+09-09 22:34:20.357  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.359  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:20.362  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:20.362  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:20.366   266  1221 D AF::TrackHandle: OpPlayAudio: track:223 usage:1 not muted
+09-09 22:34:20.380  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:20.382  3168  3212 I SharedAudio: pcm peak=2560 state=0
+09-09 22:34:20.384   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:20.402  3168  3212 I SharedAudio: pcm peak=2173 state=0
+09-09 22:34:20.403  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.423  3168  3212 I SharedAudio: pcm peak=1476 state=0
+09-09 22:34:20.424  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.437  3168  3212 I SharedAudio: pcm peak=1280 state=0
+09-09 22:34:20.450  3168  3212 I SharedAudio: pcm peak=870 state=0
+09-09 22:34:20.451  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.486   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.492  3168  3212 I SharedAudio: pcm peak=957 state=0
+09-09 22:34:20.493  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.501   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.504  3168  3212 I SharedAudio: pcm peak=1507 state=0
+09-09 22:34:20.521  3168  3212 I SharedAudio: pcm peak=2408 state=0
+09-09 22:34:20.522  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.534  3168  3212 I SharedAudio: pcm peak=1481 state=0
+09-09 22:34:20.535  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.568  3168  3212 I SharedAudio: pcm peak=1477 state=0
+09-09 22:34:20.581  3168  3212 I SharedAudio: pcm peak=1257 state=0
+09-09 22:34:20.582  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.601  3168  3212 I SharedAudio: pcm peak=468 state=0
+09-09 22:34:20.602  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.614  3168  3212 I SharedAudio: pcm peak=299 state=0
+09-09 22:34:20.623   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:20.649  3168  3212 I SharedAudio: pcm peak=276 state=0
+09-09 22:34:20.650  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.667  3168  3212 I SharedAudio: pcm peak=188 state=0
+09-09 22:34:20.669  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.686  3168  3212 I SharedAudio: pcm peak=194 state=0
+09-09 22:34:20.686   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.698  3168  3212 I SharedAudio: pcm peak=178 state=0
+09-09 22:34:20.700  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.700   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.726  3168  3212 I SharedAudio: pcm peak=177 state=0
+09-09 22:34:20.727  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.740  3168  3212 I SharedAudio: pcm peak=135 state=0
+09-09 22:34:20.761  3168  3212 I SharedAudio: pcm peak=153 state=0
+09-09 22:34:20.762  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.776  3168  3212 I SharedAudio: pcm peak=146 state=0
+09-09 22:34:20.777  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.782  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:20.785  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:20.785  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:20.793   266  1184 D AF::TrackHandle: OpPlayAudio: track:224 usage:1 not muted
+09-09 22:34:20.803   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:20.813  3168  3212 I SharedAudio: pcm peak=141 state=0
+09-09 22:34:20.815  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:20.824  3168  3212 I SharedAudio: pcm peak=173 state=0
+09-09 22:34:20.825  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.840  3168  3212 I SharedAudio: pcm peak=156 state=0
+09-09 22:34:20.841  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.856  3168  3212 I SharedAudio: pcm peak=170 state=0
+09-09 22:34:20.885   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.887  3168  3212 I SharedAudio: pcm peak=159 state=0
+09-09 22:34:20.888  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.905  3168  3212 I SharedAudio: pcm peak=138 state=0
+09-09 22:34:20.906  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.919  3168  3212 I SharedAudio: pcm peak=150 state=0
+09-09 22:34:20.920   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:20.932  3168  3212 I SharedAudio: pcm peak=136 state=0
+09-09 22:34:20.933  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.967  3168  3212 I SharedAudio: pcm peak=156 state=0
+09-09 22:34:20.968  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:20.983  3168  3212 I SharedAudio: pcm peak=148 state=0
+09-09 22:34:21.002  3168  3212 I SharedAudio: pcm peak=156 state=0
+09-09 22:34:21.003  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.017  3168  3212 I SharedAudio: pcm peak=155 state=0
+09-09 22:34:21.019  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.033   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:21.051  3168  3212 I SharedAudio: pcm peak=170 state=0
+09-09 22:34:21.065  3168  3212 I SharedAudio: pcm peak=172 state=0
+09-09 22:34:21.067  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.079  3168  3212 I SharedAudio: pcm peak=163 state=0
+09-09 22:34:21.081  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.087   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.105  3168  3212 I SharedAudio: pcm peak=129 state=0
+09-09 22:34:21.120   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.126  3168  3212 I SharedAudio: pcm peak=128 state=0
+09-09 22:34:21.127  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.146  3168  3212 I SharedAudio: pcm peak=105 state=0
+09-09 22:34:21.148  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.161  3168  3212 I SharedAudio: pcm peak=2938 state=0
+09-09 22:34:21.175  3168  3212 I SharedAudio: pcm peak=3634 state=0
+09-09 22:34:21.176  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.192  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:21.196  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:21.196  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:21.202   266  1184 D AF::TrackHandle: OpPlayAudio: track:225 usage:1 not muted
+09-09 22:34:21.211  3168  3212 I SharedAudio: pcm peak=3844 state=0
+09-09 22:34:21.213  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.220  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:21.224   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:21.225  3168  3212 I SharedAudio: pcm peak=2816 state=0
+09-09 22:34:21.237  3168  3212 I SharedAudio: pcm peak=332 state=0
+09-09 22:34:21.238  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.258  3168  3212 I SharedAudio: pcm peak=472 state=0
+09-09 22:34:21.259  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.289   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.290  3168  3212 I SharedAudio: pcm peak=3127 state=0
+09-09 22:34:21.307  3168  3212 I SharedAudio: pcm peak=2988 state=0
+09-09 22:34:21.309  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.322  3168  3212 I SharedAudio: pcm peak=2854 state=0
+09-09 22:34:21.323  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.338   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.341  3168  3212 I SharedAudio: pcm peak=2918 state=0
+09-09 22:34:21.370  3168  3212 I SharedAudio: pcm peak=711 state=0
+09-09 22:34:21.371  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.386  3168  3212 I SharedAudio: pcm peak=1215 state=0
+09-09 22:34:21.387  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.404  3168  3212 I SharedAudio: pcm peak=925 state=0
+09-09 22:34:21.418  3168  3212 I SharedAudio: pcm peak=711 state=0
+09-09 22:34:21.419  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.440   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:21.452  3168  3212 I SharedAudio: pcm peak=912 state=0
+09-09 22:34:21.453  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.466  3168  3212 I SharedAudio: pcm peak=777 state=0
+09-09 22:34:21.479  3168  3212 I SharedAudio: pcm peak=604 state=0
+09-09 22:34:21.480  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.489   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.499  3168  3212 I SharedAudio: pcm peak=218 state=0
+09-09 22:34:21.500  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.527  3168  3212 I SharedAudio: pcm peak=1701 state=0
+09-09 22:34:21.539   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.547  3168  3212 I SharedAudio: pcm peak=1871 state=0
+09-09 22:34:21.548  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.562  3168  3212 I SharedAudio: pcm peak=2399 state=0
+09-09 22:34:21.563  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.585  3168  3212 I SharedAudio: pcm peak=2562 state=0
+09-09 22:34:21.608  3168  3212 I SharedAudio: pcm peak=2208 state=0
+09-09 22:34:21.610  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.625  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:21.628  3168  3212 I SharedAudio: pcm peak=2103 state=0
+09-09 22:34:21.630  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:21.630  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:21.633  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.635   266  1184 D AF::TrackHandle: OpPlayAudio: track:226 usage:1 not muted
+09-09 22:34:21.641  3168  3212 I SharedAudio: pcm peak=2081 state=0
+09-09 22:34:21.648  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:21.655   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:21.659  3168  3212 I SharedAudio: pcm peak=1886 state=0
+09-09 22:34:21.660  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.689   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.690  3168  3212 I SharedAudio: pcm peak=1941 state=0
+09-09 22:34:21.691  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.704  3168  3212 I SharedAudio: pcm peak=1803 state=0
+09-09 22:34:21.725  3168  3212 I SharedAudio: pcm peak=1258 state=0
+09-09 22:34:21.726  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.739   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.740  3168  3212 I SharedAudio: pcm peak=222 state=0
+09-09 22:34:21.741  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.773  3168  3212 I SharedAudio: pcm peak=161 state=0
+09-09 22:34:21.787  3168  3212 I SharedAudio: pcm peak=128 state=0
+09-09 22:34:21.788  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.801  3168  3212 I SharedAudio: pcm peak=127 state=0
+09-09 22:34:21.802  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.821  3168  3212 I SharedAudio: pcm peak=150 state=0
+09-09 22:34:21.851  3168  3212 I SharedAudio: pcm peak=110 state=0
+09-09 22:34:21.853  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.870  3168  3212 I SharedAudio: pcm peak=139 state=0
+09-09 22:34:21.873   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:21.873  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.884  3168  3212 I SharedAudio: pcm peak=185 state=0
+09-09 22:34:21.891   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.899  3168  3212 I SharedAudio: pcm peak=168 state=0
+09-09 22:34:21.900  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.931  3168  3212 I SharedAudio: pcm peak=196 state=0
+09-09 22:34:21.932  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.940   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:21.945  3168  3212 I SharedAudio: pcm peak=151 state=0
+09-09 22:34:21.965  3168  3212 I SharedAudio: pcm peak=147 state=0
+09-09 22:34:21.966  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:21.978  3168  3212 I SharedAudio: pcm peak=192 state=0
+09-09 22:34:21.979  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.013  3168  3212 I SharedAudio: pcm peak=177 state=0
+09-09 22:34:22.027  3168  3212 I SharedAudio: pcm peak=401 state=0
+09-09 22:34:22.028  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.041  3168  3212 I SharedAudio: pcm peak=3526 state=0
+09-09 22:34:22.042  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.057  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:22.061  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:22.061  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:22.062  3168  3212 I SharedAudio: pcm peak=3215 state=0
+09-09 22:34:22.065   266  1221 D AF::TrackHandle: OpPlayAudio: track:227 usage:1 not muted
+09-09 22:34:22.081  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:22.090  3168  3212 I SharedAudio: pcm peak=3075 state=0
+09-09 22:34:22.091   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:22.092   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.092  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.109  3168  3212 I SharedAudio: pcm peak=3128 state=0
+09-09 22:34:22.110  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.125  3168  3212 I SharedAudio: pcm peak=3388 state=0
+09-09 22:34:22.137  3168  3212 I SharedAudio: pcm peak=3311 state=0
+09-09 22:34:22.138  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.141   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.171  3168  3212 I SharedAudio: pcm peak=3113 state=0
+09-09 22:34:22.173  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.185  3168  3212 I SharedAudio: pcm peak=3503 state=0
+09-09 22:34:22.205  3168  3212 I SharedAudio: pcm peak=3400 state=0
+09-09 22:34:22.206  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.221  3168  3212 I SharedAudio: pcm peak=1265 state=0
+09-09 22:34:22.222  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.242  3168  3168 W PuckService: Connection failed: Failed to connect to /192.168.1.193:8787
+09-09 22:34:22.249  3168  3168 I PuckService: disconnected reason=Relay unavailable retry_ms=16000
+09-09 22:34:22.253  3168  3212 I SharedAudio: pcm peak=2083 state=0
+09-09 22:34:22.267  3168  3212 I SharedAudio: pcm peak=1753 state=0
+09-09 22:34:22.268  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.288  3168  3212 I SharedAudio: pcm peak=475 state=0
+09-09 22:34:22.289  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.292   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.302  3168  3212 I SharedAudio: pcm peak=192 state=0
+09-09 22:34:22.303   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:22.337  3168  3212 I SharedAudio: pcm peak=1680 state=0
+09-09 22:34:22.338  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.343   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.349  3168  3212 I SharedAudio: pcm peak=2369 state=0
+09-09 22:34:22.350  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.363  3168  3212 I SharedAudio: pcm peak=2964 state=0
+09-09 22:34:22.383  3168  3212 I SharedAudio: pcm peak=3029 state=0
+09-09 22:34:22.384  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.411  3168  3212 I SharedAudio: pcm peak=3688 state=0
+09-09 22:34:22.412  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.433  3168  3212 I SharedAudio: pcm peak=3451 state=0
+09-09 22:34:22.443   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.445  3168  3212 I SharedAudio: pcm peak=2771 state=0
+09-09 22:34:22.446  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.458  3168  3212 I SharedAudio: pcm peak=421 state=0
+09-09 22:34:22.461  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.482  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:22.488  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:22.488  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:22.488   339   339 D AudioAnalytics: gc(1700, 2000): log size:1700 item map size:176, item map items:1700
+09-09 22:34:22.495   266  1221 D AF::TrackHandle: OpPlayAudio: track:228 usage:1 not muted
+09-09 22:34:22.501  3168  3212 I SharedAudio: pcm peak=285 state=0
+09-09 22:34:22.508  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:22.512  3168  3212 I SharedAudio: pcm peak=2545 state=0
+09-09 22:34:22.513  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.519   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:22.526  3168  3212 I SharedAudio: pcm peak=2888 state=0
+09-09 22:34:22.527  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.541  3168  3212 I SharedAudio: pcm peak=2493 state=0
+09-09 22:34:22.543   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.575  3168  3212 I SharedAudio: pcm peak=2555 state=0
+09-09 22:34:22.576  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.589  3168  3212 I SharedAudio: pcm peak=2506 state=0
+09-09 22:34:22.590  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.603  3168  3212 I SharedAudio: pcm peak=2618 state=0
+09-09 22:34:22.624  3168  3212 I SharedAudio: pcm peak=2585 state=0
+09-09 22:34:22.626  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.652  3168  3212 I SharedAudio: pcm peak=2734 state=0
+09-09 22:34:22.654  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.673  3168  3212 I SharedAudio: pcm peak=342 state=0
+09-09 22:34:22.686  3168  3212 I SharedAudio: pcm peak=3229 state=0
+09-09 22:34:22.688  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.698   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.701  3168  3212 I SharedAudio: pcm peak=2860 state=0
+09-09 22:34:22.702  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.736   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:22.739  3168  3212 I SharedAudio: pcm peak=2989 state=0
+09-09 22:34:22.754  3168  3212 I SharedAudio: pcm peak=2876 state=0
+09-09 22:34:22.756  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.762   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.769  3168  3212 I SharedAudio: pcm peak=2652 state=0
+09-09 22:34:22.770  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.771  3168  3212 I SharedAudio: pcm peak=2326 state=0
+09-09 22:34:22.811  3168  3212 I SharedAudio: pcm peak=1687 state=0
+09-09 22:34:22.812  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.832  3168  3212 I SharedAudio: pcm peak=1167 state=0
+09-09 22:34:22.833  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.847  3168  3212 I SharedAudio: pcm peak=369 state=0
+09-09 22:34:22.861  3168  3212 I SharedAudio: pcm peak=146 state=0
+09-09 22:34:22.862  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.897   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.898  3168  3212 I SharedAudio: pcm peak=107 state=0
+09-09 22:34:22.900  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.908  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:22.909  3168  3212 I SharedAudio: pcm peak=182 state=0
+09-09 22:34:22.912  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:22.912  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:22.918   266  2687 D AF::TrackHandle: OpPlayAudio: track:229 usage:1 not muted
+09-09 22:34:22.928  3168  3212 I SharedAudio: pcm peak=135 state=0
+09-09 22:34:22.929  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.935   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:22.936  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:22.943  3168  3212 I SharedAudio: pcm peak=114 state=0
+09-09 22:34:22.944  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:22.962   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:22.976  3168  3212 I SharedAudio: pcm peak=139 state=0
+09-09 22:34:22.989  3168  3212 I SharedAudio: pcm peak=1630 state=0
+09-09 22:34:22.990  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.010  3168  3212 I SharedAudio: pcm peak=3306 state=0
+09-09 22:34:23.011  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.013  3168  3212 I SharedAudio: pcm peak=3535 state=0
+09-09 22:34:23.058  3168  3212 I SharedAudio: pcm peak=3667 state=0
+09-09 22:34:23.059  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.063  3168  3212 I SharedAudio: pcm peak=4160 state=0
+09-09 22:34:23.064  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.086  3168  3212 I SharedAudio: pcm peak=3326 state=0
+09-09 22:34:23.097   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.109  3168  3212 I SharedAudio: pcm peak=3704 state=0
+09-09 22:34:23.110  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.137  3168  3212 I SharedAudio: pcm peak=3722 state=0
+09-09 22:34:23.138  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.150  3168  3212 I SharedAudio: pcm peak=3391 state=0
+09-09 22:34:23.162   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.169   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:23.177  3168  3212 I SharedAudio: pcm peak=2090 state=0
+09-09 22:34:23.178  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.179  3168  3212 I SharedAudio: pcm peak=630 state=0
+09-09 22:34:23.180  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.203  3168  3212 I SharedAudio: pcm peak=368 state=0
+09-09 22:34:23.217  3168  3212 I SharedAudio: pcm peak=365 state=0
+09-09 22:34:23.218  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.245  3168  3212 I SharedAudio: pcm peak=905 state=0
+09-09 22:34:23.246  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.266  3168  3212 I SharedAudio: pcm peak=2554 state=0
+09-09 22:34:23.295  3168  3212 I SharedAudio: pcm peak=2554 state=0
+09-09 22:34:23.296  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.298   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.314  3168  3212 I SharedAudio: pcm peak=2598 state=0
+09-09 22:34:23.315  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.316  3168  3212 I SharedAudio: pcm peak=2537 state=0
+09-09 22:34:23.320  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:23.322  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:23.322  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:23.326   266  2720 D AF::TrackHandle: OpPlayAudio: track:230 usage:1 not muted
+09-09 22:34:23.335   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:23.341  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:23.342  3168  3212 I SharedAudio: pcm peak=2067 state=0
+09-09 22:34:23.343  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.363   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.365  3168  3212 I SharedAudio: pcm peak=2351 state=0
+09-09 22:34:23.366  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.377  3168  3212 I SharedAudio: pcm peak=2492 state=0
+09-09 22:34:23.405  3168  3212 I SharedAudio: pcm peak=2417 state=0
+09-09 22:34:23.406  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.427  3168  3212 I SharedAudio: pcm peak=2105 state=0
+09-09 22:34:23.432  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.466  3168  3212 I SharedAudio: pcm peak=2462 state=0
+09-09 22:34:23.469  3168  3212 I SharedAudio: pcm peak=2919 state=0
+09-09 22:34:23.470  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.475  3168  3212 I SharedAudio: pcm peak=3151 state=0
+09-09 22:34:23.477  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.500   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.512  3168  3212 I SharedAudio: pcm peak=3009 state=0
+09-09 22:34:23.522  3168  3212 I SharedAudio: pcm peak=2953 state=0
+09-09 22:34:23.523  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.557  3168  3212 I SharedAudio: pcm peak=1739 state=0
+09-09 22:34:23.559  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.561  3168  3212 I SharedAudio: pcm peak=2557 state=0
+09-09 22:34:23.566   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.571  3168  3212 I SharedAudio: pcm peak=3352 state=0
+09-09 22:34:23.572  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.576   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:23.605  3168  3212 I SharedAudio: pcm peak=3216 state=0
+09-09 22:34:23.607  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.617  3168  3212 I SharedAudio: pcm peak=3430 state=0
+09-09 22:34:23.653  3168  3212 I SharedAudio: pcm peak=3498 state=0
+09-09 22:34:23.655  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.657  3168  3212 I SharedAudio: pcm peak=3357 state=0
+09-09 22:34:23.659  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.701   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.706  3168  3212 I SharedAudio: pcm peak=3195 state=0
+09-09 22:34:23.708  3168  3212 I SharedAudio: pcm peak=2774 state=0
+09-09 22:34:23.709  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.714  3168  3212 I SharedAudio: pcm peak=2117 state=0
+09-09 22:34:23.715  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.720  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:23.724  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:23.724  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:23.729   266  2720 D AF::TrackHandle: OpPlayAudio: track:231 usage:1 not muted
+09-09 22:34:23.744   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:23.745  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:23.750  3168  3212 I SharedAudio: pcm peak=2257 state=0
+09-09 22:34:23.762  3168  3212 I SharedAudio: pcm peak=2116 state=0
+09-09 22:34:23.763  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.784   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.797  3168  3212 I SharedAudio: pcm peak=1741 state=0
+09-09 22:34:23.798  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.799  3168  3212 I SharedAudio: pcm peak=819 state=0
+09-09 22:34:23.810  3168  3212 I SharedAudio: pcm peak=434 state=0
+09-09 22:34:23.811  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.850  3168  3212 I SharedAudio: pcm peak=455 state=0
+09-09 22:34:23.852  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.860  3168  3212 I SharedAudio: pcm peak=408 state=0
+09-09 22:34:23.896  3168  3212 I SharedAudio: pcm peak=407 state=0
+09-09 22:34:23.899  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.900   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.903  3168  3212 I SharedAudio: pcm peak=470 state=0
+09-09 22:34:23.904  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.942  3168  3212 I SharedAudio: pcm peak=349 state=0
+09-09 22:34:23.944  3168  3212 I SharedAudio: pcm peak=241 state=0
+09-09 22:34:23.945  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.956  3168  3212 I SharedAudio: pcm peak=180 state=0
+09-09 22:34:23.959  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:23.969  3168  3212 I SharedAudio: pcm peak=175 state=0
+09-09 22:34:23.983   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:23.986   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:24.003  3168  3212 I SharedAudio: pcm peak=182 state=0
+09-09 22:34:24.008  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.017  3168  3212 I SharedAudio: pcm peak=197 state=0
+09-09 22:34:24.018  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.038  3168  3212 I SharedAudio: pcm peak=180 state=0
+09-09 22:34:24.055  3168  3212 I SharedAudio: pcm peak=157 state=0
+09-09 22:34:24.056  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.088  3168  3212 I SharedAudio: pcm peak=162 state=0
+09-09 22:34:24.089  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.103   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.105  3168  3212 I SharedAudio: pcm peak=129 state=0
+09-09 22:34:24.114  3168  3212 I SharedAudio: pcm peak=164 state=0
+09-09 22:34:24.115  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.127  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:24.130  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:24.130  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:24.135   266  1221 D AF::TrackHandle: OpPlayAudio: track:232 usage:1 not muted
+09-09 22:34:24.137  3168  3212 I SharedAudio: pcm peak=177 state=0
+09-09 22:34:24.138  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.146  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:24.151   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:24.162  3168  3212 I SharedAudio: pcm peak=196 state=0
+09-09 22:34:24.184   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.199  3168  3212 I SharedAudio: pcm peak=140 state=0
+09-09 22:34:24.199  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.201  3168  3212 I SharedAudio: pcm peak=156 state=0
+09-09 22:34:24.202  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.210  3168  3212 I SharedAudio: pcm peak=192 state=0
+09-09 22:34:24.250  3168  3212 I SharedAudio: pcm peak=178 state=0
+09-09 22:34:24.252  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.260  3168  3212 I SharedAudio: pcm peak=135 state=0
+09-09 22:34:24.266  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.297  3168  3212 I SharedAudio: pcm peak=120 state=0
+09-09 22:34:24.304   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.305  3168  3212 I SharedAudio: pcm peak=715 state=0
+09-09 22:34:24.307  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.328  3168  3212 I SharedAudio: pcm peak=755 state=0
+09-09 22:34:24.329  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.345  3168  3212 I SharedAudio: pcm peak=2169 state=0
+09-09 22:34:24.360  3168  3212 I SharedAudio: pcm peak=3450 state=0
+09-09 22:34:24.361  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.378  3168  3212 I SharedAudio: pcm peak=3106 state=0
+09-09 22:34:24.379  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.386   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.392   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:24.402  3168  3212 I SharedAudio: pcm peak=2383 state=0
+09-09 22:34:24.426  3168  3212 I SharedAudio: pcm peak=2112 state=0
+09-09 22:34:24.427  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.441  3168  3212 I SharedAudio: pcm peak=1231 state=0
+09-09 22:34:24.442  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.455  3168  3212 I SharedAudio: pcm peak=1315 state=0
+09-09 22:34:24.490  3168  3212 I SharedAudio: pcm peak=1122 state=0
+09-09 22:34:24.491  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.507   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.508  3168  3212 I SharedAudio: pcm peak=1051 state=0
+09-09 22:34:24.510  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.519  3168  3212 I SharedAudio: pcm peak=1074 state=0
+09-09 22:34:24.535  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:24.538  3168  3212 I SharedAudio: pcm peak=1066 state=0
+09-09 22:34:24.539  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.542  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:24.543  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:24.548   266  1221 D AF::TrackHandle: OpPlayAudio: track:233 usage:1 not muted
+09-09 22:34:24.567  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:24.571  3168  3212 I SharedAudio: pcm peak=948 state=0
+09-09 22:34:24.572  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.580  3168  3212 I SharedAudio: pcm peak=352 state=0
+09-09 22:34:24.586   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:24.587   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.600  3168  3212 I SharedAudio: pcm peak=158 state=0
+09-09 22:34:24.601  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.617  3168  3212 I SharedAudio: pcm peak=276 state=0
+09-09 22:34:24.618  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.648  3168  3212 I SharedAudio: pcm peak=2123 state=0
+09-09 22:34:24.662  3168  3212 I SharedAudio: pcm peak=1807 state=0
+09-09 22:34:24.663  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.677  3168  3212 I SharedAudio: pcm peak=1051 state=0
+09-09 22:34:24.678  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.697  3168  3212 I SharedAudio: pcm peak=1083 state=0
+09-09 22:34:24.704   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.726  3168  3212 I SharedAudio: pcm peak=400 state=0
+09-09 22:34:24.727  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.739  3168  3212 I SharedAudio: pcm peak=1535 state=0
+09-09 22:34:24.740  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.762  3168  3212 I SharedAudio: pcm peak=1662 state=0
+09-09 22:34:24.777  3168  3212 I SharedAudio: pcm peak=1836 state=0
+09-09 22:34:24.780  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.789   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.800   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:24.810  3168  3212 I SharedAudio: pcm peak=2194 state=0
+09-09 22:34:24.811  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.823  3168  3212 I SharedAudio: pcm peak=1985 state=0
+09-09 22:34:24.840  3168  3212 I SharedAudio: pcm peak=590 state=0
+09-09 22:34:24.842  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.858  3168  3212 I SharedAudio: pcm peak=184 state=0
+09-09 22:34:24.859  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.891  3168  3212 I SharedAudio: pcm peak=210 state=0
+09-09 22:34:24.901  3168  3212 I SharedAudio: pcm peak=1475 state=0
+09-09 22:34:24.907  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.908   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:24.923  3168  3212 I SharedAudio: pcm peak=1667 state=0
+09-09 22:34:24.925  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.939  3168  3212 I SharedAudio: pcm peak=1699 state=0
+09-09 22:34:24.973  3168  3212 I SharedAudio: pcm peak=1318 state=0
+09-09 22:34:24.974  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:24.975  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.979  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:24.979  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:24.987  3168  3212 I SharedAudio: pcm peak=816 state=0
+09-09 22:34:24.989  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:24.997   266  2687 D AF::TrackHandle: OpPlayAudio: track:234 usage:1 not muted
+09-09 22:34:25.006   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.008  3168  3212 I SharedAudio: pcm peak=203 state=0
+09-09 22:34:25.015  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:25.016   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:25.017  3168  3212 I SharedAudio: pcm peak=203 state=0
+09-09 22:34:25.018  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.045  3168  3212 I SharedAudio: pcm peak=186 state=0
+09-09 22:34:25.046  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.064  3168  3212 I SharedAudio: pcm peak=1663 state=0
+09-09 22:34:25.078  3168  3212 I SharedAudio: pcm peak=1777 state=0
+09-09 22:34:25.079  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.097  3168  3212 I SharedAudio: pcm peak=1758 state=0
+09-09 22:34:25.099  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.106   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.126  3168  3212 I SharedAudio: pcm peak=1653 state=0
+09-09 22:34:25.140  3168  3212 I SharedAudio: pcm peak=1310 state=0
+09-09 22:34:25.143  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.160  3168  3212 I SharedAudio: pcm peak=978 state=0
+09-09 22:34:25.161  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.176  3168  3212 I SharedAudio: pcm peak=1462 state=0
+09-09 22:34:25.208   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.209  3168  3212 I SharedAudio: pcm peak=237 state=0
+09-09 22:34:25.210  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.225  3168  3212 I SharedAudio: pcm peak=163 state=0
+09-09 22:34:25.226  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.232   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:25.243  3168  3212 I SharedAudio: pcm peak=197 state=0
+09-09 22:34:25.257  3168  3212 I SharedAudio: pcm peak=584 state=0
+09-09 22:34:25.258  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.291  3168  3212 I SharedAudio: pcm peak=2086 state=0
+09-09 22:34:25.292  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.306  3168  3212 I SharedAudio: pcm peak=2733 state=0
+09-09 22:34:25.308   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.318  3168  3212 I SharedAudio: pcm peak=2800 state=0
+09-09 22:34:25.320  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.340  3168  3212 I SharedAudio: pcm peak=2603 state=0
+09-09 22:34:25.341  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.370  3168  3212 I SharedAudio: pcm peak=2467 state=0
+09-09 22:34:25.387  3168  3212 I SharedAudio: pcm peak=2333 state=0
+09-09 22:34:25.391  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.400  3168  3212 I SharedAudio: pcm peak=989 state=0
+09-09 22:34:25.401  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.407   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.415  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:25.416  3168  3212 I SharedAudio: pcm peak=209 state=0
+09-09 22:34:25.418  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:25.418  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:25.421   266  2720 D AF::TrackHandle: OpPlayAudio: track:235 usage:1 not muted
+09-09 22:34:25.431  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:25.447   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:25.449  3168  3212 I SharedAudio: pcm peak=320 state=0
+09-09 22:34:25.450  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.463  3168  3212 I SharedAudio: pcm peak=358 state=0
+09-09 22:34:25.464  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.485  3168  3212 I SharedAudio: pcm peak=248 state=0
+09-09 22:34:25.499  3168  3212 I SharedAudio: pcm peak=1803 state=0
+09-09 22:34:25.500  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.510   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.533  3168  3212 I SharedAudio: pcm peak=1926 state=0
+09-09 22:34:25.535  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.547  3168  3212 I SharedAudio: pcm peak=1805 state=0
+09-09 22:34:25.561  3168  3212 I SharedAudio: pcm peak=1779 state=0
+09-09 22:34:25.563  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.575  3168  3212 I SharedAudio: pcm peak=299 state=0
+09-09 22:34:25.576  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.611   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.614  3168  3212 I SharedAudio: pcm peak=2125 state=0
+09-09 22:34:25.623  3168  3212 I SharedAudio: pcm peak=1872 state=0
+09-09 22:34:25.625  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.643  3168  3212 I SharedAudio: pcm peak=1281 state=0
+09-09 22:34:25.645  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.657  3168  3212 I SharedAudio: pcm peak=1899 state=0
+09-09 22:34:25.664   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:25.693  3168  3212 I SharedAudio: pcm peak=2624 state=0
+09-09 22:34:25.695  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.704  3168  3212 I SharedAudio: pcm peak=2794 state=0
+09-09 22:34:25.709  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.711   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.725  3168  3212 I SharedAudio: pcm peak=2304 state=0
+09-09 22:34:25.738  3168  3212 I SharedAudio: pcm peak=1931 state=0
+09-09 22:34:25.740  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.772  3168  3212 I SharedAudio: pcm peak=1681 state=0
+09-09 22:34:25.774  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.787  3168  3212 I SharedAudio: pcm peak=2048 state=0
+09-09 22:34:25.811   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.814  3168  3212 I SharedAudio: pcm peak=2192 state=0
+09-09 22:34:25.816  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.819  3168  3212 I SharedAudio: pcm peak=2267 state=0
+09-09 22:34:25.821  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.836  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:25.841  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:25.842  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:25.847   266  1221 D AF::TrackHandle: OpPlayAudio: track:236 usage:1 not muted
+09-09 22:34:25.857  3168  3212 I SharedAudio: pcm peak=1234 state=0
+09-09 22:34:25.867  3168  3212 I SharedAudio: pcm peak=527 state=0
+09-09 22:34:25.868  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.869  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:25.881  3168  3212 I SharedAudio: pcm peak=440 state=0
+09-09 22:34:25.881   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:25.882  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.900  3168  3212 I SharedAudio: pcm peak=454 state=0
+09-09 22:34:25.912   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:25.929  3168  3212 I SharedAudio: pcm peak=381 state=0
+09-09 22:34:25.930  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.948  3168  3212 I SharedAudio: pcm peak=618 state=0
+09-09 22:34:25.949  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:25.962  3168  3212 I SharedAudio: pcm peak=194 state=0
+09-09 22:34:25.982  3168  3212 I SharedAudio: pcm peak=326 state=0
+09-09 22:34:25.984  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.011  3168  3212 I SharedAudio: pcm peak=2376 state=0
+09-09 22:34:26.013  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.030   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.034  3168  3212 I SharedAudio: pcm peak=845 state=0
+09-09 22:34:26.045  3168  3212 I SharedAudio: pcm peak=3576 state=0
+09-09 22:34:26.046  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.059  3168  3212 I SharedAudio: pcm peak=3131 state=0
+09-09 22:34:26.060  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.090  3168  3212 I SharedAudio: pcm peak=2749 state=0
+09-09 22:34:26.096   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:26.111   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.113  3168  3212 I SharedAudio: pcm peak=1312 state=0
+09-09 22:34:26.114  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.124  3168  3212 I SharedAudio: pcm peak=314 state=0
+09-09 22:34:26.125  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.138  3168  3212 I SharedAudio: pcm peak=219 state=0
+09-09 22:34:26.173  3168  3212 I SharedAudio: pcm peak=222 state=0
+09-09 22:34:26.174  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.187  3168  3212 I SharedAudio: pcm peak=3063 state=0
+09-09 22:34:26.188  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.201  3168  3212 I SharedAudio: pcm peak=3106 state=0
+09-09 22:34:26.222  3168  3212 I SharedAudio: pcm peak=3012 state=0
+09-09 22:34:26.223  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.228   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.249  3168  3212 I SharedAudio: pcm peak=2984 state=0
+09-09 22:34:26.250  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.270  3168  3212 I SharedAudio: pcm peak=3060 state=0
+09-09 22:34:26.271  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:26.274  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:26.274  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:26.285   266  1221 D AF::TrackHandle: OpPlayAudio: track:237 usage:1 not muted
+09-09 22:34:26.285  3168  3212 I SharedAudio: pcm peak=2244 state=0
+09-09 22:34:26.287  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.299  3168  3212 I SharedAudio: pcm peak=455 state=0
+09-09 22:34:26.301  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.305  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:26.313   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:26.313   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.333  3168  3212 I SharedAudio: pcm peak=422 state=0
+09-09 22:34:26.347  3168  3212 I SharedAudio: pcm peak=411 state=0
+09-09 22:34:26.348  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.361  3168  3212 I SharedAudio: pcm peak=145 state=0
+09-09 22:34:26.362  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.382  3168  3212 I SharedAudio: pcm peak=248 state=0
+09-09 22:34:26.417  3168  3212 I SharedAudio: pcm peak=1590 state=0
+09-09 22:34:26.419  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.431   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.432  3168  3212 I SharedAudio: pcm peak=1904 state=0
+09-09 22:34:26.434  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.442  3168  3212 I SharedAudio: pcm peak=740 state=0
+09-09 22:34:26.463  3168  3212 I SharedAudio: pcm peak=870 state=0
+09-09 22:34:26.465  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.492  3168  3212 I SharedAudio: pcm peak=895 state=0
+09-09 22:34:26.493  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.515   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.517  3168  3212 I SharedAudio: pcm peak=956 state=0
+09-09 22:34:26.527  3168  3212 I SharedAudio: pcm peak=800 state=0
+09-09 22:34:26.528   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:26.532  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.540  3168  3212 I SharedAudio: pcm peak=419 state=0
+09-09 22:34:26.541  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.575  3168  3212 I SharedAudio: pcm peak=126 state=0
+09-09 22:34:26.588  3168  3212 I SharedAudio: pcm peak=139 state=0
+09-09 22:34:26.589  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.608  3168  3212 I SharedAudio: pcm peak=85 state=0
+09-09 22:34:26.610  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.624  3168  3212 I SharedAudio: pcm peak=126 state=0
+09-09 22:34:26.633   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.656  3168  3212 I SharedAudio: pcm peak=133 state=0
+09-09 22:34:26.657  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.669  3168  3212 I SharedAudio: pcm peak=182 state=0
+09-09 22:34:26.671  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.684  3168  3212 I SharedAudio: pcm peak=125 state=0
+09-09 22:34:26.705  3168  3212 I SharedAudio: pcm peak=112 state=0
+09-09 22:34:26.706  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.708  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:26.716   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.723  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:26.723  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:26.731   266  2720 D AF::TrackHandle: OpPlayAudio: track:238 usage:1 not muted
+09-09 22:34:26.733  3168  3212 I SharedAudio: pcm peak=107 state=0
+09-09 22:34:26.734  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.747  3168  3212 I SharedAudio: pcm peak=128 state=0
+09-09 22:34:26.749   440   661 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:26.749  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:26.767  3168  3212 I SharedAudio: pcm peak=80 state=0
+09-09 22:34:26.768  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.781  3168  3212 I SharedAudio: pcm peak=162 state=0
+09-09 22:34:26.782  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.817  3168  3212 I SharedAudio: pcm peak=145 state=0
+09-09 22:34:26.831   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.833  3168  3212 I SharedAudio: pcm peak=129 state=0
+09-09 22:34:26.834  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.846  3168  3212 I SharedAudio: pcm peak=144 state=0
+09-09 22:34:26.846  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.865  3168  3212 I SharedAudio: pcm peak=156 state=0
+09-09 22:34:26.893  3168  3212 I SharedAudio: pcm peak=121 state=0
+09-09 22:34:26.894  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.915   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:26.916  3168  3212 I SharedAudio: pcm peak=136 state=0
+09-09 22:34:26.917  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.918  3168  3212 I SharedAudio: pcm peak=112 state=0
+09-09 22:34:26.941  3168  3212 I SharedAudio: pcm peak=178 state=0
+09-09 22:34:26.942  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.961   440  2059 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:26.975  3168  3212 I SharedAudio: pcm peak=136 state=0
+09-09 22:34:26.977  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:26.989  3168  3212 I SharedAudio: pcm peak=209 state=0
+09-09 22:34:27.009  3168  3212 I SharedAudio: pcm peak=364 state=0
+09-09 22:34:27.011  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.024  3168  3212 I SharedAudio: pcm peak=2790 state=0
+09-09 22:34:27.025  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.033   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:27.057  3168  3212 I SharedAudio: pcm peak=3863 state=0
+09-09 22:34:27.070  3168  3212 I SharedAudio: pcm peak=3397 state=0
+09-09 22:34:27.071  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.084  3168  3212 I SharedAudio: pcm peak=2499 state=0
+09-09 22:34:27.085  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.105  3168  3212 I SharedAudio: pcm peak=758 state=0
+09-09 22:34:27.116   257   382 I hwcomposer: [DEV] [DEV] (Send identity matrix)  
+09-09 22:34:27.133  3168  3212 I SharedAudio: pcm peak=397 state=0
+09-09 22:34:27.135  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.143  3168  3243 I PuckPlayback: playback_complete frames=9600 expected=9600
+09-09 22:34:27.149  3168  3243 I RealtimeAudioProbe: playback_worker_finished_bytes=19200
+09-09 22:34:27.149  3168  3243 I RealtimeAudioProbe: playback_worker_started_bytes=19200
+09-09 22:34:27.160   266  2720 D AF::TrackHandle: OpPlayAudio: track:239 usage:1 not muted
+09-09 22:34:27.162  3168  3212 I SharedAudio: pcm peak=314 state=0
+09-09 22:34:27.165  3168  3212 I MicroWakeWord: probability=0
+09-09 22:34:27.169  3168  3212 I SharedAudio: pcm peak=182 state=0
+09-09 22:34:27.171  1153  1153 W AudioFxService: Recording in progress, not performing auto-attach!
+09-09 22:34:27.175   440   908 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-09 22:34:27.182  3168  3212 I SharedAudio: pcm peak=272 state=0
+09-09 22:34:27.182  3168  3212 I MicroWakeWord: probability=0
