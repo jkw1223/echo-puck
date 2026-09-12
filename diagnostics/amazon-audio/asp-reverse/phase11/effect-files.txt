@@ -1,0 +1,1 @@
+adb unavailable on host: `zsh: command not found: adb`; no live ROM file inventory collected.
