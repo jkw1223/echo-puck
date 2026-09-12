@@ -1,0 +1,13 @@
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.0M  385M   1% /run
+/dev/sda2        30G   18G   11G  62% /
+tmpfs           1.9G   55M  1.9G   3% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  132K  387M   1% /run/user/1000
+/dev/sr0         98M   98M     0 100% /media/user/CDROM
+/dev/sr1        6.2G  6.2G     0 100% /media/user/Ubuntu 24.04.4 LTS amd64
+/dev/sdb1        79G  536K   75G   1% /media/user/SCRATCHPAD
+
+$ du -sh ~/webrtc-apm-build
+44K	/home/user/webrtc-apm-build/

@@ -1,0 +1,24 @@
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.0M  385M   1% /run
+/dev/sda2        30G   18G   11G  62% /
+tmpfs           1.9G   56M  1.9G   3% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  136K  387M   1% /run/user/1000
+/dev/sr0         98M   98M     0 100% /media/user/CDROM
+/dev/sr1        6.2G  6.2G     0 100% /media/user/Ubuntu 24.04.4 LTS amd64
+/dev/sdb1        79G  2.4G   72G   4% /media/user/SCRATCHPAD
+
+$ du -sh ~/webrtc-apm-min/*
+4.0K	/home/user/webrtc-apm-min/android-armv7.ini
+2.2G	/home/user/webrtc-apm-min/android-ndk-r28c
+11M	/home/user/webrtc-apm-min/build-tools
+4.0K	/home/user/webrtc-apm-min/build-tools-install.log
+64K	/home/user/webrtc-apm-min/build-verified.log
+20K	/home/user/webrtc-apm-min/meson-build.log
+8.0K	/home/user/webrtc-apm-min/meson-setup.log
+35M	/home/user/webrtc-apm-min/standalone
+158M	/home/user/webrtc-apm-min/webrtc
+
+$ du -sh ~/webrtc-apm-min/
+2.4G	/home/user/webrtc-apm-min/

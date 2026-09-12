@@ -1,0 +1,25 @@
+Date: 2026-09-12T16:54:28.276631
+WebRTC pin: d9ec82c89d94c319e2a1f547c1bdd58591828455
+Workspace: ~/webrtc-apm-build/
+Resolved workspace: /media/user/SCRATCHPAD/webrtc-apm-build
+depot_tools SHA: 36a8df4ad006eaa0572fb446edb8145fe5403592
+
+$ du -sh ~/webrtc-apm-build/*
+4.0K	/home/user/webrtc-apm-build/.gclient
+4.0K	/home/user/webrtc-apm-build/.gcs_entries
+1.2G	/home/user/webrtc-apm-build/depot_tools
+20K	/home/user/webrtc-apm-build/fetch.log
+21G	/home/user/webrtc-apm-build/src
+0	/home/user/webrtc-apm-build/sync-linux-retry.log
+12K	/home/user/webrtc-apm-build/sync-linux.log
+
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.0M  385M   1% /run
+/dev/sda2        30G   18G   11G  62% /
+tmpfs           1.9G   56M  1.9G   3% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  132K  387M   1% /run/user/1000
+/dev/sr0         98M   98M     0 100% /media/user/CDROM
+/dev/sr1        6.2G  6.2G     0 100% /media/user/Ubuntu 24.04.4 LTS amd64
+/dev/sdb1        79G   22G   53G  30% /media/user/SCRATCHPAD

@@ -1,0 +1,26 @@
+# Meson generated target inventory (Android ARMv7, API 24)
+
+absl_base | static library | 13 sources
+absl_hash | static library | 3 sources
+absl_numeric | static library | 1 sources
+absl_profiling | static library | 2 sources
+absl_crc | static library | 8 sources
+absl_strings | static library | 38 sources
+absl_debugging | static library | 13 sources
+absl_random | static library | 12 sources
+absl_time | static library | 15 sources
+absl_types | static library | 3 sources
+absl_synchronization | static library | 14 sources
+absl_container | static library | 3 sources
+absl_flags | static library | 11 sources
+absl_status | static library | 4 sources
+absl_log | static library | 16 sources
+libbase | static library | 22 sources
+libapi | static library | 15 sources
+system_wrappers | static library | 5 sources
+common_audio | static library | 57 sources
+libpffft | static library | 1 sources
+librnnoise | static library | 1 sources
+libfft | static library | 1 sources
+webrtc-audio-processing-2 | shared library | 147 sources
+run-offline | executable | 1 sources

@@ -1,0 +1,144 @@
+ninja: Entering directory `/media/user/SCRATCHPAD/webrtc-apm-min/standalone/build-android-armv7'
+[1/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_cycleclock.cc.o
+[2/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_poison.cc.o
+[3/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_low_level_alloc.cc.o
+[4/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_raw_logging.cc.o
+[5/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_scoped_set_env.cc.o
+[6/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_spinlock_wait.cc.o
+[7/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_spinlock.cc.o
+[8/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_strerror.cc.o
+[9/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_thread_identity.cc.o
+[10/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_sysinfo.cc.o
+[11/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_unscaledcycleclock.cc.o
+[12/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_internal_throw_delegate.cc.o
+[13/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_base.a.p/absl_base_log_severity.cc.o
+[14/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_base.a
+[15/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_hash.a.p/absl_hash_internal_city.cc.o
+[16/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_hash.a.p/absl_hash_internal_hash.cc.o
+[17/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_hash.a.p/absl_hash_internal_low_level_hash.cc.o
+[18/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_hash.a
+[19/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_profiling.a.p/absl_profiling_internal_exponential_biased.cc.o
+[20/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_profiling.a.p/absl_profiling_internal_periodic_sampler.cc.o
+[21/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_profiling.a
+[22/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_numeric.a.p/absl_numeric_int128.cc.o
+[23/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_numeric.a
+[24/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_cpu_detect.cc.o
+[25/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_crc32c.cc.o
+[26/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc.cc.o
+[27/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc_cord_state.cc.o
+[28/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc_memcpy_fallback.cc.o
+[29/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc_memcpy_x86_arm_combined.cc.o
+[30/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc_non_temporal_memcpy.cc.o
+[31/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_crc.a.p/absl_crc_internal_crc_x86_arm_combined.cc.o
+[32/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_crc.a
+[33/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_ascii.cc.o
+[34/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_charconv.cc.o
+[35/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_cord_analysis.cc.o
+[36/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_cord.cc.o
+[37/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_cord_buffer.cc.o
+[38/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_charconv_bigint.cc.o
+[39/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_escaping.cc.o
+[40/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_charconv_parse.cc.o
+[41/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_internal.cc.o
+[42/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_rep_btree_navigator.cc.o
+[43/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_rep_btree.cc.o
+[44/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_rep_btree_reader.cc.o
+[45/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_rep_consume.cc.o
+[46/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cord_rep_crc.cc.o
+[47/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cordz_functions.cc.o
+[48/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cordz_handle.cc.o
+[49/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cordz_info.cc.o
+[50/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_cordz_sample_token.cc.o
+[51/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_damerau_levenshtein_distance.cc.o
+[52/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_escaping.cc.o
+[53/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_memutil.cc.o
+[54/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_pow10_helper.cc.o
+[55/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_ostringstream.cc.o
+[56/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_bind.cc.o
+[57/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_arg.cc.o
+[58/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_extension.cc.o
+[59/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_output.cc.o
+[60/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_float_conversion.cc.o
+[61/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_stringify_sink.cc.o
+[62/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_utf8.cc.o
+[63/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_internal_str_format_parser.cc.o
+[64/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_match.cc.o
+[65/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_numbers.cc.o
+[66/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_str_cat.cc.o
+[67/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_str_replace.cc.o
+[68/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_str_split.cc.o
+[69/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_string_view.cc.o
+[70/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_strings.a.p/absl_strings_substitute.cc.o
+[71/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_strings.a
+[72/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_address_is_readable.cc.o
+[73/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_failure_signal_handler.cc.o
+[74/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_decode_rust_punycode.cc.o
+[75/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_demangle.cc.o
+[76/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_demangle_rust.cc.o
+[77/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_elf_mem_image.cc.o
+[78/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_examine_stack.cc.o
+[79/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_stack_consumption.cc.o
+[80/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_leak_check.cc.o
+[81/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_stacktrace.cc.o
+[82/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_vdso_support.cc.o
+[83/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_internal_utf8_for_code_point.cc.o
+[84/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_debugging.a.p/absl_debugging_symbolize.cc.o
+[85/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_debugging.a
+[86/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_discrete_distribution.cc.o
+[87/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_gaussian_distribution.cc.o
+[88/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_chi_square.cc.o
+[89/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_pool_urbg.cc.o
+[90/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_randen_detect.cc.o
+[91/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_randen.cc.o
+[92/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_randen_round_keys.cc.o
+[93/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_randen_hwaes.cc.o
+[94/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_randen_slow.cc.o
+[95/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_internal_seed_material.cc.o
+[96/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_seed_gen_exception.cc.o
+[97/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_random.a.p/absl_random_seed_sequences.cc.o
+[98/431] Linking static target subprojects/abseil-cpp-20240722.0/libabsl_random.a
+[99/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_civil_time.cc.o
+[100/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_clock.cc.o
+[101/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_format.cc.o
+[102/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_duration.cc.o
+[103/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_fixed.cc.o
+[104/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_civil_time_detail.cc.o
+[105/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_if.cc.o
+[106/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_format.cc.o
+[107/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_impl.cc.o
+[108/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_info.cc.o
+FAILED: subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_info.cc.o 
+/home/user/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi23-clang++ -Isubprojects/abseil-cpp-20240722.0/libabsl_time.a.p -Isubprojects/abseil-cpp-20240722.0 -I../subprojects/abseil-cpp-20240722.0 -fdiagnostics-color=always -D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_FAST -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O3 -Wno-sign-compare -Wno-gcc-compat -fPIC -MD -MQ subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_info.cc.o -MF subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_info.cc.o.d -o subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_info.cc.o -c ../subprojects/abseil-cpp-20240722.0/absl/time/internal/cctz/src/time_zone_info.cc
+In file included from ../subprojects/abseil-cpp-20240722.0/absl/time/internal/cctz/src/time_zone_info.cc:42:
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/fstream:877:9: error: no member named 'fseeko' in the global namespace; did you mean 'fseek'?
+  877 |   if (::fseeko(__file_, __width > 0 ? __width * __off : 0, __whence))
+      |       ~~^
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h:207:5: note: 'fseek' declared here
+  207 | int fseek(FILE* _Nonnull __fp, long __offset, int __whence);
+      |     ^
+In file included from ../subprojects/abseil-cpp-20240722.0/absl/time/internal/cctz/src/time_zone_info.cc:42:
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/fstream:879:18: error: use of undeclared identifier 'ftello'; did you mean 'ftell'?
+  879 |   pos_type __r = ftello(__file_);
+      |                  ^
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/cstdio:146:9: note: 'ftell' declared here
+  146 | using ::ftell _LIBCPP_USING_IF_EXISTS;
+      |         ^
+In file included from ../subprojects/abseil-cpp-20240722.0/absl/time/internal/cctz/src/time_zone_info.cc:42:
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/fstream:894:9: error: no member named 'fseeko' in the global namespace; did you mean 'fseek'?
+  894 |   if (::fseeko(__file_, __sp, SEEK_SET))
+      |       ~~^
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h:207:5: note: 'fseek' declared here
+  207 | int fseek(FILE* _Nonnull __fp, long __offset, int __whence);
+      |     ^
+In file included from ../subprojects/abseil-cpp-20240722.0/absl/time/internal/cctz/src/time_zone_info.cc:42:
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/fstream:947:11: error: no member named 'fseeko' in the global namespace; did you mean 'fseek'?
+  947 |     if (::fseeko(__file_, -__c, SEEK_CUR))
+      |         ~~^
+/media/user/SCRATCHPAD/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h:207:5: note: 'fseek' declared here
+  207 | int fseek(FILE* _Nonnull __fp, long __offset, int __whence);
+      |     ^
+4 errors generated.
+[109/431] Compiling C++ object subprojects/abseil-cpp-20240722.0/libabsl_time.a.p/absl_time_internal_cctz_src_time_zone_libc.cc.o
+ninja: build stopped: subcommand failed.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /home/user/webrtc-apm-min/build-tools/bin/ninja -C /media/user/SCRATCHPAD/webrtc-apm-min/standalone/build-android-armv7 -j 2

@@ -1,0 +1,244 @@
+
+$ file /home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so /home/user/webrtc-apm-min/standalone/build-android-armv7/examples/run-offline
+/home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so: ELF 32-bit LSB shared object, ARM, EABI5 version 1 (SYSV), dynamically linked, not stripped
+/home/user/webrtc-apm-min/standalone/build-android-armv7/examples/run-offline:                                            ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /system/bin/linker, not stripped
+
+$ /home/user/webrtc-apm-min/android-ndk-r28c/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf -h -A -d -n /home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          1238300 (bytes into file)
+  Flags:                             0x5000200
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         10
+  Size of section headers:           40 (bytes)
+  Number of section headers:         27
+  Section header string table index: 25
+Dynamic section at offset 0xdd4c8 contains 26 entries:
+  Tag        Type           Name/Value
+  0x00000001 (NEEDED)       Shared library: [liblog.so]
+  0x00000001 (NEEDED)       Shared library: [libc++_shared.so]
+  0x00000001 (NEEDED)       Shared library: [libm.so]
+  0x00000001 (NEEDED)       Shared library: [libc.so]
+  0x0000000e (SONAME)       Library soname: [libwebrtc-audio-processing-2.so]
+  0x0000001e (FLAGS)        BIND_NOW 
+  0x6ffffffb (FLAGS_1)      NOW 
+  0x00000011 (REL)          0x2ef74
+  0x00000012 (RELSZ)        5856 (bytes)
+  0x00000013 (RELENT)       8 (bytes)
+  0x6ffffffa (RELCOUNT)     140
+  0x00000017 (JMPREL)       0x339bc
+  0x00000002 (PLTRELSZ)     8488 (bytes)
+  0x00000003 (PLTGOT)       0xdf7ac
+  0x00000014 (PLTREL)       REL
+  0x00000006 (SYMTAB)       0x20c
+  0x0000000b (SYMENT)       16 (bytes)
+  0x00000005 (STRTAB)       0xe348
+  0x0000000a (STRSZ)        134188 (bytes)
+  0x6ffffef5 (GNU_HASH)     0xa82c
+  0x0000001a (FINI_ARRAY)   0xdf4c0
+  0x0000001c (FINI_ARRAYSZ) 8 (bytes)
+  0x6ffffff0 (VERSYM)       0x957c
+  0x6ffffffe (VERNEED)      0xa7ec
+  0x6fffffff (VERNEEDNUM)   2
+  0x00000000 (NULL)         0x0
+BuildAttributes {
+  FormatVersion: 0x41
+  Section 1 {
+    SectionLength: 59
+    Vendor: aeabi
+    Tag: Tag_File (0x1)
+    Size: 49
+    FileAttributes {
+      Attribute {
+        Tag: 67
+        TagName: conformance
+        Value: 2.09
+      }
+      Attribute {
+        Tag: 6
+        Value: 10
+        TagName: CPU_arch
+        Description: ARM v7
+      }
+      Attribute {
+        Tag: 7
+        Value: 65
+        TagName: CPU_arch_profile
+        Description: Application
+      }
+      Attribute {
+        Tag: 8
+        Value: 1
+        TagName: ARM_ISA_use
+        Description: Permitted
+      }
+      Attribute {
+        Tag: 9
+        Value: 2
+        TagName: THUMB_ISA_use
+        Description: Thumb-2
+      }
+      Attribute {
+        Tag: 10
+        Value: 3
+        TagName: FP_arch
+        Description: VFPv3
+      }
+      Attribute {
+        Tag: 12
+        Value: 1
+        TagName: Advanced_SIMD_arch
+        Description: NEONv1
+      }
+      Attribute {
+        Tag: 14
+        Value: 0
+        TagName: ABI_PCS_R9_use
+        Description: v6
+      }
+      Attribute {
+        Tag: 15
+        Value: 1
+        TagName: ABI_PCS_RW_data
+        Description: PC-relative
+      }
+      Attribute {
+        Tag: 16
+        Value: 1
+        TagName: ABI_PCS_RO_data
+        Description: PC-relative
+      }
+      Attribute {
+        Tag: 17
+        Value: 2
+        TagName: ABI_PCS_GOT_use
+        Description: GOT-Indirect
+      }
+      Attribute {
+        Tag: 18
+        Value: 4
+        TagName: ABI_PCS_wchar_t
+        Description: 4-byte
+      }
+      Attribute {
+        Tag: 20
+        Value: 1
+        TagName: ABI_FP_denormal
+        Description: IEEE-754
+      }
+      Attribute {
+        Tag: 21
+        Value: 0
+        TagName: ABI_FP_exceptions
+        Description: Not Permitted
+      }
+      Attribute {
+        Tag: 23
+        Value: 3
+        TagName: ABI_FP_number_model
+        Description: IEEE-754
+      }
+      Attribute {
+        Tag: 24
+        Value: 1
+        TagName: ABI_align_needed
+        Description: 8-byte alignment
+      }
+      Attribute {
+        Tag: 25
+        Value: 1
+        TagName: ABI_align_preserved
+        Description: 8-byte data alignment
+      }
+      Attribute {
+        Tag: 26
+        Value: 2
+        TagName: ABI_enum_size
+        Description: Int32
+      }
+      Attribute {
+        Tag: 34
+        Value: 1
+        TagName: CPU_unaligned_access
+        Description: v6-style
+      }
+      Attribute {
+        Tag: 38
+        Value: 1
+        TagName: ABI_FP_16bit_format
+        Description: IEEE-754
+      }
+    }
+  }
+}
+Displaying notes found in: .note.android.ident
+  Owner                Data size 	Description
+  Android              0x00000084	NT_ANDROID_TYPE_IDENT
+   description data: 18 00 00 00 72 32 38 63 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 33 36 37 36 33 35 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+$ sha256sum /home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so
+c678dd7caa4af5db6882325854885f10f99577ffcd705fd3f6b11ba5e92fa307  /home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so
+
+Selected defined dynamic symbols:
+000595ec T webrtc::EchoCanceller3::Initialize()
+000589cc T webrtc::EchoCanceller3::RenderWriter::Insert(webrtc::AudioBuffer const&)
+00058770 T webrtc::EchoCanceller3::RenderWriter::RenderWriter(webrtc::ApmDataDumper*, webrtc::EchoCanceller3Config const&, webrtc::SwapQueue<std::__ndk1::vector<std::__ndk1::vector<std::__ndk1::vector<float, std::__ndk1::allocator<float>>, std::__ndk1::allocator<std::__ndk1::vector<float, std::__ndk1::allocator<float>>>>, std::__ndk1::allocator<std::__ndk1::vector<std::__ndk1::vector<float, std::__ndk1::allocator<float>>, std::__ndk1::allocator<std::__ndk1::vector<float, std::__ndk1::allocator<float>>>>>>, webrtc::Aec3RenderQueueItemVerifier>*, unsigned int, unsigned int)
+00058770 T webrtc::EchoCanceller3::RenderWriter::RenderWriter(webrtc::ApmDataDumper*, webrtc::EchoCanceller3Config const&, webrtc::SwapQueue<std::__ndk1::vector<std::__ndk1::vector<std::__ndk1::vector<float, std::__ndk1::allocator<float>>, std::__ndk1::allocator<std::__ndk1::vector<float, std::__ndk1::allocator<float>>>>, std::__ndk1::allocator<std::__ndk1::vector<std::__ndk1::vector<float, std::__ndk1::allocator<float>>, std::__ndk1::allocator<std::__ndk1::vector<float, std::__ndk1::allocator<float>>>>>>, webrtc::Aec3RenderQueueItemVerifier>*, unsigned int, unsigned int)
+0005890c T webrtc::EchoCanceller3::RenderWriter::~RenderWriter()
+0005890c T webrtc::EchoCanceller3::RenderWriter::~RenderWriter()
+0005ac94 W webrtc::EchoCanceller3::AnalyzeRender(webrtc::AudioBuffer*)
+00059b34 T webrtc::EchoCanceller3::AnalyzeRender(webrtc::AudioBuffer const&)
+0005ac9c W webrtc::EchoCanceller3::AnalyzeCapture(webrtc::AudioBuffer*)
+00059b3c T webrtc::EchoCanceller3::AnalyzeCapture(webrtc::AudioBuffer const&)
+00059bf0 T webrtc::EchoCanceller3::ProcessCapture(webrtc::AudioBuffer*, webrtc::AudioBuffer*, bool)
+00059bdc T webrtc::EchoCanceller3::ProcessCapture(webrtc::AudioBuffer*, bool)
+000e1898 B webrtc::EchoCanceller3::instance_count_
+00059dec T webrtc::EchoCanceller3::EmptyRenderQueue()
+0005a33c T webrtc::EchoCanceller3::SetAudioBufferDelay(int)
+0005a34c T webrtc::EchoCanceller3::SetCaptureOutputUsage(bool)
+0005a39c T webrtc::EchoCanceller3::SetBlockProcessorForTesting(std::__ndk1::unique_ptr<webrtc::BlockProcessor, std::__ndk1::default_delete<webrtc::BlockProcessor>>)
+0005a364 T webrtc::EchoCanceller3::CreateDefaultMultichannelConfig()
+00058b80 T webrtc::EchoCanceller3::EchoCanceller3(webrtc::EchoCanceller3Config const&, std::__ndk1::optional<webrtc::EchoCanceller3Config> const&, int, unsigned int, unsigned int)
+00058b80 T webrtc::EchoCanceller3::EchoCanceller3(webrtc::EchoCanceller3Config const&, std::__ndk1::optional<webrtc::EchoCanceller3Config> const&, int, unsigned int, unsigned int)
+00059b18 T webrtc::EchoCanceller3::~EchoCanceller3()
+00059824 T webrtc::EchoCanceller3::~EchoCanceller3()
+00059824 T webrtc::EchoCanceller3::~EchoCanceller3()
+000976e4 T webrtc::GainController2::SetFixedGainDb(float)
+000e1948 B webrtc::GainController2::instance_count_
+000976d4 T webrtc::GainController2::SetCaptureOutputUsed(bool)
+0009773c T webrtc::GainController2::Analyze(int, webrtc::AudioBuffer const&)
+0009775c T webrtc::GainController2::Process(std::__ndk1::optional<float>, bool, webrtc::AudioBuffer*)
+00097bdc T webrtc::GainController2::Validate(webrtc::AudioProcessing::Config::GainController2 const&)
+00096ff4 T webrtc::GainController2::GainController2(webrtc::AudioProcessing::Config::GainController2 const&, webrtc::InputVolumeController::Config const&, int, int, bool)
+00096ff4 T webrtc::GainController2::GainController2(webrtc::AudioProcessing::Config::GainController2 const&, webrtc::InputVolumeController::Config const&, int, int, bool)
+0009761c T webrtc::GainController2::~GainController2()
+0009761c T webrtc::GainController2::~GainController2()
+0009914c T webrtc::NoiseSuppressor::ChannelState::ChannelState(webrtc::SuppressionParams const&, unsigned int)
+0009914c T webrtc::NoiseSuppressor::ChannelState::ChannelState(webrtc::SuppressionParams const&, unsigned int)
+00099bbc T webrtc::NoiseSuppressor::Analyze(webrtc::AudioBuffer const&)
+0009a058 T webrtc::NoiseSuppressor::Process(webrtc::AudioBuffer*)
+000992d8 T webrtc::NoiseSuppressor::NoiseSuppressor(webrtc::NsConfig const&, unsigned int, unsigned int)
+000992d8 T webrtc::NoiseSuppressor::NoiseSuppressor(webrtc::NsConfig const&, unsigned int, unsigned int)
+00094530 W webrtc::NoiseSuppressor::~NoiseSuppressor()
+00089c30 T webrtc::SpeechLevelEstimator::SpeechLevelEstimator(webrtc::ApmDataDumper*, webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital const&, int)
+00089c30 T webrtc::SpeechLevelEstimator::SpeechLevelEstimator(webrtc::ApmDataDumper*, webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital const&, int)
+0008c3cc T webrtc::AudioProcessingBuilder::Create()
+0007ee80 T webrtc::AdaptiveDigitalGainController::AdaptiveDigitalGainController(webrtc::ApmDataDumper*, webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital const&, int)
+0007ee80 T webrtc::AdaptiveDigitalGainController::AdaptiveDigitalGainController(webrtc::ApmDataDumper*, webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital const&, int)
+0005a318 T webrtc::EchoCanceller3::GetMetrics() const
+0005a35c T webrtc::EchoCanceller3::ActiveProcessing() const
+000c0e38 T webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital::operator==(webrtc::AudioProcessing::Config::GainController2::AdaptiveDigital const&) const
+000c0eb8 T webrtc::AudioProcessing::Config::GainController2::InputVolumeController::operator==(webrtc::AudioProcessing::Config::GainController2::InputVolumeController const&) const
+000c0ed0 T webrtc::AudioProcessing::Config::GainController2::operator==(webrtc::AudioProcessing::Config::GainController2 const&) const
+000996f4 T webrtc::NoiseSuppressor::AggregateWienerFilters(rtc::ArrayView<float, 129>) const

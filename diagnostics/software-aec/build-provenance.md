@@ -148,3 +148,87 @@ error=Android builds are only supported on Linux.
 ```
 
 The pinned WebRTC revision explicitly rejects Android GN generation on Windows. No source workaround was applied. A Linux build host or approved Linux environment is required for the next native build stage.
+
+
+## Ubuntu native build preparation (2026-09-12)
+
+Repository freshly cloned and `git pull --ff-only` completed before work:
+`195aeff04ad3ed285f561f8328e4ebbb7d08007b` on main. Only four prior
+software-AEC records were present: this provenance, device-abi.md,
+software-aec-report.md, and webrtc-revision.txt. Other planning files listed in
+the handoff were absent; no historical evidence was removed.
+
+```text
+host_os=Ubuntu 24.04.4 LTS (Noble)
+host_arch=x86_64
+kernel=7.0.0-31-generic
+external_workspace=/home/user/webrtc-apm-build
+depot_tools_origin=https://chromium.googlesource.com/chromium/tools/depot_tools.git
+depot_tools_SHA=36a8df4ad006eaa0572fb446edb8145fe5403592
+webrtc_origin=https://webrtc.googlesource.com/src.git
+webrtc_HEAD=d9ec82c89d94c319e2a1f547c1bdd58591828455
+webrtc_checkout=detached HEAD; clean tracked source
+fetch_log=/home/user/webrtc-apm-build/fetch.log
+```
+
+Initial `fetch --nohooks webrtc` required running `gclient` first to bootstrap
+depot_tools Python/CIPD. Bootstrap completed, and the repeated fetch cloned the
+main source. The source was explicitly checked out detached at the required
+revision and verified using `git rev-parse HEAD`.
+
+The root filesystem is only 30 GiB, initially approximately 11 GiB free and
+approximately 9 GiB free after bootstrap/source checkout. Dependency fetching
+was deliberately stopped pending the user's offered VM disk expansion. The
+checkout is preserved; resume with pinned `gclient sync` after storage is ready.
+Android dependency selection must be checked in `.gclient` before sync/hooks.
+GN, target inspection, upstream compilation, wrapper compilation, ELF checks,
+and artifact SHA-256 remain pending. No native library exists yet. No production
+Android source, vendor configuration, or device was modified.
+
+## Full-checkout cleanup and revised strategy (2026-09-12)
+
+The user explicitly stopped the full dependency strategy. Active gclient and
+its child processes were terminated and no workspace writer remained before
+removal. Before/after reports are saved as `disk-usage-before-cleanup.txt` and
+`disk-usage-after-cleanup.txt`. The partial source was approximately 21 GiB;
+bootstrapped depot_tools was 1.2 GiB. Both were deleted. The old workspace is
+now 44 KiB of logs/configuration. Its resolved path remains
+`/media/user/SCRATCHPAD/webrtc-apm-build`; small logs and `.gclient` were copied
+into this diagnostics directory before deletion.
+
+The old depot_tools SHA was `36a8df4ad006eaa0572fb446edb8145fe5403592`.
+No GN generation or APM compilation was achieved by that route. Earlier
+external source paths refer to removed workspaces and are historical evidence.
+
+A new source-only reference is at `/home/user/webrtc-apm-min/webrtc` on
+SCRATCHPAD, shallow/partial cloned and detached at the unchanged September
+pin `d9ec82c89d94c319e2a1f547c1bdd58591828455`. No fetch/gclient/hook operation
+was run on this new workspace. Its initial footprint is 158 MiB.
+
+The preferred standalone alternative is documented in
+`minimal-apm-dependency-map.md`; it deliberately has a separate M131 upstream
+pin. The repository's historical webrtc-revision.txt is preserved and does not
+specify the alternate build source. Use the standalone recipe and pins instead.
+
+
+## Minimal standalone build result (2026-09-12)
+
+PASS: freedesktop APM v2.1 at `846fe90a289f58b7c9303a635142aa2c7caa93e5`,
+upstream WebRTC M131 `79aff54b0fa9238ce3518dd9eaf9610cd6f22e82`.
+Official Android NDK r28c 28.2.13676358 / Clang 19.0.1, Meson 1.7.2,
+Ninja package 1.11.1.4. Target ARMv7 little endian, API 24, release.
+Abseil 20240722.0 and its Meson overlay were hash-verified by Meson.
+No tracked standalone source changes. All 431 build steps passed, including
+AEC3/NS/AGC2 and the native API example link. No native execution occurred.
+
+Artifact: `/home/user/webrtc-apm-min/standalone/build-android-armv7/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so`
+SHA-256: `c678dd7caa4af5db6882325854885f10f99577ffcd705fd3f6b11ba5e92fa307`.
+Size: 1,239,380 bytes. ELF32/ARM/EABI5, ARMv7/Thumb-2/VFPv3/NEONv1.
+Dynamic dependencies: liblog.so, libc++_shared.so, libm.so, libc.so.
+The C++ runtime will need packaging alongside the library during the later
+Android app stage. This is not libsteve_apm.so and has no stable C ABI yet.
+
+The entire minimal workspace uses 2.4 GiB, including NDK and all build outputs.
+See the generated target/source inventory, build log, ELF evidence and recipe
+under standalone/. API 23 failure evidence is preserved; API 24 resolves its
+NDK large-file declaration issue. Production and device state are untouched.
