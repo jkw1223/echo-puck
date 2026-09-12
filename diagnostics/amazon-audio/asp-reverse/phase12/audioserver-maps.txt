@@ -1,0 +1,2 @@
+PID=4640
+cat: /proc/4640/maps: Permission denied

@@ -6,7 +6,7 @@ public class DecompileTargets extends GhidraScript {
   public void run() throws Exception {
     DecompInterface d = new DecompInterface();
     d.openProgram(currentProgram);
-    long[] addrs={0x566a4L,0x56aecL,0x57b44L,0x8ac14L,0x8b050L,0x8b734L,0x8ba50L,0x90fa4L,0x8d6f8L,0x575e0L,0x57e38L,0x8b360L,0x8c464L,0x9f830L,0x84a90L};
+    long[] addrs={0x566a4L,0x56aecL,0x57b44L,0x8ac14L,0x8b050L,0x8b734L,0x8ba50L,0x90fa4L,0x8d6f8L,0x575e0L,0x57e38L,0x8b360L,0x8c464L,0x9c240L,0x9d310L,0x9e0b4L,0x9f830L,0x84a90L};
     for(long a:addrs){
       Function f=currentProgram.getFunctionManager().getFunctionAt(toAddr(a));
       if(f==null){println("MISSING 0x"+Long.toHexString(a)); continue;}

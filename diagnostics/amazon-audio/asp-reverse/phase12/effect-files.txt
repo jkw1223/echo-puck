@@ -1,0 +1,7 @@
+/system/etc/audio_effects.conf
+/system/vendor/etc/audio-algorithms/Tap_AEC_mic2.cfg
+/system/vendor/etc/audio-algorithms/Tap_AEC_mic1.cfg
+/system/vendor/etc/audio_effects.xml
+/system/vendor/lib/libwebrtc_audio_preprocessing.so
+/system/vendor/lib/soundfx/libaudiopreprocessing.so
+/system/lib/libeffectsconfig.so
