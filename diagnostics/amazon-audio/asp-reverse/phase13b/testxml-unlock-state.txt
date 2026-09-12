@@ -1,0 +1,2 @@
+  mCurrentFocus=Window{9c14658 u0 com.android.launcher3/com.android.launcher3.uioverrides.QuickstepLauncher}
+    mShowingDream=false mDreamingLockscreen=false    mStatusBar=Window{6cba04b u0 StatusBar}    mExpandedPanel=Window{3dec9d3 u0 NotificationShade} isKeyguardShowing=false

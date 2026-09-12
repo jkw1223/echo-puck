@@ -1,0 +1,117 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        f48a24b com.steve.puckd/.MainActivity filter 4622428
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        a7d1827 com.steve.puckd/androidx.profileinstaller.ProfileInstallReceiver filter a3ddf72
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        a7d1827 com.steve.puckd/androidx.profileinstaller.ProfileInstallReceiver filter 9c95ad4
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        a7d1827 com.steve.puckd/androidx.profileinstaller.ProfileInstallReceiver filter 860747d
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        a7d1827 com.steve.puckd/androidx.profileinstaller.ProfileInstallReceiver filter a990fc3
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.BOOT_COMPLETED:
+        3bdc541 com.steve.puckd/.BootReceiver filter b2cfae6
+          Action: "android.intent.action.BOOT_COMPLETED"
+
+Permissions:
+  Permission [com.steve.puckd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (9cb5040):
+    sourcePackage=com.steve.puckd
+    uid=10158 gids=null type=0 prot=signature
+    perm=Permission{ec7e2f5 com.steve.puckd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+
+Registered ContentProviders:
+  com.steve.puckd/androidx.startup.InitializationProvider:
+    Provider{c0788a com.steve.puckd/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.steve.puckd.androidx-startup]:
+    Provider{c0788a com.steve.puckd/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{8d22a39 com.steve.puckd}
+
+Key Set Manager:
+  [com.steve.puckd]
+      Signing KeySets: 19
+
+Packages:
+  Package [com.steve.puckd] (6a48b18):
+    userId=10158
+    pkg=Package{300b971 com.steve.puckd}
+    codePath=/data/app/~~-ftA11C9-N9FBOX2kFjcfg==/com.steve.puckd-tOJZE5XliQ85btxzfHx87A==
+    resourcePath=/data/app/~~-ftA11C9-N9FBOX2kFjcfg==/com.steve.puckd-tOJZE5XliQ85btxzfHx87A==
+    legacyNativeLibraryDir=/data/app/~~-ftA11C9-N9FBOX2kFjcfg==/com.steve.puckd-tOJZE5XliQ85btxzfHx87A==/lib
+    primaryCpuAbi=armeabi-v7a
+    secondaryCpuAbi=null
+    versionCode=1 minSdk=30 targetSdk=30
+    versionName=1.0
+    splits=[base]
+    apkSigningVersion=2
+    applicationInfo=ApplicationInfo{300b971 com.steve.puckd}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.steve.puckd
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-11 14:18:58
+    firstInstallTime=2026-09-11 14:18:58
+    lastUpdateTime=2026-09-11 14:18:58
+    signatures=PackageSignatures{e359356 version:2, signatures:[22c40f8c], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    declared permissions:
+      com.steve.puckd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.FOREGROUND_SERVICE
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      android.permission.RECORD_AUDIO
+      com.steve.puckd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.RECEIVE_BOOT_COMPLETED: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.steve.puckd.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=2769 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=1 instant=false virtual=false
+      gids=[3003]
+      runtime permissions:
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+  queryable via interaction:
+    User 0:
+      [com.android.location.fused,com.android.dynsystem,lineageos.platform,com.android.localtransport,com.android.inputdevices,com.android.providers.settings,com.android.server.telecom,com.android.keychain,com.android.wallpaperbackup,org.lineageos.lineageparts,com.android.networkstack.inprocess,com.android.settings,org.lineageos.lineagesettings,com.android.networkstack.tethering.inprocess,org.lineageos.setupwizard,android]:
+        com.steve.puckd
+      com.android.inputmethod.latin:
+        com.steve.puckd
+
+Package Changes:
+  Sequence number=8
+  User 0:
+    seq=7, package=com.steve.puckd
+
+
+Dexopt state:
+  [com.steve.puckd]
+    path: /data/app/~~-ftA11C9-N9FBOX2kFjcfg==/com.steve.puckd-tOJZE5XliQ85btxzfHx87A==/base.apk
+      arm: [status=quicken] [reason=bg-dexopt]
+
+
+Compiler stats:
+  [com.steve.puckd]
+     base.apk - 2398

@@ -1,0 +1,2 @@
+RECORD_AUDIO: allow; rejectTime=+32m58s62ms ago
+START_FOREGROUND: allow; time=+2m50s834ms ago (running)

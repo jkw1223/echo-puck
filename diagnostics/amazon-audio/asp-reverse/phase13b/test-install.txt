@@ -1,0 +1,2 @@
+diagnostics/amazon-audio/asp-reverse/phase13/audio_effects-test.xml: 1 file pushed, 0 skipped. 21.6 MB/s (6003 bytes in 0.000s)
+adb: error: failed to copy 'diagnostics/amazon-audio/asp-reverse/phase13/audio_effects-test.xml' to '/system/vendor/etc/audio_effects.xml': remote couldn't create file: Read-only file system
