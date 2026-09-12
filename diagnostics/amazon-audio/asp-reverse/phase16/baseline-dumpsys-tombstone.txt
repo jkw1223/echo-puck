@@ -1,0 +1,1103 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+Revision: '0'
+ABI: 'arm'
+Timestamp: 2026-09-11 22:28:09-0500
+pid: 3872, tid: 3876, name: HwBinder:3872_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+Cause: null pointer dereference
+    r0  ed50a400  r1  00000010  r2  ec7f7c28  r3  ecde10e8
+    r4  ec7f7c10  r5  ec7f7c28  r6  ed50a400  r7  00000000
+    r8  ec7f7fd0  r9  ec7f7fd0  r10 ed8f4d20  r11 00000000
+    ip  ecaf0b74  sp  ec7f7b98  lr  ecae24ad  pc  00000000
+
+backtrace:
+      #00 pc 00000000  <unknown>
+      #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+      #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+      #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+
+memory near r0 ([anon:libc_malloc]):
+    ed50a3e0 00000000 00000000 00000000 00000000  ................
+    ed50a3f0 00000000 00000000 00000000 00000000  ................
+    ed50a400 48574454 00000200 e9fee018 00000000  TDWH............
+    ed50a410 00000000 00000000 00000000 00000000  ................
+    ed50a420 00000000 00000000 00000000 00000000  ................
+    ed50a430 00000000 00000000 00000000 e9fe87bd  ................
+    ed50a440 00000000 e9fe87c7 e9fe87cb e9fe87d1  ................
+    ed50a450 00000000 e9fe87d7 e9fe87db e9fe87fb  ................
+    ed50a460 e9fe8801 e9fe8805 e9fe8811 e9fe8819  ................
+    ed50a470 e9fe8b79 e9fe8bcd e9fe8f59 e9fe8f75  y.......Y...u...
+    ed50a480 00000000 00000000 00000000 00000000  ................
+    ed50a490 00000000 00000000 00000000 ffffffff  ................
+    ed50a4a0 ffffffff 00000000 ffffffff 00000000  ................
+    ed50a4b0 00000000 00000000 00000000 00000000  ................
+    ed50a4c0 00000000 00000000 00000000 00000000  ................
+    ed50a4d0 00000000 00000000 00000000 00000000  ................
+
+memory near r2 ([anon:stack_and_tls:3876]):
+    ec7f7c08 00000010 ec7f7c28 00000000 00000000  ....(|..........
+    ec7f7c18 00000000 00000000 00000000 00000000  ................
+    ec7f7c28 ecde10d8 00000000 00000000 00000000  ................
+    ec7f7c38 05057782 ed61d2b4 ec7f801c ed8f4d20  .w....a..... M..
+    ec7f7c48 ffffffb6 ec7f7fd0 ed61d2b4 ec7f7d60  ..........a.`}..
+    ec7f7c58 ec7f8060 ed42fb43 edb898e0 ed873c08  `...C.B......<..
+    ec7f7c68 00000006 ed61d2b4 ed44a8fc ec7f80b0  ......a...D.....
+    ec7f7c78 00000000 00000000 ec7f7c70 ed594159  ........p|..YAY.
+    ec7f7c88 00000000 00000000 00000000 00000000  ................
+    ec7f7c98 00000000 00000000 05057782 00000006  .........w......
+    ec7f7ca8 00000000 ed61d2b4 00000000 ec7f7fd0  ......a.........
+    ec7f7cb8 00000000 00000000 ec7f7fd0 00000000  ................
+    ec7f7cc8 ed61d2b4 00000000 edb898e0 ed43c957  ..a.........W.C.
+    ec7f7cd8 00000000 00000000 00000000 00000000  ................
+    ec7f7ce8 00000000 00000000 ed44a8fc ec7f80b0  ..........D.....
+    ec7f7cf8 ec7f7d50 ec7f801c ec7f7cf0 ec7f7fd0  P}.......|......
+
+memory near r3:
+    ecde10c8 -------- -------- -------- --------  ................
+    ecde10d8 -------- -------- -------- --------  ................
+    ecde10e8 -------- -------- -------- --------  ................
+    ecde10f8 -------- -------- -------- --------  ................
+    ecde1108 -------- -------- -------- --------  ................
+    ecde1118 -------- -------- -------- --------  ................
+    ecde1128 -------- -------- -------- --------  ................
+    ecde1138 -------- -------- -------- --------  ................
+    ecde1148 -------- -------- -------- --------  ................
+    ecde1158 -------- -------- -------- --------  ................
+    ecde1168 -------- -------- -------- --------  ................
+    ecde1178 -------- -------- -------- --------  ................
+    ecde1188 -------- -------- -------- --------  ................
+    ecde1198 -------- -------- -------- --------  ................
+    ecde11a8 -------- -------- -------- --------  ................
+    ecde11b8 -------- -------- -------- --------  ................
+
+memory near r4 ([anon:stack_and_tls:3876]):
+    ec7f7bf0 ecde10d8 ecde10e8 0f444247 ec7f7fd0  ........GBD.....
+    ec7f7c00 ed44a8fc ec7f80b0 00000010 ec7f7c28  ..D.........(|..
+    ec7f7c10 00000000 00000000 00000000 00000000  ................
+    ec7f7c20 00000000 00000000 ecde10d8 00000000  ................
+    ec7f7c30 00000000 00000000 05057782 ed61d2b4  .........w....a.
+    ec7f7c40 ec7f801c ed8f4d20 ffffffb6 ec7f7fd0  .... M..........
+    ec7f7c50 ed61d2b4 ec7f7d60 ec7f8060 ed42fb43  ..a.`}..`...C.B.
+    ec7f7c60 edb898e0 ed873c08 00000006 ed61d2b4  .....<........a.
+    ec7f7c70 ed44a8fc ec7f80b0 00000000 00000000  ..D.............
+    ec7f7c80 ec7f7c70 ed594159 00000000 00000000  p|..YAY.........
+    ec7f7c90 00000000 00000000 00000000 00000000  ................
+    ec7f7ca0 05057782 00000006 00000000 ed61d2b4  .w............a.
+    ec7f7cb0 00000000 ec7f7fd0 00000000 00000000  ................
+    ec7f7cc0 ec7f7fd0 00000000 ed61d2b4 00000000  ..........a.....
+    ec7f7cd0 edb898e0 ed43c957 00000000 00000000  ....W.C.........
+    ec7f7ce0 00000000 00000000 00000000 00000000  ................
+
+memory near r5 ([anon:stack_and_tls:3876]):
+    ec7f7c08 00000010 ec7f7c28 00000000 00000000  ....(|..........
+    ec7f7c18 00000000 00000000 00000000 00000000  ................
+    ec7f7c28 ecde10d8 00000000 00000000 00000000  ................
+    ec7f7c38 05057782 ed61d2b4 ec7f801c ed8f4d20  .w....a..... M..
+    ec7f7c48 ffffffb6 ec7f7fd0 ed61d2b4 ec7f7d60  ..........a.`}..
+    ec7f7c58 ec7f8060 ed42fb43 edb898e0 ed873c08  `...C.B......<..
+    ec7f7c68 00000006 ed61d2b4 ed44a8fc ec7f80b0  ......a...D.....
+    ec7f7c78 00000000 00000000 ec7f7c70 ed594159  ........p|..YAY.
+    ec7f7c88 00000000 00000000 00000000 00000000  ................
+    ec7f7c98 00000000 00000000 05057782 00000006  .........w......
+    ec7f7ca8 00000000 ed61d2b4 00000000 ec7f7fd0  ......a.........
+    ec7f7cb8 00000000 00000000 ec7f7fd0 00000000  ................
+    ec7f7cc8 ed61d2b4 00000000 edb898e0 ed43c957  ..a.........W.C.
+    ec7f7cd8 00000000 00000000 00000000 00000000  ................
+    ec7f7ce8 00000000 00000000 ed44a8fc ec7f80b0  ..........D.....
+    ec7f7cf8 ec7f7d50 ec7f801c ec7f7cf0 ec7f7fd0  P}.......|......
+
+memory near r6 ([anon:libc_malloc]):
+    ed50a3e0 00000000 00000000 00000000 00000000  ................
+    ed50a3f0 00000000 00000000 00000000 00000000  ................
+    ed50a400 48574454 00000200 e9fee018 00000000  TDWH............
+    ed50a410 00000000 00000000 00000000 00000000  ................
+    ed50a420 00000000 00000000 00000000 00000000  ................
+    ed50a430 00000000 00000000 00000000 e9fe87bd  ................
+    ed50a440 00000000 e9fe87c7 e9fe87cb e9fe87d1  ................
+    ed50a450 00000000 e9fe87d7 e9fe87db e9fe87fb  ................
+    ed50a460 e9fe8801 e9fe8805 e9fe8811 e9fe8819  ................
+    ed50a470 e9fe8b79 e9fe8bcd e9fe8f59 e9fe8f75  y.......Y...u...
+    ed50a480 00000000 00000000 00000000 00000000  ................
+    ed50a490 00000000 00000000 00000000 ffffffff  ................
+    ed50a4a0 ffffffff 00000000 ffffffff 00000000  ................
+    ed50a4b0 00000000 00000000 00000000 00000000  ................
+    ed50a4c0 00000000 00000000 00000000 00000000  ................
+    ed50a4d0 00000000 00000000 00000000 00000000  ................
+
+memory near r8 ([anon:stack_and_tls:3876]):
+    ec7f7fb0 ed8ef364 ed435735 00000010 ec7f80b0  d...5WC.........
+    ec7f7fc0 ed8ef280 ed8ef318 ed61d2b4 00000000  ..........a.....
+    ec7f7fd0 00000000 00000000 00000000 00000000  ................
+    ec7f7fe0 00000000 00000000 00000000 00000000  ................
+    ec7f7ff0 00000000 00000000 00000000 00000000  ................
+    ec7f8000 00000000 00000000 00010001 00000000  ................
+    ec7f8010 00000000 ed1029f0 00000000 00000000  .....)..........
+    ec7f8020 00000000 00000000 00000000 00000000  ................
+    ec7f8030 ecde1000 000000c0 000000c0 000000c0  ................
+    ec7f8040 ecde10c0 00000003 00000003 00000003  ................
+    ec7f8050 00000000 00010001 ed438a91 ed8ef280  ..........C.....
+    ec7f8060 ed926590 00000000 ed8f4d20 00000000  .e...... M......
+    ec7f8070 0f444247 00000010 00000f1f 00000411  GBD.............
+    ec7f8080 000000c0 00000000 00000018 00000000  ................
+    ec7f8090 ecde1000 00000000 ecde10c0 00000000  ................
+    ec7f80a0 00000000 00000000 00000000 00000000  ................
+
+memory near r9 ([anon:stack_and_tls:3876]):
+    ec7f7fb0 ed8ef364 ed435735 00000010 ec7f80b0  d...5WC.........
+    ec7f7fc0 ed8ef280 ed8ef318 ed61d2b4 00000000  ..........a.....
+    ec7f7fd0 00000000 00000000 00000000 00000000  ................
+    ec7f7fe0 00000000 00000000 00000000 00000000  ................
+    ec7f7ff0 00000000 00000000 00000000 00000000  ................
+    ec7f8000 00000000 00000000 00010001 00000000  ................
+    ec7f8010 00000000 ed1029f0 00000000 00000000  .....)..........
+    ec7f8020 00000000 00000000 00000000 00000000  ................
+    ec7f8030 ecde1000 000000c0 000000c0 000000c0  ................
+    ec7f8040 ecde10c0 00000003 00000003 00000003  ................
+    ec7f8050 00000000 00010001 ed438a91 ed8ef280  ..........C.....
+    ec7f8060 ed926590 00000000 ed8f4d20 00000000  .e...... M......
+    ec7f8070 0f444247 00000010 00000f1f 00000411  GBD.............
+    ec7f8080 000000c0 00000000 00000018 00000000  ................
+    ec7f8090 ecde1000 00000000 ecde10c0 00000000  ................
+    ec7f80a0 00000000 00000000 00000000 00000000  ................
+
+memory near r10 ([anon:libc_malloc]):
+    ed8f4d00 ed7e3f80 74534914 6d616572 0074754f  .?~..IStreamOut.
+    ed8f4d10 ed921aa0 ed921aa0 ecbe8c04 ed926540  ............@e..
+    ed8f4d20 ecbe4b64 00000000 00000000 00000000  dK..............
+    ed8f4d30 ea89ac24 ecbe4b9c 00000000 00000000  $....K..........
+    ed8f4d40 00000000 00000000 00000021 0000001a  ........!.......
+    ed8f4d50 ed6fe060 6544490e 65636976 00000000  `.o..IDevice....
+    ed8f4d60 ed6fe020 ed6fe020 ecbe4bc0 ed926590   .o. .o..K...e..
+    ed8f4d70 ecbe4b64 00000000 00000000 00000000  dK..............
+    ed8f4d80 00000000 ecbe4b9c 00000000 00000000  .....K..........
+    ed8f4d90 00000000 00000000 00000021 0000001a  ........!.......
+    ed8f4da0 ed6fe0c0 6544490e 65636976 00000000  ..o..IDevice....
+    ed8f4db0 ed6fe080 ed6fe080 ecbe4bc0 ed9265b0  ..o...o..K...e..
+    ed8f4dc0 ea89ab9c ea89abac ea89ac04 ea89ac14  ................
+    ed8f4dd0 ea89ac24 ea89ac34 ea89ac8c ea89ac9c  $...4...........
+    ed8f4de0 00000000 00000000 ea89ad40 ea89ade8  ........@.......
+    ed8f4df0 ea89aeb8 ea89aec8 ea89aed8 ea89aee8  ................
+
+memory near ip (/system/vendor/lib/hw/android.hardware.audio@2.0-impl.so):
+    ecaf0b54 ec974711 ed4031d5 ec974481 ecae2ead  .G...1@..D......
+    ecaf0b64 ecae34d1 ecae300d ecae37e5 ed4031b5  .4...0...7...1@.
+    ecaf0b74 ed4031ad ed73d245 ed5c49f9 ecae2b1d  .1@.E.s..I\..+..
+    ecaf0b84 ecae29ad ecae2c1d ecae3bf1 ecae0cf1  .)...,...;......
+    ecaf0b94 ed7db73d ed5c0f29 ed365315 ed369a41  =.}.).\..S6.A.6.
+    ecaf0ba4 ecae2e11 ecc0fd6d ed36575f ed3653a1  ....m..._W6..S6.
+    ecaf0bb4 ecc0ff45 ecae2f89 ecc10139 ecc10201  E..../..9.......
+    ecaf0bc4 ecc0fdfd ed3659ed ed58e3a5 ed365955  .....Y6...X.UY6.
+    ecaf0bd4 ecc0fbcd ecc0fe85 ecc10317 ed403479  ............y4@.
+    ecaf0be4 ed4031b9 ed4033f9 ecc0ff89 ecc1002d  .1@..3@.....-...
+    ecaf0bf4 ed3698b1 ed368d61 ed365385 ecae1119  ..6.a.6..S6.....
+    ecaf0c04 ecae2d4d ecae3341 ed403ff9 ecae4b0d  M-..A3...?@..K..
+    ecaf0c14 ed404291 ed368d35 ecc14371 ecae5c65  .B@.5.6.qC..e\..
+    ecaf0c24 ecae4dc1 ecc145b1 ecae35f5 ecc144d5  .M...E...5...D..
+    ecaf0c34 ed60e08d ed60e415 ecb32f51 ecae3969  ..`...`.Q/..i9..
+    ecaf0c44 ed40301d ed403229 ed402fcd ecae4715  .0@.)2@../@..G..
+
+memory near sp ([anon:stack_and_tls:3876]):
+    ec7f7b78 00000000 00000000 ec7f7bf0 200a6231  .........{..1b. 
+    ec7f7b88 00000000 05057782 00000000 00000000  .....w..........
+    ec7f7b98 ed61d2b4 ec7f801c 00000000 00000000  ..a.............
+    ec7f7ba8 ed61d2b4 ec7f801c ecae247d ed42ef09  ..a.....}$....B.
+    ec7f7bb8 00000000 ec7f7c10 3a736700 30303020  .....|...gs: 000
+    ec7f7bc8 ec7f7bb8 00000a38 ed6fe020 00000000  .{..8... .o.....
+    ec7f7bd8 00000000 00000000 00000000 00000000  ................
+    ec7f7be8 00000000 00000002 ecde10d8 ecde10e8  ................
+    ec7f7bf8 0f444247 ec7f7fd0 ed44a8fc ec7f80b0  GBD.......D.....
+    ec7f7c08 00000010 ec7f7c28 00000000 00000000  ....(|..........
+    ec7f7c18 00000000 00000000 00000000 00000000  ................
+    ec7f7c28 ecde10d8 00000000 00000000 00000000  ................
+    ec7f7c38 05057782 ed61d2b4 ec7f801c ed8f4d20  .w....a..... M..
+    ec7f7c48 ffffffb6 ec7f7fd0 ed61d2b4 ec7f7d60  ..........a.`}..
+    ec7f7c58 ec7f8060 ed42fb43 edb898e0 ed873c08  `...C.B......<..
+    ec7f7c68 00000006 ed61d2b4 ed44a8fc ec7f80b0  ......a...D.....
+
+memory near lr (/system/vendor/lib/hw/android.hardware.audio@2.0-impl.so):
+    ecae248c 4628b1f8 eb1ef00b 28016840 68f6d119  ..(F....@h.(...h
+    ecae249c f8d64628 f00b7080 68c1eb16 47b84630  (F...p.....h0F.G
+    ecae24ac 4240b178 ea26f00b 4479490b 1000e9cd  x.@B..&..IyD....
+    ecae24bc 490a2005 4b0b4a0a 447a4479 f00b447b  . .I.J.KyDzD{D..
+    ecae24cc 2000ea22 0050efc0 f8c42111 f944000d  ".. ..P..!....D.
+    ecae24dc 60200a81 bdf0b003 ffffcfa8 ffffcc27  .. `........'...
+    ecae24ec ffffd269 ffffc9ab 47702000 b510defe  i........ pG....
+    ecae24fc 30044604 ea0ef00b bd104620 4604b510  .F.0.... F.....F
+    ecae250c f00b3004 4620ea08 4010e8bd b96af00b  .0.... F...@..j.
+    ecae251c f8516801 44081c0c f00b3004 b510b95d  .hQ....D.0..]...
+    ecae252c f8516801 18441c0c f00b1d20 4620e9f4  .hQ...D. ..... F
+    ecae253c 4010e8bd b956f00b e92d4770 460441f0  ...@..V.pG-..A.F
+    ecae254c 428c2000 0000e9c4 0009f8c4 0005f8c4  . .B............
+    ecae255c 000df8a4 d03b73e0 460d7b20 bf182800  .....s;. {.F.(..
+    ecae256c bf186820 d0012800 ea54f00b 200168ae   h...(....T..h. 
+    ecae257c 60a67320 f026b37e 1a304040 2001bf18   s.`~.&.@@0.... 
+
+memory map (693 entries):
+    b4c06000-b4c06fff r--         0      1000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d45) (load bias 0x1000)
+    b4c07000-b4c08fff r-x         0      2000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d45) (load bias 0x1000)
+    b4c09000-b4c09fff r--      1000      1000  /system/vendor/bin/hw/android.hardware.audio.service (BuildId: 9d0827d0ffb0923deab37bc69b6d45) (load bias 0x1000)
+    e9c86000-e9c86fff ---         0      1000
+    e9c87000-e9d85fff rw-         0     ff000  [anon:stack_and_tls:3908]
+    e9d86000-e9d86fff ---         0      1000
+    e9d87000-e9dedfff r-x         0     67000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    e9dee000-e9deefff r--     66000      1000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    e9def000-e9dfbfff rw-     67000      d000  /system/vendor/lib/libspeech_enh_lib.so (BuildId: 4e66425179c0c3bcd66c535aaf5e83)
+    e9dfc000-e9dfcfff rw-         0      1000  [anon:.bss]
+    e9e37000-e9e37fff ---         0      1000
+    e9e38000-e9f36fff rw-         0     ff000  [anon:stack_and_tls:3904]
+    e9f37000-e9f37fff ---         0      1000
+    e9f38000-e9f39fff r--         0      2000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    e9f3a000-e9f3afff r-x      1000      1000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    e9f3b000-e9f3cfff r--      1000      2000  /system/vendor/lib/libnbaio_mono.so (BuildId: 260e4096680d3db6c4d7920e010458) (load bias 0x1000)
+    e9f47000-e9f48fff r--         0      2000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    e9f49000-e9f4cfff r-x      1000      4000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    e9f4d000-e9f4dfff r--      4000      1000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    e9f4e000-e9f4efff rw-      4000      1000  /system/vendor/lib/hw/audio.r_submix.default.so (BuildId: a0e530c929421623e154fd41329c0e) (load bias 0x1000)
+    e9fb4000-e9fb5fff r--         0      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    e9fb6000-e9fb7fff r-x      1000      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    e9fb8000-e9fb9fff r--      2000      2000  /system/vendor/lib/libalsautils.so (BuildId: 5d689e2a878533d9d4627814c0a2fd) (load bias 0x1000)
+    e9fe7000-e9fecfff r-x         0      6000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    e9fed000-e9fedfff r--      5000      1000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    e9fee000-e9feefff rw-      6000      1000  /system/vendor/lib/hw/audio.usb.mt8163.so (BuildId: 490b0588e80492142d5932cc69c6d9)
+    ea031000-ea032fff r--         0      2000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    ea033000-ea03afff r-x      1000      8000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    ea03b000-ea03bfff r--      8000      1000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    ea03c000-ea03cfff rw-      8000      1000  /system/vendor/lib/soundfx/libdynproc.so (BuildId: 1f0e1b9f9c4d21b605a0251adf8844) (load bias 0x1000)
+    ea050000-ea050fff r--         0      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    ea051000-ea052fff r-x         0      2000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    ea053000-ea053fff r--      1000      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    ea054000-ea054fff rw-      1000      1000  /system/vendor/lib/soundfx/libldnhncr.so (BuildId: 29561015c95bba5eddf155e257f78c) (load bias 0x1000)
+    ea0a6000-ea0a6fff r--         0      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    ea0a7000-ea0a8fff r-x         0      2000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    ea0a9000-ea0a9fff r--      1000      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    ea0aa000-ea0aafff rw-      1000      1000  /system/vendor/lib/soundfx/libdownmix.so (BuildId: 697a830450e28b91176f230f3ea033) (load bias 0x1000)
+    ea0e2000-ea0e2fff r--         0      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    ea0e3000-ea0e4fff r-x         0      2000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    ea0e5000-ea0e5fff r--      1000      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    ea0e6000-ea0e6fff rw-      1000      1000  /system/vendor/lib/soundfx/libvisualizer.so (BuildId: f79f915f7bb2b7789f94abbf8494e1) (load bias 0x1000)
+    ea12e000-ea12ffff r--         0      2000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    ea130000-ea135fff r-x      1000      6000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    ea136000-ea136fff r--      6000      1000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    ea137000-ea137fff rw-      6000      1000  /system/vendor/lib/soundfx/libreverbwrapper.so (BuildId: e50459837dc5b1ecf768020deb770e) (load bias 0x1000)
+    ea169000-ea16bfff r--         0      3000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    ea16c000-ea178fff r-x      2000      d000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    ea179000-ea179fff r--      e000      1000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    ea17a000-ea17bfff rw-      e000      2000  /system/vendor/lib/soundfx/libbundlewrapper.so (BuildId: ba13bc2ce4fb2721081d569ecbe83b) (load bias 0x1000)
+    ea181000-ea181fff ---         0      1000
+    ea182000-ea280fff rw-         0     ff000  [anon:stack_and_tls:3889]
+    ea281000-ea282fff ---         0      2000
+    ea283000-ea381fff rw-         0     ff000  [anon:stack_and_tls:3887]
+    ea382000-ea382fff ---         0      1000
+    ea383000-ea385fff r-x         0      3000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ea386000-ea386fff r--      2000      1000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ea387000-ea387fff rw-      3000      1000  /system/vendor/lib/libaudiocompensationfilter.so (BuildId: 3760db9fba41f4020f47d24a2dfb7c)
+    ea3c4000-ea3c4fff r--         0      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    ea3c5000-ea3c6fff r-x         0      2000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    ea3c7000-ea3c7fff r--      1000      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    ea3c8000-ea3c8fff rw-      1000      1000  /system/lib/android.hidl.token@1.0-utils.so (BuildId: 5353acea0308837dff854e4552e1e8) (load bias 0x1000)
+    ea402000-ea403fff r--         0      2000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    ea404000-ea405fff r-x      1000      2000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    ea406000-ea406fff r--      2000      1000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    ea407000-ea407fff rw-      3000      1000  /system/lib/libhardware_legacy.so (BuildId: 41559eac1f7b9e9a50a5ae9c191075) (load bias 0x1000)
+    ea44b000-ea4e1fff r--         0     97000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    ea4e2000-ea5edfff r-x     96000    10c000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    ea5ee000-ea5f7fff r--    1a1000      a000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    ea5f8000-ea5f8fff rw-    1aa000      1000  /apex/com.android.art/lib/libicui18n.so (BuildId: f2a2e4bc38b68fa7344ed9941e50fa) (load bias 0x1000)
+    ea5f9000-ea5f9fff rw-         0      1000  [anon:.bss]
+    ea611000-ea629fff r--         0     19000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    ea62a000-ea633fff r-x     18000      a000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    ea634000-ea635fff r--     21000      2000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    ea636000-ea636fff rw-     22000      1000  /apex/com.android.art/lib/libandroidicu.so (BuildId: 1684cd9fe9cc73f004a2fc777022e7) (load bias 0x1000)
+    ea670000-ea670fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ea671000-ea671fff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ea672000-ea672fff r--         0      1000  /system/lib/android.hardware.graphics.common@1.0.so (BuildId: c4600bb759baee15f5be356c045ad0) (load bias 0x1000)
+    ea696000-ea698fff r--         0      3000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ea699000-ea699fff r-x      2000      1000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ea69a000-ea69bfff r--      2000      2000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ea69c000-ea69cfff rw-      3000      1000  /system/lib/capture_state_listener-aidl-V1-cpp.so (BuildId: 6d4896414969247822289a49d4634c) (load bias 0x1000)
+    ea6ca000-ea6f5fff r--         0     2c000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    ea6f6000-ea72dfff r-x     2b000     38000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    ea72e000-ea736fff r--     62000      9000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    ea737000-ea737fff rw-     6a000      1000  /system/lib/libaudioclient.so (BuildId: 9454bc9750ae5ce5df17592f5c27f2) (load bias 0x1000)
+    ea773000-ea774fff r--         0      2000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ea775000-ea776fff r-x      1000      2000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ea777000-ea777fff r--      2000      1000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ea778000-ea778fff rw-      2000      1000  /system/lib/libaudiomanager.so (BuildId: 0c754729a6c82670013a8f064a19f2) (load bias 0x1000)
+    ea7a7000-ea7aefff r--         0      8000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ea7af000-ea7bafff r-x      7000      c000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ea7bb000-ea7bbfff r--     12000      1000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ea7bc000-ea7bcfff rw-     12000      1000  /system/lib/libbufferhubqueue.so (BuildId: 11344e451e2b3619ac623cbf267eec) (load bias 0x1000)
+    ea7c3000-ea7cdfff r--         0      b000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    ea7ce000-ea7d9fff r-x      a000      c000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    ea7da000-ea7ddfff r--     15000      4000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    ea7de000-ea7defff rw-     18000      1000  /system/lib/libmedia_omx.so (BuildId: b1738214c776abd868c8ec707b38f2) (load bias 0x1000)
+    ea82c000-ea91afff r-x         0     ef000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ea91b000-ea91bfff ---         0      1000
+    ea91c000-ea91ffff r--     ef000      4000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ea920000-ea923fff rw-     f3000      4000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    ea924000-ea9d5fff rw-         0     b2000  [anon:.bss]
+    ea9d6000-ea9f5fff rw-    1ab000     20000  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (BuildId: 6e3fe9438803258a8959eac9704abc) (load bias 0x1000)
+    eaa03000-eaa85fff r--         0     83000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eaa86000-eab2efff r-x     82000     a9000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eab2f000-eab3afff r--    12a000      c000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eab3b000-eab3bfff rw-    135000      1000  /apex/com.android.art/lib/libicuuc.so (BuildId: c1f223538c9ca0fc05e1d89aee66c7) (load bias 0x1000)
+    eab3c000-eab3dfff rw-         0      2000  [anon:.bss]
+    eab49000-eab49fff r--         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    eab4a000-eab4afff r-x         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    eab4b000-eab4bfff r--         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    eab4c000-eab4cfff rw-         0      1000  /system/lib/libnativeloader_lazy.so (BuildId: 0ae252ac19298f4774abd61ab6559e) (load bias 0x1000)
+    eaba1000-eaba4fff r-x         0      4000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    eaba5000-eaba5fff r--      3000      1000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    eaba6000-eaba6fff rw-      4000      1000  /system/vendor/lib/libmtklimiter.so (BuildId: f620ce318425c87a2c4c16c35c8ace)
+    eabdb000-eabdbfff r--         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eabdc000-eabdcfff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eabdd000-eabddfff r--         0      1000  /system/lib/android.hardware.graphics.common@1.2.so (BuildId: a96c9199e7c7ff3d70475a281d5a91) (load bias 0x1000)
+    eac1c000-eac26fff r--         0      b000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    eac27000-eac3cfff r-x      a000     16000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    eac3d000-eac3efff r--     1f000      2000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    eac3f000-eac3ffff rw-     20000      1000  /system/lib/libmediautils.so (BuildId: 71e6f83d2442127f47a5bb6aa00723) (load bias 0x1000)
+    eac4a000-eac56fff r-x         0      d000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    eac57000-eac57fff r--      c000      1000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    eac58000-eac58fff rw-      d000      1000  /system/vendor/lib/libcvsd_mtk.so (BuildId: 7b705573dc8a3ddc2c8e6b2be1d167)
+    eac97000-eac97fff r--         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eac98000-eac98fff r-x         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eac99000-eac99fff r--         0      1000  /system/vendor/lib/libamazonlog.so (BuildId: 37626295354f622355f0079bf36166) (load bias 0x1000)
+    eace9000-eacedfff r-x         0      5000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    eacee000-eaceefff r--      4000      1000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    eacef000-eaceffff rw-      5000      1000  /system/vendor/lib/libmtk_drvb.so (BuildId: 75221e6e61fc001533affdbce54480)
+    ead03000-ead04fff r--         0      2000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ead05000-ead07fff r-x      1000      3000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ead08000-ead08fff r--      3000      1000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ead09000-ead09fff rw-      3000      1000  /apex/com.android.art/lib/libnativehelper.so (BuildId: 71c7cc8f536c76fbdab81a7bd8b091) (load bias 0x1000)
+    ead66000-ead6bfff r--         0      6000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ead6c000-ead72fff r-x      5000      7000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ead73000-ead73fff r--      b000      1000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ead74000-ead74fff rw-      b000      1000  /system/lib/libgralloctypes.so (BuildId: d9788478026e127125262650d2743c) (load bias 0x1000)
+    ead75000-ead75fff rw-         0      1000  [anon:.bss]
+    eadb4000-eadd1fff r--         0     1e000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eadd2000-eadf4fff r-x     1d000     23000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eadf5000-eadf5fff r--     3f000      1000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eadf6000-eadf6fff rw-     3f000      1000  /system/lib/libpcre2.so (BuildId: 9d33e20691087f0cb90a8d9464d277) (load bias 0x1000)
+    eae00000-eae19fff r--         0     1a000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    eae1a000-eae4dfff r-x     19000     34000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    eae4e000-eae50fff r--     4c000      3000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    eae51000-eae51fff rw-     4e000      1000  /system/lib/libunwindstack.so (BuildId: 55d72b5183ad8734b3aa00c2527449) (load bias 0x1000)
+    eaea5000-eaec0fff r--         0     1c000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    eaec1000-eaef1fff r-x     1b000     31000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    eaef2000-eaef6fff r--     4b000      5000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    eaef7000-eaef7fff rw-     4f000      1000  /system/lib/android.hardware.media.omx@1.0.so (BuildId: f1aecd40a55db42785b85ee77f7ed0) (load bias 0x1000)
+    eaf13000-eaf13fff r--         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    eaf14000-eaf14fff r-x         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    eaf15000-eaf15fff r--         0      1000  /system/lib/libpackagelistparser.so (BuildId: 6a0b1a21c6d3722f5993d7b6a7a30c) (load bias 0x1000)
+    eaf4e000-eaf98fff r--         0     4b000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    eaf99000-eafeafff r-x     4a000     52000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    eafeb000-eaff8fff r--     9b000      e000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    eaff9000-eaff9fff rw-     a8000      1000  /system/lib/libgui.so (BuildId: 94e345a29380f0817bd1b07442b232) (load bias 0x1000)
+    eb00a000-eb00afff r-x         0      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    eb00b000-eb00bfff r--         0      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    eb00c000-eb00cfff rw-      1000      1000  /system/vendor/lib/libaudiosetting.so (BuildId: 8316cdd9a523329bca37ccd2ffeb14)
+    eb056000-eb059fff r--         0      4000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb05a000-eb066fff r-x      3000      d000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb067000-eb067fff r--      f000      1000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb068000-eb068fff rw-      f000      1000  /system/lib/libselinux.so (BuildId: e8bf02cf8fe78c3d7ecae1c822f57c) (load bias 0x1000)
+    eb069000-eb069fff rw-         0      1000  [anon:.bss]
+    eb080000-eb088fff r--         0      9000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb089000-eb091fff r-x      8000      9000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb092000-eb093fff r--     10000      2000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb094000-eb094fff rw-     11000      1000  /system/lib/android.hardware.graphics.mapper@2.1.so (BuildId: e43d50b29f3bfd9db8fdb47b5915fe) (load bias 0x1000)
+    eb0de000-eb0e1fff r--         0      4000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    eb0e2000-eb0e8fff r-x      3000      7000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    eb0e9000-eb0e9fff r--      9000      1000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    eb0ea000-eb0eafff rw-      9000      1000  /system/lib/libbufferhub.so (BuildId: 5e7d9d92d2e865f0839c98d3f3ba88) (load bias 0x1000)
+    eb119000-eb124fff r--         0      c000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    eb125000-eb132fff r-x      b000      e000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    eb133000-eb134fff r--     18000      2000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    eb135000-eb135fff rw-     19000      1000  /system/lib/libpdx_default_transport.so (BuildId: c9dd809607ed56897de8d11cb00314) (load bias 0x1000)
+    eb155000-eb156fff r--         0      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    eb157000-eb158fff r-x      1000      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    eb159000-eb15afff r--      2000      2000  /system/lib/libutilscallstack.so (BuildId: ff85fe480f7cf2ecc64a668c234ad5) (load bias 0x1000)
+    eb185000-eb19efff r--         0     1a000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb19f000-eb1b7fff r-x     19000     19000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb1b8000-eb1b9fff r--     31000      2000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb1ba000-eb1bafff rw-     32000      1000  /system/lib/libui.so (BuildId: 4999f199f3aa5bf5175851e885e453) (load bias 0x1000)
+    eb1bb000-eb1bbfff rw-         0      1000  [anon:.bss]
+    eb1e9000-eb1f2fff r--         0      a000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    eb1f3000-eb1fcfff r-x      9000      a000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    eb1fd000-eb1fefff r--     12000      2000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    eb1ff000-eb1fffff rw-     13000      1000  /system/lib/android.system.suspend@1.0.so (BuildId: ee1305b891d3594d58c73d33287e9f) (load bias 0x1000)
+    eb20d000-eb214fff r--         0      8000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb215000-eb21bfff r-x      7000      7000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb21c000-eb21dfff r--      d000      2000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb21e000-eb21efff rw-      e000      1000  /system/lib/android.hardware.graphics.allocator@3.0.so (BuildId: 4b5fdb270b05052fcf320481d1946a) (load bias 0x1000)
+    eb24d000-eb24ffff r--         0      3000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    eb250000-eb262fff r-x      2000     13000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    eb263000-eb265fff r--     14000      3000  /system/lib/libexpat.so (BuildId: 28d11bd3b2a36c35e4b73947ad9fee) (load bias 0x1000)
+    eb29b000-eb29bfff r--         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb29c000-eb29cfff r-x         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb29d000-eb29dfff r--         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb29e000-eb29efff rw-         0      1000  /system/lib/libandroid_runtime_lazy.so (BuildId: fb4829631c970aed2a85f217cd68aa) (load bias 0x1000)
+    eb2c8000-eb2d1fff r--         0      a000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eb2d2000-eb2dffff r-x      9000      e000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eb2e0000-eb2e1fff r--     16000      2000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eb2e2000-eb2e2fff rw-     17000      1000  /system/lib/android.hardware.configstore@1.0.so (BuildId: 3768eb771ce9f5396f99bca3cc639f) (load bias 0x1000)
+    eb307000-eb30cfff r-x         0      6000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    eb30d000-eb30dfff r--      5000      1000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    eb30e000-eb30efff rw-      6000      1000  /system/vendor/lib/libmsbc_mtk.so (BuildId: c67b903a9012f17680aec696c1d785)
+    eb353000-eb353fff r--         0      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    eb354000-eb356fff r-x         0      3000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    eb357000-eb357fff r--      2000      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    eb358000-eb358fff rw-      2000      1000  /system/vendor/lib/libtinycompress.so (BuildId: de9d719169c0734d3feb2d41dc5692) (load bias 0x1000)
+    eb38f000-eb395fff r--         0      7000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb396000-eb39efff r-x      6000      9000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb39f000-eb39ffff r--      e000      1000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb3a0000-eb3a0fff rw-      e000      1000  /system/lib/android.hidl.token@1.0.so (BuildId: 21fceac1d7eb8b841e7dfa1fde7efd) (load bias 0x1000)
+    eb3fb000-eb3fbfff r--         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    eb3fc000-eb3fcfff r-x         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    eb3fd000-eb3fdfff r--         0      1000  /system/lib/android.hardware.graphics.common@1.1.so (BuildId: 0df8b8cc533ae9928139e078d0c5ca) (load bias 0x1000)
+    eb433000-eb433fff r--         0      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    eb434000-eb435fff r-x         0      2000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    eb436000-eb436fff r--      1000      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    eb437000-eb437fff rw-      1000      1000  /system/lib/libdexfile_support.so (BuildId: fdb34c5fcab4454463040c4beb1cc4) (load bias 0x1000)
+    eb458000-eb460fff r--         0      9000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    eb461000-eb46ffff r-x      8000      f000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    eb470000-eb471fff r--     16000      2000  /system/lib/libaudioutils.so (BuildId: 944b8b8dd7ac3970e764e5eb203aea) (load bias 0x1000)
+    eb49a000-eb49bfff r--         0      2000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    eb49c000-eb49efff r-x      1000      3000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    eb49f000-eb4a0fff r--      3000      2000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    eb4a1000-eb4a1fff rw-      4000      1000  /system/lib/libtinyalsa.so (BuildId: 3be3d376ce654870bb05bab652c6d7) (load bias 0x1000)
+    eb4cc000-eb4e3fff r-x         0     18000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eb4e4000-eb4e4fff r--     17000      1000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eb4e5000-eb4e5fff rw-     18000      1000  /system/vendor/lib/libblisrc32.so (BuildId: 1b27e1f9aa6543e21e0596ad7dc9b0)
+    eb516000-eb524fff r--         0      f000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    eb525000-eb539fff r-x      e000     15000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    eb53a000-eb53bfff r--     22000      2000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    eb53c000-eb53cfff rw-     23000      1000  /system/lib/android.hardware.graphics.bufferqueue@2.0.so (BuildId: 2923c925bb285857105a0b6f0e19f1) (load bias 0x1000)
+    eb554000-eb555fff r--         0      2000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    eb556000-eb557fff r-x      1000      2000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    eb558000-eb558fff r--      2000      1000  /system/lib/libaudiopolicy.so (BuildId: 54649e611ee8328cf1ca813cf32cc6) (load bias 0x1000)
+    eb5a9000-eb5affff r-x         0      7000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb5b0000-eb5b0fff ---         0      1000
+    eb5b1000-eb5b1fff r--      7000      1000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb5b2000-eb5b2fff rw-      8000      1000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb5b3000-eb5b4fff rw-      a000      2000  /system/vendor/lib/libaudiocomponentengine.so (BuildId: 574e524da1b82e308f198d3425c60e)
+    eb5ea000-eb5edfff r--         0      4000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb5ee000-eb5f3fff r-x      3000      6000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb5f4000-eb5f5fff r--      8000      2000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb5f6000-eb5f6fff rw-      9000      1000  /system/vendor/lib/libtinyxml.so (BuildId: 7753615c0a0f06350d5b82d86432b5) (load bias 0x1000)
+    eb61a000-eb62ffff r-x         0     16000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb630000-eb630fff r--     15000      1000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb631000-eb631fff rw-     16000      1000  /system/vendor/lib/libblisrc.so (BuildId: be8109de1b127744fe6e93d3eea668)
+    eb666000-eb66ffff r--         0      a000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    eb670000-eb678fff r-x      9000      9000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    eb679000-eb67afff r--     11000      2000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    eb67b000-eb67bfff rw-     12000      1000  /system/lib/android.hardware.configstore@1.1.so (BuildId: bcbab02f92fe38de0f521dcbe08c4d) (load bias 0x1000)
+    eb68b000-eb697fff r--         0      d000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb698000-eb6a8fff r-x      c000     11000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6a9000-eb6abfff r--     1c000      3000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6ac000-eb6acfff rw-     1e000      1000  /system/lib/libEGL.so (BuildId: 1d189458061b919d867871bd1cbaa6) (load bias 0x1000)
+    eb6ad000-eb6b0fff rw-         0      4000  [anon:.bss]
+    eb6d7000-eb6dafff r--         0      4000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    eb6db000-eb6ddfff r-x      3000      3000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    eb6de000-eb6dffff r--      5000      2000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    eb6e0000-eb6e0fff rw-      6000      1000  /system/lib/libvibrator.so (BuildId: d4a2a9519d0b98ec3fd20ac7f76369) (load bias 0x1000)
+    eb726000-eb72bfff r--         0      6000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    eb72c000-eb732fff r-x      5000      7000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    eb733000-eb734fff r--      b000      2000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    eb735000-eb735fff rw-      c000      1000  /system/lib/libaudiofoundation.so (BuildId: b2486b2c9d27410b25cb4f1b8157c3) (load bias 0x1000)
+    eb757000-eb764fff r--         0      e000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb765000-eb778fff r-x      d000     14000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb779000-eb779fff r--     20000      1000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb77a000-eb77afff rw-     20000      1000  /system/lib/libnblog.so (BuildId: 03b5ecfe0eeedfcec9709ba7801994) (load bias 0x1000)
+    eb78c000-eb79bfff r--         0     10000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    eb79c000-eb7b4fff r-x      f000     19000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    eb7b5000-eb7b7fff r--     27000      3000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    eb7b8000-eb7b8fff rw-     29000      1000  /system/lib/android.hardware.graphics.bufferqueue@1.0.so (BuildId: 4c5de4249a9595220ecd91c82e63d8) (load bias 0x1000)
+    eb7e7000-eb7effff r--         0      9000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    eb7f0000-eb7f9fff r-x      8000      a000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    eb7fa000-eb7fbfff r--     11000      2000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    eb7fc000-eb7fcfff rw-     12000      1000  /system/lib/android.hardware.graphics.mapper@3.0.so (BuildId: 3f41ad9b90fb2c99edc0f1f6ddb3ee) (load bias 0x1000)
+    eb812000-eb812fff r--         0      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    eb813000-eb813fff r-x         0      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    eb814000-eb815fff r--         0      2000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    eb816000-eb816fff rw-      1000      1000  /system/lib/android.hardware.common-V1-ndk_platform.so (BuildId: dfe52e525af8297ecb41a20dac2d02) (load bias 0x1000)
+    eb850000-eb850fff r--         0      1000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    eb851000-eb853fff r-x         0      3000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    eb854000-eb854fff r--      2000      1000  /system/lib/libspeexresampler.so (BuildId: 3d989022312e7aa0941271dc0819f0) (load bias 0x1000)
+    eb8a1000-eb8a1fff r--         0      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb8a2000-eb8a3fff r-x         0      2000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb8a4000-eb8a4fff r--      1000      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb8a5000-eb8a5fff rw-      1000      1000  /system/lib/libnativebridge_lazy.so (BuildId: ba1b50b293fd995045c6bd0ad281a6) (load bias 0x1000)
+    eb8d6000-eb8dafff r-x         0      5000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    eb8db000-eb8dbfff ---         0      1000
+    eb8dc000-eb8ddfff r--      5000      2000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    eb8de000-eb8e7fff rw-      7000      a000  /system/vendor/lib/libcustom_nvram.so (BuildId: d1404eb13a0213a0881cbe5a35cd87)
+    eb8e8000-eb8e8fff rw-         0      1000  [anon:.bss]
+    eb920000-eb947fff r--         0     28000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eb948000-eb96cfff r-x     27000     25000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eb96d000-eb976fff r--     4b000      a000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eb977000-eb977fff rw-     54000      1000  /system/lib/libmedia.so (BuildId: bdf4b1a3a9fa66f1d3d2c289c66f60) (load bias 0x1000)
+    eb991000-eb994fff r--         0      4000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    eb995000-eb9aafff r-x      3000     16000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    eb9ab000-eb9abfff r--     18000      1000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    eb9ac000-eb9acfff rw-     18000      1000  /system/lib/liblzma.so (BuildId: d07f8706f842fdb854488a8b5f1254) (load bias 0x1000)
+    eb9ad000-eb9b3fff rw-         0      7000  [anon:.bss]
+    eb9c0000-eb9c5fff r-x         0      6000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    eb9c6000-eb9c6fff r--      5000      1000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    eb9c7000-eb9c7fff rw-      6000      1000  /system/vendor/lib/libaudiodcrflt.so (BuildId: 86dbf604039c703de2c7ba84e704ca)
+    eba0f000-eba1bfff r--         0      d000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    eba1c000-eba23fff r-x      c000      8000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    eba24000-eba24fff r--     13000      1000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    eba25000-eba25fff rw-     13000      1000  /system/lib/libSurfaceFlingerProp.so (BuildId: f9d9d2b7330a92e048e430993b4754) (load bias 0x1000)
+    eba42000-eba45fff r--         0      4000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eba46000-eba4afff r-x      3000      5000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eba4b000-eba4bfff r--      7000      1000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eba4c000-eba4dfff rw-      7000      2000  /system/lib/libcamera_metadata.so (BuildId: 6fcf00b6fb2f1fcea345eb1fd7f441) (load bias 0x1000)
+    eba85000-eba90fff r--         0      c000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    eba91000-eba95fff r-x      b000      5000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    eba96000-eba96fff r--      f000      1000  /system/lib/libGLESv2.so (BuildId: 7f3e50e90f213659c4424cfb1798ec) (load bias 0x1000)
+    ebad5000-ebad7fff r--         0      3000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ebad8000-ebad9fff r-x      2000      2000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ebada000-ebadafff r--      3000      1000  /system/lib/libnativewindow.so (BuildId: 3d871adfb8607386744579d0378efd) (load bias 0x1000)
+    ebb01000-ebb08fff r--         0      8000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    ebb09000-ebb11fff r-x      7000      9000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    ebb12000-ebb13fff r--      f000      2000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    ebb14000-ebb14fff rw-     10000      1000  /system/lib/android.hardware.graphics.mapper@2.0.so (BuildId: 9f52164809c6a5ad1e518d4c8bd54b) (load bias 0x1000)
+    ebb5e000-ebb68fff r--         0      b000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ebb69000-ebb76fff r-x      a000      e000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ebb77000-ebb78fff r--     17000      2000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ebb79000-ebb79fff rw-     18000      1000  /system/lib/android.hardware.graphics.mapper@4.0.so (BuildId: 15fa5180b67b1d7fc7a6536e2e4984) (load bias 0x1000)
+    ebb8e000-ebb90fff r-x         0      3000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ebb91000-ebb91fff r--      2000      1000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ebb92000-ebb92fff rw-      3000      1000  /system/vendor/lib/libaudiotoolkit.so (BuildId: 6734b059fdd7e7d7249e96d2a95035)
+    ebbc1000-ebbcefff r--         0      e000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ebbcf000-ebbdefff r-x      d000     10000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ebbdf000-ebbdffff r--     1c000      1000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ebbe0000-ebbe0fff rw-     1c000      1000  /system/lib/libstagefright_foundation.so (BuildId: ce8528f2321b3028f5524b75dba057) (load bias 0x1000)
+    ebbe1000-ebbe1fff rw-         0      1000  [anon:.bss]
+    ebc20000-ebc24fff r--         0      5000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ebc25000-ebc2bfff r-x      4000      7000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ebc2c000-ebc2dfff r--      a000      2000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ebc2e000-ebc2efff rw-      b000      1000  /system/lib/libmediametrics.so (BuildId: 78a5f4f412aeae37410568b35dafb4) (load bias 0x1000)
+    ebc44000-ebc4efff r--         0      b000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ebc4f000-ebc5afff r-x      a000      c000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ebc5b000-ebc5cfff r--     15000      2000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ebc5d000-ebc5dfff rw-     16000      1000  /system/lib/android.frameworks.bufferhub@1.0.so (BuildId: 6f989ce94f4adf3e7939eda9001d58) (load bias 0x1000)
+    ebc95000-ebc95fff r--         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebc96000-ebc96fff r-x         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebc97000-ebc97fff r--         0      1000  /system/vendor/lib/libbluetooth_mtk_pure.so (BuildId: 016641bebb79f15b4634e3c73a931c) (load bias 0x1000)
+    ebcc6000-ebcc8fff r-x         0      3000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ebcc9000-ebcc9fff r--      2000      1000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ebcca000-ebccafff rw-      3000      1000  /system/vendor/lib/libnvram_platform.so (BuildId: 845aa785f1eacd1096de268864d761)
+    ebd15000-ebd26fff r--         0     12000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ebd27000-ebd3afff r-x     11000     14000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ebd3b000-ebd3dfff r--     24000      3000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ebd3e000-ebd3efff rw-     26000      1000  /system/lib/libinput.so (BuildId: 7ac521fb03437ffc22ca09a00e09f9) (load bias 0x1000)
+    ebd4e000-ebd4efff r--         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    ebd4f000-ebd4ffff r-x         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    ebd50000-ebd50fff r--         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    ebd51000-ebd51fff rw-         0      1000  /system/lib/libsync.so (BuildId: 221d22a030490b284abf9150417955) (load bias 0x1000)
+    ebd85000-ebd8afff r--         0      6000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebd8b000-ebd9dfff r-x      5000     13000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebd9e000-ebd9ffff r--     17000      2000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebda0000-ebda0fff rw-     18000      1000  /system/lib/libbacktrace.so (BuildId: b78270374e5b2e0823edacfa1614e1) (load bias 0x1000)
+    ebdc6000-ebdc6fff r--         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebdc7000-ebdc7fff r-x         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebdc8000-ebdc8fff r--         0      1000  /system/lib/android.hardware.configstore-utils.so (BuildId: 3e96b3a2d6750a4472f5b5e83e16da) (load bias 0x1000)
+    ebe1a000-ebe1efff r--         0      5000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ebe1f000-ebe21fff r-x      4000      3000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ebe22000-ebe23fff r--      6000      2000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ebe24000-ebe24fff rw-      7000      1000  /system/lib/libmedia_codeclist.so (BuildId: 8bde719a1a79462b03ce99696f6cb9) (load bias 0x1000)
+    ebe6c000-ebe6ffff r-x         0      4000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ebe70000-ebe70fff r--      3000      1000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ebe71000-ebe71fff rw-      4000      1000  /system/vendor/lib/libmtkshifter.so (BuildId: 7d8a6d7539009dddbef78a9242c0df)
+    ebe89000-ebe8efff r-x         0      6000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ebe8f000-ebe8ffff r--      5000      1000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ebe90000-ebe90fff rw-      6000      1000  /system/vendor/lib/libaudiocustparam.so (BuildId: 8ab4f394845e594419ec7ef3ada0db)
+    ebed4000-ebed8fff r--         0      5000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ebed9000-ebedcfff r-x      4000      4000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ebedd000-ebedefff r--      7000      2000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ebedf000-ebedffff rw-      8000      1000  /system/lib/libgraphicsenv.so (BuildId: 062cf02b9c9bfb45f43111f5841432) (load bias 0x1000)
+    ebf19000-ebf1afff r--         0      2000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    ebf1b000-ebf1cfff r-x      1000      2000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    ebf1d000-ebf1dfff r--      2000      1000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    ebf1e000-ebf1efff rw-      2000      1000  /system/lib/android.hardware.graphics.common-V1-ndk_platform.so (BuildId: 5b5d55811513784f35af86ec31eed8) (load bias 0x1000)
+    ebf46000-ebf4dfff r--         0      8000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ebf4e000-ebf54fff r-x      7000      7000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ebf55000-ebf56fff r--      d000      2000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ebf57000-ebf57fff rw-      e000      1000  /system/lib/android.hardware.graphics.allocator@2.0.so (BuildId: 0940975aeed89735be9544bea9057e) (load bias 0x1000)
+    ebf9d000-ebfadfff r-x         0     11000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ebfae000-ebfaefff r--     10000      1000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ebfaf000-ebfaffff rw-     11000      1000  /system/vendor/lib/libbessound_hd_mtk.so (BuildId: 13488a394cea1fcde526febab07988)
+    ebff2000-ebff2fff r--         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    ebff3000-ebff3fff r-x         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    ebff4000-ebff4fff r--         0      1000  /system/lib/android.hardware.media@1.0.so (BuildId: 669b32a2ad7e27843ee17547e09656) (load bias 0x1000)
+    ec009000-ec028fff r--         0     20000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ec029000-ec046fff r-x     1f000     1e000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ec047000-ec04dfff r--     3c000      7000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ec04e000-ec04efff rw-     42000      1000  /system/lib/libcamera_client.so (BuildId: 6ba6ad598c4ae49b0af8afa2ace9f2) (load bias 0x1000)
+    ec0a0000-ec0a6fff r--         0      7000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ec0a7000-ec0adfff r-x      6000      7000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ec0ae000-ec0affff r--      c000      2000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ec0b0000-ec0b0fff rw-      d000      1000  /system/lib/android.hardware.graphics.allocator@4.0.so (BuildId: 7046a5c681e75ea57db3dd9d0ede10) (load bias 0x1000)
+    ec0de000-ec0e2fff r--         0      5000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec0e3000-ec0e8fff r-x      4000      6000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec0e9000-ec0eafff r--      9000      2000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec0eb000-ec0ebfff rw-      a000      1000  /system/lib/libbinder_ndk.so (BuildId: bbdfb432f49f195c5a6a451f51d54f) (load bias 0x1000)
+    ec11a000-ec12cfff r-x         0     13000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ec12d000-ec12dfff r--     12000      1000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ec12e000-ec12efff rw-     13000      1000  /system/vendor/lib/libnvram.so (BuildId: ad2479b7f2485175fe80ccf9d08a3c)
+    ec152000-ec210fff r-x         0     bf000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    ec211000-ec213fff r--     be000      3000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    ec214000-ec214fff rw-     c1000      1000  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d) (load bias 0x2000)
+    ec215000-ec331fff rw-         0    11d000  [anon:.bss]
+    ec35d000-ec362fff r--         0      6000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec363000-ec367fff r-x      5000      5000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec368000-ec36afff r--      9000      3000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec36b000-ec36bfff rw-      b000      1000  /system/lib/libpowermanager.so (BuildId: c01a9e0947acbd4a389e86f243df5e) (load bias 0x1000)
+    ec388000-ec388fff r--         0      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ec389000-ec38afff r-x         0      2000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ec38b000-ec38bfff r--      1000      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ec38c000-ec38cfff rw-      1000      1000  /system/vendor/lib/hw/audio.primary.amazon_wrapper.so (BuildId: db5b6ef0c2cef1956a2024b36bb8ba) (load bias 0x1000)
+    ec3c0000-ec3c1fff r--         0      2000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ec3c2000-ec3c3fff r-x      1000      2000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ec3c4000-ec3c4fff r--      2000      1000  /system/lib/android.hardware.audio.common@5.0.so (BuildId: e32ec654c588a1ede9873eb7ecbf73) (load bias 0x1000)
+    ec40c000-ec411fff r--         0      6000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ec412000-ec41afff r-x      5000      9000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ec41b000-ec41bfff r--      d000      1000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ec41c000-ec41cfff rw-      d000      1000  /system/vendor/lib/libbluetooth_audio_session.so (BuildId: bfff471b1cca645d0b77632ae33ac1) (load bias 0x1000)
+    ec446000-ec446fff r--         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ec447000-ec447fff r-x         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ec448000-ec448fff r--         0      1000  /system/lib/android.hidl.safe_union@1.0.so (BuildId: 23d2359338d1c147bc9bedcdbb7965) (load bias 0x1000)
+    ec484000-ec48afff r--         0      7000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ec48b000-ec491fff r-x      6000      7000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ec492000-ec493fff r--      c000      2000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ec494000-ec494fff rw-      d000      1000  /system/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so (BuildId: e591d3ad134f72c29877554860aae5) (load bias 0x1000)
+    ec4c1000-ec4d3fff r--         0     13000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ec4d4000-ec4e7fff r-x     12000     14000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ec4e8000-ec4eafff r--     25000      3000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ec4eb000-ec4ebfff rw-     27000      1000  /system/lib/android.hardware.bluetooth.audio@2.0.so (BuildId: 768cbfada64e30118af2785e59ac60) (load bias 0x1000)
+    ec517000-ec51dfff r--         0      7000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ec51e000-ec524fff r-x      6000      7000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ec525000-ec525fff r--      c000      1000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ec526000-ec526fff rw-      c000      1000  /system/lib/android.hidl.memory.token@1.0.so (BuildId: 6fdc31b58fad103863e19b0f9ced9f) (load bias 0x1000)
+    ec572000-ec573fff r--         0      2000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ec574000-ec576fff r-x      1000      3000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ec577000-ec577fff r--      3000      1000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ec578000-ec578fff rw-      3000      1000  /system/vendor/lib/libeffects.so (BuildId: 8582ff5ab4f02c820a69364d262b26) (load bias 0x1000)
+    ec5a4000-ec5a5fff r--         0      2000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ec5a6000-ec5a9fff r-x      1000      4000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ec5aa000-ec5aafff r--      4000      1000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ec5ab000-ec5abfff rw-      4000      1000  /system/lib/libeffectsconfig.so (BuildId: 179125b4eebb6f7dc38f593b5c7514) (load bias 0x1000)
+    ec5d2000-ec5d6fff r--         0      5000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ec5d7000-ec5ddfff r-x      4000      7000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ec5de000-ec5dffff r--      a000      2000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ec5e0000-ec5e0fff rw-      b000      1000  /system/lib/libtinyxml2.so (BuildId: fa0727e69ca9ea56673642eba51725) (load bias 0x1000)
+    ec607000-ec627fff r--         0     21000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ec628000-ec635fff r-x     20000      e000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ec636000-ec639fff r--     2d000      4000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ec63a000-ec63afff rw-     30000      1000  /system/vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so (BuildId: 052e38a3e512e1817ae17d89d2ab8c) (load bias 0x1000)
+    ec644000-ec64dfff r--         0      a000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ec64e000-ec65afff r-x      9000      d000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ec65b000-ec65cfff r--     15000      2000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ec65d000-ec65dfff rw-     16000      1000  /system/lib/android.hidl.memory@1.0.so (BuildId: 541b2c6b5dc9317102347a41414d1a) (load bias 0x1000)
+    ec6a5000-ec6a7fff r--         0      3000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ec6a8000-ec6a8fff r-x      2000      1000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ec6a9000-ec6aafff r--      2000      2000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ec6ab000-ec6abfff rw-      3000      1000  /system/lib/libhidlmemory.so (BuildId: 0849a0edb902e073374135a1fbb7c3) (load bias 0x1000)
+    ec6fb000-ec6fbfff ---         0      1000
+    ec6fc000-ec7fafff rw-         0     ff000  [anon:stack_and_tls:3876]
+    ec7fb000-ec7fcfff ---         0      2000
+    ec7fd000-ec8fbfff rw-         0     ff000  [anon:stack_and_tls:3875]
+    ec8fc000-ec8fcfff ---         0      1000
+    ec8fd000-ec8fdfff r--         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ec8fe000-ec8fefff r-x         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ec8ff000-ec8fffff r--         0      1000  /system/lib/android.hardware.audio.common@2.0.so (BuildId: 32dc9f60b69cfffbb94e4b94d972b8) (load bias 0x1000)
+    ec90c000-ec90cfff r--         0      1000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ec90d000-ec90ffff r-x         0      3000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ec910000-ec910fff r--      2000      1000  /system/lib/libfmq.so (BuildId: 4ee21ce95368435f59d79ee57d73a9) (load bias 0x1000)
+    ec972000-ec972fff r--         0      1000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ec973000-ec974fff r-x         0      2000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ec975000-ec975fff r--      1000      1000  /system/lib/android.hardware.audio.common@2.0-util.so (BuildId: 0a84589a4de5cdc87bcbd3ca3b3cfa) (load bias 0x1000)
+    ec9a6000-ec9f8fff r--         0     53000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ec9f9000-eca9efff r-x     52000     a6000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    eca9f000-ecaacfff r--     f7000      e000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ecaad000-ecaadfff rw-    104000      1000  /system/lib/android.hardware.audio.effect@2.0.so (BuildId: 8e1bc09f2d41e5ab3579984103e2a1) (load bias 0x1000)
+    ecace000-ecadffff r--         0     12000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8becea) (load bias 0x1000)
+    ecae0000-ecaeefff r-x     11000      f000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8becea) (load bias 0x1000)
+    ecaef000-ecaf0fff r--     1f000      2000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8bec) (load bias 0x1000)
+    ecaf1000-ecaf1fff rw-     20000      1000  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (BuildId: 99e3312e60223c5bc360708d9a8bec) (load bias 0x1000)
+    ecaf7000-ecaf7fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    ecb31000-ecb31fff r--         0      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ecb32000-ecb33fff r-x         0      2000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ecb34000-ecb34fff r--      1000      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ecb35000-ecb35fff rw-      1000      1000  /system/lib/android.hardware.audio.common-util.so (BuildId: 1c21f64b9e68d6bfb32b6a6d4c9045) (load bias 0x1000)
+    ecb67000-ecb8efff r--         0     28000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068bb) (load bias 0x1000)
+    ecb8f000-ecbe3fff r-x     27000     55000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068bb) (load bias 0x1000)
+    ecbe4000-ecbeafff r--     7b000      7000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068) (load bias 0x1000)
+    ecbeb000-ecbebfff rw-     81000      1000  /system/lib/android.hardware.audio@2.0.so (BuildId: 0c09d37c74cfe48df066759759c068) (load bias 0x1000)
+    ecc06000-ecc0efff r--         0      9000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ecc0f000-ecc15fff r-x      8000      7000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ecc16000-ecc17fff r--      e000      2000  /system/lib/libmedia_helper.so (BuildId: e97c68f626e377bcf9b3d744876884) (load bias 0x1000)
+    ecc6d000-ecc81fff rw-         0     15000  [anon:libc_malloc]
+    ecc82000-ecc82fff ---         0      1000
+    ecc83000-ecc86fff rw-         0      4000  [anon:thread signal stack]
+    ecc87000-ecca8fff rw-         0     22000  [anon:libc_malloc]
+    ecca9000-ecca9fff ---         0      1000
+    eccaa000-eccadfff rw-         0      4000  [anon:thread signal stack]
+    eccae000-eccaefff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccaf000-eccaffff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb0000-eccb0fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb1000-eccb1fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb2000-eccb2fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb3000-eccb3fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb4000-eccb4fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb5000-eccb5fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb6000-eccb6fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb7000-eccb7fff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    eccb8000-eccdffff rw-         0     28000  [anon:libc_malloc]
+    ecce0000-ecce0fff ---         0      1000
+    ecce1000-ecddffff rw-         0     ff000  [anon:stack_and_tls:3874]
+    ecde0000-ecde0fff ---         0      1000
+    ecedf000-ecedffff ---         0      1000
+    ecee0000-ecfdefff rw-         0     ff000  [anon:stack_and_tls:3873]
+    ecfdf000-ecfdffff ---         0      1000
+    ed0de000-ed0dffff r--         0      2000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    ed0e0000-ed0e2fff r-x      1000      3000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    ed0e3000-ed0e3fff r--      3000      1000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    ed0e4000-ed0e4fff rw-      3000      1000  /system/lib/libnetd_client.so (BuildId: ce59222c6849bfb6d6e089affca72a) (load bias 0x1000)
+    ed0e5000-ed200fff rw-         0    11c000  [anon:libc_malloc]
+    ed201000-ed23afff rw-         0     3a000  [anon:libc_malloc]
+    ed23b000-ed29efff rw-         0     64000  [anon:linker_alloc]
+    ed29f000-ed2a7fff r--         0      9000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    ed2a8000-ed2bcfff r-x      8000     15000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    ed2bd000-ed2bdfff r--     1c000      1000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    ed2be000-ed2befff rw-     1c000      1000  /apex/com.android.runtime/lib/bionic/libm.so (BuildId: 96682a69ead326ed12a7d180c9545e) (load bias 0x1000)
+    ed2bf000-ed2c6fff rw-         0      8000  [anon:libc_malloc]
+    ed2c7000-ed2d6fff r--         0     10000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ed2d7000-ed2f2fff r-x      f000     1c000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ed2f3000-ed2f3fff r--     2a000      1000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ed2f4000-ed2f4fff rw-     2a000      1000  /system/lib/libprocessgroup.so (BuildId: 8e8d1b411efd44b724bec7a83084e2) (load bias 0x1000)
+    ed2f5000-ed30ffff rw-         0     1b000  [anon:libc_malloc]
+    ed310000-ed319fff r--         0      a000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    ed31a000-ed338fff r-x      9000     1f000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    ed339000-ed33afff r--     27000      2000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    ed33b000-ed33bfff rw-     28000      1000  /system/lib/libbase.so (BuildId: 61b4c9a415777e7071d305495b4669) (load bias 0x1000)
+    ed33c000-ed358fff rw-         0     1d000  [anon:libc_malloc]
+    ed359000-ed362fff r--         0      a000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f768) (load bias 0x1000)
+    ed363000-ed36cfff r-x      9000      a000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f768) (load bias 0x1000)
+    ed36d000-ed36efff r--     12000      2000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    ed36f000-ed36ffff rw-     13000      1000  /system/lib/libutils.so (BuildId: 86e48bfe10db524fa7a885acd0a8f7) (load bias 0x1000)
+    ed370000-ed3a8fff rw-         0     39000  [anon:libc_malloc]
+    ed3a9000-ed3adfff r--         0      5000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ed3ae000-ed3b4fff r-x      4000      7000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ed3b5000-ed3b6fff r--      a000      2000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ed3b7000-ed3b7fff rw-      b000      1000  /system/lib/libcutils.so (BuildId: 416f7ad9159113dc4adf37192fc40a) (load bias 0x1000)
+    ed3b8000-ed3c8fff rw-         0     11000  [anon:libc_malloc]
+    ed3c9000-ed3f9fff r--         0     31000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b2e) (load bias 0x1000)
+    ed3fa000-ed445fff r-x     30000     4c000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b2e) (load bias 0x1000)
+    ed446000-ed44bfff r--     7b000      6000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b) (load bias 0x1000)
+    ed44c000-ed44cfff rw-     80000      1000  /system/lib/libhidlbase.so (BuildId: efc477e860f7d6c14c3deaccf8da9b) (load bias 0x1000)
+    ed44d000-ed484fff rw-         0     38000  [anon:libc_malloc]
+    ed485000-ed487fff r--         0      3000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ed488000-ed490fff r-x      2000      9000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ed491000-ed492fff r--      a000      2000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ed493000-ed493fff rw-      b000      1000  /system/lib/liblog.so (BuildId: 5ec5d733956308b466c7ab2918828d) (load bias 0x1000)
+    ed494000-ed4e1fff rw-         0     4e000  [anon:libc_malloc]
+    ed4e2000-ed4e2fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ed4e3000-ed4e3fff r-x         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ed4e4000-ed4e4fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl.so (BuildId: 591c61190b04e466a7425a9367248d) (load bias 0x1000)
+    ed4e5000-ed4e5fff ---         0      1000
+    ed4e6000-ed4e6fff rw-         0      1000  [anon:.bss]
+    ed4e7000-ed4fffff rw-         0     19000  [anon:libc_malloc]
+    ed500000-ed50dfff rw-         0      e000  [anon:libc_malloc]
+    ed50e000-ed52dfff r--         0     20000  /dev/__properties__/u:object_r:default_prop:s0
+    ed52e000-ed538fff rw-         0      b000  [anon:libc_malloc]
+    ed539000-ed539fff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ed53a000-ed53afff r-x         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ed53b000-ed53bfff r--         0      1000  /apex/com.android.runtime/lib/bionic/libdl_android.so (BuildId: 1b95f0d269e18ba13b204e51b81c0b) (load bias 0x1000)
+    ed53c000-ed53cfff rw-         0      1000  [anon:libc_malloc]
+    ed53d000-ed53dfff ---         0      1000
+    ed53e000-ed541fff rw-         0      4000  [anon:thread signal stack]
+    ed542000-ed561fff r--         0     20000  /dev/__properties__/u:object_r:bq_config_prop:s0
+    ed562000-ed58cfff r--         0     2b000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c6013269) (load bias 0x1000)
+    ed58d000-ed615fff r-x     2a000     89000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c6013269) (load bias 0x1000)
+    ed616000-ed619fff r--     b2000      4000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c60132) (load bias 0x1000)
+    ed61a000-ed61cfff rw-     b5000      3000  /apex/com.android.runtime/lib/bionic/libc.so (BuildId: 28faceb0a7eacbcaa0f44152c60132) (load bias 0x1000)
+    ed61d000-ed61ffff rw-         0      3000  [anon:.bss]
+    ed620000-ed620fff r--         0      1000  [anon:.bss]
+    ed621000-ed62dfff rw-         0      d000  [anon:.bss]
+    ed62e000-ed643fff rw-         0     16000  [anon:libc_malloc]
+    ed644000-ed644fff r--         0      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ed645000-ed646fff r-x         0      2000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ed647000-ed647fff r--      1000      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ed648000-ed648fff rw-      1000      1000  /system/lib/libcgrouprc.so (BuildId: bdad65f9aa9d368df671da638416c7) (load bias 0x1000)
+    ed649000-ed64ffff rw-         0      7000  [anon:libc_malloc]
+    ed650000-ed66ffff r--         0     20000  /dev/__properties__/u:object_r:use_memfd_prop:s0
+    ed670000-ed68ffff r--         0     20000  /dev/__properties__/u:object_r:logd_prop:s0
+    ed690000-ed6c2fff r--         0     33000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    ed6c3000-ed6f1fff r-x     32000     2f000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    ed6f2000-ed6fcfff r--     60000      b000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    ed6fd000-ed6fdfff rw-     6a000      1000  /system/lib/libbinder.so (BuildId: 92cdc140072182f1b43de33e16a57b) (load bias 0x1000)
+    ed6fe000-ed6fefff rw-         0      1000  [anon:libc_malloc]
+    ed6ff000-ed706fff r--         0      8000  [anon:atexit handlers]
+    ed707000-ed739fff r--         0     33000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    ed73a000-ed778fff r-x     32000     3f000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    ed779000-ed77dfff r--     70000      5000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    ed77e000-ed77efff rw-     74000      1000  /system/lib/libc++.so (BuildId: 437013a44da12f07c13e1700c52fb4) (load bias 0x1000)
+    ed77f000-ed77ffff rw-         0      1000  [anon:.bss]
+    ed780000-ed783fff rw-         0      4000  [anon:libc_malloc]
+    ed784000-ed784fff r--         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ed785000-ed785fff r-x         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ed786000-ed786fff r--         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ed787000-ed787fff rw-         0      1000  /system/lib/libvndksupport.so (BuildId: cd5a664f74ef9a9d5316d60e92c179) (load bias 0x1000)
+    ed788000-ed78ffff rw-         0      8000  [anon:libc_malloc]
+    ed790000-ed790fff ---         0      1000
+    ed791000-ed794fff rw-         0      4000  [anon:thread signal stack]
+    ed795000-ed799fff rw-         0      5000  [anon:libc_malloc]
+    ed79a000-ed7b9fff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+    ed7ba000-ed7d9fff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+    ed7da000-ed7dafff r--         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ed7db000-ed7dbfff r-x         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ed7dc000-ed7dcfff r--         0      1000  /system/lib/libhardware.so (BuildId: 9da5fc075f67cff710180888bb0b5d) (load bias 0x1000)
+    ed7dd000-ed7e8fff rw-         0      c000  [anon:libc_malloc]
+    ed7e9000-ed808fff r--         0     20000  /dev/__properties__/u:object_r:exported_default_prop:s0
+    ed809000-ed828fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+    ed829000-ed829fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    ed82a000-ed82bfff rw-         0      2000  [anon:libc_malloc]
+    ed82c000-ed82cfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed82d000-ed82dfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed82e000-ed82efff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed82f000-ed82ffff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed830000-ed836fff rw-         0      7000  [anon:libc_malloc]
+    ed837000-ed837fff ---         0      1000
+    ed838000-ed83bfff rw-         0      4000  [anon:thread signal stack]
+    ed83c000-ed83cfff ---         0      1000
+    ed83d000-ed840fff rw-         0      4000  [anon:thread signal stack]
+    ed841000-ed860fff r--         0     20000  /dev/__properties__/u:object_r:heapprofd_prop:s0
+    ed861000-ed861fff rw-         0      1000  [anon:libc_malloc]
+    ed862000-ed862fff rw-      1000      1000  /dev/ashmem/MessageQueue (deleted)
+    ed863000-ed864fff rw-         0      2000  /dev/ashmem/MessageQueue (deleted)
+    ed865000-ed865fff ---         0      1000
+    ed866000-ed869fff rw-         0      4000  [anon:thread signal stack]
+    ed86a000-ed86afff ---         0      1000
+    ed86b000-ed86efff rw-         0      4000  [anon:thread signal stack]
+    ed86f000-ed87bfff rw-         0      d000  [anon:libc_malloc]
+    ed87c000-ed89bfff r--         0     20000  /dev/__properties__/u:object_r:exported2_default_prop:s0
+    ed89c000-ed8bbfff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    ed8bc000-ed8dbfff r--         0     20000  /dev/__properties__/properties_serial
+    ed8dc000-ed8e6fff r--         0      b000  /dev/__properties__/property_info
+    ed8e7000-ed8e7fff ---         0      1000
+    ed8e8000-ed8eafff rw-         0      3000  [anon:stack_and_tls:main]
+    ed8eb000-ed8ebfff ---         0      1000
+    ed8ec000-ed8ecfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed8ed000-ed8edfff rw-         0      1000  /dev/ashmem/MessageQueue (deleted)
+    ed8ee000-ed8fafff rw-         0      d000  [anon:libc_malloc]
+    ed8fb000-ed91afff r--         0     20000  /dev/__properties__/u:object_r:vendor_default_prop:s0
+    ed91b000-ed92ffff rw-         0     15000  [anon:libc_malloc]
+    ed930000-ed94ffff r--         0     20000  /dev/__properties__/u:object_r:vendor_socket_hook_prop:s0
+    ed950000-eda17fff r--         0     c8000  [anon:linker_alloc]
+    eda18000-eda37fff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+    eda38000-eda40fff rw-         0      9000  [anon:bionic_alloc_small_objects]
+    eda41000-edaa4fff r--         0     64000  [anon:linker_alloc]
+    edaa5000-edaa6fff rw-         0      2000  [anon:bionic_alloc_small_objects]
+    edaa7000-edac6fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+    edac7000-edae6fff r--         0     20000  /dev/__properties__/u:object_r:exported2_default_prop:s0
+    edae7000-edae7fff ---         0      1000
+    edae8000-edaeffff rw-         0      8000
+    edaf0000-edaf0fff ---         0      1000
+    edaf1000-edb10fff r--         0     20000  /dev/__properties__/properties_serial
+    edb11000-edb11fff rw-         0      1000  [anon:System property context nodes]
+    edb12000-edb1cfff r--         0      b000  /dev/__properties__/property_info
+    edb1d000-edb80fff r--         0     64000  [anon:linker_alloc]
+    edb81000-edb81fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+    edb82000-edb82fff r--         0      1000  [anon:atexit handlers]
+    edb83000-edb83fff ---         0      1000
+    edb84000-edb87fff rw-         0      4000  [anon:thread signal stack]
+    edb88000-edb88fff rw-         0      1000  [anon:arc4random data]
+    edb89000-edb89fff rw-         0      1000  [anon:libc_malloc]
+    edb8a000-edb8afff rw-         0      1000  [anon:System property context nodes]
+    edb8b000-edb8bfff rw-         0      1000  [anon:arc4random data]
+    edb8c000-edba4fff r--         0     19000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    edba5000-edc2bfff r-x     18000     87000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    edc2c000-edc30fff r--     9e000      5000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    edc31000-edc31fff rw-     a2000      1000  /apex/com.android.runtime/bin/linker (BuildId: 204eb4a4a897669f4a620d47ee2aa7) (load bias 0x1000)
+    edc32000-edc34fff rw-         0      3000  [anon:.bss]
+    edc35000-edc35fff r--         0      1000  [anon:.bss]
+    edc36000-edc3bfff rw-         0      6000  [anon:.bss]
+    ffa87000-ffaa7fff rw-         0     21000  [stack]
+    ffff0000-ffff0fff r-x         0      1000  [vectors]
+--------- tail end of log main
+09-11 22:28:08.924  3872  3876 D AudioALSAStreamOut: dump()
+09-11 22:28:08.932  3872  3876 D AudioALSAHardware: dumpState()
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3872, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000004  r1  c0306201  r2  ffaa6eb8  r3  ffaa6e0c
+    r4  ed61d2b4  r5  c0306201  r6  ffaa6eb8  r7  00000036
+    r8  00000000  r9  ed8ef054  r10 ffaa6ec8  r11 ffaa6eb8
+    ip  00000100  sp  ffaa6df8  lr  ed5cb273  pc  ed5fd9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 0006c411  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+160) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 000025e7  /system/vendor/bin/hw/android.hardware.audio.service (main+2470) (BuildId: 9d0827d0ffb0923deab37bc69b6d45)
+      #05 pc 0005d3d9  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+68) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3873, name: Binder:3872_1  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000003  r1  c0306201  r2  ecfdc098  r3  ecfdc07c
+    r4  ed61d2b4  r5  ed8ee200  r6  c0306201  r7  00000036
+    r8  ed8ee290  r9  ed8ee254  r10 00000000  r11 00000000
+    ip  00000000  sp  ecfdc068  lr  ed5cb273  pc  ed5fd9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 00039637  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+238) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #03 pc 00039791  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #04 pc 00039e6b  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #05 pc 000526cd  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #06 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #07 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #08 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #09 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3874, name: Binder:3872_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000003  r1  c0306201  r2  ecddd098  r3  ecddd07c
+    r4  ed61d2b4  r5  ed8ee500  r6  c0306201  r7  00000036
+    r8  ed8ee590  r9  ed8ee554  r10 00000000  r11 00000000
+    ip  00000000  sp  ecddd068  lr  ed5cb273  pc  ed5fd9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 00039637  /system/lib/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+238) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #03 pc 00039791  /system/lib/libbinder.so (android::IPCThreadState::getAndExecuteCommand()+8) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #04 pc 00039e6b  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+38) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #05 pc 000526cd  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 92cdc140072182f1b43de33e16a57b)
+      #06 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #07 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #08 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #09 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3875, name: HwBinder:3872_1  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000004  r1  c0306201  r2  ec8f9060  r3  ec8f8fb4
+    r4  ed61d2b4  r5  c0306201  r6  ec8f9060  r7  00000036
+    r8  00000000  r9  ed8ef194  r10 ec8f9070  r11 ec8f9060
+    ip  00000100  sp  ec8f8fa0  lr  ed5cb273  pc  ed5fd9d0
+
+backtrace:
+      #00 pc 0009b9d0  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+8) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 0006c411  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+160) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #03 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #04 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+      #05 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #06 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #07 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #08 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3887, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  ec214200  r1  00000089  r2  00000000  r3  00000000
+    r4  00000000  r5  ffffffff  r6  ed59b177  r7  000000f0
+    r8  00000000  r9  ec214200  r10 00000000  r11 00000000
+    ip  ea37f0f8  sp  ea37f0e8  lr  ed5c536d  pc  ed5c02c8
+
+backtrace:
+      #00 pc 0005e2c8  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 00063369  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+92) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000aaeb3  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #03 pc 0003d155  /system/lib/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+8) (BuildId: 437013a44da12f07c13e1700c52fb4)
+      #04 pc 0000a355  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d)
+      #05 pc 0000b2b9  /system/lib/libasp.so (BuildId: 6ff5e5eb6552314407f14ee4936e5d)
+      #06 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #07 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3889, name: audio.service  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  ea27dd20  r1  00000001  r2  00000000  r3  00000000
+    r4  00000000  r5  ed61d2b4  r6  00000000  r7  00000150
+    r8  00000001  r9  000003ff  r10 ea27dd80  r11 00000000
+    ip  ea27dce8  sp  ea27dcd8  lr  ed5ccc37  pc  ed5febb8
+
+backtrace:
+      #00 pc 0009cbb8  /apex/com.android.runtime/lib/bionic/libc.so (__ppoll+16) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006ac33  /apex/com.android.runtime/lib/bionic/libc.so (poll+54) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000038ff  /system/lib/libhardware_legacy.so (uevent_next_event+50) (BuildId: 41559eac1f7b9e9a50a5ae9c191075)
+      #03 pc 0005f51c  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSAStreamManager::ueventLoop(void*)+584) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #05 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3904, name: reader  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  eccb9c14  r1  00000089  r2  0003164c  r3  e9f33fd0
+    r4  00000000  r5  ffffffff  r6  00000000  r7  000000f0
+    r8  0003164c  r9  eccb9c14  r10 00000000  r11 0000000b
+    ip  e9f33fc0  sp  e9f33fb0  lr  ed5c536d  pc  ed5c02c8
+
+backtrace:
+      #00 pc 0005e2c8  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 00063369  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+92) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000aaf19  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_timedwait+76) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #03 pc 0009e248  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureDataClient::read(void*, int)+780) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 00099af8  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureHandlerNormal::read(void*, int)+24) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #05 pc 00057300  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSAStreamIn::read(void*, int)+620) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #06 pc 00019959  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::(anonymous namespace)::ReadThread::threadLoop()+236) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+      #07 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #08 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+      #09 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #10 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 3872, tid: 3908, name: readThread0  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+uid: 1041
+    r0  00000000  r1  800c4151  r2  e9d824c8  r3  e9d824c4
+    r4  ed61d2b4  r5  800c4151  r6  e9d824c8  r7  00000036
+    r8  ed61d2b4  r9  00000000  r10 e9d82550  r11 e9d83170
+    ip  00000003  sp  e9d824b0  lr  ed5cb273  pc  ed5fd9d4
+
+backtrace:
+      #00 pc 0009b9d4  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #01 pc 0006926f  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #02 pc 000037eb  /system/lib/libtinyalsa.so (pcm_read+114) (BuildId: 3be3d376ce654870bb05bab652c6d7)
+      #03 pc 000a17c4  /system/vendor/lib/hw/audio.primary_amazon.mt8163.so (android::AudioALSACaptureDataProviderNormal::readThread(void*)+716) (BuildId: 6e3fe9438803258a8959eac9704abc)
+      #04 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+      #05 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+
+open files:
+    fd 0: /dev/null (unowned)
+    fd 1: /dev/null (unowned)
+    fd 2: /dev/null (unowned)
+    fd 3: /dev/vndbinder (unowned)
+    fd 4: /dev/hwbinder (unowned)
+    fd 5: /sys/kernel/debug/tracing/trace_marker (unowned)
+    fd 6: socket:[42582] (unowned)
+    fd 7: /dev/pmsg0 (unowned)
+    fd 8: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 9: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 10: /dev/snd/controlC0 (unowned)
+    fd 11: socket:[42796] (unowned)
+    fd 12: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 13: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 14: /dev/ashmem8b6dbe29-4e2d-471b-a334-8299e8f25dd6 (unowned)
+    fd 15: /dev/snd/pcmC0D22c (unowned)
+    fd 16: pipe:[45891] (unowned)
+--------- log main
+09-11 22:28:08.924  3872  3876 D AudioALSAStreamOut: dump()
+09-11 22:28:08.932  3872  3876 D AudioALSAHardware: dumpState()

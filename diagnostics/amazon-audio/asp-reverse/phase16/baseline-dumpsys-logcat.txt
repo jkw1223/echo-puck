@@ -1,0 +1,1434 @@
+--------- beginning of radio
+09-11 21:49:52.484   243   243 D TelephonyManager: No /proc/cmdline exception=java.io.FileNotFoundException: /proc/cmdline: open failed: EACCES (Permission denied)
+09-11 21:49:52.485   243   243 D TelephonyManager: /proc/cmdline=
+09-11 21:50:01.410   441   441 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:01.658   441   520 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:01.793   441   441 D TelephonyRegistry: systemRunning register for intents
+09-11 21:50:01.901   441   471 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:02.733   815   815 D TelephonyComponentFactory: validated paths: null
+09-11 21:50:02.734   815   815 D TelephonyComponentFactory: Total components injected: 0
+09-11 21:50:02.737   815   815 D TDC     : updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+09-11 21:50:02.738   815   815 D TDC     : updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: cannot load/parse PersistAtoms
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: java.nio.file.NoSuchFileException: /data/user_de/0/com.android.phone/files/persist_atoms.pb
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at java.nio.file.Files.newByteChannel(Files.java:361)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at java.nio.file.Files.newByteChannel(Files.java:407)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at java.nio.file.Files.readAllBytes(Files.java:3152)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.telephony.metrics.PersistAtomsStorage.loadAtomsFromFile(PersistAtomsStorage.java:132)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.telephony.metrics.PersistAtomsStorage.<init>(PersistAtomsStorage.java:60)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.telephony.metrics.MetricsCollector.<init>(MetricsCollector.java:88)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.telephony.PhoneFactory.makeDefaultPhone(PhoneFactory.java:149)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.telephony.PhoneFactory.makeDefaultPhones(PhoneFactory.java:105)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.phone.PhoneGlobals.onCreate(PhoneGlobals.java:345)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.phone.PhoneApp.onCreate(PhoneApp.java:39)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6719)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.os.Looper.loop(Looper.java:223)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at android.app.ActivityThread.main(ActivityThread.java:7664)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at java.lang.reflect.Method.invoke(Native Method)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+09-11 21:50:02.765   815   815 E PersistAtomsStorage: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+09-11 21:50:02.767   815   815 D PersistAtomsStorage: created new PersistAtoms
+09-11 21:50:02.770   815   815 D MetricsCollector: registered
+09-11 21:50:02.776   815   815 D CdmaSSM : subscriptionSource from settings: 0
+09-11 21:50:02.776   815   815 I PhoneFactory: Cdma Subscription set to 0
+09-11 21:50:02.777   815   815 I PhoneFactory: Network Mode set to 0
+09-11 21:50:02.783   815   815 D RILJ    : RIL: init preferredNetworkType=0 cdmaSubscription=0) [PHONEnull]
+09-11 21:50:02.800   815   815 D RILJ    : Radio HAL version: -1.-1 [PHONE0]
+09-11 21:50:02.801   815   815 D UiccController: Creating UiccController
+09-11 21:50:02.801   815   815 D UiccController: config_num_physical_slots = 1
+09-11 21:50:02.842   815   815 I PhoneFactory: Creating SubscriptionController
+09-11 21:50:02.861   441   916 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:02.885   815   815 D SubscriptionController: [SubscriptionController] init by Context
+09-11 21:50:02.899   815   815 I PhoneFactory: Creating Phone with type = 1 phoneId = 0
+09-11 21:50:02.902   815   815 D TelephonyTester: register for intent action=com.android.internal.telephony.action_detached
+09-11 21:50:02.902   815   815 D TelephonyTester: register for intent action=com.android.internal.telephony.action_attached
+09-11 21:50:02.903   815   815 D TelephonyTester: register for intent action=com.android.internal.telephony.TestServiceState
+09-11 21:50:02.903   815   815 D TelephonyTester: register for intent action=com.android.internal.telephony.TestChangeNumber
+09-11 21:50:02.916   815   815 D Phone   : mDoesRilSendMultipleCallRing=true
+09-11 21:50:02.916   815   815 D Phone   : mCallRingDelay=3000
+09-11 21:50:02.952   815   815 D SmsDispatchersController: SmsDispatchersController created
+09-11 21:50:02.989   815   815 E ImsSmsDispatcher [0]: Failed to get sms format. Error: getSmsFormat()
+09-11 21:50:02.989   815   815 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=unknown mSmsSendDisabled=true
+09-11 21:50:02.992   815   815 W FeatureConnector: [ImsSmsDispatcher, 0] connect: not supported.
+09-11 21:50:02.994   815   815 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=3gpp2 mSmsSendDisabled=true
+09-11 21:50:02.994   815   815 D CdmaSMSDispatcher: CdmaSMSDispatcher created
+09-11 21:50:03.018   815   815 D GsmInboundSmsHandler: created InboundSmsHandler
+09-11 21:50:03.024   815   940 D GsmInboundSmsHandler: StartupState.enter: entering StartupState
+09-11 21:50:03.043   815   815 D CdmaInboundSmsHandler: created InboundSmsHandler
+09-11 21:50:03.052   815   942 D CdmaInboundSmsHandler: StartupState.enter: entering StartupState
+09-11 21:50:03.055   815   815 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=false format=3gpp mSmsSendDisabled=true
+09-11 21:50:03.055   815   815 D GsmSMSDispatcher: GsmSMSDispatcher created
+09-11 21:50:03.057   815   940 D GsmInboundSmsHandler: StartupState.processMessage: processing EVENT_START_ACCEPTING_SMS
+09-11 21:50:03.057   815   942 D CdmaInboundSmsHandler: StartupState.processMessage: processing EVENT_START_ACCEPTING_SMS
+09-11 21:50:03.057   815   940 D GsmInboundSmsHandler: IdleState.enter: entering IdleState
+09-11 21:50:03.057   815   942 D CdmaInboundSmsHandler: IdleState.enter: entering IdleState
+09-11 21:50:03.057   815   940 D GsmInboundSmsHandler: IdleState.processMessage: processing EVENT_RELEASE_WAKELOCK
+09-11 21:50:03.057   815   942 D CdmaInboundSmsHandler: IdleState.processMessage: processing EVENT_RELEASE_WAKELOCK
+09-11 21:50:03.065   815   942 D CdmaInboundSmsHandler: IdleState.processMessage: EVENT_RELEASE_WAKELOCK: mWakeLock released
+09-11 21:50:03.065   815   940 D GsmInboundSmsHandler: IdleState.processMessage: EVENT_RELEASE_WAKELOCK: mWakeLock released
+09-11 21:50:03.069   815   815 D CdmaSSM : subscriptionSource from settings: 0
+09-11 21:50:03.069   815   815 D CdmaSSM : cdmaSSM constructor: 0
+09-11 21:50:03.072   815   815 D GsmCdmaPhone: [0] Precise phone type 1
+09-11 21:50:03.074   815   815 D RILJ    : setPhoneType=1 old value=0 [PHONE0]
+09-11 21:50:03.081   815   815 D CarrierActionAgent: [0]Creating CarrierActionAgent
+09-11 21:50:03.095   815   815 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+09-11 21:50:03.103   815   815 D TransportManager: operates in legacy mode.
+09-11 21:50:03.116   815   815 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+09-11 21:50:03.119   441   945 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.123   815   815 D NRM-C-0 : registerForNetworkRegistrationInfoChanged
+09-11 21:50:03.132   815   815 D NewNitzStateMachineImpl: handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+09-11 21:50:03.137   815   815 D SST     : [0] notifyVoiceRegStateRilRadioTechnologyChanged: vrs=1 rat=0
+09-11 21:50:03.139   441   945 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.143   815   815 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+09-11 21:50:03.206   815   815 D EmergencyNumberTracker:  asset emergency database is loaded. Ver: 1 Phone Id: 0
+09-11 21:50:03.221   815   815 E EmergencyNumberTracker: Cache ota emergency database IOException: java.io.FileNotFoundException: /data/misc/emergencynumberdb/emergency_number_db: open failed: ENOENT (No such file or directory)
+09-11 21:50:03.221   815   815 D EmergencyNumberTracker: Using Asset Emergency database. Version: 1
+09-11 21:50:03.223   441   945 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.234   815   815 D SubscriptionController: Valid row not present in db
+09-11 21:50:03.236   815   815 D SubscriptionController: getSubscriptionProperty Query value = null
+09-11 21:50:03.240   815   815 D SubscriptionController: [getActiveSubscriptionInfo]- subId=-1 subList=[] subInfo=null
+09-11 21:50:03.298   815   815 D m.android.phon: DCT.constructor
+09-11 21:50:03.319   815   815 D Dcc-C-0 : E ctor
+09-11 21:50:03.319   815   815 D Dcc-C-0 : X ctor
+09-11 21:50:03.320   815   815 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+09-11 21:50:03.320   815   815 D DcTesterDeacativateAll: register for intent action=com.android.internal.telephony.action_detached
+09-11 21:50:03.323   815   815 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+09-11 21:50:03.323   815   815 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_detached
+09-11 21:50:03.324   815   815 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.action_attached
+09-11 21:50:03.330   815   815 W CarrierConfigManager: Error getting config for subId -1 ICarrierConfigLoader is null
+09-11 21:50:03.331   815   815 D DCT-C-0 : initApnContexts: isDataCapable == false.  No Apn Contexts loaded
+09-11 21:50:03.348   815   815 D DCT-C-0 : Adding emergency APN : [ApnSettingV7] Emergency, 0, null, sos, null, null, null, null, null, 0, emergency, IPV4V6, IPV4V6, false, 0, false, 0, 0, 0, 0, null, null, false, 135168, -1, -1, -1
+09-11 21:50:03.352   815   815 D CarrierResolver: Creating CarrierResolver[0]
+09-11 21:50:03.354   815   815 D SST     : [0] notifyVoiceRegStateRilRadioTechnologyChanged: vrs=1 rat=0
+09-11 21:50:03.364   815   815 I GsmCdmaPhone: [0] updateTtyMode ttyMode=0
+09-11 21:50:03.369   815   815 I GsmCdmaPhone: [0] updateUiTtyMode ttyMode=0
+09-11 21:50:03.369   815   815 D CallManager: registerPhone(GSM Handler (com.android.internal.telephony.GsmCdmaPhone) {fe3efa4})
+09-11 21:50:03.376   815   815 D GsmCdmaPhone: [0] GsmCdmaPhone: constructor: sub = 0
+09-11 21:50:03.385   815   815 I PhoneFactory: defaultSmsApplication: NONE
+09-11 21:50:03.392   815   815 I PhoneFactory: Creating SubInfoRecordUpdater 
+09-11 21:50:03.398   815   815 D SubscriptionInfoUpdater: Constructor invoked
+09-11 21:50:03.419   815   815 I PhoneFactory: IMS is not supported on this device, skipping ImsResolver.
+09-11 21:50:03.437   441   455 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.446   815   815 D PhoneSwitcher: PhoneSwitcher started
+09-11 21:50:03.449   815   815 D ProxyController: Constructor - Enter
+09-11 21:50:03.460   815   815 D ProxyController: clearTransaction
+09-11 21:50:03.461   815   815 D ProxyController: clearTransaction: phoneId=0 status=IDLE
+09-11 21:50:03.462   815   815 D ProxyController: Constructor - Exit
+09-11 21:50:03.476   441   455 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.478   815   815 D TelephonyNetworkFactory[0]: Registering NetworkFactory
+09-11 21:50:03.590   441   947 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.592   815   815 D CallManager: registerForMmiComplete
+09-11 21:50:03.593   815   815 D NewNitzStateMachineImpl: handleAirplaneModeChanged(false): mLatestNitzSignal was already null. Nothing to do.
+09-11 21:50:03.691   441   494 D TelephonyRegistry: listen oscl: mHasNotifySubscriptionInfoChangedOccurred==false no callback
+09-11 21:50:03.732   815   815 D UiccController: handleMessage: Received RADIO_UNAVAILABLE for phoneId 0
+09-11 21:50:03.736   815   815 D UiccController: EVENT_RADIO_UNAVAILABLE, dispose card
+09-11 21:50:03.860   815   975 D SubscriptionController: [getSlotIndex]- subId invalid
+09-11 21:50:03.864   815   975 D SubscriptionController: [getSlotIndex]- subId invalid
+09-11 21:50:04.188   815   815 D Phone   : config LCE service failed: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+09-11 21:50:04.190   815   815 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -1 slotId = 0
+09-11 21:50:04.191   815   815 D GsmCdmaPhone: [0] Event EVENT_RADIO_OFF_OR_NOT_AVAILABLE Received
+09-11 21:50:04.191   815   815 D GsmCdmaPhone: [0] EVENT EVENT_RADIO_STATE_CHANGED
+09-11 21:50:04.191   815   815 D GsmCdmaPhone: handleRadioPowerStateChange, state= 2
+09-11 21:50:04.193   815   815 D SST     : [0] EVENT_ICC_CHANGED: SIM absent
+09-11 21:50:04.193   815   815 D SST     : [0] cancelAllNotifications: mPrevSubId=-1
+09-11 21:50:04.195   815   815 D SST     : [0] updateSpnDisplayLegacy+
+09-11 21:50:04.201   815   815 D SST     : [0] updateSpnDisplay: radio is on but out of service, set plmn='No service'
+09-11 21:50:04.201   815   815 D SST     : [0] updateSpnDisplay: rawSpn = 
+09-11 21:50:04.204   815   815 D SST     : [0] updateSpnDisplay: updateSpnDisplay: changed sending intent, rule=2, showPlmn='true', plmn='No service', showSpn='false', spn='', dataSpn='', subId='-1'
+09-11 21:50:04.204   815   815 D SubscriptionManager: putPhoneIdAndSubIdExtra: no valid subs
+09-11 21:50:04.207   815   815 D SubscriptionController: [setPlmnSpn] No valid subscription to store info
+09-11 21:50:04.207   815   815 D SubscriptionController: notifySubscriptionInfoChanged:
+09-11 21:50:04.207   441   927 D TelephonyRegistry: notifySubscriptionInfoChanged: first invocation mRecords.size=22
+09-11 21:50:04.210   815   815 D SST     : [0] updateSpnDisplayLegacy-
+09-11 21:50:04.213   815   815 D NRM-C-0 : Trying to bind com.android.phone for transport WWAN
+09-11 21:50:04.218   815   815 D SST     : [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=2, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+09-11 21:50:04.218   815   815 D SST     : [0] pollState: modemTriggered=true
+09-11 21:50:04.218   815   815 D NewNitzStateMachineImpl: handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+09-11 21:50:04.219   815   815 D SST     : [0] useDataRegStateForDataOnlyDevice: VoiceRegState=1 DataRegState=1
+09-11 21:50:04.220   815   815 D SST     : [0] Poll ServiceState done:  oldSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] newSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+09-11 21:50:04.223   815   815 D SST     : [0] pollStateDone: hasRegistered = false hasDeregistered = false hasDataAttached = {1=false} hasDataDetached = {1=false} hasDataRegStateChanged = {1=false} hasRilVoiceRadioTechnologyChanged = false hasRilDataRadioTechnologyChanged = {1=false} hasDataTransportPreferenceChanged = false hasChanged = false hasVoiceRoamingOn = false hasVoiceRoamingOff = false hasDataRoamingOn =false hasDataRoamingOff = false hasLocationChanged = false has4gHandoff = false hasMultiApnSupport = false hasLostMultiApnSupport = false hasCssIndicatorChanged = false hasNrFrequencyRangeChanged = false hasNrStateChanged = false hasAirplaneModeOnlChanged = false
+09-11 21:50:04.223   815   815 D SST     : [0] mDeviceShuttingDown=false, mDesiredPowerState=true, getRadioState=2, mPowerOffDelayNeed=true, mAlarmSwitch=false, mRadioDisabledByCarrier=false
+09-11 21:50:04.223   815   815 D SST     : [0] pollState: modemTriggered=true
+09-11 21:50:04.224   815   815 D NewNitzStateMachineImpl: handleNetworkUnavailable(): mLatestNitzSignal was already null. Nothing to do.
+09-11 21:50:04.224   815   815 D SST     : [0] useDataRegStateForDataOnlyDevice: VoiceRegState=1 DataRegState=1
+09-11 21:50:04.224   815   815 D SST     : [0] Poll ServiceState done:  oldSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] newSS=[{mVoiceRegState=1(OUT_OF_SERVICE), mDataRegState=1(OUT_OF_SERVICE), mChannelNumber=-1, duplexMode()=0, mCellBandwidths=[], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=0(Unknown), getRilDataRadioTechnology=0(Unknown), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mLteEarfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=UNKNOWN roamingType=NOT_ROAMING accessNetworkTechnology=UNKNOWN rejectCause=0 emergencyEnabled=false availableServices=[] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=NONE rRplmn=}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=null, mOperatorAlphaShortRaw=null, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+09-11 21:50:04.225   815   815 D SST     : [0] pollStateDone: hasRegistered = false hasDeregistered = false hasDataAttached = {1=false} hasDataDetached = {1=false} hasDataRegStateChanged = {1=false} hasRilVoiceRadioTechnologyChanged = false hasRilDataRadioTechnologyChanged = {1=false} hasDataTransportPreferenceChanged = false hasChanged = false hasVoiceRoamingOn = false hasVoiceRoamingOff = false hasDataRoamingOn =false hasDataRoamingOff = false hasLocationChanged = false has4gHandoff = false hasMultiApnSupport = false hasLostMultiApnSupport = false hasCssIndicatorChanged = false hasNrFrequencyRangeChanged = false hasNrStateChanged = false hasAirplaneModeOnlChanged = false
+09-11 21:50:04.227   815   815 D SubscriptionController: [getSlotIndex]- subId invalid
+09-11 21:50:04.232   815   815 D SubscriptionController: Valid row not present in db
+09-11 21:50:04.233   815   815 D SubscriptionController: getSubscriptionProperty Query value = null
+09-11 21:50:04.233   815   815 I CSST    : isNrSupported:  carrierConfigEnabled: true, AccessFamilySupported: false, isNrNetworkTypeAllowed: true
+09-11 21:50:04.233   815   815 I CSST    : PrefNetworkNotification: sendMessage() w/values: ,false,-1,false,false
+09-11 21:50:04.234   815   815 I CSST    : canceling notifications: 1000
+09-11 21:50:04.234   815   815 D Phone   : isWifiCallingEnabled =false
+09-11 21:50:04.234   815   815 D CSST    : isPhoneRegisteredForWifiCalling: false
+09-11 21:50:04.234   815   815 D Phone   : isWifiCallingEnabled =false
+09-11 21:50:04.234   815   815 I CSST    : EmergencyNetworkNotification: sendMessage() w/values: ,-1,false,false
+09-11 21:50:04.235   815   815 I CSST    : canceling notifications: 1001
+09-11 21:50:04.240   815   815 D SubscriptionController: Valid row not present in db
+09-11 21:50:04.241   815   815 D SubscriptionController: getSubscriptionProperty Query value = null
+09-11 21:50:04.241   815   815 I CSST    : isNrSupported:  carrierConfigEnabled: true, AccessFamilySupported: false, isNrNetworkTypeAllowed: true
+09-11 21:50:04.241   815   815 I CSST    : PrefNetworkNotification: sendMessage() w/values: ,false,-1,false,false
+09-11 21:50:04.242   815   815 I CSST    : canceling notifications: 1000
+09-11 21:50:04.242   815   815 D Phone   : isWifiCallingEnabled =false
+09-11 21:50:04.242   815   815 D CSST    : isPhoneRegisteredForWifiCalling: false
+09-11 21:50:04.242   815   815 D Phone   : isWifiCallingEnabled =false
+09-11 21:50:04.243   815   815 I CSST    : EmergencyNetworkNotification: sendMessage() w/values: ,-1,false,false
+09-11 21:50:04.243   815   815 I CSST    : canceling notifications: 1001
+09-11 21:50:04.244   815   815 D EmergencyNumberTracker: updateRadioEmergencyNumberListAndNotify(): receiving []
+09-11 21:50:04.245   815   815 D NetworkTypeController: [0] DefaultState: process EVENT_INITIALIZE
+09-11 21:50:04.248   815   815 D NetworkTypeController: [0] mOverrideTimerRules: {connected={mState=connected, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, not_restricted_rrc_con={mState=not_restricted_rrc_con, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, legacy={mState=legacy, mOverrideType=NONE, mPrimaryTimers={}, mSecondaryTimers={}}, not_restricted_rrc_idle={mState=not_restricted_rrc_idle, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}, restricted={mState=restricted, mOverrideType=NONE, mPrimaryTimers={}, mSecondaryTimers={}}, connected_mmwave={mState=connected_mmwave, mOverrideType=NR_NSA, mPrimaryTimers={}, mSecondaryTimers={}}}
+09-11 21:50:04.249   815   815 D NetworkTypeController: [0] DefaultState: process EVENT_UPDATE
+09-11 21:50:04.249   815   815 D NetworkTypeController: [0] Remove all timers
+09-11 21:50:04.249   815   815 D NetworkTypeController: [0] Entering LegacyState
+09-11 21:50:04.249   815   815 D NetworkTypeController: [0] Remove all timers
+09-11 21:50:04.251   815   815 D DisplayInfoController: TelephonyDisplayInfo[0] changed from null to TelephonyDisplayInfo {network=UNKNOWN, override=NONE}
+09-11 21:50:04.263   815   815 D DCT-C-0 : onDataEnabledChanged: enable=false, enabledChangedReason=0
+09-11 21:50:04.264   815   815 D DCT-C-0 : cleanUpAllConnectionsInternal: detach=true reason=specificDisabled
+09-11 21:50:04.264   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:50:04.266   815   815 D DCT-C-0 : cleanUpAllConnectionsInternal: mDisconnectPendingCount = 0
+09-11 21:50:04.266   815   815 D DCT-C-0 : onDataEnabledOverrideRulesChanged
+09-11 21:50:04.267   815   815 D DCT-C-0 : onRadioOffOrNotAvailable: is off and clean up all connections
+09-11 21:50:04.267   815   815 D DCT-C-0 : cleanUpAllConnectionsInternal: detach=false reason=radioTurnedOff
+09-11 21:50:04.267   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:50:04.267   815   815 D DCT-C-0 : cleanUpAllConnectionsInternal: mDisconnectPendingCount = 0
+09-11 21:50:04.268   815   815 D DCT-C-0 : onDataConnectionDetached: stop polling and notify detached
+09-11 21:50:04.268   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:50:04.272   815   815 D DCT-C-0 : onDataRoamingOff
+09-11 21:50:04.274   815   815 D DCT-C-0 : setDataProfilesAsNeeded
+09-11 21:50:04.276   815   815 E DCT-C-0 : getPreferredApnSetId: cursor is null
+09-11 21:50:04.277   815  1043 D PhoneInterfaceManager: getServiceStateForSubscriber returning null for inactive subId=-1
+09-11 21:50:04.287   815   815 D DCT-C-0 : getPreferredApn: X not found
+09-11 21:50:04.288   815   815 D DSM-C-0 : setDataProfile
+09-11 21:50:04.288   815   815 E DSM-C-0 : Data service not bound.
+09-11 21:50:04.288   815   815 D DCT-C-0 : setInitialApn: E mPreferredApn=null
+09-11 21:50:04.289   815   815 E DCT-C-0 : getPreferredApnSetId: cursor is null
+09-11 21:50:04.289   815   815 D DCT-C-0 : setInitialAttachApn: X There in no available apn
+09-11 21:50:04.289   815   815 D DCT-C-0 : setupDataOnAllConnectableApns: roamingOff 
+09-11 21:50:04.289   815   815 D CarrierResolver: handleMessage: 2
+09-11 21:50:04.289   815   815 D GsmCdmaPhone: [0] onVoiceRegStateOrRatChanged
+09-11 21:50:04.289   815   815 D GsmCdmaPhone: [0] getCsCallRadioTech, current vrs=1, vrat=0
+09-11 21:50:04.289   815   815 D GsmCdmaPhone: [0] getCsCallRadioTech, result calcVrat=0
+09-11 21:50:04.292   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+09-11 21:50:04.292   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+09-11 21:50:04.292   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ REQUEST id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+09-11 21:50:04.292   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+09-11 21:50:04.292   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ TRACK_DEFAULT id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] with score 0 and providerId -1
+09-11 21:50:04.294   815   815 D DebugService: DebugService DebugService:
+09-11 21:50:04.298   815   815 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -1 slotId = 0
+09-11 21:50:04.298   815   815 D SST     : [0] EVENT_ICC_CHANGED: SIM absent
+09-11 21:50:04.298   815   815 D SST     : [0] cancelAllNotifications: mPrevSubId=-1
+09-11 21:50:04.299   815   815 D SST     : [0] updateSpnDisplayLegacy+
+09-11 21:50:04.301   815   815 D SST     : [0] updateSpnDisplay: radio is on but out of service, set plmn='No service'
+09-11 21:50:04.301   815   815 D SST     : [0] updateSpnDisplay: rawSpn = 
+09-11 21:50:04.301   815   815 D SST     : [0] updateSpnDisplayLegacy-
+09-11 21:50:04.301   815   815 D CarrierResolver: handleMessage: 2
+09-11 21:50:04.302   815   815 D GsmCdmaCallTracker: Event EVENT_POLL_CALLS_RESULT Received
+09-11 21:50:04.303   815   815 D GsmCdmaCallTracker: [0] update phone state, old=IDLE new=IDLE
+09-11 21:50:04.307   815   815 D Phone   : isImsRegistered =false
+09-11 21:50:04.326   815   815 D SST     : [0] SubscriptionListener.onSubscriptionInfoChanged
+09-11 21:50:04.328   815   815 D NetworkService: network service created
+09-11 21:50:04.329   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] with score 0 and providerId 0
+09-11 21:50:04.329   815   815 D TelephonyNetworkFactory[0]: got request NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] with score 0 and providerId 0
+09-11 21:50:04.329   815   815 D NetworkTypeController: [0] LegacyState: process EVENT_DATA_RAT_CHANGED
+09-11 21:50:04.330   815   815 D NetworkTypeController: [0] Remove all timers
+09-11 21:50:04.330   815   815 D NetworkTypeController: [0] Remove all timers
+09-11 21:50:04.330   815   815 D DCT-C-0 : reevaluateUnmeteredConnections
+09-11 21:50:04.333   815   815 D DataService: Data service created
+09-11 21:50:04.336   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+09-11 21:50:04.336   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.337   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.337   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.338   815   815 D PhoneSwitcher: Added DcRequest, size: 1
+09-11 21:50:04.339   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+09-11 21:50:04.340   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.340   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.340   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.341   815   815 D PhoneSwitcher: Added DcRequest, size: 2
+09-11 21:50:04.343   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ REQUEST id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+09-11 21:50:04.343   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.343   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.344   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.345   815   815 D PhoneSwitcher: Added DcRequest, size: 3
+09-11 21:50:04.346   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+09-11 21:50:04.346   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.347   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.347   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.350   815   815 D PhoneSwitcher: Added DcRequest, size: 4
+09-11 21:50:04.351   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ]
+09-11 21:50:04.351   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.352   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.352   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.353   815   815 D PhoneSwitcher: Added DcRequest, size: 5
+09-11 21:50:04.354   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+09-11 21:50:04.354   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+09-11 21:50:04.354   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ REQUEST id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+09-11 21:50:04.355   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+09-11 21:50:04.355   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] shouldApply false
+09-11 21:50:04.356   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.361   815   815 D NRM-C-0 : service ComponentInfo{com.android.phone/com.android.internal.telephony.CellularNetworkService} for transport WWAN is now connected.
+09-11 21:50:04.362   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ]
+09-11 21:50:04.363   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.363   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.363   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.364   815   815 D PhoneSwitcher: Added DcRequest, size: 6
+09-11 21:50:04.365   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] shouldApply false
+09-11 21:50:04.367   815   815 D DcRequest: Cellular request confirmed: NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ]
+09-11 21:50:04.367   815   815 D PhoneSwitcher: No phones: unable to reset preferred phone for emergency
+09-11 21:50:04.367   815   815 D PhoneSwitcher: evaluating due to netRequest
+09-11 21:50:04.368   815   815 D PhoneSwitcher: notifyPreferredDataSubIdChanged to -1
+09-11 21:50:04.369   815   815 D PhoneSwitcher: Added DcRequest, size: 7
+09-11 21:50:04.369   815   815 D TelephonyNetworkFactory[0]: onNeedNetworkFor NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] shouldApply false
+09-11 21:50:04.369   815   815 D DSM-C-0 : onServiceConnected
+09-11 21:50:04.370   815  1049 D CellularDataService: Cellular data service created for slot 0
+09-11 21:50:12.292   815   815 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+09-11 21:50:12.293   815   815 D WAP PUSH: Received broadcast android.intent.action.USER_UNLOCKED
+09-11 21:50:12.296   815   815 D SmsBroadcastUndelivered: Received broadcast android.intent.action.USER_UNLOCKED
+09-11 21:50:12.297   815   815 D SmsDispatchersController: Received broadcast android.intent.action.USER_UNLOCKED
+09-11 21:50:12.312   815  1174 D SmsBroadcastUndelivered: scanning raw table for undelivered messages
+09-11 21:50:12.447   815  1174 D SmsBroadcastUndelivered: finished scanning raw table in 134 ms
+09-11 21:50:13.339   815   815 D SipService: SipService: started!
+09-11 21:50:13.356   815   815 D SipService: start:
+09-11 21:50:16.220   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] applied false
+09-11 21:50:16.221   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] applied false
+09-11 21:50:16.222   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ TRACK_DEFAULT id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000 AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] applied false
+09-11 21:50:16.223   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ REQUEST id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN AdministratorUids: [] RequestorUid: 1000 RequestorPackageName: android] ] applied false
+09-11 21:50:16.230   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ TRACK_DEFAULT id=15, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] applied false
+09-11 21:50:16.231   815   815 D TelephonyNetworkFactory[0]: onReleaseNetworkFor NetworkRequest [ TRACK_DEFAULT id=16, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10140 AdministratorUids: [] RequestorUid: 10140 RequestorPackageName: com.android.systemui] ] applied false
+09-11 21:50:22.467   815   815 D DCT-C-0 : screen off
+09-11 21:50:22.467   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:50:28.138   815   815 D DCT-C-0 : screen on
+09-11 21:50:28.138   815   815 D DCT-C-0 : stopNetStatPoll
+--------- beginning of events
+09-11 21:50:28.332   601   601 I sysui_status_bar_state: [0,0,0,0,0,1]
+09-11 21:50:28.338   441   927 I wm_set_keyguard_shown: [0,0,1,setKeyguardShown]
+09-11 21:50:28.351   441   465 I user_activity_timeout_override: -1
+09-11 21:50:28.394   441   927 I sysui_multi_action: [757,127,758,2]
+09-11 21:50:28.395   441   927 I notification_panel_hidden: 
+09-11 21:50:28.397   441   931 I am_uid_running: 10131
+09-11 21:50:28.429   441   473 I am_proc_start: [0,1927,10131,com.android.inputmethod.latin,service,{com.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}]
+09-11 21:50:28.476   441   931 I am_proc_bound: [0,1927,com.android.inputmethod.latin]
+09-11 21:50:28.483   441   931 I am_uid_active: 10131
+09-11 21:50:28.656   441   931 I commit_sys_config_file: [input-subtypes,6]
+09-11 21:50:30.787   441   441 I service_manager_stats: [100,93,25137]
+09-11 21:50:31.002  1003  1003 I sysui_multi_action: [757,224,758,2]
+09-11 21:50:31.192   441   441 I notification_enqueue: [10158,1786,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:31.294   441   441 I notification_enqueue: [10158,1786,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:33.657   441   947 I am_uid_stopped: 10158
+09-11 21:50:33.658   441   947 I am_kill : [0,1786,com.steve.puckd,200,stop com.steve.puckd due to from pid 1977]
+09-11 21:50:33.667   441   441 I sysui_multi_action: [757,128,758,5,759,8,793,16917,794,0,795,2374,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,2374,1688,1]
+09-11 21:50:33.668   441   441 I notification_canceled: [0|com.steve.puckd|1001|null|10158,8,16917,2374,0,-1,-1,NULL]
+09-11 21:50:33.678   441   441 I notification_cancel_all: [1000,441,com.steve.puckd,0,0,0,5,NULL]
+09-11 21:50:34.419   441   947 I wm_task_created: [214,-1]
+09-11 21:50:34.420   441   947 I wm_stack_created: 214
+09-11 21:50:34.424  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 21:50:34.425   441   947 I wm_create_task: [0,214]
+09-11 21:50:34.425   441   947 I wm_create_activity: [0,209281314,214,com.steve.puckd/.MainActivity,android.intent.action.MAIN,NULL,NULL,270532608]
+09-11 21:50:34.428   441   947 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=true]
+09-11 21:50:34.437  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 21:50:34.444   441   465 I am_uid_running: 10158
+09-11 21:50:34.446   441   947 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,makeInvisible]
+09-11 21:50:34.463   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,22]
+09-11 21:50:34.477   441   473 I am_proc_start: [0,1996,10158,com.steve.puckd,pre-top-activity,{com.steve.puckd/com.steve.puckd.MainActivity}]
+09-11 21:50:34.558   441   947 I am_proc_bound: [0,1996,com.steve.puckd]
+09-11 21:50:34.561   441   947 I wm_restart_activity: [0,209281314,214,com.steve.puckd/.MainActivity]
+09-11 21:50:34.562   441   947 I wm_set_resumed_activity: [0,com.steve.puckd/.MainActivity,minimalResumeActivityLocked]
+09-11 21:50:34.583   441   465 I am_uid_active: 10158
+09-11 21:50:34.697   441   506 I commit_sys_config_file: [settings-1-0,8]
+09-11 21:50:35.081  1996  1996 I wm_on_create_called: [209281314,com.steve.puckd.MainActivity,performCreate]
+09-11 21:50:35.106  1996  1996 I wm_on_start_called: [209281314,com.steve.puckd.MainActivity,handleStartActivity]
+09-11 21:50:35.110  1996  1996 I wm_on_resume_called: [209281314,com.steve.puckd.MainActivity,RESUME_ACTIVITY]
+09-11 21:50:35.143  1996  1996 I wm_on_top_resumed_gained_called: [209281314,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:50:35.412   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x42 color=0x00000000 vis=PRIVATE),0]
+09-11 21:50:35.423   441   471 I sysui_multi_action: [319,166,321,109,322,964,325,49,757,761,758,7,759,1,806,com.steve.puckd,871,com.steve.puckd.MainActivity,904,com.android.shell,905,0,945,149,1320,5,1321,5]
+09-11 21:50:35.426   441   471 I wm_activity_launch_time: [0,209281314,com.steve.puckd/.MainActivity,964]
+09-11 21:50:35.612   441   441 I sysui_multi_action: [757,1501,758,1,793,202,794,0,795,202,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,0,1688,1]
+09-11 21:50:35.612   441   441 I sysui_multi_action: [757,804,799,note_interruptive,801,0,802,1]
+09-11 21:50:35.731   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:35.815   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:35.849   441   927 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:50:35.850   441   465 I am_kill : [0,1533,com.android.managedprovisioning,985,empty #17]
+09-11 21:50:35.854  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 21:50:35.876   441   493 I am_proc_died: [0,1533,com.android.managedprovisioning,985,19]
+09-11 21:50:35.878   441   493 I am_uid_stopped: 10092
+09-11 21:50:37.821   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:37.949   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:40.184   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_16,98304,SYSTEM_TOMBSTONE]
+09-11 21:50:40.190   441   479 I commit_sys_config_file: [log-files,5]
+09-11 21:50:41.960   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:41.995   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:43.715   441   486 I commit_sys_config_file: [package-user-0,7]
+09-11 21:50:50.001   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:50:50.035   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:51:00.661   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_17,98304,SYSTEM_TOMBSTONE]
+09-11 21:51:00.667   441   479 I commit_sys_config_file: [log-files,6]
+09-11 21:51:00.848   441   462 I am_uid_active: 10144
+09-11 21:51:00.883   441   471 I am_pss  : [858,10146,android.ext.services,8858624,4292608,51200,121528320,0,5,7]
+09-11 21:51:00.892   441   471 I am_pss  : [1927,10131,com.android.inputmethod.latin,13855744,9031680,50176,110006272,0,7,7]
+09-11 21:51:01.014  2135  2139 I liblog  : 60
+09-11 21:51:01.045  2135  2139 I liblog  : 62
+09-11 21:51:01.488   441   471 I am_pss  : [1996,10158,com.steve.puckd,36261888,28950528,47104,132009984,0,2,7]
+09-11 21:51:01.495   441   471 I am_pss  : [1235,10141,com.android.smspush,4981760,2199552,137216,82468864,0,6,5]
+09-11 21:51:06.072   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:51:06.103   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:51:11.384   441   456 I am_kill : [0,1555,com.android.onetimeinitializer,975,empty #17]
+09-11 21:51:11.431   441   456 I am_proc_died: [0,1555,com.android.onetimeinitializer,975,19]
+09-11 21:51:11.431   441   456 I am_uid_stopped: 10116
+09-11 21:51:14.944   441   472 I am_uid_idle: 10088
+09-11 21:51:16.564   441   472 I am_uid_idle: 10095
+09-11 21:51:17.968   441   472 I am_uid_idle: 10106
+09-11 21:51:19.129   441   472 I am_uid_idle: 10126
+09-11 21:51:29.829   441   472 I am_uid_idle: 10086
+09-11 21:51:30.348   441   472 I am_uid_idle: 10090
+09-11 21:51:36.112   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:52:06.233   441   441 I chatty  : uid=1000 system_server identical 2 lines
+09-11 21:52:06.258   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:52:11.377   441   472 I am_uid_idle: 10144
+09-11 21:52:36.269   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:06.542   441   441 I chatty  : uid=1000 system_server identical 6 lines
+09-11 21:54:06.580   441   441 I notification_enqueue: [10158,1996,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:21.252   441  2132 I sysui_multi_action: [757,803,799,key_back_down,802,1]
+09-11 21:54:21.255   441  2132 I sysui_multi_action: [757,803,799,key_back_up,802,1]
+09-11 21:54:21.261   441  1197 I wm_finish_activity: [0,209281314,214,com.steve.puckd/.MainActivity,app-request]
+09-11 21:54:21.262   441  1197 I wm_focused_stack: [0,0,1,214,finish-top adjustFocusToNextFocusableStack]
+09-11 21:54:21.263   441  1197 I wm_task_moved: [213,1,2147483647]
+09-11 21:54:21.264   441  1197 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,finish-top adjustFocusToNextFocusableStack]
+09-11 21:54:21.273   441  1197 I wm_pause_activity: [0,209281314,com.steve.puckd/.MainActivity,userLeaving=false]
+09-11 21:54:21.282  1996  1996 I wm_on_top_resumed_lost_called: [209281314,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:54:21.291  1996  1996 I wm_on_paused_called: [209281314,com.steve.puckd.MainActivity,performPause]
+09-11 21:54:21.292   441  2132 I wm_add_to_stopping: [0,209281314,com.steve.puckd/.MainActivity,completeFinishing]
+09-11 21:54:21.296   441  2132 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,resumeTopActivityInnerLocked]
+09-11 21:54:21.297   441  2132 I wm_resume_activity: [0,34179027,213,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:54:21.299  1003  1003 I wm_on_restart_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performRestartActivity]
+09-11 21:54:21.310   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,227]
+09-11 21:54:21.312  1003  1003 I wm_on_start_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,handleStartActivity]
+09-11 21:54:21.312  1003  1003 I wm_on_resume_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,RESUME_ACTIVITY]
+09-11 21:54:21.312  1003  1003 I wm_on_top_resumed_gained_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topWhenResuming]
+09-11 21:54:21.462   441   471 I am_pss  : [1602,10144,com.android.permissioncontroller,8862720,3756032,1802240,90910720,0,19,6]
+09-11 21:54:21.494   441   471 I am_pss  : [1371,10086,android.process.acore,8144896,1593344,2726912,93716480,0,19,5]
+09-11 21:54:21.560   441   471 I am_pss  : [1927,10131,com.android.inputmethod.latin,13878272,9093120,52224,109977600,0,7,7]
+09-11 21:54:21.572   441   471 I am_pss  : [1625,10090,com.android.providers.calendar,6542336,3489792,53248,89149440,0,19,6]
+09-11 21:54:21.584   441   471 I am_pss  : [1097,10126,com.android.deskclock,11292672,618496,6221824,96698368,0,19,6]
+09-11 21:54:21.593   441   471 I am_pss  : [1200,10145,com.android.providers.media.module,14752768,10489856,52224,109973504,0,0,6]
+09-11 21:54:21.603   441   471 I am_pss  : [1274,10106,com.android.printspooler,6048768,2940928,53248,90730496,0,19,6]
+09-11 21:54:21.612   441   471 I am_pss  : [1416,10088,android.process.media,6435840,1126400,2276352,86822912,0,19,5]
+09-11 21:54:21.623   441   471 I am_pss  : [1835,10085,com.android.externalstorage,5270528,2453504,86016,84209664,0,19,5]
+09-11 21:54:21.632   441   471 I am_pss  : [1793,10095,com.stevesoltys.seedvault,6778880,1105920,2809856,84959232,0,19,5]
+09-11 21:54:21.641   441   471 I am_pss  : [1744,1000,com.android.localtransport,5539840,2465792,77824,89608192,0,19,5]
+09-11 21:54:21.649   441   471 I am_pss  : [1723,10089,org.lineageos.updater,8183808,4575232,53248,92782592,0,19,6]
+09-11 21:54:21.657   441   471 I am_pss  : [1344,1000,org.lineageos.lineageparts,6145024,1101824,1654784,89817088,0,19,5]
+09-11 21:54:21.665   441   471 I am_pss  : [1697,10120,org.calyxos.backup.contacts,5021696,1720320,664576,81932288,0,19,5]
+09-11 21:54:21.674   441   471 I am_pss  : [1674,10115,com.android.traceur,7736320,4894720,54272,87719936,0,19,6]
+09-11 21:54:21.682   441   471 I am_pss  : [1652,2000,com.android.shell,5159936,1720320,726016,83431424,0,19,5]
+09-11 21:54:21.695   441   471 I am_pss  : [838,1000,com.android.settings,24763392,20328448,56320,118259712,0,19,7]
+09-11 21:54:21.702   441   471 I am_pss  : [1580,10087,com.android.packageinstaller,6090752,3379200,54272,83955712,0,19,5]
+09-11 21:54:21.716   441   471 I am_pss  : [1235,10141,com.android.smspush,5068800,2215936,132096,82460672,0,6,5]
+09-11 21:54:21.731   441   471 I am_pss  : [1164,10097,org.lineageos.audiofx,6644736,3760128,54272,85790720,0,0,5]
+09-11 21:54:21.744   441   471 I am_pss  : [577,1002,com.android.bluetooth,15727616,11333632,52224,109326336,0,0,7]
+09-11 21:54:21.759   441   471 I am_pss  : [815,1001,com.android.phone,15828992,10448896,53248,112537600,0,0,6]
+09-11 21:54:21.766   441   471 I am_pss  : [759,1068,com.android.se,5368832,2531328,122880,83349504,0,0,5]
+09-11 21:54:21.784   441   471 I am_pss  : [441,1000,system,93343744,80998400,143360,236302336,0,0,12]
+09-11 21:54:21.908   441   465 I wm_destroy_activity: [0,209281314,214,com.steve.puckd/.MainActivity,finish-imm:idle]
+09-11 21:54:21.945  1996  1996 I wm_on_stop_called: [209281314,com.steve.puckd.MainActivity,LIFECYCLER_STOP_ACTIVITY]
+09-11 21:54:21.951  1996  1996 I wm_on_destroy_called: [209281314,com.steve.puckd.MainActivity,performDestroy]
+09-11 21:54:21.980   441   455 I wm_task_removed: [214,removeChild: last r=ActivityRecord{c796122 u0 com.steve.puckd/.MainActivity t-1 f}} in t=Task{9c4cce9 #214 visible=false type=standard mode=fullscreen translucent=true A=10158:com.steve.puckd U=0 StackId=214 sz=0}]
+09-11 21:54:21.980   441   455 I wm_task_removed: [214,removeTask]
+09-11 21:54:21.980   441   455 I wm_task_removed: [214,removeTask]
+09-11 21:54:21.980   441   455 I wm_stack_removed: 214
+09-11 21:54:22.355   441   456 I intercept_power: [ACTION_DOWN,1,0]
+09-11 21:54:22.356   441   456 I sysui_multi_action: [757,804,799,power_consecutive_short_tap_count,801,1,802,1]
+09-11 21:54:22.356   441   456 I sysui_multi_action: [757,804,799,power_double_tap_interval,801,234318,802,1]
+09-11 21:54:22.357   441   456 I intercept_power: [ACTION_UP,0,0]
+09-11 21:54:22.359   441   456 I power_sleep_requested: 0
+09-11 21:54:22.373   441   481 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=false]
+09-11 21:54:22.375  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 21:54:22.376  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 21:54:22.376   441  2132 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,completePauseLocked]
+09-11 21:54:22.377   441   481 I sysui_multi_action: [757,1696,758,6,759,0]
+09-11 21:54:22.378   441   465 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:54:22.384  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 21:54:22.690   441   462 I sysui_multi_action: [757,223,758,1]
+09-11 21:54:22.705   601   601 I sysui_multi_action: [757,111,758,1]
+09-11 21:54:22.706   601   601 I sysui_multi_action: [757,126,758,1,759,126,927,0,928,1,1593,0]
+09-11 21:54:22.706   601   601 I sysui_multi_action: [757,113,758,1,759,113,927,1,928,1,1593,0]
+09-11 21:54:22.706   601   601 I sysui_multi_action: [757,118,758,1,759,118,927,2,928,0,1593,0]
+09-11 21:54:22.707   601   601 I sysui_multi_action: [757,123,758,1,759,123,927,4,928,1,1593,0]
+09-11 21:54:22.707   601   601 I sysui_multi_action: [757,261,758,1,759,261,927,5,928,0,1593,0]
+09-11 21:54:22.707   601   601 I sysui_multi_action: [757,112,758,1,759,112,927,7,928,0,1593,0]
+09-11 21:54:22.715   441   456 I wm_set_keyguard_shown: [0,1,0,setKeyguardShown]
+09-11 21:54:22.723   601   601 I sysui_multi_action: [757,196,758,2,759,0]
+09-11 21:54:22.724   601   601 I sysui_status_bar_state: [1,0,0,0,0,1]
+09-11 21:54:22.732   441   456 I sysui_multi_action: [757,127,758,1]
+09-11 21:54:22.733   441   456 I sysui_multi_action: [757,804,799,note_load,801,3,802,1]
+09-11 21:54:22.734   441   456 I notification_panel_revealed: 3
+09-11 21:54:22.742   441   481 I sysui_multi_action: [757,1696,758,6,759,1]
+09-11 21:54:22.743   441   441 I sysui_multi_action: [757,198,758,2,759,2,1359,391,1695,4]
+09-11 21:54:22.743   441   441 I power_screen_state: [0,2,0,0,391]
+09-11 21:54:22.743   441   441 I screen_toggled: 0
+09-11 21:54:22.743   441   441 I sysui_multi_action: [757,804,799,screen_timeout,801,60,802,1]
+09-11 21:54:22.744   441   441 I power_screen_broadcast_send: 1
+09-11 21:54:22.767   815   815 D DCT-C-0 : screen off
+09-11 21:54:22.767   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:54:22.795   441  2132 I wm_set_keyguard_shown: [1,1,0,setKeyguardShown]
+09-11 21:54:22.805   441   441 I power_screen_broadcast_done: [0,60,1]
+09-11 21:54:22.808   601   601 I sysui_multi_action: [757,196,758,1,759,0]
+09-11 21:54:22.808   601   601 I sysui_status_bar_state: [1,1,0,0,0,1]
+09-11 21:54:22.835   441   947 I sysui_multi_action: [757,127,758,2]
+09-11 21:54:22.835   441   947 I notification_panel_hidden: 
+09-11 21:54:22.848   441   465 I user_activity_timeout_override: 10000
+09-11 21:54:28.265   441   947 I am_uid_stopped: 10158
+09-11 21:54:28.266   441   947 I am_kill : [0,1996,com.steve.puckd,50,stop com.steve.puckd due to from pid 2285]
+09-11 21:54:28.268   441   441 I sysui_multi_action: [757,128,758,5,759,8,793,232858,794,0,795,21689,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,21689,1688,1]
+09-11 21:54:28.269   441   441 I notification_canceled: [0|com.steve.puckd|1001|null|10158,8,232858,21689,0,-1,-1,NULL]
+09-11 21:54:28.278   441   441 I notification_cancel_all: [1000,441,com.steve.puckd,0,0,0,5,NULL]
+09-11 21:54:28.987   441   947 I wm_task_created: [215,-1]
+09-11 21:54:28.988   441   947 I wm_stack_created: 215
+09-11 21:54:28.991   441   947 I wm_create_task: [0,215]
+09-11 21:54:28.991   441   947 I wm_create_activity: [0,67589118,215,com.steve.puckd/.MainActivity,android.intent.action.MAIN,NULL,NULL,270532608]
+09-11 21:54:29.011   441   465 I am_uid_running: 10158
+09-11 21:54:29.031   441   473 I am_proc_start: [0,2307,10158,com.steve.puckd,top-activity,{com.steve.puckd/com.steve.puckd.MainActivity}]
+09-11 21:54:29.094   441   455 I am_proc_bound: [0,2307,com.steve.puckd]
+09-11 21:54:29.097   441   455 I wm_restart_activity: [0,67589118,215,com.steve.puckd/.MainActivity]
+09-11 21:54:29.098   441   455 I wm_set_resumed_activity: [0,com.steve.puckd/.MainActivity,minimalResumeActivityLocked]
+09-11 21:54:29.103   441   455 I wm_add_to_stopping: [0,67589118,com.steve.puckd/.MainActivity,makeInvisible]
+09-11 21:54:29.104   441   455 I wm_pause_activity: [0,67589118,com.steve.puckd/.MainActivity,userLeaving=false]
+09-11 21:54:29.113   441   465 I sysui_multi_action: [757,1144,758,7,806,com.steve.puckd,871,com.steve.puckd.MainActivity]
+09-11 21:54:29.244   441   506 I commit_sys_config_file: [settings-1-0,6]
+09-11 21:54:29.456   441   455 I am_uid_active: 10158
+09-11 21:54:29.458  2307  2307 I wm_on_create_called: [67589118,com.steve.puckd.MainActivity,performCreate]
+09-11 21:54:29.477  2307  2307 I wm_on_start_called: [67589118,com.steve.puckd.MainActivity,handleStartActivity]
+09-11 21:54:29.481  2307  2307 I wm_on_resume_called: [67589118,com.steve.puckd.MainActivity,RESUME_ACTIVITY]
+09-11 21:54:29.506  2307  2307 I wm_on_top_resumed_gained_called: [67589118,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:54:29.507  2307  2307 I wm_on_top_resumed_lost_called: [67589118,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:54:29.509  2307  2307 I wm_on_paused_called: [67589118,com.steve.puckd.MainActivity,performPause]
+09-11 21:54:29.511   441   465 I wm_stop_activity: [0,67589118,com.steve.puckd/.MainActivity]
+09-11 21:54:29.512   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,8]
+09-11 21:54:29.623   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x42 color=0x00000000 vis=PRIVATE),0]
+09-11 21:54:29.643   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),0]
+09-11 21:54:29.691  2307  2307 I wm_on_stop_called: [67589118,com.steve.puckd.MainActivity,STOP_ACTIVITY_ITEM]
+09-11 21:54:29.716   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),0]
+09-11 21:54:29.825   441   441 I sysui_multi_action: [757,1501,758,1,793,203,794,0,795,203,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,0,1688,1]
+09-11 21:54:29.825   441   441 I sysui_multi_action: [757,804,799,note_interruptive,801,0,802,1]
+09-11 21:54:31.725   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:35.759   441   441 I chatty  : uid=1000 system_server identical 2 lines
+09-11 21:54:35.797   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:38.307   441   486 I commit_sys_config_file: [package-user-0,10]
+09-11 21:54:43.822   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:43.854   441   441 I notification_enqueue: [10158,2307,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:44.125   441   947 I sysui_multi_action: [757,803,799,key_back_down,802,1]
+09-11 21:54:44.126   441   947 I sysui_multi_action: [757,803,799,key_back_up,802,1]
+09-11 21:54:45.193   441   947 I intercept_power: [ACTION_DOWN,1,0]
+09-11 21:54:45.195   441   947 I sysui_multi_action: [757,804,799,power_consecutive_short_tap_count,801,1,802,1]
+09-11 21:54:45.195   441   947 I sysui_multi_action: [757,804,799,power_double_tap_interval,801,22838,802,1]
+09-11 21:54:45.202   441   947 I intercept_power: [ACTION_UP,0,0]
+09-11 21:54:45.202   441   481 I sysui_multi_action: [757,1696,758,6,759,3]
+09-11 21:54:45.204   441   441 I screen_toggled: 1
+09-11 21:54:45.205   441   441 I power_screen_broadcast_send: 1
+09-11 21:54:45.213   441   462 I sysui_multi_action: [757,223,758,2]
+09-11 21:54:45.213   441   462 I sysui_multi_action: [757,804,799,dozing_minutes,801,0,802,1]
+09-11 21:54:45.225   601   601 I sysui_multi_action: [757,197,758,5,759,0]
+09-11 21:54:45.227   441   441 I service_manager_slow: [22,phone]
+09-11 21:54:45.234   441   471 I am_pss  : [1602,10144,com.android.permissioncontroller,7132160,712704,3218432,87535616,0,19,5]
+09-11 21:54:45.241   441   471 I am_pss  : [1371,10086,android.process.acore,8111104,585728,3717120,92430336,0,19,5]
+09-11 21:54:45.251   441   471 I am_pss  : [1625,10090,com.android.providers.calendar,6541312,3493888,56320,88977408,0,19,5]
+09-11 21:54:45.259   441   471 I am_pss  : [1097,10126,com.android.deskclock,11294720,462848,6388736,96350208,0,19,5]
+09-11 21:54:45.272   441   441 I sysui_multi_action: [757,198,758,1,759,1,1359,22,1694,1]
+09-11 21:54:45.272   441   441 I power_screen_state: [1,0,0,0,22]
+09-11 21:54:45.273   441   471 I am_pss  : [1274,10106,com.android.printspooler,6049792,2945024,56320,90636288,0,19,5]
+09-11 21:54:45.279   441   916 I wm_set_keyguard_shown: [1,0,0,setKeyguardShown]
+09-11 21:54:45.289   441   916 I sysui_multi_action: [757,127,758,1]
+09-11 21:54:45.289   441   916 I sysui_multi_action: [757,804,799,note_load,801,3,802,1]
+09-11 21:54:45.289   441   916 I notification_panel_revealed: 3
+09-11 21:54:45.290   441   947 I wm_set_keyguard_shown: [1,0,1,keyguardGoingAway]
+09-11 21:54:45.291   441   947 I wm_set_resumed_activity: [0,com.steve.puckd/.MainActivity,resumeTopActivityInnerLocked]
+09-11 21:54:45.292   441   947 I wm_resume_activity: [0,67589118,215,com.steve.puckd/.MainActivity]
+09-11 21:54:45.294  2307  2307 I wm_on_restart_called: [67589118,com.steve.puckd.MainActivity,performRestartActivity]
+09-11 21:54:45.335  2307  2307 I wm_on_start_called: [67589118,com.steve.puckd.MainActivity,handleStartActivity]
+09-11 21:54:45.360  2307  2307 I wm_on_resume_called: [67589118,com.steve.puckd.MainActivity,RESUME_ACTIVITY]
+09-11 21:54:45.362  2307  2307 I wm_on_top_resumed_gained_called: [67589118,com.steve.puckd.MainActivity,topWhenResuming]
+09-11 21:54:45.391   441   523 I dvm_lock_sample: [system_server,1,WifiHandlerThread,65,ActivityManagerService.java,6347,boolean com.android.server.am.ActivityManagerService.isAppStartModeDisabled(int, java.lang.String),-,19455,void com.android.server.am.ActivityManagerService$LocalService.updateOomAdj(),13]
+09-11 21:54:45.417   815   815 D DCT-C-0 : screen on
+09-11 21:54:45.417   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 21:54:45.420   441   471 I am_pss  : [1416,10088,android.process.media,6356992,438272,2897920,85983232,0,19,5]
+09-11 21:54:45.427   441   441 I power_screen_broadcast_done: [1,222,1]
+09-11 21:54:45.429   601   601 I sysui_multi_action: [757,111,758,2]
+09-11 21:54:45.429   441   471 I am_pss  : [1835,10085,com.android.externalstorage,5280768,2465792,89088,84135936,0,19,5]
+09-11 21:54:45.461   441   471 I am_pss  : [1793,10095,com.stevesoltys.seedvault,6550528,622592,3070976,84357120,0,19,5]
+09-11 21:54:45.463   601   601 I sysui_multi_action: [757,196,758,2,759,0]
+09-11 21:54:45.464   601   601 I sysui_status_bar_state: [0,0,0,0,0,1]
+09-11 21:54:45.470   441   471 I am_pss  : [1744,1000,com.android.localtransport,5550080,2478080,80896,89559040,0,19,6]
+09-11 21:54:45.475   441   927 I wm_set_keyguard_shown: [0,0,1,setKeyguardShown]
+09-11 21:54:45.480   441   471 I am_pss  : [1723,10089,org.lineageos.updater,8193024,4587520,56320,92729344,0,19,6]
+09-11 21:54:45.484   441   465 I user_activity_timeout_override: -1
+09-11 21:54:45.535   441   471 I am_pss  : [1344,1000,org.lineageos.lineageparts,6065152,716800,1959936,89513984,0,19,5]
+09-11 21:54:45.558   441   471 I am_pss  : [1697,10120,org.calyxos.backup.contacts,5033984,1736704,662528,81985536,0,19,6]
+09-11 21:54:45.566   441   471 I am_pss  : [1674,10115,com.android.traceur,7656448,4816896,56320,87654400,0,19,5]
+09-11 21:54:45.575   441   471 I am_pss  : [1652,2000,com.android.shell,5170176,1753088,707584,83480576,0,19,6]
+09-11 21:54:45.585   441   471 I am_pss  : [838,1000,com.android.settings,24751104,20307968,58368,118329344,0,19,6]
+09-11 21:54:45.596   441   471 I am_pss  : [1580,10087,com.android.packageinstaller,6075392,3362816,56320,83976192,0,19,6]
+09-11 21:54:45.626   441   916 I sysui_multi_action: [757,127,758,2]
+09-11 21:54:45.626   441   916 I notification_panel_hidden: 
+09-11 21:54:50.972   441   946 I am_uid_stopped: 10158
+09-11 21:54:50.972   441   946 I am_kill : [0,2307,com.steve.puckd,0,stop com.steve.puckd due to from pid 2425]
+09-11 21:54:50.979   441   441 I sysui_multi_action: [757,128,758,5,759,8,793,21262,794,0,795,7124,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,7124,1688,1]
+09-11 21:54:50.979   441   946 I wm_finish_activity: [0,67589118,215,com.steve.puckd/.MainActivity,proc died without state saved]
+09-11 21:54:50.980   441   441 I notification_canceled: [0|com.steve.puckd|1001|null|10158,8,21262,7124,0,-1,-1,NULL]
+09-11 21:54:50.989   441   946 I wm_task_removed: [215,removeChild: last r=ActivityRecord{40753fe u0 com.steve.puckd/.MainActivity t-1 f}} in t=Task{eab886b #215 visible=true type=standard mode=fullscreen translucent=false A=10158:com.steve.puckd U=0 StackId=215 sz=0}]
+09-11 21:54:50.989   441   946 I wm_task_removed: [215,removeTask]
+09-11 21:54:50.989   441   946 I wm_task_removed: [215,removeTask]
+09-11 21:54:50.989   441   946 I wm_stack_removed: 215
+09-11 21:54:50.991   441   946 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,resumeTopActivityInnerLocked]
+09-11 21:54:50.992   441   946 I wm_resume_activity: [0,34179027,213,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:54:51.022  1003  1003 I wm_on_restart_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performRestartActivity]
+09-11 21:54:51.023   441   441 I notification_cancel_all: [1000,441,com.steve.puckd,0,0,0,5,NULL]
+09-11 21:54:51.033  1003  1003 I wm_on_start_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,handleStartActivity]
+09-11 21:54:51.033  1003  1003 I wm_on_resume_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,RESUME_ACTIVITY]
+09-11 21:54:51.033  1003  1003 I wm_on_top_resumed_gained_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topWhenResuming]
+09-11 21:54:51.802   441  2429 I wm_task_created: [216,-1]
+09-11 21:54:51.802   441  2429 I wm_stack_created: 216
+09-11 21:54:51.806   441  2429 I wm_create_task: [0,216]
+09-11 21:54:51.806   441  2429 I wm_create_activity: [0,116158964,216,com.steve.puckd/.MainActivity,android.intent.action.MAIN,NULL,NULL,270532608]
+09-11 21:54:51.806  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 21:54:51.807   441  2429 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=true]
+09-11 21:54:51.812  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 21:54:51.815   441  2429 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,makeInvisible]
+09-11 21:54:51.828   441   465 I am_uid_running: 10158
+09-11 21:54:51.838   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,22]
+09-11 21:54:51.853   441   473 I am_proc_start: [0,2448,10158,com.steve.puckd,pre-top-activity,{com.steve.puckd/com.steve.puckd.MainActivity}]
+09-11 21:54:51.869   441   471 I am_pss  : [1200,10145,com.android.providers.media.module,14775296,10240000,75776,109473792,0,0,7]
+09-11 21:54:51.876   441   471 I am_pss  : [1164,10097,org.lineageos.audiofx,6651904,3719168,59392,85528576,0,0,5]
+09-11 21:54:51.919   441   916 I am_proc_bound: [0,2448,com.steve.puckd]
+09-11 21:54:51.922   441   916 I wm_restart_activity: [0,116158964,216,com.steve.puckd/.MainActivity]
+09-11 21:54:51.923   441   916 I wm_set_resumed_activity: [0,com.steve.puckd/.MainActivity,minimalResumeActivityLocked]
+09-11 21:54:51.939   441   465 I am_uid_active: 10158
+09-11 21:54:52.057   441   506 I commit_sys_config_file: [settings-1-0,7]
+09-11 21:54:52.339  2448  2448 I wm_on_create_called: [116158964,com.steve.puckd.MainActivity,performCreate]
+09-11 21:54:52.359  2448  2448 I wm_on_start_called: [116158964,com.steve.puckd.MainActivity,handleStartActivity]
+09-11 21:54:52.363  2448  2448 I wm_on_resume_called: [116158964,com.steve.puckd.MainActivity,RESUME_ACTIVITY]
+09-11 21:54:52.389  2448  2448 I wm_on_top_resumed_gained_called: [116158964,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:54:52.594   441   471 I sysui_multi_action: [319,129,321,65,322,775,325,306,757,761,758,7,759,1,806,com.steve.puckd,871,com.steve.puckd.MainActivity,905,0,945,119,1320,5,1321,5]
+09-11 21:54:52.596   441   471 I wm_activity_launch_time: [0,116158964,com.steve.puckd/.MainActivity,775]
+09-11 21:54:52.605   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x42 color=0x00000000 vis=PRIVATE),0]
+09-11 21:54:52.635   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),0]
+09-11 21:54:52.806   441   441 I sysui_multi_action: [757,1501,758,1,793,208,794,0,795,208,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,0,1688,1]
+09-11 21:54:52.806   441   441 I sysui_multi_action: [757,804,799,note_interruptive,801,0,802,1]
+09-11 21:54:52.817   441   916 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:54:52.823  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 21:54:52.839   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:54:58.881   441   441 I chatty  : uid=1000 system_server identical 3 lines
+09-11 21:54:58.921   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:01.031   441   486 I commit_sys_config_file: [package-user-0,7]
+09-11 21:55:06.934   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:06.969   441   441 I notification_enqueue: [10158,2448,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:21.199   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_18,98304,SYSTEM_TOMBSTONE]
+09-11 21:55:21.206   441   479 I commit_sys_config_file: [log-files,6]
+09-11 21:55:21.530   441  2575 I am_uid_stopped: 10158
+09-11 21:55:21.531   441  2575 I am_kill : [0,2448,com.steve.puckd,0,stop com.steve.puckd due to from pid 2596]
+09-11 21:55:21.532   441  2575 I wm_finish_activity: [0,116158964,216,com.steve.puckd/.MainActivity,proc died without state saved]
+09-11 21:55:21.532   441   441 I sysui_multi_action: [757,128,758,5,759,8,793,28934,794,0,795,14564,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,14564,1688,1]
+09-11 21:55:21.533   441   441 I notification_canceled: [0|com.steve.puckd|1001|null|10158,8,28934,14564,0,-1,-1,NULL]
+09-11 21:55:21.542   441  2575 I wm_task_removed: [216,removeChild: last r=ActivityRecord{6ec71f4 u0 com.steve.puckd/.MainActivity t-1 f}} in t=Task{403e963 #216 visible=false type=standard mode=fullscreen translucent=true A=10158:com.steve.puckd U=0 StackId=216 sz=0}]
+09-11 21:55:21.542   441  2575 I wm_task_removed: [216,removeTask]
+09-11 21:55:21.542   441  2575 I wm_task_removed: [216,removeTask]
+09-11 21:55:21.542   441  2575 I wm_stack_removed: 216
+09-11 21:55:21.544   441  2575 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,resumeTopActivityInnerLocked]
+09-11 21:55:21.544   441  2575 I wm_resume_activity: [0,34179027,213,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:55:21.555  1003  1003 I wm_on_restart_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performRestartActivity]
+09-11 21:55:21.569   441   441 I notification_cancel_all: [1000,441,com.steve.puckd,0,0,0,5,NULL]
+09-11 21:55:21.577  1003  1003 I wm_on_start_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,handleStartActivity]
+09-11 21:55:21.578  1003  1003 I wm_on_resume_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,RESUME_ACTIVITY]
+09-11 21:55:21.578  1003  1003 I wm_on_top_resumed_gained_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topWhenResuming]
+09-11 21:55:22.328   441  2600 I wm_task_created: [217,-1]
+09-11 21:55:22.329   441  2600 I wm_stack_created: 217
+09-11 21:55:22.332   441  2600 I wm_create_task: [0,217]
+09-11 21:55:22.332   441  2600 I wm_create_activity: [0,9665969,217,com.steve.puckd/.MainActivity,android.intent.action.MAIN,NULL,NULL,270532608]
+09-11 21:55:22.332  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 21:55:22.334   441  2600 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=true]
+09-11 21:55:22.344   441   465 I am_uid_running: 10158
+09-11 21:55:22.347  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 21:55:22.349   441  2429 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,makeInvisible]
+09-11 21:55:22.368   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,31]
+09-11 21:55:22.371   441   473 I am_proc_start: [0,2629,10158,com.steve.puckd,pre-top-activity,{com.steve.puckd/com.steve.puckd.MainActivity}]
+09-11 21:55:22.441   441  2600 I am_proc_bound: [0,2629,com.steve.puckd]
+09-11 21:55:22.444   441  2600 I wm_restart_activity: [0,9665969,217,com.steve.puckd/.MainActivity]
+09-11 21:55:22.445   441  2600 I wm_set_resumed_activity: [0,com.steve.puckd/.MainActivity,minimalResumeActivityLocked]
+09-11 21:55:22.460   441   465 I am_uid_active: 10158
+09-11 21:55:22.589   441   506 I commit_sys_config_file: [settings-1-0,7]
+09-11 21:55:22.865  2629  2629 I wm_on_create_called: [9665969,com.steve.puckd.MainActivity,performCreate]
+09-11 21:55:22.886  2629  2629 I wm_on_start_called: [9665969,com.steve.puckd.MainActivity,handleStartActivity]
+09-11 21:55:22.891  2629  2629 I wm_on_resume_called: [9665969,com.steve.puckd.MainActivity,RESUME_ACTIVITY]
+09-11 21:55:22.913  2629  2629 I wm_on_top_resumed_gained_called: [9665969,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 21:55:23.124   441   471 I sysui_multi_action: [319,127,321,68,322,778,325,337,757,761,758,7,759,1,806,com.steve.puckd,871,com.steve.puckd.MainActivity,905,0,945,115,1320,5,1321,5]
+09-11 21:55:23.126   441   471 I wm_activity_launch_time: [0,9665969,com.steve.puckd/.MainActivity,778]
+09-11 21:55:23.135   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x42 color=0x00000000 vis=PRIVATE),0]
+09-11 21:55:23.165   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),0]
+09-11 21:55:23.332   441  2429 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 21:55:23.337   441   441 I sysui_multi_action: [757,1501,758,1,793,203,794,0,795,203,796,1001,806,com.steve.puckd,857,puckd,858,2,947,0,1500,0,1688,1]
+09-11 21:55:23.339   441   441 I sysui_multi_action: [757,804,799,note_interruptive,801,0,802,1]
+09-11 21:55:23.342  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 21:55:23.360   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:29.498   441   441 I chatty  : uid=1000 system_server identical 3 lines
+09-11 21:55:29.524   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:31.588   441   486 I commit_sys_config_file: [package-user-0,9]
+09-11 21:55:37.544   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:37.587   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:55:52.685   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_19,98304,SYSTEM_TOMBSTONE]
+09-11 21:55:52.691   441   479 I commit_sys_config_file: [log-files,5]
+09-11 21:55:53.597   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 21:59:54.256   441   441 I chatty  : uid=1000 system_server identical 16 lines
+09-11 21:59:54.400   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:00:00.018   441   441 I sysui_multi_action: [757,803,799,dnd_mode_0,802,600124]
+09-11 22:00:00.020   441   441 I sysui_multi_action: [757,803,799,dnd_rule_count,802,0]
+09-11 22:00:00.021   441   441 I sysui_multi_action: [757,803,799,dnd_type_0,802,600126]
+09-11 22:00:00.034   441   464 I commit_sys_config_file: [notification-policy,8]
+09-11 22:00:00.133   441   471 I am_pss  : [2629,10158,com.steve.puckd,36189184,28624896,56320,132106240,0,2,7]
+09-11 22:00:00.282   441   506 I commit_sys_config_file: [settings-0-0,6]
+09-11 22:00:24.409   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:04:24.969   441   441 I chatty  : uid=1000 system_server identical 16 lines
+09-11 22:04:25.042   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:04:49.590   441   471 I am_pss  : [441,1000,system,92251136,79732736,196608,235274240,0,0,11]
+09-11 22:04:49.623   441   464 I commit_sys_config_file: [package-session,13]
+09-11 22:04:49.635   441   464 I commit_sys_config_file: [package-session,9]
+09-11 22:04:49.728   441   471 I am_pss  : [2629,10158,com.steve.puckd,36572160,28983296,56320,132538368,0,2,7]
+09-11 22:04:49.742   441   471 I am_pss  : [1602,10144,com.android.permissioncontroller,7160832,610304,3312640,87314432,0,19,5]
+09-11 22:04:49.753   441   471 I am_pss  : [858,10146,android.ext.services,10553344,5783552,84992,123314176,0,5,6]
+09-11 22:04:49.760   441   471 I am_pss  : [1371,10086,android.process.acore,8182784,589824,3717120,92307456,0,19,5]
+09-11 22:04:49.770   441   471 I am_pss  : [1927,10131,com.android.inputmethod.latin,13999104,9134080,59392,109694976,0,7,5]
+09-11 22:04:49.778   441   471 I am_pss  : [1625,10090,com.android.providers.calendar,6579200,3489792,60416,88838144,0,19,4]
+09-11 22:04:49.786   441   471 I am_pss  : [1097,10126,com.android.deskclock,11318272,430080,6387712,96186368,0,19,5]
+09-11 22:04:49.793   441   471 I am_pss  : [1274,10106,com.android.printspooler,6049792,2899968,60416,90464256,0,19,5]
+09-11 22:04:49.800   441   471 I am_pss  : [1416,10088,android.process.media,6397952,442368,2897920,85860352,0,19,5]
+09-11 22:04:49.812   441   471 I am_pss  : [1835,10085,com.android.externalstorage,5312512,2457600,101376,84000768,0,19,5]
+09-11 22:04:49.822   441   471 I am_pss  : [1793,10095,com.stevesoltys.seedvault,6575104,430080,3259392,84033536,0,19,5]
+09-11 22:04:49.830   441   471 I am_pss  : [1744,1000,com.android.localtransport,5594112,2469888,93184,89419776,0,19,5]
+09-11 22:04:49.835   441   947 I commit_sys_config_file: [package-session,4]
+09-11 22:04:49.838   441   471 I am_pss  : [1723,10089,org.lineageos.updater,8172544,4505600,60416,92524544,0,19,5]
+09-11 22:04:49.845   441   471 I am_pss  : [1344,1000,org.lineageos.lineageparts,6111232,552960,2127872,89223168,0,19,6]
+09-11 22:04:49.852   441   471 I am_pss  : [1697,10120,org.calyxos.backup.contacts,5062656,1740800,662528,81879040,0,19,5]
+09-11 22:04:49.864   441   471 I am_pss  : [1674,10115,com.android.traceur,7212032,4337664,60416,87068672,0,19,5]
+09-11 22:04:49.872   441   471 I am_pss  : [1652,2000,com.android.shell,5201920,1757184,707584,83378176,0,19,5]
+09-11 22:04:49.886   441   471 I am_pss  : [838,1000,com.android.settings,24245248,19697664,107520,117628928,0,19,6]
+09-11 22:04:49.893   441   471 I am_pss  : [1580,10087,com.android.packageinstaller,5931008,3190784,60416,83697664,0,19,5]
+09-11 22:04:49.899   441   471 I am_pss  : [1235,10141,com.android.smspush,5084160,2203648,154624,82407424,0,6,5]
+09-11 22:04:49.907   441   471 I am_pss  : [577,1002,com.android.bluetooth,15244288,10788864,74752,108814336,0,0,6]
+09-11 22:04:49.914   441   471 I am_pss  : [815,1001,com.android.phone,15237120,9863168,59392,111767552,0,0,6]
+09-11 22:04:49.920   441   471 I am_pss  : [759,1068,com.android.se,5376000,2506752,158720,83283968,0,0,5]
+09-11 22:04:49.930   441   471 I am_pss  : [601,10140,com.android.systemui,67481600,58183680,219136,200740864,0,0,9]
+09-11 22:04:50.096   441   486 I commit_sys_config_file: [package-user-0,7]
+09-11 22:04:50.096   441   486 I commit_sys_config_file: [package,97]
+09-11 22:04:50.116   441   441 I am_uid_active: 10144
+09-11 22:04:50.128   441   486 I unknown_sources_enabled: 1
+09-11 22:04:50.156   441   492 I commit_sys_config_file: [package-session,18]
+09-11 22:04:50.179   441   441 I notification_cancel_all: [1000,441,com.steve.aecdiag,0,0,0,5,NULL]
+09-11 22:04:55.059   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:04:55.096   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:04:59.952   441   471 I am_pss  : [1200,10145,com.android.providers.media.module,14617600,10231808,75776,109498368,0,0,6]
+09-11 22:04:59.961   441   471 I am_pss  : [1164,10097,org.lineageos.audiofx,6598656,3710976,60416,85536768,0,0,5]
+09-11 22:05:07.629   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_20,98304,SYSTEM_TOMBSTONE]
+09-11 22:05:07.635   441   479 I commit_sys_config_file: [log-files,6]
+09-11 22:05:15.657   441  2821 I sysui_multi_action: [757,803,799,key_back_down,802,1]
+09-11 22:05:15.660   441  2821 I sysui_multi_action: [757,803,799,key_back_up,802,1]
+09-11 22:05:15.664   441  2821 I wm_finish_activity: [0,9665969,217,com.steve.puckd/.MainActivity,app-request]
+09-11 22:05:15.665   441  2821 I wm_focused_stack: [0,0,1,217,finish-top adjustFocusToNextFocusableStack]
+09-11 22:05:15.668   441  2821 I wm_task_moved: [213,1,2147483647]
+09-11 22:05:15.669   441  2821 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,finish-top adjustFocusToNextFocusableStack]
+09-11 22:05:15.676   441  2821 I wm_pause_activity: [0,9665969,com.steve.puckd/.MainActivity,userLeaving=false]
+09-11 22:05:15.680  2629  2629 I wm_on_top_resumed_lost_called: [9665969,com.steve.puckd.MainActivity,topStateChangedWhenResumed]
+09-11 22:05:15.692  2629  2629 I wm_on_paused_called: [9665969,com.steve.puckd.MainActivity,performPause]
+09-11 22:05:15.693   441  1197 I wm_add_to_stopping: [0,9665969,com.steve.puckd/.MainActivity,completeFinishing]
+09-11 22:05:15.695   441  1197 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,resumeTopActivityInnerLocked]
+09-11 22:05:15.697   441  1197 I wm_resume_activity: [0,34179027,213,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 22:05:15.713   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,593]
+09-11 22:05:15.716  1003  1003 I wm_on_restart_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performRestartActivity]
+09-11 22:05:15.727  1003  1003 I wm_on_start_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,handleStartActivity]
+09-11 22:05:15.731  1003  1003 I wm_on_resume_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,RESUME_ACTIVITY]
+09-11 22:05:15.731  1003  1003 I wm_on_top_resumed_gained_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topWhenResuming]
+09-11 22:05:16.166   441   465 I wm_destroy_activity: [0,9665969,217,com.steve.puckd/.MainActivity,finish-imm:idle]
+09-11 22:05:16.190  2629  2629 I wm_on_stop_called: [9665969,com.steve.puckd.MainActivity,LIFECYCLER_STOP_ACTIVITY]
+09-11 22:05:16.195  2629  2629 I wm_on_destroy_called: [9665969,com.steve.puckd.MainActivity,performDestroy]
+09-11 22:05:16.214   441  2521 I wm_task_removed: [217,removeChild: last r=ActivityRecord{937db1 u0 com.steve.puckd/.MainActivity t-1 f}} in t=Task{86784b3 #217 visible=false type=standard mode=fullscreen translucent=true A=10158:com.steve.puckd U=0 StackId=217 sz=0}]
+09-11 22:05:16.214   441  2521 I wm_task_removed: [217,removeTask]
+09-11 22:05:16.214   441  2521 I wm_task_removed: [217,removeTask]
+09-11 22:05:16.214   441  2521 I wm_stack_removed: 217
+09-11 22:05:16.754   441  1197 I intercept_power: [ACTION_DOWN,1,0]
+09-11 22:05:16.755   441  1197 I sysui_multi_action: [757,804,799,power_consecutive_short_tap_count,801,1,802,1]
+09-11 22:05:16.756   441  1197 I sysui_multi_action: [757,804,799,power_double_tap_interval,801,631561,802,1]
+09-11 22:05:16.756   441  1197 I intercept_power: [ACTION_UP,0,0]
+09-11 22:05:16.758   441  1197 I power_sleep_requested: 0
+09-11 22:05:16.777   441   481 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=false]
+09-11 22:05:16.778  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 22:05:16.779   441   481 I sysui_multi_action: [757,1696,758,6,759,0]
+09-11 22:05:16.779  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 22:05:16.779   441  1197 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,completePauseLocked]
+09-11 22:05:16.785   441   465 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 22:05:16.788  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 22:05:17.088   441   462 I sysui_multi_action: [757,223,758,1]
+09-11 22:05:17.105   601   601 I sysui_multi_action: [757,111,758,1]
+09-11 22:05:17.105   601   601 I sysui_multi_action: [757,126,758,1,759,126,927,0,928,1,1593,0]
+09-11 22:05:17.106   601   601 I sysui_multi_action: [757,113,758,1,759,113,927,1,928,1,1593,0]
+09-11 22:05:17.106   601   601 I sysui_multi_action: [757,118,758,1,759,118,927,2,928,0,1593,0]
+09-11 22:05:17.106   601   601 I sysui_multi_action: [757,123,758,1,759,123,927,4,928,1,1593,0]
+09-11 22:05:17.107   601   601 I sysui_multi_action: [757,261,758,1,759,261,927,5,928,0,1593,0]
+09-11 22:05:17.107   601   601 I sysui_multi_action: [757,112,758,1,759,112,927,7,928,0,1593,0]
+09-11 22:05:17.110   441   493 I wm_set_keyguard_shown: [0,1,0,setKeyguardShown]
+09-11 22:05:17.120   601   601 I sysui_multi_action: [757,196,758,2,759,0]
+09-11 22:05:17.121   601   601 I sysui_status_bar_state: [1,0,0,0,0,1]
+09-11 22:05:17.130   441  2821 I sysui_multi_action: [757,127,758,1]
+09-11 22:05:17.130   441  2821 I sysui_multi_action: [757,804,799,note_load,801,3,802,1]
+09-11 22:05:17.131   441  2821 I notification_panel_revealed: 3
+09-11 22:05:17.137   441   481 I sysui_multi_action: [757,1696,758,6,759,1]
+09-11 22:05:17.138   441   441 I sysui_multi_action: [757,198,758,2,759,2,1359,387,1695,4]
+09-11 22:05:17.138   441   441 I power_screen_state: [0,2,0,0,387]
+09-11 22:05:17.138   441   441 I screen_toggled: 0
+09-11 22:05:17.138   441   441 I sysui_multi_action: [757,804,799,screen_timeout,801,60,802,1]
+09-11 22:05:17.141   441   441 I power_screen_broadcast_send: 1
+09-11 22:05:17.166   815   815 D DCT-C-0 : screen off
+09-11 22:05:17.167   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 22:05:17.176   441   441 I power_screen_broadcast_done: [0,36,1]
+09-11 22:05:17.194   441  1197 I wm_set_keyguard_shown: [1,1,0,setKeyguardShown]
+09-11 22:05:17.204   601   601 I sysui_multi_action: [757,196,758,1,759,0]
+09-11 22:05:17.204   601   601 I sysui_status_bar_state: [1,1,0,0,0,1]
+09-11 22:05:17.220   441  2821 I sysui_multi_action: [757,127,758,2]
+09-11 22:05:17.221   441  2821 I notification_panel_hidden: 
+09-11 22:05:17.242   441   465 I user_activity_timeout_override: 10000
+09-11 22:05:22.229   441   441 I notification_cancel_all: [1000,441,com.steve.aecdiag,0,0,0,5,NULL]
+09-11 22:05:22.921   441  2521 I wm_task_created: [218,-1]
+09-11 22:05:22.921   441  2521 I wm_stack_created: 218
+09-11 22:05:22.927   441  2521 I wm_create_task: [0,218]
+09-11 22:05:22.933   441  2521 I wm_create_activity: [0,254837053,218,com.steve.aecdiag/.MainActivity,android.intent.action.MAIN,NULL,NULL,270532608]
+09-11 22:05:22.941   441   465 I am_uid_running: 10147
+09-11 22:05:22.971   441   473 I am_proc_start: [0,2995,10147,com.steve.aecdiag,top-activity,{com.steve.aecdiag/com.steve.aecdiag.MainActivity}]
+09-11 22:05:23.049   441   493 I am_proc_bound: [0,2995,com.steve.aecdiag]
+09-11 22:05:23.052   441   493 I wm_restart_activity: [0,254837053,218,com.steve.aecdiag/.MainActivity]
+09-11 22:05:23.053   441   493 I wm_set_resumed_activity: [0,com.steve.aecdiag/.MainActivity,minimalResumeActivityLocked]
+09-11 22:05:23.057   441   493 I wm_add_to_stopping: [0,254837053,com.steve.aecdiag/.MainActivity,makeInvisible]
+09-11 22:05:23.058   441   493 I wm_pause_activity: [0,254837053,com.steve.aecdiag/.MainActivity,userLeaving=false]
+09-11 22:05:23.069   441   465 I sysui_multi_action: [757,1144,758,7,806,com.steve.aecdiag,871,com.steve.aecdiag.MainActivity]
+09-11 22:05:23.207   441   506 I commit_sys_config_file: [settings-1-0,6]
+09-11 22:05:23.244   441   493 I wm_create_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,android.content.pm.action.REQUEST_PERMISSIONS,NULL,NULL,8388608]
+09-11 22:05:23.339  2995  2995 I wm_on_create_called: [254837053,com.steve.aecdiag.MainActivity,performCreate]
+09-11 22:05:23.345  2995  2995 I wm_on_start_called: [254837053,com.steve.aecdiag.MainActivity,handleStartActivity]
+09-11 22:05:23.348  2995  2995 I wm_on_resume_called: [254837053,com.steve.aecdiag.MainActivity,RESUME_ACTIVITY]
+09-11 22:05:23.367  2995  2995 I wm_on_top_resumed_gained_called: [254837053,com.steve.aecdiag.MainActivity,topStateChangedWhenResumed]
+09-11 22:05:23.367  2995  2995 I wm_on_top_resumed_lost_called: [254837053,com.steve.aecdiag.MainActivity,topStateChangedWhenResumed]
+09-11 22:05:23.369  2995  2995 I wm_on_paused_called: [254837053,com.steve.aecdiag.MainActivity,performPause]
+09-11 22:05:23.370   441   493 I wm_restart_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:05:23.371   441   493 I wm_set_resumed_activity: [0,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,minimalResumeActivityLocked]
+09-11 22:05:23.372   441   493 I wm_add_to_stopping: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,makeInvisible]
+09-11 22:05:23.373   441   493 I wm_pause_activity: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,userLeaving=false]
+09-11 22:05:23.375   441   465 I wm_stop_activity: [0,254837053,com.steve.aecdiag/.MainActivity]
+09-11 22:05:23.383   441   465 I sysui_multi_action: [757,1144,758,8,806,com.android.permissioncontroller,871,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity]
+09-11 22:05:23.387   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,8]
+09-11 22:05:23.459  2995  2995 I wm_on_stop_called: [254837053,com.steve.aecdiag.MainActivity,STOP_ACTIVITY_ITEM]
+09-11 22:05:23.513  1602  1602 I wm_on_create_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performCreate]
+09-11 22:05:23.519  1602  1602 I wm_on_start_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,handleStartActivity]
+09-11 22:05:23.522  1602  1602 I wm_on_resume_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,RESUME_ACTIVITY]
+09-11 22:05:23.532  1602  1602 I wm_on_top_resumed_gained_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topStateChangedWhenResumed]
+09-11 22:05:23.532  1602  1602 I wm_on_top_resumed_lost_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topStateChangedWhenResumed]
+09-11 22:05:23.532  1602  1602 I wm_on_paused_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performPause]
+09-11 22:05:23.533   441   465 I wm_stop_activity: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:05:23.568  1602  1602 I wm_on_stop_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,STOP_ACTIVITY_ITEM]
+09-11 22:05:25.120   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:05:25.147   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:05:25.876   441   506 I commit_sys_config_file: [settings-2-0,6]
+09-11 22:05:26.925   441   506 I commit_sys_config_file: [settings-2-0,7]
+09-11 22:05:26.930   441   506 I commit_sys_config_file: [settings-1-0,5]
+09-11 22:05:33.003   441   486 I commit_sys_config_file: [package-user-0,17]
+09-11 22:05:35.544   441  2600 I sysui_multi_action: [757,803,799,key_back_down,802,1]
+09-11 22:05:35.547   441  2600 I sysui_multi_action: [757,803,799,key_back_up,802,1]
+09-11 22:05:36.650   441  2600 I intercept_power: [ACTION_DOWN,1,0]
+09-11 22:05:36.651   441  2600 I sysui_multi_action: [757,804,799,power_consecutive_short_tap_count,801,1,802,1]
+09-11 22:05:36.651   441  2600 I sysui_multi_action: [757,804,799,power_double_tap_interval,801,19896,802,1]
+09-11 22:05:36.661   441   441 I screen_toggled: 1
+09-11 22:05:36.661   441   441 I power_screen_broadcast_send: 1
+09-11 22:05:36.661   441   481 I sysui_multi_action: [757,1696,758,6,759,3]
+09-11 22:05:36.665   441  2600 I intercept_power: [ACTION_UP,0,0]
+09-11 22:05:36.665   441   462 I sysui_multi_action: [757,223,758,2]
+09-11 22:05:36.665   441   462 I sysui_multi_action: [757,804,799,dozing_minutes,801,0,802,1]
+09-11 22:05:36.667   441   441 I sysui_multi_action: [757,198,758,1,759,1,1359,15,1694,1]
+09-11 22:05:36.667   441   441 I power_screen_state: [1,0,0,0,15]
+09-11 22:05:36.673   441  1197 I sysui_multi_action: [757,127,758,1]
+09-11 22:05:36.673   441  1197 I sysui_multi_action: [757,804,799,note_load,801,3,802,1]
+09-11 22:05:36.674   441  1197 I notification_panel_revealed: 3
+09-11 22:05:36.682   601   601 I sysui_multi_action: [757,197,758,5,759,0]
+09-11 22:05:36.696   441  1197 I wm_set_keyguard_shown: [1,0,0,setKeyguardShown]
+09-11 22:05:36.742   815   815 D DCT-C-0 : screen on
+09-11 22:05:36.742   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 22:05:36.791   441   441 I power_screen_broadcast_done: [1,130,1]
+09-11 22:05:37.129   441   493 I wm_set_keyguard_shown: [1,0,1,keyguardGoingAway]
+09-11 22:05:37.134   441   493 I wm_set_resumed_activity: [0,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,resumeTopActivityInnerLocked]
+09-11 22:05:37.138   441   493 I wm_resume_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:05:37.144   441   465 I am_uid_active: 10147
+09-11 22:05:37.158  1602  1602 I wm_on_restart_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performRestartActivity]
+09-11 22:05:37.164  1602  1602 I wm_on_start_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,handleStartActivity]
+09-11 22:05:37.169  2995  2995 I wm_on_restart_called: [254837053,com.steve.aecdiag.MainActivity,performRestartActivity]
+09-11 22:05:37.172  2995  2995 I wm_on_start_called: [254837053,com.steve.aecdiag.MainActivity,handleStartActivity]
+09-11 22:05:37.173  1602  1602 I wm_on_resume_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,RESUME_ACTIVITY]
+09-11 22:05:37.174  1602  1602 I wm_on_top_resumed_gained_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topWhenResuming]
+09-11 22:05:37.196   441  1197 I sysui_multi_action: [757,127,758,2]
+09-11 22:05:37.196   441  1197 I notification_panel_hidden: 
+09-11 22:05:37.275   601   601 I sysui_multi_action: [757,111,758,2]
+09-11 22:05:37.279   441   465 I dvm_lock_sample: [system_server,1,android.display,26,WindowManagerService.java,5084,void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message),WindowSurfacePlacer.java,59,void com.android.server.wm.WindowSurfacePlacer$Traverser.run(),5]
+09-11 22:05:37.291   601   601 I sysui_multi_action: [757,196,758,2,759,0]
+09-11 22:05:37.291   601   601 I sysui_status_bar_state: [0,0,0,0,0,1]
+09-11 22:05:37.295   441  2821 I wm_set_keyguard_shown: [0,0,1,setKeyguardShown]
+09-11 22:05:37.339   441   465 I user_activity_timeout_override: -1
+09-11 22:05:42.115   441   945 I wm_create_activity: [0,253284878,218,com.steve.aecdiag/.MainActivity,NULL,NULL,NULL,268435456]
+09-11 22:05:42.116  1602  1602 I wm_on_top_resumed_lost_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topStateChangedWhenResumed]
+09-11 22:05:42.116   441   945 I wm_pause_activity: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,userLeaving=true]
+09-11 22:05:42.126  1602  1602 I wm_on_paused_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performPause]
+09-11 22:05:42.133   441  2600 I wm_add_to_stopping: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,makeInvisible]
+09-11 22:05:42.133   441  2600 I wm_add_to_stopping: [0,254837053,com.steve.aecdiag/.MainActivity,makeInvisible]
+09-11 22:05:42.134   441  2600 I wm_restart_activity: [0,253284878,218,com.steve.aecdiag/.MainActivity]
+09-11 22:05:42.140   441  2600 I wm_set_resumed_activity: [0,com.steve.aecdiag/.MainActivity,minimalResumeActivityLocked]
+09-11 22:05:42.165   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,19]
+09-11 22:05:42.178   441   945 I wm_create_activity: [0,231474388,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,android.content.pm.action.REQUEST_PERMISSIONS,NULL,NULL,8388608]
+09-11 22:05:42.180   441   945 I wm_pause_activity: [0,253284878,com.steve.aecdiag/.MainActivity,userLeaving=true]
+09-11 22:05:42.265  2995  2995 I wm_on_create_called: [253284878,com.steve.aecdiag.MainActivity,performCreate]
+09-11 22:05:42.271  2995  2995 I wm_on_start_called: [253284878,com.steve.aecdiag.MainActivity,handleStartActivity]
+09-11 22:05:42.273  2995  2995 I wm_on_resume_called: [253284878,com.steve.aecdiag.MainActivity,RESUME_ACTIVITY]
+09-11 22:05:42.285  2995  2995 I wm_on_top_resumed_gained_called: [253284878,com.steve.aecdiag.MainActivity,topStateChangedWhenResumed]
+09-11 22:05:42.288  2995  2995 I wm_on_top_resumed_lost_called: [253284878,com.steve.aecdiag.MainActivity,topStateChangedWhenResumed]
+09-11 22:05:42.290  2995  2995 I wm_on_paused_called: [253284878,com.steve.aecdiag.MainActivity,performPause]
+09-11 22:05:42.295   441  2600 I wm_restart_activity: [0,231474388,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:05:42.296   441  2600 I wm_set_resumed_activity: [0,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,minimalResumeActivityLocked]
+09-11 22:05:42.303   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,0]
+09-11 22:05:42.333  1602  1602 I wm_on_create_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performCreate]
+09-11 22:05:42.340  1602  1602 I wm_on_start_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,handleStartActivity]
+09-11 22:05:42.343  1602  1602 I wm_on_resume_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,RESUME_ACTIVITY]
+09-11 22:05:42.351  1602  1602 I wm_on_top_resumed_gained_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topStateChangedWhenResumed]
+09-11 22:05:42.450   441   471 I sysui_multi_action: [319,335,322,334,325,957,757,761,758,8,759,2,806,com.android.permissioncontroller,871,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,904,com.steve.aecdiag,905,0,1320,8,1321,5]
+09-11 22:05:42.450   441   471 I wm_activity_launch_time: [0,231474388,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,334]
+09-11 22:05:42.453   441   465 I dvm_lock_sample: [system_server,1,android.display,29,WindowManagerService.java,5084,void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message),WindowSurfacePlacer.java,59,void com.android.server.wm.WindowSurfacePlacer$Traverser.run(),5]
+09-11 22:05:42.847   441   465 I wm_stop_activity: [0,254837053,com.steve.aecdiag/.MainActivity]
+09-11 22:05:42.849   441   465 I wm_stop_activity: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:05:42.879  1602  1602 I wm_on_stop_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,STOP_ACTIVITY_ITEM]
+09-11 22:05:42.886  2995  2995 I wm_on_stop_called: [254837053,com.steve.aecdiag.MainActivity,STOP_ACTIVITY_ITEM]
+09-11 22:05:45.194   441   506 I commit_sys_config_file: [settings-2-0,4]
+09-11 22:05:46.225   441   506 I commit_sys_config_file: [settings-2-0,7]
+09-11 22:05:47.004   441  2600 I sysui_multi_action: [757,1243,758,4,806,com.steve.aecdiag,1241,android.permission.RECORD_AUDIO]
+09-11 22:05:47.009  1602  1602 I snet_event_log: [individual_permissions_requested,10147,com.steve.aecdiag:;android.permission.RECORD_AUDIO|true|769]
+09-11 22:05:47.011   441  1197 I wm_finish_activity: [0,231474388,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,app-request]
+09-11 22:05:47.023   441  1197 I wm_pause_activity: [0,231474388,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,userLeaving=false]
+09-11 22:05:47.028  1602  1602 I wm_on_top_resumed_lost_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,topStateChangedWhenResumed]
+09-11 22:05:47.031  1602  1602 I wm_on_paused_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performPause]
+09-11 22:05:47.040   441  1197 I wm_set_resumed_activity: [0,com.steve.aecdiag/.MainActivity,resumeTopActivityInnerLocked]
+09-11 22:05:47.042   441  1197 I wm_resume_activity: [0,253284878,218,com.steve.aecdiag/.MainActivity]
+09-11 22:05:47.043   441  1197 I wm_destroy_activity: [0,231474388,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,finish-imm:completePausedLocked]
+09-11 22:05:47.051  2995  2995 I wm_on_activity_result_called: [253284878,com.steve.aecdiag.MainActivity,ACTIVITY_RESULT]
+09-11 22:05:47.062  2995  2995 I wm_on_resume_called: [253284878,com.steve.aecdiag.MainActivity,RESUME_ACTIVITY]
+09-11 22:05:47.064  2995  2995 I wm_on_top_resumed_gained_called: [253284878,com.steve.aecdiag.MainActivity,topWhenResuming]
+09-11 22:05:47.074   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,5]
+09-11 22:05:47.077  1602  1602 I wm_on_stop_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,LIFECYCLER_STOP_ACTIVITY]
+09-11 22:05:47.079  1602  1602 I wm_on_destroy_called: [231474388,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performDestroy]
+09-11 22:05:55.166   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:05:55.222   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:05:57.156   441   486 I commit_sys_config_file: [package-user-0,7]
+09-11 22:05:57.156   441   486 I commit_sys_config_file: [package,112]
+09-11 22:05:59.058   441   506 I commit_sys_config_file: [settings-2-0,8]
+09-11 22:06:00.173   441   506 I commit_sys_config_file: [settings-2-0,7]
+09-11 22:06:13.370   441   506 I commit_sys_config_file: [settings-2-0,19]
+09-11 22:06:14.466   441   506 I commit_sys_config_file: [settings-2-0,10]
+09-11 22:06:25.249   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:06:25.286   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:06:46.023   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_21,98304,SYSTEM_TOMBSTONE]
+09-11 22:06:46.027   441   479 I commit_sys_config_file: [log-files,4]
+09-11 22:06:47.143   441   472 I am_uid_idle: 10144
+09-11 22:06:50.867   441   506 I commit_sys_config_file: [settings-2-0,9]
+09-11 22:06:51.971   441   506 I commit_sys_config_file: [settings-2-0,9]
+09-11 22:06:55.305   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:06:55.339   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:07:01.843   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_22,98304,SYSTEM_TOMBSTONE]
+09-11 22:07:01.851   441   479 I commit_sys_config_file: [log-files,8]
+09-11 22:07:20.946  3461  3461 I liblog  : 204
+09-11 22:07:25.378   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:07:25.474   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:07:27.077   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_23,98304,SYSTEM_TOMBSTONE]
+09-11 22:07:27.083   441   479 I commit_sys_config_file: [log-files,6]
+09-11 22:07:27.193   441   472 I am_uid_stopped: 10147
+09-11 22:07:27.194   441   472 I am_kill : [0,2995,com.steve.aecdiag,0,stop com.steve.aecdiag due to deletePackageX]
+09-11 22:07:27.196   441   472 I wm_finish_activity: [0,253284878,218,com.steve.aecdiag/.MainActivity,proc died without state saved]
+09-11 22:07:27.207   441   472 I wm_finish_activity: [0,254837053,218,com.steve.aecdiag/.MainActivity,proc died without state saved]
+09-11 22:07:27.212   441   472 I wm_set_resumed_activity: [0,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,resumeTopActivityInnerLocked]
+09-11 22:07:27.216   441   472 I wm_resume_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity]
+09-11 22:07:27.232  1602  1602 I wm_on_restart_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performRestartActivity]
+09-11 22:07:27.232   441   472 I am_uid_active: 10144
+09-11 22:07:27.247  1602  1602 I snet_event_log: [individual_permissions_requested,10147,com.steve.aecdiag:;android.permission.RECORD_AUDIO|false|768]
+09-11 22:07:27.249   441   494 I wm_finish_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,app-request]
+09-11 22:07:27.250   441   494 I wm_task_moved: [213,1,2147483647]
+09-11 22:07:27.251   441   494 I wm_pause_activity: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,userLeaving=false]
+09-11 22:07:27.254  1003  1003 I wm_on_restart_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performRestartActivity]
+09-11 22:07:27.256  1602  1602 I wm_on_start_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,handleStartActivity]
+09-11 22:07:27.289   441   946 I wm_add_to_stopping: [0,106307550,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,completeFinishing]
+09-11 22:07:27.392   441   947 I dvm_lock_sample: [system_server,1,Binder:441_A,132,PackageManagerService.java,7282,java.lang.String com.android.server.pm.PackageManagerService.getInstantAppPackageName(int),AppsFilter.java,355,void com.android.server.pm.AppsFilter.lambda$create$0(com.android.server.pm.PackageManagerService$Injector, com.android.server.pm.AppsFilter$StateProvider$CurrentStateCallback),26]
+09-11 22:07:27.392   441   471 I dvm_lock_sample: [system_server,0,android.bg,160,ActivityManagerService.java,1977,void com.android.server.am.ActivityManagerService$5.handleMessage(android.os.Message),,0,null,32]
+09-11 22:07:27.393   441   946 I wm_set_resumed_activity: [0,com.android.launcher3/.uioverrides.QuickstepLauncher,resumeTopActivityInnerLocked]
+09-11 22:07:27.393  1003  1003 I wm_on_start_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,handleStartActivity]
+09-11 22:07:27.394   441   946 I wm_resume_activity: [0,34179027,213,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 22:07:27.406   441   471 I am_pss  : [2629,10158,com.steve.puckd,28595200,21602304,63488,123662336,0,4,7]
+09-11 22:07:27.420   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,100]
+09-11 22:07:27.432  1003  1003 I wm_on_resume_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,RESUME_ACTIVITY]
+09-11 22:07:27.432  1003  1003 I wm_on_top_resumed_gained_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topWhenResuming]
+09-11 22:07:27.536   441   486 I commit_sys_config_file: [package-user-0,9]
+09-11 22:07:27.536   441   486 I commit_sys_config_file: [package,137]
+09-11 22:07:27.536   441   471 I dvm_lock_sample: [system_server,0,android.bg,126,PackageManagerService.java,24830,boolean com.android.server.pm.PackageManagerService$PackageManagerInternalImpl.isPackageEphemeral(int, java.lang.String),-,19122,void com.android.server.pm.PackageManagerService.removePackageDataLIF(com.android.server.pm.PackageSetting, int[], com.android.server.pm.PackageManagerService$PackageRemovedInfo, int, boolean),25]
+09-11 22:07:27.542   441  3528 I wm_destroy_activity: [0,106307550,218,com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity,finish-imm:idle]
+09-11 22:07:27.545  1602  1602 I wm_on_stop_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,LIFECYCLER_STOP_ACTIVITY]
+09-11 22:07:27.545  1602  1602 I wm_on_destroy_called: [106307550,com.android.permissioncontroller.permission.ui.GrantPermissionsActivity,performDestroy]
+09-11 22:07:27.561   441   946 I wm_task_removed: [218,removeChild: last r=ActivityRecord{6561fde u0 com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity t-1 f}} in t=Task{5a40248 #218 visible=true type=standard mode=fullscreen translucent=false A=10147:com.steve.aecdiag U=0 StackId=218 sz=0}]
+09-11 22:07:27.561   441   946 I wm_task_removed: [218,removeTask]
+09-11 22:07:27.561   441   946 I wm_task_removed: [218,removeTask]
+09-11 22:07:27.561   441   946 I wm_stack_removed: 218
+09-11 22:07:27.927   441   472 I am_uid_running: 10093
+09-11 22:07:27.928   441   465 I sysui_multi_action: [757,803,799,window_time_0,802,0]
+09-11 22:07:27.942   441   551 I commit_sys_config_file: [session_index,7]
+09-11 22:07:27.948   441   551 I commit_sys_config_file: [blobs_index,7]
+09-11 22:07:27.963   441   473 I am_proc_start: [0,3544,10093,com.android.documentsui,broadcast,{com.android.documentsui/com.android.documentsui.PackageReceiver}]
+09-11 22:07:27.980   441   441 I notification_cancel_all: [1000,441,com.steve.aecdiag,0,0,0,5,NULL]
+09-11 22:07:27.980   441   472 I am_wtf  : [0,441,system_server,-1,NetworkStats,Failed to parse network stats]
+09-11 22:07:27.993   441   520 I commit_sys_config_file: [net-policy,20]
+09-11 22:07:28.000   441   464 I commit_sys_config_file: [notification-policy,13]
+09-11 22:07:28.007   441  2600 I am_proc_bound: [0,3544,com.android.documentsui]
+09-11 22:07:28.009   441   464 I commit_sys_config_file: [notification-policy,9]
+09-11 22:07:28.019   441   473 I am_proc_start: [0,3565,1000,com.android.keychain,service,{com.android.keychain/com.android.keychain.KeyChainService}]
+09-11 22:07:28.027   441  1197 I am_proc_bound: [0,3565,com.android.keychain]
+09-11 22:07:28.244   441   506 I commit_sys_config_file: [settings-0-0,14]
+09-11 22:07:28.326   441   946 I am_kill : [0,838,com.android.settings,985,empty #17]
+09-11 22:07:28.354   441  1197 I am_proc_died: [0,838,com.android.settings,985,19]
+09-11 22:07:28.420   441   463 I dvm_lock_sample: [system_server,1,android.ui,5,ActivityManagerService.java,3359,void com.android.server.am.ActivityManagerService.dispatchProcessesChanged(),-,17005,void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int),1]
+09-11 22:07:31.026   441   471 I sysui_multi_action: [757,1717,758,1,759,0]
+09-11 22:07:31.026   441   471 I sysui_multi_action: [757,1717,758,2,759,0]
+09-11 22:07:31.026   441   471 I sysui_multi_action: [757,1717,758,3,759,0]
+09-11 22:07:37.316   441   486 I commit_sys_config_file: [package-user-0,11]
+09-11 22:07:37.929   441   465 I commit_sys_config_file: [warnings-config,7]
+09-11 22:07:37.992   441   658 I commit_sys_config_file: [appops,19]
+09-11 22:07:43.119   441  3528 I am_kill : [0,1652,com.android.shell,975,empty #17]
+09-11 22:07:43.152   441   471 I am_pss  : [1003,10139,com.android.launcher3,41689088,34189312,284672,150028288,0,2,8]
+09-11 22:07:43.158   441  3528 I am_proc_died: [0,1652,com.android.shell,975,19]
+09-11 22:07:43.159   441  3528 I am_uid_stopped: 2000
+09-11 22:07:55.527   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:07:55.562   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:07:57.981   441   471 I am_pss  : [1003,10139,com.android.launcher3,41698304,34189312,284672,150028288,0,2,9]
+09-11 22:07:57.988   441   471 I am_pss  : [3565,1000,com.android.keychain,6045696,2707456,71680,90968064,0,19,5]
+09-11 22:07:57.998   441   471 I am_pss  : [3544,10093,com.android.documentsui,9670656,5963776,71680,94539776,0,19,5]
+09-11 22:08:11.603   441   481 I sysui_multi_action: [757,1696,758,6,759,2]
+09-11 22:08:18.601   441   481 I power_sleep_requested: 0
+09-11 22:08:18.655   441   481 I wm_pause_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,userLeaving=false]
+09-11 22:08:18.659  1003  1003 I wm_on_top_resumed_lost_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,topStateChangedWhenResumed]
+09-11 22:08:18.664  1003  1003 I wm_on_paused_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,performPause]
+09-11 22:08:18.667   441   927 I wm_add_to_stopping: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher,completePauseLocked]
+09-11 22:08:18.669   441   481 I sysui_multi_action: [757,1696,758,6,759,0]
+09-11 22:08:18.673   441   465 I wm_stop_activity: [0,34179027,com.android.launcher3/.uioverrides.QuickstepLauncher]
+09-11 22:08:18.687  1003  1003 I wm_on_stop_called: [34179027,com.android.launcher3.uioverrides.QuickstepLauncher,STOP_ACTIVITY_ITEM]
+09-11 22:08:18.783   441   471 I am_pss  : [3565,1000,com.android.keychain,6052864,2715648,71680,90976256,0,19,6]
+09-11 22:08:18.793   441   471 I am_pss  : [3544,10093,com.android.documentsui,9677824,5971968,71680,94547968,0,19,5]
+09-11 22:08:18.976   441   462 I sysui_multi_action: [757,223,758,1]
+09-11 22:08:18.991   601   601 I sysui_multi_action: [757,111,758,1]
+09-11 22:08:18.991   601   601 I sysui_multi_action: [757,126,758,1,759,126,927,0,928,1,1593,0]
+09-11 22:08:18.991   601   601 I sysui_multi_action: [757,113,758,1,759,113,927,1,928,1,1593,0]
+09-11 22:08:18.992   601   601 I sysui_multi_action: [757,118,758,1,759,118,927,2,928,0,1593,0]
+09-11 22:08:18.992   601   601 I sysui_multi_action: [757,123,758,1,759,123,927,4,928,1,1593,0]
+09-11 22:08:18.992   601   601 I sysui_multi_action: [757,261,758,1,759,261,927,5,928,0,1593,0]
+09-11 22:08:18.992   601   601 I sysui_multi_action: [757,112,758,1,759,112,927,7,928,0,1593,0]
+09-11 22:08:18.995   441   927 I wm_set_keyguard_shown: [0,1,0,setKeyguardShown]
+09-11 22:08:19.004   601   601 I sysui_multi_action: [757,196,758,2,759,0]
+09-11 22:08:19.004   601   601 I sysui_status_bar_state: [1,0,0,0,0,1]
+09-11 22:08:19.014   441   493 I sysui_multi_action: [757,127,758,1]
+09-11 22:08:19.014   441   493 I sysui_multi_action: [757,804,799,note_load,801,3,802,1]
+09-11 22:08:19.014   441   493 I notification_panel_revealed: 3
+09-11 22:08:19.023   441   481 I sysui_multi_action: [757,1696,758,6,759,1]
+09-11 22:08:19.023   441   441 I sysui_multi_action: [757,198,758,2,759,3,1359,424,1695,2]
+09-11 22:08:19.023   441   441 I power_screen_state: [0,3,0,0,424]
+09-11 22:08:19.023   441   441 I screen_toggled: 0
+09-11 22:08:19.024   441   441 I sysui_multi_action: [757,804,799,screen_timeout,801,60,802,1]
+09-11 22:08:19.024   441   441 I power_screen_broadcast_send: 1
+09-11 22:08:19.044   815   815 D DCT-C-0 : screen off
+09-11 22:08:19.044   815   815 D DCT-C-0 : stopNetStatPoll
+09-11 22:08:19.062   441  2429 I sysui_multi_action: [757,127,758,2]
+09-11 22:08:19.062   441  2429 I notification_panel_hidden: 
+09-11 22:08:19.066   441   441 I power_screen_broadcast_done: [0,42,1]
+09-11 22:08:23.651   441   493 I wm_set_keyguard_shown: [1,1,0,setKeyguardShown]
+09-11 22:08:23.682   601   601 I sysui_multi_action: [757,196,758,1,759,0]
+09-11 22:08:23.682   601   601 I sysui_status_bar_state: [1,1,0,0,0,1]
+09-11 22:08:23.703   441   465 I user_activity_timeout_override: 10000
+09-11 22:08:25.604   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:08:25.693   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:08:43.117   441   472 I am_uid_idle: 10144
+09-11 22:08:55.736   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:13:56.692   441   441 I chatty  : uid=1000 system_server identical 20 lines
+09-11 22:13:56.727   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:14:10.299   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_24,98304,SYSTEM_TOMBSTONE]
+09-11 22:14:10.306   441   479 I commit_sys_config_file: [log-files,6]
+09-11 22:14:26.760   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:14:26.800   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:14:38.411   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_25,98304,SYSTEM_TOMBSTONE]
+09-11 22:14:38.422   441   479 I commit_sys_config_file: [log-files,11]
+09-11 22:14:56.851   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:19:27.752   441   441 I chatty  : uid=1000 system_server identical 18 lines
+09-11 22:19:27.814   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:19:45.012   441   471 I commit_sys_config_file: [batterystats,10]
+09-11 22:19:45.016   441   471 I commit_sys_config_file: [batterystats,4]
+09-11 22:19:57.868   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:19:57.897   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:20:01.433   441   472 I am_wtf  : [0,441,system_server,-1,NetworkStats,Failed to parse network stats]
+09-11 22:20:01.493   441   471 I am_pss  : [441,1000,system,84127744,71655424,181248,227217408,0,0,12]
+09-11 22:20:01.503   441   471 I am_pss  : [1003,10139,com.android.launcher3,38302720,30793728,284672,146644992,0,5,7]
+09-11 22:20:01.512   441   471 I am_pss  : [2629,10158,com.steve.puckd,29185024,22032384,63488,124461056,0,4,6]
+09-11 22:20:01.537   441   471 I am_pss  : [1200,10145,com.android.providers.media.module,15162368,10768384,144384,109699072,0,0,6]
+09-11 22:20:01.544   441   471 I am_pss  : [1416,10088,android.process.media,6889472,2142208,1730560,87257088,0,19,4]
+09-11 22:20:01.552   441   471 I am_pss  : [1835,10085,com.android.externalstorage,5381120,2424832,179200,84119552,0,19,5]
+09-11 22:20:01.558   441   471 I am_pss  : [3565,1000,com.android.keychain,6051840,2715648,71680,90976256,0,19,5]
+09-11 22:20:01.564   441   471 I am_pss  : [3544,10093,com.android.documentsui,9662464,5959680,71680,94547968,0,19,4]
+09-11 22:20:01.571   441   471 I am_pss  : [1580,10087,com.android.packageinstaller,5836800,3092480,72704,83304448,0,19,5]
+09-11 22:20:01.578   441   471 I am_pss  : [858,10146,android.ext.services,11636736,6828032,186368,123961344,0,5,6]
+09-11 22:20:01.585   441   471 I am_pss  : [1371,10086,android.process.acore,8525824,2359296,2343936,93876224,0,19,5]
+09-11 22:20:01.592   441   471 I am_pss  : [1927,10131,com.android.inputmethod.latin,13920256,9179136,70656,109371392,0,7,6]
+09-11 22:20:01.598   441   471 I am_pss  : [1625,10090,com.android.providers.calendar,6490112,3436544,71680,88387584,0,19,5]
+09-11 22:20:01.605   441   471 I am_pss  : [1097,10126,com.android.deskclock,11171840,724992,6117376,96026624,0,19,5]
+09-11 22:20:01.611   441   471 I am_pss  : [1274,10106,com.android.printspooler,5940224,2818048,71680,89935872,0,19,5]
+09-11 22:20:01.617   441   471 I am_pss  : [1793,10095,com.stevesoltys.seedvault,6572032,610304,3094528,83824640,0,19,5]
+09-11 22:20:01.623   441   471 I am_pss  : [1744,1000,com.android.localtransport,5570560,2469888,108544,88977408,0,19,5]
+09-11 22:20:01.629   441   471 I am_pss  : [1723,10089,org.lineageos.updater,7969792,4321280,70656,91987968,0,19,5]
+09-11 22:20:01.636   441   471 I am_pss  : [1344,1000,org.lineageos.lineageparts,6052864,745472,1951744,88854528,0,19,5]
+09-11 22:20:01.642   441   471 I am_pss  : [1697,10120,org.calyxos.backup.contacts,5064704,1744896,674816,81494016,0,19,5]
+09-11 22:20:01.650   441   471 I am_pss  : [1674,10115,com.android.traceur,6831104,3948544,72704,86409216,0,19,5]
+09-11 22:20:01.656   441   471 I am_pss  : [1235,10141,com.android.smspush,5085184,2121728,248832,81936384,0,6,5]
+09-11 22:20:01.663   441   471 I am_pss  : [1164,10097,org.lineageos.audiofx,6407168,3559424,71680,84869120,0,0,5]
+09-11 22:20:01.670   441   471 I am_pss  : [577,1002,com.android.bluetooth,14206976,9973760,86016,107409408,0,0,5]
+09-11 22:20:01.677   441   471 I am_pss  : [815,1001,com.android.phone,14844928,9633792,70656,110850048,0,0,6]
+09-11 22:20:01.685   441   471 I am_pss  : [759,1068,com.android.se,5378048,2424832,251904,82870272,0,0,4]
+09-11 22:20:01.695   441   471 I am_pss  : [601,10140,com.android.systemui,67836928,58697728,324608,200923136,0,5,9]
+09-11 22:20:01.714   441   471 I commit_sys_config_file: [procstats,20]
+09-11 22:20:27.918   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+--------- beginning of main
+09-11 22:28:08.807  2629  2656 I SharedAudio: pcm peak=97 state=0
+09-11 22:28:08.808  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.809  2629  2656 I SharedAudio: pcm peak=155 state=0
+09-11 22:28:08.810  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.822  2629  2656 I SharedAudio: pcm peak=114 state=0
+09-11 22:28:08.872  2629  2656 I SharedAudio: pcm peak=152 state=0
+09-11 22:28:08.873  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.874  2629  2656 I SharedAudio: pcm peak=187 state=0
+09-11 22:28:08.874  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.904  2629  2656 I SharedAudio: pcm peak=132 state=0
+09-11 22:28:08.906  2629  2656 I SharedAudio: pcm peak=156 state=0
+09-11 22:28:08.907  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.924  3872  3876 D AudioALSAStreamOut: dump()
+09-11 22:28:08.932  3872  3876 D AudioALSAHardware: dumpState()
+--------- beginning of crash
+09-11 22:28:08.932  3872  3876 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 3876 (HwBinder:3872_2), pid 3872 (audio.service)
+09-11 22:28:08.946  2629  2656 I SharedAudio: pcm peak=151 state=0
+09-11 22:28:08.947  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.967  2629  2656 I SharedAudio: pcm peak=131 state=0
+09-11 22:28:08.968  2629  2656 I SharedAudio: pcm peak=111 state=0
+09-11 22:28:08.969  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.986  3927  3927 I crash_dump32: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+09-11 22:28:08.988  2629  2656 I SharedAudio: pcm peak=101 state=0
+09-11 22:28:08.989  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:08.990   236   236 I tombstoned: received crash request for pid 3876
+09-11 22:28:08.990  3927  3927 I crash_dump32: performing dump of process 3872 (target tid = 3876)
+09-11 22:28:09.001  3927  3927 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-11 22:28:09.001  3927  3927 F DEBUG   : LineageOS Version: '18.1-20260905-UNOFFICIAL-checkers'
+09-11 22:28:09.001  3927  3927 F DEBUG   : Build fingerprint: 'google/lineage_checkers/checkers:11/RQ3A.211001.001/eng.r0rt1z.20260905.021248:userdebug/test-keys'
+09-11 22:28:09.002  3927  3927 F DEBUG   : Revision: '0'
+09-11 22:28:09.002  3927  3927 F DEBUG   : ABI: 'arm'
+09-11 22:28:09.002  3927  3927 F DEBUG   : Timestamp: 2026-09-11 22:28:09-0500
+09-11 22:28:09.002  3927  3927 F DEBUG   : pid: 3872, tid: 3876, name: HwBinder:3872_2  >>> /vendor/bin/hw/android.hardware.audio.service <<<
+09-11 22:28:09.002  3927  3927 F DEBUG   : uid: 1041
+09-11 22:28:09.002  3927  3927 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+09-11 22:28:09.002  3927  3927 F DEBUG   : Cause: null pointer dereference
+09-11 22:28:09.003  3927  3927 F DEBUG   :     r0  ed50a400  r1  00000010  r2  ec7f7c28  r3  ecde10e8
+09-11 22:28:09.003  3927  3927 F DEBUG   :     r4  ec7f7c10  r5  ec7f7c28  r6  ed50a400  r7  00000000
+09-11 22:28:09.003  3927  3927 F DEBUG   :     r8  ec7f7fd0  r9  ec7f7fd0  r10 ed8f4d20  r11 00000000
+09-11 22:28:09.003  3927  3927 F DEBUG   :     ip  ecaf0b74  sp  ec7f7b98  lr  ecae24ad  pc  00000000
+09-11 22:28:09.020  2629  2656 I SharedAudio: pcm peak=117 state=0
+09-11 22:28:09.021  2629  2656 I SharedAudio: pcm peak=105 state=0
+09-11 22:28:09.022  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.032  2629  2644 I com.steve.puck: Background concurrent copying GC freed 1118(269KB) AllocSpace objects, 25(500KB) LOS objects, 24% free, 2342KB/3123KB, paused 75us total 128.367ms
+09-11 22:28:09.043  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:28:09.043  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.059  3927  3927 F DEBUG   : backtrace:
+09-11 22:28:09.059  3927  3927 F DEBUG   :       #00 pc 00000000  <unknown>
+09-11 22:28:09.059  3927  3927 F DEBUG   :       #01 pc 000144ab  /system/vendor/lib/hw/android.hardware.audio@2.0-impl.so (android::hardware::audio::V2_0::implementation::Device::debug(android::hardware::hidl_handle const&, android::hardware::hidl_vec<android::hardware::hidl_string> const&)+46) (BuildId: 99e3312e60223c5bc360708d9a8becea)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #02 pc 00065f07  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::_hidl_debug(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+270) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #03 pc 00066b3f  /system/lib/libhidlbase.so (android::hidl::base::V1_0::BnHwBase::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+386) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #04 pc 00030b2f  /system/lib/android.hardware.audio@2.0.so (android::hardware::audio::V2_0::BnHwDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+694) (BuildId: 0c09d37c74cfe48df066759759c068bb)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #05 pc 00069cc3  /system/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+46) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #06 pc 0006c733  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::getAndExecuteCommand()+962) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #07 pc 0006d50d  /system/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+64) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.060  3927  3927 F DEBUG   :       #08 pc 00079119  /system/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: efc477e860f7d6c14c3deaccf8da9b2e)
+09-11 22:28:09.061  3927  3927 F DEBUG   :       #09 pc 0000ee95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+168) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:28:09.061  3927  3927 F DEBUG   :       #10 pc 0000e9dd  /system/lib/libutils.so (thread_data_t::trampoline(thread_data_t const*)+256) (BuildId: 86e48bfe10db524fa7a885acd0a8f768)
+09-11 22:28:09.061  3927  3927 F DEBUG   :       #11 pc 000ab833  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 22:28:09.061  3927  3927 F DEBUG   :       #12 pc 00063fa3  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 28faceb0a7eacbcaa0f44152c6013269)
+09-11 22:28:09.063  2629  2656 I SharedAudio: pcm peak=113 state=0
+09-11 22:28:09.091  2629  2656 I SharedAudio: pcm peak=159 state=0
+09-11 22:28:09.092  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.112  2629  2656 I SharedAudio: pcm peak=120 state=0
+09-11 22:28:09.113  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.114  2629  2656 I SharedAudio: pcm peak=118 state=0
+09-11 22:28:09.140  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:28:09.141  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.175  2629  2656 I SharedAudio: pcm peak=142 state=0
+09-11 22:28:09.176  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.177  2629  2656 I SharedAudio: pcm peak=128 state=0
+09-11 22:28:09.203  2629  2656 I SharedAudio: pcm peak=110 state=0
+09-11 22:28:09.204  2629  2656 I MicroWakeWord: probability=0
+--------- beginning of system
+09-11 22:28:09.216   441   654 W NativeCrashListener: Couldn't find ProcessRecord for pid 3872
+09-11 22:28:09.217   236   236 E tombstoned: Tombstone written to: /data/tombstones/tombstone_26
+09-11 22:28:09.225  2629  2656 I SharedAudio: pcm peak=112 state=0
+09-11 22:28:09.225  2629  2656 I MicroWakeWord: probability=0
+09-11 22:28:09.226   441   479 I BootReceiver: Copying /data/tombstones/tombstone_26 to DropBox (SYSTEM_TOMBSTONE)
+09-11 22:28:09.228   441   479 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+09-11 22:27:59.454   441   441 I chatty  : uid=1000 system_server identical 30 lines
+09-11 22:27:59.483   441   441 I notification_enqueue: [10158,2629,com.steve.puckd,1001,NULL,0,Notification(channel=puckd shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE),1]
+09-11 22:28:09.248   441   479 I dropbox_file_copy: [/data/tombstones/tombstone_26,98304,SYSTEM_TOMBSTONE]
+09-11 22:28:09.249  3871  3885 E HalHidl : Device 0xf4d48570 dump: Status(EX_TRANSACTION_FAILED): 'DEAD_OBJECT: ' (from rpc)
+09-11 22:28:09.249  3871  3881 E HalDeathHandler: HAL server crashed, audio server is restarting
+09-11 22:28:09.256   441   479 I commit_sys_config_file: [log-files,7]
+09-11 22:28:09.260   441  2076 W AudioSystem: AudioPolicyService server died!
+09-11 22:28:09.261   441  2076 W CaptureStateTracker: Audio policy service died
+09-11 22:28:09.261  2629  2649 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 22:28:09.261   577   596 W AudioSystem: AudioPolicyService server died!
+09-11 22:28:09.261  2629  2649 W AudioSystem: AudioFlinger server died!
+09-11 22:28:09.261  1164  1198 W AudioSystem: AudioPolicyService server died!
+09-11 22:28:09.262  2629  2656 W AudioRecord: restoreRecord_l(9): dead IAudioRecord, creating a new one from obtainBuffer()
+09-11 22:28:09.264   441   540 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:28:09.264  1164  1721 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:28:09.264   577   727 I ServiceManager: Waiting for service 'media.audio_policy' on '/dev/binder'...
+09-11 22:28:09.264   441   494 E AudioSystem-JNI: Command failed for android_media_AudioSystem_error_callback: -32
+09-11 22:28:09.264   441   494 W AudioSystem: AudioFlinger server died!
+09-11 22:28:09.265   441   536 E AudioSystem-JNI: Command failed for android_media_AudioSystem_checkAudioFlinger: -32
+09-11 22:28:09.265   441   536 E AS.AudioService: Audioserver died.
+09-11 22:28:09.265  2629  2656 I ServiceManager: Waiting for service 'media.audio_flinger' on '/dev/binder'...
+09-11 22:28:09.304   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.305  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@6.0::IDevicesFactory/default.
+09-11 22:28:09.305   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.306  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@5.0::IDevicesFactory/default.
+09-11 22:28:09.306   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.306  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio@4.0::IDevicesFactory/default.
+09-11 22:28:09.315  3936  3936 I HidlServiceManagement: Registered android.hardware.audio@2.0::IDevicesFactory/default
+09-11 22:28:09.315  3936  3936 I HidlServiceManagement: Removing namespace from process name android.hardware.audio.service to audio.service.
+09-11 22:28:09.315  3936  3936 I LegacySupport: Registration complete for android.hardware.audio@2.0::IDevicesFactory/default.
+09-11 22:28:09.316   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.316  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@6.0::IEffectsFactory/default.
+09-11 22:28:09.317   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.317  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@5.0::IEffectsFactory/default.
+09-11 22:28:09.317   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.318  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.audio.effect@4.0::IEffectsFactory/default.
+09-11 22:28:09.323  3936  3936 I HidlServiceManagement: Registered android.hardware.audio.effect@2.0::IEffectsFactory/default
+09-11 22:28:09.323  3936  3936 I LegacySupport: Registration complete for android.hardware.audio.effect@2.0::IEffectsFactory/default.
+09-11 22:28:09.324   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.3::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:28:09.324  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.3::ISoundTriggerHw/default.
+09-11 22:28:09.324   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.2::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:28:09.325  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.2::ISoundTriggerHw/default.
+09-11 22:28:09.325   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.1::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:28:09.326  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.1::ISoundTriggerHw/default.
+09-11 22:28:09.326   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+09-11 22:28:09.327  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+09-11 22:28:09.327  3936  3936 W audiohalservice: Could not register Soundtrigger API
+09-11 22:28:09.329  3936  3936 I BTAudioProviderA2dpSoftware: A2dpSoftwareAudioProvider - size of audio buffer 7168 byte(s)
+09-11 22:28:09.330  3936  3936 I BTAudioProviderHearingAid: HearingAidAudioProvider - size of audio buffer 3584 byte(s)
+09-11 22:28:09.331  3936  3936 I HidlServiceManagement: Registered android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default
+09-11 22:28:09.332  3936  3936 I LegacySupport: Registration complete for android.hardware.bluetooth.audio@2.0::IBluetoothAudioProvidersFactory/default.
+09-11 22:28:09.332   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default in either framework or device manifest.
+09-11 22:28:09.333  3936  3936 E LegacySupport: Could not get passthrough implementation for android.hardware.bluetooth.a2dp@1.0::IBluetoothAudioOffload/default.
+09-11 22:28:09.333  3936  3936 W audiohalservice: Could not register Bluetooth Audio Offload API
+09-11 22:28:09.368  3935  3935 I FastMixerState: sMaxFastTracks = 8
+09-11 22:28:09.373  3935  3935 V MediaUtils: physMem: 1020911616
+09-11 22:28:09.373  3935  3935 V MediaUtils: requested limit: 204182320
+09-11 22:28:09.373  3935  3935 I libc    : malloc_limit: Allocation limit enabled, max size 204182320 bytes
+09-11 22:28:09.374  3935  3935 I audioserver: ServiceManager: 0xf2033260
+09-11 22:28:09.376   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@6.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.378   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@5.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.378   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio@4.0::IDevicesFactory/default in either framework or device manifest.
+09-11 22:28:09.389   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@6.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.389   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@5.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.390   189   189 I hwservicemanager: getTransport: Cannot find entry android.hardware.audio.effect@4.0::IEffectsFactory/default in either framework or device manifest.
+09-11 22:28:09.391  3935  3935 I AudioFlinger: Using default 3000 mSec as standby time.
+09-11 22:28:09.392   341  3449 W AudioAnalytics: (key=audio.flinger) Audioflinger constructor event detected
+09-11 22:28:09.394  3935  3935 E APM::Serializer: deserialize: Could not parse /odm/etc/audio_policy_configuration.xml document.
+09-11 22:28:09.409  3935  3935 D APM_EngineLoader: Loaded engine from libaudiopolicyenginedefault.so
+09-11 22:28:09.409  3935  3935 E APM::AudioPolicyEngine/Config: parse: Could not parse document /vendor/etc/audio_policy_engine_configuration.xml
+09-11 22:28:09.409  3935  3935 E libxml2 : I/O warning : failed to load external entity "/vendor/etc/audio_policy_engine_configuration.xml"
+09-11 22:28:09.409  3935  3935 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration found, using default matching phone experience.
+09-11 22:28:09.410  3935  3935 E APM::AudioPolicyEngine/Config: parseLegacyVolumeFile: Could not parse document /odm/etc/audio_policy_configuration.xml
+09-11 22:28:09.410  3935  3935 E libxml2 : I/O warning : failed to load external entity "/odm/etc/audio_policy_configuration.xml"
+09-11 22:28:09.425  3935  3935 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration of AUDIO_STREAM_ASSISTANT found, using default volume configuration
+09-11 22:28:09.426  3935  3935 W APM::AudioPolicyEngine/Base: loadAudioPolicyEngineConfig: No configuration of AUDIO_STREAM_CALL_ASSISTANT found, using default volume configuration
+09-11 22:28:09.427  3936  3936 I audio.amazon_wrapper: adev_open: audio_hw_if
+09-11 22:28:09.519  3936  3936 D AudioALSAHardware: +mAudioALSAHardware
+09-11 22:28:09.519  3936  3936 D AudioALSADriverUtility: AudioALSADriverUtility()
+09-11 22:28:09.519  3936  3936 D AudioALSADeviceParser: +UniqueVolumeInstance
+09-11 22:28:09.519  3936  3936 D AudioALSADeviceParser: AudioALSADeviceParser()
+09-11 22:28:09.519  3936  3936 D AudioALSADeviceParser: ParseCardIndex()
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: card open success
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: 	current CardIndex = 0, Rch =  0 
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: 	current sound card name = mtsndcard
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: 	mCardIndex found = 0
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: reach EOF
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: GetAllPcmAttribute()
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: Pcm open success
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-00: MultiMedia1_PLayback mt-soc-codec-tx-dai-0 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-01: MultiMedia1_Capture mt-soc-codec-rx-dai-1 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-02: Voice_MD1_PLayback mt-soc-codec-voicemd1-dai-2 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-03: ULDL_Loopback mt-soc-codec-uldlloopback-dai-3 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-04: I2S0_PLayback mt-soc-i2s0-dummy-dai-codec-4 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-05: MRGRX_PLayback mt-soc-mrgrx-dai-codec-5 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-06: MRGRX_CAPTURE mt-soc-mrgrx-dummy-dai-codec-6 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-07: I2S0DL1_PLayback mt-soc-codec-I2s0tx-dai-7 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-08: DL1_AWB_Record mt-soc-codec-dl1awb-dai-8 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-09: Voice_MD1_BT_Playback mt-soc-codec-voicemd1-bt-dai-9 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-10: VOIP_Call_BT_Playback mt-soc-codec-voipcall-btout-dai-10 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-11: VOIP_Call_BT_Capture mt-soc-codec-voipcall-btin-dai-11 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-12: TDM_Debug_Record mt-soc-tdmrx-dai-codec-12 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-13: FM_MRGTX_Playback mt-soc-fmmrg2tx-dummy-dai-codec-13 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-14: MultiMediaData2_Capture mt-soc-codec-rx-dai2-14 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-15: I2S0AWB_Capture mt-soc-codec-i2s0awb-dai-15 :  : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-16: Voice_MD2_PLayback mt-soc-codec-voicemd2-dai-16 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-17: MultiMedia_Routing mt-soc-dummy-dai-codec-17 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-18: Voice_MD2_BT_Playback mt-soc-codec-voicemd2-bt-dai-18 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-19: HP_IMPEDANCE_Playback mt-soc-codec-hp-impedance-dai-19 :  : playback 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-20: FM_I2S_Playback mt-soc-fm-i2s-dai-codec-20 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-21: FM_I2S_Capture mt-soc-fm-i2s-dummy-dai-codec-21 :  : playback 1 : capture 1
+09-11 22:28:09.520  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-22: TLV320AIC3101 Capture tlv320aic3101-codec-22 :  : capture 1
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 00-23: RT5616_Playback rt5616-aif1-23 :  : playback 1
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: AddPcmString InputBuffer = 
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: reach EOF
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: pcm 0 MultiMedia1_PLayback 
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 0 
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=192000Hz
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=18432
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: pcm 1 MultiMedia1_Capture 
+09-11 22:28:09.521  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 1 
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=18432
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=49152
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: pcm 2 Voice_MD1_PLayback 
+09-11 22:28:09.522  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 2 
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=32000Hz
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=24576
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4096
+09-11 22:28:09.525  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=32000Hz
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=24576
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4096
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: pcm 3 ULDL_Loopback 
+09-11 22:28:09.526  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 3 
+09-11 22:28:09.528  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.528  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.528  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.528  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=24576
+09-11 22:28:09.528  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=49152
+09-11 22:28:09.529  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.532  3936  3936 D AudioALSADeviceParser: Device 3 does not exist capture
+09-11 22:28:09.533  3936  3936 D AudioALSADeviceParser: pcm 4 I2S0_PLayback 
+09-11 22:28:09.533  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 4 
+09-11 22:28:09.534  3936  3936 D AudioALSADeviceParser: Device 4 does not exist playback
+09-11 22:28:09.535  3936  3936 D AudioALSADeviceParser: Device 4 does not exist capture
+09-11 22:28:09.535  3936  3936 D AudioALSADeviceParser: pcm 5 MRGRX_PLayback 
+09-11 22:28:09.535  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 5 
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: Rate:	min=32000Hz	max=48000Hz
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=32768
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=65536
+09-11 22:28:09.538  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=65536	
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: Rate:	min=32000Hz	max=48000Hz
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=32768
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=65536
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=65536	
+09-11 22:28:09.541  3936  3936 D AudioALSADeviceParser: pcm 6 MRGRX_CAPTURE 
+09-11 22:28:09.542  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 6 
+09-11 22:28:09.543  3936  3936 D AudioALSADeviceParser: Device 6 does not exist playback
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=32768
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=65536
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=65536	
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: pcm 7 I2S0DL1_PLayback 
+09-11 22:28:09.544  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 7 
+09-11 22:28:09.545  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=192000Hz
+09-11 22:28:09.545  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.545  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.545  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=18432
+09-11 22:28:09.545  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4
+09-11 22:28:09.546  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:28:09.546  3936  3936 D AudioALSADeviceParser: pcm 8 DL1_AWB_Record 
+09-11 22:28:09.546  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 8 
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=32768
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=65536
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=65536	
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: pcm 9 Voice_MD1_BT_Playback 
+09-11 22:28:09.547  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 9 
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=32000Hz
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=24576
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4096
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: pcm 10 VOIP_Call_BT_Playback 
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 10 
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=18432
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: pcm 11 VOIP_Call_BT_Capture 
+09-11 22:28:09.549  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 11 
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=24576
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=49152
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: pcm 12 TDM_Debug_Record 
+09-11 22:28:09.550  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 12 
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Channels:	min=2		max=8
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=12288
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=4096
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=49152	
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: pcm 13 FM_MRGTX_Playback 
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 13 
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Rate:	min=44100Hz	max=44100Hz
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=32
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=18432
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=49152
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=36864	
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: pcm 14 MultiMediaData2_Capture 
+09-11 22:28:09.551  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 14 
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: Rate:	min=8000Hz	max=48000Hz
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: Channels:	min=1		max=2
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: Sample bits:	min=16		max=16
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: Period size:	min=0		max=32768
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: Period count:	min=1		max=49152
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: PCM_PARAM_BUFFER_BYTES :	 max=65536	
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: pcm 15 I2S0AWB_Capture 
+09-11 22:28:09.552  3936  3936 D AudioALSADeviceParser: pcm mCardindex 0 mPcmindex 15 
