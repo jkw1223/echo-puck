@@ -32,6 +32,20 @@ The source/buildability gate is complete. C ABI wrapper, JNI/APK packaging,
 device loading, DSP sanity tests and acoustic AEC validation remain later work.
 No production package, vendor audio configuration or device was touched.
 
+## ARMv7 fixture execution gate (2026-09-12)
+
+The deterministic fixture generator and correlation analysis script are now
+under `diagnostics/software-aec/`. Fixtures use 16 kHz mono, 12 seconds,
+160-sample frames, an 80 ms delayed render-derived echo at -12 dB, and a
+deterministic multi-tone desired component. The analysis reports render-
+correlated energy and dB reduction, rather than relying on total RMS.
+
+Device execution is **BLOCKED**: `adb devices` currently reports no Echo Show.
+Therefore JNI lifecycle, frames processed, output transfer, and numeric ARM
+echo reduction are intentionally unclaimed. No live audio or production code
+was touched. Once the device is connected, the next step is a fixture-only APK
+runner using the existing `libsteve_apm.so` and the recorded scripts.
+
 ## SteveApm wrapper layer
 
 The opaque C ABI and thin JNI bridge are under `standalone/wrapper/`. The
