@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(steve_apm_jni)
+add_library(steve_apm_jni SHARED steve_apm_jni.cc)
+target_include_directories(steve_apm_jni PRIVATE .)
+add_library(steve_apm SHARED IMPORTED)
+set_target_properties(steve_apm PROPERTIES IMPORTED_LOCATION "${CMAKE_CURRENT_LIST_DIR}/../jniLibs/armeabi-v7a/libsteve_apm.so")
+target_link_libraries(steve_apm_jni steve_apm)

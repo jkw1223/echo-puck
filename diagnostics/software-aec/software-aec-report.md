@@ -57,3 +57,16 @@ The wrapper was cross-built for Android ARMv7/API 24. ELF and SHA-256 evidence
 are recorded. The ARM binary has not been executed on this x86 host, so no
 synthetic echo-reduction number is claimed yet; fixture and JNI execution remain
 the next host/Android harness step. Live Echo Show testing remains out of scope.
+
+## Device/JNI execution attempt (2026-09-12)
+
+The Echo Show is reachable over ADB at `192.168.1.24:5555` and identity matches
+Echo Show 5/checkers/Android 11/armeabi-v7a. A separate fixture-only
+`com.steve.apmdiag` harness source is preserved under `standalone`-adjacent
+`android-harness/`. It requests no audio permissions and does not touch Puck.
+
+APK assembly is currently **BLOCKED** because the Ubuntu VM has no JDK and no
+`java` executable (`JAVA_HOME` unset). Consequently no APK was installed, no
+JNI lifecycle ran, and no numeric ARM echo reduction is claimed. Add JDK 17 and
+rerun the documented harness commands. The existing ARM library hash remains
+`9c9ed47307a7bdd94494b26ecf5fc5288e4f09e52cae0638e0aab7e4fa130952`.
