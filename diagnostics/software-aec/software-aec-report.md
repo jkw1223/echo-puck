@@ -31,3 +31,15 @@ ELF evidence. No full sync is needed or authorized under this strategy.
 The source/buildability gate is complete. C ABI wrapper, JNI/APK packaging,
 device loading, DSP sanity tests and acoustic AEC validation remain later work.
 No production package, vendor audio configuration or device was touched.
+
+## SteveApm wrapper layer
+
+The opaque C ABI and thin JNI bridge are under `standalone/wrapper/`. The
+wrapper enforces APM's exact native frame count, keeps WebRTC C++ types private,
+uses AEC3 (`mobile_mode=false`), NS enabled, and AGC1/AGC2 disabled. Render must
+be submitted before capture; JNI forwards direct ByteBuffers and status codes.
+
+The wrapper was cross-built for Android ARMv7/API 24. ELF and SHA-256 evidence
+are recorded. The ARM binary has not been executed on this x86 host, so no
+synthetic echo-reduction number is claimed yet; fixture and JNI execution remain
+the next host/Android harness step. Live Echo Show testing remains out of scope.

@@ -28,7 +28,7 @@ python3 -m mesonbuild.mesonmain setup "$build_dir" "$source_dir" \
   --cross-file "$build_dir.ini" --buildtype=release \
   -Ddefault_library=shared -Dabseil-cpp:default_library=static -Dgnustl=disabled
 python3 -m mesonbuild.mesonmain compile -C "$build_dir" -j 2
-library="$build_dir/webrtc/modules/audio_processing/libwebrtc-audio-processing-2.so"
+library="$build_dir/libsteve_apm.so"
 file "$library"
 "$ndk_dir/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf" -h -A -d "$library"
 sha256sum "$library"
