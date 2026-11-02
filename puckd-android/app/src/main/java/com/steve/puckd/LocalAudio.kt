@@ -10,7 +10,7 @@ import java.nio.ByteOrder
 import java.util.concurrent.Executors
 import kotlin.math.*
 
-/** Foreground-only smoke test. Captured audio never enters the relay. */
+/** Foreground-only audio check. Captured audio stays local to this test flow. */
 class LocalAudio(private val context: Context, private val report: (String) -> Unit) {
     private val worker = Executors.newSingleThreadExecutor()
     @Volatile private var cancelled = false

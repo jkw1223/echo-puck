@@ -7,8 +7,6 @@ import android.graphics.Color
 import android.os.*
 import android.view.WindowManager
 import android.view.View
-import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
 import android.widget.*
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -99,7 +97,6 @@ class MainActivity : AppCompatActivity() {
     }
     private lateinit var audio: LocalAudio
     private lateinit var turn: MediaTurn
-    private var wake: WakeWordClient? = null
     private var visible = false
     private val refresh = object : Runnable {
         override fun run() {
@@ -115,30 +112,21 @@ class MainActivity : AppCompatActivity() {
                     handler.postDelayed({ if (!isDestroyed && !turn.busy && !audio.busy) turn.start() }, 350)
                 } else turn.start()
             }
-            val age = SystemClock.elapsedRealtime() - prefs.getLong("updatedElapsed", 0)
-            val current = if (age !in 0..30000) "Offline" else prefs.getString("state", "Connecting") ?: "Connecting"
-            if (state.text.toString() != current) {
-                state.text = current
-                state.setTextColor(if (current == "Connected") Color.rgb(114, 220, 182) else Color.rgb(244, 191, 110))
-            }
-            val description = if (age !in 0..30000) "Waiting for the connection service" else prefs.getString("detail", "")
+            val configured = BuildConfig.OPENAI_API_KEY.isNotBlank()
+            val connection = if (configured) "Direct Realtime" else "Needs API key"
+            if (state.text.toString() != connection) state.text = connection
+            state.setTextColor(if (configured) Color.rgb(114, 220, 182) else Color.rgb(244, 191, 110))
+            val description = if (configured) "Ready for a direct voice turn" else "Configure OPENAI_API_KEY in local secrets.properties"
             if (detail.text.toString() != description) detail.text = description
-            val weather = prefs.getString("weatherText", "☾  --°") ?: "☾  --°"
-            if (weatherView.text.toString() != weather) weatherView.text = weather
             val wake = prefs.getString("wakeState", "Starting wake listener") ?: "Starting wake listener"
             if (wakeStatus.text.toString() != "●  $wake") wakeStatus.text = "●  $wake"
-            val token = if (current == "Connected") prefs.getString("mediaToken", "") ?: "" else ""
-            val hint = if (prefs.getString("replyMode", "fixture") == "chatgpt_supervised")
-                "Supervised ChatGPT · browser operated from this Codex task · max 30s"
-                else "Fixed test reply · audio goes to the Mac · max 30s"
+            val hint = "Direct OpenAI Realtime · push to talk"
             if (modeHint.text.toString() != hint) modeHint.text = hint
-            turn.connectionChanged(token)
             val title = if (turn.recording) "Finish" else "Talk"
             if (talk.text.toString() != title) talk.text = title
             val now = java.text.SimpleDateFormat("h:mm", java.util.Locale.getDefault()).format(java.util.Date())
             findViewById<TextView>(1001)?.text = now
-            val realtime = getSharedPreferences("puck_status", 0).getString("transport", "relay") == "realtime"
-            talk.isEnabled = !audio.busy && (turn.recording || (!turn.busy && (realtime || token.isNotEmpty())))
+            talk.isEnabled = !audio.busy && (turn.recording || !turn.busy)
             speaker.isEnabled = !audio.busy && !turn.busy
             handler.postDelayed(this, 200)
         }
@@ -157,7 +145,7 @@ class MainActivity : AppCompatActivity() {
         root.addView(wakeBar, LinearLayout.LayoutParams(-1, dp(4)))
         val home = FrameLayout(this).apply { layoutParams = LinearLayout.LayoutParams(-1, 0, 1f) }
         weatherView = TextView(this).apply {
-            text = getSharedPreferences("puck_status", MODE_PRIVATE).getString("weatherText", "☾  --°") ?: "☾  --°"
+            text = "☾  --°"
             textSize = 22f; setTextColor(Color.rgb(112, 190, 245)); typeface = Typeface.DEFAULT_BOLD
         }
         home.addView(weatherView, FrameLayout.LayoutParams(-2, dp(44)).apply { gravity = android.view.Gravity.TOP or android.view.Gravity.START; leftMargin = dp(6); topMargin = dp(8) })
@@ -191,7 +179,7 @@ class MainActivity : AppCompatActivity() {
             setPadding(0, dp(2), 0, dp(2)); settingsPanel.addView(this)
         }
         label("Steve  /  Puck 0", 26f)
-        val voiceLabel = label("Voice", 15f)
+        label("Voice", 15f)
         val voiceSelector = Spinner(this).apply {
             adapter = ArrayAdapter(this@MainActivity, android.R.layout.simple_spinner_dropdown_item, RealtimeVoicePreferences.SUPPORTED)
             setSelection(RealtimeVoicePreferences.SUPPORTED.indexOf(RealtimeVoicePreferences.get(this@MainActivity)))
@@ -204,7 +192,7 @@ class MainActivity : AppCompatActivity() {
         }
         settingsPanel.addView(voiceSelector, LinearLayout.LayoutParams(-1, dp(48)))
         state = label("Connecting", 20f)
-        detail = label("Waiting for the relay", 13f)
+        detail = label("Ready for a direct voice turn", 13f)
         turnState = label("Ready · Puck", 19f)
         caption = label("Tap Talk, speak, then Finish to send your turn.", 15f)
         val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
@@ -219,12 +207,11 @@ class MainActivity : AppCompatActivity() {
             if (!isDestroyed) {
                 turnState.text = status; caption.text = message
                 if (status.startsWith("Ready") || status.startsWith("Error") || status.startsWith("Failed") || status.contains("failed", true) || status.contains("error", true) || status.contains("timed out", true)) {
-                    if (status.startsWith("Ready")) { wakeStatus.text = "●  Wake word ready"; wake?.start() }
+                    if (status.startsWith("Ready")) wakeStatus.text = "●  Wake word ready"
                     else wakeStatus.text = "●  Wake word ready"
                 } else if (status != "Listening") wakeStatus.text = "●  Steve is responding"
             }
         } }, handsFreeLifecycle)
-        wake = null
         talk = button("Talk") {
             if (turn.recording) turn.finish()
             else if (turn.busy) { /* wait for response/playback to finish */ }
@@ -233,21 +220,19 @@ class MainActivity : AppCompatActivity() {
                 else requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), 42)
             }
         }
-        talk.visibility = if (getSharedPreferences("puck_status", 0).getString("transport", "relay") == "realtime") View.VISIBLE else View.GONE
+        talk.visibility = View.VISIBLE
         button("Stop") { turn.cancel(); audio.stop() }
         row.getChildAt(row.childCount - 1).visibility = View.GONE
         button("Clear Conversation") { turn.clearConversation(); caption.text = "Conversation cleared" }
         speaker = button("Test speaker") { if (!turn.busy) audio.tone() }
         button("Record wake sample") { if (!turn.busy && !audio.busy) audio.record() }
-        button("Test native wake") { Thread { try { var count=0; var max=0f; var hits=0; val d=NativeWakeDetector(this,{s->count++;if(s>max)max=s;if(s>=.5f)hits++},{ }); repeat(100) { d.accept(ShortArray(1280)) }; assets.open("wakeword/wake-sample.wav").use { it.skip(44); val r=it.readBytes(); val p=ShortArray(r.size/2){i->((r[i*2].toInt() and 255) or (r[i*2+1].toInt() shl 8)).toShort()}; for(i in p.indices step 1280)d.accept(p.copyOfRange(i,minOf(i+1280,p.size))) }; d.close(); runOnUiThread{caption.text="Native wake: $count scores · max $max · $hits detections"} } catch(e:Exception){runOnUiThread{caption.text="Native wake test failed: ${e.message}"}} }.start() }
         root.addView(Button(this).apply { text = "Test direct Realtime text"; isAllCaps = false; setOnTouchListener { _, event -> if (event.action == android.view.MotionEvent.ACTION_UP) android.util.Log.i("RealtimeProbe", "BUTTON TOUCH UP"); false }; setOnClickListener { android.util.Log.i("RealtimeProbe", "BUTTON CLICK RECEIVED"); Toast.makeText(this@MainActivity, "Realtime probe button pressed", Toast.LENGTH_SHORT).show(); caption.text = "Realtime probe button pressed"; Thread { try { RealtimeWebSocketProbe.run() } catch(e:Exception) { android.util.Log.e("RealtimeProbe", "probe_start_failed ${e.message}") } }.start() } })
         root.addView(Button(this).apply { text = "Test direct Realtime audio"; isAllCaps = false; setOnClickListener { android.util.Log.i("RealtimeAudioProbe", "BUTTON CLICK RECEIVED"); Thread { RealtimeAudioProbe.run(this@MainActivity) }.start() } })
-        button("Test microWakeWord") { Thread { try { val b=assets.open("microwakeword/hey_jarvis.tflite").use{it.readBytes()}; val r=assets.open("wakeword/wake-sample.wav").use { it.skip(44); it.readBytes() }; val p=ShortArray(r.size/2){i->((r[i*2].toInt() and 255) or (r[i*2+1].toInt() shl 8)).toShort()}; val results=mutableListOf<String>(); for(cut in floatArrayOf(.97f,.8f,.5f,.3f)){ val bb=java.nio.ByteBuffer.allocateDirect(b.size).order(java.nio.ByteOrder.nativeOrder()).put(b).apply{rewind()}; MicroWakeWord(bb,10,cut,5).use { d -> var hit=false; for(i in p.indices step 160) if(d.processAudio(p.copyOfRange(i,minOf(i+160,p.size)))) hit=true; results.add("$cut=$hit") } }; runOnUiThread{caption.text="microWakeWord: ${results.joinToString("  ")}"} } catch(e:Exception){runOnUiThread{caption.text="microWakeWord test failed: ${e.message}"}} }.start() }
         button("Diag source: VC") { SharedAudioCapture.setDiagnosticSource("vc"); caption.text = "Diagnostic source set to VOICE_COMMUNICATION; restart PuckService to apply." }
         button("Diag WAV start") { SharedAudioCapture.beginDiagnosticWav("capture.wav"); caption.text = "Diagnostic WAV capture started." }
         button("Diag WAV stop") { SharedAudioCapture.endDiagnosticWav(); caption.text = "Diagnostic WAV capture finalized." }
         button("Diag speaker 10s") { if (!turn.busy) audio.diagnosticTone() }
-        modeHint = label("Connecting to the Mac · maximum 30 seconds", 12f)
+        modeHint = label("Direct OpenAI Realtime · push to talk", 12f)
         settings.setOnClickListener { settingsPanel.visibility = android.view.View.VISIBLE; home.visibility = android.view.View.GONE }
         val back = Button(this).apply { text = "Back to clock"; isAllCaps = false; setOnClickListener { settingsPanel.visibility = android.view.View.GONE; home.visibility = android.view.View.VISIBLE } }
         settingsPanel.addView(back, 0)
@@ -263,7 +248,7 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onStart() { super.onStart(); visible = true; SharedAudioCapture.subscribe(handsFreeListener); handler.post(refresh); registerReceiver(wakeReceiver, IntentFilter("com.steve.puckd.WAKE"), RECEIVER_NOT_EXPORTED) }
     override fun onStop() { visible = false; handler.removeCallbacks(refresh); unregisterReceiver(wakeReceiver); SharedAudioCapture.unsubscribe(handsFreeListener); turn.cancel(); audio.stop(); super.onStop() }
-    override fun onDestroy() { wake?.stop(); turn.close(); audio.close(); super.onDestroy() }
+    override fun onDestroy() { turn.close(); audio.close(); super.onDestroy() }
     private fun dp(value: Int) = (value * resources.displayMetrics.density).toInt()
 
     private fun transitionHandsFree(next: HandsFreeState, reason: String) {

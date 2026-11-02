@@ -4,22 +4,17 @@ Repurposing a first-generation Amazon Echo Show 5 (`checkers`) as Puck 0: a micr
 
 Workspace: `~/puck`. Repository: https://github.com/jkw1223/echo-puck.
 
-Start with [CURRENT_STATE.md](CURRENT_STATE.md) for the real stopping point and [the work index](docs/WORK_INDEX.md) for collected history. Direct Realtime audio has been demonstrated; the normal two-turn lifecycle regression remains incomplete.
+Start with [CURRENT_STATE.md](CURRENT_STATE.md) for the latest device evidence and [the work index](docs/WORK_INDEX.md) for project history. The active Echo Show voice path uses direct OpenAI Realtime audio. The retired Tower and Mac audio-routing implementations have been removed from the active source tree; their decision history remains in `docs/history/`.
 
-The Show handles microphone capture, on-device audio processing, UI, the direct Realtime WebSocket and response playback. OpenAI provides model inference and response audio. The Mac Whisper/browser/TTS bridge is historical. The intended off-device role is long-lived credential provisioning; the current development APK still embeds its locally supplied key, so a short-lived-token handoff remains to be implemented. See [the current Steve brief](STEVE_BRIEF.md).
+The Show handles microphone capture, local wake detection, UI, the direct Realtime WebSocket and response playback. OpenAI provides model inference and response audio. The intended off-device role is long-lived credential provisioning; the current development APK still embeds its locally supplied key, so short-lived session credentials remain to be implemented. See [the current Steve brief](STEVE_BRIEF.md).
 
 ## Workspace
 
 | Path | Purpose |
 |---|---|
-| `puckd-android/` | Active Android app, shared capture, transports, playback and wake experiments |
-| `puck-relay/` | Mac relay, fixed speech fixture, supervised browser queue, provider adapters and tests |
-| `puckd-files/`, `puckd/` | Original scaffolding and isolated probe reference |
-| `experiments/web-bridge/` | September 5 Python bridge scaffold |
-| `docs/history/` | Original architecture and checkpoints |
-| `artifacts/` | Local-only logs, screenshots, recordings, rollback APKs and source snapshots |
-| `.local/` | Local-only conversation archives, inventory and verification logs |
-| `ha-android-ref/`, `tower-reference/` | Existing local third-party reference material |
+| `puckd-android/` | Android app, shared capture, direct Realtime audio, playback and local wake detection |
+| `diagnostics/` | Audio and software AEC investigations |
+| `docs/history/` | Original architecture decisions and checkpoints |
 
 ## Development
 
@@ -30,22 +25,8 @@ cd ~/puck/puckd-android
 ./gradlew :app:assembleDebug :app:testDebugUnitTest
 ```
 
-`-PrelayUrl=ws://HOST:8787/puck` overrides the historical relay address. Compilation permits an absent `secrets.properties`; direct provider calls require local configuration. The current experiment embeds `OPENAI_API_KEY` from that file in BuildConfig, so APKs are private development artifacts. Keep the existing local debug signing key for in-place updates.
+Compilation permits an absent `secrets.properties`; direct provider calls require local configuration. The development build embeds `OPENAI_API_KEY` from that file in BuildConfig, so APKs are private development artifacts. Keep the existing local debug signing key for in-place updates.
 
-Optional wake diagnostics use a private `wake-sample.wav` retained locally and absent from GitHub. No device install/provider call is part of repository setup. Verify actual device/host state before using historical commands.
+No device install or provider call is part of repository setup. Verify actual device and host state before using historical commands.
 
-### Optional historical relay/fallback
-
-Relay, with Node.js installed:
-
-```sh
-cd ~/puck/puck-relay
-npm ci
-npm test
-lsof -nP -iTCP:8787 -sTCP:LISTEN
-npm start
-```
-
-Inspect the chosen mode and existing listener before starting the relay; it loads local provider configuration from `.env.local`. See [historical protocol documentation](docs/history/README-2026-09-06.md).
-
-See [third-party provenance](docs/THIRD_PARTY.md). Original checkpoints remain under `docs/history/`; the supervised web experiment and later direct API transports are distinct.
+See [third-party provenance](docs/THIRD_PARTY.md). Historical checkpoints remain under `docs/history/`; their relay and Tower setup instructions describe retired code.

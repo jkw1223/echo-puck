@@ -4,7 +4,7 @@ import android.media.*
 import android.os.SystemClock
 import android.util.Log
 
-/** Shared PCM speaker playback for turn transports. */
+/** Shared PCM speaker playback for Realtime responses. */
 class TurnAudioPlayback {
     @Volatile private var currentTrack: AudioTrack? = null
     @Volatile private var generation = 0L
