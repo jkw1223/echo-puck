@@ -10,10 +10,9 @@ import java.util.concurrent.LinkedBlockingQueue
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.CountDownLatch
-import java.util.concurrent.atomic.AtomicInteger
 
-/** Direct OpenAI Realtime transport. The relay transport remains the default rollback path. */
-class RealtimeTurnTransport(private val context: Context, private val sink: TurnTransportSink) : TurnTransport {
+/** Direct OpenAI Realtime transport for one Echo Show voice turn. */
+class RealtimeTurnTransport(private val context: Context, private val sink: TurnTransportSink) {
     private val client = OkHttpClient.Builder().readTimeout(0, TimeUnit.MILLISECONDS).build()
     private val pcm = ArrayList<Short>()
     private var listener: ((ShortArray) -> Unit)? = null
@@ -28,15 +27,13 @@ class RealtimeTurnTransport(private val context: Context, private val sink: Turn
     private var conversationSnapshot = ConversationHistory.Snapshot("", 1, "", 0, 0)
     private var userTranscript = StringBuilder()
     private var assistantTranscript = StringBuilder()
-    @Volatile override var busy = false
+    @Volatile var busy = false
         private set
-    @Volatile override var recording = false
+    @Volatile var recording = false
         private set
     @Volatile private var cancelled = false
 
-    override fun start() = start(null)
-
-    override fun start(initialPcm: ShortArray?) {
+    fun start(initialPcm: ShortArray? = null) {
         if (busy) return
         val key = BuildConfig.OPENAI_API_KEY
         if (key.isBlank()) { sink.onTransportError(IllegalStateException("OPENAI_API_KEY is missing")); return }
@@ -116,7 +113,7 @@ class RealtimeTurnTransport(private val context: Context, private val sink: Turn
         })
     }
 
-    override fun finish() {
+    fun finish() {
         if (!recording || cancelled) return
         Log.i(TAG, "seq=finish turn=$turnId thread=${Thread.currentThread().name}"); recording = false
         listener?.let { SharedAudioCapture.unsubscribe(it) }
@@ -131,7 +128,7 @@ class RealtimeTurnTransport(private val context: Context, private val sink: Turn
         Log.i(TAG, "input_audio_committed response_requested")
     }
 
-    override fun cancel() {
+    fun cancel() {
         cancelled = true; transportGeneration++
         recording = false; listener?.let { SharedAudioCapture.unsubscribe(it) }
         runCatching { SharedAudioCapture.endTurn() }
@@ -140,8 +137,7 @@ class RealtimeTurnTransport(private val context: Context, private val sink: Turn
         socket?.cancel(); busy = false
         Log.i(TAG, "transport_cancelled generation=$transportGeneration")
     }
-    override fun connectionChanged(token: String) {}
-    override fun close() { cancel(); client.dispatcher.executorService.shutdown() }
+    fun close() { cancel(); client.dispatcher.executorService.shutdown() }
 
     private fun playbackLoop(turnQueue: LinkedBlockingQueue<ByteArray>, generation: Long) {
         while (!cancelled && generation == transportGeneration) {

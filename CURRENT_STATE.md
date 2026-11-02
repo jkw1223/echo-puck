@@ -1,40 +1,33 @@
 # Echo Puck — current checkpoint
 
-Consolidated September 8, 2026 from source and recorded task history. This is not a fresh device/provider test.
+Updated November 2, 2026 after direct Echo Show testing and source cleanup. Device observations below are from this session; the source cleanup has not yet been rebuilt or installed.
 
-## Resume here
+## Active architecture
 
-The first-generation Echo Show 5 (`checkers`) IS Puck 0. LineageOS Android 11 hosts capture, local audio processing, UI, the direct OpenAI Realtime connection, and response playback. OpenAI supplies model inference and generated response audio. Active Android sources are in `puckd-android`; `puck-relay` is the older Mac path retained as a fallback. The current direct voice path does not use Whisper, a browser operator, Mac TTS, or the Mac media relay.
+The first-generation Echo Show 5 (`checkers`) is Puck 0. The Android app captures audio and runs local wake detection on the Show, connects directly to OpenAI Realtime over TLS, and plays streamed responses through the Show speaker. No audio turn is routed through the Mac or Tower. Retired relay implementations and obsolete wake experiments were removed from the active source tree; historical notes remain in `docs/history/`.
 
-The latest work includes direct Android OpenAI Realtime transport, shared microphone capture, ordered response playback, and local wake-word experiments. The previous task reported a successful direct audio probe and an integrated turn, but did **not** establish a clean two-consecutive-turn lifecycle regression. The latest readiness/append/commit correction was built and installed; subsequent input was blocked by Android `NotificationShade` holding focus. Resolve device focus and verify two normal turns before calling the transport accepted.
+## Latest device evidence
 
-## Recorded milestones
+- The Show was reachable at `192.168.1.24:5555`, running Android 11 and `com.steve.puckd/.MainActivity`.
+- The active app was configured for direct Realtime, voice `cedar`, and local microWakeWord. Its displayed `Offline` state belonged to the old relay status and did not block direct turns.
+- The direct text probe opened a Realtime connection, returned `PUCK DIRECT REALTIME WORKS`, received `response.done`, and closed normally.
+- Two consecutive normal turns completed. Both captured nonempty mic PCM, accepted `input_audio_buffer.append` → `commit` → `response.create`, received responses, drained playback, and reached `final_turn_complete`. The Talk button re-armed after each turn.
+- Turn 1 captured 532,480 bytes and produced a 21-character input transcript. Turn 2 captured 506,880 bytes and produced a 254-character input transcript. That longer second transcript suggests extra sound entered the capture, so its spoken-content check is inconclusive even though the transport/playback lifecycle completed.
+- Playback logs reported expected frame counts for every chunk. Acoustic quality was not independently judged during this session.
+- A short direct `Test speaker` tone also completed its expected 16,000 frames in an earlier device check.
 
-- September 5: LineageOS/checkers and USB-independent Wi-Fi ADB verified. Original Python web bridge was only compile-checked.
-- September 6: acknowledged relay control, local audio, bounded push-to-talk, cancellation/reconnect, and a supervised ChatGPT web text/local-TTS turn verified. A later checkpoint records a successful Mac-relayed OpenAI Realtime turn.
-- September 6–7: Tower wake detection, Android openWakeWord/TFLite experiments, native microWakeWord/JNI, and shared AudioRecord ownership explored. Model scores and source presence do not establish a reliable unattended wake lifecycle.
-- September 7 evening: direct Android text probe returned expected text; direct audio probe processed streamed audio on a playback worker and drained after `response.done`. Direct transport integration followed, with readiness/order and UI lifecycle corrections. Two consecutive normal turns remain unverified.
-- Privacy investigation found `amazon-gating/state` and the red LED transition independently of Android software mute. The attempted `gating.kl` was not selected; `Generic.kl` remained active. Gated-versus-ungated PCM measurements are incomplete.
-- Retrieved USB host discussion found no confirmed first-generation checkers success. Kernel/board investigation remains a research lead, not verified host support.
+## Current code cleanup
 
-## Configuration and deployment
+The active tree now removes the Mac relay and fallback transport, the Tower wake client, the old web bridge, old scaffolding, and the older TFLite wake pipeline. The direct Realtime path and local microWakeWord engine remain. Build and install validation is still needed after these removals.
 
-`MediaTurn` defaults to `transport=relay`; the previous task selected `realtime` in the device's private `puck_status` preferences. Repository consolidation did not re-query or change preferences, install an APK, restart services, flash the Show, or make provider requests.
-
-The intended architecture keeps the long-lived provider credential off the Show and supplies a scoped, short-lived session credential to it. A token broker/session-credential handoff is not yet implemented in this checkout.
-
-The development key is read from ignored `puckd-android/secrets.properties` into `BuildConfig.OPENAI_API_KEY`. This embeds it in the APK; secret files, generated sources and APKs stay local. This development arrangement does not yet meet the intended off-device long-lived-credential boundary. The relay has its own ignored `.env.local`.
-
-Historical endpoints: Show `192.168.1.24:5555`; Mac relay `192.168.1.193:8787`; Tower wake service `192.168.1.4:8765`. Recheck these addresses. Relay transport is plaintext LAN HTTP/WebSocket with ephemeral tickets, not durable enrollment.
-
-The current `STEVE_BRIEF.md` describes the direct audio architecture. It is maintained context, but Android does not yet load/send this file as Realtime session instructions.
+The development build embeds `OPENAI_API_KEY` from local `secrets.properties` in BuildConfig. The intended short-lived session credential handoff is not implemented.
 
 ## Next work
 
-1. Verify installed app, foreground window and transport selection; restore app focus.
-2. Run two normal direct turns: check readiness, nonempty append, commit/response ordering, errors, cancellation and playback drain.
-3. Validate local wake detection/shared-microphone handoff separately.
-4. Finish hardware privacy PCM measurements and device-specific button handling.
-5. Camera, full-duplex/barge-in, cold-boot recovery, durable authentication, memory/capability runtime and USB host remain separate uncompleted milestones.
+1. Build the cleaned Android source and address any compile or packaging issues.
+2. Install the cleaned build on the Show and recheck direct Realtime and local wake behavior.
+3. Improve controlled speech capture so a test turn contains only the intended phrase.
+4. Continue hardware privacy PCM measurements and device-specific button handling.
+5. Camera, full-duplex/barge-in, cold-boot recovery, durable authentication, memory/capability runtime and USB host remain separate milestones.
 
-See `docs/WORK_INDEX.md` for provenance. Historical checkpoints under `docs/history/` may contradict later results.
+See `docs/WORK_INDEX.md` for provenance. Files under `docs/history/` are archival and may document code that has since been removed.

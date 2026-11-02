@@ -24,10 +24,6 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        val relayUrl = providers.gradleProperty("relayUrl")
-            .orElse("ws://192.168.1.193:8787/puck")
-            .get()
-        buildConfigField("String", "RELAY_URL", "\"$relayUrl\"")
         buildConfigField("String", "OPENAI_API_KEY", "\"$openAiKey\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -53,8 +49,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation(files("libs/tensorflow-lite-api-2.14.0.aar"))
-    implementation(files("libs/tensorflow-lite-2.14.0.aar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

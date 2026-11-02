@@ -1,6 +1,6 @@
 package com.steve.puckd
 
-/** Stable turn lifecycle facade. Protocol and network behavior live in TurnTransport. */
+/** Owns the direct Realtime turn and the Show's response playback. */
 class MediaTurn(context: android.content.Context, report: (String, String) -> Unit, private val lifecycle: TurnTransportSink? = null) {
     private val playback = TurnAudioPlayback()
     private val sink = object : TurnTransportSink {
@@ -20,9 +20,7 @@ class MediaTurn(context: android.content.Context, report: (String, String) -> Un
         override fun onTransportError(error: Throwable) { lifecycle?.onTransportError(error) }
         override fun onResponseText(textDelta: String) { if (textDelta.isNotBlank()) report("Steve", textDelta) }
     }
-    private val transport: TurnTransport = if (context.getSharedPreferences("puck_status", 0)
-        .getString("transport", "relay") == "realtime") RealtimeTurnTransport(context, sink)
-    else RelayTurnTransport(context, report, sink)
+    private val transport = RealtimeTurnTransport(context, sink)
     val busy get() = transport.busy
     val recording get() = transport.recording
     fun start(initialPcm: ShortArray? = null) = transport.start(initialPcm)
@@ -30,6 +28,5 @@ class MediaTurn(context: android.content.Context, report: (String, String) -> Un
     fun cancel() = transport.cancel()
     fun interruptCurrentResponse() { transport.cancel(); playback.cancelCurrentPlayback() }
     fun clearConversation() = ConversationHistory.clearConversation()
-    fun connectionChanged(token: String) = transport.connectionChanged(token)
     fun close() = transport.close()
 }
